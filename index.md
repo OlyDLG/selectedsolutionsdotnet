@@ -30,104 +30,97 @@ Long pages and/or pages with dynamically-generated graphs may take a few seconds
 
 Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
       <ul> Chapter 6: The Laplace Transform
-            <ul>[Section 2: The Solution of Initial Value Problems](http://www.selectedsolutions.net/BoyceDiPrima/C6/C6S2.html)
+            <ul>[Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
             </ul>
       </ul>
       <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul>[Section 1: The Phase Plane: Linear Systems](http://www.selectedsolutions.net/BoyceDiPrima/C9/C9S1.html)
+            <ul>[Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
       </ul>
 
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul>[Chapter 1: The Role and Environment of Managerial Finance](http://www.selectedsolutions.net/Gitman/C1/C1.html)</ul>
-            <ul>[Chapter 2: Financial Statements and Analysis](http://www.selectedsolutions.net/Gitman/C2/C2.html)</ul>
-            <ul>[Chapter 3: Cash Flow and Financial Planning](http://www.selectedsolutions.net/Gitman/C3/C3.html)</ul>
-            <ul>[Chapter 4: Time Value of Money](http://www.selectedsolutions.net/Gitman/C4/C4.html)</ul>
-            <ul>[Chapter 5: Risk and Return](http://www.selectedsolutions.net/Gitman/C5/C5.html)</ul>
+            <ul>[Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
+            <ul>[Chapter 2: Financial Statements and Analysis](./Gitman/C2/C2.html)</ul>
+            <ul>[Chapter 3: Cash Flow and Financial Planning](./Gitman/C3/C3.html)</ul>
+            <ul>[Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
+            <ul>[Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
 
 Lang, S.,
   <ul><b>\*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
             <ul>
-            	[Chapter 1: Vector Spaces](http://www.selectedsolutions.net/Lang/LinAlg/C1/C1.html)
+            	[Chapter 1: Vector Spaces](./Lang/LinAlg/C1/C1.html)
             </ul>
   </ul>
   <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
             <ul>
-            	<b>\*</b> [Chapter 1: Vectors](http://www.selectedsolutions.net/Lang/CalcOfSevVar/C1/C1.html)
+            	<b>\*</b> [Chapter 1: Vectors](./Lang/CalcOfSevVar/C1/C1.html)
             </ul>
             <ul>
-            	[Chapter 2: Differentiation of Vectors](http://www.selectedsolutions.net/Lang/CalcOfSevVar/C2/C2.html)
+            	[Chapter 2: Differentiation of Vectors](./Lang/CalcOfSevVar/C2/C2.html)
             </ul>
             <ul>
-                <b>\*</b> [Chapter 5: Maximum and Minimum](http://www.selectedsolutions.net/Lang/CalcOfSevVar/C5/C5.html)</ul>
+                <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CalcOfSevVar/C5/C5.html)</ul>
             <ul>
-                [Chapter 8: Curve Integrals](http://www.selectedsolutions.net/Lang/CalcOfSevVar/C8/C8.html)</ul>
+                [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
 
    1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
-                [Chapter 1](http://www.selectedsolutions.net/Lang/ComplexAnalysis/C1.html)
+                [Chapter 1](./Lang/ComplexAnalysis/C1.html)
             </ul>
   </ul>
 Ross, S., 1992, <b>\*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
             <ul>
-                [Chapter 1](http://www.selectedsolutions.net/Ross/APMwOA/C1.html)
+                [Chapter 1](./Ross/APMwOA/C1.html)
             </ul>
 
 Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
             <ul>
-                [Chapter 0: Review](http://www.selectedsolutions.net/Sullivan/Review/Review.html)
+                [Chapter 0: Review](./Sullivan/Review/Review.html)
             </ul>
             <ul>
-                [Chapter 1: Equations and Inequalities](http://www.selectedsolutions.net/Sullivan/C1/C1.html)
+                [Chapter 1: Equations and Inequalities](./Sullivan/C1/C1.html)
             </ul>
             <ul>
-                [Chapter 2: Graphs](http://www.selectedsolutions.net/Sullivan/C2/C2.html)
+                [Chapter 2: Graphs](./Sullivan/C2/C2.html)
             </ul>
             <ul>
-                [Chapter 9: Applications of Trigonometric Functions](http://www.selectedsolutions.net/Sullivan/C9/C9.html)
+                [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
             </ul>
 
 Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edition</i>, Pearson, Boston.
             <ul>
-                [Chapter 5: Discrete Probability Distributions](http://www.selectedsolutions.net/Triola/C5/C5.html)
+                [Chapter 5: Discrete Probability Distributions](./Triola/C5/C5.html)
             </ul>
             <ul>
-                [Chapter 11: Goodness-of-Fit and Contingency Tables](http://www.selectedsolutions.net/Triola/C11/C11.html)
+                [Chapter 11: Goodness-of-Fit and Contingency Tables](./Triola/C11/C11.html)
             </ul>
             <ul>
-                [Chapter 12: ANOVA](http://www.selectedsolutions.net/Triola/C12/C12.html)
+                [Chapter 12: ANOVA](./Triola/C12/C12.html)
             </ul>
 
 
 ## Original Work
 
-\* Goldsmith, D. L., 2020, [<i>Modeling U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](http://www.selectedsolutions.net/COVID-19/COVID19.html),  SelectedSolutions.net, Olympia, WA.
+\* Goldsmith, D. L., 2020, [<i>Modeling U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](./COVID-19/COVID19.html),  SelectedSolutionsDotNet, Olympia, WA.
 
-Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](http://www.selectedsolutions.net/DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutions.net, Olympia, WA.<br>
+Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
-Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](http://www.selectedsolutions.net/Misc/Ellipse/TwoTheorems.html),  SelectedSolutions.net, Olympia, WA.<br>
+<b>BROKEN Links</b>Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipse/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
-Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](http://www.selectedsolutions.net/Misc/BinThm.html),  SelectedSolutions.net, Olympia, WA.<br>
+Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](./Misc/BinThm.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
-Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutions.net, Olympia, WA.<br>
-$~~~~$[Full Version](http://www.selectedsolutions.net/Misc/Fibonacci.html)$~~~~$[Abridged Version](http://www.selectedsolutions.net/Misc/Fibonacci_abridged.html)
+<b>BROKEN Links</b> Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
+$~~~~$[Full Version](./Misc/Fibonacci.html)$~~~~$[Abridged Version](./Misc/Fibonacci_abridged.html)
 
-Goldsmith, D. L., 2016, [<i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i>](http://www.selectedsolutions.net/Misc/Mortgage.html),  SelectedSolutions.net, Olympia, WA.<br>
+Goldsmith, D. L., 2016, [<i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i>](./Misc/Mortgage.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 ## Selected Answers on Quora
 
-["What is complex analysis all about beyond just saying that its calculus with complex numbers?"](https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9) (127 upvotes)
+["What is complex analysis all about beyond just saying that its calculus with complex numbers?"](https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9) (208 upvotes)
 
-["Why can’t $\displaystyle \frac{\sin x}{x}$ be integrated?"](https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9) (53 upvotes)
+["Why can’t $\displaystyle \frac{\sin x}{x}$ be integrated?"](https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9) (51 upvotes)
 
-["Why does $e^{i\pi}= -1$"](https://www.quora.com/Why-does-e-i-pi-+-1-0/answer/David-Goldsmith-9) (8 upvotes)
-
-<div class="dropdown">
-    <h2 class="dropmenu">Code Samples</h2>
-      <div class="dropdown-content-wide" style="min-width: 75px">
-        <a href="https://gist.github.com/OlyDLG/0913c4e2ae6bc34c8b13bd3c43f013a1">C++</a>
-    </div>
-</div>
+["Why in the world would $e^{i\pi}= -1$"](https://www.quora.com/Why-in-the-world-would-e-i-pi-1/answer/David-Goldsmith-9) (9 upvotes)
 
 <p>
 Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
