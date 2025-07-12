@@ -105,7 +105,7 @@ Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edi
 
 Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
-<b>BROKEN Links</b>Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipse/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipses/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](./Misc/BinThm.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
