@@ -1,0 +1,265 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>TwoTheorems</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style></head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<p>\(\definecolor{red}{RGB}{255,0,0}
+\definecolor{orange}{RGB}{255, 165, 0}
+\definecolor{yellow}{RGB}{255,255,0}
+\definecolor{green}{RGB}{0,255,0}
+\definecolor{indigo}{RGB}{0,0,255}
+\definecolor{violet}{RGB}{138,43,226}
+\definecolor{black}{RGB}{0,0,0}\)
+<style>
+body {font-family: Palatino}
+</style></p>
+
+<h4><center><i>Two Theorems on Ellipses</i></h4>
+
+<h4><center>&copy; 2017 by</h4>
+
+<h4><center>David Lawrence Goldsmith</h4>
+
+<h4><center>for</h4>
+
+<h4><center><a href="http://www.selectedsolutions.net">www.selectedsolutions.net</a></h4>
+
+<p><br>
+Note: Both of these Problems are exercises (not worked examples) from Kline, M., 1967.&nbsp; <i>Calculus: An Intuitive and Physical Approach.</i>&nbsp; Wiley, New York.; but are interesting and important enough results on their own to warrant independent presentation.&nbsp; (Plus, I had cause to work through them in my tutoring <q>adventures,</q> and one of the points of selectedsolutions.net is to record and present non-trivial exercises I have the pleasure to complete.)</p>
+
+<h5>The (Geometric) Orthogonality of Confocal Ellipses and Hyperbolae</h5>
+
+<p><u>Problem Statement</u>: </p>
+
+<p>\(~~~~~\)<i>Show that confocal ellipses and hyperbolae (i.e., ellipses and hyperbolae sharing the same foci) are orthogonal to one another, i.e., intersect one another at right angles.</i></p>
+
+<p><u>Solution</u>: </p>
+
+<p>\(~~~~~\)First, let us recall what it means for two non-linear curves to intersect in a right angle: it means that the <i>tangent lines</i> to those curves at the point of intersection form a right angle.&nbsp; Of course, the derivative of a curve at a point gives the slope of the tangent line to the curve at that point.&nbsp; Finally, for oblique lines, i.e., lines parallel to neither the \(x\) nor the \(y\) axis, two such lines are perpendicular if and only if the product of their slopes is \(-1\).&nbsp; (It is left to the Reader to show that, if an ellipse and a hyperbola are confocal, then the above restriction to considering only oblique lines doesn&#39;t limit the applicability of our proof.&nbsp;  Hint: where do these curves, suitably transformed, have non-oblique tangents?&nbsp; Can such points <i>ever</i> be points of intersection of <i>confocal</i> ellipses and hyperbolae?&nbsp; Proof?)</p>
+
+<p>\(~~~~~\)The above lists the fundamental properties underlying our proof: we shall derive general formulae for the derivatives of the given curves, and formulae for the coordinates of the points of intersection; then we shall substitute the latter into the product of the former; finally, simplification will show that said product is identically equal to \(-1\).</p>
+
+<p>\(~~~~~\)Without loss of generality (w.l.o.g.), we may assume the curves rotated and translated such that the shared foci are at \((\pm c, 0)\) (for if not, start by doing that, which is always possible).&nbsp; Thus the general equations for each may be written as:</p>
+
+<p>\[~~~~~~~~~~~~~~~~~~~~~\text{Ellipse: }\frac{x^2}{a_E^2} + \frac{y^2}{a_E^2 - c^2} = 1\]
+\[\text{Confocal Hyperbola: }\frac{x^2}{a_H^2} - \frac{y^2}{c^2 - a_H^2} = 1\]</p>
+
+<p>Using implicit differentiation on the ellipse equation yields:</p>
+
+<p>\[\frac{2x}{a_E^2}dx + \frac{2y}{a_E^2 - c^2}dy = 0 \implies \frac{dy_E}{dx_E} = \frac{c^2 - a_E^2}{a_E^2}\frac{x_E}{y_E}\]
+and using it on the confocal hyperbola equation yields:
+\[\frac{2x}{a_H^2}dx - \frac{2y}{c^2 - a_H^2}dy = 0 \implies \frac{dy_H}{dx_H} = \frac{c^2 - a_H^2}{a_H^2}\frac{x_H}{y_H}\]</p>
+
+<p>i.e., the expression for their derivatives is formally the same:</p>
+
+<p>\[\frac{dy}{dx} = \frac{c^2 - a^2}{a^2}\frac{x}{y}\]</p>
+
+<p>(The Reader surprised by this result should spend some effort to understand why this same formula gives qualitatively different results for the two distinct types of curves; hint: what&#39;s the difference in the relationship between \(a\) and \(c\) for the two different curves?)&nbsp; Thus the product of the slopes, \(m_Em_H\), at a point of intersection, i.e., a point where both curves share the same \(x\) and \(y\) coordinates, is given by:</p>
+
+<p>\[m_Em_H = \left(\frac{c^2 - a_E^2}{a_E^2}\right)\left(\frac{c^2 - a_H^2}{a_H^2}\right)\frac{x^2}{y^2}\]</p>
+
+<p>At this point we observe that to compute the required product, we will not actually need the values of \(x\) and \(y\), but simply their squares; we will see momentarily why this is <q>fortunate.</q></p>
+
+<p>\(~~~~~\)To find these squares, we first <q>clear the denominators,</q> from the original equations, yielding:</p>
+
+<p>\[(a_E^2 - c^2)x^2 + a_E^2y^2 = a_E^2(a_E^2 - c^2)\]
+\[(c^2 - a_H^2)x^2 - a_H^2y^2 = a_H^2(c^2 - a_H^2)\]</p>
+
+<p>then multiply the top equation through by \(a_H^2\) and the bottom one through by \(a_E^2\) yielding:</p>
+
+<p>\[a_H^2(a_E^2 - c^2)x^2 + a_E^2a_H^2y^2 = a_E^2a_H^2(a_E^2 - c^2)\]
+\[a_E^2(c^2 - a_H^2)x^2 - a_E^2a_H^2y^2 = a_E^2a_H^2(c^2 - a_H^2)\]</p>
+
+<p>and then add these two equations to eliminate \(y^2\), yielding:</p>
+
+<p>\[c^2(a_E^2 - a_H^2)x^2 = a_E^2a_H^2(a_E^2 - a_H^2) \implies\]
+\[x^2 = \frac{a_E^2a_H^2}{c^2}\]</p>
+
+<p>(Note: why don&#39;t we have to worry about \(a_E^2 - a_H^2 = 0\)?)</p>
+
+<p>\(~~~~~\)Substituting this into the first <q>denominator-cleared</q> equation and dividing through by \(a_E^2\) yields:</p>
+
+<p>\[(a_E^2 - c^2)\frac{a_H^2}{c^2} + y^2 = (a_E^2 - c^2) \implies\]
+\[y^2 = (a_E^2 - c^2)\left[1 - \frac{a_H^2}{c^2}\right] \implies\]
+\[\frac{x^2}{y^2} = \frac{a_E^2a_H^2}{(a_E^2 - c^2)(c^2 - a_H^2)}\]</p>
+
+<p>Substituting this into our formula for \(m_Em_H\) yields:</p>
+
+<p>\[m_Em_H = \left(\frac{c^2 - a_E^2}{a_E^2}\right)\left(\frac{c^2 - a_H^2}{a_H^2}\right)\left[\frac{a_E^2a_H^2}{(a_E^2 - c^2)(c^2 - a_H^2)}\right] = -1\]</p>
+
+<p>\(\blacksquare\)</p>
+
+<p>\(~~~~~\)But what&#39;s the big deal?&nbsp; So confocal ellipses and hyperbolas intersect at right angles, big whoop, who cares?&nbsp; Well, aside from the fact that there need be no other relationship between a given ellipse and a given hyperbola for this to hold (which, in the Author&#39;s opinion, is, in and of itself, quite remarkable), let&#39;s make sure we understand the <q>breadth</q> of this result.&nbsp; Look at Figure 1 below, showing members of families of confocal ellipses and hyperbolae, and observe that it&#39;s not just the <q>center</q> ellipse that&#39;s orthogonal to just the <q>center</q> hyperbola, nor just the outer-most (inner-most) ellipse that&#39;s orthogonal to just the outer-most (inner-most) hyperbola: because <i>all</i> the ellipses and <i>all</i> the hyperbolae in Figure 1 are confocal, <i>each</i> ellipse is orthogonal to <i>each</i> hyperbola at their points of intersection!&nbsp; I don&#39;t know about you, but I consider this exceedingly remarkable!</p>
+
+<p><center><img src="http://www.selectedsolutions.net/Misc/ConfocalEllipsesHyperbolae.JPG"></center>
+<center>Figure 1: Confocal Ellipses and Hyperbolae</center></p>
+
+<p><center>-------------------------------</center>
+<center><img src="http://www.selectedsolutions.net/Misc/Ellipse/ERP_annot.jpeg"></center>
+<center>Figure 2: The Ellipse Reflection Property</center></a></p>
+
+<h5>The <q>Reflection Property</q> of Ellipses</h5>
+
+<p><u>Problem Statement</u>:<br> </p>
+
+<p>\(~~~~~\)(Backstory from Optics: a light ray, traveling in a straight line and bouncing off a <q>perfect,</q> flat mirror, obeys the famous law <q>(Acute) Angle of Incidence = (Acute) Angle of Reflection</q>* (AAI=AAR), i.e., whatever angle, \(a\), the ray makes with the mirror <q>coming in</q>, is also the (acute) angle it makes with the mirror <q>coming out.</q>&nbsp; This Law extends to curved mirrors, where the angles of incidence and reflection are measured relative to the tangent to the curve of the mirror at the point of incidence.&nbsp; With this background, and making reference to Figure 2 above, we can now state the Property:)</p>
+
+<p>\(~~~~~\)<i>A light ray, obeying AAI=AAR and passing through one focus of a mirror with elliptical cross-section, will be reflected by said mirror through the ellipse&#39;s other focus</i> (<i>ad infinitum</i>, if the mirror is a complete ellipse).</p>
+
+<p><u>Solution</u>:</p>
+
+<p>\(~~~~~\)Since we are to assume AAI=AAR, where the angles are measured relative to the tangent, \(T\), to the ellipse at the point of incidence, \(P\), what we need to show is: given line \(M\) as that between one focus and \(P\); and line \(L\) as that through \(P\) and having slope such that its (acute) angle with \(T\) is the same as that between \(M\) and \(T\); this \(L\) passes through the other focus, regardless of \(P\)&#39;s position on the ellipse.**&nbsp; Equivalently (why?), we can show that if we define \(M\) the same, but \(L\) as the line between \(P\) and the other focus, then \(M\) and \(L\) make the same (acute) angle with \(T\).&nbsp; For the fun of it, we will show it both ways, starting with the second.</p>
+
+<p><u>Proof 1</u><br></p>
+
+<p>\(~~~~~\)As above, we may assume, w.l.o.g., that the ellipse is translated and rotated such that its foci are at \((\pm c,0).~\) In Analytic Geometry we learn that the tangent (function) of the angle between two (oblique) lines is:<br></p>
+
+<p>\(~~~~~\tan \theta_{L_1L_2} = \frac{m_2 - m_1}{1 + m_1m_2}\), where \(\theta_{L_1L_2}\) is the angle <i>from</i> line \(L_1\) <i>to</i> line \(L_2\), and \(m_i\) is the slope of line \(i\).</p>
+
+<p>Now, as derived in the previous Problem, the slope of the tangent (line) at \(P\), \(m_T(P)\), is:</p>
+
+<p>\[m_T(P) = \frac{dy}{dx}\big|_P = \frac{c^2 - a^2}{a^2}\frac{x_P}{y_P} = - \frac{b^2}{a^2}\frac{x_P}{y_P};\]</p>
+
+<p>the slope of \(M\), \(m_M\), is \(\frac{y_p - 0}{x_p - c} = \frac{y_p}{x_p - c}\); and the slope of \(L\), \(m_L\), is assumed to be \(\frac{y_p - 0}{x_p - (-c)} = \frac{y_p}{x_p + c}.~\) (Henceforth, except where noted otherwise, \(x_P\) and \(y_P\) will be the only \(x\) and \(y\) we need, so we will now <q>drop the \(P\)&#39;s.</q>)</p>
+
+<p>\(~~~~~\)Thus \[\tan\theta_{TM} = \frac{m_M - m_T}{1+m_Mm_T} = \frac{\frac{y}{x - c} + \frac{b^2x}{a^2y}}{1-\frac{\color{red}y\color{black}}{x - c}\frac{b^2x}{a^2\color{red}y\color{black}}} = \frac{\color{red}\frac{1}{a^2(x-c)}}{\color{red}\frac{1}{a^2(x-c)}}\frac{a^2y+b^2\frac{x(x-c)}{y}}{a^2(x-c)-b^2x} = \frac{a^2y^2+b^2x^2-b^2cx}{((a^2-b^2)x-a^2c)y} = \frac{a^2y^2+b^2x^2-b^2cx}{(c^2x-a^2c)y}\]</p>
+
+<p>whereas \[\tan\theta_{LT} = \frac{m_T - m_L}{1+m_Lm_T} = \frac{-\frac{b^2x}{a^2y}-\frac{y}{x + c}}{1-\frac{\color{red}y}{x + c}\frac{b^2x}{a^2\color{red}y}} =\frac{\color{red}\frac{1}{a^2(x+c)}}{\color{red}\frac{1}{a^2(x+c)}}\frac{-b^2\frac{x(x+c)}{y}-a^2y}{a^2(x+c)-b^2x} = -\frac{a^2y^2+b^2x^2+b^2cx}{((a^2-b^2)x+a^2c)y} = \color{violet}-\color{black}\frac{a^2y^2+b^2x^2+b^2cx}{(c^2x+a^2c)y}\]</p>
+
+<p>where we&#39;ve highlighted factors which cancel in red.&nbsp; (Note the <q>\(-\)</q> out in front of the second result, highlighted in violet.)</p>
+
+<p>\(~~~~~\)Now, we haven&#39;t really used the fact that we&#39;re talking about an ellipse yet, i.e., that \(x\) and \(y\) are related by:
+\[\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \implies y^2 = b^2\left(1 - \frac{x^2}{a^2}\right)\]so it&#39;s high time we do!
+(Yes, we used the derivative of this relationship, but recall from the previous Problem that this, by itself, left open the question of whether we&#39;re talking about an ellipse or a hyperbola.)&nbsp; Substituting in for \(y^2\) in the first ratio yields:
+\[\frac{a^2y^2+b^2x^2-b^2cx}{(c^2x-a^2c)y} = \frac{a^2b^2\left(1-\frac{x^2}{a^2}\right)+b^2x^2-b^2cx}{(c^2x-a^2c)y} = \frac{a^2b^2\color{red}-b^2x^2+b^2x^2\color{black}-b^2cx}{(c^2x-a^2c)y} = \frac{b^2\color{red}(a^2-cx)}{cy\color{red}(cx-a^2)} = -\frac{b^2}{cy}\]</p>
+
+<p>while doing so in the second ratio yields:
+\[-\frac{a^2y^2+b^2x^2+b^2cx}{(c^2x+a^2c)y} = -\frac{a^2b^2\left(1-\frac{x^2}{a^2}\right)+b^2x^2+b^2cx}{(c^2x+a^2c)y} = -\frac{a^2b^2\color{red}-b^2x^2+b^2x^2\color{black}+b^2cx}{(c^2x+a^2c)y} = -\frac{b^2\color{red}(a^2+cx)}{cy\color{red}(cx+a^2)} = -\frac{b^2}{cy}\]</p>
+
+<p>\(\blacksquare\)</p>
+
+<p><u>Proof 2</u><br></p>
+
+<p>\(~~~~~\)Here&#39;s the other way I promised, namely, by showing that the line passing through \(P\) and making the same angle, \(a\), with the tangent, \(T\), as the incident ray, \(M\), passes through the other focus, \((-c,0).~\) We shall find the equation of that line, using the <q>point-slope</q> form, \(\frac{y-y_0}{x-x_0} = m\), (\((x,y)\) here being generic, i.e., not \((x_P,y_P)\)), since a point and a slope are the two pieces of information we are <q>given</q> (in quotes because we aren&#39;t actually given the slope, but we can calculate it from the given information), and then we will show that \((-c,0)\) makes that equation a true statement.</p>
+
+<p>\(~~~~~\)Now, in \(\frac{y-y_0}{x-x_0} = m\), given the data of our problem, \((x_0,y_0) = (x_P,y_P)\), i.e., the point the line is stipulated to pass through, and we want to show that \((x,y) = (-c, 0)\) makes the equation a true statement, i.e., we want to show:
+\[\frac{0-y_P}{-c-x_P} = \frac{y_P}{x_P+c} = m_L.\]
+(Now back to \((x,y) = (x_P,y_P)\).)&nbsp; To independently find \(m_L\), we note that: 
+\[\tan a = \frac{m_T - m_M}{1+m_Tm_M} = \frac{-\frac{b^2x}{a^2y}-\frac{y}{x-c}}{1-\frac{b^2xy}{a^2(x-c)y}} = \frac{b^2x^2-b^2cx + a^2y^2}{[b^2x - a^2(x-c)]y} = \frac{\color{red}b^2x^2\color{black}+b^2\color{blue}(a^2 - cx)\color{red}-b^2x^2}{c\color{blue}(a^2 - cx)\color{black}y} = \frac{b^2}{cy}\]
+whereas, by hypothesis, it also equals:
+\[\tan a = \frac{m_L - m_T}{1+m_Tm_L}.\]
+Equating these results, we have:
+\[\frac{m_L - m_T}{1+m_Tm_L} = \frac{b^2}{cy}\]
+and solving for \(m_L\) yields:
+\[m_L = \frac{b^2 + m_Tcy}{cy - b^2m_T} = \frac{b^2-\frac{b^2cx\color{red}y}{a^2\color{red}y}}{cy + \frac{b^4x}{a^2y}} = \frac{b^2(a^2-cx)y}{a^2cy^2 + b^4x} = \frac{\color{red}b^2\color{black}(a^2-cx)y}{a^2\color{red}b^2\color{black}c(1-x^2/a^2) + \color{red}b^2\color{black}b^2x} = \frac{(a^2-cx)y}{a^2c-cx^2 + a^2x - c^2x}\]
+\[= \frac{\color{blue}(a^2 - cx)\color{black}y}{\color{blue}(a^2 - cx)\color{black}(x+c)}\]
+\[ = \frac{y}{x + c}\]</p>
+
+<p>\(\blacksquare\)</p>
+
+<h5>Notes</h5>
+
+<p><footnote>* Specifying <q>Acute</q> means that one always takes the <q>\(\lt \frac{\pi}2\)</q> measure of an angle.</footnote></p>
+
+<p><footnote>** There are two points on the ellipse that have to be treated separately: which points and why?</footnote></p>
+
+<h5>Credits</h5>
+
+<p>Document created on a Mac with <a src="http://lightpaper.42squares.in/">LightPaper</a> by 42 Squares, graphs created on an iPhone with <a src="https://itunes.apple.com/us/app/scientific-graphing-calculator-2/id1128480893?mt=12">Scientific Graphing Calculator 2</a> by William Jockusch.</p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>

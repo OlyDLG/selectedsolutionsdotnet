@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>index</title><style>/* 
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>BinThm</title><style>/* 
 Name: GeekPark article style for Mou app
 Author: hzlzh(hzlzh.dev@gmail.com)
 URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
@@ -79,22 +79,270 @@ pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-he
 pre code, pre tt{ background-color:transparent; border:none; }
 @media screen and (min-width: 914px){
     body{ width:854px; margin:0 auto; }
-}</style>
-<style type="text/css">
-</style>
-</head>
+}</style></head>
 <body><style>
-  body {font-family: Palatino;
-    background-image: "./PreciousBkgrnd2.png";}
+body {font-family: Palatino}
 </style>
 
-<p><body>
-<p><center><big><big><big><big>Welcome to<br>
-<big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p></p>
+<h4><center><i>Binomial Expansion Formula &amp; Corollaries</i></h4>
 
-<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site.
+<h4><center>&copy; 2017, 2020 by</h4>
 
-<p><b>*-ed items are Data Science related</b>
+<h4><center>David Lawrence Goldsmith</h4>
+
+<h4><center>for</h4>
+
+<h4><center><a href="http://www.selectedsolutions.net">www.selectedsolutions.net</a></h4>
+
+<h5>Preface</h5>
+
+<p>These are all <q>elementary-to-intermediate</q> results, and the first three are <q>Standard</q> as well (see, e.g., <i>CRC Standard Mathematical Tables</i>) and I make no claim to originality of statement or of proof.&nbsp; I provide them here simply as a <q>public service</q>; my only request is that if you utilize this content in some way, please cite this document properly.
+<br><br></p>
+
+<h5>Binomial Expansion Formula</h5>
+
+<p>\[(1+b)^N = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n}\]
+(Taking \(0!\) and \(0^0 \equiv 1.\))<br>
+<b>Proof</b>: By induction: it&#39;s true for \(N=0: \sum_{n=0}^0 \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right)b^{N-n} = \left(\!
+  \begin{array}{c}
+    0 \\
+    0
+  \end{array}
+  \!\right)b^{0-0} = 1 = (1+b)^0~\forall b\)<br></p>
+
+<p>Now assume true for \(N \in \mathbb{W}\); we&#39;ll show this implies true for \(N+1\):</p>
+
+<p>\[\sum_{n=0}^{N+1} \left(\!
+  \begin{array}{c}
+    N + 1\\
+    n
+  \end{array}
+  \!\right)b^{N-n+1} = \left(\!
+  \begin{array}{c}
+    N + 1\\
+    0
+  \end{array}
+  \!\right) b^{N+1} + \sum_{n=1}^{N} \left(\!
+  \begin{array}{c}
+    N + 1\\
+    n
+  \end{array}
+  \!\right)b^{N-n+1} + \left(\!
+  \begin{array}{c}
+    N + 1\\
+    N + 1
+  \end{array}
+  \!\right) b^0 =\]
+  <br>
+  \[b^{N+1} + \sum_{n=1}^{N} \frac{(N+1)!}{n!(N+1-n)!} b^{N+1-n} + 1 = b^{N+1} + \sum_{n=1}^{N} \frac{(N - n + 1 + n)N!}{n!(N+1-n)!} b^{N+1-n} + 1 =\]<br>
+\[b^{N+1} + \sum_{n=1}^{N} \left[\frac{(N-n+1)N!}{n!(N-n+1)!} + \frac{nN!}{n!(N-(n-1))!}\right] b^{N+1-n} + 1 =\]
+<br>
+\[b^{N+1} + \sum_{n=1}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n+1} + \sum_{n=1}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n-1
+  \end{array}
+  \!\right) b^{N-(n-1)} + 1 =\]
+  <br>
+  \[b\left[b^N + \sum_{n=1}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n}\right] + \left[\sum_{n=0}^{N-1}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} + 1\right] = b \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} + \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} =\]
+  <br>
+  \[(b+1)(b+1)^N~(\because \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n}) = (1+b)^N \text{by assumption}) =(1+b)^{N+1} \\\]
+\(\blacksquare\)
+<br></p>
+
+<h5>Corollary 1</h5>
+
+<p>\[(a+b)^N = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) a^n b^{N-n}
+  \]</p>
+
+<p><b>Proof</b>: if \(a = 0\), it&#39;s true by (careful) inspection (and our definition \(0^0 \equiv 1\)), so assume \(a \ne 0.~\) Then 
+\[(a + b)^N = a^N (1+(b/a))^N = a^N \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 1^n \left(\frac{b}{a}\right)^{N-n} = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) a^{N-(N-n)} b^{N-n} = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) a^n b^{N-n} \\\]
+\(\blacksquare\)</p>
+
+<p>Note: this is why one proves the B.E.F. as above, and then derives the <q>general</q> result as a corollary; alternatively, if one insists on calling our <q>Corollary 1</q> the B.E.F., one can call our B.E.F. a <q>Lemma</q> (but the Reader should recognize that it&#39;s really <q>six one way, half-a-dozen the other.</q>) 
+<br><br></p>
+
+<h5>Corollary 2</h5>
+
+<p>\[\sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) = 2^N\]
+  <br>
+<b>Proof</b>: \[\sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 1^n 1^{N-n} = (1+1)^N = 2^N\\\]
+\(\blacksquare\)</p>
+
+<p>Note: this <q>explains</q> why the sum of each row of <a href="https://en.wikipedia.org/wiki/Pascal&#x27;s_triangle">Pascal&#39;s Triangle</a> is 2, raised to the power of the-row-number-minus-one (or simply the row number, if one starts numbering from zero).
+<br><br></p>
+
+<p>(You&#39;ll probably never have to use these next six&mdash;except perhaps in an exam of some sort or another&mdash;they&#39;re just given to show some of the <q>creative</q> ways one can use this little tidbit of mathematics in combination with <a href="https://en.wikipedia.org/wiki/Euler%27s_formula">Euler&#39;s Formula</a>.)
+<br><br></p>
+
+<h5>Corollary 3</h5>
+
+<p>\[\sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) \cos{[(2n-N)\theta]} = (2\cos\theta)^N\]
+  \[\sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) \sin{[(2n-N)\theta]} = 0\]
+<b>Proof</b>: For \(\theta \in \mathbb{R}\),
+\[(2\cos \theta)^N = \left(e^{i\theta} + e^{-i\theta}\right)^N = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) e^{in\theta}e^{-i(N-n)\theta} = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) e^{i(2n-N)\theta} =\] \[\sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) \cos{[(2n-N)\theta]} + i\sin{[(2n-N)\theta]} \implies \text{both our results.}\\\]  \(\blacksquare\)
+<br><br></p>
+
+<h5>Corollary 4</h5>
+
+<p>\[\Re{[(2i\sin{\theta})^N]} = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right)(-1)^{N-n}\cos{[(2n-N)\theta]}\]
+\[\Im{[(2i\sin{\theta})^N]} = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right)(-1)^{N-n}\sin{[(2n-N)\theta]}\]
+(where \(\Re\) and \(\Im\) are, respectively, the real and imaginary parts of their argument.)</p>
+
+<p><b>Proof</b>: Left to the Reader.&nbsp; (Hint: use the method used to prove <q>Corollary 3,</q> but don&#39;t <q>stop</q> as soon.)
+<br><br></p>
+
+<p><strong>Derivative and Antiderivative Formulae</strong> (<q>Inspired</q> by a <a href="https://www.quora.com/What-is-the-nth-derivative-of-sin-5x-by-De-Moivres-formula">question on Quora</a>)</p>
+
+<p>\(\begin{eqnarray}
+\displaystyle\frac{d^n}{dx^n}(\cos^mx) &amp; = &amp; \frac{d^n}{dx^n}\left[\left(\frac{e^{ix}+e^{-ix}}2\right)^m\right] = \frac{d^n}{dx^n}\left(\frac1{2^m}\sum_{k=0}^m\left(\begin{array}{c} m \\ k \end{array}\right)(e^{ix})^k(e^{-ix})^{m-k}\right) \\ 
+&amp; = &amp; \frac1{2^m}\sum_{k=0}^m \left(\begin{array}{c} m \\ k \end{array}\right) \frac{d^n}{dx^n}\left(e^{i(2k-m)x}\right) = \boxed{\frac1{2^m}\sum_{k=0}^m \left(\begin{array}{c} m \\ k \end{array}\right) i^n(2k-m)^n \left(e^{i(2k-m)x}\right)} \\
+&amp; = &amp; \frac{i^n}{2^m}  \left[\left(\begin{array}{c} m \\ 0 \end{array}\right) (-m)^n e^{-imx} + \sum_{k=1}^{m-1}\left(\begin{array}{c} m \\ k \end{array}\right) (2k-m)^n \left(e^{i(2k-m)x}\right) + \left(\begin{array}{c} m \\ m \end{array}\right) m^n e^{imx}\right] \\
+&amp; = &amp; \frac{i^n}{2^m} \left[m^n\left(e^{imx}+(-1)^ne^{-imx}\right) + \sum_{k=1}^{m-1}\left(\begin{array}{c} m \\ k \end{array}\right) (2k-m)^n \left(e^{i(2k-m)x}\right)\right] \\
+&amp; = &amp; \frac{i^n}{2^m} \sum_{k=1}^{m-1}\left(\begin{array}{c} m \\ k \end{array}\right) (2k-m)^n \left(e^{i(2k-m)x}\right) + m^n \times \left\{\begin{array}{cc}\displaystyle \frac{(-1)^{n/2}}{2^{m-1}}\cos(mx), &amp; n\text{ even} \\
+\displaystyle -\frac{(i)^{n-1}}{2^{m-1}}\sin(mx), &amp; n\text{ odd,}\end{array}\right.
+\end{eqnarray}\)</p>
+
+<p>where I’ve boxed the form most useful for programmatic calculations, but continued the calculation just a little to <q>suggest</q> how/why the symmetry of the binomial coefficients, i.e., the fact that \(\left(\begin{array}{c} m \\ k \end{array}\right) = \left(\begin{array}{c} m \\ m-k \end{array}\right)\) results in the boxed expression always being real, despite the remaining presence of the imaginary unit to a possibly odd power.
+<br><br></p>
+
+<p>\(\displaystyle\frac{d^n}{dx^n}(\sin^mx)\): Left to the Reader.&nbsp; </p>
+
+<p>Answer: \(\boxed{\frac{i^{m+n}}{2^m}\sum_{k=0}^m(-1)^k\left(\begin{array}{c} m \\ k \end{array}\right)(2k-m)^n\left(e^{i(2k-m)x}\right)}\)
+<br><br></p>
+
+<p>\(\begin{eqnarray}
+\displaystyle\frac{d^{-n}}{dx^{-n}}(\sin^mx) &amp; = &amp; \frac{d^{-n}}{dx^{-n}}\left[\left(\frac{e^{ix}-e^{-ix}}{2i}\right)^m\right] = \frac1{(2i)^m}\frac{d^{-n}}{dx^{-n}} \sum_{k=0}^m \left(\begin{array}{c} m \\ k \end{array}\right) (-1)^{m-k} e^{ikx}e^{-i(m-k)x} = \frac1{(2i)^m}\sum_{k=0}^m \left(\begin{array}{c} m \\ k \end{array}\right) (-1)^{m-k} \frac{d^{-n}}{dx^{-n}} e^{i(2k-m)x} \\
+&amp; = &amp; \displaystyle \left(\frac{-1}{2i}\right)^m\sum_{k=0}^m \left(\frac1{-1}\right)^k \left(\begin{array}{c} m \\ k \end{array}\right) i^{-n}(2k-m)^{-n} e^{i(2k-m)x} = \boxed{\frac{i^{m-n}}{2^m} \sum_{k=0}^m \left(\begin{array}{c} m \\ k \end{array}\right) \frac{(-1)^k}{(2k-m)^n} e^{i(2k-m)x}}
+\end{eqnarray}\)</p>
+
+<p>where \(\displaystyle\frac{d^{-n}}{dx^{-n}} \equiv \underbrace{\int \int \ldots \int}_{n\text{ times}} (dx)^n\)
+<br><br></p>
+
+<p>\(\displaystyle\frac{d^{-n}}{dx^{-n}}(\cos^mx)\): Left to the Reader.&nbsp; </p>
+
+<p>Answer: \(\boxed{\frac1{2^m i^n} \sum_{k=0}^m \left(\begin{array}{c} m \\ k \end{array}\right) \frac{e^{i(2k-m)x}}{(2k-m)^n}}\)
+<br><br></p>
+
+<h5>References</h5>
+
+<p>Beyer, W. H., 1985.&nbsp; <i>CRC Standard Mathematical Tables, \(27^{th}\)Edition</i>.&nbsp; CRC Press, Inc., Boca Raton, FL.</p>
+
+<h3>Credits</h3>
+
+<p>Text layout, MathJax (LaTeX), HTML, and CSS achieved using <a href="http://lightpaper.42squares.in/">LightPaper for Mac by 42Squares</a></p>
+
+<h3>Please Donate:</h3>
 
 <form action="https://www.paypal.com/cgi-bin/webscr"
           method="post"><input name="cmd"
@@ -106,142 +354,6 @@ pre code, pre tt{ background-color:transparent; border:none; }
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
-</p>
-
-<p>General Disclaimers: Solutions to problems from published texts are provided for informational purposes only&mdash;students are advised that they will learn best if, and in any event should always first try to, solve each problem before consulting the solution(s) provided here.&nbsp; In addition, though every effort has been made to proofread and assess the validity of each solution, missed typographical and computational errors are inevitable, thus these solutions are provided <q>as-is,</q> with no guarantees whatsoever, expressed or implied, of any kind, including those of correctness or suitability for any specific purpose.&nbsp; Corrections are welcome and should be directed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
-
-<p><b>Long pages may take a few seconds to load completely, i.e., correctly formatted</b>.</p>
-
-<h2>Featured <q>Exercise</q> (Original Work)</h2>
-
-<p><b>*</b> Goldsmith, D. L., 2020, <a href="http://www.selectedsolutions.net/COVID-19/COVID19.html"><i>Modeling U. S. A. COVID-19 Case Growth: An <q>Exercise</q> in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i></a>,  SelectedSolutions.net, Olympia, WA.</p>
-
-<h2>Text Solution Sets</h2>
-
-<p>Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley &amp; Sons, New York.
-      <ul> Chapter 6: The Laplace Transform
-            <ul><a href="http://www.selectedsolutions.net/BoyceDiPrima/C6/C6S2.html">Section 2: The Solution of Initial Value Problems</a>
-            </ul>
-      </ul>
-      <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul><a href="http://www.selectedsolutions.net/BoyceDiPrima/C9/C9S1.html">Section 1: The Phase Plane: Linear Systems</a>
-            </ul>
-      </ul></p>
-
-<p>Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul><a href="http://www.selectedsolutions.net/Gitman/C1/C1.html">Chapter 1: The Role and Environment of Managerial Finance</a></ul>
-            <ul><a href="http://www.selectedsolutions.net/Gitman/C2/C2.html">Chapter 2: Financial Statements and Analysis</a></ul>
-            <ul><a href="http://www.selectedsolutions.net/Gitman/C3/C3.html">Chapter 3: Cash Flow and Financial Planning</a></ul>
-            <ul><a href="http://www.selectedsolutions.net/Gitman/C4/C4.html">Chapter 4: Time Value of Money</a></ul>
-            <ul><a href="http://www.selectedsolutions.net/Gitman/C5/C5.html">Chapter 5: Risk and Return</a></ul></p>
-
-<p>Lang, S.,
-  <ul><b>*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
-            <ul>
-                <a href="http://www.selectedsolutions.net/Lang/LinAlg/C1/C1.html">Chapter 1: Vector Spaces</a>
-            </ul>
-  </ul>
-  <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
-            <ul>
-                <b>*</b> <a href="http://www.selectedsolutions.net/Lang/CalcOfSevVar/C1/C1.html">Chapter 1: Vectors</a>
-            </ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Lang/CalcOfSevVar/C2/C2.html">Chapter 2: Differentiation of Vectors</a>
-            </ul>
-            <ul>
-                <b>*</b> <a href="http://www.selectedsolutions.net/Lang/CalcOfSevVar/C5/C5.html">Chapter 5: Maximum and Minimum</a></ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Lang/CalcOfSevVar/C8/C8.html">Chapter 8: Curve Integrals</a></ul></p>
-
-<p>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
-            <ul>
-                <a href="http://www.selectedsolutions.net/Lang/ComplexAnalysis/C1.html">Chapter 1</a>
-            </ul>
-  </ul>
-Ross, S., 1992, <b>*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
-            <ul>
-                <a href="http://www.selectedsolutions.net/Ross/APMwOA/C1.html">Chapter 1</a>
-            </ul></p>
-
-<p>Sullivan, M., 2012, <i>Algebra &amp; Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
-            <ul>
-                <a href="http://www.selectedsolutions.net/Sullivan/Review/Review.html">Chapter 0: Review</a>
-            </ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Sullivan/C1/C1.html">Chapter 1: Equations and Inequalities</a>
-            </ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Sullivan/C2/C2.html">Chapter 2: Graphs</a>
-            </ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Sullivan/C9/C9.html">Chapter 9: Applications of Trigonometric Functions</a>
-            </ul></p>
-
-<p>Triola, M. F., with L. Iossi, 2018, <b>*</b><i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.
-            <ul>
-                <a href="http://www.selectedsolutions.net/Triola/C5/C5.html">Chapter 5: Discrete Probability Distributions</a>
-            </ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Triola/C11/C11.html">Chapter 11: Goodness-of-Fit and Contingency Tables</a>
-            </ul>
-            <ul>
-                <a href="http://www.selectedsolutions.net/Triola/C12/C12.html">Chapter 12: ANOVA</a>
-            </ul></p>
-
-<h2>Original Work</h2>
-
-<p>Goldsmith, D. L., 2018, <a href="http://www.selectedsolutions.net/DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html"><i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i></a>,  SelectedSolutions.net, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2017, <a href="http://www.selectedsolutions.net/Misc/Ellipse/TwoTheorems.html"><i>Two Theorems on Ellipses</i></a>,  SelectedSolutions.net, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2017 (<b>new content added 2020</b>), <a href="http://www.selectedsolutions.net/Misc/BinThm.html"><i>Binomial Expansion Formula &amp; Corollaries</i></a>,  SelectedSolutions.net, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutions.net, Olympia, WA.<br>
-\(~~~~\)<a href="http://www.selectedsolutions.net/Misc/Fibonacci.html">Full Version</a>\(~~~~\)<a href="http://www.selectedsolutions.net/Misc/Fibonacci_abridged.html">Abridged Version</a></p>
-
-<p>Goldsmith, D. L., 2016, <a href="http://www.selectedsolutions.net/Misc/Mortgage.html"><i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i></a>,  SelectedSolutions.net, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 1993, <a href="http://www.selectedsolutions.net/Misc/Thesis.pdf"><i>Solids Removal Using Rotating Flow</i> (16MB)</a>, University of Hawai`i, Manoa.  My Thesis for the Master of Science degree in Agricultural Engineering.</p></p>
-
-<p>Goldsmith, D. L., 1984, <a href="http://www.selectedsolutions.net/Misc/FirstPaperProg.pdf"><i>A Program for the <q>First-Principles</q> Estimation of Chemical Thermodynamic Properties: My First Scientific Paper and Program</i></a>, Unpublished.&nbsp; (Prepared in culmination of a summer internship under chemist Denis J. Bogan, Ph. D., in the Combustion Branch, Chemistry Division, Naval Research Laboratory, Anacostia, DC, following my senior year of high school; presented here for nostalgia reasons.)</p>
-
-<h2>Selected Answers on Quora</h2>
-
-<p><a href="https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9"><q>What is complex analysis all about beyond just saying that its calculus with complex numbers?</q></a> (127 upvotes)</p>
-
-<p><a href="https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9"><q>Why can’t \(\displaystyle \frac{\sin x}{x}\) be integrated?</q></a> (53 upvotes)</p>
-
-<p><a href="https://www.quora.com/Why-does-e-i-pi-+-1-0/answer/David-Goldsmith-9"><q>Why does \(e^{i\pi}= -1\)</q></a> (8 upvotes)</p>
-
-<h2>Accepted Submissions</h2>
-
-<p><a href="https://www.simiode.org/events/details/48">DEMARC</a> <a href="http://www.selectedsolutions.net/DEMARC/DEMARCproposal.html">Proposal</a></p>
-
-<div class="dropdown">
-    <h2 class="dropmenu">Code Samples</h2>
-      <div class="dropdown-content-wide" style="min-width: 75px">
-        <a href="http://www.selectedsolutions.net/CodeSamples/Python">Python</a><br>
-
-        <a href="http://www.selectedsolutions.net/CodeSamples/MATLAB">MATLAB</a><br>
-        
-        <a href="https://gist.github.com/OlyDLG/0913c4e2ae6bc34c8b13bd3c43f013a1">C++</a>
-    </div>
-</div>
-
-<h2>Miscellaneous</h2>
-
-<p>Kober, H., 1952, <a href="http://www.selectedsolutions.net/Misc/DictConfReps.pdf"><i>Dictionary of Conformal Representations</i></a>, Dover Publications. (PDF &gt; 110 MB)</p>
-
-<p>
-Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
-
-<p>&copy; 2016-20,  by Goldsmith, D. L.</p>
-
-<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
-
-<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script>
-
-<p></body></p>
 <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
 <script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
 </html>
