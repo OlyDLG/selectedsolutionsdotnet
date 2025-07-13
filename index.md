@@ -112,7 +112,7 @@ Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion F
 <b>BROKEN Links</b> Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
 $~~~~$[Full Version](./Misc/Fibonacci.html)$~~~~$[Abridged Version](./Misc/Fibonacci_abridged.html)
 
-Goldsmith, D. L., 2016, [<i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i>](./Misc/Mortgage.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+Goldsmith, D. L., 2016, [<i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i>](./Misc/MortgageDE/Mortgage.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 ## Selected Answers on Quora
 
