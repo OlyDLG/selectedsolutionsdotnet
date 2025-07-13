@@ -84,7 +84,7 @@ $\blacksquare$
 $~~~~~$But what's the big deal? So confocal ellipses and hyperbolas intersect at right angles, big whoop, who cares? Well, aside from the fact that there need be no other relationship between a given ellipse and a given hyperbola for this to hold (which, in this author's opinion, is, in and of itself, quite remarkable), let's make sure we understand the "breadth" of this result. Look at Figure 1 below, showing members of families of confocal ellipses and hyperbolae, and observe that it's not just the "center" ellipse that's orthogonal to just the "center" hyperbola, nor just the outer-most (inner-most) ellipse that's orthogonal to just the outer-most (inner-most) hyperbola: because <i>all</i> the ellipses and <i>all</i> the hyperbolae in Figure 1 are confocal, <i>each</i> ellipse is orthogonal to <i>each</i> hyperbola at their points of intersection! I don't know about you, but I consider this exceedingly remarkable!
 
 
-<center><img src="./ConfocalEllipsesHyperbolae.jpg"></center>
+<center><img src="./ConfocalEllipsesHyperbolae.jpeg"></center>
 <center>Figure 1: Confocal Ellipses and Hyperbolae</center>
 
 <center>-------------------------------</center>
