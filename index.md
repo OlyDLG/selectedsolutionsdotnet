@@ -30,84 +30,84 @@ Long pages and/or pages with dynamically-generated graphs may take a few seconds
 
 Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
       <ul> Chapter 6: The Laplace Transform
-            <ul>[Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
+            <ul><b>BROKEN Links</b> [Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
             </ul>
       </ul>
       <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul>[Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
+            <ul><b>BROKEN Links</b> [Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
       </ul>
 
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul>[Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
-            <ul>[Chapter 2: Financial Statements and Analysis](./Gitman/C2/C2.html)</ul>
-            <ul>[Chapter 3: Cash Flow and Financial Planning](./Gitman/C3/C3.html)</ul>
-            <ul>[Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
-            <ul>[Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
+            <ul><b>BROKEN Links</b> [Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
+            <ul><b>BROKEN Links</b> [Chapter 2: Financial Statements and Analysis](./Gitman/C2/C2.html)</ul>
+            <ul><b>BROKEN Links</b> [Chapter 3: Cash Flow and Financial Planning](./Gitman/C3/C3.html)</ul>
+            <ul><b>BROKEN Links</b> [Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
+            <ul><b>BROKEN Links</b> [Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
 
 Lang, S.,
   <ul><b>\*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
             <ul>
-            	[Chapter 1: Vector Spaces](./Lang/LinAlg/C1/C1.html)
+            	<b>BROKEN Links</b> [Chapter 1: Vector Spaces](./Lang/LinAlg/C1/C1.html)
             </ul>
   </ul>
   <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
             <ul>
-            	<b>\*</b> [Chapter 1: Vectors](./Lang/CalcOfSevVar/C1/C1.html)
+            	<b>BROKEN Links</b><b>\*</b> [Chapter 1: Vectors](./Lang/CalcOfSevVar/C1/C1.html)
             </ul>
             <ul>
-            	[Chapter 2: Differentiation of Vectors](./Lang/CalcOfSevVar/C2/C2.html)
+            	<b>BROKEN Links</b> [Chapter 2: Differentiation of Vectors](./Lang/CalcOfSevVar/C2/C2.html)
             </ul>
             <ul>
-                <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CalcOfSevVar/C5/C5.html)</ul>
+                <b>BROKEN Links</b> <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CalcOfSevVar/C5/C5.html)</ul>
             <ul>
-                [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
+               <b>BROKEN Links</b> [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
 
    1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
-                [Chapter 1](./Lang/ComplexAnalysis/C1.html)
+               <b>BROKEN Links</b> [Chapter 1](./Lang/ComplexAnalysis/C1.html)
             </ul>
   </ul>
 Ross, S., 1992, <b>\*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
             <ul>
-                [Chapter 1](./Ross/APMwOA/C1.html)
+               <b>BROKEN Links</b> [Chapter 1](./Ross/APMwOA/C1.html)
             </ul>
 
 Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
             <ul>
-                [Chapter 0: Review](./Sullivan/Review/Review.html)
+               <b>BROKEN Links</b> [Chapter 0: Review](./Sullivan/Review/Review.html)
             </ul>
             <ul>
-                [Chapter 1: Equations and Inequalities](./Sullivan/C1/C1.html)
+               <b>BROKEN Links</b> [Chapter 1: Equations and Inequalities](./Sullivan/C1/C1.html)
             </ul>
             <ul>
-                [Chapter 2: Graphs](./Sullivan/C2/C2.html)
+               <b>BROKEN Links</b> [Chapter 2: Graphs](./Sullivan/C2/C2.html)
             </ul>
             <ul>
-                [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
+               <b>BROKEN Links</b> [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
             </ul>
 
 Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edition</i>, Pearson, Boston.
             <ul>
-                [Chapter 5: Discrete Probability Distributions](./Triola/C5/C5.html)
+               <b>BROKEN Links</b> [Chapter 5: Discrete Probability Distributions](./Triola/C5/C5.html)
             </ul>
             <ul>
-                [Chapter 11: Goodness-of-Fit and Contingency Tables](./Triola/C11/C11.html)
+               <b>BROKEN Links</b> [Chapter 11: Goodness-of-Fit and Contingency Tables](./Triola/C11/C11.html)
             </ul>
             <ul>
-                [Chapter 12: ANOVA](./Triola/C12/C12.html)
+               <b>BROKEN Links</b> [Chapter 12: ANOVA](./Triola/C12/C12.html)
             </ul>
 
 
 ## Original Work
 
-\* Goldsmith, D. L., 2020, [<i>Modeling U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](./COVID-19/COVID19.html),  SelectedSolutionsDotNet, Olympia, WA.
+<b>BROKEN Links</b> \* Goldsmith, D. L., 2020, [<i>Modeling U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](./COVID-19/COVID19.html),  SelectedSolutionsDotNet, Olympia, WA.
 
-Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+<b>BROKEN Links</b> Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipses/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
-Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](./Misc/BinThm.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+<b>BROKEN Links</b> Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](./Misc/BinThm.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 <b>BROKEN Links</b> Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
 $~~~~$[Full Version](./Misc/Fibonacci.html)$~~~~$[Abridged Version](./Misc/Fibonacci_abridged.html)
