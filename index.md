@@ -107,7 +107,7 @@ Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edi
 
 Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipses/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
-<b>BROKEN Links</b> Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](./Misc/BinThm.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion Formula & Corollaries</i>](./Misc/Binom/BinThm.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
 $~~~~$[Full Version](./Misc/FibDE/Fibonacci.html)$~~~~$[Abridged Version](./Misc/FibDE/Fibonacci_abridged.html)

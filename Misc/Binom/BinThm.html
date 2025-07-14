@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>index</title><style>/* 
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>BinThm</title><style>/* 
 Name: GeekPark article style for Mou app
 Author: hzlzh(hzlzh.dev@gmail.com)
 URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
@@ -84,139 +84,226 @@ pre code, pre tt{ background-color:transparent; border:none; }
 </style>
 </head>
 <body><style>
-  body {font-family: Palatino;
-    background-image: url("./PreciousBkgrnd2.png");}
+body {font-family: Palatino}
 </style>
 
-<p><body>
-<p><center><big><big><big><big>Welcome to<br>
-<big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p></p>
+<h4><center><i>Binomial Expansion Formula &amp; Corollaries</h4>
 
-<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site.
+<h4><center>&copy; 2017, 2025 by</h4>
 
-<p><b>*-ed items are Data Science related</b>
+<h4><center>David Lawrence Goldsmith</h4>
 
-<form action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"><input name="cmd"
-            value="_xclick" type="hidden"> <input name="business"
-            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
-            name="item_name" value="SelectedSolutions Donation"
-            type="hidden"> <input name="cn" value="Special Instructions
-            (optional" type="hidden"> <input
-            src="https://www.paypal.com/images/x-click-but04.gif"
-            name="submit" alt="Make payments with PayPal - it's fast,
-            free and secure!" align="middle" border="0" type="image"></form>
-</p>
+<h4><center>for</h4>
 
-<p><b>General Disclaimers</b>: Solutions to problems from published texts are provided for informational purposes only&mdash;students are advised that they will learn best if, and in any event should always first try to, solve each problem before consulting the solution(s) provided here.&nbsp; In addition, though every effort has been made to proofread and assess the validity of each solution, missed typographical and computational errors are inevitable; thus these solutions are provided <q>as-is,</q> with no guarantees whatsoever, expressed or implied, of any kind, including those of correctness or suitability for any specific purpose.&nbsp; Corrections are welcome and should be directed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<h4><center>SelectedSolutionsDotNet</i></h4>
 
-<p>Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.</p>
+<h5>Preface</h5>
 
-<h2>Text Solution Sets</h2>
+<p>These are all <q>elementary</q> results, and the first three are <q>Standard</q> as well (see, e.g., <i>CRC Standard Mathematical Tables</i>) and I make no claim to originality of statement or of proof. I provide them here simply as a <q>public service</q>; my only request is that if you utilize this content in some way, please cite this document properly.
+<br><br></p>
 
-<p>Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley &amp; Sons, New York.
-      <ul> Chapter 6: The Laplace Transform
-            <ul><b>BROKEN Links</b> <a href="./BoyceDiPrima/C6/C6S2.html">Section 2: The Solution of Initial Value Problems</a>
-            </ul>
-      </ul>
-      <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul><b>BROKEN Links</b> <a href="./BoyceDiPrima/C9/C9S1.html">Section 1: The Phase Plane: Linear Systems</a>
-            </ul>
-      </ul></p>
+<h5>Binomial Expansion Formula</h5>
 
-<p>Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C1/C1.html">Chapter 1: The Role and Environment of Managerial Finance</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C2/C2.html">Chapter 2: Financial Statements and Analysis</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C3/C3.html">Chapter 3: Cash Flow and Financial Planning</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C4/C4.html">Chapter 4: Time Value of Money</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C5/C5.html">Chapter 5: Risk and Return</a></ul></p>
+<p>\[(1+b)^N = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n}\]
+(Taking \(0!\) and \(0^0 \equiv 1.\))<br>
+<b>Proof</b>: By induction: it&#39;s true for \(\displaystyle N=0: \sum_{n=0}^0 \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right)b^{N-n} = \left(\!
+  \begin{array}{c}
+    0 \\
+    0
+  \end{array}
+  \!\right)b^{0-0} = 1 = (1+b)^0~\forall b\).<br></p>
 
-<p>Lang, S.,
-  <ul><b>*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
-            <ul>
-                <b>BROKEN Links</b> <a href="./Lang/LinAlg/C1/C1.html">Chapter 1: Vector Spaces</a>
-            </ul>
-  </ul>
-  <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
-            <ul>
-                <b>BROKEN Links</b><b>*</b> <a href="./Lang/CalcOfSevVar/C1/C1.html">Chapter 1: Vectors</a>
-            </ul>
-            <ul>
-                <b>BROKEN Links</b> <a href="./Lang/CalcOfSevVar/C2/C2.html">Chapter 2: Differentiation of Vectors</a>
-            </ul>
-            <ul>
-                <b>BROKEN Links</b> <b>*</b> <a href="./Lang/CalcOfSevVar/C5/C5.html">Chapter 5: Maximum and Minimum</a></ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Lang/CalcOfSevVar/C8/C8.html">Chapter 8: Curve Integrals</a></ul></p>
+<p>Now we show that true for \(N \in \mathbb{W}\) implies true for \(N+1\):</p>
 
-<p>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Lang/ComplexAnalysis/C1.html">Chapter 1</a>
-            </ul>
-  </ul>
-Ross, S., 1992, <b>*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Ross/APMwOA/C1.html">Chapter 1</a>
-            </ul></p>
+<p>\[\sum_{n=0}^{N+1} \left(\!
+  \begin{array}{c}
+    N + 1\\
+    n
+  \end{array}
+  \!\right)b^{N-n+1} = \left(\!
+  \begin{array}{c}
+    N + 1\\
+    0
+  \end{array}
+  \!\right) b^{N+1} + \sum_{n=1}^{N} \left(\!
+  \begin{array}{c}
+    N + 1\\
+    n
+  \end{array}
+  \!\right)b^{N-n+1} + \left(\!
+  \begin{array}{c}
+    N + 1\\
+    N + 1
+  \end{array}
+  \!\right) b^0 =\]
+  <br>
+  \[b^{N+1} + \sum_{n=1}^{N} \frac{(N+1)!}{n!(N+1-n)!} b^{N+1-n} + 1 = b^{N+1} + \sum_{n=1}^{N} \frac{(N - n + 1 + n)N!}{n!(N+1-n)!} b^{N+1-n} + 1 =\]<br>
+\[b^{N+1} + \sum_{n=1}^{N} \left[\frac{(N-n+1)N!}{n!(N-n+1)!} + \frac{nN!}{n!(N-(n-1))!}\right] b^{N+1-n} + 1 =\]
+<br>
+\[b^{N+1} + \sum_{n=1}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n+1} + \sum_{n=1}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n-1
+  \end{array}
+  \!\right) b^{N-(n-1)} + 1 =\]
+  <br>
+  \[b\left[b^N + \sum_{n=1}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n}\right] + \left[\sum_{n=0}^{N-1}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} + 1\right] = b \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} + \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} =\]
+  <br>
+  \[(b+1)(b+1)^N~(\because \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) b^{N-n} = (1+b)^N \text{ by assumption}) =(1+b)^{N+1}.~~~\blacksquare\] 
+<br></p>
 
-<p>Sullivan, M., 2012, <i>Algebra &amp; Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/Review/Review.html">Chapter 0: Review</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C1/C1.html">Chapter 1: Equations and Inequalities</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C2/C2.html">Chapter 2: Graphs</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C9/C9.html">Chapter 9: Applications of Trigonometric Functions</a>
-            </ul></p>
+<h5>Corollary 1</h5>
 
-<p>Triola, M. F., with L. Iossi, 2018, <b>*</b><i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Triola/C5/C5.html">Chapter 5: Discrete Probability Distributions</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Triola/C11/C11.html">Chapter 11: Goodness-of-Fit and Contingency Tables</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Triola/C12/C12.html">Chapter 12: ANOVA</a>
-            </ul></p>
+<p>\[(a+b)^N = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) a^n b^{N-n}
+  \]</p>
 
-<h2>Original Work</h2>
+<p><b>Proof</b>: If \(a = 0\), it&#39;s true by (careful) inspection (and our definition \(0^0 \equiv 1\)), so assume \(a \ne 0\). Then 
+\[(a + b)^N = a^N (1+(b/a))^N = a^N \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 1^n \left(\frac{b}{a}\right)^{N-n} = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) a^{N-(N-n)} b^{N-n} = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) a^n b^{N-n}.~~~\blacksquare\]
+  Note: this is why one proves the binomial expansion formula (BEF) as above, and then derives the <q>general</q> result as a corollary; alternatively, if one insists on calling our <q>Corollary 1</q> the BEF, one can call our BEF a <q>Lemma</q> (but the Reader should recognize that it&#39;s really <q>six one way, half-a-dozen the other.</q>) 
+<br><br></p>
 
-<p><b>BROKEN Links</b> * Goldsmith, D. L., 2020, <a href="./COVID-19/COVID19.html"><i>Modeling U. S. A. COVID-19 Case Growth: An <q>Exercise</q> in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i></a>,  SelectedSolutionsDotNet, Olympia, WA.</p>
+<h5>Corollary 2</h5>
 
-<p><b>BROKEN Links</b> Goldsmith, D. L., 2018, <a href="./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html"><i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
+<p>\[\sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) = 2^N\]
+  <br>
+<b>Proof</b>: \[\sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) = \sum_{n=0}^{N}\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 1^n 1^{N-n} = (1+1)^N = 2^N.~~~\blacksquare\]
+  <br>
+  Note: this <q>explains</q> why the sum of each row of <a href="https://en.wikipedia.org/wiki/Pascal&#x27;s_triangle">Pascal&#39;s Triangle</a> is 2 raised to the power of the-row-number-minus-one (or simply the row number, if one starts numbering from zero).
+<br><br></p>
 
-<p>Goldsmith, D. L., 2017, <a href="./Misc/Ellipses/TwoTheorems.html"><i>Two Theorems on Ellipses</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
+<p>(You&#39;ll probably never have to use these next two&mdash;except perhaps in an exam of some sort or another&mdash;they&#39;re just given to show some of the <q>creative</q> ways one can use this little tidbit of mathematics in combination with <a href="https://en.wikipedia.org/wiki/Euler%27s_formula">Euler&#39;s Formula</a>.)
+<br><br></p>
 
-<p>Goldsmith, D. L., 2017 (<b>new content added 2020</b>), <a href="./Misc/Binom/BinThm.html"><i>Binomial Expansion Formula &amp; Corollaries</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
+<h5>Corollary 3</h5>
 
-<p>Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
-\(~~~~\)<a href="./Misc/FibDE/Fibonacci.html">Full Version</a>\(~~~~\)<a href="./Misc/FibDE/Fibonacci_abridged.html">Abridged Version</a></p>
+<p>\[\sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) \cos{[(2n-N)\theta]} = (2\cos\theta)^N\]
+  \[\sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) \sin{[(2n-N)\theta]} = 0\]
+<b>Proof</b>: For \(\theta \in \mathbb{R}\),
+\[(2\cos \theta)^N = \left(e^{i\theta} + e^{-i\theta}\right)^N = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) e^{in\theta}e^{-i(N-n)\theta} = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) e^{i(2n-N)\theta} =\] \[\sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) \cos{[(2n-N)\theta]} + i\sin{[(2n-N)\theta]} \implies \text{both our results.}~~~\blacksquare\]
+<br><br></p>
 
-<p>Goldsmith, D. L., 2016, <a href="./Misc/MortgageDE/Mortgage.html"><i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
+<h5>Corollary 4</h5>
 
-<h2>Selected Answers on Quora</h2>
+<p>\[\Re{[(2i\sin{\theta})^N]} = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right)(-1)^{N-n}\cos{[(2n-N)\theta]}\]
+\[\Im{[(2i\sin{\theta})^N]} = \sum_{n=0}^N \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right)(-1)^{N-n}\sin{[(2n-N)\theta]}\]
+(where \(\Re\) and \(\Im\) are, respectively, the real and imaginary parts of their argument.)</p>
 
-<p><a href="https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9"><q>What is complex analysis all about beyond just saying that its calculus with complex numbers?</q></a> (208 upvotes)</p>
+<p><b>Proof</b>: Left to the Reader. (Hint: use the method used to prove <q>Corollary 3,</q> but don&#39;t <q>stop</q> as soon.)
+<br><br></p>
 
-<p><a href="https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9"><q>Why can’t \(\displaystyle \frac{\sin x}{x}\) be integrated?</q></a> (51 upvotes)</p>
+<h5>References</h5>
 
-<p><a href="https://www.quora.com/Why-in-the-world-would-e-i-pi-1/answer/David-Goldsmith-9"><q>Why in the world would \(e^{i\pi}= -1\)</q></a> (9 upvotes)</p>
-
-<p>
-Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
-
-<p>&copy; 2016-25,  by Goldsmith, D. L.</p>
-
-<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
-
-<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script>
-
-<p></body></p>
+<p>Beyer, W. H., 1985. <i>CRC Standard Mathematical Tables, \(27^{th}\)Edition</i>. CRC Press, Inc., Boca Raton, FL.</p>
 <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
 <script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
 </html>
