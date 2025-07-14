@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>index</title><style>/* 
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Fibonacci</title><style>/* 
 Name: GeekPark article style for Mou app
 Author: hzlzh(hzlzh.dev@gmail.com)
 URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
@@ -84,17 +84,62 @@ pre code, pre tt{ background-color:transparent; border:none; }
 </style>
 </head>
 <body><style>
-  body {font-family: Palatino;
-    background-image: url("./PreciousBkgrnd2.png");}
+body {font-family: Palatino}
 </style>
 
-<p><body>
-<p><center><big><big><big><big>Welcome to<br>
-<big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p></p>
+<h4><center><i>The Fibonacci Difference Equation: Derivation, Solution, and Commentary<br>(Full Version)</i></h4>
 
-<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site.
+<h4><center>&copy; 2016, 2025 by</h4>
 
-<p><b>*-ed items are Data Science related</b>
+<h4><center>David Lawrence Goldsmith</h4>
+
+<h4><center>for</h4>
+
+<h4><center>SelectedSolutionsDotNet</h4>
+
+<p>\(~~~~\)The famous Fibonacci sequence (named for an obscure-in-origin contraction of a name of the Thirteenth Century Italian mathematician Leonardo of Pisa, c. 1175 - c. 1250) is defined such that the \(n^{\text{th}}\) element of the sequence, \(F_n\), is the sum of the previous two elements, \(F_{n-1}, F_{n-2}\), i.e., \[F_n = F_{n-1} + F_{n-2},\]with \(F_0 = F_1 =1.\) Thus the first ten elements (including the so-called <i>initial conditions</i>) of the sequence are: \(1, 1, 2, 3, 5, 8, 13, 21, 34, 55.\)  (<q>Exercise 0</q>: using the definition, calculate the next ten elements of the sequence, \(F_{10}\) through \(F_{19}\).)</p>
+
+<p>\(~~~~\)Apart from the definition and the fact that the sequence is strictly increasing after the first element, this sequence looks rather random, in the sense that, if one were to ask what the \(111^{\text{th}}\) element is, at first glance it would seem that the only way to find the answer would be to calculate all the Fibonacci numbers up through the \(110^{\text{th}}\). This is in contrast to more familiar sequences, such as <i>arithmetic sequences</i>, which have the formula \(a_n = a_0 + nd\), where \(d\) is the constant difference between any two consecutive elements; and <i>geometric sequences</i>, which have the formula \(g_n = g_0r^n\), \(r\) being the the constant ratio between any two consecutive elements. For these, as well as many other examples, if one wants the \(111^{\text{th}}\) element, all one has to do is plug \(n=111\) into the the formula: \(a_{111} = a_0 + 111d\), \(g_{111} = g_0r^{111}\), respectively. (Of course, it is assumed that specific values for \(a_0\) and \(d\) (resp. \(g_0\) and \(r\)) have been either given or determined from other elements of the sequence.)</p>
+
+<p>\(~~~~\)It turns out, however, that there is a formula for \(F_n\) in terms of \(n\), but it is rather surprising, and not nearly so simple as the formula for arithmetic sequences and geometric sequences, and thus it is non-trivial to find it. To do so, we shall learn something about a less-taught area of mathematics called <i>difference equations</i> (not to be confused with their much more ubiquitously-taught <q>cousins,</q> differential equations).</p>
+
+<p>\(~~~~\)Difference equations are equations involving functions of elements of an unknown sequence&mdash;the <i>solution</i> of the difference equation&mdash;as well as, sometimes, the sequence <i>index</i>, i.e., (typically) \(n\). For example, the difference equation for an arithmetic sequence is simply: \[a_n = a_{n-1} + d,\]or, equivalently,\[a_n - a_{n-1} = d.\](It is this last form that gives difference equations their name: commonly&mdash;but far from necessarily&mdash;one tries to put difference equations in the form \[a_n - a_{n-1} = \text{difference between the }n^{\text{th}}~\text{and } (n-1)^{\text{th}}~\text{elements} = f(a_{i \ne n, n-1}; n)\]i.e., one tries to express the <i>difference</i> between consecutive elements as a function of other elements and the index; for arithmetic sequences, \(f(a_i; n) = d\), the constant function, i.e., the difference between consecutive elements depends on neither the index nor other elements. Often, but not always, expressing the equation in this <q>standard</q> form facilitates solving it.)  </p>
+
+<p>\(~~~~\)Note that the defining equation for the Fibonacci sequence is already a difference equation (though not in standard form, which would be \(F_n - F_{n-1} = F_{n-2}\)). In this case, however, standard form won&#39;t really help us; rather, the form we will want is: \[F_n - F_{n-1} - F_{n-2} = 0.\]</p>
+
+<p>\(~~~~\)But first: difference equations share many attributes with their differential equation cousins. Both have a crucial characteristic called the <i>order</i> of the equation, which governs how many <q>auxiliary</q> (i.e., <i>boundary</i> or <i>initial</i>) <q>conditions</q> are necessary for the difference equation to have a <i>unique</i> solution. For difference equations, the order is the difference between the highest and the lowest indices occurring in the equation. So, for arithmetic sequences, this is \(n - (n-1) = 1\): arithmetic sequence difference equations are <i>first</i> order, requiring one auxiliary condition for a unique solution. The order of the Fibonacci sequence difference equation, on the other hand, is \(n - (n-2) = 2\): the Fibonacci sequence difference equation is <i>second</i> order, requiring two auxiliary conditions for a unique solution. The auxiliary conditions that give the Fibonacci sequence are \(F_0 = F_1 = 1\) (other conditions are possible/allowable, and <q>make</q> the Fibonacci sequence difference equation <q>produce</q> other, Fibonacci-like&mdash;but not Fibonacci&mdash;sequences).</p>
+
+<p>\(~~~~\)Another attribute of both difference equations and differential equations is the importance to their solution of the (general) exponential function, \(f(x) = a^x,~a \ne 0\) or \(1.\) However, unlike for the elementary first-order differential equation, \(dy/dx = y\), whose solution \(y = y_0e^x\) can be discovered by an analytical technique called <q>separation of variables,</q> no analogous technique (to the author&#39;s knowledge) exists for difference equations. Rather, we appeal to: a) the rate of growth of the Fibonacci sequence (which one can better appreciate by graphing it, for example); and b) the other similarities between difference equations and differential equations (and the underlying reason for these similarities, which is <q>beyond our present scope</q>) to motivate the following GUESS for a solution: \[F_n = cG^n,\]where \(c\) and \(G\) are constants to be determined, and see where this guess gets us. (To the student who is used to being shown explicit methods for arriving at solutions in math, guessing may seem <q>unmathematical</q>; but for difference equations and differential equations alike, the <q>analytical</q> methods we do have for <q>deriving</q> solutions often provide spurious solutions either instead of or in addition to valid solutions. In that sense, all we really have are more or less complicated ways of generating educated guesses, or what I like to call <q>candidate solutions,</q> which we must <i>always check</i> anyway, by substituting back into the original equation and verifying&mdash;or refuting&mdash;that the candidate(s) make the original equation a true statement.)</p>
+
+<p>\(~~~~\)Accordingly, we substitute our guess into the Fibonacci sequence difference equation in the last-given form above:\[F_n - F_{n-1} - F_{n-2} = 0 = cG^n - cG^{n-1} - cG^{n-2}.\] Neither \(c\) nor \(G\) can equal \(0\) (why?) so we may <q>divide through</q> by \(cG^{n-2}\) yielding:\[G^{n-(n-2)} - G^{(n-1)-(n-2)} - G^{(n-2)-(n-2)} = G^2 - G - 1 = 0.\]This quadratic equation in \(G\) has solutions:\[G = \frac{-(-1) \pm \sqrt{(-1)^2 - 4(1)(-1)}}{2(1)} = \frac{1 \pm \sqrt5}{2}.\]Thus we have two <q>candidate solutions</q>: \(\displaystyle F_p(n) = c_p\left(\frac{1+\sqrt5}{2}\right)^n\) and \(\displaystyle F_m(n) = c_m\left(\frac{1-\sqrt5}{2}\right)^n.\) (The mathematically <q>well-read</q> reader may recognize our candidate \(G\)&#39;s as the so-called <q>Golden Ratio</q> or <q>Section</q> and its reciprical).</p>
+
+<p>\(~~~~\)Now it turns out that, because our difference equation has the property of being <i>linear</i>, any sum of candidate solutions is itself a candidate solution. So we consolidate our candidates into one guess:\[F_n = c_p\left(\frac{1+\sqrt5}{2}\right)^n + c_m\left(\frac{1-\sqrt5}{2}\right)^n.\]But before we substitute this into the original Fibonacci sequence difference equation to check, we use the auxiliary conditions to solve for \(c_p\) and \(c_m\); we require that:<br>
+  \(\displaystyle F_0 = c_p\left(\frac{1+\sqrt5}{2}\right)^0 + c_m\left(\frac{1-\sqrt5}{2}\right)^0 =  c_p(1) + c_m(1) = c_p + c_m = 1\) and<br>
+  \(\displaystyle F_1 = c_p\left(\frac{1+\sqrt5}{2}\right)^1+ c_m\left(\frac{1-\sqrt5}{2}\right)^1 = c_p\left(\frac{1+\sqrt5}{2}\right) + c_m\left(\frac{1-\sqrt5}{2}\right) = 1\),<br>
+and use the substitution method to solve for \(c_p\) and \(c_m\):<br>
+\(\displaystyle \left(\frac{1+\sqrt5}{2}\right)c_p + \left(\frac{1-\sqrt5}{2}\right)(1-c_p) = 1 \Rightarrow \frac{1+\sqrt5 - 1 +\sqrt5}{2}c_p = 1 - \frac{1-\sqrt5}{2} \Rightarrow \) \[c_p = \frac{1}{\sqrt5}\frac{1+\sqrt5}{2}\] \(\displaystyle \Rightarrow c_m = 1 - \frac{1}{\sqrt5}\frac{1+\sqrt5}{2} = \frac{2\sqrt5 - 1 - \sqrt5}{2\sqrt5} \Rightarrow\)
+\[c_m = -\frac{1}{\sqrt5}\frac{1-\sqrt5}{2}.\]</p>
+
+<p>\(~~~~\)So our final candidate solution&mdash;our candidate for the formula for the \(n^{\text{th}}\) Fibonacci number in terms of \(n\)&mdash;is:
+\[F_n = \frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)\left(\frac{1+\sqrt5}{2}\right)^n - \left(\frac{1-\sqrt5}{2}\right)\left(\frac{1-\sqrt5}{2}\right)^n\right] =\]
+\[\boxed{\frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)^{n+1} - \left(\frac{1-\sqrt5}{2}\right)^{n+1}\right]}
+\]</p>
+
+<p>Now we check/confirm:</p>
+
+<p>\(\displaystyle F_0 = \frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)^{(0+1)} - \left(\frac{1-\sqrt5}{2}\right)^{(0+1)}\right] = \frac{1+\sqrt5-1+\sqrt5}{2\sqrt5} = 1~~\checkmark\)<br></p>
+
+<p>\(\displaystyle F_1 = \frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)^{(1+1)} - \left(\frac{1-\sqrt5}{2}\right)^{(1+1)}\right] = \frac{1 + 2\sqrt5 +5 - 1 + 2\sqrt5 - 5}{4\sqrt5} = 1~~\checkmark\)<br></p>
+
+<p>And now for the hard one&mdash;we need to show that:<br></p>
+
+<p>\(F_n - F_{n-1} - F_{n-2} = \displaystyle \frac{1}{\sqrt5}\left[\left(\frac{1+\sqrt5}{2}\right)^{n+1} - \left(\frac{1-\sqrt5}{2}\right)^{n+1} - \left(\frac{1+\sqrt5}{2}\right)^{n} + \left(\frac{1-\sqrt5}{2}\right)^{n} - \left(\frac{1+\sqrt5}{2}\right)^{n-1} + \left(\frac{1-\sqrt5}{2}\right)^{n-1}\right] = 0,\)<br>which is only true if the factor inside the square brackets \(=0\). Factoring it suitably and using the fact that \(\displaystyle \left(\frac{1+\sqrt5}{2}\right)^{-1} = \frac{\sqrt5-1}{2} \Rightarrow \left(\frac{1-\sqrt5}{2}\right)^{-1} = -\frac{1+\sqrt5}{2}\), we see that said factor equals:<br>
+\(\displaystyle \left(\frac{1+\sqrt5}{2}\right)^n\left[\frac{1+\sqrt5}{2} - 1 - \left(\frac{1+\sqrt5}{2}\right)^{-1}\right] - \left(\frac{1-\sqrt5}{2}\right)^n\left[\frac{1-\sqrt5}{2} - 1 - \left(\frac{1-\sqrt5}{2}\right)^{-1}\right] = \)<br>
+\(\displaystyle \left(\frac{1+\sqrt5}{2}\right)^n\left(\frac{1+\sqrt5 - 2 -\sqrt5 + 1}{2}\right) - \left(\frac{1-\sqrt5}{2}\right)^n\left(\frac{1-\sqrt5 - 2 + 1 + \sqrt5}{2}\right) = 0\) for all \(n.~~\checkmark\)<br>(<q>Exercise 1</q>: use the formula to verify that it is at least valid for \(n=3, 4, 5\), i.e., calculate \(F_n\) using the formula for these three values of \(n\). Hint: you should get \(F_3 = 2\), \(F_4 = 3\), and...what for \(F_5\)?)</p>
+
+<p>\(~~~~\)Take a moment to contemplate this result: again, the Fibonacci sequence is 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, … Because one is always adding an integer to an integer, all the Fibonacci numbers are integers. Despite this, the formula for the \(n^{\text{th}}\) Fibonacci number involves the square root of 5, in two different sums, each raised to the \(n^{\text{th}}\) power! Almost miraculously (or so it might seem), somehow, the integer portions of those “powered sums” are always “zeroed-out” by each other, and the sum of the \(\sqrt5\) terms always “manages” to equal the \(n^{\text{th}}\) Fibonacci number times \(\sqrt5\)&mdash;so that the \(\sqrt5\) cancels with the factor of \(\frac{1}{\sqrt5}\) out in front of the whole expression&mdash;leaving just the \(n^{\text{th}}\) Fibonacci number: really quite remarkable!</p>
+
+<h3>Please Donate:</h3>
 
 <form action="https://www.paypal.com/cgi-bin/webscr"
           method="post"><input name="cmd"
@@ -106,117 +151,6 @@ pre code, pre tt{ background-color:transparent; border:none; }
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
-</p>
-
-<p><b>General Disclaimers</b>: Solutions to problems from published texts are provided for informational purposes only&mdash;students are advised that they will learn best if, and in any event should always first try to, solve each problem before consulting the solution(s) provided here.&nbsp; In addition, though every effort has been made to proofread and assess the validity of each solution, missed typographical and computational errors are inevitable; thus these solutions are provided <q>as-is,</q> with no guarantees whatsoever, expressed or implied, of any kind, including those of correctness or suitability for any specific purpose.&nbsp; Corrections are welcome and should be directed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
-
-<p>Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.</p>
-
-<h2>Text Solution Sets</h2>
-
-<p>Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley &amp; Sons, New York.
-      <ul> Chapter 6: The Laplace Transform
-            <ul><b>BROKEN Links</b> <a href="./BoyceDiPrima/C6/C6S2.html">Section 2: The Solution of Initial Value Problems</a>
-            </ul>
-      </ul>
-      <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul><b>BROKEN Links</b> <a href="./BoyceDiPrima/C9/C9S1.html">Section 1: The Phase Plane: Linear Systems</a>
-            </ul>
-      </ul></p>
-
-<p>Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C1/C1.html">Chapter 1: The Role and Environment of Managerial Finance</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C2/C2.html">Chapter 2: Financial Statements and Analysis</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C3/C3.html">Chapter 3: Cash Flow and Financial Planning</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C4/C4.html">Chapter 4: Time Value of Money</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C5/C5.html">Chapter 5: Risk and Return</a></ul></p>
-
-<p>Lang, S.,
-  <ul><b>*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
-            <ul>
-                <b>BROKEN Links</b> <a href="./Lang/LinAlg/C1/C1.html">Chapter 1: Vector Spaces</a>
-            </ul>
-  </ul>
-  <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
-            <ul>
-                <b>BROKEN Links</b><b>*</b> <a href="./Lang/CalcOfSevVar/C1/C1.html">Chapter 1: Vectors</a>
-            </ul>
-            <ul>
-                <b>BROKEN Links</b> <a href="./Lang/CalcOfSevVar/C2/C2.html">Chapter 2: Differentiation of Vectors</a>
-            </ul>
-            <ul>
-                <b>BROKEN Links</b> <b>*</b> <a href="./Lang/CalcOfSevVar/C5/C5.html">Chapter 5: Maximum and Minimum</a></ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Lang/CalcOfSevVar/C8/C8.html">Chapter 8: Curve Integrals</a></ul></p>
-
-<p>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Lang/ComplexAnalysis/C1.html">Chapter 1</a>
-            </ul>
-  </ul>
-Ross, S., 1992, <b>*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Ross/APMwOA/C1.html">Chapter 1</a>
-            </ul></p>
-
-<p>Sullivan, M., 2012, <i>Algebra &amp; Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/Review/Review.html">Chapter 0: Review</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C1/C1.html">Chapter 1: Equations and Inequalities</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C2/C2.html">Chapter 2: Graphs</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C9/C9.html">Chapter 9: Applications of Trigonometric Functions</a>
-            </ul></p>
-
-<p>Triola, M. F., with L. Iossi, 2018, <b>*</b><i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Triola/C5/C5.html">Chapter 5: Discrete Probability Distributions</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Triola/C11/C11.html">Chapter 11: Goodness-of-Fit and Contingency Tables</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Triola/C12/C12.html">Chapter 12: ANOVA</a>
-            </ul></p>
-
-<h2>Original Work</h2>
-
-<p><b>BROKEN Links</b> * Goldsmith, D. L., 2020, <a href="./COVID-19/COVID19.html"><i>Modeling U. S. A. COVID-19 Case Growth: An <q>Exercise</q> in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i></a>,  SelectedSolutionsDotNet, Olympia, WA.</p>
-
-<p><b>BROKEN Links</b> Goldsmith, D. L., 2018, <a href="./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html"><i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2017, <a href="./Misc/Ellipses/TwoTheorems.html"><i>Two Theorems on Ellipses</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<p><b>BROKEN Links</b> Goldsmith, D. L., 2017 (<b>new content added 2020</b>), <a href="./Misc/BinThm.html"><i>Binomial Expansion Formula &amp; Corollaries</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
-\(~~~~\)<a href="./Misc/FibDE/Fibonacci.html">Full Version</a>\(~~~~\)<a href="./Misc/FibDE/Fibonacci_abridged.html">Abridged Version</a></p>
-
-<p>Goldsmith, D. L., 2016, <a href="./Misc/MortgageDE/Mortgage.html"><i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<h2>Selected Answers on Quora</h2>
-
-<p><a href="https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9"><q>What is complex analysis all about beyond just saying that its calculus with complex numbers?</q></a> (208 upvotes)</p>
-
-<p><a href="https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9"><q>Why can’t \(\displaystyle \frac{\sin x}{x}\) be integrated?</q></a> (51 upvotes)</p>
-
-<p><a href="https://www.quora.com/Why-in-the-world-would-e-i-pi-1/answer/David-Goldsmith-9"><q>Why in the world would \(e^{i\pi}= -1\)</q></a> (9 upvotes)</p>
-
-<p>
-Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
-
-<p>&copy; 2016-25,  by Goldsmith, D. L.</p>
-
-<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
-
-<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script>
-
-<p></body></p>
 <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
 <script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
 </html>
