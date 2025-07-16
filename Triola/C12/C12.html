@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>index</title><style>/* 
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C12</title><style>/* 
 Name: GeekPark article style for Mou app
 Author: hzlzh(hzlzh.dev@gmail.com)
 URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
@@ -84,17 +84,87 @@ pre code, pre tt{ background-color:transparent; border:none; }
 </style>
 </head>
 <body><style>
-  body {font-family: Palatino;
-    background-image: url("./PreciousBkgrnd2.png");}
+body {font-family: Palatino;}
 </style>
 
-<p><body>
-<p><center><big><big><big><big>Welcome to<br>
-<big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p></p>
+<h2><center>Selected Exercise Solutions</h2>
 
-<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site.
+<p><center>from</center></p>
 
-<p><b>*-ed items are Data Science related</b>
+<h3><center>Triola, M. F., with L. Iossi, 2018, <i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.</h3>
+
+<h3><center>Chapter 12: ANOVA</h3>
+
+<h3><center>&copy; 2019, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note 1:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<h2>Section 1: One-Way ANOVA</h2>
+
+<p><strong>11</strong>) <q>Triathlon Times</q> Use a 0.05 significance level to test the null hypothesis that Jeff Parent’s bicycle times over sampled miles are statistically indistinguishable. Is there sufficient evidence to believe that one of the sampled miles may have included a hill?</p>
+
+<p><strong>Sln</strong>: Below are two views&mdash;formulas and results&mdash;of a <a href="https://docs.google.com/spreadsheets">Google Sheets</a> (GSheets) table containing the one-way ANOVA results for the data, which we note must be converted to a uniform unit, i.e., minutes or seconds&mdash;in this case we opted for seconds&mdash; prior to analysis:</p>
+
+<p><img src="./TroilaC12S1E11a.png" style="max-width: 100%"></p>
+
+<p><img src="./TroilaC12S1E11b.png"></p>
+
+<p>With a \(P\)-value of 0.000, we easily <strong>reject the null hypothesis</strong> that Mr. Parent’s test mile times are statistically indistinguishable; examining the data, it appears reasonable to suspect that Mile 3, with a mean time of 210.8 seconds (compared to mean times of 201 and 199.6 seconds for Miles 1 and 2, respectively) contains a hill.
+<br><br></p>
+
+<p><strong>14</strong>) <q>Speed Dating</q> At a 0.05 significance level, use the given ratings data to test the null hypothesis that age doesn’t matter as far as females rating males is concerned.</p>
+
+<p><strong>Sln</strong>: Again, we give two views of the same GSheet, first, with the formulas used to do the one-way ANOVA analysis:</p>
+
+<p><img src="./TroilaC12S1E14a.png"></p>
+
+<p>second with the results of that analysis:</p>
+
+<p><img src="./TroilaC12S1E14b.png"></p>
+
+<p>With a \(P\)-value of \(0.794\), we easily <b>fail to reject</b> the null hypothesis: there is insufficient evidence to believe that the mean <q>date-ability</q> rating given to men by women depends on the age of the women.
+<br><br></p>
+
+<h2>Section 2: Two-Way ANOVA</h2>
+
+<p><strong>7</strong>) Infer conclusions, at a 0.05 level of significance, from the two-way ANOVA table resulting from given height data, both the data and the table being provided in the problem statement. </p>
+
+<p><strong>Sln</strong>: By now, hopefully, the student should be facile at inferring conclusions regarding hypothesis tests from provided \(P\)-values, so why am I providing a solution to this Exercise? Because I’ve been using (free, Web-based) <a href="https://docs.google.com/spreadsheets">Google Sheets</a> to generate my tables and statistical results, and (as of December, 2019) I wasn’t readily able to find an existing function call or available plug-in to automatically produce two-way ANOVA tables from suitable data; so, with help&mdash;and vocabulary&mdash;from the classic text Box, G. E. P., W. G. Hunter, &amp; J. S. Hunter, 1978, <strong><em>Statistics for Experimenters</em></strong>, Wiley &amp; Sons, NY (BH&amp;H), I figured out how to generate such tables in GSheets <q>from scratch</q>; having done that, I feel I should share.</p>
+
+<p>So, below are two GSheet screenshots: the first shows the formulas used for all computations (the rows containing the data and the individual square deviation formulas have been partially hidden so that I could get the whole table in one screenshot, but the reader should be able to infer the formulas from context and the first row which has been provided in full):</p>
+
+<p><img src="./TroilaC12S2E7a.png" style="max-width: 100%"></p>
+
+<p>and the second shows the results of the calculations, which agree exactly with the XLSTAT results shown in the text:</p>
+
+<p><img src="./TroilaC12S2E7b.png"></p>
+
+<p>Finally, with an interaction \(P\)-value of 0.1756, at a significance level of 0.05, we <strong>fail to reject the null hypothesis that there is no interaction effect</strong>, i.e., there is insufficient evidence to infer an interaction between age group and gender in this adult height data; having failed to find an interaction effect, we proceed to examine the \(P\)-values associated with the variations due to gender (the <q>blocks</q>) and due to age (the <q>treatments</q>; these terms, adopted from BH&amp;H and common in the literature of two-way ANOVA, may be arbitrarily assigned to the groupings, i.e., we could have chosen to call the age groups the <q>blocks</q> and gender the <q>treatments,</q> without affecting the ultimate conclusions). With a \(P\)-value of 0.1399, at the 0.05 significance level, we <strong>fail to reject the null hypothesis that there is no age effect</strong> on adult heights; but with a \(P\)-value of 0.0000, we <strong>do reject the null hypothesis of no effect of gender</strong> on adult heights: gender does appear to be a factor in determining adult height.
+<br><br></p>
+
+<p><strong>9</strong>) <q>Marathon Times</q> For the indicated, randomly-selected NYC marathon times, grouped by age and gender, use a 0.05 significance level to test null hypotheses concerning an interaction effect, and the individual effects of age and gender. </p>
+
+<p><strong>Sln</strong>: GSheet formula and result two-way ANOVA tables are:</p>
+
+<p><img src="./TroilaC12S2E9a.png" style="max-width: 100%"></p>
+
+<p><img src="./TroilaC12S2E9b.png"></p>
+
+<p>With a \(P\)-value of 0.3289, we <strong>fail to reject</strong> the null hypothesis that there is no interaction effect between age and gender; similarly, with a \(P\)-value of 0.2064, we also <strong>fail to reject</strong> the null hypothesis that there is no gender effect; on the other hand, with a \(P\)-value of 0.0143, at the specified significance level (0.05), we do <strong>reject</strong> the null hypothesis of no effect due to age: there is sufficient evidence to believe that age has an effect on marathon running times.</p>
+
+<p><a name="Credits"></a></p>
+
+<h3>Credits</h3>
+
+<p>Spreadsheets, including calculations, generated with <a href="https://docs.google.com/spreadsheets">Google Sheets</a>.</p>
+
+<h3>Please Donate:</h3>
 
 <form action="https://www.paypal.com/cgi-bin/webscr"
           method="post"><input name="cmd"
@@ -106,117 +176,6 @@ pre code, pre tt{ background-color:transparent; border:none; }
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
-</p>
-
-<p><b>General Disclaimers</b>: Solutions to problems from published texts are provided for informational purposes only&mdash;students are advised that they will learn best if, and in any event should always first try to, solve each problem before consulting the solution(s) provided here.&nbsp; In addition, though every effort has been made to proofread and assess the validity of each solution, missed typographical and computational errors are inevitable; thus these solutions are provided <q>as-is,</q> with no guarantees whatsoever, expressed or implied, of any kind, including those of correctness or suitability for any specific purpose.&nbsp; Corrections are welcome and should be directed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
-
-<p>Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.</p>
-
-<h2>Text Solution Sets</h2>
-
-<p>Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley &amp; Sons, New York.
-      <ul> Chapter 6: The Laplace Transform
-            <ul><b>BROKEN Links</b> <a href="./BoyceDiPrima/C6/C6S2.html">Section 2: The Solution of Initial Value Problems</a>
-            </ul>
-      </ul>
-      <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul><b>BROKEN Links</b> <a href="./BoyceDiPrima/C9/C9S1.html">Section 1: The Phase Plane: Linear Systems</a>
-            </ul>
-      </ul></p>
-
-<p>Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C1/C1.html">Chapter 1: The Role and Environment of Managerial Finance</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C2/C2.html">Chapter 2: Financial Statements and Analysis</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C3/C3.html">Chapter 3: Cash Flow and Financial Planning</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C4/C4.html">Chapter 4: Time Value of Money</a></ul>
-            <ul><b>BROKEN Links</b> <a href="./Gitman/C5/C5.html">Chapter 5: Risk and Return</a></ul></p>
-
-<p>Lang, S.,
-  <ul><b>*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
-            <ul>
-                <b>BROKEN Links</b> <a href="./Lang/LinAlg/C1/C1.html">Chapter 1: Vector Spaces</a>
-            </ul>
-  </ul>
-  <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
-            <ul>
-                <b>BROKEN Links</b><b>*</b> <a href="./Lang/CalcOfSevVar/C1/C1.html">Chapter 1: Vectors</a>
-            </ul>
-            <ul>
-                <b>BROKEN Links</b> <a href="./Lang/CalcOfSevVar/C2/C2.html">Chapter 2: Differentiation of Vectors</a>
-            </ul>
-            <ul>
-                <b>BROKEN Links</b> <b>*</b> <a href="./Lang/CalcOfSevVar/C5/C5.html">Chapter 5: Maximum and Minimum</a></ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Lang/CalcOfSevVar/C8/C8.html">Chapter 8: Curve Integrals</a></ul></p>
-
-<p>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Lang/ComplexAnalysis/C1.html">Chapter 1</a>
-            </ul>
-  </ul>
-Ross, S., 1992, <b>*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Ross/APMwOA/C1.html">Chapter 1</a>
-            </ul></p>
-
-<p>Sullivan, M., 2012, <i>Algebra &amp; Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/Review/Review.html">Chapter 0: Review</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C1/C1.html">Chapter 1: Equations and Inequalities</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C2/C2.html">Chapter 2: Graphs</a>
-            </ul>
-            <ul>
-               <b>BROKEN Links</b> <a href="./Sullivan/C9/C9.html">Chapter 9: Applications of Trigonometric Functions</a>
-            </ul></p>
-
-<p>Triola, M. F., with L. Iossi, 2018, <b>*</b><i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.
-            <ul>
-               <a href="./Triola/C5/C5.html">Chapter 5: Discrete Probability Distributions</a>
-            </ul>
-            <ul>
-               <a href="./Triola/C11/C11.html">Chapter 11: Goodness-of-Fit and Contingency Tables</a>
-            </ul>
-            <ul>
-               <a href="./Triola/C12/C12.html">Chapter 12: ANOVA</a>
-            </ul></p>
-
-<h2>Original Work</h2>
-
-<p>* Goldsmith, D. L., 2020, <a href="./Misc/COVID19/COVID19.html"><i>Modeling Initial U. S. A. COVID-19 Case Growth: An <q>Exercise</q> in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i></a>,  SelectedSolutionsDotNet, Olympia, WA.</p>
-
-<p><b>BROKEN Links</b> Goldsmith, D. L., 2018, <a href="./Misc/DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html"><i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2017, <a href="./Misc/Ellipses/TwoTheorems.html"><i>Two Theorems on Ellipses</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2017 (<b>new content added 2020</b>), <a href="./Misc/Binom/BinThm.html"><i>Binomial Expansion Formula &amp; Corollaries</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<p>Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
-\(~~~~\)<a href="./Misc/FibDE/Fibonacci.html">Full Version</a>\(~~~~\)<a href="./Misc/FibDE/Fibonacci_abridged.html">Abridged Version</a></p>
-
-<p>Goldsmith, D. L., 2016, <a href="./Misc/MortgageDE/Mortgage.html"><i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i></a>,  SelectedSolutionsDotNet, Olympia, WA.<br></p>
-
-<h2>Selected Answers on Quora</h2>
-
-<p><a href="https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9"><q>What is complex analysis all about beyond just saying that its calculus with complex numbers?</q></a> (208 upvotes)</p>
-
-<p><a href="https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9"><q>Why can’t \(\displaystyle \frac{\sin x}{x}\) be integrated?</q></a> (51 upvotes)</p>
-
-<p><a href="https://www.quora.com/Why-in-the-world-would-e-i-pi-1/answer/David-Goldsmith-9"><q>Why in the world would \(e^{i\pi}= -1\)</q></a> (9 upvotes)</p>
-
-<p>
-Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
-
-<p>&copy; 2016-25,  by Goldsmith, D. L.</p>
-
-<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
-
-<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script>
-
-<p></body></p>
 <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
 <script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
 </html>

@@ -89,13 +89,13 @@ Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall
 
 Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edition</i>, Pearson, Boston.
             <ul>
-               <b>BROKEN Links</b> [Chapter 5: Discrete Probability Distributions](./Triola/C5/C5.html)
+               [Chapter 5: Discrete Probability Distributions](./Triola/C5/C5.html)
             </ul>
             <ul>
-               <b>BROKEN Links</b> [Chapter 11: Goodness-of-Fit and Contingency Tables](./Triola/C11/C11.html)
+               [Chapter 11: Goodness-of-Fit and Contingency Tables](./Triola/C11/C11.html)
             </ul>
             <ul>
-               <b>BROKEN Links</b> [Chapter 12: ANOVA](./Triola/C12/C12.html)
+               [Chapter 12: ANOVA](./Triola/C12/C12.html)
             </ul>
 
 
