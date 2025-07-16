@@ -101,9 +101,9 @@ Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edi
 
 ## Original Work
 
-<b>BROKEN Links</b> \* Goldsmith, D. L., 2020, [<i>Modeling U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](./COVID-19/COVID19.html),  SelectedSolutionsDotNet, Olympia, WA.
+ \* Goldsmith, D. L., 2020, [<i>Modeling Initial U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](./Misc/COVID19/COVID19.html),  SelectedSolutionsDotNet, Olympia, WA.
 
-<b>BROKEN Links</b> Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+<b>BROKEN Links</b> Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./Misc/DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipses/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
