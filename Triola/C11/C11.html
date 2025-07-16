@@ -79,26 +79,31 @@ pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-he
 pre code, pre tt{ background-color:transparent; border:none; }
 @media screen and (min-width: 914px){
     body{ width:854px; margin:0 auto; }
-}</style></head>
+}</style>
+<style type="text/css">
+</style>
+</head>
 <body><style>
 body {font-family: Palatino;}
 </style>
 
-<h4><center>Triola, M. F., with L. Iossi, 2018, <i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.</h4>
+<h2><center>Selected Exercise Solutions</h2>
 
-<h4><center>Chapter 11: Goodness-of-Fit and Contingency Tables</h4>
+<p><center>from</center></p>
 
-<h4><center> Selected Exercise Solutions</h4>
+<h3><center>Triola, M. F., with L. Iossi, 2018, <i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.</h3>
 
-<h4><center>&copy; 2019 by</h4>
+<h3><center>Chapter 11: Goodness-of-Fit and Contingency Tables</h3>
 
-<h4><center>David Lawrence Goldsmith</h4>
+<h3><center>&copy; 2019, 2025 by</h3>
 
-<h4><center>for</h4>
+<h3><center>David Lawrence Goldsmith</h3>
 
-<h4><center><a href="http://www.selectedsolutions.net">www.selectedsolutions.net</a></h4>
+<p><center>for</center></p>
 
-<p><i>Note 1:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note 1:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
 <p><b>Section 1: Goodness-of-Fit</b></p>
 
@@ -111,11 +116,11 @@ body {font-family: Palatino;}
 
 <p>test the null hypothesis that the loading of the die had no effect, i.e., that the results are not <q>statistically distinguishable</q> from a <q>fair</q> die.</p>
 
-<p><strong>Sln</strong>: The null hypothesis that the results are not statistically distinguishable from a fair die is equivalent to the hypothesis that the results could have come from a uniform distribution, i.e., that the expected probability of each outcome remains \(1/6^{\text{th}}\); thus we want to perform a goodness-of-fit test.&nbsp; We use <a href="https://docs.google.com/spreadsheets">Google Sheets</a> (<q>GSheets</q>), with the pictured results:</p>
+<p><strong>Sln</strong>: The null hypothesis that the results are not statistically distinguishable from a fair die is equivalent to the hypothesis that the results could have come from a uniform distribution, i.e., that the expected probability of each outcome remains \(1/6^{\text{th}}\); thus we want to perform a goodness-of-fit test. We use <a href="https://docs.google.com/spreadsheets">Google Sheets</a> (<q>GSheets</q>), with the pictured results:</p>
 
 <p><img src="./TroilaC11S1E7.png"></p>
 
-<p>Since \(P\) is (much) greater than the specified \(0.05\) significance level, we <strong>fail to reject the null hypothesis</strong> and conclude that the results are not statistically distinguishable from those which one might obtain from a fair die: the loading of the die appears to have had no effect.
+<p>Since \(P\) is (much) greater than the specified \(0.05\) significance level, we <strong>fail to reject the null hypothesis</strong> and conclude that the results are not statistically distinguishable from those which one might obtain from a fair die: the loading of the die <i>appears</i> to have had no effect.
 <br><br></p>
 
 <p><strong>10</strong>) Do South London World War II bomb hits fit a Poisson distribution?</p>
@@ -144,19 +149,19 @@ body {font-family: Palatino;}
 
 <p><img src="./TroilaC11S1E16.png" style="max-width: 80%; height: auto"></p>
 
-<p>Since the \(P\)-value of 0.000 is less than the specified significance level of 0.05, we <strong>reject the null hypothesis</strong> that MLB players’ birthdays are, statistically speaking, equally distributed among the months of the year: some months would appear to have more MLB player birthdays than others.&nbsp; Additionally, although the test itself doesn’t tell us in which month(s) there are more birthdays, an examination of the \((O-E)^2/E\) values does suggest that more MLB birthdays occur after July 31, as was claimed.
+<p>Since the \(P\)-value of 0.000 is less than the specified significance level of 0.05, we <strong>reject the null hypothesis</strong> that MLB players’ birthdays are, statistically speaking, equally distributed among the months of the year: some months would appear to have more MLB player birthdays than others. Additionally, although the test itself doesn’t tell us in which month(s) there are more birthdays, an examination of the \((O-E)^2/E\) values does suggest that more MLB birthdays occur after July 31, as was claimed.
 <br><br></p>
 
 <p><strong>19</strong>) Using Text Data Set 27 <q>M&amp;M Weights,</q> test, at a 0.05 significance level, Mars, Inc.’s claim that M&amp;M’s are 16% green, 20% orange, 14% yellow, 24% blue, 13% red, and 13% brown.</p>
 
-<p><strong>Sln</strong>: Note: despite the data being weights, to get the answer in the back of the book, one needs to assume that these claimed percentages are <q>by number,</q> i.e., count, not <q>by weight.</q>&nbsp; Summary data, i.e., observed counts for each color, and results of a \(\chi^2\) goodness-of-fit test are given in the table below:</p>
+<p><strong>Sln</strong>: Note: despite the data being weights, to get the answer in the back of the book, one needs to assume that these claimed percentages are <q>by number,</q> i.e., count, not <q>by weight.</q> Summary data, i.e., observed counts for each color, and results of a \(\chi^2\) goodness-of-fit test are given in the table below:</p>
 
 <p><img src="./TroilaC11S1E19.png" style="max-width: 80%; height: auto"></p>
 
 <p>Since \(P\) is greater than the specified 0.05 significance level, we <strong>fail to reject the null hypothesis</strong> that Mars, Inc.’s color count distribution is as claimed: there is insufficient evidence to dispute the claim that M&amp;M’s come as, by count, 16% green, 20% orange, 14% yellow, 24% blue, 13% red, and 13% brown. 
 <br><br></p>
 
-<p><strong>22</strong>) At a 0.01 significance level, test the null hypothesis that the distribution of the leading digits of the text author’s most recent 250 check amounts fits Benford’s Law.&nbsp; Does the conclusion change if we use a significance level of 0.05?</p>
+<p><strong>22</strong>) At a 0.01 significance level, test the null hypothesis that the distribution of the leading digits of the text author’s most recent 250 check amounts fits Benford’s Law. Does the conclusion change if we use a significance level of 0.05?</p>
 
 <p><strong>Sln</strong>: Data and \(\chi^2\) g.o.f. test results are given in the table below:</p>
 
@@ -167,7 +172,7 @@ body {font-family: Palatino;}
 
 <p><strong>25</strong>) Are the female heights in Text Data Set 1 <q>Body Data</q> distributed normally?</p>
 
-<p><strong>Sln</strong>: Note: <q>half</q> the work of this Exercise is efficiently extracting just the female heights from the data set; the other <q>half</q> is getting the frequency counts&mdash;both observed and expected&mdash;right.&nbsp; I’m not going to detail the machinations I went through to accomplish the former; but this wouldn’t be much of a <q>solution</q> if I didn’t at least provide the spreadsheet functions and methods I used to obtain the answers.&nbsp; Accordingly, the first table below shows said functions, while the second table shows the numerical results.&nbsp; (Note that where my numerical results differ, ever-so-slightly, from those in the back of the book, it is because&mdash;and I checked to confirm this&mdash;the answers in the back to Parts C and D use the rounded-to-four-decimal-places answers in the back to Part B, whereas the numerical values I present here use unrounded values throughout the calculations.)</p>
+<p><strong>Sln</strong>: Note: <q>half</q> the work of this Exercise is efficiently extracting just the female heights from the data set; the other <q>half</q> is getting the frequency counts&mdash;both observed and expected&mdash;right. I’m not going to detail the machinations I went through to accomplish the former; but this wouldn’t be much of a <q>solution</q> if I didn’t at least provide the spreadsheet functions and methods I used to obtain the answers. Accordingly, the first table below shows said functions, while the second table shows the numerical results. (Note that where my numerical results differ, ever-so-slightly, from those in the back of the book, it is because&mdash;and I checked to confirm this&mdash;the answers in the back to Parts C and D use the rounded-to-four-decimal-places answers in the back to Part B, whereas the numerical values I present here use unrounded values throughout the calculations.)</p>
 
 <p>So, here are the spreadsheet functions used:</p>
 
@@ -188,12 +193,12 @@ body {font-family: Palatino;}
 
 <p><img src="./TroilaC11S2E7.png" style="max-width: 100%"></p>
 
-<p>Given the \(P\)-value of 0.000, we <strong>reject the null hypothesis</strong> that the surveyed behaviors are independent of one another among teenagers: there is sufficient evidence to conclude that these behaviors are not independent of one another among teenagers.&nbsp; (However, the usual caveats regarding voluntary reporting when using surveys apply.)<br>
-<br><br></p>
+<p>Given the \(P\)-value of 0.000, we <strong>reject the null hypothesis</strong> that the surveyed behaviors are independent of one another among teenagers: there is sufficient evidence to conclude that these behaviors are not independent of one another among teenagers. (However, the usual caveats regarding voluntary reporting when using surveys apply.)<br>
+<br></p>
 
 <p><strong>10</strong>) On average, does the 2011 rule change in the NFL regarding overtime play appear to have affected the outcome of overtime games?</p>
 
-<p><strong>Sln</strong>: A little background is in order: before the rule change, in the event of a tie at the regular end of a game, a full overtime period was played, regardless of which team scored first in the overtime period: there was no <q>sudden death</q> situation.&nbsp; The rule change created a <q>sudden death</q> situation: if either team scored a <q>touchdown</q>&mdash;the highest-scoring play in American football&mdash;that team would immediately win, regardless of how much time was left in the period.&nbsp; Superficially, relative to before the rule change, this would appear to give an advantage to whichever team possesses the ball first, which in turn is determined by a coin toss before the period commences; thus, superficially, whichever team wins the coin toss would appear to have an advantage under this new overtime rule.&nbsp; But do actual overtime game results after the rule change support this, or does the loser of the coin toss have just as much chance of winning the game as they did before the rule change?</p>
+<p><strong>Sln</strong>: A little background is in order: before the rule change, in the event of a tie at the regular end of a game, a full overtime period was played, regardless of which team scored first in the overtime period: there was no <q>sudden death</q> situation. The rule change created a <q>sudden death</q> situation: if either team scored a <q>touchdown</q>&mdash;the highest-scoring play in American football&mdash;that team would immediately win, regardless of how much time was left in the period. Superficially, relative to before the rule change, this would appear to give an advantage to whichever team possesses the ball first, which in turn is determined by a coin toss before the period commences; thus, superficially, whichever team wins the coin toss would appear to have an advantage under this new overtime rule. But do actual overtime game results after the rule change support this, or does the loser of the coin toss have just as much chance of winning the game as they did before the rule change?</p>
 
 <p>The data and contingency table results are:</p>
 
@@ -202,40 +207,36 @@ body {font-family: Palatino;}
 <p>With a \(P\)-value of 0.626, we <strong>fail to reject the null hypothesis</strong> that the rule change had no effect on whether or not the winner of the coin toss gained an advantage after the rule change: it appears that the result of the coin toss has just as much (or as little) impact on the final outcome of the game as it did prior to the 2011 rule change.
 <br><br></p>
 
-<p><strong>13</strong>) In penalty kick situations, do soccer goalies have to decide which way to jump before they can see which direction the ball is coming from, i.e., is jump direction independent of ball direction?&nbsp; Test using a 0.05 significance level.</p>
+<p><strong>13</strong>) In penalty kick situations, do soccer goalies have to decide which way to jump before they can see which direction the ball is coming from, i.e., is jump direction independent of ball direction? Test using a 0.05 significance level.</p>
 
 <p><strong>Sln</strong>: Data regarding ball direction and jump direction, as well as contingency table results are given in the following table:</p>
 
 <p><img src="./TroilaC11S2E13.png" style="max-width: 100%"></p>
 
-<p>Since the \(P\)-value of 0.0056 is less than the specified significance level of 0.05, we <strong>reject the null hypothesis</strong> that jump direction is independent of ball direction: it appears that, at least to some extent, goalies do have enough time to choose jump direction based on ball direction.&nbsp; (One might note in passing, however, that two of the expected frequencies just barely exceed the threshold of 5, which the text specifies as required to justify the use of this \(\chi^2\)-based contingency table procedure.)
+<p>Since the \(P\)-value of 0.0056 is less than the specified significance level of 0.05, we <strong>reject the null hypothesis</strong> that jump direction is independent of ball direction: it appears that, at least to some extent, goalies do have enough time to choose jump direction based on ball direction. (One might note in passing, however, that two of the expected frequencies just barely exceed the threshold of 5, which the text specifies as required to justify the use of this \(\chi^2\)-based contingency table procedure.)
 <br><br></p>
 
-<p><strong>16</strong>) Is outcome&mdash;injury or fatality vs. not&mdash;of a motorcycle accident independent of helmet color?&nbsp; From a safety standpoint, are certain helmet colors better than others, and if so which appears to be best?</p>
+<p><strong>16</strong>) Is outcome&mdash;injury or fatality vs. not&mdash;of a motorcycle accident independent of helmet color? From a safety standpoint, are certain helmet colors better than others, and if so which appears to be best?</p>
 
-<p><strong>Sln</strong>: Interestingly, this problem does not specify a significance level to use!&nbsp; This is significant (no pun intended) because the \(P\)-value resulting from the contingency table analysis below:</p>
+<p><strong>Sln</strong>: Interestingly, this problem does not specify a significance level to use! This is significant (no pun intended) because the \(P\)-value resulting from the contingency table analysis below:</p>
 
 <p><img src="./TroilaC11S2E16.png" style="max-width: 100%"></p>
 
-<p>namely, 0.041, results in a different action with respect to the null hypothesis depending on whether we choose a significance level of 0.05 or 0.01: if we choose the former, we should <strong>reject the null hypothesis</strong> that accident outcome is independent of helmet color, whereas if we choose the 0.01 significance level, we should <strong>fail to reject the null hypothesis</strong>!&nbsp; In this case, the safety-minded motorcycle driver would probably want to choose the 0.05 s.l., reject the null hypothesis that helmet color is independent of accident outcome, and choose a helmet color based on the interpretation that there is sufficient evidence to support the notion that certain helmet colors reduce the likelihood of injury or death.&nbsp; </p>
+<p>namely, 0.041, results in a different action with respect to the null hypothesis depending on whether we choose a significance level of 0.05 or 0.01: if we choose the former, we should <strong>reject the null hypothesis</strong> that accident outcome is independent of helmet color, whereas if we choose the 0.01 significance level, we should <strong>fail to reject the null hypothesis</strong>! In this case, the safety-minded motorcycle driver would probably want to choose the 0.05 s.l., reject the null hypothesis that helmet color is independent of accident outcome, and choose a helmet color based on the interpretation that there is sufficient evidence to support the notion that certain helmet colors reduce the likelihood of injury or death. </p>
 
 <p>As regards the second part of the question: although rejection of the null hypothesis in and of itself doesn’t tell us <strong><em>which</em></strong> color is best, an examination of the \((O-E)^2/E\) results points to white helmets exhibiting the greatest relative difference between expected and observed outcomes; subsequent examination of the actual observed vs. expected <q>cases</q> (i.e., actual incidents of injury or death) indicates that indeed the observed frequency of cases for white helmets, 112, is notably less than its expected frequency of 135; thus, though there is of course no guarantee, white would appear to be the safest helmet color choice, for the motorcycle driver inclined to interpret these results as indicating that helmet color does indeed make a difference.
 <br><br></p>
 
-<p><strong>19</strong>) Based on the given data (collected by the text author), and using a 0.05 significance level, are car license plate display laws in California, Connecticut, and New York obeyed with <q>more-or-less</q> equal compliance, or does obeyance appear to depend on the state?</p>
+<p><strong>19</strong>) Based on the given data (collected by the text author), and using a 0.05 significance level, are car license plate display laws in California, Connecticut, and New York obeyed with <q>more-or-less</q> equal compliance, or does compliance appear to depend on the state?</p>
 
 <p><strong>Sln</strong>: The data and resulting contingency table analysis are given below:</p>
 
 <p><img src="./TroilaC11S2E19.png" style="max-width: 100%"></p>
 
-<p>At the specified s.l. of 0.05, the \(P\)-value of 0.000 compels us to <strong>reject the null hypothesis</strong> that compliance with these states’ license plate display laws is independent of the state in question: there is sufficient evidence to conclude that these laws are obeyed more in some of these states than in others.&nbsp; Of the three, New York, with an expected <q>disobey frequency</q> of 33.83 but an observed disobey frequency of only 9, appears to be the <q>most compliant</q> state, while Connecticut, with an expected disobey frequency of 20.54 but an observed disobey frequency of 45, appears to be the <q>most recalcitrant</q> state.
-<br><br></p>
-
-<p><a name="Credits"></a></p>
+<p>At the specified s.l. of 0.05, the \(P\)-value of 0.000 compels us to <strong>reject the null hypothesis</strong> that compliance with these states’ license plate display laws is independent of the state in question: there is sufficient evidence to conclude that these laws are obeyed more in some of these states than in others. Of the three, New York, with an expected compliance frequency of 33.83 but an observed compliance frequency of only 9, appears to be the <q>most compliant</q> state, while Connecticut, with an expected compliance frequency of 20.54 but an observed compliance frequency of 45, appears to be the <q>most recalcitrant</q> state.
+<br></p>
 
 <h3>Credits</h3>
-
-<p>Text layout and MathJax (LaTeX) composed using <a href="http://lightpaper.42squares.in">LightPaper for Mac by 42Squares</a></a>.</p>
 
 <p>Spreadsheets, including calculations, generated with <a href="https://docs.google.com/spreadsheets">Google Sheets</a>.</p>
 
