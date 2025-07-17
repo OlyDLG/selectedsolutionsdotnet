@@ -1,11 +1,11 @@
 <style>
 body {font-family: Palatino}
 </style>
-#### <center><i>Binomial Expansion Formula & Corollaries
+## <center><i>Binomial Expansion Formula & Corollaries</i>
 #### <center>&copy; 2017, 2025 by 
 #### <center>David Lawrence Goldsmith
 #### <center>for
-#### <center>SelectedSolutionsDotNet</i>
+## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)
 
 ##### Preface
 

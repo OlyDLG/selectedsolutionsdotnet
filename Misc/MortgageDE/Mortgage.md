@@ -1,11 +1,11 @@
 <style>
 body {font-family: Palatino}
 </style>
-#### <center><i>The "Mortgage" Difference Equation: Derivation, Solution, and Commentary</i>
+## <center><i>The "Mortgage" Difference Equation: Derivation, Solution, and Commentary</i>
 #### <center>&copy; 2016, 2025 by 
 #### <center>David Lawrence Goldsmith
 #### <center>for
-#### <center>SelectedSolutionsDotNet
+## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)
 
 <br>
 $~~~~~$If you've ever shopped for a mortgage (and you're like me) you probably wondered how they figure out your monthly mortgage payment. Why is this even "a thing"? Well, they arrange it so that you pay the same amount every month, for a pre-determined number of months, and each such payment is divided (unevenly) between interest and principal; but the interest portion is always calculated only on the remaining principal, which means it goes down every payment; this in turn means, because the total payment is fixed, that the amount that goes toward paying down your principal increases every month. If you think about it, or, more educationally, actually try to figure out how to make this work using trial-and-error (i.e., "guess, check, revise, repeat"; "Exercise 0": figure out "by hand" the monthly payment and each month's interest and principal portions, for a 12 month, $10,000 "mortgage" at a nominal annual interest rate of 6%) it seems like it would be too tedious (at best) to calculate these "payment schedules" on a regular-but-custom basis (which is why one way that mortgage lenders have at their disposal to figure these out is to use pre-printed tables). (The first time I applied for a mortgage, I asked our loan agent how our payment schedule was calculated and she said: "I have a special calculator that figures it out." "OK," I said, "but how does it figure it out? Is there a formula or procedure I can look up and use to check the calculation myself?" "Oh, I have no idea about that: I just punch in the numbers and believe what it tells me," was her reply. Me being me, that set me on a mission, to figure out how a mortgage schedule is calculated.)

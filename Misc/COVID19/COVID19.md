@@ -8,11 +8,11 @@ $\definecolor{green}{RGB}{0,175,0}
 <style>
 body {font-family: Palatino}
 </style>
-#### <center><i>Modeling Initial U. S. A. COVID-19 Case Growth:<br>An "Exercise" in Exponential and Logistic Regression,<br>With an Emphasis on the Concept of Doubling Time</i>
+## <center><i>Modeling Initial U. S. A. COVID-19 Case Growth:<br>An "Exercise" in Exponential and Logistic Regression,<br>With an Emphasis on the Concept of Doubling Time</i>
 #### <center>&copy; 2020, 2025 by 
 #### <center>David Lawrence Goldsmith
 #### <center>for
-#### <center>SelectedSolutionsDotNet
+## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)
 
 <i>Note:  This content is provided "as-is," for educational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
 

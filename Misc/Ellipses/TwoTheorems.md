@@ -11,11 +11,11 @@ $\definecolor{red}{RGB}{255,0,0}
 <style>
 body {font-family: Palatino}
 </style>
-#### <center><i>Two Theorems on Ellipses</i>
+## <center><i>Two Theorems on Ellipses</i>
 #### <center>&copy; 2017, 2025 by 
 #### <center>David Lawrence Goldsmith
 #### <center>for
-#### <center>SelectedSolutionsDotNet
+## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)
 
 <br>
 Note: Both of these problems are exercises (not worked examples) from Kline, M., 1967. <i>Calculus: An Intuitive and Physical Approach.</i> Wiley, New York.; but are interesting and important enough results on their own to warrant independent presentation. (Plus, I had cause to work through them in my tutoring "adventures," and one of the points of SelectedSolutionsDotNet is to record and present non-trivial exercises I have had the pleasure to complete.)
