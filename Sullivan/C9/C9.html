@@ -1,0 +1,410 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C9</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAIAAACgvKk3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAKTWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVN3WJP3Fj7f92UPVkLY8LGXbIEAIiOsCMgQWaIQkgBhhBASQMWFiApWFBURnEhVxILVCkidiOKgKLhnQYqIWotVXDjuH9yntX167+3t+9f7vOec5/zOec8PgBESJpHmomoAOVKFPDrYH49PSMTJvYACFUjgBCAQ5svCZwXFAADwA3l4fnSwP/wBr28AAgBw1S4kEsfh/4O6UCZXACCRAOAiEucLAZBSAMguVMgUAMgYALBTs2QKAJQAAGx5fEIiAKoNAOz0ST4FANipk9wXANiiHKkIAI0BAJkoRyQCQLsAYFWBUiwCwMIAoKxAIi4EwK4BgFm2MkcCgL0FAHaOWJAPQGAAgJlCLMwAIDgCAEMeE80DIEwDoDDSv+CpX3CFuEgBAMDLlc2XS9IzFLiV0Bp38vDg4iHiwmyxQmEXKRBmCeQinJebIxNI5wNMzgwAABr50cH+OD+Q5+bk4eZm52zv9MWi/mvwbyI+IfHf/ryMAgQAEE7P79pf5eXWA3DHAbB1v2upWwDaVgBo3/ldM9sJoFoK0Hr5i3k4/EAenqFQyDwdHAoLC+0lYqG9MOOLPv8z4W/gi372/EAe/tt68ABxmkCZrcCjg/1xYW52rlKO58sEQjFu9+cj/seFf/2OKdHiNLFcLBWK8ViJuFAiTcd5uVKRRCHJleIS6X8y8R+W/QmTdw0ArIZPwE62B7XLbMB+7gECiw5Y0nYAQH7zLYwaC5EAEGc0Mnn3AACTv/mPQCsBAM2XpOMAALzoGFyolBdMxggAAESggSqwQQcMwRSswA6cwR28wBcCYQZEQAwkwDwQQgbkgBwKoRiWQRlUwDrYBLWwAxqgEZrhELTBMTgN5+ASXIHrcBcGYBiewhi8hgkEQcgIE2EhOogRYo7YIs4IF5mOBCJhSDSSgKQg6YgUUSLFyHKkAqlCapFdSCPyLXIUOY1cQPqQ28ggMor8irxHMZSBslED1AJ1QLmoHxqKxqBz0XQ0D12AlqJr0Rq0Hj2AtqKn0UvodXQAfYqOY4DRMQ5mjNlhXIyHRWCJWBomxxZj5Vg1Vo81Yx1YN3YVG8CeYe8IJAKLgBPsCF6EEMJsgpCQR1hMWEOoJewjtBK6CFcJg4Qxwicik6hPtCV6EvnEeGI6sZBYRqwm7iEeIZ4lXicOE1+TSCQOyZLkTgohJZAySQtJa0jbSC2kU6Q+0hBpnEwm65Btyd7kCLKArCCXkbeQD5BPkvvJw+S3FDrFiOJMCaIkUqSUEko1ZT/lBKWfMkKZoKpRzame1AiqiDqfWkltoHZQL1OHqRM0dZolzZsWQ8ukLaPV0JppZ2n3aC/pdLoJ3YMeRZfQl9Jr6Afp5+mD9HcMDYYNg8dIYigZaxl7GacYtxkvmUymBdOXmchUMNcyG5lnmA+Yb1VYKvYqfBWRyhKVOpVWlX6V56pUVXNVP9V5qgtUq1UPq15WfaZGVbNQ46kJ1Bar1akdVbupNq7OUndSj1DPUV+jvl/9gvpjDbKGhUaghkijVGO3xhmNIRbGMmXxWELWclYD6yxrmE1iW7L57Ex2Bfsbdi97TFNDc6pmrGaRZp3mcc0BDsax4PA52ZxKziHODc57LQMtPy2x1mqtZq1+rTfaetq+2mLtcu0W7eva73VwnUCdLJ31Om0693UJuja6UbqFutt1z+o+02PreekJ9cr1Dund0Uf1bfSj9Rfq79bv0R83MDQINpAZbDE4Y/DMkGPoa5hpuNHwhOGoEctoupHEaKPRSaMnuCbuh2fjNXgXPmasbxxirDTeZdxrPGFiaTLbpMSkxeS+Kc2Ua5pmutG003TMzMgs3KzYrMnsjjnVnGueYb7ZvNv8jYWlRZzFSos2i8eW2pZ8ywWWTZb3rJhWPlZ5VvVW16xJ1lzrLOtt1ldsUBtXmwybOpvLtqitm63Edptt3xTiFI8p0in1U27aMez87ArsmuwG7Tn2YfYl9m32zx3MHBId1jt0O3xydHXMdmxwvOuk4TTDqcSpw+lXZxtnoXOd8zUXpkuQyxKXdpcXU22niqdun3rLleUa7rrStdP1o5u7m9yt2W3U3cw9xX2r+00umxvJXcM970H08PdY4nHM452nm6fC85DnL152Xlle+70eT7OcJp7WMG3I28Rb4L3Le2A6Pj1l+s7pAz7GPgKfep+Hvqa+It89viN+1n6Zfgf8nvs7+sv9j/i/4XnyFvFOBWABwQHlAb2BGoGzA2sDHwSZBKUHNQWNBbsGLww+FUIMCQ1ZH3KTb8AX8hv5YzPcZyya0RXKCJ0VWhv6MMwmTB7WEY6GzwjfEH5vpvlM6cy2CIjgR2yIuB9pGZkX+X0UKSoyqi7qUbRTdHF09yzWrORZ+2e9jvGPqYy5O9tqtnJ2Z6xqbFJsY+ybuIC4qriBeIf4RfGXEnQTJAntieTE2MQ9ieNzAudsmjOc5JpUlnRjruXcorkX5unOy553PFk1WZB8OIWYEpeyP+WDIEJQLxhP5aduTR0T8oSbhU9FvqKNolGxt7hKPJLmnVaV9jjdO31D+miGT0Z1xjMJT1IreZEZkrkj801WRNberM/ZcdktOZSclJyjUg1plrQr1zC3KLdPZisrkw3keeZtyhuTh8r35CP5c/PbFWyFTNGjtFKuUA4WTC+oK3hbGFt4uEi9SFrUM99m/ur5IwuCFny9kLBQuLCz2Lh4WfHgIr9FuxYji1MXdy4xXVK6ZHhp8NJ9y2jLspb9UOJYUlXyannc8o5Sg9KlpUMrglc0lamUycturvRauWMVYZVkVe9ql9VbVn8qF5VfrHCsqK74sEa45uJXTl/VfPV5bdra3kq3yu3rSOuk626s91m/r0q9akHV0IbwDa0b8Y3lG19tSt50oXpq9Y7NtM3KzQM1YTXtW8y2rNvyoTaj9nqdf13LVv2tq7e+2Sba1r/dd3vzDoMdFTve75TsvLUreFdrvUV99W7S7oLdjxpiG7q/5n7duEd3T8Wej3ulewf2Re/ranRvbNyvv7+yCW1SNo0eSDpw5ZuAb9qb7Zp3tXBaKg7CQeXBJ9+mfHvjUOihzsPcw83fmX+39QjrSHkr0jq/dawto22gPaG97+iMo50dXh1Hvrf/fu8x42N1xzWPV56gnSg98fnkgpPjp2Snnp1OPz3Umdx590z8mWtdUV29Z0PPnj8XdO5Mt1/3yfPe549d8Lxw9CL3Ytslt0utPa49R35w/eFIr1tv62X3y+1XPK509E3rO9Hv03/6asDVc9f41y5dn3m978bsG7duJt0cuCW69fh29u0XdwruTNxdeo94r/y+2v3qB/oP6n+0/rFlwG3g+GDAYM/DWQ/vDgmHnv6U/9OH4dJHzEfVI0YjjY+dHx8bDRq98mTOk+GnsqcTz8p+Vv9563Or59/94vtLz1j82PAL+YvPv655qfNy76uprzrHI8cfvM55PfGm/K3O233vuO+638e9H5ko/ED+UPPR+mPHp9BP9z7nfP78L/eE8/sl0p8zAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAHiSURBVHja7FXLspswDJUdk8HD8ApMmPz/t5EFCUl4hGAM1l2odV3gdtVdq4UZe6QjHelgM0QEAGMM5xx+Wtd1wzAURQEAiMgYoxX2bBiGvu/TNPU8T9CRxZqmqaoqpRTn/PF4nE4nQtnFMsZUVfV+vxljxpiiKITNT0VVVcUY45wjYtM0URQJIVal0VZrXZalMcatkSEiMW3b9n6/Ey8bKaW8XC4rICJRlqXrSRQ5fT6fT13XFGBXKWWWZW4AYS3Lcr1et1jn81lQC263mzHGMuKc53kehuG2X4hY17XlSCdxHOd5DgAcAJqmmefZ7U6WZbtYAKCU6vvePYmiiLB+wLVta/MAQBAEURTZ7cqsMzkIIagh5MyVUrZyGmiapm6nVkzHcXRbGccxDYCcuVLKVoGInucdj0f4xuZ51lq70w+CwOXBp2lyA6SUbpvdukgfVtWMMSGEEMLlwZdlccM8z3P/tpVEKLcV05bHb3CIuMVyB7IazuFwWDkLkgj5McaUUs/n01aUJIk7ENsHSqy1fr1eNkcYhmKeZzd513UERE5JkrjJtdaWASIqpcZxtH+e7/t826DvFGd9XCWs9MThr9p/uH8LbvcZ/MPb+EuVwzCsnhtXq1LK1VW8e9+Q+b7/NQBJdFUUrYPCrgAAAABJRU5ErkJggg==") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><p>\(\require{cancel}\)
+<style>
+body {font-family: Palatino}
+</style></p>
+
+<h2><center> Selected Exercise Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Sullivan, M., 2012. <i>Algebra &amp; Trigonometry, Ninth Edition.</i> Prentice Hall, Boston</h3>
+
+<h3><center>Chapter 9: Applications of Trigonometric Functions</h3>
+
+<h3><center>&copy; 2020, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<h3>Section 1: Applications Involving Right Triangles</h3>
+
+<p><strong>28</strong>) What should be the angle of depression of a camera mounted 9’ (feet) above the floor so as to be focused at a point 12’ away and 6’ above the floor?</p>
+
+<p><strong>Sln</strong>: <img src="./S1/SullivanC9S1P28.png" height="325"> 
+<br></p>
+
+<p><strong>31</strong>) An airplane leaves an airport bearing N40&deg;E for half a mile, then turns 90&deg; towards the SE; after one mile, what bearing should the control tower use to locate the aircraft?</p>
+
+<p><strong>Sln</strong>: <img src="./S1/SullivanC9S1P31.png" height="325"> 
+<br></p>
+
+<p><strong>34</strong>) A surveyor sights the top of the Willis Tower as 2593’ away at an elevation angle of 34&deg;, and the top of the Tower’s antenna as 2743’ away. Give: <strong>a</strong>) her (horizontal) distance from the Tower; <strong>b</strong>) the height of the Tower; <strong>c</strong>) the elevation angle from the surveyor to the top of the antenna; and <strong>d</strong>) the length of the antenna.</p>
+
+<p><strong>Sln</strong>: <img src="./S1/SullivanC9S1P34.png" height="325"> 
+<br></p>
+
+<p><strong>40</strong>) At an altitude of \(h\) mi., a satellite orbiting the Earth (radius 3960 mi.) can monitor \(d\) mi. (along the Earth’s circumference) in any direction from its position. Give: <strong>a</strong>) a formula relating \(h\) to the (plane) central angle \(\theta\) (in radians) subtended by any two most distant observable points (see figure); <strong>b</strong>) a formula relating \(d\) and \(\theta\); <strong>c</strong>) a formula relating \(d\) and \(h\); <strong>d</strong>) How high must the orbit be for \(d=2500\) mi.? <strong>e</strong>) How far can it see if the altitude is 300 mi.?</p>
+
+<p><strong>Sln</strong>: We shall do the general case:</p>
+
+<p><img src="./S1/SullivanC9S1P40.png" height="300"></p>
+
+<p>Since the satellite can see an equal distance in any direction (it is reasonable to assume), segment \(OC\) bisects the central angle \(\theta\) (as shown); from a theorem of geometry, we know that segment \(OA\) is perpendicular to segment \(AC\), and thus triangle \(OAC\) is <q>right</q> with hypotenuse \(OC=r+h\); and <q>leg</q> \(OA=r\) is the side <q>adjacent</q> to an angle of measure \(\frac{\theta}2\) (as shown). Thus we have \(\cos\left(\frac{\theta}2\right) = \frac{r}{r+h} \implies \sec\left(\frac{\theta}2\right) = 1 + \frac{h}r \implies \) </p>
+
+<p><strong>a</strong>) \(\boxed{h=r\left[\sec\left(\frac{\theta}2\right) - 1\right]=r\sec\left(\frac{\theta}2\right) - r}\) mi.</p>
+
+<p><strong>b</strong>) \(2d\) is to the circumference of the circle, \(2\pi r\), as \(\theta\) is to the number of radians in the whole circle, \(2\pi\), i.e.,\(\displaystyle \frac{2d}{2\pi r} = \frac{\theta}{2\pi} \implies \boxed{d=\frac{r\theta}2}\) mi.</p>
+
+<p><strong>c</strong>) Part <strong>b</strong> \(\implies \frac{\theta}2 = \frac{d}r \implies \boxed{h=r\sec\left(\frac{d}r\right)-r}\) mi.</p>
+
+<p><strong>d</strong>) Therefore, with \(r=3960, d=2500, h = 3960(\sec(2500/3960)-1) \doteq \boxed{946\text{ mi.}}\);</p>
+
+<p><strong>e</strong>) and if \(h=300, \cos\left(\frac{\theta}2\right) = \frac{3960}{3960+300} = \frac{3960}{4260} \implies \frac{\theta}2 = \cos^{-1}\left(\frac{66}{71}\right) \doteq 0.378\text{ rad.} \implies \boxed{d \doteq (0.378)(3960) \doteq 1495\text{ mi.}}\)
+<br><br></p>
+
+<h3>Section 2: Law of Sines</h3>
+
+<p><strong>10, 20, 30</strong>) Solve the indicated triangles (unboxed data given).</p>
+
+<p><strong>10 Sln</strong>: <img src="./S2/SullivanC9S2P10.png" align="top" height="250">
+<br></p>
+
+<p><strong>20</strong>) \(A=70°\), \(B=60°\), \(c=4\).</p>
+
+<p><strong>Sln</strong>: <img src="./S2/SullivanC9S2P20.png" height="325">
+<br></p>
+
+<p><strong>30</strong>) \(b = 2, c = 3, B = 40°\)</p>
+
+<p><strong>Sln</strong>: \(\sin C = \displaystyle \frac{\sin B}b c \implies C = \sin^{-1}\left[\frac{\sin 40°}2 (3)\right] \doteq 74.619°\) OR \(=180 - \sin^{-1}\displaystyle \left[\frac{\sin 40°}2 (3)\right] \doteq 105.381°\); since both of these are less than \(180°-40°=140°\), both are viable angles in a triangle satisfying the given information, so the given information is consistent with <strong>two different triangles</strong>: one whose angles measure \(40°, \boxed{74.619°}\), and \(140°-74.619°=\boxed{65.381°}\):</p>
+
+<p><img src="./S2/SullivanC9S2P30a.png" height="300"></p>
+
+<p>and one whose angles measure \(40°, \boxed{105.381°}\), and \(140°-105.381°=\boxed{34.619°}\):</p>
+
+<p><img src="./S2/SullivanC9S2P30b.png" height="300">
+<br></p>
+
+<p><strong>40</strong>) A surveyor measures a 25° angle of elevation to the top of a mountain, and then moves 1000 feet farther away and measures an elevation angle of 15°: how high is the mountain?</p>
+
+<p><strong>Sln</strong>: <img src="./S2/SullivanC9S2P40.png" height="300" width="550">
+<br></p>
+
+<p><strong>50</strong>) A navigator at sea spies two lighthouses known to be 3 mi. away from one another; the angle from the ship to one of the lighthouses is 15°, that to the other is 35°. Calculate the ship’s distances from the lighthouses and to a point on the shore perpendicular to the line between the lighthouses, i.e., its shortest distance from the shore.</p>
+
+<p><strong>Sln</strong>: Call the ship’s position point \(R\) and the point on the shore closest to the ship \(S\). Referring to the figure, since angle \(\angle RSP\) is <q>right,</q> we know that angle \(\angle RPS = 90°-15°=75°\) and, similarly, that angle \(\angle RQS = 90°-35° = 55°\); the Law of Sines thus yields \(\displaystyle \frac{|RP|}{\sin 55°} = \frac{3}{\sin 50°} \implies |RP|= \frac3{\sin 50°}\sin 55° \doteq \boxed{ 3.21\text{ mi.}}\) and \(\displaystyle |RQ| = \frac3{\sin 50°}\sin 75° \doteq \boxed{3.78\text{ mi.}}~\) Finally, the distance to shore, \(|RS| = \frac{|RQ|}{\sin 90°}\sin 55° \doteq \boxed{3.1\text{ mi.}}\)</p>
+
+<p><img src="./S2/SullivanC9S2P50.png" height="350">
+<br></p>
+
+<p><strong>60</strong>) Show that, for any triangle, \[a=b\cos C + c\cos B\]</p>
+
+<p><strong>Pf</strong>: \(\displaystyle \frac{a}{\sin A} = \frac{b}{\sin B} \implies a = \frac{b}{\sin B}\sin A = \frac{b}{\sin B}\sin(180-(B+C))=\frac{b}{\sin B}\sin(B+C) = \) \(\displaystyle \frac{b}{\sin B}(\sin B \cos C + \sin C \cos B) = b\cos C+\frac{b}{\sin B} \sin C \cos B\); using \(\displaystyle \frac{c}{\sin C} = \frac{b}{\sin B}\) to substitute \(c\) in for \(\displaystyle \frac{b}{\sin B} \sin C\) gives us the required result.\(~~~\blacksquare\)
+<br><br></p>
+
+<h3>Section 3: Law of Cosines</h3>
+
+<p><strong>16</strong>) Solve the triangle \(a=c=4, b=3\)</p>
+
+<p><strong>Sln</strong>: The triangle is isosceles so we already know angle \(A = \) angle \(C\); the Law of Cosines for \(a\) gives \(16=16+9-2(4)(3)\cos A \implies A = C = \cos^{-1}(\frac38) \doteq \boxed{67.98°}\), and thus \(B = 180°-2\cos^{-1}(\frac38) \doteq \boxed{44.05°}\) (the 0.01° error is due to rounding of the first result).</p>
+
+<p><img src="./S3/SullivanC9S3P16.png" height="300">
+<br> </p>
+
+<p><strong>32</strong>) Solve the triangle \(a = 9, b = 7, c = 10\)</p>
+
+<p><strong>Sln</strong>: \(100=81+49-126\cos C \implies \boxed{C = \cos^{-1} \displaystyle \left(\frac5{21}\right) \doteq 76.23°}\)</p>
+
+<p>\(81=100+49-140\cos A \implies \boxed{A = \cos^{-1}\displaystyle \left(\frac{17}{35}\right) \doteq 60.94°}\)</p>
+
+<p>\(49=100+81-180\cos B \implies \boxed{B = \cos^{-1}\displaystyle \left(\frac{11}{15}\right) \doteq 42.83°}\)</p>
+
+<p>Check: \(76.23°+60.94°+42.83° = 180.00°~\checkmark\)
+<br><br></p>
+
+<p><strong>42</strong>) Solve the triangle \(a = 10, b = 10, c = 15\)</p>
+
+<p><strong>Sln</strong>: We note immediately that \(A=B\) and proceed with:</p>
+
+<p>\(100=100+225-300\cos A \implies \boxed{A=B=\cos^{-1}\displaystyle \left(\frac34\right) \doteq 41.41°}\) </p>
+
+<p>\(225= 200-200\cos C \implies \boxed{C = \cos^{-1}\displaystyle \left(-\frac18\right) \doteq 97.18°}\)</p>
+
+<p>Check: \(97.18°+2(41.41)° = 180.00°~\checkmark\)
+<br><br></p>
+
+<p><strong>48</strong>) A <q>regulation</q> Little League Baseball diamond is a square 60’ on a side, with the Pitching Rubber (PR) 46’ from Home Plate (HP) on a line from HP to Second Base (SB) (see figure).</p>
+
+<p><img src="./S3/SullivanC9S3P48.png"></p>
+
+<p><strong>a</strong>) How far is the PR from First Base (FB)?</p>
+
+<p><strong>Sln</strong>: The triangle formed by HP, FB, and SB is <q>isosceles right,</q> so the angle opposite the segment from PR to FB, \(|PR-FB|\) in the figure, is 45°; consequently \(|PR-FB|^2 = 60^2+46^2-2(60)(46)\cos 45° \implies |PR-FB| = \sqrt{5716-2760\sqrt2} \doteq \boxed{42.58’}\) </p>
+
+<p><strong>b</strong>) How far is it from the PR to SB?</p>
+
+<p><strong>Sln</strong>: The distance from HP to SB is the hypotenuse of an isosceles right triangle whose leg length is 60’, so the Pythagorean Theorem readily gives that distance as \(60\sqrt2’\); consequently, the distance from PR to SB is \((60\sqrt2 - 46)’ \doteq \boxed{38.85’}\).</p>
+
+<p><strong>c</strong>) From facing HP, through what angle does a pitcher on the PR need to turn to face FB?</p>
+
+<p><strong>Sln</strong>: The angle we seek, \(\theta\), is opposite the 60’ side of a triangle whose other two side lengths are 46’ and the distance computed in part a). The Law of Cosines for \(\theta\) is thus \(60^2=46^2+5716-2760\sqrt2-2(46)\sqrt{5716-2760\sqrt2}\cos \theta \implies\) \(\displaystyle \theta = \cos^{-1}\left(\frac{4232-2760\sqrt2}{92\sqrt{5716-2760\sqrt2}}\right) \doteq \cos^{-1} 0.0839331812 \doteq \boxed{85.19°}\) 
+<br><br></p>
+
+<p><strong>58</strong>) Show that for any triangle</p>
+
+<p>\[\frac{\cos A}a + \frac{\cos B}b + \frac{\cos C}c =\frac{a^2 + b^2 + c^2}{2abc}\]</p>
+
+<p><strong>Pf</strong>: We may assume that none of the \(a,b,c = 0\) (why?), so multiplying through by \(2abc\) we see that the claim is equivalent to: \(a^2 + b^2 + c^2 = 2bc\cos A + 2ac\cos B + 2ab\cos C\); but by the LoC, this right-hand-side is equal to: \(b^2+c^2-\cancel{a^2}+\cancel{a^2}+\cancel{c^2}-\cancel{b^2}+a^2+\cancel{b^2}-\cancel{c^2}.~~~\blacksquare\)
+<br><br></p>
+
+<h3>Section 4: Area of a Triangle</h3>
+
+<p><strong>10</strong>) Find the area of the given (pictured) triangle.</p>
+
+<p><strong>Sln</strong>: <img src="./S4/SullivanC9S4P10.png">
+<br></p>
+
+<p><strong>16</strong>) Find the area of a triangle with sides \(a=6, b=4\) and angle  \(C=60°\).</p>
+
+<p><strong>Sln</strong>: By convention, the angle labeled \(C\) is between the sides labeled \(a,b\) so we can jump straight to the formula: \(\text{Area }= \frac12(6)(4)\sin 60° = 12\frac{\sqrt3}{2} =\boxed{6\sqrt3 \doteq 10.39\text{ sq. units}}\)
+<br><br></p>
+
+<p><strong>24</strong>) Find the area of a triangle with sides \(a = 4, b = 3, c = 6\).</p>
+
+<p><strong>Sln</strong>: <img src="./S4/SullivanC9S4P24.png" height="325">
+<br></p>
+
+<p><strong>34</strong>) Find the area of a circular segment of radius 5 in. and central angle 40°.</p>
+
+<p><strong>Sln</strong>: We shall do the general case: in general, the area of a segment of a circle, of radius \(r\), subtended by central angle \(\theta\), is the area of the subtended sector minus the area of the subtended triangle (see figure).</p>
+
+<p><img src="./S4/SullivanC9S4P34.png"></p>
+
+<p>Now, the area of the sector, \(A_{sec}\), is to the total area of the circle, \(\pi r^2\), as the central angle is to the angle measure of one whole circle, i.e., \(2\pi\) (measured in radians) or 360 (measured in degrees), i.e., \[\frac{A_{sec}}{\pi r^2} = \frac{\theta\text{ radians}}{2\pi \text{ radians}} = \frac{\theta \text{ degrees}}{360 \text{ degrees}}\]</p>
+
+<p>(Note that the right hand side is a dimensionless fraction, but only if the units of the numerator and denominator are consistent; thus, numerically, one must use 360 if one leaves the angle measure in degrees, but <q>mature</q> mathematical practice is to use radians, resulting in the <q>\(\pi\)-free</q> formula given in the figure.) This gives (for \(\theta\) in radians): \[A_{sec} = \frac{\theta}{2\pi}\pi r^2 = \frac{\theta r^2}2\]</p>
+
+<p>By the main result of this Section, the area of the subtended triangle is \(\frac12r^2\sin \theta\), and thus the general formula for the area of a segment of a circle of radius \(r\) and central angle \(\theta\) (\(\theta\) between 0 and \(\pi\), and measured in radians) is:</p>
+
+<p>\[A_{seg} = \frac12r^2(\theta - \sin \theta)\]</p>
+
+<p>So, using the formula, the answer for the stated data is \(\displaystyle \frac{25}{2} (40\frac{\pi}{180}-\sin 40°) \doteq \boxed{0.692\text{ sq. in.}}\)
+<br><br></p>
+
+<p><strong>38</strong>) Find the area of the shaded region (see figure).</p>
+
+<p><img src="./S4/SullivanC9S4P38.png" height="300"></p>
+
+<p><strong>Sln</strong>: This one is easier than it appears, if you remember your geometry: because angle \(A\) subtends a diameter, it is <q>right</q> and thus the triangle is a right triangle, where the diameter is the hypotenuse, so the unlabeled side must have length \(\sqrt{10^2-8^2} = \sqrt{36} = 6\) (bonus points if you recognized that this is just a <q>3-4-5</q> triangle scaled by a factor of 2), and the area of the triangle is thus simply \(\frac12(8)(6) = 24\); also because the line segment subtended by \(A\) is a diameter, the area of the sector of the circle is simply half the area of the whole circle, i.e., \(\frac{\pi r^2}2 = 12.5\pi\). Thus the area of the shaded region is: \[\boxed{12.5\pi - 24 \doteq 15.27\text{ sq. in}}\]
+<br></p>
+
+<p><strong>44</strong>) Referring to the figure, calculate: <strong>a</strong>) \(\text{Area }\triangle OBC\); and <strong>b</strong>) \(\text{Area } \triangle OBD\); both in terms of \(\theta\), and then <strong>c</strong>) use these results and the fact that \(\text{Area }\triangle OBC \lt \text{Area }\overset{\frown}{OBC} \lt \text{Area } \triangle OBD\), where \(\overset{\frown}{OBC}\) is the circular sector \(OBC\) and its area is given to be \(\frac{\theta}2, \theta\) (must be) in radians, to show that: \[1 \lt \frac{\theta}{\sin \theta} \lt \frac1{\cos \theta}.\]</p>
+
+<p><strong>Sln</strong>: The solutions to <strong>a</strong>) and <strong>b</strong>) are in the figure:</p>
+
+<p><img src="./S4/SullivanC9S4P44.png"></p>
+
+<p>For <strong>c</strong>) we thus have: \[\frac{\sin \theta}2 \lt \frac{\theta}2 \lt \frac{\sin \theta}{2\cos \theta}\] and multiplying through by \(\displaystyle\frac2{\sin \theta}\) (which is well-defined and positive, since \(\theta\) is assumed to be <q>acute</q>) gives us the desired result.\(~~~\blacksquare\)</p>
+
+<p>Comment: this result is important in Calculus.
+<br><br></p>
+
+<p><strong>46</strong>) Calculate the area accessible to a 100’ rope tied to one corner of a 20’-by-10’ barn.</p>
+
+<p><strong>Sln</strong>: The rope can access three-quarters of a circle of radius 100’, i.e., \(0.75\pi (100’)^2 \doteq 23,562\) sq. ft., before the walls of the barn begin to limit what it can access, and this <q>area of limited access,</q> \(A’\), is the challenging part to calculate, so we have focused on that in the figure below:</p>
+
+<p><img src="./S4/SullivanC9S4P46.png"></p>
+
+<p>\(A’\) consists of two circular sectors, one a portion of a circle of radius \(100-20=80’\) (rendered blue in the figure), the other a portion of a circle of radius \(100-10=90’\) (green); and two obtuse triangles, pictured pink and orange in the figure. To calculate the areas of the sectors, we need to calculate their subtending angles (\(\theta~\&amp;~\phi\) in the figure); fortunately, that information will be sufficient to calculate the triangle areas as well, since each of these triangles includes two known sides, and each such pair of sides, in turn, includes angles of \(\frac{\pi}2-\theta~\&amp;~\frac{\pi}2-\phi\), respectively.</p>
+
+<p>To calculate the subtending angles, we need to figure out where the two restricted circles intersect; to do this, note that, as set up in the figure with the rope anchored at the origin, the equation of the <q>blue</q> circle is \((x-20)^2+y^2=80^2\) and that for the <q>green</q> circle is \(x^2+(y-10)^2=90^2\). These are two simultaneous quadratics in two variables, so we are going to be <q>clever</q> to solve them: first, we are going to scale everything down by a factor of 10 (basically to reduce the number of zeros we have to carry around; when we get the final answer, we will need to remember to multiply it by 10). Doing this, multiplying out, and doing a little rearranging we find that: \(64-4+4x=x^2+y^2=81-1+2y\), i.e., \(y=2x-10\); substituting this into the first equation and simplifying yields: \(5x^2-44x+40=0 \implies x=\displaystyle \frac{44\pm\sqrt{44^2-4(5)(40)}}{10} = \frac{44\pm4\sqrt{71}}{10}\); remembering that we need to multiply this by 10 gives us the \(x\)-coordinate of the intersection as \(44\pm4\sqrt{71}\)...but which one, plus or minus? Calculating their decimal approximations and comparing these to the diagram, we conclude that the required answer \(44+4\sqrt{71} \doteq 77.7’\). Substituting this (actually, this divided by 10, because the equation is scaled) in for \(x\) in the second equation and doing the algebra (left to the reader) gives \(y = 10 + 2\sqrt{(67+2\sqrt{71})(23-2\sqrt{71})} \doteq 55.4’\) (again, after remembering to multiply by 10).</p>
+
+<p>Recognizing that the coordinates of the point of intersection are in fact distances, we see that \(\displaystyle \theta = \tan^{-1 }\left(\frac{y}{x-20}\right) \doteq 0.765\text{ rad.}\) and \(\displaystyle \phi = \tan^{-1}\left(\frac{x}{y-10}\right) \doteq 1.042\text{ rad.}~\) Thus, the area of the <q>blue</q> sector is \(\displaystyle \frac12(80)^2\tan^{-1 }\left(\frac{y}{x-20}\right) \doteq 2450\text{ sq. ft.}\) and that of the <q>green</q> sector is \(\displaystyle \frac12(90)^2\tan^{-1 }\left(\frac{x}{y-10}\right) \doteq 4220\text{ sq. ft.}\). Finally, using the identities \(\displaystyle \sin\left(\frac{\pi}2-t\right)=\cos(t)\) and \(\displaystyle \cos\left[\tan^{-1}\left(\frac{p}q\right)\right] = \frac{q}{\sqrt{p^2+q^2}}\), we compute the area of the <q>pink</q> triangle to be \(\displaystyle \frac12(10)(80)\cos \theta = 400\frac{x-20}{\sqrt{(x-20)^2+y^2}} \doteq  289\text{ sq. ft.}\) and that of the <q>orange</q> triangle to be \(\displaystyle \frac12(20)(90)\cos \phi = 900\frac{y-10}{\sqrt{x^2+(y-10)^2}} \doteq 454\text{ .sq ft.}\)</p>
+
+<p>The total accessible area is thus:
+\[\boxed{7500\pi + 3200\tan^{-1}\frac{y}{x-20} + 4050\tan^{-1}\frac{x}{y-10} + 400\frac{x-20}{\sqrt{(x-20)^2+y^2}} + 900\frac{y-10}{\sqrt{x^2+(y-10)^2}} \doteq 30,973\text{ sq. ft.}},\]
+where \(x=44+4\sqrt{71} \doteq 77.7’, y=10 + 2\sqrt{(67+2\sqrt{71})(23-2\sqrt{71})} \doteq 55.4’\), and the discrepancy between the final approximation and the sum of the intermediate approximations is due to rounding the earlier figures (i.e., the final approximation reflects using much more precise approximations for the intermediate results throughout the calculation). 
+<br><br></p>
+
+<h3>Section 5: Simple Harmonic Motion (SHM); Damped Motion; Combining Waves</h3>
+
+<p><strong>12</strong>) Find an equation of motion for an object experiencing SHM with an amplitude of \(a=4\), a period of \(T=\frac{\pi}2\), and, at time \(t=0\), moving <q>down,</q> i.e., in the negative direction, from its <q>resting</q> (more properly referred to as its <q>equilibrium</q>) position.</p>
+
+<p><strong>Sln</strong>: By convention, the equilibrium position is usually taken to be \(0\), so the more convenient choice between \(\sin \&amp; \cos\) is the one that is zero when its argument is zero, i.e., \(\sin\). \(T = \frac{2\pi}{\omega} = \frac{\pi}2 \implies \omega = 4\), and the maximum displacement from equilibrium, i.e., the amplitude, is 4, which is four times the maximum value of \(\sin\), so we might think the final answer is \(d(t) = 4\sin(4t)\); but wait: a <q>microsecond</q> after time \(t=0,~d(t)\) should be negative (because the object is posited to be moving in the negative direction at time \(t=0\)), but \(\sin\) is positive for small positive values of its argument; therefore, the correct final answer is: \[\boxed{d(t)=-4\sin(4t)}\]
+<br></p>
+
+<p><strong>20</strong>) Given: \(d = 4 + 3\sin(\pi t)\); <strong>a</strong>) describe the motion of the object; and give: <strong>b</strong>) the maximum displacement from equilibrium; <strong>c</strong>) the time required for one oscillation; <strong>d</strong>) the frequency.</p>
+
+<p><strong>Sln</strong>: <strong>a</strong>) This is still SHM...but not around \(d=0\); rather, it is <q>around</q> \(d=4\), with a maximum of \(d=4+3=7\) meters and a minimum of \(d=4-3=1\) meter; <strong>b</strong>) The maximum displacement from equilibrium, however, is still just the amplitude, \(\boxed{3\text{ meters}}\); <strong>c</strong>) \(\omega=\pi\) radians per second so the time required for one oscillation, i.e., the period, is \(\frac{2\pi}{\pi} = \boxed{2\text{ seconds per cycle}}\); and <strong>d</strong>) the frequency is just the reciprocal of the period, so \(\boxed{\frac12\text{ cycles per second = 0.5 Hz}}\).
+<br><br></p>
+
+<p><strong>24</strong>) Graph \(e^{-\large\frac t{4\pi}}\cos(t), 0 \le t \le 2\pi\)</p>
+
+<p><strong>Sln</strong>: This should be <q>easy</q> using a graphing utility, so we provide the answer as a <q>check,</q> and as a demonstration of <q>minimum adequate labeling.</q></p>
+
+<p><img src="./S5/SullivanC9S5P24.png">
+<br><br>  </p>
+
+<p><strong>30</strong>) Use the method of adding \(y\)-coordinates to graph \(\sin(2x) + \cos x\).</p>
+
+<p><strong>Sln</strong>: The graph below illustrates the method, as well as, of course, the result:</p>
+
+<p><img src="./S5/SullivanC9S5P30.png">
+<br><br></p>
+
+<p><strong>44</strong>) An object of mass \(m=10\) g attached to a spring with damping factor \(b=0.7\) g/sec and <q>intrinsic</q> (SHM) period \(T=3\) sec is displaced downward (i.e., in the negative direction) \(a=5\) cm from equilibrium and released.</p>
+
+<p><strong>a</strong>) Write an equation for \(d(t)\).</p>
+
+<p><strong>Sln</strong>: Using the <q>Theorem for Damped Motion</q> from the text:
+\[d(t) = ae^{-bt/(2m)}\cos \left(t\sqrt{\omega^2-\left(\frac{b}{2m}\right)^2}\right)\]
+and noting that \(d(0)\) should be negative, we obtain:
+\[\boxed{d(t) = -5e^{-(0.7/20) t}\cos\left(t\sqrt{\left(\frac{2\pi}3\right)^2-\left(\frac{0.7}{20}\right)^2}\right)\doteq-5e^{-0.035t}\cos(2.094 t)}\]</p>
+
+<p><strong>b</strong>) Graph \(d(t)\) for five oscillations.</p>
+
+<p><strong>Sln</strong>: <img src="./S5/SullivanC9S5P44.png"> 
+<br><br></p>
+
+<p><strong>48</strong>) Given \(\displaystyle d(t) = -30e^{-0.5t/70}\cos\left(t\sqrt{\left(\frac{\pi}2\right)^2-\frac{0.25}{4900}}\right)\) meters, negative \(d\) to the left of equilibrium, mass in kilograms, time in seconds.</p>
+
+<p><strong>a</strong>) Describe the motion of the object, including its mass and the damping factor.</p>
+
+<p><strong>Sln</strong>: The motion is (horizontal) damped harmonic motion; the mass, obtained from the relation \(2m=70\), is \(\boxed{m = 35\text{ kg}}\); the damping factor is  \(\boxed{b=0.5\text{ kg/sec}}\).</p>
+
+<p><strong>b</strong>) State the displacement at \(t=0\).</p>
+
+<p><strong>Sln</strong>: \(\boxed{d(0)=-30\text{ m}}\), i.e., 30 m to the left of equilibrium.</p>
+
+<p><strong>c</strong>) Graph \(d(t)\).</p>
+
+<p><strong>Sln</strong>: <img src="./S5/SullivanC9S5P48.png"></p>
+
+<p><strong>d</strong>) State the displacement at the start of the second oscillation.</p>
+
+<p><strong>Sln</strong>: The start of the second oscillation occurs when the argument of the \(\cos\) function, \(\doteq 2.094t\), equals \(2\pi\), i.e., when \(t \doteq 2\pi/2.094\); at this value of \(t\), however, \(\cos(2.094t) = 1\), so to get the displacement, we merely need to evaluate \(-30e^{-(2\pi/2.094)/140} \doteq \boxed{-29.155\text{ m}}\).</p>
+
+<p><strong>e</strong>) What happens to the displacement of the object as \(t\) gets very large?</p>
+
+<p><strong>Sln</strong>: Well, let’s see: GeoGebra gives \(d(10^3) \doteq -0.023712\) and, accurate to 15 decimal places(!), \(d(10^6) = 0\). What’s happening, of course, is that as \(t\) gets very large, \(e^{-t/140}\) goes to zero (albeit rather slowly by human standards) whereas \(\cos\) remains bounded between \(-1\) and \(1\), so their product \(\boxed{\text{goes to zero}}\); this is as it should be, because this function is supposed to model a damped harmonic oscillator, which, physically, eventually stops oscillating due to the damping (that’s what <q>damping</q> does: it eventually <q>dampens out</q> the motion).
+<br><br></p>
+
+<p><strong>52</strong>) Give a formula for the height (above the ground, presumably) of a compartment on a 165 foot <i>diameter</i> ferris wheel, whose height at the bottom is 15 feet, and which rotates at 1.6 revolutions per minute. </p>
+
+<p><strong>Sln</strong>: Here’s a diagram of the situation:</p>
+
+<p><img src="./S5/SullivanC9S5P52.png" height="350"></p>
+
+<p>The height, \(h\), of the compartment is SHM of amplitude 82.5 ft&mdash;but whose <q>center</q> is that radius plus an additional 15 feet above <q>height zero,</q> i.e., ground level&mdash;and angular speed \(\displaystyle \omega = \frac{2\pi\text{ radians}}{1\cancel{\text{rev}}}\left(\frac{1.6\cancel{\text{ rev}}}{1\text{ min}}\right) = 3.2\pi\frac{\text{rad}}{\text{min}}\); consequently, a formula which gives the height in feet as a function of time in minutes is:
+\[\boxed{h(t) = 97.5-82.5\cos(3.2\pi t)}\]
+Checks: \(h(0) = 97.5-82.5\cos(3.2\pi (0)) = 97.5-82.5 = 15~ \checkmark\)</p>
+
+<p>At 1.6 rev/min, it takes \(t=\frac12\cancel{\text{ rev}}\frac{1\text{ min}}{1.6\cancel{\text{ rev}}} = \frac1{3.2}\) min to complete half a revolution, i.e., to get to the top, and</p>
+
+<p>\(h(\frac1{3.2}) = 97.5-82.5\cos(3.2\pi\frac1{3.2}) = 97.5-82.5\cos(\pi)=97.5+82.5=180 = 165+15~\checkmark\)</p>
+
+<p>Similarly, we calculate that to get half-way up takes \(t=\frac1{6.4}\) min and </p>
+
+<p>\(h(\frac1{6.4}) = 97.5-82.5\cos(3.2\pi\frac1{6.4})=97.5-82.5\cos(\frac{\pi}2)=97.5-82.5(0)=97.5=15+82.5~\checkmark\)</p>
+
+<p>The checks for 3/4 of the way around and one full revolution are left to the reader.</p>
+
+<h3>Credits</h3>
+
+<p>Graphs generated using <a href="http://www.geogebra.org/">GeoGebra</a>.</p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>

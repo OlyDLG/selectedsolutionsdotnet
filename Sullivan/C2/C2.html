@@ -1,0 +1,583 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C2</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<p>\(\definecolor{red}{RGB}{255,0,0}
+\definecolor{orange}{RGB}{245, 165, 0}
+\definecolor{yellow}{RGB}{255,215,0}
+\definecolor{green}{RGB}{0,255,0}
+\definecolor{indigo}{RGB}{0,0,255}
+\definecolor{violet}{RGB}{138,43,226}
+\definecolor{black}{RGB}{0,0,0}\)
+\(\require{cancel}\)
+<style>
+body {font-family: Palatino}
+.top{border-bottom:solid black 1px; display:inline-block; float:left}
+.bottom{ display:inline-block; clear:left; float:left}
+</style></p>
+
+<h2><center> Selected Exercise Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Sullivan, M., 2012. <i>Algebra &amp; Trigonometry, Ninth Edition.</i> Prentice Hall, Boston</h3>
+
+<h3><center>Chapter 2: Graphs</h3>
+
+<h3><center>&copy; 2020, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<h3>Section 1: The Distance and Midpoint Formulas</h3>
+
+<p><strong>48</strong>) Find all points on the \(y\)-axis that are 6 units from the point \((4, -3)\).</p>
+
+<p><strong>Sln</strong>: If a point is on the \(y\)-axis, its \(x\)-coordinate is \(0\), so we need to find all points \((0,y)\) such that the distance between them and \((4,-3)\) is \(6\). Now, the distance between \((0,y)\) and \((4,-3)\) is \(\sqrt{(4-0)^2+(-3-y)^2}\), so we set this equal to \(6\): \[\sqrt{(4-0)^2+(-3-y)^2}=6\]and solve for \(y\): \(\sqrt{(4-0)^2+(-3-y)^2}=6 \implies 16+(-3)^2+2(-1)(-3)y+(-y)^2 = 36 \implies y^2 + 6y + 25 - 36=0 \implies \) \(y^2+6y-11=0 \implies \) \(y=\displaystyle \frac{-6\pm\sqrt{36-4(1)(-11)}}2 = \frac{-6\pm\sqrt{80}}2 = \frac{-6\pm\sqrt{(16)(5)}}2 = \frac{-6\pm4\sqrt5}2 = -3\pm2\sqrt5 \implies\) the required points are: \[\boxed{\left(0,-3+2\sqrt5\right), \left(0,-3-2\sqrt5\right)}\]</p>
+
+<p><strong>Check</strong>: \(\sqrt{(4-0)^2+(-3-(-3\pm2\sqrt5))^2} = \sqrt{16+(\pm2\sqrt5)^2} = \sqrt{16+4(5)} = \sqrt{16+20} = \sqrt{36} = 6~\checkmark\)
+<br><br></p>
+
+<p><strong>52</strong>) <strong>Geometry</strong> An equilateral triangle is one in which all three
+sides are of equal length. If two vertices of an equilateral
+triangle are \((0,4)\) and \((0,0)\), find the third vertex. How
+many of these triangles are possible?</p>
+
+<p><strong>Sln</strong>: Here’s the situation: <img src="./Graphs/SullivanC2S1P52.png" height=275>
+we need to find the coordinates of the point pictured. We have that \(\sqrt{(x-0)^2+(y-0)^2} = 4 \implies x^2+y^2=16\), and that \(\sqrt{(x-0)^2+(y-4)^2} = 4 \implies x^2 + y^2-8y+16 = 16 \implies x^2+y^2 = 8y\). Together these \( \implies 8y=16\) (since both  \(=x^2+y^2\)) \(\implies y=2\) (which we could have concluded from geometrical considerations, but it’s nice to know that algebra gives us a consistent result). Substituting this into \(x^2+y^2 = 16 \implies x^2+2^2 = 16 \implies x^2 = 12 \implies\) \(x=\pm\sqrt{12} = \pm\sqrt{(4)3} = \pm2\sqrt3\), i.e., there are \(\boxed{\text{two such triangles}}\), one whose third vertex is \(\boxed{\left(2\sqrt3,2\right)}\), and another whose third vertex is \(\boxed{\left(-2\sqrt3,2\right)}\):</p>
+
+<p><img src="./Graphs/SullivanC2S1P52a.png" height=275>
+<br></p>
+
+<p><strong>58</strong>) Given \(P_1 = (7, 2); P_2 = (-4, 0); P_3 = (4, 6)\), find the length of each side of the triangle determined by these points and state whether it is isosceles, right, both or neither.</p>
+
+<p><strong>Sln</strong>: \(\left|\overline{P_1P_2}\right| = \sqrt{(7-(-4))^2+(2-0)^2} = \sqrt{11^2+2^2} = \sqrt{121+4} = \sqrt{125} = \sqrt{(25)(5)} = \boxed{5\sqrt5}\)</p>
+
+<p>\(\left|\overline{P_2P_3}\right| = \sqrt{(-4-4)^2+(0-6)^2} = \sqrt{(-8)^2+(-6)^2} = \sqrt{64+36} = \sqrt{100} = \boxed{10}\)</p>
+
+<p>\(\left|\overline{P_1P_3}\right| = \sqrt{(7-4)^2+(2-6)^2} = \sqrt{3^2+(-4)^2} = \sqrt{9+16} = \sqrt{25} = \boxed5\)</p>
+
+<p>and since \(5^2+10^2=125=(5\sqrt5)^2\), these are the vertices of a \(\boxed{\text{right triangle.}}\)</p>
+
+<p><strong>Check</strong>: <img src="./Graphs/SullivanC2S1P58.png" height=250>
+(Graphic, side lengths, and angle measure calculated using the online, Web-based graphing calculator <a href="https://www.geogebra.org/">GeoGebra</a>.)
+<br><br></p>
+
+<p><strong>64</strong>) <strong>Distance of a Moving Object from a Fixed Point</strong> A hot-air
+balloon, headed due east at an average speed of 15 miles per
+hour and at a constant altitude of 100 feet, passes over an
+intersection (see figure in text, or draw one). Find an expression for the distance \(d\) (measured in feet) from the balloon to the intersection
+\(t\) seconds later. </p>
+
+<p><strong>Sln</strong>: Since it’s not exactly clear whether the problem author means the distance including the altitude or not, we’ll find expressions for both (we need an expression for the distance not including the altitude&mdash;the <q>lateral</q> distance&mdash;anyway, because the distance including the altitude&mdash;the <q>total</q> distance&mdash;requires such an expression). The lateral distance of the balloon from the intersection is simply its speed times time elapsed...but wait a sec: we’re to give the expression for \(d\) in feet after \(t\) seconds, but the speed is given to us in miles per hour, so we need to perform a unit conversion: </p>
+
+<p>\(\displaystyle \frac{15\cancel{\text{ miles}}}{1\cancel{\text{ hour}}} \times \frac{5280\text{ feet}}{1\cancel{\text{ mile}}} \times \frac{1\cancel{\text{ hour}}}{60\cancel{\text{ minutes}}} \times \frac{1\cancel{\text{minute}}}{60\text{ seconds}} = \frac{\cancel{15}1\cdot\cancel{5280}88\text{ feet}}{\cancel{60}4\cdot\cancel{60}1\text{ second}} = 22\text{ fps}\) </p>
+
+<p>so the expression for the lateral distance, in feet, after \(t\) seconds is: \[\boxed{d_{lat} = 22t}\]</p>
+
+<p>The total distance is obtained from the distance formula: taking the intersection, at ground-level, as the origin, we’ll use the lateral distance as  the <q>\(x\)-coordinate,</q> the altitude as the <q>\(y\)-coordinate.</q> Then \[d_{tot} = \sqrt{(22t-0)^2+(100-0)^2} = \boxed{\sqrt{484t^2+10,000}}\]
+where \(t\) is in seconds and \(d_{tot}\) is in feet.
+<br><br></p>
+
+<h3>Section 2: Graphs of Equations in Two Variables; Intercepts; Symmetry</h3>
+
+<p><b>wrt = with respect to</b></p>
+
+<p><strong>38</strong>) Given \(P=(-3,0)\), state the coordinates of the point symmetric to it  wrt each axis and the origin.</p>
+
+<p><strong>Sln</strong>: The point symmetric to \((a,b)\) wrt to the \(x\)-axis is \((a,-b)\), so the point symmetric to \((-3,0)\) wrt to the \(x\)-axis is \((-3,-0) = \boxed{(-3,0)}\), i.e., itself; the point symmetric to \((a,b)\) wrt to the \(y\)-axis is \((-a,b)\), so the point symmetric to  \((-3,0)\) wrt to the \(y\)-axis is \((-(-3),0) = \boxed{(3,0)}\); and the point symmetric to \((a,b)\) wrt to the origin is \((-a,-b)\), so the point symmetric to  \((-3,0)\) wrt to the origin is \((-(-3),-0) = \boxed{(3,0)}\), i.e., the same as the point that’s symmetric to it wrt to the \(y\)-axis (which is true of all points on the \(x\)-axis; which points have this property wrt to the origin and the \(x\)-axis?)
+<br><br></p>
+
+<p>In Problems <strong>46</strong>, <strong>48</strong>, and <strong>50</strong>, the graph of an equation is given. <strong>a</strong>) Find the intercepts; and <strong>b</strong>) indicate whether the graph is symmetric wrt the \(x\)-axis, the \(y\)-axis, [and/]or the origin.</p>
+
+<p><strong>46</strong>) <img src="./Graphs/SullivanC2S2P46.png" height=250></p>
+
+<p><strong>Sln</strong>: The best one can provide from a graph is a <q>best estimate</q>; in this case, it looks pretty certain that the \(x\)-intercepts are intended to be \(\boxed{(-4,0), (0,0), (4,0)}\); the only \(y\)-intercept is \(\boxed{(0,0)}\); the graph is not its <q>mirror image</q> wrt to either axis, so it is \(\boxed{\text{not symmetric wrt to either axis}}\); but it does appear that for every point \((x,y)\) on the graph, \((-x,-y)\) is also on the graph (equivalently, <q>reflecting</q> the graph in the line \(y=x\) and then in the line \(y=-x\) appears to leave the graph unchanged, i.e., <i>invariant</i>), so it does appear to be \(\boxed{\text{symmetric wrt to the origin.}}\)
+<br><br></p>
+
+<p><strong>48</strong>) <img src="./Graphs/SullivanC2S2P48.png" height=250></p>
+
+<p><strong>Sln</strong>: The \(x\)-intercepts appear to be the segment from \((-1,0)\) to \((2,0)\), inclusive, i.e., \(\boxed{\{(x,0)|-1\le x \le 2\}}\) (<q>the set of ordered-pairs \((x,0)\) such that \(-1 \le x \le 2\)</q>); the \(y\)-intercept is the origin, i.e., \(\boxed{(0,0)}\), and the graph has \(\boxed{\text{no symmetries.}}\)
+<br><br></p>
+
+<p><strong>50</strong>) <img src="./Graphs/SullivanC2S2P50.png" height=250></p>
+
+<p><strong>Sln</strong>: The graph appears to have \(\boxed{\text{no intercepts}}\); and \(\boxed{\text{symmetry wrt the }x\text{-axis only.}}\)
+<br><br></p>
+
+<p><strong>54</strong>) Complete the following graph so that it is symmetric wrt the \(y\)-axis:</p>
+
+<p><img src="./Graphs/SullivanC2S2P54a.png" height=250></p>
+
+<p><strong>Sln</strong>: We need to <q>reflect</q> the given graph <q>through</q> the \(y\)-axis as if said axis were a mirror: </p>
+
+<p><img src="./Graphs/SullivanC2S2P54b.png" height=250>
+<br></p>
+
+<p>In Problems <strong>58</strong>, <strong>62</strong>, and <strong>70</strong>, list the intercepts and test for symmetry.</p>
+
+<p><strong>58</strong>) \(y=\sqrt[\large5]x\)</p>
+
+<p><strong>Sln</strong>: \(\sqrt[\large5]0 = 0\) and \(0=\sqrt[\large5]x \implies x=0\), so \(\boxed{(0,0)}\) is the only intercept, \(x\) and \(y\); \(\sqrt[\large5]{-x} = -\sqrt[\large5]x = -y \ne y\) in general, so \(\boxed{\text{not symmetric wrt the }y\text{-axis}}\); \(-y=\sqrt[\large5]x \implies y=-\sqrt[\large5]x \implies y=\sqrt[\large5]{-x} \ne \sqrt[\large5]x\) in general, so \(\boxed{\text{not symmetric wrt the }x\text{-axis}}\); \(-y=\sqrt[\large5]{-x} \implies y=\sqrt[\large5]x\), so \(\boxed{\text{symmetric wrt the origin.}}\)</p>
+
+<p><strong>Check</strong>: <img src="./Graphs/SullivanC2S2P58.png" height=250>
+<br></p>
+
+<p><strong>62</strong>) \(4x^2+y^2=4\)</p>
+
+<p><strong>Sln</strong>: \(4(0)^2+y^2=4 \implies y^2=4 \implies y = \pm2 \implies \boxed{y\text{-intercepts are }(0,2),(0,-2)}\); \(4x^2+0^2=4 \implies x^2=\frac44=1 \implies x=\pm1 \implies \boxed{x\text{-intercepts are }(1,0),(-1,0)}\); \(4(-x)^2+y^2=4x^2+y^2=4\) so \(\boxed{\text{symmetric wrt the }y\text{-axis}}\); \(4x^2+(-y)^2=4x^2+y^2=4\) so \(\boxed{\text{symmetric wrt the }x\text{-axis}}\); \(4(-x)^2+(-y)^2=4x^2+y^2=4\) so \(\boxed{\text{symmetric wrt the origin.}}\)</p>
+
+<p><strong>Check</strong>: <img src="./Graphs/SullivanC2S2P62.png" height=300>
+<br></p>
+
+<p><strong>70</strong>) \(y = \displaystyle \frac{x^4 + 1}{2x^5}\)</p>
+
+<p><strong>Sln</strong>: \(\displaystyle \frac{0^4 + 1}{2(0)^5} = \frac10\) which is undefined, so \(\boxed{\text{no } y\text{-intercept}}\); \(\color{red}{2x^5}\)\(\left[0 = \displaystyle \frac{x^4 + 1}{2x^5}\right] \implies 0=x^4+1 \implies x^4=-1\), which has no real solution, so \(\boxed{\text{no } x\text{-intercept}}\); \(\displaystyle \frac{(-x)^4 + 1}{2(-x)^5} = \frac{x^4+1}{-2x^5} = -\frac{x^4+1}{2x^5} = -y \ne y\) in general, so \(\boxed{\text{not symmetric wrt the }y\text{-axis}}\); \(\displaystyle -y = -\frac{x^4+1}{2x^5} \ne \frac{x^4+1}{2x^5}\) in general, so \(\boxed{\text{not symmetric wrt the }x\text{-axis}}\); \(\displaystyle -y = \frac{(-x)^4+1}{2(-x)^5} = \frac{x^4+1}{-2x^5} \implies y = \frac{x^4+1}{2x^5}\), so \(\boxed{\text{symmetric wrt the origin.}}\)</p>
+
+<p><strong>Check</strong>: <img src="./Graphs/SullivanC2S2P70.png" height=250>
+<br></p>
+
+<p><strong>74</strong>) (Instead of drawing a quick sketch) generate a graph of  \(y=\displaystyle \frac1x\) using a graphing utility.</p>
+
+<p><strong>Sln</strong>: You should get something like this:</p>
+
+<p><img src="./Graphs/SullivanC2S2P74.png" height=250>
+<br></p>
+
+<p><strong>78</strong>) Find \(a\) so that \((a, -5)\) is a point on the graph of \(y = x^2 + 6x\).</p>
+
+<p><strong>Sln</strong>: \((a,-5)\) being <q>on the graph of</q> \(y = x^2 + 6x\) means that \(-5 = a^2 + 6a\) must be a true statement, i.e., we need to solve \(-5 = a^2 + 6a \implies 0=a^2+6a+5=(a+5)(a+1) \implies \boxed{a = -5}\) or \(\boxed{a = -1}\)</p>
+
+<p><strong>Check</strong>: <img src="./Graphs/SullivanC2S2P78.png" height=275>
+<br><br></p>
+
+<p><strong>84</strong>) Find the intercepts and symmetries (if any) of \(16y^2 = 120x - 225\).</p>
+
+<p><strong>Sln</strong>: \(16y^2 = 120(0) - 225 \implies y^2 = -\frac{225}{16}\) which has no real solution, so \(\boxed{\text{no } y\text{-intercept}}\); \(16(0)^2 = 120x - 225 \implies 120x=225 \implies x = \frac{225}{120} = \frac{15}8\) so \(\boxed{x\text{-intercept} = \left(\frac{15}8,0\right)}\);
+\(16(-y)^2 = 16y^2 = 120x - 225\), so \(\boxed{\text{symmetric wrt the }x\text{-axis}}\); \(120(-x) - 225 = -120x-225 \ne 120x-225\), so \(\boxed{\text{not symmetric wrt the }y\text{-axis}}\); \(16(-y)^2 = 16y^2 = 120x-225 \ne 120(-x)-225\), so \(\boxed{\text{not symmetric wrt the origin.}}\)</p>
+
+<p><strong>Check</strong>: <img src="./Graphs/SullivanC2S2P84.png" height=250>
+<br><br></p>
+
+<p><strong>90</strong>) An equation is being tested for symmetry with respect to
+the \(x\)-axis, the \(y\)-axis, and the origin. Explain why, if two of
+these symmetries are present, the remaining one must also
+be present.</p>
+
+<p><strong>Sln</strong>: If the graph is symmetric wrt the \(x\)-axis, that means substituting in \(-y\) for \(y\) (and simplifying) <q>returns back</q> exactly what one had before the substitution (the technical way of expressing this is that such a substitution leaves the equation <i>invariant</i>); and similarly wrt \(-x\) and \(x\) for symmetry wrt the \(y\)-axis; so if a graph is symmetric wrt to <i>both</i> axes, that means substituting in \(-x\) for \(x\) <i>and</i> \(-y\) for \(y\) leaves the graph invariant; but that is the test for symmetry wrt the origin! (The explanation for why symmetry wrt to either axis and the origin implies symmetry wrt the other axis is similar and is left to the reader.) 
+<br><br></p>
+
+<h3>Section 3: Lines</h3>
+
+<p><strong>22</strong>) Graph and give the slope of the line passing through \((2, 0)\) and \((2, 2)\)</p>
+
+<p><strong>Sln</strong>: Plug the coordinates into the slope formula: \(\displaystyle \frac{y_2-y_1}{x_2-x_1} = \frac{2-0}{2-2}=\frac20 &quot;=&quot; \boxed{\text{undefined}} \implies\) it’s a vertical line who’s \(x\)-coordinate is \(2\): <img src="./Graphs/SullivanC2S3P22.png" height=175>
+<br><br></p>
+
+<p>In Problems <strong>26</strong> and <strong>28</strong>, graph the line containing the given point and slope.</p>
+
+<p><strong>26</strong>) \(P = (1, 3); m = \displaystyle -\frac25\)</p>
+
+<p><strong>Sln</strong>: The graph illustrates the (idea of the) procedure:
+<img src="./Graphs/SullivanC2S3P26.png" height=175>
+(Of course, the same idea can be executed in an infinite number of ways: for example, you could do the same thing, but going up and to the left; the key thing is that the <i>ratio</i> of the <q>signed rise</q> to the <q>signed run</q> <i>must</i> be \(-\frac25\).)
+<br><br></p>
+
+<p><strong>28</strong>) \(P = (2, -4); m = 0\)</p>
+
+<p><strong>Sln</strong>: \(m=0 \implies \) <i>no change</i> in \(y\) for <i>any</i> change in \(x\), so to find a second point (remember: two points determine a unique straight line), all we have to do is choose a different \(x\)-coordinate, say \(0\), and keep the \(y\)-coordinate the same: \((0,-4)\):
+<img src="./Graphs/SullivanC2S3P28
+.png" height=175>
+(Note: for <q>efficiency of presentation,</q> we’ve made the \(y\)-scale twice the \(x\)-scale: one is always at liberty to make axis scales different&mdash;the reader should add this to his/her graphing <q>toolset</q>&mdash;but when one does so, one should call attention to that fact.)
+<br><br></p>
+
+<p>In Problems <strong>42</strong> and <strong>44</strong>, find an equation of the line \(L\).</p>
+
+<p><strong>42</strong>) \(L\) is parallel to \(y = –x\) and passes through \((1,2)\).</p>
+
+<p><strong>Sln</strong>: Note: the first two methods below hinge on <q>reading off</q> the slope of the given line: \(y=-x \implies m=-1\); and all the methods rely on the fact that parallel lines have equal slopes.</p>
+
+<p><strong>Method 1</strong>: Using the <q>point-slope</q> form of the equation of a line: \(y-y_{\text{given}} = m(x-x_{\text{given}}) \implies (y-2) = -1(x-1) \implies \boxed{y = }-x+1+2 = \boxed{-x+3}\) or \(\boxed{x+y=3}\).</p>
+
+<p><strong>Method 2</strong>: Using the slope-intercept form: \(2= -(1) + b \implies b = 3 \implies \boxed{y=-x+3}\) </p>
+
+<p><strong>Method 3</strong>: Using the general form: in general, if \(L\) is parallel to a line whose general form is \(ax+by=c\), then the general form of \(L\) will be \(ax+by=d\) for some \(d\ne c\) (Proof?). So \(y=-x \implies x+y=0 \implies \) the general form of \(L\) will be \(x+y=d\); we determine \(d\) from the fact that \((1,2)\) must make the equation a true statement: \(d=1+2=3 \implies\) the general form is: \(\boxed{x+y=3}\).</p>
+
+<p><strong>Method 4</strong>: Using a <q>graphing utility</q> (in this case, GeoGebra): 
+<img src="./Graphs/SullivanC2S3P42.png" height=175>
+<br></p>
+
+<p><strong>44</strong>) \(L\) is perpendicular to \(y = –x\) and passes through \((-1,1)\).</p>
+
+<p><strong>Sln</strong>: Here we use the fact that, for lines of non-zero slope (lines of zero slope&mdash;horizontal lines&mdash;are perpendicular to lines with undefined slope, i.e., vertical lines, and thus we have to exclude such lines from our general statement for it to be true), the product of the slopes of perpendicular lines equals \(-1\). The reader is encouraged to use all three algebraic methods illustrated in Problem <strong>42</strong> above to deduce the required equation. (Hint for <q>Method 3</q>: if the general form of the given equation is \(ax+by=c\) then the general form of the equation of any perpendicular line is \(bx-ay=d\) for some \(d\), not necessarily unequal to \(c\); proof?) I will give the solution found using GeoGebra:
+<img src="./Graphs/SullivanC2S3P44.png" height=175>
+<br></p>
+
+<p>In Problems <strong>54</strong>, <strong>56</strong>, <strong>58</strong>, <strong>64</strong>, <strong>68</strong>, and <strong>70</strong>, find an equation of the line with the given properties; express your answer using either the general form or the slope–intercept form (we will alternate, when possible).</p>
+
+<p><strong>54</strong>) \(x\)-intercept \(= -4\); \(y\)-intercept \(= 4\)</p>
+
+<p><strong>Sln</strong>: I chose this one to show the <q>two-intercept</q> form of the equation of a line: \[\frac xa + \frac yb = 1\]
+Why is this the <q>two-intercept</q> form? Well, the \(y\)-intercept is where \(x=0\) and the \(x\)-intercept is where \(y=0\), and look what happens when we substitute those values in (but not at the same time): \(\displaystyle \frac0a+\frac yb = 1 \implies y=b\) and \(\displaystyle \frac xa+\frac 0b = 1 \implies x=a\): <i>in this form</i>, \(a\) is the \(x\)-intercept and \(b\) is the \(y\)-intercept! This can be useful when one needs to find both intercepts (but then it’s usually just easier to substitute in zero for \(x\) and \(y\) in whatever form of the equation you’re given and solve for the corresponding value of the other variable); but it’s most useful when one is given the intercepts, as in this problem, because one can then immediately write down the line’s equation: \[\frac x{-4} + \frac y{4} = 1 = -\frac14 x + \frac14 y.\]
+Technically, this is a valid general form (there can be no requirement that the coefficients of the variables must be integers, because there are plenty of lines for which this would be impossible, e.g., \(x+\sqrt2 y = 0\): because \(\sqrt2\) is <i>irrational</i>, there’s no way to make the coefficients of both \(x\) and \(y\) <i>simultaneously</i> integers, and yet \(x+\sqrt2 y = 0\) is a perfectly valid line); but <i>when one can</i> write the general form such that all the coefficients (including the constant on the right side of the equation) are integers (or at least terminating decimals), i.e., when all the coefficients are rational numbers, it is <q>traditional</q> to make this conversion. Also, it is <q>traditional</q> to make the \(x\)-coefficient positive; so, multiplying through by \(-4\), we obtain: \[\boxed{x-y=-4}\]</p>
+
+<p><strong>Chk</strong>: \(x\)-intercept \(= -4 \implies (-4,0)\) should make the equation true: \(-4-0 = -4~\checkmark\), \(y\)-intercept \(= 4 \implies (0,4)\) should make the equation true: \(0-4 = -4~\checkmark\). As an additional check, here’s what GeoGebra calculates:
+<img src="./Graphs/SullivanC2S3P54.png" height=250>
+(The reader should have no difficulty recognizing the equivalence of our result and GeoGebra’s.)
+<br><br></p>
+
+<p><strong>56</strong> &amp; <strong>58</strong>) Slope undefined, containing the point \((3, 8)\); and <q>vertical,</q> containing the point \((4, -5)\).</p>
+
+<p><strong>Sln</strong>: I grouped these together because in both of these cases&mdash;<q>slope undefined</q> and line <q>vertical</q>&mdash;the reader needs to <q>just know,</q> i.e., learn by rote, that the equation of such a line has the form: \[x=\text{constant}.\]
+How do we determine the value of the constant? Generally speaking, we have to either be given a point on the line (as we are in both of these cases), or figure out some way to figure out such a point; either way, once such a point is <q>in our possession,</q> the constant is simply, <i>necessarily</i> (why?) the \(x\)-coordinate of that point! So the answer to <strong>56</strong> is \(\boxed{x=3}\) and the answer to <strong>58</strong> is \(\boxed{x=4}\).
+<br><br></p>
+
+<p><strong>64</strong>) Parallel to the line \(y = 5\), containing the point \((4, 2)\).</p>
+
+<p><strong>Sln</strong>: Parallel lines have equal slopes, and the slope of \(y=5\) is \(0\) (why?); for \((4,2)\) to be on the required line, we must have \(2 = 0(4)+b \implies b=2\); therefore, the equation of the required line is: \[\boxed{y=2}\]
+(That was the <q>hard</q> way to do this one: eventually, if not now, you should be able to reason as follows: <i>any</i> line parallel to \(y=5\) <i>must</i> have equation \(y=\) the \(y\)-coordinate of <i>every</i> point it passes through; the required line is stated to pass through \((4,2)\), so an equation for it must be \(y=2\)&mdash;done!)
+<br><br></p>
+
+<p><strong>68</strong>) Perpendicular to the line \(x - 2y = -5\), containing the point \((0, 4)\).</p>
+
+<p><strong>Sln</strong>: The reader is referred to the hint given in our solution to Problem <strong>44</strong> (above): if line \(L\) has equation \(ax+by=c, a,b \ne 0\), then it can be shown that line \(M \perp L\) has equation \(bx-ay=d\) for some \(d\). Thus our required line must have equation \(2x+y=d\), and we just need to determine \(d\), by substituting in the coordinates of the point our line is required to pass through: \(2(0)+4 = d \implies d=4\). Thus an equation of the required line is: \[\boxed{2x+y=4}\]</p>
+
+<p><strong>Check</strong>: \(2(0)+4 = 4~\checkmark\), \(2x+y=4 \implies y = -2x+4\) thus our line has slope \(-2\), while for the given line \(x-2y=-5 \implies 2y=x+5\) (<q>pro tip</q>: add \(2y\) and \(5\) to both sides to avoid having to divide by a negative) \(\implies y = \frac12 x+\frac52 \implies \) the slope of the given line is \(\frac12\), and since \(\frac12(-2) = -1\), the lines are perpendicular.\(~\checkmark\)
+<br><br></p>
+
+<p><strong>70</strong>) Perpendicular to the line \(y = 8\), containing the point \((3, 4)\).</p>
+
+<p><strong>Sln</strong>: It’s best to <q>just learn</q> that all lines of the form \(x=\) constant are perpendicular to all lines of the form \(y=\) constant; therefore, the line we require must have equation \(x=\) constant, and in order for \((3,4)\) to make such an equation a true statement, that constant must be \(3\); therefore, an equation of the required line is: \[\boxed{x=3}\] </p>
+
+<p>Question to test understanding: In the above problems, why does Sullivan say <q>an equation of the line,</q> not <q>the equation of the line</q>? (After all, saying <q>the line</q> implies the line is uniquely determined, whereas saying <q>an equation</q> implies there’s more than one to choose from: which is true, or are they both true?) 
+<br><br></p>
+
+<p>In Problems <strong>96</strong> and <strong>100</strong>, state the intercepts of the given equation.</p>
+
+<p><strong>96</strong>) \(5x + 3y = 18\)</p>
+
+<p><strong>Sln</strong>: The \(x\)-intercept occurs where \(y=0 \implies 5x+3(0)=18 \implies \boxed{\left(\frac{18}5,0\right)}\) is the \(x\)-intercept; the \(y\)-intercept occurs where \(x=0 \implies 5(0)+3y=18 \implies \boxed{(0,6)}\) is the \(y\)-intercept. <strong>Check</strong> using the double-intercept form of the equation: \(5x + 3y = 18 \implies \displaystyle \frac{5x}{18} + \frac{3y}{18} = 1 \implies \frac x{\left(\frac{18}5\right)} + \frac y6 = 1~\checkmark~\) Here’s the graph: <img src="./Graphs/SullivanC2S3P96.png" height=225>
+<br><br></p>
+
+<p><strong>100</strong>) \(-0.3x + 0.4y = 1.2\)</p>
+
+<p><strong>Sln</strong>: Even though it’s harder (arguably: it involves doing the same divisions), I’m going to do this one by converting the given equation form into the double-intercept form, which we begin by dividing both sides by \(1.2\): \[\frac1{1.2}\left[-0.3x+0.4y=1.2\right] \implies 1 = \frac{-0.3}{1.2}x + \frac{0.4}{1.2}y = \frac x{-\frac{12}3} + \frac y{\frac{12}4} = \frac x{-4}+\frac y3 \implies\]
+the intercepts are \[\boxed{(-4,0),(0,3)}\]
+The algebraic check is left to the reader; here’s the GeoGebra check:
+<img src="./Graphs/SullivanC2S3P100.png" height=250>
+<br></p>
+
+<p><strong>110</strong>) A line with intercepts \((-2,0), (0,-1)\) is pictured: </p>
+
+<p><img src="./Graphs/SullivanC2S3P110.png" height=225></p>
+
+<p>give an equation for this line. </p>
+
+<p><strong>Sln</strong>: Using the double-intercept form for the equation of a line \[\frac xa + \frac yb = 1\]
+(described above in Problem <strong>54</strong>), we can immediately write down an equation for this line as: \[\frac x{-2} + \frac y{-1} = 1\]
+Technically, we are done, but let’s put this into standard form, by multiplying through by \(-2\): \(\color{blue}{-2}\) \(\displaystyle \left[\frac x{-2}+\frac y{-1} = 1\right] \implies\) \[\boxed{x+2y=-2}\]</p>
+
+<p><strong>Check</strong>: \(x+2(0) = -2 \implies x=-2\) when \(y=0~\checkmark\), \(0+2y=-2 \implies y=-1\) when \(x=0~\checkmark\)
+<br><br></p>
+
+<p><strong>114</strong>) \((0, 0), (1, 3), (4, 2), \&amp;~(3,-1)\) are the vertices of what kind of shape?</p>
+
+<p><strong>Sln</strong>: Here it is: <img src="./Graphs/SullivanC2S3P114.png" height=275>
+Looks like a square&mdash;can we prove it? We need to show that all four angles are right angles (actually, if we show that opposite pairs of sides are parallel, then showing that the angle between two sides and between two other sides are right is sufficient: do you remember, from Geometry, why?); and that all four sides are the same length.</p>
+
+<p>Side \(a\) has slope \(\displaystyle \frac{3-0}{1-0} = 3 = \frac{2-(-1)}{4-3} = \) the slope of side \(c\), so \(a \parallel c\) (<q>\(\parallel\)</q> \( = \) <q>is parallel to</q>); similarly, the slope of side \(b = \displaystyle \frac{3-2}{1-4} = \frac1{-3} = -\frac13 = \frac{-1}3 = \frac{-1-0}{3-0} = \) the slope of side \(d\), so \(b \parallel d\): so far we’ve confirmed we have a parallelogram. Furthermore, since \(-\frac13(3) = -1, a \perp b \perp c \perp d \perp a\) (<q>\(\perp\)</q> \(=\) <q>is perpendicular to</q>), so our parallelogram is, more specifically, a rectangle. Finally, the length of \(a = \sqrt{(1-0)^2+(3-0)^2} = \sqrt{10} = \sqrt{(1-4)^2+(3-2)^2} = \) length of side \(b\) and \(=\sqrt{(4-3)^2+(2-(-1))^2} = \) length of side \(c\) and \(= \sqrt{(0-3)^2+(0-(-1))^2} = \) length of side \(d\), proving that this shape is indeed a square.\(~~~\blacksquare\)
+<br><br></p>
+
+<p><strong>116</strong>) <strong>Cost Equation</strong> The <strong>fixed costs</strong> of operating a business (or any endeavor/activity requiring expenditure of money) are the costs incurred regardless of the level of production (or amount of activity); examples of fixed costs include rent, fixed salaries, costs of leasing machinery, and similar. The <strong>variable costs</strong> of operating a business (or ditto) are the costs that change with the level of output (activity); examples of variable costs include raw materials, hourly wages, electricity/utilities, and similar. Suppose
+that a manufacturer of jeans has fixed daily costs of $500
+and variable costs of $8 for each pair of jeans manufactured. Write a linear equation that relates the daily cost \(C\), in $, of manufacturing the jeans, to the number, \(x\), of jeans manufactured. What is the cost of manufacturing 400 pairs of jeans? 740 pairs?</p>
+
+<p><strong>Sln</strong>: The total daily cost, \(C\), is the sum (i.e., <q>\(+\)</q>) of the daily fixed cost, \(\$500\), and the daily variable cost \(=\) \(\displaystyle \frac{\$8}{1\cancel{\text{ pair of jeans made}}}(x\cancel{\text{ pairs of jeans made}}) = \$(8x) \implies \) \[\boxed{C=8x+500}\]
+Thus, the cost of manufacturing \(400\) pairs of jeans per day is \(C(400) = 8(400)+500 = \boxed{\$3700}\), and the cost of manufacturing \(740\) pairs per day is \(C(740) = 8(740)+500 = \boxed{\$6420}\) 
+<br><br></p>
+
+<p><strong>120</strong>) <strong>Electricity Rates</strong> Florida Power &amp; Light
+Company supplies electricity to residential customers for a
+monthly customer charge of $5.69 plus 8.48 cents per
+kilowatt-hour for up to 1000 kilowatt-hours. <strong>a</strong>) Write a linear equation that relates the monthly charge \(C\), in dollars, to the number \(x\) of kilowatt-hours used in a month; <strong>b</strong>) graph the equation; <strong>c</strong>) what is the monthly charge for using 200 kilowatt-hours; <strong>e</strong>) interpret the slope of the line.</p>
+
+<p><strong>Sln</strong>: <strong>a</strong>) Let \(U = \) number of kilowatt-hours used; then the cost of electricity that depends on the amount used is \(\displaystyle \frac{\$0.0848}{1\cancel{\text{ kW-h}}}U\cancel{\text{ kW-h}} = \$(0.0848U)\), and the total cost is \(\$5.69\) <q>plus</q> this, so the required linear equation is: \[\boxed{C = 0.0848U+5.69}\]</p>
+
+<p><strong>b</strong>) <img src="./Graphs/SullivanC2S3P120.png" height=275></p>
+
+<p><strong>c</strong>) The monthly charge for using 200 kW-h is \(C(200) = 0.0848(200)+5.69 = \boxed{\$22.65}\)</p>
+
+<p><strong>e</strong>) The slope is the <i>variable cost rate</i>.
+<br><br></p>
+
+<p><strong>126</strong>) Show that the line containing the points \((a,b)\) and \((b,a), a \ne b\), is perpendicular to the line \(y=x\). Also show that the
+midpoint of \((a,b)\) and \((b,a)\) lies on the line \(y=x\).</p>
+
+<p><strong>Pf</strong>: The slope of the line through \((a,b)\) and \((b,a)\) is \(\displaystyle \frac{b-a}{a-b} = \frac{-(a-b)}{a-b} = -1\), as long as \(a \ne b\), while the slope of \(y=x\) is \(1\), and  \((1)(-1)=-1.~~~\blacksquare~\) The midpoint of of \((a,b)\) and \((b,a)\) is \(\displaystyle \left(\frac{a+b}2,\frac{b+a}2\right) = \left(\frac{a+b}2,\frac{a+b}2\right)\) and substituting these into the equation \(y=x\) makes it a true statement.\(~~~\blacksquare~\) (Note: this latter result <i>does not</i> require \(a \ne b\): if \(a=b\), then \(\left(\frac{a+b}2,\frac{b+a}2\right) = \left(\frac{a+a}2,\frac{a+a}2\right) = (a,a)\) which <q>satisfies</q> \(y=x\).)
+<br><br></p>
+
+<h3>Section 4: Circles</h3>
+
+<p><strong>10</strong>) \((0,1)\) and \((2,3)\) appear to be the endpoints of a diameter of a pictured circle: write the standard form of this circle’s equation.</p>
+
+<p><strong>Sln</strong>: If \((0,1)\) and \((2,3)\) are the endpoints of a diameter, then the center is their midpoint: \(\displaystyle\left(\frac{0+2}2, \frac{1+3}2\right) = (1,2)\), and the radius squared is the square of the distance between the center and either of these points: \(r^2 = (1-0)^2 + (2-1)^2 = 1^2+1^2 = 2 \implies \boxed{(x-1)^2 + (y-2)^2 = 2}\) is the standard form equation of this circle. Partial check: \((2-1)^2 + (3-2)^2 = 2\) so \((2,3)\) is on this circle \(\checkmark\)
+<br><br></p>
+
+<p><strong>20</strong>) Give the standard and general form of the equation and graph of the circle defined by: radius \(\displaystyle =\frac12\), center \(\displaystyle = (0,-\frac12)\).</p>
+
+<p><strong>Sln</strong>: The standard form is \(\boxed{(x-0)^2 + \left[y-\left(-\frac12\right)\right]^2 = \left(\frac12\right)^2} \implies x^2 + y^2 + 2(\frac12)y+(\frac12)^2 = (\frac12)^2 \implies\) the general form is \(\boxed{x^2 + y^2 + y = 0}\), whose graph is: <img src="./Graphs/SullivanC2S4P20.png" height="250"></p>
+
+<p>Partial check: the graph implies the circle contains the points \((0,0)\) and \((0,-1)\), so we’ll check those: \(0^2 + 0^2 + 0 = 0~\checkmark, 0^2+(-1)^2 + (-1) = 0 + 1 - 1 = 0~\checkmark\). (We recommend the reader identify two other readily estimable points and check those.)
+<br><br></p>
+
+<p><strong>30</strong>) Find the: <strong>a</strong>) center and radius; <strong>b</strong>) graph; and <strong>c</strong>) intercepts (if any); of \(x^2 + y^2 + x + y - \frac12 = 0\). </p>
+
+<p><strong>Sln</strong>: <strong>a</strong>) We have to convert the equation into standard form by completing the square; since there are linear terms in both \(x\) and \(y\), we need to complete the square in each variable; fortunately, their coefficients are the same, so what we need to have added at the end of completing the square&mdash;\(\left(\frac12(1)\right)^2 = \frac14\)&mdash;is the same for each of them. So, we’ll have completed each square when the left side looks like: \(x^2 + y^2 + x + y + \frac14 + \frac14\), i.e., we need to end up with \(+\frac12\) as the total constant term on the left; but it <q>starts out</q> as \(-\frac12\), so we need to add \(1\)&mdash;to both sides&mdash;to get the right constant term on the left: \(x^2+y^2+x+y-\frac12\color{red}+1\) \(=0\color{red}+1\) \(\implies \displaystyle \left(x-\left(-\frac12\right)\right)^2 + \left(y-\left(-\frac12\right)\right)^2 = 1 \implies\) \[\boxed{\text{center } = \left(-\frac12,-\frac12\right)\text{, radius }=1}\]</p>
+
+<p><strong>Chk</strong>: How do we check this? Well, if \(\left(-\frac12,-\frac12\right)\) is the center and the radius is \(1\), then \( \left(\left[-\frac12+1\right], -\frac12\right) = \left(\frac12, -\frac12\right)\) should be a point on the circle, i.e., make the equation a true statement. Substituting into the original equation (because we might have made a mistake in going from the given general form to the standard form, and substituting into the latter might not reveal that) yields: \(\left(\frac12\right)^2 + \left(-\frac12\right)^2 + \cancel{\frac12} - \cancel{\frac12} - \frac12 = \frac14+\frac14-\frac12 = 0~\checkmark.\) (For the exercise, the reader is encouraged to deduce other points which must lie on the circle and perform the same check for those.)
+<br></p>
+
+<p><strong>b</strong>) Here is the required graph (produced using GeoGebra): <img src="./Graphs/SullivanC2S4P30.png" height="250">
+<br></p>
+
+<p><strong>c</strong>) The graph makes it clear that we should be looking for four intercepts&mdash;two \(x\)-intercepts and two \(y\). The \(x\)-intercepts occur when \(y=0\), which yields: \(\displaystyle \left(x+\frac12\right)^2+\left(0+\frac12\right)^2=1 \implies \left(x+\frac12\right)^2=1-\frac14=\frac34 \implies x+\frac12 = \pm\sqrt{\frac34} = \pm\frac{\sqrt3}2 \implies x = \frac{-1\pm\sqrt3}2\implies\) the \(x\)-intercepts are: \[\boxed{\left(\frac{-1+\sqrt3}2,0\right)\text{ and }\left(\frac{-1-\sqrt3}2,0\right)}\] </p>
+
+<p><strong>Chk</strong>: \(\displaystyle \left(\frac{-1\pm\sqrt3}2\right)^2 + 0^2 + \frac{-1\pm\sqrt3}2 + 0 - \frac12 = \frac{1\cancel{\mp2\sqrt3}+3-2\cancel{\pm2\sqrt3} - 2}4 = \frac04 = 0~\checkmark\)</p>
+
+<p>The same equation&mdash;though in \(y\) instead of \(x\)&mdash;results from setting \(x=0\), so the \(y\)-intercepts are: \[\boxed{\left(0,\frac{-1+\sqrt3}2\right)\text{ and }\left(0,\frac{-1-\sqrt3}2\right)}\] (The check is the identical, but the reader might want to do it anyway, without looking at the above.) 
+<br><br></p>
+
+<p>In Problems <strong>38</strong> and <strong>42</strong>, find the standard form of the equation of each circle.</p>
+
+<p><strong>38</strong>) Center \((-3, 1)\) and tangent to the \(y\)-axis.</p>
+
+<p><strong>Sln</strong>: We need \(h, k, \&amp;~r^2\) (or \(r\)) in \((x-h)^2 + (y-k)^2 = r^2\), where \((h,k)\) are the coordinates of the center of the circle, which we’re given to be \((-3,1)\), so we can immediately write down: \((x-(-3))^2+(y-1)^2=(x+3)^2+(y-1)^2=r^2\), so it remains to figure out \(r^2\) (or \(r\)). To figure that out, we need to figure out how the other information&mdash;that the circle is tangent to the \(y\)-axis&mdash;is related to that unknown information, the radius. Well, what do we know about the \(y\)-axis that might be helpful? We (should) know that its equation is \(x=0\), meaning that every point of it has an \(x\)-coordinate of zero. And what do we know about the tangent that might be helpful? Well, we (should) know two things: a) the point of tangency is a point of intersection of the circle and the tangent, i.e., the point is on both the circle and the tangent, i.e., its coordinates make both equations true statements; since (as we just reasoned) the \(x\)-coordinate of <i>all</i> points on the tangent must be zero, we now know that \((0,y_t)\) must make the equation of the circle a true statement (for some real number \(y_t\)); and b) we (should) know that the tangent is perpendicular to the line joining the center to the point of tangency. Why is this latter fact helpful? Well, since the equation of the tangent, \(x=0\), has an undefined slope, or, equivalently is a vertical line, a line perpendicular to it must be horizontal, i.e., have zero slope, i.e., have as its equation \(y=c\) for some real constant \(c\), meaning every point of that line has the same \(y\) coordinate. But this means that the \(y\)-coordinate of the point of tangency must be the same as the \(y\)-coordinate of the center (since they’re both on this same line, since they’re the two points we’re using to define the line in the first place), which is \(1\). In other words, \((0,1)\) must make the circle equation a true statement, which gives us: \((0+3)^2+(1-1)^2=9=r^2\) for a <q>final answer</q> of: \[\boxed{(x+3)^2 + (y-1)^2 = 9}\]</p>
+
+<p><strong>Chk</strong>: In this case, the <q>best</q> check is a graph of the equation:
+<img src="./Graphs/SullivanC2S4P38.png" height="250">
+(in which the measure of the angle and the value \(r=3\) were computed by GeoGebra, and thus serve as a <q>calculator check</q> on our answer).
+<br><br></p>
+
+<p><strong>40</strong>) With endpoints of a diameter at \((4, 3)\) and \((0, 1)\).</p>
+
+<p><strong>Sln</strong>: For this one, you are expected to know that, given a diameter of a circle, the center of the circle is the midpoint of the diameter, which in this case has coordinates: \(\left(\frac{4+0}2, \frac{3+1}2\right) = (2,2)\), so we can immediately write down: \((x-2)^2+(y-2)^2=r^2\). To determine \(r^2\), we can either: </p>
+
+<p>Method 1: Plug in the coordinates of either diameter endpoint (since both are points on the circle \(\implies\) their coordinates must make the equation a true statement): \(r^2 = (0-2)^2+(1-2)^2 = 5\); or:</p>
+
+<p>Method 2: Calculate \(r^2\) using the distance formula with the center as one point and either of the two endpoints as the other point: \(r^2 = (4-2)^2 + (3-2)^2 = 4+1 = 5\)</p>
+
+<p>(A third method would be to calculate the distance between the endpoints, divide by 2, and then square the result (to get \(r^2\)), or, equivalently, divide the square of the distance between the endpoints by 4, but this is probably the least <q>elegant</q>/efficient method. If Methods 1 &amp; 2 strike you as <q>identical,</q> it’s because, algebraically, they are, and you <i>should</i> be able to explain why.) So, final answer: \[\boxed{(x-2)^2+(y-2)^2 = 5}\]
+<strong>Chk</strong>: The algebraic check is to verify that whichever endpoint we <i>didn’t</i> use to arrive at the radius, makes the equation a true statement, but we already did this, in essence, by choosing to use different  endpoints in each method, so here is the <q>graphing calculator check</q>: 
+<img src="./Graphs/SullivanC2S4P40.png" height="250">
+<br><br></p>
+
+<p><strong>50</strong>) <strong>Ferris Wheel</strong> In 2008, the Singapore Flyer opened as the
+world’s largest Ferris wheel. It has a maximum height of
+165 meters and a diameter of 150 meters, with one full rotation
+taking approximately 30 minutes. Find an equation for the
+wheel if the center of the wheel is on the \(y\)-axis.</p>
+
+<p><strong>Sln</strong>: First note that the rotation time of 30 minutes is <q>red herring</q> data: it has no relevance to solving the problem at hand, and can (should) be ignored. (Learning to recognize such irrelevant information is as important as learning to recognize the relevant information.)</p>
+
+<p>Assuming the ground is at a height of \(y=0\) meters, the wheel having a diameter of 150 meters and a maximum height of 165 meters implies that the <q>bottom</q> of the wheel is at \(y=165-150 = +15\) meters. Let the bottom of the wheel have \(x\)-coordinate \(0\); then so does the origin, \((0,0)\), and the center of the wheel. Since the diameter of the wheel is 150 m, its radius is 75 m, so the center has a \(y\)-coordinate of \(75+15 = 90\). (Intermediate check: \(90+75 = 165~\checkmark\)), i.e., the center is at \((0,90)\) and the radius is 75, so the required equation is: 
+\[\boxed{x^2+(y-90)^2 = 75^2 = 5625}\]</p>
+
+<p><strong>Chk</strong>: \(0^2 + (15-90)^2 = 0 + (-75)^2 = 75^2~\checkmark\) and here’s the graphing calculator check:
+<img src="./Graphs/SullivanC2S4P50.png" height="250">
+<br><br></p>
+
+<p><strong>54</strong>) Use the Greek method (the slope of the tangent is found from the fact that the tangent is perpendicular to the line joining the point of tangency to the center of the circle) to find an equation of the tangent line to the circle \(x^2 + y^2 - 4x + 6y + 4 = 0\)
+at the point \((3,2\sqrt2 - 3)\).</p>
+
+<p><strong>Sln</strong>: The first thing we should do in a problem like this is make sure there isn’t a typo, i.e., make sure the given point of tangency is a point on the circle, i.e., that its coordinates make the circle equation a true statement: \(3^2 + (2\sqrt2-3)^2 - 4(3) + 6(2\sqrt2-3) + 4 = 9 + 8 \cancel{- 12\sqrt2} + 9 - 12 \cancel{+ 12\sqrt2} - 18 + 4 = 30-30=0~\checkmark.\)</p>
+
+<p>The next thing we should do&mdash;because we can, and because doing so might save us a lot of work, if the point of tangency is <q>conveniently located</q> relative to the center of the circle (as it was in Problem <strong>38</strong> above)&mdash;is use a graphing calculator to graph the circle and the point of tangency (and use the GC to tell us where the center is, assuming it has that functionality, which, in this day and age, I believe most do: GeoGebra certainly does, using the Center command on the circle defined by the equation we need to enter to get GeoGebra to graph it for us):</p>
+
+<p><img src="./Graphs/SullivanC2S4P54a.png" height="250"></p>
+
+<p>This shows us that, unfortunately, the point of tangency is not <q>conveniently located</q> relative to the center, so we need to calculate the slope of the line between those two points; the negative reciprocal of that result will be the slope of the required tangent, and we’re already given a point on the line, so we’ll be able to use the point-slope form of the equation of a line to write down said equation.</p>
+
+<p>Now, I imagine that Sullivan’s intent was for us to calculate the coordinates of the center <q>by hand</q> by completing the square in \(x\) and \(y\) in the given equation for the circle; I’m going to leave that to the reader, since the GC has given us the answer (which the reader can use as a check on her/his result), and proceed straight to the slope calculation (since that’s complicated enough). The slope is: \(\displaystyle \frac{y_2-y_1}{x_2-x_1}\); but, ultimately, we need the negative reciprocal of that, so let’s <q>skip a step</q> and write out the formula for that: \(\displaystyle \frac{-1}{\frac{y_2-y_1}{x_2-x_1}} = \frac{x_1-x_2}{y_2-y_1} = \frac{3-2}{-3-(2\sqrt2-3)} = \frac1{-2\sqrt2} = -\frac{\sqrt2}4 \doteq -0.354\). So, an equation of the required line is: \((y-(2\sqrt2-3)) = -\frac{\sqrt2}4(x-3) \implies 4y+12-8\sqrt2 = -\sqrt2 x + 3\sqrt2 \implies\) \[\boxed{\sqrt2x + 4y = 11\sqrt2 - 12}\] as the general (or standard) form of the equation of the required line, or, in slope-intercept form (with three-place decimal approximations for the slope and intercept): \[\boxed{y = -\frac{\sqrt2}4 x + \frac{11\sqrt2}4-3 \doteq -0.354x + 0.889}\] Here’s the complete graph, with the GC computed objects and quantities in color:</p>
+
+<p><img src="./Graphs/SullivanC2S4P54b.png" height="250">
+<br><br></p>
+
+<h3>Section 5: Variation</h3>
+
+<p>In Problems <strong>6</strong>, <strong>10</strong>, and <strong>14</strong>, write a general formula to describe each variation.</p>
+
+<p><strong>6</strong>) \(V\) varies directly with \(x^3\); \(V = 36\pi\) when \(x = 3\).</p>
+
+<p><strong>Sln</strong>: \(V\) varies directly with \(x^3\) implies there exists a real number \(k\) such that \(V=kx^3\); the given information yields: \(36\pi=k(3^3) \implies k = \displaystyle \frac{36\pi}{27} = \frac{4\pi}3\), so the general formula relating \(V\) to \(x\) is: \[\boxed{V=\frac{4\pi}3 x^3}\]
+(This is the formula for the volume \(V\) of a sphere of radius \(x\).)
+<br><br></p>
+
+<p><strong>10</strong>) \(T\) varies jointly with the cube root of \(x\) and the square of \(d\);
+\(T = 18\) when \(x = 8\) and \(d = 3\).</p>
+
+<p><strong>Sln</strong>: \(T\) varies jointly with the cube root of \(x\) and the square of \(d\) implies there exists a real number \(k\) such that \(T = kd^2\sqrt[\large3]x\); the given data yields: \(18 = k(3)^2\sqrt[\large3]8 = 18k \implies k = 1\) so the general formula is: \[\boxed{T=d^2\sqrt[\large3]x = d^2x^{1/3}}\]
+<br></p>
+
+<p><strong>14</strong>) The cube of \(z\) varies directly with the sum of the squares of \(x\) and \(y\); \(z = 2\) when \(x = 9\) and \(y = 4\).</p>
+
+<p><strong>Sln</strong>: \(\implies z^3 = k(x^2+y^2)\) for some \(k\); the data \(\implies 2^3 = 8 = k(9^2+4^2) = 97k \implies k = \displaystyle \frac8{97} \implies\) \[\boxed{z^3 = \frac8{97}(x^2+y^2)}\]
+<br></p>
+
+<p><strong>20</strong>) <strong>Physics: Simple Pendulum</strong> The period of a pendulum is the
+time required for one oscillation; the pendulum is usually
+referred to as <strong>simple</strong> when the angle made to the vertical is
+less than 5°. The period \(T\) of a simple pendulum (in seconds)
+varies directly with the square root of its length \(\ell\) (in feet). Write a mathematical formula for this variation if the constant of proportionality is \(\displaystyle \frac{2\pi}{\sqrt{32}}\).</p>
+
+<p><strong>Sln</strong>: The period \(T\) of a simple pendulum (in seconds)
+varies directly with the square root of its length \(\ell\) (in feet) \(\implies T=k\sqrt{\ell}\), where \(k\) is the constant of proportionality, which we’re given to be \(\displaystyle \frac{2\pi}{\sqrt{32}} \implies\) \[\boxed{T = \displaystyle \frac{2\pi}{\sqrt{32}}\sqrt{\ell} = 2\pi\sqrt{\frac{\ell}{32}}}\]
+(where \(2\pi\) is <q>dimensionless</q> and 32 has units of feet/sec\(^2\) and is the acceleration due to gravity, on earth, at sea level).
+<br><br></p>
+
+<p><strong>26</strong>) <strong>Physics: Vibrating String</strong> The rate of vibration of a string
+under constant tension varies inversely with the length of
+the string. If a string is 48 inches long and vibrates 256 times
+per second, what is the length of a string that vibrates 576
+times per second?</p>
+
+<p><strong>Sln</strong>: The rate of vibration, \(v\), varies inversely with the length, \(\ell \implies v = \displaystyle \frac k{\ell} \implies \ell = \frac kv\) for some \(k\), and the data imply \(256 = \displaystyle \frac k{48} \implies k = 48(256)\) so for \(v=576, \ell =\displaystyle \frac{48(256)}{576} = \frac{2^{12}(3)}{2^6(3^2)} = \boxed{\frac{64}3 \doteq 21.3\text{ in.}}\)
+<br><br></p>
+
+<p><strong>34</strong>) <strong>Intensity of Light</strong> The intensity \(I\) of light (measured in
+foot-candles) varies inversely with the square of the distance
+from the bulb (or any light source). Suppose that the intensity of a 100-watt light bulb at a distance of 2 meters is 0.075 foot-candle. Determine the intensity of the bulb at a distance of 5 meters.</p>
+
+<p><strong>Sln</strong>: \(I\) varies inversely with the square of the distance, \(d\), implies \(I = \displaystyle \frac k{d^2} \implies k = Id^2\), and the data imply \(k = 0.075(2^2) = 0.3\) so when \(d=5\) meters, \(I = \displaystyle \frac{0.3}{5^2} = \boxed{\frac3{250} = 0.012\text{ foot-candles}}\)
+<br><br></p>
+
+<p><strong>40</strong>) <strong>Chemistry: Gas Laws</strong> The volume \(V\) of an ideal gas varies
+directly with the temperature \(T\) and inversely with the
+pressure \(P\). Write an equation relating \(V, T,\) and \(P\) using \(k\) as the constant of proportionality. If a cylinder contains oxygen
+at a temperature of 300 K and a pressure of 15 atmospheres
+in a volume of 100 liters, what is the constant of proportionality
+\(k\)? If a piston is lowered into the cylinder, decreasing
+the volume occupied by the gas to 80 liters and raising the
+temperature to 310 K, what is the gas pressure?</p>
+
+<p><strong>Sln</strong>: \(\implies \boxed{V = k \frac TP} \implies k = \displaystyle \frac{VP}T = \frac{100(15)}{300} = \boxed{5}\) for the given data; also, \(P = \displaystyle k\frac TV\) so that for this \(k\), if \(V=80, T=310, P =\displaystyle  5\left(\frac{310}{80}\right) = \boxed{\frac{155}8 = 19.375\text{ atmospheres}}\)
+<br><br></p>
+
+<p><strong>44</strong>) <strong>Safe Load for a Beam</strong> The maximum safe load for a
+horizontal rectangular beam varies jointly with the width of
+the beam and the square of the thickness of the beam and
+inversely with its length. If an 8-foot beam will support up to
+750 pounds when the beam is 4 inches wide and 2 inches
+thick, what is the maximum safe load in a similar beam
+10 feet long, 6 inches wide, and 2 inches thick?</p>
+
+<p><strong>Sln</strong>: Let \(L = \) the maximum safe load in pounds, \(w = \) width, \(t = \) thickness, both in inches, and \(\ell =\) its length, in feet; then we have: \(L = k\displaystyle \frac{wt^2}{\ell} \implies k = \frac{\ell L}{wt^2} = \frac{8(750)}{4(2^2)} = 375\), so if \(\ell = 10\) ft, \(w = 6\) in, and \(t=2\) in, \(L = 375\displaystyle \frac{6(2^2)}{10}  = \boxed{900\text{ pounds}}\)</p>
+
+<h3>Credits</h3>
+
+<p>Graphs generated using <a href="http://www.geogebra.org/">GeoGebra</a>.</p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
