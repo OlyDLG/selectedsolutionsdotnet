@@ -824,7 +824,7 @@ Thus if $R_1$ = 5 ohms, $R_2$ = 4 ohms, and $R_3$ = 10 ohms, $$R = \frac{(5)(4)(
 
 ### Section 8: n-th Roots; Rational Exponents
 
-<i>Except for the initial step of prime factorizing numbers, which I will always "leave to the reader,"</i> I am going to begin by doing these in excruciating detail, and commenting on which steps one should eventually be able to "skip," (i.e., do in one’s head or "automatically") but after Problem __38__, I am going to do them "skipping steps"; feel free to [email me](mailto:selectedsolutionsdotnet@gmail.com) if you find a solution to be less than adequately clear. Note also that there is typically more than one way to do these, so if your solution doesn’t look like mine, but your answer does, probably nothing to worry about.
+<i>Except for the initial step of prime factorizing numbers, which I will always "leave to the reader,"</i> I am going to begin by doing these in excruciating detail, and commenting on which steps one should eventually be able to "skip," (i.e., do in one’s head or "automatically") but after Problem __38__, I am going to do them "skipping steps." Note also that there is typically more than one way to do these, so if your solution doesn’t look like mine, but your answer does, probably nothing to worry about.
 
 In Problems __14__ through __42__ (every fourth one), simplify each expression; assume that all variables are positive when they appear.
 
