@@ -6,7 +6,7 @@
 <p><center><big><big><big><big>Welcome to<br>
 <big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p>
 
-<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site.
+<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site; requests considered, commissions solicited.
 
 <p><b>*-ed items are Data Science related</b>
 
@@ -75,7 +75,7 @@ Ross, S., 1992, <b>\*</b><i>Applied Probability Models with Optimization Applica
 
 Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
             <ul>
-               <b>BROKEN Links</b> [Chapter 0: Review](./Sullivan/Review/Review.html)
+               [Chapter 0: Review](./Sullivan/Review/Review.html)
             </ul>
             <ul>
                <b>BROKEN Links</b> [Chapter 1: Equations and Inequalities](./Sullivan/C1/C1.html)
