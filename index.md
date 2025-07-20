@@ -81,7 +81,7 @@ Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall
                [Chapter 1: Equations and Inequalities](./Sullivan/C1/C1.html)
             </ul>
             <ul>
-               <b>BROKEN Links</b> [Chapter 2: Graphs](./Sullivan/C2/C2.html)
+               [Chapter 2: Graphs](./Sullivan/C2/C2.html)
             </ul>
             <ul>
                <b>BROKEN Links</b> [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
