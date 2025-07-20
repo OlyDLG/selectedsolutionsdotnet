@@ -84,7 +84,7 @@ Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall
                [Chapter 2: Graphs](./Sullivan/C2/C2.html)
             </ul>
             <ul>
-               <b>BROKEN Links</b> [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
+               [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
             </ul>
 
 Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edition</i>, Pearson, Boston.
