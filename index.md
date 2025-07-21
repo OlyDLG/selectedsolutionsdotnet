@@ -70,7 +70,7 @@ Lang, S.,
   </ul>
 Ross, S., 1992, <b>\*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
             <ul>
-               <b>BROKEN Links</b> [Chapter 1](./Ross/APMwOA/C1.html)
+               [Chapter 1](./Ross/APMwOA/C1.html)
             </ul>
 
 Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
