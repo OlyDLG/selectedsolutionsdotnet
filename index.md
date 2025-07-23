@@ -52,11 +52,12 @@ Lang, S.,
             	<!---Requires Work--->[Chapter 1: Vector Spaces](./Lang/LA/C1/C1.html)
             </ul>
   </ul>
-<!---
   <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
             <ul>
-            	<b>BROKEN Links</b><b>\*</b> [Chapter 1: Vectors](./Lang/CalcOfSevVar/C1/C1.html)
+            	<b>\*</b> [Chapter 1: Vectors](./Lang/CoSV/C1/C1.html)
             </ul>
+    </ul>
+<!---
             <ul>
             	<b>BROKEN Links</b> [Chapter 2: Differentiation of Vectors](./Lang/CalcOfSevVar/C2/C2.html)
             </ul>
