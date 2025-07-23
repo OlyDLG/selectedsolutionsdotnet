@@ -63,11 +63,12 @@ Lang, S.,
             <ul>
                <b>BROKEN Links</b> [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
 
-   1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
+1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
-               <b>BROKEN Links</b> [Chapter 1](./Lang/ComplexAnalysis/C1.html)
+               [Chapter 1 (updates pending)](./Lang/CA/C1/C1.html)
             </ul>
   </ul>
+
 Ross, S., 1992, <b>\*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
             <ul>
                [Chapter 1](./Ross/APMwOA/C1.html)

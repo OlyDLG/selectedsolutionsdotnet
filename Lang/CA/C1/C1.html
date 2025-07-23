@@ -1,0 +1,329 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C1</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><style>
+body {font-family: Palatino}
+</style>
+
+<h2><center>Selected Exercise Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Lang, S., 1995. <i>Complex Analysis, Third Edition (Corrected).</i> Springer-Verlag GTM, New York</h3>
+
+<h3><center>Chapter 1: Complex Numbers and Functions</h3>
+
+<h3><center>&copy; 2016, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
+
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Acknowledgement and sincerest thanks to <a href="https://www.math.ucdavis.edu/%7Egreg/">Greg Kuperberg, Ph.D., Professor, UC Davis Dept. of Mathematics</a>, for a hint and discussion of 1.4.7, and for a review, input, and discussion of my initial solution to 1.6.1.</p>
+
+<p>Note on notation: although Lang, somewhat mysteriously, doesn&#39;t appear to use it in this text, on occasion, e.g., Problem 1.6.1, we will use <q><a href="https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation">little-o notation</a>,</q> which is analogous to the <q>big oh</q> notation presented in the text&#39;s <q>Prerequisites,</q> except that instead of the relation \(\left|f(z)\right| \le C\left|g(z)\right|\) holding for some \(C \in \mathbb{R}^+\) as \(\left|z\right|\) goes to \(a \in \mathbb{R} \cup \infty\), we have \(f &quot;= &quot;o(g) \iff \lim_{z \rightarrow z_0 \in \mathbb{C} \cup \infty} \left|f(z)/g(z)\right| = 0\). More formally, (see, for example, Keener, J. P., 1988. <i>Principles of Applied Mathematics: Transformation and Approximation</i>, Addison-Wesley, Redwood City, CA, Chapter 10, Section 1) given \(f(z), g(z)\) defined on \(R \subset \mathbb{C} \cup \infty,~f = o(g)\) (in \(R\)) \(\iff \forall\) (real) \(\epsilon &gt; 0~\exists\) a neighborhood \(U\) of \(z_0 : \left|f(z)\right| \le \epsilon \left|g(z)\right| \forall z \in U \cap R\).  </p>
+
+<h3>Section 1</h3>
+
+<p>1.1.5) Show: Re\((z) \le \lvert z\rvert\)</p>
+
+<p>Pf: \(\lvert z\rvert^2 = a^2 + b^2 \ge a^2\) (since \(b\) is real) \( = [ \text{Re}(z)]^2\) 
+and the desired result follows from an elementary fact about the reals. \(\blacksquare\)</p>
+
+<p><br>
+1.1.7) Compute \((1 + i)^{100}\)</p>
+
+<p>Soln.: \((1 + i)^{100} = [(1 + i)^2]^{50} = (1 + 2i + i^2)^{50} = (2i)^{50} = -(2^{50}) = \text{Re}[(1 + i)^{100}\)], and so \(\text{Im}[(1 + i)^{100}\)] \(= 0\). 
+(Note: try to compute it by direct application of the binomial theorem to \((1 + i)^{100}\) and you&#39;ll see why I did it this way; indeed, the above approach can be used to prove some otherwise-very-difficult combinatorial identities.) </p>
+
+<p><br>
+1.1.8) Show that:</p>
+
+<p>a) \(\lvert z\rvert \le \lvert z - w\rvert + \lvert w\rvert\) 
+<br>
+Pf: \(\lvert z\rvert = \lvert z - w + w\rvert \le \lvert z - w\rvert + \lvert w\rvert\) 
+<br>
+(by the triangle inequality).</p>
+
+<p>b) \(\lvert z\rvert - \lvert w\rvert \le \lvert z - w\rvert\)
+<br>
+Pf: follows immediately from a)</p>
+
+<p>c) \(\lvert z\rvert - \lvert w\rvert \le \lvert z + w\rvert\) 
+<br>
+Pf: \(\lvert z + w\rvert = \lvert z - (-w)\rvert \ge \lvert z\rvert - \lvert -w\rvert = \lvert z\rvert - \lvert w\rvert\)<br>
+\(\blacksquare\)</p>
+
+<p><br>
+1.1.9) \(\lvert z - \alpha\rvert = c \iff (x - a)^2 + (y - b)^2 = c^2\),  (\(\alpha=a+ib\)), i.e., \(\lvert z - \alpha\rvert = c\) represents the circle of radius \(c\) centered at \(\alpha\).</p>
+
+<p><br></p>
+
+<h3>Section 2</h3>
+
+<p>1.2.3)  Show \(\alpha \in \mathbb{C}\setminus\{0\}\) has two distinct square-roots.</p>
+
+<p>Pf: \(\alpha^{1/2} = \pm\lvert\alpha\rvert^{1/2}\exp(i\arg(\alpha)/2) = \lvert\alpha\rvert^{1/2}\exp[i(\arg(\alpha)/2 + k\pi)], k\in\mathbb{Z}\); but for any given \(k\), only \(\exp[i(\arg(\alpha)/2+k\pi)]\) and \(\exp[i(\arg(\alpha)/2 + (k+1)\pi)]\) are distinct. (Note that the only reason to exclude \(0\) is because it is its own square-root and it is known to be unique.) \(~~~\blacksquare\)</p>
+
+<p><br>
+1.2.4) Find \({(x(a, b), y(a, b)): (x + iy)^2 = a + ib}\)</p>
+
+<p>\(a + ib = (a^2 + b^2)^{1/2}\exp[i(\arg(a+ib)+2k\pi)] = (x + iy)^2 \implies\)
+\(x + iy = (a^2 + b^2)^{1/4}\exp[i(\arg(a+ib)/2+k\pi)] =\)
+\((a^2+b^2)^{1/4}[\cos(\arg(a+ib)/2+k\pi) + i\sin(\arg(a+ib)/2+k\pi)], k \in \mathbb{Z}, \therefore\)
+\(x(a, b) = (a^2 + b^2)^{1/4}\cos(\arg(a+ib)/2+kπ), \\y(a, b) = (a^2 + b^2)^{1/4}\sin(\arg(a+ib)/2+kπ), k\in\mathbb{Z}\)</p>
+
+<p><br>
+1.2.5) Plot \(\{ z: z^n = 1\} \text{ for } n = 2, 3, 4, 5\)</p>
+
+<p>\(n=2\): <br><img src=./SqrRts.png></p>
+
+<p>\(n=3\): <br><img src=./CubeRts.png></p>
+
+<p>\(n=4\): <br><img src=./FourthRts.png></p>
+
+<p>\(n=5\): <br><img src=./FifthRts.png></p>
+
+<p>The general case: for \(n \in\mathbb{Z} \gt 1, \{z: z^n = 1\}\) are \(n\) points on the unit circle, equi-angularly distant from one another, such that one of them is always the point \((1, 0)\).</p>
+
+<p><br>
+1.2.6) For \(\alpha \in\mathbb{C}\setminus\{0\}\), \(n \in \mathbb{N}, \exists n\) distinct \(z_{j=0,1,…,n-1}: z_j^n = \alpha\).</p>
+
+<p><strong>Existence</strong>: \(\forall j \in \mathbb{Z}, z_j = \lvert \alpha \rvert^{1/n}\exp[i(\arg(\alpha)+2j\pi)/n]\) is such that \(z_j^n = \alpha\); 
+indeed, \(z_j^n = \lvert \alpha\rvert^{(1/n)\cdot(n)}\exp[i(\arg(\alpha)+2j\pi)/n \cdot n] = \lvert \alpha\rvert\exp[i(\arg(\alpha)+2j\pi)] = \alpha\).</p>
+
+<p><strong>Uniqueness</strong>: However, except for \(z = 0\) (which is unique), if \(z_j = \lvert \alpha\rvert^{1/n}\exp[i(\arg(\alpha)+2j\pi)/n]\) such that \(j \equiv k\pmod n, k \in\{0, 1, ..., n-1\}\), i.e., \(\exists m \in \mathbb{Z} : j = m\cdot n + k\), then 
+\(z_j = \lvert \alpha\rvert^{1/n}\exp[i(\arg(\alpha)+2(m\cdot n+k)\pi)/n]\)
+\(= \lvert \alpha\rvert^{1/n}\exp[i(\arg(\alpha)+2k\pi)/n]\exp(2im\pi)\)
+\(=\lvert \alpha\rvert^{1/n}\exp[i(\arg(\alpha)+2k\pi)/n], k \in\{0, 1, ..., n -1\}\), i.e., 
+<br>there are precisely \(n\) distinct such \(z_j\).<br>\(\blacksquare\)</p>
+
+<p><br>
+1.2.8-9) Describe: a) \(\{z: e^z = 1\}\);<br>
+b) \(\{z(\alpha): e^z = w\) given \(\alpha: e^\alpha = w\}\);<br>
+c) (1.2.9) Show that \(e^z = e^w \Rightarrow \exists k \in \mathbb{Z} : z + 2ik\pi = w\).</p>
+
+<p>a) \(e^z = e^{x+iy} = e^xe^{iy} = e^x\cos(y) + ie^x\sin(y) = 1 \implies e^x\cos(y)=1\) and \(e^x\sin(y) = 0\). Now \(e^x\sin(y)=0 \implies \sin(y) = 0\) (since \(e^x \ne 0\) \(\forall x \in \mathbb{R}\)) \(\implies y = k\pi, k \in \mathbb{Z}\); furthermore, \(y = k\pi \implies \cos(y) = \pm1, \therefore\) the result that \(e^x\cos(y) = 1 \implies e^x = 1\) (since \(e^x \gt 0\), i.e., \(e^x \ne -1\) \(\forall x \in \mathbb{R}\)) \(\implies x = 0\) and \(\implies \cos(k\pi) = 1 \implies k = 2m, m \in \mathbb{Z}\), i.e., \(z  = 2ik\pi, k \in \mathbb{Z}\).
+<br> </p>
+
+<p>b) \(e^z = e^\alpha \implies e^{z - \alpha} = 1 =\) (by a) \(e^{2ik\pi}\) \((k \in \mathbb{Z}) \implies z = \alpha + 2ik\pi\), i.e., \(e^z\) is periodic with period \(2\pi i\).</p>
+
+<p>c) \(e^z = e^w \implies e^{w-z} = 1 \implies \exists k \in \mathbb{Z} : e^{w-z} = e^{2ik\pi} \implies w-z = 2ik\pi~~\blacksquare\).</p>
+
+<p><br>
+1.2.12) Using the result of 1.2.11&mdash;that \(\sum_{n=0}^N z^n = (z^{N+1}-1)/(z-1), z \ne 1\)&mdash;and taking real parts, show that \[\sum_{n=0}^N\cos(n\theta) = \frac{1}{2} + \frac{\sin[(n+1/2)\theta]}{2\sin\frac{\theta}{2}}\]</p>
+
+<p>Pf: Since the identity \(\sum_{n=0}^N z^n = (z^{N+1}-1)/(z-1)\) is true \(\forall z \in \mathbb{C}\setminus\{1\}\), it is true \(\forall z=e^{i\theta}, 0\lt\theta\lt2\pi\). For such \(z\), it is <q>straightforward</q> (i.e., left to the reader) to show that the real part of \(\sum_{n=0}^N \left(e^{i\theta}\right)^n = \sum_{n=0}^N\cos(n\theta)\); the <q>challenging</q> part is to show the right-hand-side (RHS). Substituting \(e^{i\theta}\) in for \(z\) in the RHS of the given identity, we have: \[\frac{e^{i(N+1)\theta}-1}{e^{i\theta}-1} = \frac{e^{i(N+1)\theta/2}}{e^{i\theta/2}}\frac{e^{i(N+1)\theta/2}-e^{-i(N+1)\theta/2}}{e^{i\theta/2}-e^{-i\theta/2}}=e^{iN\theta/2}\frac{\sin[(N+1)\theta/2]}{\sin(\theta/2)}.\]  Since \(\displaystyle\frac{\sin[(N+1)\theta/2]}{\sin(\theta/2)}\) is real, the real part of the RHS is this times the real part of \(e^{iN\theta/2}\), i.e., \(\cos(\frac{N\theta}{2})\), and thus, using various trigonometric identities, we have Re(RHS) \[=\cos\left(\frac{N\theta}{2}\right)\frac{\sin\frac{N\theta}{2}\cos\frac{\theta}{2}+\cos\frac{N\theta}{2}\sin\frac{\theta}{2}}{\sin\frac{\theta}{2}}=\frac{\frac{1}{2}\sin N\theta\cos\frac{\theta}{2}+\cos^2\frac{N\theta}{2}\sin\frac{\theta}{2}}{\sin\frac{\theta}{2}}\]
+\[=\frac{\frac{1}{2}\sin N\theta\cos\frac{\theta}{2}+\frac{1}{2}(1+\cos N\theta)\sin\frac{\theta}{2}}{\sin\frac{\theta}{2}}=\frac{\sin N\theta\cos\frac{\theta}{2}+\sin\frac{\theta}{2}+\cos N\theta\sin\frac{\theta}{2}}{2\sin\frac{\theta}{2}}\]
+\[=\frac{1}{2}+\frac{\sin[(N+\frac{1}{2})\theta]}{2\sin\frac{\theta}{2}}\] \(\blacksquare\)</p>
+
+<p><br>
+1.2.13) Given \(\bar{z}w \ne 1\), show that \(\displaystyle\left\vert\frac{z-w}{1-\bar{z}w}\right\vert \lt 1\) if \(\lvert z\rvert\) and \(\lvert w\rvert \lt 1\), \(= 1\) if \(\lvert z\rvert\) or \(\lvert w\rvert = 1\).</p>
+
+<p>Pf: I shall give a different proof than the one suggested in the text. If \(\lvert z\rvert \lt 1\) and \(\lvert w\rvert \lt 1\) (respectively, \(\lvert z\rvert = 1\) or \(\lvert w\rvert = 1\)), then \(1-\lvert z\rvert^2 \gt 0\), \(1-\lvert w\rvert^2 \gt 0\) (resp. \(1-\lvert z\rvert^2 = 0\) or \(1-\lvert w\rvert^2 = 0\)) \(\Rightarrow (1-\lvert z\rvert^2)(1-\lvert w\rvert^2) \gt 0\) (resp. \(= 0\)) \(\Rightarrow 1-\lvert z\rvert^2-\lvert w\rvert^2+\lvert z\rvert^2\lvert w\rvert^2 \gt 0\) (resp. \(= 0\)) \(\Rightarrow 1-z\bar{w}-\bar{z}w+\lvert z\rvert^2\lvert w\rvert^2-\lvert z\rvert^2+z\bar{w}+\bar{z}w-\lvert w\rvert^2 \gt 0\) (resp. \(= 0\)) <br>
+\(\Rightarrow 1 - z\bar{w} - \bar{z}w + \lvert z\rvert^2\lvert w\rvert^2 = \lvert 1-\bar{z}w\rvert^2 \gt (\text{resp. }= )~\lvert z\rvert^2 - z\bar{w} - \bar{z}w + \lvert w\rvert^2 = \lvert z-w\rvert^2\). Now, given that \(\bar{z}w \ne 1\), divide <q>through</q> by \(\lvert 1-\bar{z}w\rvert^2\), yielding \(\displaystyle\frac{\lvert z-w\rvert^2}{\lvert 1-\bar{z}w\rvert^2} \lt 1\) (resp. \(= 1\)) \(\implies\) \[\left\vert\frac{z-w}{1-\bar{z}w}\right\vert&lt;1 \text{ (resp. = 1).}\]
+\(\blacksquare\) </p>
+
+<p><br></p>
+
+<h3>Section 3 (Graphics pending)</h3>
+
+<p>1.3.1)  Describe the images under \(f(z)=1/z\) of the sets \(\lvert z\rvert \lt, =, \gt 1\). </p>
+
+<p>Sln: leveraging the polar form, observe that, for \(z \ne 0, 1/(re^{i\theta})=(1/r)e^{-i\theta}\). So, recalling that complex multiplication is commutative, we may state, w.l.o.g., that  <q>inversion</q> consists of: a) conjugation, followed by b) <q>reflection through the unit circle,</q> by which we mean that a point interior to (resp. on, resp. exterior to) the unit circle, \(z_{\text{int (resp. on, resp. ext)}}\), is mapped to the unique point \(w_{\text{ext (resp. on, resp. int)}}\), such that \(\arg(w_{\text{ext (resp. on, resp. int)}}) = \arg( z_{\text{int (resp. on, resp. ext)}})\), but \(1/\lvert z\rvert\) units exterior to (resp. on, resp. interior to) the unit circle; \(z=0\) is mapped to \(w=\infty\) and vice-versa. (Note that the unit circle is mapped bijectively onto itself, but this is an equivalent algebraic expression <strong>not</strong> for the identity map on \(\lvert z\rvert = 1\), but rather for the conjugate map, \(f(z) =\bar{z}\): the semi-circle \(\lvert z\rvert = 1\), Im\((z)\gt 0\) is reflected through the \(x\)-axis to the semi-circle \(\lvert z\rvert = 1\), Im\((z) \lt 0\), vice-versa, and, of course, \(1\) and \(-1\) are fixed points.)</p>
+
+<p><br>
+1.3.2) Describe the images under \(f(z)=1/\bar{z}\) of the sets \(\lvert z\rvert \lt, =, \gt 1\). </p>
+
+<p>Sln: \(1/(re^{-i\theta}) = (1/r)e^{i\theta}\), so this is <q>reflection</q> through the unit circle, as just described above as part of the solution to 1.3.1.</p>
+
+<p><br>
+1.3.3) Describe the image under \(f(z)=e^{2\pi iz}\) of \(S=\{z: z(s,t;B)=(s-\frac{1}{2}) + i(B+t), s, t, B \in \mathbb{R}: 0 \le s \le 1, t \ge 0, B \gt 0\}\)</p>
+
+<p>Sln: Substituting, we have: \(f(z(s,t;B))=\exp[2\pi i(s - \frac{1}{2} + i(B+t))] = e^{-i\pi}e^{-2\pi(B+t)}e^{2\pi is} = -e^{-2\pi(B+t)}e^{2\pi is}\). Now, for fixed \(s_0 \in [0,1]\), this is the <q>half-open</q> radius from \(e^{-2\pi B}e^{i\pi(2s_0-1)}\) (inclusive) to the origin (exclusive), and for fixed \(t_0 \in [0, \infty)\), it is the circle of radius \(e^{-2\pi B}\), with the (real-axis) point \(z=-e^{-2\pi B}\) being <q>hit</q> twice. Thus, \(S\) is mapped onto (but not precisely 1-1) the origin-centered-but-excluding disc of radius \(e^{-2\pi B}\), with the horizontal segments \((s - \frac{1}{2}) + i(B+t_0)\) mapped to origin-centered circles of radius \(e^{-2\pi(B+t_0)}\), and the vertical rays \((s_0 - \frac{1}{2}) + i(B+t)\) mapped to the radii \((0, e^{-2\pi B}e^{i\pi(2s_0-1)}]\) such that \(t=0\) is mapped onto the <q>right</q> end-point, and \(t&quot;=&quot;\infty\) is <q>mapped to</q> \(0\). (As we will see shortly, the fact that orthogonal curves in \(S\), i.e., horizontal and vertical (subsets of) lines, are mapped to orthogonal curves in \(f(S)\), i.e., concentric circles and their radii, is not a coincidence: it is a signature consequence of \(f(z)=e^{2\pi iz}\) being <q>holomorphic.</q>)</p>
+
+<p><br>
+1.3.4) Describe the image under \(f(z)=e^z\) of:<br>
+a) \(\{z: z=x+iy, x \le 1, 0 \le y \le \pi\}\)<br>
+b) \(\{z: z=x+iy, 0 \le y \le \pi\}\)</p>
+
+<p>Sln: IMO, it is actually easier to treat the more general case required by b) first, and then deduce the description required by a) as a subset thereof. Accordingly:</p>
+
+<p>b) \(w = f(z) = e^{x+iy} = e^xe^{iy} = re^{i\theta}\), where \(r=e^x=\lvert w\rvert, \theta=y=\arg w\). Now \(0 \le \arg w \le \pi \Rightarrow w\) must lie in the upper-half-plane, \(x\)-axis included, and since \(e^x\) maps \(\mathbb{R}\) to the open interval \((0,\infty)\), <q>no condition on \(x\)</q> \(\Rightarrow 0 \lt \lvert w\rvert \lt \infty \Rightarrow\) the range excludes the origin, but otherwise <q>covers</q> the whole upper-half-plane, \(x\)-axis included. The image is thus the upper-half-plane, including the \(x\)-axis but excluding the origin, with horizontal (<q>constant-\(y\)</q>) lines in the domain mapped to open, radial rays emanating from (but not including) the origin, and vertical (<q>constant-\(x\)</q>) closed segments mapped to origin-centered upper-semi-circles, endpoints on the \(x\)-axis included.</p>
+
+<p>a) Since this domain has the same set of \(y\) values, it too must be restricted to the upper-half-plane; furthermore, the same map must map subsets of the domain to subsets of the images of the given domain subsets. In other words, the <q>constant-\(x\)</q> segments must still be mapped to origin-centered, endpoint-inclusive upper-semi-circles, and the <q>constant-\(y\)</q> subsets (now endpoint-inclusive rays from \(x=1\rightarrow -\infty\)) are mapped to <q>half-open</q> radial segments emanating from, but excluding, the origin, but instead of continuing indefinitely, they terminate at and include the point at radius \(e\). In brief, the required image is the origin-excluding, \(x\)-axis-including, <q>almost closed</q> upper semi-disc of radius \(e\).</p>
+
+<p><br></p>
+
+<h3>Section 4</h3>
+
+<p><strong>From the Text</strong><br>
+On page 20, the following important assertion is made without proof, i.e., proof is, implicitly,  <q>left to the reader</q>:</p>
+
+<p>Let \(S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n\). Then
+\(\displaystyle \lim_{n\rightarrow\infty}z_n=w \iff \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w.\)</p>
+
+<p>Pf: Being refurbished.
+<!---Since the right-side limit requires that $0$ be adherent to $S$ (pg. 19), we'll prove that first. We need to show that every disc $D(0,r), r \gt 0$, contains some element of $S$, i.e., given such an $r$, we need to show the existence of an $n$ such that $1/n \lt r$. Now, for the $r$ and $1/n$ under consideration, i.e., $\gt 0$, if $1/n \lt r$, we have that $1/r \lt n$; so, what we need is that however large $1/r$ is, $\exists n \in \mathbb{N}: n \gt 1/r$, which is true by an elementary property of $\mathbb{R}, \therefore 0$ is adherent to $S$.
+Now, suppose the left side true, i.e., $\lim_{n\rightarrow\infty}z_n=w$, which, by the definition in the text, means $\forall \epsilon \gt 0, \exists N \in \mathbb{N}: n \ge N \implies \lvert z_n - w\rvert \lt \epsilon$. Substituting, we have that $\lvert f(1/n) - w \rvert \lt \epsilon$ for such $n$ and $z = 1/n \in S$ and approaches $\alpha = 0$ as $n \rightarrow \infty$. In particular, let $\delta = 1/N$  (which is $\gt 0~\forall N \in \mathbb{N}$); then $\lvert z - \alpha \rvert \lt \delta~\forall z = 1/n$ such that $n \gt N$, and we've thus shown the existence of a $\delta \gt 0$ such that, for $z \in S$ and $\lvert z - \alpha \rvert \lt \delta, \lvert f(z) - w \rvert \lt \epsilon~\forall \epsilon \gt 0$. (Proving the converse is left to the reader, but follows the same pattern: one needs to show that each of the requirements for the left side to be true follows from some aspect and/or implication of the right side being true.) 
+---></p>
+
+<p><br>
+1.4.1) Given \(\alpha \in \mathbb{C} : \lvert \alpha \rvert \lt 1\), what is \(\displaystyle \lim_{n\rightarrow \infty} \alpha ^n\)?</p>
+
+<p>Sln: Write \(\alpha\) in polar form: \(\alpha = \lvert \alpha \rvert e^{i\arg(\alpha)}\); then \(\alpha ^n = \lvert \alpha \rvert ^n e^{in\arg(\alpha)}\) and \(\displaystyle \lim_{n \rightarrow \infty} \alpha^n = \lim_{n \rightarrow \infty} \lvert \alpha \rvert ^n e^{in\arg(\alpha)} = (\lim_{n \rightarrow \infty} \lvert \alpha \rvert ^n)(\lim_{n \rightarrow \infty} e^{in\arg(\alpha)}) = (0)(\text{bounded sequence})~(\because \lvert  e^{in\arg(\alpha)} \rvert = 1~\forall n \in \mathbb{N}, \alpha \in \mathbb{C})\)<br>\(~~~~= 0\).<br> Geometrically what is going on is that for any \(\alpha\) inside the unit circle, each multiplication by itself moves it closer to the origin; it also rotates it further around the origin&mdash;by its own angle&mdash;but this doesn&#39;t matter, regardless of what that angle is, i.e., for any such starting \(\alpha\), because of the <q>contraction</q> effected by each multiplication: eventually, any such \(\alpha\) is brought <q>arbitrarily close</q> to the origin; the <q>orbit</q> of any such \(\alpha\) under this iterated action is a spiral into the origin, \(z = 0\).</p>
+
+<p><br>
+1.4.2) What about the case \(\lvert \alpha \rvert \gt 1\)?</p>
+
+<p>Sln: In this case, \(\because \lvert \alpha ^n \rvert = \lvert \alpha \rvert ^n\), the sequence is unbounded and thus diverges; geometrically, we get a spiral of ever-increasing distance from the origin.</p>
+
+<p><br>
+1.4.3) Show that \(\displaystyle \lvert z \rvert \lt 1 \implies \sum_{n=0}^{\infty} z^n = (1-z)^{-1}\).</p>
+
+<p>Pf: The reader should have already shown that \(\displaystyle \sum_{n=0}^N z^n = (z^{N+1} - 1)/(z-1)\), if not previously, at least in Exercise 1.2.11. (Hint: let \(\displaystyle S = \sum_{n=0}^{N-1} z^n\), multiply by \(z\), subtract \(S\) from \(zS\),and solve for \(S\).) So \(\displaystyle \sum_{n=0}^{\infty} z^n = \lim_{N \rightarrow \infty} \sum_{n=0}^N z^n = \lim_{N \rightarrow \infty} (z^{N+1} - 1)/(z-1) = [\lim_{N \rightarrow \infty} (z^{N+1} - 1)]/[\lim_{N \rightarrow \infty} (z-1)] = [(\lim_{N \rightarrow \infty} z^{N+1}) - 1]/(z-1)\). Now, by the result of 1.4.1, if \(\displaystyle \lvert z \rvert \lt 1\), \(\displaystyle \lim_{N \rightarrow \infty} z^{N+1} = 0 \therefore [(\lim_{N \rightarrow \infty} z^{N+1}) - 1]/(z-1) = -1/(z-1) = (1-z)^{-1}.~~~\blacksquare\) </p>
+
+<p><br>
+1.4.4) Given: \(\displaystyle f(z) = \lim_{n \rightarrow \infty} 1/(1 + n^2 z)\), show: \(f(0) = 1,~f(z \ne 0) = 0\).</p>
+
+<p>Pf: \(\displaystyle f(0) = \lim_{n \rightarrow \infty} 1/(1+n^2(0)) = \lim_{n \rightarrow \infty} 1/(1+0)~\therefore \lim_{n \rightarrow \infty} 1/(1+n^2(0)) = 1/1 = 1\);<br>
+\(\displaystyle f(z \ne 0) = \lim_{n \rightarrow \infty} 1/(1+n^2z) = \lim_{n \rightarrow \infty} \frac{1/n^2}{(1/n^2+z)} = \frac{\lim_{n \rightarrow \infty}1/n^2}{\lim_{n \rightarrow \infty}(1/n^2 + z)} = \frac{0}{0 + z} = 0.~~~\blacksquare\) </p>
+
+<p><br>
+1.4.5) Show that \(f(z) = \lim_{n \rightarrow \infty} \left(\frac{z^n -1}{z^n + 1}\right)\) is well-defined, i.e., the limit exists \(\iff \left|z\right| \ne 1\).</p>
+
+<p>Pf: Being refurbished
+<!---
+If $\left|z\right| \lt 1, \lim_{n \rightarrow \infty} z^n = 0 \therefore \lim_{n \rightarrow \infty} f(z) = \frac{0-1}{0+1} = -1.~$ On the other hand, if $\left|z\right| \gt 1,~\lim_{n \rightarrow \infty} z^n$ "dominates" $1,~\therefore \lim_{n \rightarrow \infty} f(z) = \lim_{n \rightarrow \infty} \frac{z^n}{z^n} = \lim_{n \rightarrow \infty} 1~\forall z,\therefore \lim_{n \rightarrow \infty} f(z, \left|z\right| \gt 1) = 1.~$ Since the limit $\forall z$ inside the unit circle is $-1$ and the limit $\forall z$ outside the unit circle is $+1$, there is a "jump"  discontinuity at the unit circle, therefore this discontinuity is not removable.$~~~\blacksquare$
+---></p>
+
+<p><br>
+1.4.7) Show that \(\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) converges (uniformly) to \(\Bigg\{\!
+  \begin{array}{c}
+    1/(1-z)^{2},~~~~~\left|z\right|\lt 1 \\
+    1/[z(1-z)^2],~\left|z\right|\gt 1
+  \end{array}
+  \!\)</p>
+
+<p>Pf: Being refurbished.
+<!---First note that the summand is undefined (or infinite) $\forall z$ if $n=0$, so we assume that the sum starts from $n=1$. Let $\displaystyle A_n(z) = \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ and consider the partial sum $\displaystyle \sum_{n=1}^{N} A_n(z)$. Computing&mdash;and simplifying&mdash;this for a few small values of $N$ leads to the following conjecture:
+$$\sum_{n=1}^N A_n(z) = \frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})},$$which we will now prove by induction.
+First note that it is true for $N=1$: $\displaystyle \sum_{n=1}^1 A_n(z) = A_1(z) = \frac{1}{(1-z)(1-z^2)} = \frac{\sum_{m=0}^{1-1}z^m}{(1-z)(1-z^{1+1})}$. Now we will show that "true for $N$ implies true for $N+1$":
+$\displaystyle \sum_{n=1}^{N+1} A_n(z) = \sum_{n=1}^{N} A_n(z) + \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} = \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{\sum_{m=0}^{N-1}z^m}{(1-z)(1-z^{N+1})}$ (this is where we've used "assumed true for $N$")
+<br>$\displaystyle ~~~= \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{1-z^N}{(1-z)(1-z)(1-z^{N+1})} = \frac{z^N(1-z)^2 + (1-z^{N+2})(1-z^N)}{(1-z)^2(1-z^{N+1})(1-z^{N+2})}$<br>$\displaystyle = \frac{1+z^N-z^N-2z^{N+1}+z^{N+2}-z^{N+2}+z^{2N+2}}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{(1-z^{N+1})^2}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{1-z^{N+1}}{(1-z)^2(1-z^{N+2})}$
+$$=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}$$<br>which is our formula evaluated for $N+1$. Consequently, $\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =$ $$\frac{1}{(1-z)^2}$$ when $\left|z\right| \lt 1$. The other three parts of the problem are "left to the reader."
+---></p>
+
+<p><br></p>
+
+<h3>Section 6</h3>
+
+<p>1.6.1) Given \(f(z) = f(x+iy) = u(x,y) + iv(x,y) : u, v \in C^1, u_x = v_y, u_y = -v_x\), show that \(f\) is holomorphic.</p>
+
+<p>Pf: Although there are many ways to prove this, we suspect that what Lang was <q>fishing</q> for&mdash;given his approach to complex differentiability in the text&mdash;was that one show:<br>
+\(\exists a\) such that, given \(\displaystyle \sigma(w) \equiv \frac{f(z+w) - f(z)}{w} - a, \lim_{w \rightarrow 0} \sigma(w) = 0\), or, in little-oh notation, \(\sigma(w) = o(w)\) (as \(w \rightarrow 0\); see this document&#39;s prefatory note for the definition of \(o(\cdot)\)). We procede as follows: \(f(z + w) - f(z) = f((x+h) + i(y+k)) - f(x+iy) = u(x+h, y+k) - u(x,y) + i[v(x+h, y+k) - v(x,y)]\), where \(w = h + ik, h, k \in \mathbb{R}.\)<br>
+Dropping the \((x,y)\) for brevity and using the notation \((\cdot)_t \equiv \partial(\cdot)/\partial t\), from \(u,v \in C^1\), we can expand this last as:<br>
+\([u + hu_x + ku_y + o(h,k) - u] + i[v + hv_x + kv_y + o(h,k) - v]\). The \(u\) &amp; \(v\) cancel and, using the given that \(u~\&amp;~v\) satisfy the C-R equations, we are left with:<br>
+\(hu_x + ku_y + ihv_x + ikv_y + o(h,k) = hu_x - kv_x + ihv_x + iku_x + o(h,k) = (h+ik)(u_x +iv_x) + o(h,k)\). Again utilizing the given that \(u, v \in C^1, u_x, v_x\) are well-defined, i.e., \(u_x + iv_x\) is a well-defined complex number, \(a\); dividing by \(w\) and subtracting \(a\) yields:<br> \(\displaystyle \sigma(w) = \frac{f(z+w) -f(z)}{w} - a = o(w).~~~\blacksquare\)</p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
