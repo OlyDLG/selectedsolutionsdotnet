@@ -48,7 +48,7 @@ Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</
 Lang, S.,
   <ul><b>\*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
             <ul>
-            	[Chapter 1: Vector Spaces](./Lang/LA/C1/C1.html)
+            	<!---Requires Work--->[Chapter 1: Vector Spaces](./Lang/LA/C1/C1.html)
             </ul>
   </ul>
   <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
@@ -65,7 +65,7 @@ Lang, S.,
 
 1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
-               [Chapter 1 (updates pending)](./Lang/CA/C1/C1.html)
+               <!---Requires Work--->[Chapter 1](./Lang/CA/C1/C1.html)
             </ul>
   </ul>
 

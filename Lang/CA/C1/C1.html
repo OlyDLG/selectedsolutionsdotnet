@@ -212,7 +212,9 @@ c) (1.2.9) Show that \(e^z = e^w \Rightarrow \exists k \in \mathbb{Z} : z + 2ik\
 
 <p><br></p>
 
-<h3>Section 3 (Graphics pending)</h3>
+<h3>Section 3</h3>
+
+<!---ToDo: add graphics--->
 
 <p>1.3.1)  Describe the images under \(f(z)=1/z\) of the sets \(\lvert z\rvert \lt, =, \gt 1\). </p>
 
@@ -243,16 +245,14 @@ b) \(\{z: z=x+iy, 0 \le y \le \pi\}\)</p>
 
 <h3>Section 4</h3>
 
-<p><strong>From the Text</strong><br>
-On page 20, the following important assertion is made without proof, i.e., proof is, implicitly,  <q>left to the reader</q>:</p>
-
-<p>Let \(S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n\). Then
-\(\displaystyle \lim_{n\rightarrow\infty}z_n=w \iff \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w.\)</p>
-
-<p>Pf: Being refurbished.
-<!---Since the right-side limit requires that $0$ be adherent to $S$ (pg. 19), we'll prove that first. We need to show that every disc $D(0,r), r \gt 0$, contains some element of $S$, i.e., given such an $r$, we need to show the existence of an $n$ such that $1/n \lt r$. Now, for the $r$ and $1/n$ under consideration, i.e., $\gt 0$, if $1/n \lt r$, we have that $1/r \lt n$; so, what we need is that however large $1/r$ is, $\exists n \in \mathbb{N}: n \gt 1/r$, which is true by an elementary property of $\mathbb{R}, \therefore 0$ is adherent to $S$.
+<!---ToDo: make clearer
+**From the Text**<br>
+On page 20, the following important assertion is made without proof, i.e., proof is, implicitly,  "left to the reader":
+Let $S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n$. Then
+$\displaystyle \lim_{n\rightarrow\infty}z_n=w \iff \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w.$
+Pf: Since the right-side limit requires that $0$ be adherent to $S$ (pg. 19), we'll prove that first. We need to show that every disc $D(0,r), r \gt 0$, contains some element of $S$, i.e., given such an $r$, we need to show the existence of an $n$ such that $1/n \lt r$. Now, for the $r$ and $1/n$ under consideration, i.e., $\gt 0$, if $1/n \lt r$, we have that $1/r \lt n$; so, what we need is that however large $1/r$ is, $\exists n \in \mathbb{N}: n \gt 1/r$, which is true by an elementary property of $\mathbb{R}, \therefore 0$ is adherent to $S$.
 Now, suppose the left side true, i.e., $\lim_{n\rightarrow\infty}z_n=w$, which, by the definition in the text, means $\forall \epsilon \gt 0, \exists N \in \mathbb{N}: n \ge N \implies \lvert z_n - w\rvert \lt \epsilon$. Substituting, we have that $\lvert f(1/n) - w \rvert \lt \epsilon$ for such $n$ and $z = 1/n \in S$ and approaches $\alpha = 0$ as $n \rightarrow \infty$. In particular, let $\delta = 1/N$  (which is $\gt 0~\forall N \in \mathbb{N}$); then $\lvert z - \alpha \rvert \lt \delta~\forall z = 1/n$ such that $n \gt N$, and we've thus shown the existence of a $\delta \gt 0$ such that, for $z \in S$ and $\lvert z - \alpha \rvert \lt \delta, \lvert f(z) - w \rvert \lt \epsilon~\forall \epsilon \gt 0$. (Proving the converse is left to the reader, but follows the same pattern: one needs to show that each of the requirements for the left side to be true follows from some aspect and/or implication of the right side being true.) 
----></p>
+--->
 
 <p><br>
 1.4.1) Given \(\alpha \in \mathbb{C} : \lvert \alpha \rvert \lt 1\), what is \(\displaystyle \lim_{n\rightarrow \infty} \alpha ^n\)?</p>
@@ -276,31 +276,22 @@ Now, suppose the left side true, i.e., $\lim_{n\rightarrow\infty}z_n=w$, which, 
 \(\displaystyle f(z \ne 0) = \lim_{n \rightarrow \infty} 1/(1+n^2z) = \lim_{n \rightarrow \infty} \frac{1/n^2}{(1/n^2+z)} = \frac{\lim_{n \rightarrow \infty}1/n^2}{\lim_{n \rightarrow \infty}(1/n^2 + z)} = \frac{0}{0 + z} = 0.~~~\blacksquare\) </p>
 
 <p><br>
-1.4.5) Show that \(f(z) = \lim_{n \rightarrow \infty} \left(\frac{z^n -1}{z^n + 1}\right)\) is well-defined, i.e., the limit exists \(\iff \left|z\right| \ne 1\).</p>
-
-<p>Pf: Being refurbished
-<!---
-If $\left|z\right| \lt 1, \lim_{n \rightarrow \infty} z^n = 0 \therefore \lim_{n \rightarrow \infty} f(z) = \frac{0-1}{0+1} = -1.~$ On the other hand, if $\left|z\right| \gt 1,~\lim_{n \rightarrow \infty} z^n$ "dominates" $1,~\therefore \lim_{n \rightarrow \infty} f(z) = \lim_{n \rightarrow \infty} \frac{z^n}{z^n} = \lim_{n \rightarrow \infty} 1~\forall z,\therefore \lim_{n \rightarrow \infty} f(z, \left|z\right| \gt 1) = 1.~$ Since the limit $\forall z$ inside the unit circle is $-1$ and the limit $\forall z$ outside the unit circle is $+1$, there is a "jump"  discontinuity at the unit circle, therefore this discontinuity is not removable.$~~~\blacksquare$
----></p>
-
-<p><br>
-1.4.7) Show that \(\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) converges (uniformly) to \(\Bigg\{\!
+<!---ToDo: improve and expand both 1.4.5 and 1.4.7
+1.4.5) Show that $f(z) = \lim_{n \rightarrow \infty} \left(\frac{z^n -1}{z^n + 1}\right)$ is well-defined, i.e., the limit exists $\iff \left|z\right| \ne 1$.
+Pf: If $\left|z\right| \lt 1, \lim_{n \rightarrow \infty} z^n = 0 \therefore \lim_{n \rightarrow \infty} f(z) = \frac{0-1}{0+1} = -1.~$ On the other hand, if $\left|z\right| \gt 1,~\lim_{n \rightarrow \infty} z^n$ "dominates" $1,~\therefore \lim_{n \rightarrow \infty} f(z) = \lim_{n \rightarrow \infty} \frac{z^n}{z^n} = \lim_{n \rightarrow \infty} 1~\forall z,\therefore \lim_{n \rightarrow \infty} f(z, \left|z\right| \gt 1) = 1.~$ Since the limit $\forall z$ inside the unit circle is $-1$ and the limit $\forall z$ outside the unit circle is $+1$, there is a "jump"  discontinuity at the unit circle, therefore this discontinuity is not removable.$~~~\blacksquare$
+1.4.7) Show that $\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ converges (uniformly) to $\Bigg\{\!
   \begin{array}{c}
     1/(1-z)^{2},~~~~~\left|z\right|\lt 1 \\
     1/[z(1-z)^2],~\left|z\right|\gt 1
   \end{array}
-  \!\)</p>
-
-<p>Pf: Being refurbished.
-<!---First note that the summand is undefined (or infinite) $\forall z$ if $n=0$, so we assume that the sum starts from $n=1$. Let $\displaystyle A_n(z) = \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ and consider the partial sum $\displaystyle \sum_{n=1}^{N} A_n(z)$. Computing&mdash;and simplifying&mdash;this for a few small values of $N$ leads to the following conjecture:
+  \!$  
+Pf: First note that the summand is undefined (or infinite) $\forall z$ if $n=0$, so we assume that the sum starts from $n=1$. Let $\displaystyle A_n(z) = \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ and consider the partial sum $\displaystyle \sum_{n=1}^{N} A_n(z)$. Computing&mdash;and simplifying&mdash;this for a few small values of $N$ leads to the following conjecture:
 $$\sum_{n=1}^N A_n(z) = \frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})},$$which we will now prove by induction.
 First note that it is true for $N=1$: $\displaystyle \sum_{n=1}^1 A_n(z) = A_1(z) = \frac{1}{(1-z)(1-z^2)} = \frac{\sum_{m=0}^{1-1}z^m}{(1-z)(1-z^{1+1})}$. Now we will show that "true for $N$ implies true for $N+1$":
 $\displaystyle \sum_{n=1}^{N+1} A_n(z) = \sum_{n=1}^{N} A_n(z) + \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} = \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{\sum_{m=0}^{N-1}z^m}{(1-z)(1-z^{N+1})}$ (this is where we've used "assumed true for $N$")
 <br>$\displaystyle ~~~= \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{1-z^N}{(1-z)(1-z)(1-z^{N+1})} = \frac{z^N(1-z)^2 + (1-z^{N+2})(1-z^N)}{(1-z)^2(1-z^{N+1})(1-z^{N+2})}$<br>$\displaystyle = \frac{1+z^N-z^N-2z^{N+1}+z^{N+2}-z^{N+2}+z^{2N+2}}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{(1-z^{N+1})^2}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{1-z^{N+1}}{(1-z)^2(1-z^{N+2})}$
 $$=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}$$<br>which is our formula evaluated for $N+1$. Consequently, $\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =$ $$\frac{1}{(1-z)^2}$$ when $\left|z\right| \lt 1$. The other three parts of the problem are "left to the reader."
 ---></p>
-
-<p><br></p>
 
 <h3>Section 6</h3>
 
