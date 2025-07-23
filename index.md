@@ -26,8 +26,8 @@
 
 Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.
 
-## Text Solution Sets
-
+## Text Solution Sets (more to come)
+<!---
 Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
       <ul> Chapter 6: The Laplace Transform
             <ul><b>BROKEN Links</b> [Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
@@ -37,20 +37,22 @@ Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and 
             <ul><b>BROKEN Links</b> [Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
       </ul>
-
+--->
+<!---
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
             <ul><b>BROKEN Links</b> [Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
             <ul><b>BROKEN Links</b> [Chapter 2: Financial Statements and Analysis](./Gitman/C2/C2.html)</ul>
             <ul><b>BROKEN Links</b> [Chapter 3: Cash Flow and Financial Planning](./Gitman/C3/C3.html)</ul>
             <ul><b>BROKEN Links</b> [Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
             <ul><b>BROKEN Links</b> [Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
-
+--->
 Lang, S.,
   <ul><b>\*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
             <ul>
             	<!---Requires Work--->[Chapter 1: Vector Spaces](./Lang/LA/C1/C1.html)
             </ul>
   </ul>
+<!---
   <ul>1987, <i>Calculus of Several Variables, 3rd Edition</i>, Springer-Verlag UTM, New York
             <ul>
             	<b>BROKEN Links</b><b>\*</b> [Chapter 1: Vectors](./Lang/CalcOfSevVar/C1/C1.html)
@@ -62,8 +64,8 @@ Lang, S.,
                 <b>BROKEN Links</b> <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CalcOfSevVar/C5/C5.html)</ul>
             <ul>
                <b>BROKEN Links</b> [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
-
-1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
+--->
+<ul>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
                <!---Requires Work--->[Chapter 1: Complex Numbers and Functions](./Lang/CA/C1/C1.html)
             </ul>
@@ -104,7 +106,7 @@ Triola, M. F., with L. Iossi, 2018, <b>\*</b><i>Elementary Statistics, 13^th Edi
 
  \* Goldsmith, D. L., 2020, [<i>Modeling Initial U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression, With an Emphasis on the Concept of Doubling Time</i>](./Misc/COVID19/COVID19.html),  SelectedSolutionsDotNet, Olympia, WA.
 
-<b>BROKEN Link</b> Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./Misc/DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+<!---Goldsmith, D. L., 2018, [<i>Almost Linear Stability Analysis of a Simplified Eutrophic Lake Model</i>](./Misc/DEMARC/DEMARCProposedSysV2_NoEvectorPlanes.html),  SelectedSolutionsDotNet, Olympia, WA.<br--->
 
 Goldsmith, D. L., 2017, [<i>Two Theorems on Ellipses</i>](./Misc/Ellipses/TwoTheorems.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
