@@ -332,7 +332,7 @@ __b__) How much fence is required to enclose the deck?
 __Sln__: Fence is measured in length units, in this case feet, so what is required is the "distance around" the outer circle, i.e., its circumference, which is equal to $\pi d = \pi(20+2(3)) =$ $$\boxed{26\pi \doteq 81.7\text{ ft}}$$
 <br><br>
 
-### Section 4: Polynomials
+### _Section 4: Polynomials_
 
 In Problems __8__, __10__, __12__, and __16__: is the given expression a monomial? If so, specify the variable(s), the coefficient, and the degree; if not, state why not. (Note: all the expressions below are valid algebraic expressions; it’s just that some don’t meet our particular requirements for calling an algebraic expression a monomial or polynomial: all mo-/poly-nomials are algebraic expressions, but not all algebraic expressions are mo-/poly-nomials.)
 <br>
