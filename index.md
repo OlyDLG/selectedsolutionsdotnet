@@ -56,12 +56,11 @@ Lang, S.,
             <ul>
             	<b>\*</b> [Chapter 1: Vectors](./Lang/CoSV/C1/C1.html)
             </ul>
-    </ul>
-<!---
             <ul>
-            	<b>BROKEN Links</b> [Chapter 2: Differentiation of Vectors](./Lang/CalcOfSevVar/C2/C2.html)
+            	[Chapter 2: Differentiation of Vectors](./Lang/CoSV/C2/C2.html)
             </ul>
-            <ul>
+   </ul>
+<!---
                 <b>BROKEN Links</b> <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CalcOfSevVar/C5/C5.html)</ul>
             <ul>
                <b>BROKEN Links</b> [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>

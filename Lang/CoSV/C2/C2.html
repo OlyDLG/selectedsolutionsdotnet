@@ -1,0 +1,267 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C2</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><style>
+body {font-family: Palatino}
+</style>
+
+<h2><center>Selected Exercise Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Lang, S., 1987. <i>Calculus of Several Variables, 3rd Edition.</i> Springer-Verlag UTM, New York</h3>
+
+<h3><center>Chapter 2: Differentiation of Vectors</h3>
+
+<h3><center>&copy; 2019, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
+
+<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<h3>Symbols used:</h3>
+
+<p>\(\begin{eqnarray}
+\forall &amp; = &amp; \text{for all/each} \\
+\exists &amp; = &amp; \text{there is/exists} \\
+\nexists &amp; = &amp; \text{there is no/there does not exist} \\
+\parallel &amp; = &amp; \text{(is) parallel (to)} \\
+\perp &amp; = &amp; \text{(is) perpendicular (to)} \\
+: &amp; = &amp; \text{such that} \\
+\therefore &amp; = &amp; \text{therefore} \\
+\because &amp; = &amp; \text{because} \\
+\implies &amp; = &amp; \text{implies} \\
+\iff &amp; = &amp; \text{if and only if} \\
+\end{eqnarray}\)<br></p>
+
+<p>(We assume symbols from set theory, e.g., \(\in, \subset, \cap, \cup,\) etc., are known to the reader from prior math courses.)</p>
+
+<h3>Section 1</h3>
+
+<p><b>8a)</b> Find the plane normal to the curve \(\gamma(t) = (e^t, t, t^2)\) for \(t=1\).</p>
+
+<p><b>Sln:</b> \(\gamma’(t) = (e^t, 1, 2t) \therefore \gamma’(1) = (e, 1, 2)\), whose normals \(N = (x,y,z)\) satisfy \(N \cdot \gamma’ = ex + 1y +2z = 0\); this gives the <q>inclination</q> of the plane, now we just need to figure out the constant that makes it pass through \(\gamma(1) = (e,1,1)\), which we do by substituting this point into the <q>inclination equation</q> above: \(e(e) + 1(1) + 2(1) = e^2 + 3 \therefore\) the required plane is: \[\boxed{ex + y +2z = e^2 +3}\]
+\(\gamma\) and the normal plane are pictured below:
+<img src=./2.1.8a.png>
+<br><br></p>
+
+<p><b>9)</b> Given: \(P = (1,2,3,4),~ Q=(4,3,2,1),~ A=(1,1,1,1),~ L(t) \parallel A\), passes through \(P\).</p>
+
+<p><b>a)</b> Find, as a function of \(t\), the distance between \(Q\) and a point \(X\) on \(L\).</p>
+
+<p><b>Sln:</b> A parameterization for \(L\) is \(L(t) = P + tA = (1+t, 2+t, 3+t, 4+t),\therefore D^2(t)\) between \(Q\) and a point on \(L\) is:</p>
+
+<p>\(\begin{eqnarray}
+D^2(t) &amp; = &amp; (t+1-4)^2 + (t+2-3)^2 + (t+3-2)^2 + (t+4-1)^2 \\
+~~ &amp; = &amp; (t-3)^2 + (t-1)^2 + (t+1)^2 +(t+3)^2 \\
+~~ &amp; = &amp; 4t^2 - 6t + 6t - 2t + 2t + 20 \\
+\end{eqnarray}\)</p>
+
+<p>\(\implies D(t) = \sqrt{4t^2 + 20} = \boxed{2\sqrt{t^2+5}}\)</p>
+
+<p><b>b)</b> Show that the unique global minimum of the function found in a), occurring at \(X_0 \in L\), is \(2\sqrt5\).</p>
+
+<p><b>Sln:</b> The minimum of \(D(t)\), if it exists, occurs for the same \(t\) as the minimum of \(D^2(t)\) (why?); taking the derivative of \(D^2(t)\) and equating this to zero yields \(8t = 0 \implies t=0\) as the unique \(t\)-location of a critical point of \(D^2\); the second derivative, \((D^2)’’ = 8 \gt 0 \implies\) this unique critical point, \(X_0 = L(0) = P\) is indeed a global minimum; whose distance away from \(Q = D(0) = 2\sqrt{0+5} = \boxed{2\sqrt5}\).</p>
+
+<p><b>c)</b> Show that \((X_0 - Q) \perp L\).</p>
+
+<p><b>Sln:</b> In part b) we showed that \(X_0 = P \therefore X_0 - Q = P - Q = (-3, -1, 1, 3)\); on the other hand, by definition, a direction vector for \(L\) is \(A\) and \((-3, -1, 1, 3) \cdot (1,1,1,1) = -3 - 1 + 1 +3 = 0\). \(~~~\blacksquare\)
+<br><br></p>
+
+<p><b>11)</b> \(X(t) \subset \mathbb{R}^n\) is a differentiable curve over \(t \in (a,b), a \lt b \in \mathbb{R}, Q \in \mathbb{R}^n \notin X(t)\).</p>
+
+<p><b>a)</b> Write down the formula for the distance between \(Q\) and an arbitrary point on the curve.</p>
+
+<p><b>Sln:</b> Coordinate free: \(D(t) = \sqrt{(Q-X(t)) \cdot (Q-X(t))} = \boxed{\sqrt{(Q-X(t))^2}}\)</p>
+
+<p>In terms of coordinates: \(\boxed{\displaystyle D(t) =  \left[\sum_{i=1}^n (q_i - x_i(t))^2\right]^{1/2}}, Q=(q_1, q_2,..q_i,..,q_n), X(t)=(x_1(t), x_2(t),..x_i(t),..,x_n(t))\)</p>
+
+<p><b>b)</b> If \(t_0\) gives a minimum value of \(D(t)\), then \((Q - X(t_0)) \perp X(t)\) at \(X(t_0)\).</p>
+
+<p><b>Pf:</b> If \(t_0\) gives a minimum for \(D(t)\), then, since \(D(t) \gt 0~\forall t \in (a,b)\) (the formula implies \(D(t) \ge 0\), and \(Q \ne X(t) \implies D \ne 0~\forall t \in (a,b) \)), \(t_0\) also gives a minimum for \(D^2(t).\) (Why?) Since we’re working on an open interval, this implies \([D^2(t)]’|_{t=t_0} = 0\). Now \([D^2(t)]’|_{t=t_0} = -2(Q-X(t_0)) \cdot X’(t_0) = 0 \implies (Q-X(t_0)) \cdot X’(t_0) = 0 \implies (Q-X(t_0)) \perp X(t) \) at \(X(t_0)\) by definition. \(~~~\blacksquare\)</p>
+
+<p><b>c)</b> If \(X(t) = (1-t)X_1 + tX_2~(X_1 \ne X_2)\), i.e., if \(X(t)\) is a straight line, show that \(t_0\) in part b) exists and is unique.</p>
+
+<p><b>Pf:</b> \([D^2(t)]’ = [(Q - (1-t)X_1 - tX_2)^2]’ = 2[(Q-X_1) + t(X_1 - X_2)] \cdot (X_1 - X_2) = 0 \implies\) \[t = t_0 = \frac{(Q-X_1) \cdot (X_2 - X_1)}{(X_2 - X_1)^2}\]</p>
+
+<p>which is well-defined, i.e., exists (since, by supposition, \(X_1 \ne X_2\)) and is single-valued, i.e., unique (since \(\cdot\), as well as all the other operations involved, are single-valued). (Verification that this \(t_0\) minimizes the distance is left to the reader. Hint: show that the second derivative of \(D^2(t)\) at \(t=t_0\) is positive.) \(~~~\blacksquare\)
+<br><br></p>
+
+<p><b>13 &amp; 14)</b> Prove that speed, \(|\mathbf{v}|\), constant \(\iff\) acceleration, \(\dot{\mathbf{v}}\), perpendicular to velocity, \(\mathbf{v}\).</p>
+
+<p><b>Pf</b>: \(\Rightarrow: |\mathbf{v}| = v\) constant \(\implies v^2 = \mathbf{v} \cdot \mathbf{v}\) constant \(\implies \displaystyle\frac{d}{dt}(\mathbf{v} \cdot \mathbf{v}) = 0 = 2\dot{\mathbf{v}} \cdot \mathbf{v} \implies \dot{\mathbf{v}} \perp \mathbf{v}\).</p>
+
+<p>\(\Leftarrow: \dot{\mathbf{v}} \perp \mathbf{v} \implies 0 = \dot{\mathbf{v}} \cdot \mathbf{v} = \displaystyle\frac12\frac{d}{dt}\mathbf{v} \cdot \mathbf{v} \implies \mathbf{v} \cdot \mathbf{v} = v^2 = \) constant \(\implies v =\) constant.<br>\(\blacksquare\)
+<br><br></p>
+
+<p><b>15)</b> Given: \(\mathbf{B}\) a (constant) vector \(\ne \mathbf{0}\), \(\mathbf{X}(t) : \mathbf{B} \cdot \mathbf{X}(t) = t~\forall t\), and the angle between \(\mathbf{B}\) and \(\mathbf{X}’(t)\) is constant (\(\forall t\)).<br>
+Show: \(\mathbf{X}’’(t) \perp \mathbf{X}’(t)~(\forall t)\).</p>
+
+<p><b>Pf</b>: The angle between \(\mathbf{B}\) and 
+\(\mathbf{X}’ = \cos^{-1}\left(
+\displaystyle \frac{\mathbf{B} \cdot \mathbf{X}’}{|\mathbf{B} ||\mathbf{X}’|}\right) = \cos^{-1}\displaystyle \frac{1}{|\mathbf{B} ||\mathbf{X}’|}\) (\(\because \mathbf{B} \cdot \mathbf{X}(t) = t~\forall t \implies \mathbf{B} \cdot \mathbf{X}’(t) = 1~\forall t\))
+a constant \(\implies |\mathbf{B} ||\mathbf{X}’|\) constant \(\implies|\mathbf{X}’|\) constant \(\underset{\text{Problem 13}}{\implies} \mathbf{X}’’ \perp \mathbf{X}’~\forall t\).\(~~~\blacksquare\)
+<br><br></p>
+
+<p><b>19)</b> Find the intersection of the curve \(\mathbf{X}(t) = (2t^2, 1-t, 3+t^2)\) and the plane \(3x - 14y + z - 10 = 0\).</p>
+
+<p><b>Sln</b>: (Note: this problem requires no Calculus!) We simply need to find \(t: 0 = 3(2t^2) - 14(1-t) + 3+t^2 - 10 = 7t^2 + 14t - 21\); dividing through by \(7 \implies t^2 + 2t - 3 = (t+3)(t-1) = 0 \implies t=-3\) or \(1 \implies\) two points of intersection: \(\boxed{(18, 4, 12)}\) and \(\boxed{(2, 0, 4)}\)<br>
+\(\checkmark: 3(18) - 14(4) + 12 - 10 = 54 - 56 + 2 = 0~\checkmark\) and \(3(2) - 14(0) + 4 - 10 = 10 - 10 = 0~\checkmark\)
+<br><br></p>
+
+<p><b>20)</b> Let \(\mathbf{X}(t)\) be a (sufficiently) differentiable curve on some interval \(I\) and suppose:</p>
+
+<p><b>a)</b> \(\mathbf{X}’(t) = \mathbf{0}~\forall t \in I\); what may we conclude about \(\mathbf{X}(t \in I)\)?</p>
+
+<p><b>Sln</b>: \(\mathbf{X}’(t) = (x’_1(t), x’_2(t),..., x’_n(t)) = \mathbf{0}~\forall t \in I \implies \forall i \in \{1,...,n\}, x_i’(t) = 0 \implies x_i(t) = c_i\) a constant, i.e., \(\mathbf{X}(t)\) <b>is</b> a constant vector, i.e., <b>a single point</b>.</p>
+
+<p><b>b)</b> \(\forall t \in I~\mathbf{X}’(t) \ne \mathbf{0}\) but \(\mathbf{X}’’(t) = \mathbf{0}\); what may we conclude about \(\mathbf{X}(t \in I)\)?</p>
+
+<p><b>Sln</b>: In this case, the suppositions imply that \(x_i(t) = a_i t + b_i, a_i, b_i\) constants, i.e., \(\mathbf{X}(t)\) <b>is a straight line</b>.</p>
+
+<p>(Note that these results are valid in any finite dimension.) 
+<br><br></p>
+
+<p><b>23b)</b> Given: \(\mathbf{B}\) a fixed <i>unit</i> vector, and \(\mathbf{X}(t) :\mathbf{B} \cdot \mathbf{X} = e^{2t}~\forall t\) (note: the additional <q>given</q> information in the Exercise statement is not needed for part b). Calculate \(\mathbf{X}’(t) \cdot \mathbf{X}’’(t)\).</p>
+
+<p><b>Sln</b>: \(\mathbf{B} \cdot \mathbf{X} = e^{2t} \implies \mathbf{B} \cdot \mathbf{X}’ = 2e^{2t}, \mathbf{B} \cdot \mathbf{X}’’ = 4e^{2t}\); now, \(\because \mathbf{B}\) is a unit vector, \(\mathbf{B} \cdot \mathbf{B}\) \(= 1 \implies \mathbf{X}’ \cdot \mathbf{X}’’ = (\mathbf{B} \cdot \mathbf{B} ) \mathbf{X}’ \cdot \mathbf{X}’’ = (\mathbf{B} \cdot \mathbf{X}’)(\mathbf{B} \cdot \mathbf{X}’’) = (2e^{2t})(4e^{2t}) = \boxed{8e^{4t}}\).
+<br><br></p>
+
+<p><b>25)</b> Suppose differentiable \(\mathbf{B} (t) = (x(t), y(t), z(t))\) satisfies \(z^2 = 1 + x^2 + y^2\) for all \(t\).</p>
+
+<p><b>a)</b> Show that \(\mathbf{B} \cdot \mathbf{B} ’ = 2xx’\)</p>
+
+<p><b>Sln</b>: This can’t be done, because it’s not true&mdash;there’s a typo in the Third Edition, which, interestingly, is <i>not</i> in the Second Edition (published by Addison-Wesley, &copy; 1983): the surface the bug is on is supposed to be \(z^2 = 1 + x^2 \mathbf{-} y^2\) (not \(+~y^2\) as misstated in my copy of the Third Edition). In either case \(\mathbf{B} \cdot \mathbf{B} ’ = xx’ + yy’ + zz’\), and if \(z^2 = 1 + x^2 + y^2\) as stated in the 3rd Ed., then \(zz’ = xx’ + yy’ \implies \mathbf{B} \cdot \mathbf{B} ’ = xx’ + yy’ + xx’ + yy’ = 2(xx’ + yy’)\); but if, as stated in the 2nd Ed., \(z^2 = 1 + x^2 - y^2\) then \(zz’ = xx’ - yy’\) and \(\mathbf{B} \cdot \mathbf{B} ’ = xx’ + yy’ + xx’ - yy’ = 2xx’\) as is to be shown.  </p>
+
+<p><b>b)</b> Assume \(\cos \theta_{\mathbf{BB}’} \gt 0~\forall t\); show that \(x \gt 0 \implies D(\text{the }yz\text{-plane and } \mathbf{B} (t))\) is an increasing function of \(t\).</p>
+
+<p><b>Sln</b>: (This too is untrue if \(z^2 = 1 + x^2 + y^2\)&mdash;because the result relies on the truth of part a)&mdash;but is true with the correction \(z^2 = 1 +x^2 - y^2\).) We have: \(\cos \theta_{\mathbf{BB}’}\) \(= \displaystyle\frac{\mathbf{B} \cdot \mathbf{B}’}{|\mathbf{B} ||\mathbf{B}’|}\) \( = \displaystyle \frac{2xx’\text{ (by part a)}}{|\mathbf{B} ||\mathbf{B}’|} \gt 0\) (by hypothesis) \(\implies xx’ \gt 0~ (\because |\mathbf{B} ||\mathbf{B} ’| \gt 0-\text{why? In particular, why can’t it equal 0?}) \implies x,x’\) both \(\gt 0\) or both \(\lt 0\). Therefore, \(x \gt 0 \implies x’ \gt 0~\forall t \implies x\) is a strictly increasing function under these circumstances. But \(x\) <i>is</i> the distance between \(\mathbf{B}\) and the \(yz\)-plane!\(~~~\blacksquare\) 
+<br><br></p>
+
+<p><b>26b)</b> Calculate the equation of the plane normal to \(\mathbf{X}(t) = (t, t^2, \frac23t^3)\) at \(t=1\)</p>
+
+<p><b>Sln</b>: First we determine the point \(P(1) = (1, 1, \frac23)\), and a tangent vector to the curve at that point, \(P’(1) = (1, 2(1), 2(1^2)) = (1,2,2)\). Now, for any point, \(Q\), in the plane, \(M\), we must have \((Q-P) \perp P’ \implies (Q-P)\cdot P’ = 0 \implies \\ ((x-1), (y-1), (z-\frac23)) \cdot (1,2,2) = (x-1) + 2(y-1) + 2(z-\frac23) = \boxed{x +2y + 2z -\frac{13}3 = 0}\)</p>
+
+<p>And here’s a picture (reader exercise: supply annotation):</p>
+
+<p><img src=./2.1.26b.jpg>
+<br><br></p>
+
+<p><b>Section 2</b></p>
+
+<p><b>3b)</b> Calculate the length of \(\mathbf{X}(t) = (e^{3t}, e^{-3t}, 3\sqrt2t) \text{ between } t=0 \text{ and } \frac13\).</p>
+
+<p><b>Sln</b>: \(\mathbf{X}’ = (3e^{3t}, -3e^{-3t}, 3\sqrt2) \implies |\mathbf{X}’| = \sqrt{9e^{6t} + 9e^{-6t} + 18} = 3\sqrt{(e^{3t} + e^{-3t})^2} = 6\cosh(3t)\) (reader: why don’t we need absolute value here?) therefore the required length \(\displaystyle= \int_0^{1/3} 6\cosh(3t)dt = 2\sinh(3t) |_0^{1/3} = 2(\sinh 1 - \sinh 0) = \boxed{e - \frac1e}\) 
+<br><br></p>
+
+<p><b>6)</b> Calculate the length of \(\mathbf{X}(t) = (t, \log\cos t) \text{ between } t=0 \text{ and } \frac{\pi}4\).</p>
+
+<p><b>Sln</b>: \(\displaystyle\mathbf{X}’ = \left(1, \frac{-\sin t}{\cos t}\right) = (1, -\tan t) \implies |\mathbf{X}’| = \sqrt{1 + \tan^2 t} = \sqrt{\sec^2 t} = |\sec t |\therefore\) the required length \(\displaystyle = \int_0^{\pi/4} \sec t dt\) (reader: why can we <q>throw out</q> the absolute value here?) \(= \log|\sec t + \tan t|_0^{\pi/4} = \log|\sqrt2 + 1| - \log|1+0| = \boxed{\log(1+\sqrt2)}\) 
+<br><br></p>
+
+<p><b>8)</b> Calculate the length of \(\mathbf{X}(t) = (6t, 2t^3, 3\sqrt2 t^2) \text{ between } t=0 \text{ and } 1\).</p>
+
+<p><b>Sln</b>: \(\mathbf{X}’ = (6, 6t^2, 6\sqrt2 t) \implies |\mathbf{X}’| = \sqrt{36 + 36t^4 + 72t^2} = 6\sqrt{(t^2 + 1)^2} = 6(t^2 + 1)\)<br>\(\therefore\) the required length \(= \displaystyle 6\int_0^1 (t^2+1)dt = 6\left(\displaystyle \frac{t^3}3 + t\right)_0^1 = 6\left(\displaystyle \frac13 + 1 - 0 - 0\right) = \boxed8\)
+<br></p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
