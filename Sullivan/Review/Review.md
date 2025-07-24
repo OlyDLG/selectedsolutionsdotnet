@@ -29,7 +29,7 @@ body {font-family: Palatino}
 Though not presented in the text, a "blackboard bold" capital $\mathbb{R}$ is used ubiquitously to represent the set of "all real numbers," and I will use it freely herein (often with the preposition "over," as in the phrase "the expression is well-defined over $\mathbb{R}$," meaning that it is well-defined&mdash;meaning, gives a real-number result&mdash;for all real number inputs).
 <br><br>
 
-### Section 1: Real Numbers
+### _Section 1: Real Numbers_
 
 
 __4__) “The product of 5 and $x+3$ equals 6” may be written as ______.
@@ -158,7 +158,7 @@ __110__) Explain why the sum of a rational number and an irrationalnumber must 
 __Sln__: Suppose $a$ is rational, $b$ is irrational, and $a+b$ is rational. $a$ rational means there exist integers $m~\&~n, n \ne 0$ such that $a = m/n$, and $a+b$ rational means there exist integers $M~\&~N, N \ne 0$ such that $a+b = M/N$. But $a = m/n$ so $a+b = M/N = m/n + b \implies b = \displaystyle \frac MN - \frac mn = \frac{Mn - mN}{nN}$; but $Mn-mN$ and $nN$ are integers (why, exactly?) so that $b$ is the ratio of two integers, contrary to our supposition that $b$ is irrational. Thus, assuming that $a$ rational, $b$ irrational, and $a+b$ rational leads to a contradiction, so all three statements can’t be simultaneously true: if the first two are true, the third can’t be, i.e., $a+b$ can’t be rational, which, by definition, means that it is irrational.$~~~\blacksquare$
 <br><br>
 
-### Section 2: Algebra Essentials
+### _Section 2: Algebra Essentials_
 
 __18__) Is $\sqrt2 \lt, \gt, $ or $= 1.41$?
 
@@ -280,7 +280,7 @@ __Sln__: No: for any positive real number we may choose, we can always divide it
 (This is actually pretty "deep": its generalization&mdash;that between <i>any</i> two real numbers there <i>always</i> exists another real number, and therefore infinitely many real numbers&mdash;is, notably, also true of rational numbers,[$^2$](#Note2) but not integers&mdash;all integers, $n$, have two equally-close "closest" integers, $n-1$ and $n+1$&mdash;and this is is one of the important differences between the integers and the rationals and reals.)
 <br><br>
 
-### Section 3: Geometry Essentials
+### _Section 3: Geometry Essentials_
 
  
 __34__) Find the volume, $V$, and surface area, $S$, of a sphere of radius 3 feet.
@@ -496,7 +496,7 @@ Quotient: $\boxed{x^4+ax^3+a^2x^2+a^3x+a^4}$, Remainder: $\boxed{0}$
 Check: $(x^4+ax^3+a^2x^2+a^3x+a^4)(x-a) + 0 = x^5 \color{blue}{+ \cancel{ax^4}} \color{violet}{+ \cancel{a^2x^3}} \color{darkgreen}{+ \cancel{a^3x^2}} \color{brown}{+ \cancel{a^4x}} \color{blue}{- \cancel{ax^4}} \color{violet}{- \cancel{a^2x^3}} \color{darkgreen}{\cancel{- a^3x^2}} \color{brown}{\cancel{- a^4x}} \color{black}- a^5~\checkmark$
 <br><br>
 
-### Section 5: Factoring Polynomials
+### _Section 5: Factoring Polynomials_
 
 General Note: in principle, factoring always has a "check step": multiplying the factorization out and simplifying so as to confirm that one gets back what one started with (unfortunately, this doesn’t verify that you factored the expression <i>completely</i>, but at least, assuming the result of this step matches the original expression, it confirms that you obtained <b>a</b> correct factorization); most of the time, however, we shall leave this step to the reader.
 
@@ -648,12 +648,12 @@ $3(4x + 5)^2 \cdot 4(5x + 1)^2 + (4x + 5)^3 \cdot 2(5x + 1) \cdot 5 \\= (16x^2+4
 \boxed{8000x^4+26560x^3+29892x^2+12730x+1550}~\checkmark$
 <br><br>
 
-### Section 6: Synthetic Division
+### _Section 6: Synthetic Division_
 
 In my opinion, this is a non-essential skill, especially in this day of ubiquitous, free symbolic algebra calculators (e.g., [WolframAlpha](https://www.wolframalpha.com/), [GeoGebra](https://www.geogebra.org/), [Desmos](https://www.desmos.com/)), so I am omitting this Section in my initial publication of these solutions. (For the sake of completeness, I will come back to it eventually, but probably not until I’ve finished the rest of the text.)
 <br>
 
-### Section 7: Rational Expressions
+### _Section 7: Rational Expressions_
 
 Note: in general, the kind of problems in this Section and the next do not have a convenient way of checking one’s answer. However, I have confirmed that, in all (tested) cases, [WolframAlpha](https://www.wolframalpha.com/examples/mathematics/) is capable of providing the correct answers (and, if you pay, step-by-step solutions), so I encourage the student to use that resource to <i>
 check</i> the answers s/he obtains (I did).
@@ -822,7 +822,7 @@ Reciprocating both sides gives: $$\boxed{R = \frac{R_1R_2R_3}{R_1R_2 + R_1R_3 + 
 Thus if $R_1$ = 5 ohms, $R_2$ = 4 ohms, and $R_3$ = 10 ohms, $$R = \frac{(5)(4)(10)}{(5)(4)+(5)(10)+(4)(10)} = \frac{200}{20+50+40} = \boxed{\frac{20}{11}\text{ ohms}}$$
 <br>
 
-### Section 8: n-th Roots; Rational Exponents
+### _Section 8: n-th Roots; Rational Exponents_
 
 <i>Except for the initial step of prime factorizing numbers, which I will always "leave to the reader,"</i> I am going to begin by doing these in excruciating detail, and commenting on which steps one should eventually be able to "skip," (i.e., do in one’s head or "automatically") but after Problem __38__, I am going to do them "skipping steps." Note also that there is typically more than one way to do these, so if your solution doesn’t look like mine, but your answer does, probably nothing to worry about.
 
