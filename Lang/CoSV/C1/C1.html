@@ -105,6 +105,23 @@ body {font-family: Palatino}
 
 <p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
+<h3>Symbols used:</h3>
+
+<p>\(\begin{eqnarray}
+\forall &amp; = &amp; \text{for all/each} \\
+\exists &amp; = &amp; \text{there is/exists} \\
+\nexists &amp; = &amp; \text{there is no/there does not exist} \\
+\parallel &amp; = &amp; \text{(is) parallel (to)} \\
+\perp &amp; = &amp; \text{(is) perpendicular (to)} \\
+: &amp; = &amp; \text{such that} \\
+\therefore &amp; = &amp; \text{therefore} \\
+\because &amp; = &amp; \text{because} \\
+\implies &amp; = &amp; \text{implies} \\
+\iff &amp; = &amp; \text{if and only if} \\
+\end{eqnarray}\)<br></p>
+
+<p>(We assume symbols from set theory, e.g., \(\in, \subset, \cap, \cup,\) etc., are known to the reader from prior math courses.)</p>
+
 <h3>Section 1</h3>
 
 <p><b>1.1.9)</b> Draw \(A - B\)</p>
@@ -121,24 +138,24 @@ d) <img src=./1.9d.png align="top" height="240" width="240">
 
 <p><b>1.2.1)</b> \(P = (1, -1), Q = (4, 3), A = (-1, 5), B = (5, 2)\)</p>
 
-<p><b>Sln:</b> \(Q - P = (3, 4), B - A = (6, -3)\) therefore <b>not equivalent</b>.
+<p><b>Sln:</b> \(Q - P = (3, 4), B - A = (6, -3) \therefore\) <b>not equivalent</b>.
 <br><br></p>
 
 <p><b>1.2.4)</b> \(P = (2, 3, -4), Q = (-1, 3, 5), A = (-2, 3, -1), B = (-5, 3, 8)\)</p>
 
-<p><b>Sln:</b> \(Q - P = (-3, 0, 9), B - A = (-3, 0, 9)\) therefore <b>equivalent</b>.
+<p><b>Sln:</b> \(Q - P = (-3, 0, 9), B - A = (-3, 0, 9) \therefore\) <b>equivalent</b>.
 <br><br></p>
 
 <p>For Exercises 5 &amp; 8: Are located vectors \(\vec{PQ}, \vec{AB}\) parallel?</p>
 
 <p><b>1.2.5)</b> \(P = (1, -1), Q = (4, 3), A = (-1, 5), B = (7, 1)\)</p>
 
-<p><b>Sln:</b> \(Q - P = (3, 4), B - A = (8, -4)\) therefore <b>not parallel</b>.
+<p><b>Sln:</b> \(Q - P = (3, 4), B - A = (8, -4) \therefore\) <b>not parallel</b>.
 <br><br></p>
 
 <p><b>1.2.8)</b> \(P = (2, 3, -4), Q = (-1, 3, 5), A = (-2, 3, -1), B = (-11, 3, -28)\)</p>
 
-<p><b>Sln:</b> \(Q - P = (-3, 0, 9), B - A = (-9, 0, -27)\); since there does not exist \(a \in \mathbb{R}\) such that \(Q - P = a(B - A)\), <b>not parallel</b>.
+<p><b>Sln:</b> \(Q - P = (-3, 0, 9), B - A = (-9, 0, -27); \because \nexists a \in \mathbb{R} : Q - P = a(B - A)\), <b>not parallel</b>.
 <br><br></p>
 
 <h3>Section 3</h3>
@@ -149,9 +166,9 @@ d) <img src=./1.9d.png align="top" height="240" width="240">
 \(A^2 \pm A \cdot B \pm A \cdot B + B^2 = A^2 \pm 2A \cdot B + B^2~~~\blacksquare\)
 <br><br></p>
 
-<p><b>1.3.5)</b> Given that \(A \cdot X = 0\) for all \(X\), show \(A = \vec{~0~}\).</p>
+<p><b>1.3.5)</b> Given that \(A \cdot X = 0~\forall X\), show \(A = \vec{~0~}\).</p>
 
-<p><b>Sln:</b> \(A \cdot X = A \cdot \sum_{i=1}^N x_i \vec{e~}_i = \sum_{i=1}^N x_i (A \cdot \vec{e~}_i) = 0\) for all \(X \implies A \cdot \vec{e~}_i = 0\) for all \(\vec{e~}_i \implies A \equiv \vec{~0~}.~~~\blacksquare\) 
+<p><b>Sln:</b> \(A \cdot X = A \cdot \sum_{i=1}^N x_i \vec{e~}_i = \sum_{i=1}^N x_i (A \cdot \vec{e~}_i) = 0~\forall X \implies A \cdot \vec{e~}_i = 0~\forall \vec{e~}_i \implies A \equiv \vec{~0~}.~~~\blacksquare\) 
 <br><br></p>
 
 <h3>Section 4</h3>
@@ -195,14 +212,14 @@ Pf: Clearly, from the discussion in the text, \(A\) lies on the line passing thr
 
 <p><b>1.5.5)</b> \(P, Q \in \mathbb{R}^n \implies \frac12(P+Q)\) is half-way, i.e., is the midpoint, between \(P,Q\).</p>
 
-<p><b>Sln:</b> Observe that in the previous exercise, although the example we used the result on was in \(\mathbb{R}^3\), the statement and proof of the result didn’t rely, in any way, on the dimension of the space of which \(P,Q\) are elements: the result is completely general for \(\mathbb{R}^n\), and the formula for the midpoint is an immediate corollary.
+<p><b>Sln:</b> Observe that in the previous Exercise, although the example we used the result on was in \(\mathbb{R}^3\), the statement and proof of the result didn’t rely, in any way, on the dimension of the space in which \(P,Q\) are elements: the result is completely general for \(\mathbb{R}^n\), and the formula for the midpoint is an immediate corollary.
 <br><br></p>
 
 <h3>Section 6</h3>
 
 <p><b>1.6.5)</b> Show that \(3x - 5y = 1 \text{ is not}\perp 2x + 3y = 5\).</p>
 
-<p><b>Sln:</b> \(m_1 = \frac35,~m_2 = -\frac23,~m_1m_2 = -\frac25 \ne -1\) therefore  <b>not</b> \(\mathbf{\perp}\)
+<p><b>Sln:</b> \(m_1 = \frac35,~m_2 = -\frac23,~m_1m_2 = -\frac25 \ne -1\) therefore  <b>not</b> \(\mathbf{\perp}\).
 <br><br></p>
 
 <p><b>1.6.10)</b> Find a vector parallel to the line of intersection of the two planes:
@@ -242,7 +259,7 @@ How does one check this result (other than checking the answer in the back)?  Th
 <p><b>1.6.14)</b> Find the intersection of the line through \(P\) in the direction of \(A\) and the given plane<br>
 <b>a)</b> \(P = (1, 3, 5),~A = (-2, 1, 1),~2x + 3y - z = 1\)</p>
 
-<p><b>Sln:</b> A parameterization for the line \(L(t)\) through \(P\) in the direction of \(A\) is \(L(t) = P + tA\) since \(L(0) = P\) and \(tA\) has the same direction as \(A\) for all \(t \in \mathbb{R}\ne 0\); in terms of components \(L(t) = (1,3,5) + t(-2, 1, 1)\). Substituting into the equation of the plane gives \(1 = 2(1-2t) + 3(3+t) - (5+t) = 6 - 2t \implies t = \frac52 \implies\) the point of intersection is \[\boxed{\left(-4, \frac{11}2, \frac{15}2\right)}.\]
+<p><b>Sln:</b> A parameterization for the line \(L(t)\) through \(P\) in the direction of \(A\) is \(L(t) = P + tA\) since \(L(0) = P\) and \(tA\) has the same direction as \(A~\forall t \in \mathbb{R}\ne 0\); in terms of components \(L(t) = (1,3,5) + t(-2, 1, 1)\). Substituting into the equation of the plane gives \(1 = 2(1-2t) + 3(3+t) - (5+t) = 6 - 2t \implies t = \frac52 \implies\) the point of intersection is \[\boxed{\left(-4, \frac{11}2, \frac{15}2\right)}.\]
 Check: \(2(-4) +3(\frac{11}2) - \frac{15}2 = -8 + \frac{18}2 = 1~\checkmark\)</p>
 
 <p><br>
@@ -263,7 +280,7 @@ Check: \(2(-4) +3(\frac{11}2) - \frac{15}2 = -8 + \frac{18}2 = 1~\checkmark\)</p
 
 <p><b>1.7.7)</b> Does \(E_1 \times (E_1 \times E_2) = (E_1 \times E_1) \times E_2\)?</p>
 
-<p><b>Sln:</b> No: by Exercise 5 we know that \(E_1 \times E_2 = E_3\), and by <strong>CP1</strong> we know that \(E_1 \times E_3 = -(E_3 \times E_1) = -E_2\), again by Exercise 5. On the other hand, by Exercise 6 we know that \((E_1 \times E_1) = 0\) and \(0 \times A = 0\) for all \(A\) therefore \((E_1 \times E_1) \times E_2 = 0.~~\blacksquare\)</p>
+<p><b>Sln:</b> No: by Exercise 5 we know that \(E_1 \times E_2 = E_3\), and by <strong>CP1</strong> we know that \(E_1 \times E_3 = -(E_3 \times E_1) = -E_2\), again by Exercise 5. On the other hand, by Exercise 6 we know that \((E_1 \times E_1) = 0\) and \(0 \times A = 0~\forall A\), \(\therefore (E_1 \times E_1) \times E_2 = 0.~~\blacksquare\)</p>
 
 <p><i>Note: We do Exercises 1.7.10 and 1.7.12 assuming that the reader has read Chapter 2, Section 1, as instructed in the text.</i>
 <br><br></p>
@@ -284,7 +301,7 @@ Check: \(2(-4) +3(\frac{11}2) - \frac{15}2 = -8 + \frac{18}2 = 1~\checkmark\)</p
 <p><b>Sln:</b> (As with 1.7.10, we drop the \((t)\)’s.) By <q>The Product Rule</q> for the dot product (<q>Rule 3</q> of Chapter 2, Section 1), 
 \(\begin{eqnarray}\displaystyle
 \frac{d}{dt}\left[X \cdot \left(X’ \times X’’\right)\right] &amp; = &amp; X \cdot \left(X’ \times X’’\right)’ + X’ \cdot \left(X’ \times X’’\right) \\
-~~ &amp; = &amp; X \cdot \left(X’ \times X’’’ + X’’ \times X’’\right) (\text{by } 1.7.10) + 0 (\text{because }X’ \times X’’ \perp X’ \implies X’ \cdot (X’ \times X’’) = 0 )\\
+~~ &amp; = &amp; X \cdot \left(X’ \times X’’’ + X’’ \times X’’\right) (\text{by } 1.7.10) + 0 (\because X’ \times X’’ \perp X’ \implies X’ \cdot (X’ \times X’’) = 0 )\\
 ~~ &amp; = &amp; X \cdot \left(X’ \times X’’’ + 0\right)~(\text{by Exercise 6}) \\
 \end{eqnarray}\)</p>
 
