@@ -59,10 +59,11 @@ Lang, S.,
             <ul>
             	[Chapter 2: Differentiation of Vectors](./Lang/CoSV/C2/C2.html)
             </ul>
-   </ul>
-<!---
-                <b>BROKEN Links</b> <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CalcOfSevVar/C5/C5.html)</ul>
             <ul>
+                <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CoSV/C5/C5.html)</ul>
+            </ul>
+  </ul>
+<!---
                <b>BROKEN Links</b> [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
 --->
 <ul>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
