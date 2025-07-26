@@ -1,9 +1,5 @@
 const n1 = 100, sn1 = String(n1); 
 
-function dt(tMax, n) {
-    return tMax / n;
-}
-
 function getn2(altNoIntvlsForm) {
     var n2 = altNoIntvlsForm[0].valueAsNumber;
     return n2;

@@ -1,31 +1,3 @@
-/* Google Charts Support Functions */
-
-function addDataSeries(DataTable, newDataArray, newDataLabels) {
-	var origNCols = DataTable.getNumberOfColumns();
-	var origNRows = DataTable.getNumberOfRows();
-	var newNCols = newDataArray[0].length-1; //Don’t count the ind. var. col.
-	var newNRows = newDataArray.length;
-	var nDAtype = typeof(newDataArray[0][0]);
-	for (i=0; i < newDataLabels.length; i++) {
-            DataTable.addColumn(nDAtype, newDataLabels[i]);
-        }
-	var newRow = [];
-	for (i=0; i < newNRows; i++) {
-	    newRow[0] = newDataArray[i][0];
-	    for (j=1; j < origNCols; j++) {
-	    	newRow[j] = NaN;
-	    }
-	    for (k=0; k < newNCols; k++) {
-	        newRow[origNCols+k] = newDataArray[i][k+1];
-	    }
-	    DataTable.addRow(newRow);
-	}
-}
-
-function create2DArray(rows, cols, value) {
-  return Array.from({ length: rows }, () => Array(cols).fill(value));
-}
-
 function removeCommas(s) {
     var noCommas = s.replace(/,/g , "");
     return noCommas;
@@ -138,6 +110,12 @@ function simpleBisection(f, L, U, prec, tries) {
     count += 1;
   }
   return res.zeroIfClose(prec);
+}
+
+/* NUMERICAL METHODS FUNCTIONS */
+
+function dt(tMax, n) {
+    return tMax / n;
 }
 
 function ExplicitEuler(df, dt, fn, tn, params) {
@@ -257,3 +235,33 @@ function CoV(data, prob) {
     }
     return rslt;
 }
+
+/* Google Charts Support Functions 
+Not presently needed/used, development suspended
+
+function addDataSeries(DataTable, newDataArray, newDataLabels) {
+	var origNCols = DataTable.getNumberOfColumns();
+	var origNRows = DataTable.getNumberOfRows();
+	var newNCols = newDataArray[0].length-1; //Don’t count the ind. var. col.
+	var newNRows = newDataArray.length;
+	var nDAtype = typeof(newDataArray[0][0]);
+	for (i=0; i < newDataLabels.length; i++) {
+            DataTable.addColumn(nDAtype, newDataLabels[i]);
+        }
+	var newRow = [];
+	for (i=0; i < newNRows; i++) {
+	    newRow[0] = newDataArray[i][0];
+	    for (j=1; j < origNCols; j++) {
+	    	newRow[j] = NaN;
+	    }
+	    for (k=0; k < newNCols; k++) {
+	        newRow[origNCols+k] = newDataArray[i][k+1];
+	    }
+	    DataTable.addRow(newRow);
+	}
+}
+
+function create2DArray(rows, cols, value) {
+  return Array.from({ length: rows }, () => Array(cols).fill(value));
+}
+*/
