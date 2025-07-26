@@ -1,0 +1,314 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C8</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><p>\(\require{cancel}\)
+<style>
+body {font-family: Palatino}
+</style></p>
+
+<h2><center>Selected Exercise Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Lang, S., 1987. <i>Calculus of Several Variables, 3rd Edition.</i> Springer-Verlag UTM, New York</h3>
+
+<h3><center>Chapter 8: Curve Integrals</h3>
+
+<h3><center>&copy; 2019, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
+
+<p><i>Note 1:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p><i>Note 2: <q>Curve Integrals</q> are more commonly known as <q>Line Integrals,</q> but Prof. Lang’s term is more accurate/general.</i></p>
+
+<h3>Symbols used:</h3>
+
+<p>\(\begin{eqnarray}
+\exists &amp; = &amp; \text{there is/exists} \\
+: &amp; = &amp; \text{such that} \\
+\therefore &amp; = &amp; \text{therefore} \\
+\implies &amp; = &amp; \text{implies} \\
+\end{eqnarray}\)<br></p>
+
+<p>(We assume symbols from set theory, e.g., \(\in, \subset, \cap, \cup,\) etc., are known to the reader from prior math courses.)</p>
+
+<h3><u>Section 1: Definition and Evaluation</u></h3>
+
+<p><b>1)</b> Calculate \(\displaystyle \int_{\gamma} F(x,y) \cdot d\gamma\) where \(F(x,y) = (x^2-2xy, y^2-2xy)\) and \(\gamma = (x, x^2)\) from \(x=-2\) to \(1\).</p>
+
+<p><b>Sln</b>: Since the natural parameterization for this problem is \(x(t) = t \implies y(t) = t^2\) this exercise is just as easily done leaving \(x\) as the <q>parameter.</q> We have: \(d\gamma = (dx, 2xdx)\) and \(F(x,y) = F(x,x^2) = (x^2-2x(x^2), (x^2)^2-2x(x^2)) = (x^2-2x^3, x^4-2x^3) \therefore\)
+\(\begin{eqnarray}
+\displaystyle \int_{\gamma} F(x,y) \cdot d\gamma &amp; = &amp; \int_{-2}^1 (x^2-2x^3, x^4-2x^3)\cdot(dx,2xdx) \\
+&amp; = &amp; \int_{-2}^1 (x^2-2x^3)dx + 2x(x^4-2x^3)dx \\
+&amp; = &amp; \int_{-2}^1 (2x^5 - 4x^4 - 2x^3 +x^2)dx \\
+&amp; = &amp; \left[\frac13x^6 - \frac45x^5 - \frac12x^4 + \frac13x^3\right]_{-2}^1 \\
+&amp; = &amp; \left[\frac13 - \frac45 - \frac12 + \frac13\right] - \left[\frac{64}3 + \frac{128}5 - 8 - \frac83\right] \\
+&amp; = &amp; -\frac{19}{30} - \frac{544}{15} \\
+&amp; = &amp; \boxed{-\frac{369}{10}} 
+\end{eqnarray}\)
+<br><br></p>
+
+<p><b>4)</b> Let \(C\) be the circle of radius \(r\) (e.g., \(r=20\)), centered at the origin; calculate the integral of \(F(X)\) around \(C\), where the (vector) value of \(F\) at \(X\) has the same direction as \(X\).</p>
+
+<p><b>Sln</b>: The condition \(F(X)\) has the same direction as \(X\) means \(F(X) = cX\) for some (non-zero, real) constant, \(c\) (proof?). Parameterizing \(C\) as \(C(t) = (r\cos t, r\sin t)\), once around the circle corresponds to \(t\) varying from \(0\) to \(2\pi\). Thus:</p>
+
+<p>\(\begin{eqnarray}
+\int_C F(X)\cdot dC &amp; = &amp; \int_0^{2\pi} (cr\cos t, cr\sin t) \cdot (-r\sin(t)dt, r\cos(t)dt) \\
+&amp; = &amp;\int_0^{2\pi} (-cr^2\cos t\sin t + cr^2 \sin t\cos t)dt \\
+&amp; = &amp; \int_0^{2\pi} 0 dt \\
+&amp; \equiv &amp; \boxed0
+\end{eqnarray}\)</p>
+
+<p>Note two things: i) the answer doesn’t depend on \(r\) or \(c\): the integral of any such \(F\) around any origin-centered circle is zero (why must we specify origin-centered here?); and ii) the integral is also independent of how many times we go around the circle, even if it’s less than one, including <q>negative times,</q> i.e., going around clockwise. (Reader: can you explain this result geometrically, i.e., it’s clear here that the result stems from the integrand being identically zero regardless of the distance and direction travelled around the circle, but what fact from geometry, together with a geometric property of \(dC\), <q>foreordained</q> this outcome? This illustrates how <q>elementary</q> math can potentially inform us of errors we might make in <q>advanced</q> math: if you got an answer other than zero, a theorem from geometry and a geometric property of \(dC\), taken together, should have immediately told you that you made an error somewhere. Equivalently, if you have <q>deep</q> understanding of circle geometry, the geometry of derivatives, and the geometry of curve integrals, you could do this Exercise <q>in your head,</q> with no <q>computation</q> whatsoever.)
+<br><br></p>
+
+<p><b>5)</b> Given: \(F(x,y) = (cxy, x^6y^2), \gamma(x) = (x, ax^b), a,b,c \gt 0.\) Find: \(a\) <q>in terms of</q> \(c\) such that the integral of \(F\) along \(\gamma\) from \(x=0\) to \(1\) is independent of \(b\).</p>
+
+<p><b>Sln</b>: Though Prof. Lang’s wording is uncharacteristically imprecise on this point, let us start by assuming that, by <q>in terms of,</q> Prof. Lang means <q>there exists \(k: a = kc\).</q> With this assumption, the integral we need to evaluate is:</p>
+
+<p>\(\begin{eqnarray} \displaystyle 
+\int_0^1 (cx(kcx^b), x^6(kcx^b)^2) \cdot (dx,bkcx^{b-1}dx) &amp; = &amp; \int_0^1 (kc^2x^{b+1} + bk^3c^3x^{3b+5})dx \\
+&amp; = &amp; \left[\frac{kc^2}{b+2}x^{b+2} + \frac{bk^3c^3}{3b+6}x^{3b+6}\right]_0^1 ~~ (\text{how can we be sure here that } b + 2 \gt 0 ?) \\
+&amp; = &amp; \frac{kc^2}{b+2} + \frac{bk^3c^3}{3b+6} = \frac{3kc^2 + k^3c^3b}{3(b+2)} = \frac{k^3c^3\left(3(k^2c)^{-1}+b\right)}{3(b+2)} \\
+\end{eqnarray}\)</p>
+
+<p>\(\therefore\) if \(\displaystyle\frac{3}{k^2c} = 2 \implies k = \sqrt{\frac3{2c}} \implies \boxed{a = \sqrt{\frac{3c}2}}\) then the integral will be independent of \(b.~~~\blacksquare\)
+<br><br></p>
+
+<p><b>8)</b> For vector field \(G(x,y) = \displaystyle \left(\frac{-y}{x^2+y^2},\frac{x}{x^2+y^2}\right) = (f(x,y), g(x,y)) = F(r, t) = \left(\frac{-r\sin t}{r^2}, \frac{r\cos t}{r^2}\right) = \left(\frac{-\sin t}{r}, \frac{\cos t}{r}\right)\), calculate the following integrals:</p>
+
+<p><b>a)</b> along the circle \(x^2 + y^2 = 2\) from \((1,1)\) to \((-\sqrt2,0) = \sqrt2(\cos t, \sin t)\) from \(t=\pi/4\) to \(t=\pi\).</p>
+
+<p><b>Sln</b>: The integral we need to evaluate is:</p>
+
+<p>\(\displaystyle \int_{\pi/4}^{\pi}\left((-\sin t, \cos t)/\sqrt2 \cdot (-\sqrt2\sin t, \sqrt2\cos t)\right)dt = \int_{\pi/4}^{\pi}\left(\sin^2 t + \cos^2 t\right)dt = \int_{\pi/4}^{\pi} (1)dt = t~\big|_{\pi/4}^{\pi} = \pi - \frac{\pi}4 = \boxed{\frac{3\pi}4}\)</p>
+
+<p>Note that the integral and integrand are independent of \(r\), thus: a) the radius of the circle doesn’t matter (as long as it’s origin-centered); and b) the integrand is always \(dt \implies\) the integral is thus always equal to the (signed) angular distance traveled. This makes the answers to parts b) - d) trivial:
+<br></p>
+
+<p><b>b)-d)</b> (once) around the circles \(x^2 + y^2 = \):
+b) 2; c) 1; d) \(r^2\).</p>
+
+<p><b>Sln</b>: By the observations from Part a), the answer to all three of these is \(\boxed{2\pi}\).
+<br></p>
+
+<p><b>e)</b> verify that \(\partial f/\partial y = \partial g/\partial x\).</p>
+
+<p><b>Sln</b>: \(\displaystyle \frac{\partial f}{\partial y} = \frac{(x^2+y^2)(-1) - (-y)(2y)}{(x^2+y^2)^2} = \frac{y^2-x^2}{(x^2+y^2)^2}\)</p>
+
+<p>\(\displaystyle \frac{\partial g}{\partial x} = \frac{(x^2+y^2)(1)-(x)(2x)}{(x^2+y^2)^2} = \frac{y^2-x^2}{(x^2+y^2)^2}~~~\blacksquare\)
+<br><br></p>
+
+<p><b>9)</b> Calculate the integral of \(F(x,y) = (xy, x)\) along \((2y^2, y)\) from \(y=-1\) to \(y=2\).</p>
+
+<p><b>Sln</b>: Note that we are free to parameterize the curve in whichever way is most convenient; thus we can express the integral we need to evaluate as:</p>
+
+<p>\(\displaystyle \int_{-1}^2 ((2y^2)y, 2y^2) \cdot (4ydy, dy) = \int_{-1}^2 (8y^4 + 2y^2)dy = \left[\frac85 y^5 + \frac23 y^3\right]_{-1}^2 = \frac{256}5 + \frac{16}3 - \left(-\frac85 - \frac23\right) = \frac{264}5 + 6 =\) \[\boxed{\frac{294}5}\]
+<br></p>
+
+<h3><u>Section 3: When the Vector Field Has a Potential Function</u></h3>
+
+<p><b>7)</b> Given: \(\displaystyle F(x, y) = \left(\frac{x}{r^3}, \frac{y}{r^3}\right), r = \sqrt{x^2 + y^2}, C(t) = (e^t\cos t, e^t\sin t)\), calculate \(\int_0^{2\pi} (F \cdot dC/dt) dt\).</p>
+
+<p><b>Sln:</b> Given the subject of this Section, we should know that what we’re expected to do is to determine if \(F\) is the gradient of some potential, \(\varphi\), and if so, find \(\varphi\), because if it is and we can, the integral is simply \(\varphi(e^{2\pi}, 0) - \varphi(1, 0)\). Observe that \(F(x,y) = F(X) =  r^{-3}(x, y) = g’(r)X/r, g’(r) = r^{-2}\). This is important because in Chapter 4, Section 4 (selected exercise solutions forthcoming), we learn that, if there exists a differentiable function of one variable, \(g(t)\), and a function of position, \(\varphi(X)\), such that \(\varphi(X) = g(r), r = ||X||\), then \(\left(\nabla \varphi\right)(X) = g’(r)X/r\); so, if we can find \(g(r)\), we’ve found a function of position whose gradient is \(F\), i.e., we’ve found the potential function for the given \(F\)! Now \(g’(r) = r^{-2} \implies g(r) = -r^{-1} \therefore\) \[\varphi(X) = -1/||X|| = -(x^2 + y^2)^{-1/2}\] </p>
+
+<p>is the required potential function (reader exercise: verify that \((\nabla \varphi)(x,y) = (x,y)/(x^2+y^2)^{3/2}\)) and thus the required integral equals:</p>
+
+<p>\[-\frac1{\left[(e^{2\pi})^2+0^2\right]^{1/2}} - \left[-\frac1{\left(1^2 + 0^2\right)^{1/2}}\right] = \boxed{1 - e^{-2\pi}}\]
+<br><br></p>
+
+<p><b>8)</b> Let \(F(x,y,z) = (z^3y, z^3x,3z^2xy)\); show that, given piecewise-continuous, one-parameter \(\Gamma(t) : \exists t_0, t : P_0 = \Gamma(t_0), P = \Gamma(t), \exists \varphi(X) : 
+\int_{P_0}^P F(X) \cdot dX = \varphi(P) - \varphi(P_0)\).</p>
+
+<p><b>Sln</b>: By Exercise 1 of this Section (not done here), this will be true if \(\exists \varphi(X) : (\nabla \varphi)(X) = F\). So we require \(\varphi(x,y,z) : (\nabla \varphi)(x,y,z) = (\partial_x\varphi(x,y,z), \partial_y\varphi(x,y,z), \partial_z\varphi(x,y,z)) = (z^3y, z^3x,3z^2xy)\). This gives us a system of three partial differential equations in three variables to solve: \(\partial_x\varphi = z^3y;~\partial_y\varphi = z^3x;~\partial_z\varphi = 3z^2xy\). Though this \(F\), and thus this system, was chosen because it is not unreasonable to expect the student to deduce \(\varphi\) <q>by inspection,</q> we will go through the process of finding it methodically for the purpose of illustration.</p>
+
+<p>The first equation tells us that \(\varphi(x,y,z) = z^3yx + f(y,z)\); eq. 2 tells us that \(\varphi(x,y,z) = z^3xy + g(x,z)\); and eq. 3 that \(\varphi(x,y,z) = z^3xy + h(x,y)\). Equating the three right-hand-sides in all \(3\text{-choose-}2 = 3\) possible ways, we find that \(f(y,z) = g(x,z) = h(x,y)\), which needs to be true for <i>all</i> triples \((x,y,z)\) (not just some triples), which, in turn, is only possible if they all three equal a constant function, \(\varphi_0(x,y,z) = c\), a constant. Thus \(\varphi(x,y,z) = xyz^3 + c\) is a function such that \(\nabla \varphi = F\), and the independence-of-path of the integral follows immediately from that.\(~~~\blacksquare\) 
+<br><br></p>
+
+<p><b>10)</b> Given: \(\displaystyle F(x, y) = F(X) = \frac{\cos r}r (x,y) = \cos r \left(\frac{X}r\right)\); calculate:</p>
+
+<p><b>a)</b> \(\displaystyle\int_{(1,0)}^{(0,1)} F(X) \cdot dC\) where \(C\) is the [origin-centered] circle of radius 1.</p>
+
+<p><b>Sln</b>: Again, as in 7) above, we appeal to the theorem of Chapter 4, Section 4 to conclude that \(F\) does indeed admit a potential function: \(\varphi(r) = \int \cos r dr = \sin r \therefore\) the required integral \(= \sin(||(0,1)||) - \sin(||(1,0)||) = \sin 1 - \sin 1 = \boxed{0}\). 
+<br></p>
+
+<p><b>b)</b> \(\oint F(X) \cdot dC\) where \(\oint\) means one full time around the circle.</p>
+
+<p><b>Sln</b>: Ditto-ish (the first term evaluation point is different, of course, but the argument to the potential function is still 1&mdash;we are on <q>the</q> unit circle, after all&mdash;at both evaluation points, so the answer is, again, \(\boxed{0}\)).
+<br></p>
+
+<p><b>c)</b> Does this \(F\) admit a potential function? Why?</p>
+
+<p><b>Sln</b>: See above; as for why, the cited theorem from Chapter 4, Section 4 includes no caveats (at least none preventing its application here), it simply states: <q>Let \(g\) be a differentiable function of one variable, and let \(f(X) = g(||X||)\). Then \((\nabla f)(X) = \displaystyle \frac{g’(||X||)}{||X||}X.\)</q> All the requirements of the theorem are met, so the conclusion may be inferred, <q>no muss, no fuss.</q>
+<br><br></p>
+
+<p><b>11)</b> \(\displaystyle F(x,y) = \left(\frac{x-y}{x^2+y^2}, \frac{x+y}{x^2+y^2}\right)\).</p>
+
+<p><b>a)</b> Find \(\oint F \cdot dC\), where \(C\) is <q>the</q> unit circle, transited counterclockwise.</p>
+
+<p><b>Sln</b>: \(\displaystyle F(x,y) = \left(\frac{x-y}{x^2+y^2}, \frac{x+y}{x^2+y^2}\right) = G(r,\theta) = \frac1{r}(\cos \theta - \sin \theta, \cos \theta + \sin \theta)\) and \(C = (\cos \theta, \sin \theta) \implies dC = (-\sin \theta d\theta, \cos \theta d\theta)\) so </p>
+
+<p>\(\begin{eqnarray}
+\oint F \cdot dC &amp; = &amp; \displaystyle \int_0^{2\pi} \frac1{r}\left[-\sin \theta (\cos \theta - \sin \theta) + \cos \theta (\cos \theta + \sin \theta)\right]d\theta \\
+&amp; = &amp; \frac11\int_0^{2\pi} \left(\sin^2 \theta - \cancel{\sin \theta \cos \theta} + \cos^2 \theta + \cancel{\sin \theta \cos \theta} \right) d\theta \\
+&amp; = &amp; \int_0^{2\pi} (1) d\theta \\
+&amp; = &amp; \theta~\big|_0^{2\pi} \\
+&amp; = &amp; \boxed{2\pi}
+\end{eqnarray}\)
+<br></p>
+
+<p><b>b)</b> Does \(F\) admit of a potential function on the plane from which the origin has been deleted?</p>
+
+<p><b>Sln</b>: No: referring to the text Table <q>summariz[ing] the story on potential functions,</q> we first verify that \(\displaystyle \partial_y\left(\frac{x-y}{x^2+y^2}\right) = \frac{(x^2+y^2)(-1)-(x-y)(2y)}{(x^2+y^2)^2} = \frac{-x^2 - 2xy + y^2}{(x^2+y^2)^2} = \frac{(x^2+y^2)(1)-(x+y)(2x)}{(x^2+y^2)^2} = \partial_x\left(\frac{x+y}{x^2+y^2}\right)\), so Table Case 1 doesn’t apply; and since \(C\) is not a rectangle, Case 2 does not apply; but Case 3a) does apply, and since the integral in Part a) was non-zero, \(F~\boxed{\text{does not}}\) admit a potential function. 
+<br><br></p>
+
+<p><b>12)</b> \(F(x,y) = \left(f(x,y), g(x,y)\right) = \displaystyle \left(\frac{-y+3x}{x^2 + y^2}, \frac{x+3y}{x^2 + y^2}\right)\)</p>
+
+<p><b>a)</b> Does \(F\) admit a potential function inside the square \(1 \le x, y \le 2\)?</p>
+
+<p><b>Sln</b>: First we check to see if \(\partial_y f = \partial_x g\):</p>
+
+<p>\(\displaystyle \partial_y \left[\frac{-y+3x}{x^2+y^2}\right] = \frac{(x^2+y^2)(-1)-(-y+3x)(2y)}{(x^2+y^2)^2} = \frac{y^2-6xy-x^2}{(x^2+y^2)^2}\)</p>
+
+<p>\(\displaystyle \partial_x \left[\frac{x+3y}{x^2+y^2}\right] = \frac{(x^2+y^2)(1)-(x+3y)(2x)}{(x^2+y^2)^2} = \frac{y^2-6xy-x^2}{(x^2+y^2)^2} \therefore\) there may be a potential function.<br></p>
+
+<p>Next, we ask: <q>is the connected, open interior of the path of integration a rectangle?</q> Since the answer is yes, we conclude that \(F~\boxed{\text{does}}\) admit a potential function on the specified domain.</p>
+
+<p><b>b)</b> Find \(\oint F \cdot dC\) where \(C\) is <q>the</q> unit circle.</p>
+
+<p><b>Sln</b>: \(\oint F \cdot dC = \oint G \cdot dC + \oint H \cdot dC\), where \(G(x,y) = \displaystyle \left(\frac{-y}{x^2 + y^2}, \frac{x}{x^2 + y^2}\right), H(x,y) = \displaystyle \left(\frac{3x}{x^2 + y^2}, \frac{3y}{x^2 + y^2}\right) = \frac3r\frac{X}{r} = g’(r)\frac{X}{r}\), where \(g’(r) = 3/r \implies g(r) = 3\log r,~\therefore H\) does admit a potential function so \(\displaystyle \oint_{\text{UC}} H \cdot dC = 0\); from the text we know that \(\displaystyle \oint_{\text{UC}} G \cdot dC = 2\pi,~\therefore \displaystyle \oint_{\text{UC}} F \cdot dC = 2\pi + 0 = \boxed{2\pi}\).</p>
+
+<p><b>c)</b> Does \(F\) admit a potential function on the <q>origin-punctured</q> plane?</p>
+
+<p><b>Sln</b>: \(\boxed{\text{No}}\), because, by the result of part b), there exists a non-rectangular, closed curve around which the curve integral of \(F\) is non-zero.</p>
+
+<p>\(\blacksquare\)
+<br><br></p>
+
+<p><b>14)</b> \(F(x,y) = \displaystyle \frac1r(xe^r, ye^r), r = (x^2 + y^2)^{1/2}\). Find:</p>
+
+<p><b>a)</b> \(\displaystyle \int_{(2,1)}^{(-3,4)} F \cdot dC, O \notin C\).</p>
+
+<p><b>Sln</b>: \(F(x,y) = \displaystyle \frac1r(xe^r, ye^r) = f(X) = \frac{g’(r)}{r}X, g’(r) = e^{r}, r = ||X|| \underset{\text{C4 S4}}{\implies} \exists \varphi(X) = g(||X||) = \int e^rdr = e^r : F = \nabla\varphi\)</p>
+
+<p>\(\therefore \displaystyle \int_{(2,1)}^{(-3,4)} F \cdot dC = e^{||(-3,4)||} - e^{||(2,1)||} = \boxed{e^5 - e^{\sqrt5}}\).</p>
+
+<p>For b)-d), \(C(x,y) := x^2 + y^2 = 2^2\)</p>
+
+<p><b>b)</b> \(\displaystyle \int_{(2,0)}^{(0,2)} F \cdot dC\).</p>
+
+<p><b>c)</b> \(\displaystyle \int_{(2,0)}^{(\sqrt2,\sqrt2)} F \cdot dC\).</p>
+
+<p><b>d)</b> \(\displaystyle \oint F \cdot dC\).</p>
+
+<p><b>Sln</b>: In all three of these integrals, the beginning point and the end point are the same distance from the origin, and since the potential function exists and is a function of  distance from the origin (only), all three integrals equal \(\boxed{0}\).
+<br><br></p>
+
+<p><b>16)</b> Integrate \(F(x,y,z) = (x, y^2, 4z^3)\) from \((0,0,0)\) to \((1,1,2)\) along the path pictured in the Exercise statement in the text.</p>
+
+<p><b>Sln</b>: Though it’s not difficult to do so (see our <a href="../C1/C1.html">Selected Solutions for Chapter 1</a> of this text for examples of how to do this), I’m not bothering to give a parameterization of the path because the whole point of the Exercise is that it’s unnecessary: \(F\) admits a potential function, \(\varphi(x,y,z)\), which is readily seen to be \(\displaystyle \varphi(x,y,z) = \frac{x^2}2 + \frac{y^3}{3} + z^4 \therefore\) the required integral is simply:</p>
+
+<p>\[\varphi(1,1,2) - \varphi(0,0,0) = \frac12 + \frac13 + 2^4 - 0 = 16 + \frac56 = \] \[\boxed{\frac{101}{6}.}\]</p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>

@@ -61,11 +61,10 @@ Lang, S.,
             </ul>
             <ul>
                 <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CoSV/C5/C5.html)</ul>
-            </ul>
+            <ul>
+               [Chapter 8: Curve Integrals](./Lang/CoSV/C8/C8.html)
+             </ul>
   </ul>
-<!---
-               <b>BROKEN Links</b> [Chapter 8: Curve Integrals](./Lang/CalcOfSevVar/C8/C8.html)</ul>
---->
 <ul>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
                <!---Requires Work--->[Chapter 1: Complex Numbers and Functions](./Lang/CA/C1/C1.html)
@@ -74,7 +73,7 @@ Lang, S.,
 
 Ross, S., 1992, <b>\*</b><i>Applied Probability Models with Optimization Applications.</i> Dover, New York.
             <ul>
-               [Chapter 1](./Ross/APMwOA/C1.html)
+               [Chapter 1: Introduction to Stochastic Processes](./Ross/APMwOA/C1.html)
             </ul>
 
 Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
