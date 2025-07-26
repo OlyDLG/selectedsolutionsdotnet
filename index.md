@@ -27,12 +27,12 @@
 Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.
 
 ## Text Solution Sets (more to come)
-<!---
 Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
       <ul> Chapter 6: The Laplace Transform
-            <ul><b>BROKEN Links</b> [Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
+            <ul>[Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
             </ul>
       </ul>
+<!---
       <ul> Chapter 9: Nonlinear Differential Equations and Stability
             <ul><b>BROKEN Links</b> [Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
