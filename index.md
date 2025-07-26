@@ -44,6 +44,7 @@ Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</
             <ul><b>BROKEN Links</b> [Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
             <ul><b>BROKEN Links</b> [Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
 --->
+
 Lang, S.,
   <ul><b>\*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
             <ul>
