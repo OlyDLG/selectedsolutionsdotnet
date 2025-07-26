@@ -32,12 +32,10 @@ Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and 
             <ul>[Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
             </ul>
       </ul>
-<!---
       <ul> Chapter 9: Nonlinear Differential Equations and Stability
-            <ul><b>BROKEN Links</b> [Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
+            <ul>[Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
       </ul>
---->
 <!---
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
             <ul><b>BROKEN Links</b> [Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
