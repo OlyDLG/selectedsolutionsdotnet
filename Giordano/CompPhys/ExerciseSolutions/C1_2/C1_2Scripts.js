@@ -161,3 +161,17 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
     makeC1E5Graph();
     return makeC1E5Graph;
 }
+/*
+function getValueC2E5Radio() {
+    return document.getElementByName("C2E5UseForceBut").value;
+}
+*/
+
+function GiorCPC2E5() { // Giordano Comp. Phys. Chpt. 2 Ex. 5 chart
+    console.log(dgCheckBoxState("C2E5UseForceBID"));
+    const tMax = 50.0;
+    function C2E5fprime(){}
+    function makeC2E5Graph(){}
+    makeC2E5Graph();
+    return makeC2E5Graph;
+}

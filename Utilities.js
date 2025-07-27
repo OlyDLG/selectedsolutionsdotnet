@@ -25,6 +25,10 @@ function dsEBIiH(id, val) {
     document.getElementById(id).innerHTML = val; 
 }
 
+function dgCheckBoxState(id) {
+    return document.getElementById(id).checked; 
+}
+
 function supJS(s) {
     return String(s) + "<sup>JS</sup>";
 }
