@@ -112,7 +112,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p>\(\require{cancel}\)</p>
 
-<p><body onload="makeE4Graph = GiorCPC1E4(); makeE5Graph = GiorCPC1E5();"></p>
+<p><body onload="makeC1E4Graph = GiorCPC1E4(); makeC1E5Graph = GiorCPC1E5();"></p>
 
 <h2><center>Selected Exercise Solutions</h2>
 
@@ -162,19 +162,19 @@ where \(B_0 = N_B(0)\). (Check: \(\frac d{dt}N_B + \beta N_B = \cancel{-\beta B_
   <table>
     <tr style="border: none;">
       <td style="border: none;">
-        <form id="E4altNoIntvls" onchange="makeE4Graph()">
-          <label for="E4altNoIntvlsIn">Alternate number of intervals:</label>
-           <input type="number" name="E4altNoIntvlsIn" min="10" max="50" step="10" value="30">
+        <form id="C1E4altNoIntvls" onchange="makeC1E4Graph()">
+          <label for="C1E4altNoIntvlsIn">Alternate number of intervals:</label>
+           <input type="number" name="C1E4altNoIntvlsIn" min="10" max="50" step="10" value="30">
         </form>
       </td>
       <td style="border: none;">
-        <form id="tauA" onchange="makeE4Graph()">
+        <form id="tauA" onchange="makeC1E4Graph()">
           <label for="tauAIn">1/tau<sub>A</sub>:</label>
           <input type="number" name="tauAIn" min="0.25" max="2.5" step="0.25" value="1.0">
         </form>
       </td>
       <td style="border: none;">
-        <form id="tauB" onchange="makeE4Graph()">
+        <form id="tauB" onchange="makeC1E4Graph()">
           <label for="tauBIn">1/tau<sub>B</sub>:</label>
           <input type="number" name="tauBIn" min="0.25" max="2.5" step="0.25" value="1.0">
         </form>
@@ -214,26 +214,26 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
 \]
 (Check: \(\frac d{dt}N_A = \frac12(-2)(A_0 - B_0)e^{-2t} = (B_0 - A_0)e^{-2t} = \frac12(2B_0 - 2A_0)e^{-2t}= N_B - N_A,\) \(N_A(0) = \frac12(A_0 - B_0 + A_0 + B_0) = A_0\checkmark\); the exactly analogous check for \(N_B\) is left to the reader.)</p>
 
-<p>As with Exercise 4, the reader should study and come to understand the effects of changing each of the adjustable parameters below. Enjoy! </p>
+<p>As with Exercise 4, the reader should study and come to understand the effects of changing each of the adjustable parameters below. </p>
 
 <p><sp id="GiorCPC1E5chartTitle" style="center"></sp>
 <center>
   <table>
     <tr style="border: none;">
       <td style="border: none;">
-        <form id="E5altNoIntvls" onchange="makeE5Graph()">
-          <label for="E5altNoIntvlsIn">Alternate number of intervals:</label>
-           <input type="number" name="E5altNoIntvlsIn" min="10" max="50" step="10" value="30">
+        <form id="C1E5altNoIntvls" onchange="makeC1E5Graph()">
+          <label for="C1E5altNoIntvlsIn">Alternate number of intervals:</label>
+           <input type="number" name="C1E5altNoIntvlsIn" min="10" max="50" step="10" value="30">
         </form>
       </td>
       <td style="border: none;">
-        <form id="A0" onchange="makeE5Graph()">
+        <form id="A0" onchange="makeC1E5Graph()">
           <label for="A0In">A<sub>0</sub>:</label>
           <input type="number" name="A0In" min="0" max="100" step="25" value="100">
         </form>
       </td>
       <td style="border: none;">
-        <form id="B0" onchange="makeE5Graph()">
+        <form id="B0" onchange="makeC1E5Graph()">
           <label for="B0In">B<sub>0</sub>:</label>
           <input type="number" name="B0In" min="0" max="100" step="25" value="0">
         </form>
@@ -245,7 +245,38 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
 
 <h3><u>Exercise 2.5</u></h3>
 
+<p>Modify the bicycle air resistance  model to use constant force at low velocity, switching over to the given constant power model at some specified transition velocity.</p>
+
 <h3>Solution</h3>
+
+<!---
+<sp id="GiorCPC2E5chartTitle" style="center"></sp>
+<center>
+  <table>
+    <tr style="border: none;">
+      <td style="border: none;">
+        <form id="C2E5altNoIntvls" onchange="makeC2E5Graph()">
+          <label for="C2E5altNoIntvlsIn">Alternate number of intervals:</label>
+           <input type="number" name="C2E5altNoIntvlsIn" min="10" max="50" step="10" value="30">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="A0" onchange="makeC2E5Graph()">
+          <label for="A0In">A<sub>0</sub>:</label>
+          <input type="number" name="A0In" min="0" max="100" step="25" value="100">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="B0" onchange="makeC2E5Graph()">
+          <label for="B0In">B<sub>0</sub>:</label>
+          <input type="number" name="B0In" min="0" max="100" step="25" value="0">
+        </form>
+      </td>
+    </tr>
+  </table>
+</center>
+<sp id="GiorCPC2E5chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 5."></sp>
+--->
 
 <h3><u>Exercise 2.10</u></h3>
 

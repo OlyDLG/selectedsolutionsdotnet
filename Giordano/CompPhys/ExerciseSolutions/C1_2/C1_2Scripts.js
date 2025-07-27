@@ -35,7 +35,7 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
     const tMax = 10.0;
     const NA0 = 100.0; 
     const NB0 = 0.0;
-    const altNoIntvlsForm = document.getElementById("E4altNoIntvls");
+    const altNoIntvlsForm = document.getElementById("C1E4altNoIntvls");
     const altNoIntvlsFormData = new FormData(altNoIntvlsForm);
     const tauAForm = document.getElementById("tauA");
     const tauAFormData = new FormData(tauAForm);
@@ -51,11 +51,11 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
 	 return [N_A, N_B];
     }
     
-    function E4fprime(fn, tn, tau) {
+    function C1E4fprime(fn, tn, tau) {
         return [-tau[0] * fn[0], tau[0] * fn[0] - tau[1] * fn[1]];
     }
 
-    function makeE4Graph() {
+    function makeC1E4Graph() {
         let n2 = getn2(altNoIntvlsForm);
         let sn2 = String(n2);
         let tauA = tauAForm[0].valueAsNumber;
@@ -67,10 +67,10 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
         addExact(Exact, data, tauA, tauB, NA0, NB0, tMax);
          
 // Add n1 intervals Euler solution
-        addEuler(E4fprime, data, tauA, tauB, NA0, NB0, tMax);
+        addEuler(C1E4fprime, data, tauA, tauB, NA0, NB0, tMax);
          
 // Add n2 intervals Euler solution
-        addEuler(E4fprime, data, tauA, tauB, NA0, NB0, tMax, n2);
+        addEuler(C1E4fprime, data, tauA, tauB, NA0, NB0, tMax, n2);
      
         var dtable = google.visualization.arrayToDataTable(data);
         var title = "<center><h3>N<sub>A</sub> and N<sub>B</sub> vs. Time: ";
@@ -95,13 +95,13 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
         chart.draw(dtable, options);
         dsEBIiH("GiorCPC1E4chartTitle", title);
     }
-    makeE4Graph();
-    return makeE4Graph;
+    makeC1E4Graph();
+    return makeC1E4Graph;
 }
 
 function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
     const tMax = 5.0;
-    const altNoIntvlsForm = document.getElementById("E5altNoIntvls");
+    const altNoIntvlsForm = document.getElementById("C1E5altNoIntvls");
     const altNoIntvlsFormData = new FormData(altNoIntvlsForm);
     const A0Form = document.getElementById("A0");
     const A0FormData = new FormData(A0Form);
@@ -114,11 +114,11 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
 	 return [N_A, N_B];
     }
     
-    function E5fprime(fn) {
+    function C1E5fprime(fn) {
         return [-fn[0] + fn[1], fn[0] - fn[1]];
     }
 
-    function makeE5Graph() {
+    function makeC1E5Graph() {
         let n2 = getn2(altNoIntvlsForm);
         let sn2 = String(n2);
         let A0 = A0Form[0].valueAsNumber;
@@ -130,10 +130,10 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
         addExact(Exact, data, NaN, NaN, A0, B0, tMax);
          
 // Add n1 intervals Euler solution
-        addEuler(E5fprime, data, NaN, NaN, A0, B0, tMax);
+        addEuler(C1E5fprime, data, NaN, NaN, A0, B0, tMax);
          
 // Add n2 intervals Euler solution
-        addEuler(E5fprime, data, NaN, NaN, A0, B0, tMax, n2);
+        addEuler(C1E5fprime, data, NaN, NaN, A0, B0, tMax, n2);
      
         var dtable = google.visualization.arrayToDataTable(data);
         var title = "<center><h3>N<sub>A</sub> and N<sub>B</sub> vs. Time: ";
@@ -158,6 +158,6 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
         chart.draw(dtable, options);
         dsEBIiH("GiorCPC1E5chartTitle", title);
     }
-    makeE5Graph();
-    return makeE5Graph;
+    makeC1E5Graph();
+    return makeC1E5Graph;
 }
