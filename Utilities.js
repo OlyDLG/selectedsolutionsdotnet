@@ -29,6 +29,11 @@ function dgCheckBoxState(id) {
     return document.getElementById(id).checked; 
 }
 
+function toggleHidden(id) {
+    element = document.getElementById(id);
+    element.hidden = !element.hidden;
+}
+
 function supJS(s) {
     return String(s) + "<sup>JS</sup>";
 }

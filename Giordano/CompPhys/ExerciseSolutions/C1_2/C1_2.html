@@ -257,13 +257,13 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
   <table>
     <tr style="border: none;">
       <td style="border: none;">
-        <form id="C2E5UseForce" onchange="console.log(dgCheckBoxState('C2E5UseForceBID'));">
+        <form id="C2E5UseForce" onchange="toggleHidden('C2E5TransitionV')">
           <label for="C2E5UseForce">Use Force:</label>
            <input type="checkbox" name="C2E5UseForceBut" id="C2E5UseForceBID">
         </form>
       </td>
       <td style="border: none;">
-        <form id="C2E5TransitionV" onchange="makeC2E5Graph()">
+        <form id="C2E5TransitionV" onchange="makeC2E5Graph()" hidden>
           <label for="C2E5TransitionVIn">v<sub>transition</sub>:</label>
           <input type="number" name="C2E5TransitionVIn" min="5" max="15" step="2.5" value="10">
         </form>
