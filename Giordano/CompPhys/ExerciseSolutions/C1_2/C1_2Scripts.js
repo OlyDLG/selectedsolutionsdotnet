@@ -36,11 +36,8 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
     const NA0 = 100.0; 
     const NB0 = 0.0;
     const altNoIntvlsForm = document.getElementById("C1E4altNoIntvls");
-    const altNoIntvlsFormData = new FormData(altNoIntvlsForm);
     const tauAForm = document.getElementById("tauA");
-    const tauAFormData = new FormData(tauAForm);
     const tauBForm = document.getElementById("tauB");
-    const tauBFormData = new FormData(tauBForm);
 
     function Exact(t, a, b, A0, B0) {
         N_A = A0 * Math.exp(-a * t);
@@ -102,11 +99,8 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
 function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
     const tMax = 5.0;
     const altNoIntvlsForm = document.getElementById("C1E5altNoIntvls");
-    const altNoIntvlsFormData = new FormData(altNoIntvlsForm);
     const A0Form = document.getElementById("A0");
-    const A0FormData = new FormData(A0Form);
     const B0Form = document.getElementById("B0");
-    const B0FormData = new FormData(B0Form);
 
     function Exact(t, tau, tau, A0, B0) {
         N_A = ( (A0-B0) * Math.exp(-2 * t) + A0 + B0 ) / 2.0;
@@ -161,17 +155,42 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
     makeC1E5Graph();
     return makeC1E5Graph;
 }
-/*
-function getValueC2E5Radio() {
-    return document.getElementByName("C2E5UseForceBut").value;
-}
-*/
 
 function GiorCPC2E5() { // Giordano Comp. Phys. Chpt. 2 Ex. 5 chart
-    console.log(dgCheckBoxState("C2E5UseForceBID"));
-    const tMax = 50.0;
-    function C2E5fprime(){}
+    const tMax = 50.0; // seconds; according to the text, this should be ample time to see
+                                    // the difference between the effect of air resistance vs. none
+    const m = 70.0; // kg
+    const P = 400.0; // Watts
+    const k = P/m;
+    const C = 1.0; 
+    const rho = 1.225; // kg/m³ density of dry air at sea-level at "standard atmospheric
+    			             // conditions," according to Google
+    const A = 0.33; // m^2
+    const C_D = 0.5 * C * rho * A / m; // "net" drag coefficient
+    const DT = dt(tMax, n1);
+    const useForce = dgCheckBoxState("C2E5UseForceBID");
+    const v0 = (useForce) ? 0.0 : 4.0; // mps 
+    if (useForce) {
+        const vstarForm = document.getElementById("C2E5TransitionV");
+        const F0 = P / vstarForm[0].valueAsNumber;
+        console.log(F0);         
+    }
+/*   
+    function C2E5fprime(fn){
+        function noForce(fn) {
+            return fn[0] + k / fn[0] * DT;
+            , fnext[0] - C_D * fn[0] * fn[0] * DT];
+        }
+    	if (useForce) {
+    	    let noDrag fn[0] ;
+    	}
+    	else {
+    	    return noForce(fn);
+    	}
+    }
+*/    
     function makeC2E5Graph(){}
+
     makeC2E5Graph();
     return makeC2E5Graph;
 }
