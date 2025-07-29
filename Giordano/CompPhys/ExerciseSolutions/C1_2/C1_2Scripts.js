@@ -179,7 +179,7 @@ function GiorCPC2E5() { // Giordano Comp. Phys. Chpt. 2 Ex. 5 chart
     	wDragNoForce +=  (k / wDragNoForce - C_D * wDragNoForce * wDragNoForce) * DT;
     	wForce += (((wForce < vstar) ? F0/m : k/wForce) - C_D * wForce * wForce) * DT;
     	alpha = phasedInForce / vstar;
-    	phasedInForce += (((alpha < 1) ? (1 - alpha) * F0/m + alpha * k /phasedInForce : k /phasedInForce) - C_D * wForce * wForce) * DT;
+    	phasedInForce += (((alpha < 1) ? (1 - alpha) * F0/m + alpha * k/(phasedInForce ? phasedInForce : 1) : k /phasedInForce) - C_D * phasedInForce * phasedInForce) * DT;
     	return [noDragNoForce, wDragNoForce, wForce, phasedInForce];
     }
 
