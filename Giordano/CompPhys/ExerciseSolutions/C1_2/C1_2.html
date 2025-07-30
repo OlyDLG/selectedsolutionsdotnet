@@ -135,22 +135,20 @@ makeC2E5Graph = GiorCPC2E5();"></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
-<p><i>Note 1: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Note: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
 <h3><u>Exercise 1.4</u></h3>
 
-<p>Use the Euler method to solve the system:\[ \begin{eqnarray} 
+<p>\(~~~~\)Use the Euler method to solve the system:\[ \begin{eqnarray} 
 \frac{dN_A}{dt} &amp; = &amp; -&amp;\frac{N_A}{\tau_A} &amp; &amp; (\text{Eq. 1})\\
 \frac{dN_B}{dt} &amp; = &amp; &amp;\frac{N_A}{\tau_A} - \frac{N_B}{\tau_B} &amp; &amp; (\text{Eq. 2})
 \end{eqnarray}
 \]
-Explore the behavior for different values of the ratio \(\tau_A/\tau_B\).</p>
+Also find the exact solution and explore the behavior for different values of the ratio \(\tau_A/\tau_B\).</p>
 
 <h3>Solution</h3>
 
-<p>Though not mentioned in the exercise statement, the system is readily solvable exactly; we find this solution for comparison to our results using the Euler method.</p>
-
-<p>First observe that Eq. 1 doesn’t depend on \(N_B\) or its derivative, and thus \(N_A\) can be solved for independently of \(N_B\); that solution is: 
+<p>\(~~~~\)To solve this system exactly, first observe that Eq. 1 doesn’t depend on \(N_B\) or its derivative, and thus \(N_A\) can be solved for independently of \(N_B\); that solution is: 
 \[N_A(t) = A_0 e^{-\alpha t}\] 
 where \(A_0 = N_A(0)\) and \(\displaystyle\alpha = \frac1{\tau_A}\). (Check: \(\frac d{dt}A_0 e^{-\alpha t} = A_0(-\alpha) e^{-\alpha t} = -\alpha N_A = -N_A/\tau_A\); \(N_A(0) = A_0 e^{-\alpha (0)} = A_0 \checkmark\).) We substitute this in for \(N_A\) in Eq. 2 (and rename \(\displaystyle \frac1{\tau_B} = \beta\)), yielding: 
 \[\frac{dN_B}{dt} = \alpha A_0 e^{-\alpha t} - \beta N_B \implies \frac{dN_B}{dt} + \beta N_B = \alpha A_0 e^{-\alpha t}.\] This first-order linear inhomogeneous ODE no longer depends (explicitly) on \(N_A\), and thus it is solvable exactly for \(N_B\) by finding a suitable integrating factor. (There are several serviceable presentations of this method available on the internet; the reader unfamiliar with this method is encouraged to search for it.) The exact solution is: \[N_B(t) = B_0 e^{-\beta t} + \frac{\alpha A_0}{\beta - \alpha} \left(e^{-\alpha t} - e^{-\beta t} \right)\]
@@ -158,7 +156,7 @@ where \(B_0 = N_B(0)\). (Check: \(\frac d{dt}N_B + \beta N_B = \cancel{-\beta B_
 
 <p>These exact solutions are plotted below as smooth curves, along with the Euler method solutions for 100 intervals (all solutions span \(t= 0\) to \(10.0\)) and a user-selectable number of intervals (10, 20, 30, 40, or 50); \(1/\tau_A\) and \(1/\tau_B\) are also user-selectable; \(N_A(0) = 100\) and \(N_B(0) = 0\) are fixed. </p>
 
-<p>In the next chapter, Giordano emphasizes that he considers his text to be primarily about physics (as opposed to numerical methods and/or programming). With that in mind, the reader should use the interactivity provided to observe and understand three key phenomena. First, the qualitative behavior of both solutions, both independently (i.e., the effect of changing \(1/\tau_A\) on \(N_A\) and the effect of changing \(1/\tau_B\) on \(N_B\) while leaving \(1/\tau_A\) unchanged) and relative to one another (i.e., the effect of changing \(1/\tau_A\) on \(N_B\) and the (lack of) effect on \(N_A\) when changing \(1/\tau_B\)). Second, the fact that the numerical solution can (badly) misrepresent the physics if the independent variable resolution (i.e., the number of intervals) is insufficient (e.g., the results when the alternate number of intervals is 10); but, third, what constitutes sufficient resolution can (usually will) depend on the physical parameters of the situation, e.g., in this case, \(1/\tau_A\) and \(1/\tau_B\). (For example, observe that, for larger values of those parameters--corresponding to faster decay--\(n=10\) results in completely unphysical solutions, but for slow decay--smaller parameter values--\(n=10\) is sufficient to give qualitatively correct results; the reader should spend as much time as required to understand this dichotomy.)</p>
+<p>\(~~~~\)In the next chapter, the authors emphasize that their primary concern for the text is physics (as opposed to numerical methods and/or programming). With that in mind, the reader should use the interactivity provided to observe and understand three key phenomena. First, the qualitative behavior of both solutions, both independently (i.e., the effect of changing \(1/\tau_A\) on \(N_A\) and the effect of changing \(1/\tau_B\) on \(N_B\) while leaving \(1/\tau_A\) unchanged) and relative to one another (i.e., the effect of changing \(1/\tau_A\) on \(N_B\) and the (lack of) effect on \(N_A\) when changing \(1/\tau_B\)). Second, the fact that the numerical solution can (badly) misrepresent the physics if the independent variable resolution (i.e., the number of intervals) is insufficient (e.g., the results when the alternate number of intervals is 10); but, third, what constitutes sufficient resolution can (usually will) depend on the physical parameters of the situation, e.g., in this case, \(1/\tau_A\) and \(1/\tau_B\). (For example, observe that, for larger values of those parameters&mdash;corresponding to faster decay&mdash;\(n=10\) results in completely unphysical solutions, but for slow decay&mdash;smaller parameter values&mdash;\(n=10\) is sufficient to give qualitatively correct results; the reader should spend as much time as required to understand this dichotomy.)</p>
 
 <p><sp id="GiorCPC1E4chartTitle" style="center"></sp>
 <center>
@@ -189,7 +187,7 @@ where \(B_0 = N_B(0)\). (Check: \(\frac d{dt}N_B + \beta N_B = \cancel{-\beta B_
 
 <h3><u>Exercise 1.5</u></h3>
 
-<p>Use the Euler method to solve the system:
+<p>\(~~~~\)Use the Euler method to solve the system:
 \[ \begin{eqnarray} 
 \frac{dN_A}{dt} &amp; = &amp; \frac{N_B}{\tau} -\frac{N_A}{\tau} &amp; &amp; (\text{Eq. 1})\\
 \frac{dN_B}{dt} &amp; = &amp; \frac{N_A}{\tau} - \frac{N_B}{\tau} &amp; &amp; (\text{Eq. 2})\\
@@ -201,7 +199,7 @@ Let \(\tau = 1\) and explore the behavior for different values of \(A_0\) and \(
 
 <h3>Solution</h3>
 
-<p>As with Exercise 4, this system can also be solved exactly and, again, methods for doing so are readily available on the internet; and again, we provide and graph, as smooth curves, the exact solution for comparison to our Euler method results. First note that, with the stipulation to take \(\tau = 1\), the system becomes simply:
+<p>\(~~~~\)Although not mentioned in the Exercise statement, this system too can be solved exactly and, again, methods for doing so are readily available on the internet; and again, we provide and graph, as smooth curves, the exact solution for comparison to our Euler method results. First note that, with the stipulation to take \(\tau = 1\), the system becomes simply:
 \[\begin{eqnarray} 
 \frac{dN_A}{dt} &amp; = &amp; N_B - N_A &amp; &amp; (\text{Eq. 1})\\
 \frac{dN_B}{dt} &amp; = &amp; N_A - N_B &amp; &amp; (\text{Eq. 2})\\
@@ -217,7 +215,7 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
 \]
 (Check: \(\frac d{dt}N_A = \frac12(-2)(A_0 - B_0)e^{-2t} = (B_0 - A_0)e^{-2t} = \frac12(2B_0 - 2A_0)e^{-2t}= N_B - N_A,\) \(N_A(0) = \frac12(A_0 - B_0 + A_0 + B_0) = A_0\checkmark\); the exactly analogous check for \(N_B\) is left to the reader.)</p>
 
-<p>As with Exercise 4, the reader should study and come to understand the effects of changing each of the adjustable parameters below. </p>
+<p>\(~~~~\)As with Exercise 1.4, the reader should study and come to understand the effects of changing each of the adjustable parameters below. </p>
 
 <p><sp id="GiorCPC1E5chartTitle" style="center"></sp>
 <center>
@@ -248,24 +246,23 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
 
 <h3><u>Exercise 2.5</u></h3>
 
-<p>Modify the bicycle air resistance model to use constant force at low velocity, switching over to the given constant power model at some specified transition velocity.</p>
+<p>\(~~~~\)Modify the bicycle air resistance model to use constant force at low velocity, switching over to the given constant power model at some specified transition velocity.</p>
 
 <h3>Solution</h3>
+
+<p>\(~~~~\)We’ve plotted four curves below: the red and blue curves are the <q>constant-power</q> (cp) model with and without drag, respectively (we’ve plotted these as a <q>check</q> on our implementation); the yellow curve is the asked-for <q>constant-force</q> (cf) at <q>low</q> speed, cp at <q>high</q> speed model; the green curve is <q>extra</q> and requires some explanation. </p>
+
+<p>\(~~~~\)It’s not very <q>physical</q> to transition abruptly between these two models: outside of quantum scales, nature abhors discontinuities. The simplest&mdash;and not uncommon&mdash;way to address this is to transition linearly from one model to the other. Let \(\varphi_{\text{model}}(\upsilon)\) be the (non-drag) coefficient multiplying \(dt\), i.e., \(\varphi_{\text{cf}}(\upsilon) = F_0/m\) and \(\varphi_{\text{cp}}(\upsilon) = P/(m\upsilon)\), and define \(\displaystyle \alpha = \frac{\upsilon~}{\upsilon^*}\); then \(\varphi_{\text{lt}}(\upsilon) = (1-\alpha)\varphi_{\text{cf}}(\upsilon) + \alpha\varphi_{\text{cp}}(\upsilon)\) gives a linear <q>transition</q> between the two coefficients that equals \(\varphi_{\text{cf}}\) when \(\upsilon = 0\) and \(\varphi_{\text{cp}}\) when \(\upsilon = \upsilon^*\). Moreover, \(\alpha\varphi_{\text{cp}}(\upsilon) = \displaystyle \left(\frac{\cancel{\upsilon}}{\upsilon^*}\right)\left(\frac{P}{m\cancel{\upsilon}}\right) = \frac{P}{m\upsilon^*}\), so actually \[\varphi_{\text{lt}}(\upsilon) = (1-\alpha)\frac{F_0}{m} + \frac{P}{m\upsilon^*},\]
+i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>fortunate</q> because otherwise we would still have to treat the \(\upsilon = 0\) case separately.) The green curve below uses this \(\varphi_{\text{lt}}\) in place of simply \(\varphi_{\text{cf}}\) for \(0 \le \upsilon_i \lt \upsilon^*\), and then switches to (just) \(\varphi_{\text{cp}}\) for \(\upsilon \ge \upsilon^*\). (This switch to just the cp model is still necessary because when \(\upsilon \gt \upsilon^*,~\alpha\gt 1 \implies \varphi_{\text{lt}}\) includes <q>too much</q> \(\varphi_{\text{cp}}\) and a negative (!) amount of \(\varphi_{\text{cf}}\). Note that, consequently, some discontinuity in going from one model to the other remains, but it is <q>less than</q> that resulting from an abrupt change from a constant coefficient to a 1-over-\(\upsilon\) coefficient).</p>
+
+<p>\(~~~~\)We have also included the ability to choose the speed at which the transition takes place, so that the user can better appreciate the <q>physics</q> of this parameter.</p>
 
 <p><sp id="GiorCPC2E5chartTitle" style="center"></sp>
 <center>
   <form id="C2E5TransitionV" onchange="makeC2E5Graph()">
-      <label for="C2E5TransitionVIn">v<sub>transition</sub>:</label>
-      <input type="number" name="C2E5TransitionVIn" min="3" max="11" step="2" value="7">
+      <label for="C2E5TransitionVIn">\(\upsilon^*\):</label>
+      <input type="number" name="C2E5TransitionVIn" min="3" max="11" step="2" value="7"> (m/s)
    </form>
-  <!---
-      <td style="border: none;">
-        <form id="B0" onchange="makeC2E5Graph()">
-          <label for="B0In">B<sub>0</sub>:</label>
-          <input type="number" name="B0In" min="0" max="100" step="25" value="0">
-        </form>
-      </td>
-  --->
 </center>
 <sp id="GiorCPC2E5chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 5."></sp></p>
 

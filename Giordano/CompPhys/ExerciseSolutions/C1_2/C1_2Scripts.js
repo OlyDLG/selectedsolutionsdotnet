@@ -155,6 +155,7 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
     makeC1E5Graph();
     return makeC1E5Graph;
 }
+
 function GiorCPC2E5() { // Giordano Comp. Phys. Chpt. 2 Ex. 5 chart
     const tMax = 50.0; // seconds; according to the text, this should be ample time to see
                                     // the difference between the effect of air resistance vs. none
@@ -179,14 +180,15 @@ function GiorCPC2E5() { // Giordano Comp. Phys. Chpt. 2 Ex. 5 chart
     	wDragNoForce +=  (k / wDragNoForce - C_D * wDragNoForce * wDragNoForce) * DT;
     	wForce += (((wForce < vstar) ? F0/m : k/wForce) - C_D * wForce * wForce) * DT;
     	alpha = phasedInForce / vstar;
-    	phasedInForce += (((alpha < 1) ? (1 - alpha) * F0/m + alpha * k/(phasedInForce ? phasedInForce : 1) : k /phasedInForce) - C_D * phasedInForce * phasedInForce) * DT;
+//    	phasedInForce += (((alpha < 1) ? (1 - alpha) * F0/m + alpha * k/(phasedInForce ? phasedInForce : 1) : k /phasedInForce) - C_D * phasedInForce * phasedInForce) * DT;
+       phasedInForce += (((alpha < 1) ? (1 - alpha) * F0/m + k/vstar : k /phasedInForce) - C_D * phasedInForce * phasedInForce) * DT; 
     	return [noDragNoForce, wDragNoForce, wForce, phasedInForce];
     }
 
     function makeC2E5Graph() {
         let vstar = vstarForm[0].valueAsNumber;
         let F0 = P / vstar;
-        let data = [['t', 'Base Model', 'With Drag', 'With Force', 'Phased-in Force']];
+        let data = [['t', 'Constant Power', 'With Drag', 'With Force', 'Linear Transition']];
         let [noDragNoForce, wDragNoForce, wForce, phasedInForce] = [v0noForce, v0noForce, v0wForce, v0wForce];
         for (i=0; i<n1+1; i++) {
             data.push([i*DT, noDragNoForce, wDragNoForce, wForce, phasedInForce]);
