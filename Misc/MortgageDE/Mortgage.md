@@ -98,8 +98,14 @@ To conclude, here's the "solution" (computed using our results, not trial-and-er
 (So the last payment the lender would require would actually be $860.75. Note: in computing the table above, I assumed that the lender would always round to "take the penny," i.e., I always rounded the interest up to the nearest penny, and I rounded the monthly payment down to 860.66&mdash;as opposed to up to 860.67&mdash;because paying the loan off slower yields more (albeit, just marginally) money for the lender.)
 
 ### Please Donate:
-<form action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"><input name="cmd"
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
             value="_xclick" type="hidden"> <input name="business"
             value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
             name="item_name" value="SelectedSolutions Donation"
@@ -108,3 +114,6 @@ To conclude, here's the "solution" (computed using our results, not trial-and-er
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>

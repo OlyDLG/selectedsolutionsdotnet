@@ -50,8 +50,14 @@ $\displaystyle \left(\frac{1+\sqrt5}{2}\right)^n\left(\frac{1+\sqrt5 - 2 -\sqrt5
 $~~~~$Take a moment to contemplate this result: again, the Fibonacci sequence is 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, … Because one is always adding an integer to an integer, all the Fibonacci numbers are integers. Despite this, the formula for the $n^{\text{th}}$ Fibonacci number involves the square root of 5, in two different sums, each raised to the $n^{\text{th}}$ power! Almost miraculously (or so it might seem), somehow, the integer portions of those “powered sums” are always “zeroed-out” by each other, and the sum of the $\sqrt5$ terms always “manages” to equal the $n^{\text{th}}$ Fibonacci number times $\sqrt5$&mdash;so that the $\sqrt5$ cancels with the factor of $\frac{1}{\sqrt5}$ out in front of the whole expression&mdash;leaving just the $n^{\text{th}}$ Fibonacci number: really quite remarkable!
 
 ### Please Donate:
-<form action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"><input name="cmd"
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
             value="_xclick" type="hidden"> <input name="business"
             value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
             name="item_name" value="SelectedSolutions Donation"
@@ -60,3 +66,6 @@ $~~~~$Take a moment to contemplate this result: again, the Fibonacci sequence is
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>

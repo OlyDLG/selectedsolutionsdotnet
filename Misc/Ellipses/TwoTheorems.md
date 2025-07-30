@@ -159,8 +159,14 @@ $\blacksquare$
 Graphs created on an iPhone with [EduCalc Pro](https://itunes.apple.com/us/app/scientific-graphing-calculator-2/id1128480893?mt=12) by William Jockusch.
 
 ### Please Donate:
-<form action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"><input name="cmd"
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
             value="_xclick" type="hidden"> <input name="business"
             value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
             name="item_name" value="SelectedSolutions Donation"
@@ -169,3 +175,6 @@ Graphs created on an iPhone with [EduCalc Pro](https://itunes.apple.com/us/app/s
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>

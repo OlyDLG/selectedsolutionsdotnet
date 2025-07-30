@@ -184,8 +184,14 @@ NBC News, via "The Rachel Maddow Show," April 1, 2020, MSNBC, New York
 Numerical computations and graphs created using Google Sheets.
 
 ### Please Donate:
-<form action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"><input name="cmd"
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
             value="_xclick" type="hidden"> <input name="business"
             value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
             name="item_name" value="SelectedSolutions Donation"
@@ -194,3 +200,6 @@ Numerical computations and graphs created using Google Sheets.
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>
