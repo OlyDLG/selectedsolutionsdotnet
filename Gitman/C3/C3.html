@@ -1,0 +1,2298 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C3</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<!--script src="https://www.gstatic.com/charts/loader.js"></script-->
+
+<script src="../../Utilities.js"></script>
+
+<script src="../GMisc.js"></script>
+
+<script src="./Scripts.js"></script>
+
+<style>
+  body {font-family: Palatino;}
+  th.cen {text-align: center;}
+  td.num {text-align: right;}
+  td.text {text-align: left;}
+  td.cen {text-align: center;}
+  form.pad {padding: 0px 0px 13px;}
+  sp.sum {font-weight: bold;}
+ 
+  .tooltip-container {
+  position: relative;
+  display: inline-block;
+  }
+  .tooltip-text {
+  visibility: hidden;
+  width: 240px;
+  background-color: white;
+  color: #f00;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%; /* Position below the hovered element */
+  left: 105%;
+  margin-left: -60px; /* Center the tooltip */
+  }
+  .tooltip-container:hover .tooltip-text {
+  visibility: visible; /* Or display: block; */
+  }
+</style>
+
+<p><body onload="G3P1();G3P11(); G3P12(); G3P14();"></p>
+
+<h2><center>Selected Problem Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Gitman, L. J., 2003. <i>Principles of Managerial Finance (Brief) 3rd Edition.</i> Addison-Wesley, Boston.</h3>
+
+<h3><center>Chapter 3: Cash Flow and Financial Planning</h3>
+
+<h3><center>&copy; 2018, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Calculators for the formulas new to this chapter, implemented as HTML5 Forms, and utilizing my JavaScript functions implementing those formulas:</p>
+
+<form class="pad" alt="Operating Cash Flow Calculator" name="OCFForm" 
+oninput="OCF.value = OpCashFlow(ebit.value, tax.value, Number(dep.value))">
+<b>Operating Cash Flow</b>: Earnings before interest and taxes: <input type="number" id="ebit" name="ebit">
+Taxes: <input type="number" id="tax" name="tax">
+Depreciation: <input type="number" id="dep" name="dep">
+OCF: <output name="OCF" for="ebit tax dep" ></output>
+</form>
+
+<form class="pad" alt="Net Fixed Asset Investment Calculator" name="NAIFForm" 
+oninput="NAIF.value = NetFixAssInv(efa.value - bfa.value, Number(dep.value))">
+<b>Net Fixed Asset Investment</b>: Initial fixed assets: <input type="number" id="bfa" name="bfa">
+Ending fixed assets: <input type="number" id="efa" name="efa">
+Depreciation: <input type="number" id="dep" name="dep">
+NAIF: <output name="NAIF" for="bfa efa dep" ></output>
+</form>
+
+<form class="pad" alt="Spontaneous Current Liabilities Calculator" name="SCLForm" 
+oninput="SCL.value = SponCurLiab(Number(accpay.value), Number(accru.value))">
+<b>Spontaneous Current Liabilities</b>: Accounts payable: <input type="number" id="accpay" name="accpay">
+Accruals: <input type="number" id="accru" name="accru">
+SCL: <output name="SCL" for="accpay accru" ></output>
+</form>
+
+<form class="pad" alt="Net Current Asset Investment Calculator" name="NCAIForm" 
+oninput="NCAI.value = NetCurAssInv(AbsChange(begca.value, endca.value), AbsChange(begscl.value, endscl.value))">
+<b>Net Current Asset Investment</b>: Initial current assets: <input type="number" id="begca" name="begca">
+Ending current assets: <input type="number" id="endca" name="endca">
+Initial SCL: <input type="number" id="begscl" name="begscl">
+Ending SCL: <input type="number" id="endscl" name="endscl">
+NCAI: <output name="NCAI" for="begca endca begscl endscl" ></output>
+</form>
+
+<form class="pad" alt="Free Cash Flow Calculator" name="FCFForm" 
+oninput="FCF.value = FreeCashFlow(ocf.value, nfai.value, ncai.value)">
+<b>Free Cash Flow</b>: Operating cash flow: <input type="number" id="ocf" name="ocf">
+NFAI: <input type="number" id="nfai" name="nfai">
+NCAI: <input type="number" id="ncai" name="ncai">
+FCF: <output name="FCF" for="ocf nfai ncai" ></output>
+</form>
+
+<h3><u>Problem Solutions</u></h3>
+
+<p><strong>1)</strong> Using the MARCS depreciation %-ages in (text) Table 3.2, prepare a depreciation schedule for the following assets:</p>
+
+<p><strong>Asset A</strong>: $17,000, recovered over three years<br>
+<strong>Asset B</strong>: $45,000, recovered over five years<br></p>
+
+<p><b><u>Solution</u></b></p>
+
+<table>
+  <tr>
+    <th class="cen"></th>
+    <th class="cen" colspan=3>Asset A</th>
+    <th class="cen" colspan=3>Asset B</th>
+  </tr>
+  <tr>
+    <th class="cen">Year</th>
+    <th class="cen">Cost</th>
+    <th class="cen">%</th>
+    <th class="cen">Dep</th>
+    <th class="cen">Cost</th>
+    <th class="cen">%</th>
+    <th class="cen">Dep</th>
+  </tr>
+  <tr>
+    <td class="cen">1</td>
+    <td class="num" id="Acost">17000</td>
+    <td class="num" id="A%1">33</td>
+    <td class="num" id="Adep1"></td>
+    <td class="num" id="Bcost">45000</td>
+    <td class="num" id="B%1">20</td>
+    <td class="num" id="Bdep1"></td>
+  </tr>
+  <tr>
+    <td class="cen">2</td>
+    <td class="num"><script>document.write(dgEBIiH("Acost"))</script></td>
+    <td class="num" id="A%2">45</td>
+    <td class="num" id="Adep2"></td>
+    <td class="num"><script>document.write(dgEBIiH("Bcost"))</script></td>
+    <td class="num" id="B%2">32</td>
+    <td class="num" id="Bdep2"></td>
+  </tr>
+  <tr>
+    <td class="cen">3</td>
+    <td class="num"><script>document.write(dgEBIiH("Acost"))</script></td>
+    <td class="num" id="A%3">15</td>
+    <td class="num" id="Adep3"></td>
+    <td class="num"><script>document.write(dgEBIiH("Bcost"))</script></td>
+    <td class="num" id="B%3">19</td>
+    <td class="num" id="Bdep3"></td>
+  </tr>
+  <tr>
+    <td class="cen">4</td>
+    <td class="num"><script>document.write(dgEBIiH("Acost"))</script></td>
+    <td class="num" id="A%4">7</td>
+    <td class="num" id="Adep4"></td>
+    <td class="num"><script>document.write(dgEBIiH("Bcost"))</script></td>
+    <td class="num" id="B%4">12</td>
+    <td class="num" id="Bdep4"></td>
+  </tr>
+  <tr>
+    <td class="cen">5</td>
+    <td colspan=3></td>
+    <td class="num"><script>document.write(dgEBIiH("Bcost"))</script></td>
+    <td class="num" id="B%5">12</td>
+    <td class="num" id="Bdep5"></td>
+  </tr>
+  <tr>
+    <td class="cen">6</td>
+    <td colspan=3></td>
+    <td class="num"><script>document.write(dgEBIiH("Bcost"))</script></td>
+    <td class="num" id="B%6">5</td>
+    <td class="num" id="Bdep6"></td>
+  </tr>
+  <tr>
+    <td class="cen">Totals</td>
+    <td class="num"></td>
+    <td class="num" id="ApTot"></td>
+    <td class="num" id="AdepTot"></td>
+    <td class="num"></td>
+    <td class="num" id="BpTot"></td>
+    <td class="num" id="BdepTot"></td>  
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>5)</strong> (Note: my answers to parts b) and c) differ from those given in the back of my edition &amp; printing of the text; I have confirmed with the current (as of February, 2018) managing author of this series, <a href="https://business.pitt.edu/professors/chad-j-zutter/">Chad J. Zutter, Ph. D.</a>, that my answers are indeed correct.)</p>
+
+<p>Given the Balance Sheet and Income Statement data in the problem statement, calculate:</p>
+
+<p><strong>a)</strong> the accounting cash flow from operations;</p>
+
+<p><b><u>Solution</u></b></p>
+
+<p>This equals the <q>Net profits after taxes</q> entry in the Income Statement&mdash;$1,400&mdash;plus depreciation&mdash;$1,600&mdash;plus other noncash charges, which appear to be $0; thus the accounting cash flow from operations is simply $1,400 \(+\) $1,600 \(=\) <strong>$3,000</strong>.</p>
+
+<p><strong>b)</strong> the (financial) operating cash flow (OCF);</p>
+
+<p><b><u>Solution</u></b></p>
+
+<p>This equals the <q>Earnings before interest and taxes</q> (EBIT)&mdash;$2,700&mdash;minus taxes&mdash;$933&mdash;plus depreciation&mdash;$1,600&mdash;and thus is $2,700 \(-\) $933 \(+\) $1,600 \(=\) <strong>$3,367</strong>.</p>
+
+<p><strong>c)</strong> the free cash flow (FCF);</p>
+
+<p><b><u>Solution</u></b></p>
+
+<p>This is more complicated, as it requires a number of determinations of changes on the Balance Sheet from 2002 to 2003. To recap the text: FCF \(=\) OCF \(-\) NFAI \(-\) NCAI, where, in turn, NFAI \(=\) Change in net fixed assets \(+\) depreciation and NCAI \(=\) Change in current assets \(-\) Change in <q>spontaneous current liabilities</q> (SCL), this last, in turn, equaling Accounts payable + Accruals. The applicable Balance Sheet data are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Year</th>
+<th style="text-align: right">Net fixed assets</th>
+<th style="text-align: right"><center>NFAI</th>
+<th style="text-align: right">Current assets</th>
+<th style="text-align: right">Accts. Payable</th>
+<th style="text-align: right">Accruals</th>
+<th style="text-align: right"><center>SCL</th>
+<th style="text-align: right"><center>NCAI</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>2003</td>
+<td style="text-align: right">$14,800</td>
+<td style="text-align: right"></td>
+<td style="text-align: right">$8,200</td>
+<td style="text-align: right">$1,600</td>
+<td style="text-align: right">$200</td>
+<td style="text-align: right">$1,800</td>
+<td style="text-align: right"></td>
+</tr>
+<tr>
+<td>2002</td>
+<td style="text-align: right">15,000</td>
+<td style="text-align: right"></td>
+<td style="text-align: right">6,800</td>
+<td style="text-align: right">1,500</td>
+<td style="text-align: right">300</td>
+<td style="text-align: right">1,800</td>
+<td style="text-align: right"></td>
+</tr>
+<tr>
+<td><strong>Change</strong></td>
+<td style="text-align: right">(200)</td>
+<td style="text-align: right">(200) \(+\) 1600 \(=\) $1,400</td>
+<td style="text-align: right">1,400</td>
+<td style="text-align: right">100</td>
+<td style="text-align: right">(100)</td>
+<td style="text-align: right">0</td>
+<td style="text-align: right">1,400 \(-\) 0 \(=\) $1,400</td>
+</tr>
+</tbody>
+</table>
+
+<p>So, finally, the FCF = $3,367 \(-\) $1,400 \(-\) $1,400 \(=\) <strong>$567</strong>.</p>
+
+<p><strong>d)</strong> interpret, compare, and contrast the above results.</p>
+
+<p><b><u>Solution</u></b></p>
+
+<p>The $367 by which OCF is greater than the accounting cash flow from operations, reflects interest expense deducted from the latter but not the former. The $567 in FCF is the amount of cash available after operating income and expenses (other than interest) have been <q>settled,</q> i.e., it is what is available to <q>cover</q> interest and any non-operational expenses, e.g., paying dividends to shareholders, increasing the firm’s cash balance, etc. Since the interest commitment appears to be $367, that leaves $200 for such other non-operational expenses.
+<br><br></p>
+
+<p><strong>6)</strong> Project June, July, and August cash receipts, given the following sales and collections data: April: $65,000; May: $60,000; June: $70,000; July and August: $100,000 each; 50% collected in <q>month zero,</q> i.e., the month of the sale, and 25% collected in each of the following two months.</p>
+
+<p><b><u>Solution</u></b></p>
+
+<p>June receipts \(=\) 50% of June sales \(+\) 25% of May sales \(+\) 25% of April sales \(=\) 0.5($70,000) \(+\) 0.25($60,000) \(+\) 0.25($65,000) \(=\) $35,000 \(+\) $15,000 \(+\) $16,250 \(=\) <strong>$66,250</strong>.</p>
+
+<p>Similarly, July receipts \(=\) $50,000 \(+\) $17,500 \(+\) $15,000 \(=\) <strong>$82,500</strong>; August receipts \(=\) $50,000 \(+\) $25,000 \(+\) $17,500 \(=\) <strong>$92,500</strong>.
+<br><br></p>
+
+<p><strong>7)</strong> Give a Cash Budget for Grenoble Enterprises for May, June, and July.</p>
+
+<p><u>Data</u> (all in thousands of $):<br>
+Cash on hand May 1: 5<br>
+Sales: 50 (March), 60 (April), 70 (May), 80 (June), 100 (July)<br>
+Collections: 20% (month 0), 60% (month 1), 20% (month 2)<br>
+Additional monthly income: 2<br>
+Purchases: 50 (May), 70 (June), 80 (July)<br>
+Monthly Rent: 3<br>
+Wages: 10% of previous month’s sales<br>
+Dividends paid: 3 (June)<br>
+Debt service: 4 (June)<br>
+One-time purchase: 6 (July)<br>
+Taxes: 6 (June)<br>
+Goal: maintain a minimum cash balance of 5</p>
+
+<p><b><u>Solution</u></b></p>
+
+<p>Summands in <strong>boldface</strong>, values not required for the Cash Budget omitted.
+<table>
+  <tr>
+    <th colspan=6>Schedule of Cash Receipts for Grenoble Enterprises ($000)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th class="cen">March</th>
+    <th class="cen">April</th>
+    <th class="cen">May</th>
+    <th class="cen">June</th>
+    <th class="cen">July</th>
+  </tr>
+  <tr>
+    <td>Sales (Actual and Forecast)</td>
+    <td class="num">50</td>
+    <td class="num">60</td>
+    <td class="num">70</td>
+    <td class="num">80</td>
+    <td class="num">100</td>
+  </tr>
+  <tr>
+    <td>Cash sales (0.20)</td>
+    <td colspan=2></td>
+    <td class="num"><strong>14</strong></td>
+    <td class="num"><strong>16</strong></td>
+    <td class="num"><strong>20</strong></td>
+  </tr>
+  <tr>
+    <td colspan=6>A/R collections</td>
+  </tr>
+  <tr>
+    <td>Lagged one month (0.60)</td>
+    <td colspan=2></td>
+    <td class="num">0.6(60) = <strong>36</strong></td>
+    <td class="num">0.6(70) = <strong>42</strong></td>
+    <td class="num">0.6(80) = <strong>48</strong></td>
+  </tr>
+  <tr>
+    <td>Lagged two months (0.20)</td>
+    <td colspan=2></td>
+    <td class="num">0.2(50) = <strong>10</strong></td>
+    <td class="num">0.2(60) = <strong>12</strong></td>
+    <td class="num">0.2(70) = <strong>14</strong></td>
+  </tr>
+  <tr>
+    <td>Other cash receipts</td>
+    <td colspan=2></td>
+    <td class="num"><strong>2</strong></td>
+    <td class="num"><strong>2</strong></td>
+    <td class="num"><strong>2</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Total cash receipts</strong></td>
+    <td colspan=2></td>
+    <td class="num"><strong>62</strong></td>
+    <td class="num"><strong>72</strong></td>
+    <td class="num"><strong>84</strong></td>
+  </tr>
+</table></p>
+
+<table>
+  <tr>
+    <th colspan=4>Forecast Cash Disbursements for Grenoble Enterprises ($000)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th class="cen">May</th>
+    <th class="cen">June</th>
+    <th class="cen">July</th>
+  </tr>
+  <tr>
+    <td>Operating purchases</td>
+    <td class="num"><b>50</b></td>
+    <td class="num"><b>70</b></td>
+    <td class="num"><b>80</b></td>
+  </tr>
+  <tr>
+    <td>Capital purchases</td>
+    <td></td>
+    <td></td>
+    <td class="num"><b>6</b></td>
+  </tr>
+  <tr>
+    <td>Rent</td>
+    <td class="num"><b>3</b></td>
+    <td class="num"><b>3</b></td>
+    <td class="num"><b>3</b></td>
+  </tr>
+  <tr>
+    <td>Wages (0.10(sales), lagged one month)</td>
+    <td class="num">0.1(60) = <b>6</b></td>
+    <td class="num">0.1(70) = <b>7</b></td>
+    <td class="num">0.1(80) = <b>8</b></td>
+  </tr>
+  <tr>
+    <td>Dividends paid</td>
+    <td></td>
+    <td class="num"><b>3</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Debt service</td>
+    <td></td>
+    <td class="num"><b>4</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Taxes</td>
+    <td></td>
+    <td class="num"><b>6</b></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Total cash disbursements</b></td>
+    <td class="num"><b>59</b></td>
+    <td class="num"><b>93</b></td>
+    <td class="num"><b>97</b></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan=4>Cash Budget for Grenoble Enterprises, May, June, & July ($000)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th class="cen">May</th>
+    <th class="cen">June</th>
+    <th class="cen">July</th>
+  </tr>
+  <tr>
+    <td>Total cash receipts</td>
+    <td class="num"><b>62</b></td>
+    <td class="num"><b>72</b></td>
+    <td class="num"><b>84</b></td>
+  </tr>
+  <tr>
+    <td>Less: Total cash disbursements</td>
+    <td class="num"><b>59</b></td>
+    <td class="num"><b>93</b></td>
+    <td class="num"><b>97</b></td>
+  </tr>
+  <tr>
+    <td>Net cash flow</td>
+    <td class="num"><b>3</b></td>
+    <td class="num"><b>{21}</b></td>
+    <td class="num"><b>(13)</b></td>
+  </tr>
+  <tr>
+    <td>Add: Beginning cash</td>
+    <td class="num"><b>5</b></td>
+    <td class="num"><b>8</b></td>
+    <td class="num"><b>(13)</b></td>
+  </tr>
+  <tr>
+    <td>Ending cash</td>
+    <td class="num"><b>8</b></td>
+    <td class="num"><b>(13)</b></td>
+    <td class="num"><b>(26)</b></td>
+  </tr>
+  <tr>
+    <td>Less: Minimum cash balance</td>
+    <td class="num"><b>5</b></td>
+    <td class="num"><b>5</b></td>
+    <td class="num"><b>5</b></td>
+  </tr>
+  <tr>
+    <td>Notes payable</td>
+    <td></td>
+    <td class="num"><b>(18)</b></td>
+    <td class="num"><b>(31)</b></td>
+  </tr>
+  <tr>
+    <td>Marketable securities</td>
+    <td class="num"><b>3</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<p><strong>Interpretation</strong></p>
+
+<p>At the end of <strong>May</strong>, Grenoble will have surplus cash of <strong>$3,000</strong>, but, in order to maintain their desired $5,000 minimum cash balance, by the end of <strong>June</strong> they will have to secure financing of <strong>$18,000</strong> cash, and an additional $31,000 \(-\) $18,000 \(=\) <strong>$13,000</strong> cash by the end of <strong>July</strong>.
+<br><br></p>
+
+<p><strong>8</strong>) Given the data, actual and forecast, in the problem statement, produce a cash budget for Xenocore, Inc., for the months Sept., 2003 through April, 2004, and use it to determine each of the following:</p>
+
+<p><strong>a</strong>) each end-of-month cash balance, assuming October’s is $22,000 (i.e., this is Novenber’s starting cash balance);</p>
+
+<p><a href="#Answer2PartA">Answer below</a></p>
+
+<p><strong>b</strong>) each end-of-month required financing or excess cash, assuming a desired minimum cash balance of $15,000;</p>
+
+<p><a href="#Answer2PartB">Answer below</a></p>
+
+<p><strong>c</strong>) the maximum line-of-credit required by the answer to part b).</p>
+
+<p><strong>Solution</strong></p>
+
+<p>Summands in <strong>boldface</strong></p>
+
+<table>
+  <tr>
+    <th colspan=7>Schedule of Cash Receipts ($000)</th>
+  </tr>
+  <tr>
+    <th>Month</th>
+    <th>Sales</th>
+    <th>Cash sales (<sp id="Mon0ARR">0.2</sp>)</th>
+    <th>Lagged 1 month (<sp id="Mon1ARR">0.4</sp>)</th>
+    <th>Lagged 2 months (<sp id="Mon2ARR">0.4</sp>)</th>
+    <th>Other receipts<br>(given in prob. stmnt.)</th>
+    <th>Total receipts</th>
+  </tr>
+  <tr>
+    <th>Sept. '03</th>
+    <td class="num"><sp id="Sep03Sales">210</sp></td Sales>
+    <td colspan=5></td>
+  </tr>
+  <tr>
+    <th>Oct. '03</th>
+    <td class="num"><sp id="Oct03Sales">250</sp></td Sales>
+    <td colspan=5></td>
+  </tr>
+  <tr>
+    <th>Nov. '03</th>
+    <td class="num"><sp id="Nov03Sales">170</sp></td Sales>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Nov03Sales")); 
+        var str = dgEBIiH("Mon0ARR") + 
+                        "(" + 
+                        dgEBIiH("Nov03Sales") +
+                        ") = <b id=\"NovLag0Rec\">" + 
+                        val + 
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Cash 0.2>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1ARR")) * Number(dgEBIiH("Oct03Sales"));
+        var str = dgEBIiH("Mon1ARR") + 
+                        "(" + 
+                        dgEBIiH("Oct03Sales") +
+                        ") = <b id=\"NovLag1Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2ARR")) * Number(dgEBIiH("Sep03Sales"));
+        var str = dgEBIiH("Mon2ARR") + 
+                        "(" + 
+                        dgEBIiH("Sep03Sales") +
+                        ") = <b id=\"NovLag2Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <b id="NovOtherRec">0</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("NovLag0Rec")) + 
+                  Number(dgEBIiH("NovLag1Rec")) + 
+                  Number(dgEBIiH("NovLag2Rec")) + 
+                  Number(dgEBIiH("NovOtherRec"));
+        document.write("<b id=\"NovRec\">" + val + "</b>");
+      </script>
+    </td Total receipts>
+  </tr>
+  <tr>
+    <th>Dec. '03</th>
+    <td class="num"><sp id="Dec03Sales">160</sp></td Sales>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Dec03Sales")); 
+        var str = dgEBIiH("Mon0ARR") + 
+                        "(" + 
+                        dgEBIiH("Dec03Sales") +
+                        ") = <b id=\"DecLag0Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Cash 0.2>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1ARR")) * Number(dgEBIiH("Nov03Sales"));
+        var str = dgEBIiH("Mon1ARR") + 
+                        "(" + 
+                        dgEBIiH("Nov03Sales") +
+                        ") = <b id=\"DecLag1Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2ARR")) * Number(dgEBIiH("Oct03Sales"));
+        var str = dgEBIiH("Mon2ARR") + 
+                        "(" + 
+                        dgEBIiH("Oct03Sales") +
+                        ") = <b id=\"DecLag2Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <b id="DecOtherRec">0</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("DecLag0Rec")) + 
+                  Number(dgEBIiH("DecLag1Rec")) + 
+                  Number(dgEBIiH("DecLag2Rec")) + 
+                  Number(dgEBIiH("DecOtherRec"));
+        document.write("<b id=\"DecRec\">" + 
+                        val +
+                        "</b>");
+      </script>
+    </td Total receipts>
+  </tr>
+  <tr>
+    <th>Jan. '04</th>
+    <td class="num"><sp id="Jan04Sales">140</sp></td Sales>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Jan04Sales")); 
+        var str = dgEBIiH("Mon0ARR") + 
+                        "(" + 
+                        dgEBIiH("Jan04Sales") +
+                        ") = <b id=\"JanLag0Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Cash 0.2>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1ARR")) * Number(dgEBIiH("Dec03Sales"));
+        var str = dgEBIiH("Mon1ARR") + 
+                        "(" + 
+                        dgEBIiH("Dec03Sales") +
+                        ") = <b id=\"JanLag1Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2ARR")) * Number(dgEBIiH("Nov03Sales"));
+        var str = dgEBIiH("Mon2ARR") + 
+                        "(" + 
+                        dgEBIiH("Nov03Sales") +
+                        ") = <b id=\"JanLag2Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <b id="JanOtherRec">15</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("JanLag0Rec")) + 
+                  Number(dgEBIiH("JanLag1Rec")) + 
+                  Number(dgEBIiH("JanLag2Rec")) + 
+                  Number(dgEBIiH("JanOtherRec"));
+        document.write("<b id=\"JanRec\">" + val + "</b>");
+      </script>
+    </td Total receipts>
+  </tr>
+  <tr>
+    <th>Feb. '04</th>
+    <td class="num"><sp id="Feb04Sales">180</sp></td Sales>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Feb04Sales")); 
+        var str = dgEBIiH("Mon0ARR") + 
+                        "(" + 
+                        dgEBIiH("Feb04Sales") +
+                        ") = <b id=\"FebLag0Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Cash 0.2>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1ARR")) * Number(dgEBIiH("Jan04Sales"));
+        var str = dgEBIiH("Mon1ARR") + 
+                        "(" + 
+                        dgEBIiH("Jan04Sales") +
+                        ") = <b id=\"FebLag1Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2ARR")) * Number(dgEBIiH("Dec03Sales"));
+        var str = dgEBIiH("Mon2ARR") + 
+                        "(" + 
+                        dgEBIiH("Dec03Sales") +
+                        ") = <b id=\"FebLag2Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <b id="FebOtherRec">27</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("FebLag0Rec")) + 
+                  Number(dgEBIiH("FebLag1Rec")) + 
+                  Number(dgEBIiH("FebLag2Rec")) + 
+                  Number(dgEBIiH("FebOtherRec"));
+        document.write("<b id=\"FebRec\">" + val + "</b>");
+      </script>
+    </td Total receipts>
+  </tr>
+  <tr>
+    <th>Mar. '04</th>
+    <td class="num"><sp id="Mar04Sales">200</sp></td Sales>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Mar04Sales")); 
+        var str = dgEBIiH("Mon0ARR") + 
+                        "(" + 
+                        dgEBIiH("Mar04Sales") +
+                        ") = <b id=\"MarLag0Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Cash 0.2>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1ARR")) * Number(dgEBIiH("Feb04Sales"));
+        var str = dgEBIiH("Mon1ARR") + 
+                        "(" + 
+                        dgEBIiH("Feb04Sales") +
+                        ") = <b id=\"MarLag1Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2ARR")) * Number(dgEBIiH("Jan04Sales"));
+        var str = dgEBIiH("Mon2ARR") + 
+                        "(" + 
+                        dgEBIiH("Jan04Sales") +
+                        ") = <b id=\"MarLag2Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <b id="MarOtherRec">15</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("MarLag0Rec")) + 
+                  Number(dgEBIiH("MarLag1Rec")) + 
+                  Number(dgEBIiH("MarLag2Rec")) + 
+                  Number(dgEBIiH("MarOtherRec"));
+        document.write("<b id=\"MarRec\">" + val + "</b>");
+      </script>
+    </td Total receipts>
+  </tr>
+  <tr>
+    <th>Apr. '04</th>
+    <td class="num"><sp id="Apr04Sales">250</sp></td Sales>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Apr04Sales")); 
+        var str = dgEBIiH("Mon0ARR") + 
+                        "(" + 
+                        dgEBIiH("Apr04Sales") +
+                        ") = <b id=\"AprLag0Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Cash 0.2>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1ARR")) * Number(dgEBIiH("Mar04Sales"));
+        var str = dgEBIiH("Mon1ARR") + 
+                        "(" + 
+                        dgEBIiH("Mar04Sales") +
+                        ") = <b id=\"AprLag1Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2ARR")) * Number(dgEBIiH("Feb04Sales"));
+        var str = dgEBIiH("Mon2ARR") + 
+                        "(" + 
+                        dgEBIiH("Feb04Sales") +
+                        ") = <b id=\"AprLag2Rec\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <b id="AprOtherRec">12</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("AprLag0Rec")) + 
+                  Number(dgEBIiH("AprLag1Rec")) + 
+                  Number(dgEBIiH("AprLag2Rec")) + 
+                  Number(dgEBIiH("AprOtherRec"));
+        document.write("<b id=\"AprRec\">" + val + "</b>");
+      </script>
+    </td Total receipts>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan=8>Schedule of Disbursements ($000)</th>
+  </tr>
+  <tr>
+    <th>Month</th>
+    <th>Op. Purchases</th>
+    <th>Cash (<sp id="Mon0APR">0.1</sp>)</th>
+    <th>Lagged 1 month (<sp id="Mon1APR">0.5</sp>)</th>
+    <th>Lagged 2 months (<sp id="Mon2APR">0.4</sp>)</th>
+    <th>Wages (<sp id="WagesRatio">0.2</sp> prev. mo. <u>sales</u>)</th>
+    <th>Other (rent=20 + given "1-timers")</th>
+    <th>Total disbursements</th>
+  </tr>
+  <tr>
+    <th>Sept. '03</th>
+    <td class="num" id="SepOpOut">120</td Sales>
+    <td colspan=6></td>
+  </tr>
+  <tr>
+    <th>Oct. '03</th>
+    <td class="num" id="OctOpOut">150</td>
+    <td colspan=6></td>
+  </tr>
+  <tr>
+    <th>Nov. '03</th>
+    <td class="num"><sp id="NovOpOut">140</sp></td Op outlays>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0APR")) * Number(dgEBIiH("NovOpOut")); 
+        var str = dgEBIiH("Mon0APR") + 
+                        "(" + 
+                        dgEBIiH("NovOpOut") +
+                        ") = <b id=\"NovLag0Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Lag 0 Out 0.1>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1APR")) * Number(dgEBIiH("OctOpOut"));
+        var str = dgEBIiH("Mon1APR") + 
+                        "(" + 
+                        dgEBIiH("OctOpOut") +
+                        ") = <b id=\"NovLag1Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.5>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2APR")) * Number(dgEBIiH("SepOpOut"));
+        var str = dgEBIiH("Mon2APR") + 
+                        "(" + 
+                        dgEBIiH("SepOpOut") +
+                        ") = <b id=\"NovLag2Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("WagesRatio")) * Number(dgEBIiH("Oct03Sales"));
+        var str = dgEBIiH("WagesRatio") + 
+                        "(" + 
+                        dgEBIiH("Oct03Sales") +
+                        ") = <b id=\"NovWages\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td wages 0.2 prev. mo. sales>
+    <td class="num">
+      <b id="NovOtherOut">20</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("NovLag0Out")) + 
+                  Number(dgEBIiH("NovLag1Out")) + 
+                  Number(dgEBIiH("NovLag2Out")) + 
+                  Number(dgEBIiH("NovWages")) + 
+                  Number(dgEBIiH("NovOtherOut"));
+        document.write("<b id=\"NovOut\">" + val + "</b>");
+      </script>
+    </td Total outlays>
+  </tr>
+  <tr>
+    <th>Dec. '03</th>
+    <td class="num"><sp id="DecOpOut">100</sp></td Op outlays>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0APR")) * Number(dgEBIiH("DecOpOut")); 
+        var str = dgEBIiH("Mon0APR") + 
+                        "(" + 
+                        dgEBIiH("DecOpOut") +
+                        ") = <b id=\"DecLag0Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Lag 0 Out 0.1>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1APR")) * Number(dgEBIiH("NovOpOut"));
+        var str = dgEBIiH("Mon1APR") + 
+                        "(" + 
+                        dgEBIiH("NovOpOut") +
+                        ") = <b id=\"DecLag1Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.5>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2APR")) * Number(dgEBIiH("OctOpOut"));
+        var str = dgEBIiH("Mon2APR") + 
+                        "(" + 
+                        dgEBIiH("OctOpOut") +
+                        ") = <b id=\"DecLag2Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("WagesRatio")) * Number(dgEBIiH("Nov03Sales"));
+        var str = dgEBIiH("WagesRatio") + 
+                        "(" + 
+                        dgEBIiH("Nov03Sales") +
+                        ") = <b id=\"DecWages\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td wages 0.2 prev. mo. sales>
+    <td class="num">
+      <b id="DecOtherOut">45</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("DecLag0Out")) + 
+                  Number(dgEBIiH("DecLag1Out")) + 
+                  Number(dgEBIiH("DecLag2Out")) + 
+                  Number(dgEBIiH("DecWages")) + 
+                  Number(dgEBIiH("DecOtherOut"));
+        document.write("<b id=\"DecOut\">" + val + "</b>");
+      </script>
+    </td Total outlays>
+  </tr>
+  <tr>
+    <th>Jan. '04</th>
+    <td class="num"><sp id="JanOpOut">80</sp></td Op outlays>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0APR")) * Number(dgEBIiH("JanOpOut")); 
+        var str = dgEBIiH("Mon0APR") + 
+                        "(" + 
+                        dgEBIiH("JanOpOut") +
+                        ") = <b id=\"JanLag0Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Lag 0 Out 0.1>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1APR")) * Number(dgEBIiH("DecOpOut"));
+        var str = dgEBIiH("Mon1APR") + 
+                        "(" + 
+                        dgEBIiH("DecOpOut") +
+                        ") = <b id=\"JanLag1Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.5>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2APR")) * Number(dgEBIiH("NovOpOut"));
+        var str = dgEBIiH("Mon2APR") + 
+                        "(" + 
+                        dgEBIiH("NovOpOut") +
+                        ") = <b id=\"JanLag2Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("WagesRatio")) * Number(dgEBIiH("Dec03Sales"));
+        var str = dgEBIiH("WagesRatio") + 
+                        "(" + 
+                        dgEBIiH("Dec03Sales") +
+                        ") = <b id=\"JanWages\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td wages 0.2 prev. mo. sales>
+    <td class="num">
+      <b id="JanOtherOut">50</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("JanLag0Out")) + 
+                  Number(dgEBIiH("JanLag1Out")) + 
+                  Number(dgEBIiH("JanLag2Out")) + 
+                  Number(dgEBIiH("JanWages")) + 
+                  Number(dgEBIiH("JanOtherOut"));
+        document.write("<b id=\"JanOut\">" + val + "</b>");
+      </script>
+    </td Total outlays>
+  </tr>
+  <tr>
+    <th>Feb. '04</th>
+    <td class="num"><sp id="FebOpOut">110</sp></td Op outlays>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0APR")) * Number(dgEBIiH("FebOpOut")); 
+        var str = dgEBIiH("Mon0APR") + 
+                        "(" + 
+                        dgEBIiH("FebOpOut") +
+                        ") = <b id=\"FebLag0Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Lag 0 Out 0.1>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1APR")) * Number(dgEBIiH("JanOpOut"));
+        var str = dgEBIiH("Mon1APR") + 
+                        "(" + 
+                        dgEBIiH("JanOpOut") +
+                        ") = <b id=\"FebLag1Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.5>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2APR")) * Number(dgEBIiH("DecOpOut"));
+        var str = dgEBIiH("Mon2APR") + 
+                        "(" + 
+                        dgEBIiH("DecOpOut") +
+                        ") = <b id=\"FebLag2Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("WagesRatio")) * Number(dgEBIiH("Jan04Sales"));
+        var str = dgEBIiH("WagesRatio") + 
+                        "(" + 
+                        dgEBIiH("Jan04Sales") +
+                        ") = <b id=\"FebWages\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td wages 0.2 prev. mo. sales>
+    <td class="num">
+      <b id="FebOtherOut">20</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("FebLag0Out")) + 
+                  Number(dgEBIiH("FebLag1Out")) + 
+                  Number(dgEBIiH("FebLag2Out")) + 
+                  Number(dgEBIiH("FebWages")) + 
+                  Number(dgEBIiH("FebOtherOut"));
+        document.write("<b id=\"FebOut\">" + val + "</b>");
+      </script>
+    </td Total outlays>
+  </tr>
+  <tr>
+    <th>Mar. '04</th>
+    <td class="num"><sp id="MarOpOut">100</sp></td Op outlays>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0APR")) * Number(dgEBIiH("MarOpOut")); 
+        var str = dgEBIiH("Mon0APR") + 
+                        "(" + 
+                        dgEBIiH("MarOpOut") +
+                        ") = <b id=\"MarLag0Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Lag 0 Out 0.1>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1APR")) * Number(dgEBIiH("FebOpOut"));
+        var str = dgEBIiH("Mon1APR") + 
+                        "(" + 
+                        dgEBIiH("FebOpOut") +
+                        ") = <b id=\"MarLag1Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.5>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2APR")) * Number(dgEBIiH("JanOpOut"));
+        var str = dgEBIiH("Mon2APR") + 
+                        "(" + 
+                        dgEBIiH("JanOpOut") +
+                        ") = <b id=\"MarLag2Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("WagesRatio")) * Number(dgEBIiH("Feb04Sales"));
+        var str = dgEBIiH("WagesRatio") + 
+                        "(" + 
+                        dgEBIiH("Feb04Sales") +
+                        ") = <b id=\"MarWages\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td wages 0.2 prev. mo. sales>
+    <td class="num">
+      <b id="MarOtherOut">20</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("MarLag0Out")) + 
+                  Number(dgEBIiH("MarLag1Out")) + 
+                  Number(dgEBIiH("MarLag2Out")) + 
+                  Number(dgEBIiH("MarWages")) + 
+                  Number(dgEBIiH("MarOtherOut"));
+        document.write("<b id=\"MarOut\">" + val + "</b>");
+      </script>
+    </td Total outlays>
+  </tr>
+  <tr>
+    <th>Apr. '04</th>
+    <td class="num"><sp id="AprOpOut">90</sp></td Op outlays>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon0APR")) * Number(dgEBIiH("AprOpOut")); 
+        var str = dgEBIiH("Mon0APR") + 
+                        "(" + 
+                        dgEBIiH("AprOpOut") +
+                        ") = <b id=\"AprLag0Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td Lag 0 Out 0.1>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon1APR")) * Number(dgEBIiH("MarOpOut"));
+        var str = dgEBIiH("Mon1APR") + 
+                        "(" + 
+                        dgEBIiH("MarOpOut") +
+                        ") = <b id=\"AprLag1Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 1 month lag 0.5>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("Mon2APR")) * Number(dgEBIiH("FebOpOut"));
+        var str = dgEBIiH("Mon2APR") + 
+                        "(" + 
+                        dgEBIiH("FebOpOut") +
+                        ") = <b id=\"AprLag2Out\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td 2 month lag 0.4>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("WagesRatio")) * Number(dgEBIiH("Mar04Sales"));
+        var str = dgEBIiH("WagesRatio") + 
+                        "(" + 
+                        dgEBIiH("Mar04Sales") +
+                        ") = <b id=\"AprWages\">" + 
+                        val +
+                        "</b>";
+        document.write(str);
+      </script>
+    </td wages 0.2 prev. mo. sales>
+    <td class="num">
+      <b id="AprOtherOut">160</b>
+    </td Other>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("AprLag0Out")) + 
+                  Number(dgEBIiH("AprLag1Out")) + 
+                  Number(dgEBIiH("AprLag2Out")) + 
+                  Number(dgEBIiH("AprWages")) + 
+                  Number(dgEBIiH("AprOtherOut"));
+        document.write("<b id=\"AprOut\">" + val + "</b>");
+      </script>
+    </td Total outlays>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th colspan=7>Cash Budget for Xenocore, Inc. Nov. ’03 - Apr. ’04 ($000)</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th class="cen">Nov. '03</th>
+    <th class="cen">Dec. '03</th>
+    <th class="cen">Jan. '04</th>
+    <th class="cen">Feb. '04</th>
+    <th class="cen">Mar. '04</th>
+    <th class="cen">Apr. '04</th>
+  </tr>
+  <tr>
+    <th>Total cash receipts</th>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("NovRec"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("DecRec"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("JanRec"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("FebRec"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MarRec"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("AprRec"));
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Less: Total cash disbursements</th>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("NovOut"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("DecOut"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("JanOut"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("FebOut"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MarOut"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("AprOut"));
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Net cash flow</th>
+    <td class="num">
+      <script>
+        document.write("<b id=\"NovNCF\">" + (dgEBIiH("NovRec") - dgEBIiH("NovOut")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"DecNCF\">" + (dgEBIiH("DecRec") - dgEBIiH("DecOut")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"JanNCF\">" + (dgEBIiH("JanRec") - dgEBIiH("JanOut")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"FebNCF\">" + (dgEBIiH("FebRec") - dgEBIiH("FebOut")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"MarNCF\">" + (dgEBIiH("MarRec") - dgEBIiH("MarOut")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"AprNCF\">" + (dgEBIiH("AprRec") - dgEBIiH("AprOut")) + "</b>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Add: Beginning cash</th>
+    <td class="num"><b id="NovBC">22</b></td>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("NovNCF")) + Number(dgEBIiH("NovBC"));
+        document.write("<b id=\"DecBC\">" + val + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("DecNCF")) + Number(dgEBIiH("DecBC"));
+        document.write("<b id=\"JanBC\">" + val + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("JanNCF")) + Number(dgEBIiH("JanBC"));
+        document.write("<b id=\"FebBC\">" + val + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("FebNCF")) + Number(dgEBIiH("FebBC"));
+        document.write("<b id=\"MarBC\">" + val + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("MarNCF")) + Number(dgEBIiH("MarBC"));
+        document.write("<b id=\"AprBC\">" + val + "</b>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <a  class="tooltip-container"  name="Answer2PartA" onclick="window.history.back()">Ending cash
+        <span class="tooltip-text">Click link to return to prior place</span>
+      </a>
+    </th>
+    <td class="num">
+      <script>
+        document.write("<b id=\"NovEC\">" + dgEBIiH("DecBC") + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"DecEC\">" + dgEBIiH("JanBC") + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"JanEC\">" + dgEBIiH("FebBC") + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"FebEC\">" + dgEBIiH("MarBC") + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b id=\"MarEC\">" + dgEBIiH("AprBC") + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        var val = Number(dgEBIiH("AprNCF")) + Number(dgEBIiH("AprBC"));
+        document.write("<b id=\"AprEC\">" + val + "</b>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Less: Minimum cash balance</th>
+    <td class="num"><b id="MinCB">15</b></td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MinCB"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MinCB"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MinCB"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MinCB"));
+      </script>
+    </td>
+    <td class="num" style="font-weight: bold">
+      <script>
+        document.write(dgEBIiH("MinCB"));
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <a  class="tooltip-container" name="Answer2PartB" onclick="window.history.back()">Excess cash
+        <span class="tooltip-text">Click link to return to prior place</span></a>
+      (negative value indicates financing will be required)
+    </th>
+    <td class="num">
+      <script>
+        document.write("<b>" + (dgEBIiH("NovEC") - dgEBIiH("MinCB")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b>" + (dgEBIiH("DecEC") - dgEBIiH("MinCB")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b>" + (dgEBIiH("JanEC") - dgEBIiH("MinCB")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b>" + (dgEBIiH("FebEC") - dgEBIiH("MinCB")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b>" + (dgEBIiH("MarEC") - dgEBIiH("MinCB")) + "</b>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<b>" + (dgEBIiH("AprEC") - dgEBIiH("MinCB")) + "</b>");
+      </script>
+    </td>
+  </tr>
+</table>
+
+<p>c) From the Cash Budget projections, we see that the maximum expected cash deficiency is <strong>$37,000</strong>, and thus this amount is the <q>minimum maximum</q> required line-of-credit. (To account for uncertainty, it would probably be wise to seek an LoC of from $40-50,000, depending on how confident we are in our projections.)
+<br><br>
+<strong>10)</strong> Brownstein, Inc. forecasts the following cash receipts and disbursements over the next three months: Sales: $100,000 each month; Purchases: $60,000 e. m.; Wages &amp; Salaries: $10,000 + 5%(Sales) = $10,000 + $5,000 = $15,000 e.m.; One-time adjustments: Month one: $20,000 payment (tax); Month two: $15,000 payment (fixed-asset purchase); Month three: $8,000 receipt (asset sale); Month one beginning cash and each month minimum cash balance: $0.</p>
+
+<p><strong>a</strong>) Construct a cash budget for Brownstein for these three months.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<table>
+  <tr>
+    <th colspan=4>Three month cash budget (forecast) for Brownstein, Inc. ($000)
+    </th>
+  </tr>
+  <tr>
+    <th class="num">Month</th>
+    <th class=cen>One</th>
+    <th class=cen>Two</th>
+    <th class=cen>Three</th>
+  </tr>
+  <tr>
+    <th>Total cash receipts</th>
+    <td class=num id="Mo1Rec">100</td>
+    <td class=num id="Mo2Rec">100</td>
+    <td class=num id="Mo3Rec">108</td>
+  </tr>
+  <tr>
+    <th>Less: Total cash disbursements</th>
+    <td class=num id="Mo1Dis">95</td>
+    <td class=num id="Mo2Dis">90</td>
+    <td class=num id="Mo3Dis">75</td>
+  </tr>
+  <tr>
+    <th>Net cash flow</th>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1NCF\">" + (dgEBIiH("Mo1Rec") - dgEBIiH("Mo1Dis")) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2NCF\">" + (dgEBIiH("Mo2Rec") - dgEBIiH("Mo2Dis")) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3NCF\">" + (dgEBIiH("Mo3Rec") - dgEBIiH("Mo3Dis")) + "</sp>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Add: Beginning cash</th>
+    <td class=num id="Mo1BC">0</td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2BC\">" + (Number(dgEBIiH("Mo1NCF")) + Number(dgEBIiH("Mo1BC"))) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3BC\">" + (Number(dgEBIiH("Mo2NCF")) + Number(dgEBIiH("Mo2BC"))) + "</sp>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Ending cash</th>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1EC\">" + dgEBIiH("Mo2BC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2EC\">" + dgEBIiH("Mo3BC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3EC\">" + (Number(dgEBIiH("Mo3NCF")) + Number(dgEBIiH("Mo3BC"))) + "</sp>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Less: Minimum cash balance</th>
+    <td class=num id="MCB">0</td>
+    <td class=num>0</td>
+    <td class=num>0</td>
+  </tr>
+  <tr>
+    <th>Excess cash</th>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1XC\">" + (dgEBIiH("Mo1EC")-dgEBIiH("MCB")) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2XC\">" + (dgEBIiH("Mo2EC")-dgEBIiH("MCB")) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3XC\">" + (dgEBIiH("Mo3EC")-dgEBIiH("MCB")) + "</sp>");
+      </script>
+    </td>
+  </tr>
+</table>
+
+<p><br>
+<strong>b</strong>) Re-do a) for monthly sales of $80,000 and $120,000.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>Key here is not to forget to adjust the salary payments, since those are (partially) dependent on sales; in particular, for sales of $80,000 (resp. $120,000), the monthly wages &amp; salary disbursement is $10,000 \(+\) $4,000 (resp. \(+\) $6,000) \(=\) <sp class="sum">$14,000</sp> (resp. <sp class="sum">$16,000</sp>). Combining the results into one <q>Sensitivity Analysis Table,</q> we have:</p>
+
+<table>
+  <tr>
+    <th colspan=10>Three month cash budget sensitivity analysis for Brownstein, Inc. ($000)
+    </th>
+  </tr>
+  <tr>
+    <th class="num">Month</th>
+    <th class=cen colspan=3>One</th>
+    <th class=cen colspan=3>Two</th>
+    <th class=cen colspan=3>Three</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="cen">Pessimistic</td>
+    <td class="cen">Most likely</td>
+    <td class="cen">Optimistic</td>
+    <td class="cen">P</td>
+    <td class="cen">ML</td>
+    <td class="cen">O</td>
+    <td class="cen">P</td>
+    <td class="cen">ML</td>
+    <td class="cen">O</td>
+  </tr>
+  <tr>
+    <th>Total cash receipts</th>
+    <td class=num id="Mo1MinRec">80</td>
+    <td class=num>100</td>
+    <td class=num id="Mo1MaxRec">120</td>
+    <td class=num id="Mo2MinRec">80</td>
+    <td class=num>100</td>
+    <td class=num id="Mo2MaxRec">120</td>
+    <td class=num id="Mo3MinRec">88</td>
+    <td class=num>108</td>
+    <td class=num id="Mo3MaxRec">128</td>
+  </tr>
+  <tr>
+    <th>Less: Total disbursements</th>
+    <td class=num id="Mo1MinDis">94</td>
+    <td class=num>95</td>
+    <td class=num id="Mo1MaxDis">96</td>
+    <td class=num id="Mo2MinDis">89</td>
+    <td class=num>90</td>
+    <td class=num id="Mo2MaxDis">91</td>
+    <td class=num id="Mo3MinDis">74</td>
+    <td class=num>75</td>
+    <td class=num id="Mo3MaxDis">76</td>
+  </tr>
+  <tr>
+    <th>Net cash flow</th>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1PNCF\">" + (dgEBIiH("Mo1MinRec") - dgEBIiH("Mo1MinDis")) + "</sp>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<sp class=sum id=\"Mo1MLNCF\">" + dgEBIiH("Mo1NCF") + "</sp>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<sp class=sum id=\"Mo1ONCF\">" + (dgEBIiH("Mo1MaxRec") - dgEBIiH("Mo1MaxDis")) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2PNCF\">" + (dgEBIiH("Mo2MinRec") - dgEBIiH("Mo2MinDis")) + "</sp>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<sp class=sum id=\"Mo2MLNCF\">" + dgEBIiH("Mo2NCF") + "</sp>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<sp class=sum id=\"Mo2ONCF\">" + (dgEBIiH("Mo2MaxRec") - dgEBIiH("Mo2MaxDis")) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3PNCF\">" + (dgEBIiH("Mo3MinRec") - dgEBIiH("Mo3MinDis")) + "</sp>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<sp class=sum id=\"Mo3MLNCF\">" + dgEBIiH("Mo3NCF") + "</sp>");
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write("<sp class=sum id=\"Mo3ONCF\">" + (dgEBIiH("Mo3MaxRec") - dgEBIiH("Mo3MaxDis")) + "</sp>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Add: Beginning cash</th>
+    <td class="num">
+      <script>
+        document.write(dgEBIiH("Mo1BC"));
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write(dgEBIiH("Mo1BC"));
+      </script>
+    </td>
+    <td class="num">
+      <script>
+        document.write(dgEBIiH("Mo1BC"));
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2PBC\">" + (Number(dgEBIiH("Mo1PNCF")) + Number(dgEBIiH("Mo1BC"))) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2MLBC\">" + (Number(dgEBIiH("Mo1MLNCF")) + Number(dgEBIiH("Mo1BC"))) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2OBC\">" + (Number(dgEBIiH("Mo1ONCF")) + Number(dgEBIiH("Mo1BC"))) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3PBC\">" + (Number(dgEBIiH("Mo2PNCF")) + Number(dgEBIiH("Mo2PBC"))) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3MLBC\">" + (Number(dgEBIiH("Mo2MLNCF")) + Number(dgEBIiH("Mo2MLBC"))) + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo3OBC\">" + (Number(dgEBIiH("Mo2ONCF")) + Number(dgEBIiH("Mo2OBC"))) + "</sp>");
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Ending cash = Excess cash =<br>Cash deficiency if less than zero</th>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1PEC\">" + dgEBIiH("Mo2PBC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1MLEC\">" + dgEBIiH("Mo2MLBC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo1OEC\">" + dgEBIiH("Mo2OBC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2PEC\">" + dgEBIiH("Mo3PBC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2MLEC\">" + dgEBIiH("Mo3MLBC") + "</sp>");
+      </script>
+    </td>
+    <td class=num>
+      <script>
+        document.write("<sp class=sum id=\"Mo2OEC\">" + dgEBIiH("Mo3OBC") + "</sp>");
+      </script>
+    </td>
+    <td>
+      <script>
+        document.write("<sp class=sum id=\"Mo3PEC\">" + (Number(dgEBIiH("Mo3PNCF")) + Number(dgEBIiH("Mo3PBC"))) + "</sp>");
+      </script>
+    </td>
+    <td>
+      <script>
+        document.write("<sp class=sum id=\"Mo3MLEC\">" + (Number(dgEBIiH("Mo3MLNCF")) + Number(dgEBIiH("Mo3MLBC"))) + "</sp>");
+      </script>
+    </td>
+    <td>
+      <script>
+        document.write("<sp class=sum id=\"Mo3OEC\">" + (Number(dgEBIiH("Mo3ONCF")) + Number(dgEBIiH("Mo3OBC"))) + "</sp>");
+      </script>
+    </td>
+  </tr>
+</table>
+
+<p><br>
+<strong>c</strong>) Briefly discuss.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>The financial manager needs to make arrangements for a line-of-credit of at least <strong>$23,000</strong> (probably $25,000, just to be safe); and also make arrangements to possibly <strong>invest up to $105,000</strong> in highly-liquid assets, over the next three months.
+<br><br></p>
+
+<p><strong>11)</strong> Given the following 2004 forecast data for Metroline Manufacturing: Total sales&mdash;$<sp id="2K4Sales">1,500</sp>,000; Interest expense (unchanged)&mdash;$<sp id="Int">35</sp>,000; Cash dividends&mdash;$<sp id="Div">70</sp>,000; and the 2003 data given in the tables in the problem statement; prepare year-2004 pro forma income statements:</p>
+
+<p><strong>a</strong>) Using the percent-of-sales method.</p>
+
+<p><strong>Solution</strong>: </p>
+
+<p>Since interest, tax rate (<sp id="tr">0.4</sp>), and dividends for 2004 are all given, the only percents-of-sales from 2003 we need are those of the cost of goods sold&mdash;910/1400 = <sp class=sum id="cogsp">0.65</sp>&mdash;and operating expenses&mdash;120/1400 = <sp class=sum id="opxp">0.086</sp>. With those figures, the percent-of-sales method 2004 pro forma Income Statement for Metroline is:</p>
+
+<table>
+  <tr>
+    <th colspan=2>
+      Metroline Manufacturing 2004 Pro Forma Income Statement<br>Based on the Percent-of-Sales Method
+    </th>
+  </tr>
+  <tr>
+    <th class="cen">Item</th>
+    <th class="cen">Forecast Amount ($000)</th>
+  </tr>
+  <tr>
+    <th>Sales revenue (est.)</th>
+    <td class="num" id="Sales"></td>
+  </tr>
+  <tr>
+    <th>Less: Cost of goods sold 
+      <script>
+        document.write("(" + dgEBIiH("cogsp") + ")");
+      </script>
+    </th>
+    <td class="num" id="cogs"></td>
+  </tr>
+  <tr>
+    <th>Gross profits</th>
+    <td class="num" id="gp"></td>
+  </tr>
+  <tr>
+    <th>Less: Operating expenses 
+      <script>
+        document.write("(" + dgEBIiH("opxp") + ")");
+      </script> 
+    </th>
+    <td class="num" id="opx"></td>
+  </tr>
+  <tr>
+    <th>Operating profits</th>
+    <td class="num" id="op"></td>
+  </tr>
+  <tr>
+    <th>Less: Interest expense (same as 2003)</th>
+    <td class="num" id="int"></td>
+  </tr>
+  <tr>
+    <th>Net profit before taxes</th>
+    <td class="num" id="pb4t"></td>
+  </tr>
+  <tr>
+    <th>Less: Taxes (rate = 0.4)</th>
+    <td class="num" id="tax"></td>
+  </tr>
+  <tr>
+    <th>Net profit after taxes</th>
+    <td class="num" id="paft"></td>
+  </tr>
+  <tr>
+    <th>Less: Cash dividends</th>
+    <td class="num" id="div"></td>
+  </tr>
+  <tr>
+    <th>To retained earnings</th>
+    <td class="num" id="tre"></td>
+  </tr>
+</table>
+
+<p>Note: to obtain the answer in the back, it is necessary to use the operating expenses ratio rounded to two significant digits, 0.086: even using one more digit&mdash;0.0857&mdash;gives an answer different enough that one might think that one has not obtained the intended answer.
+<br></p>
+
+<p><strong>b</strong>) Using fixed and variable cost data.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>The difference here is that, in forecasting the cost of goods sold and operating expenses, we: retain the prior year’s fixed portions; calculate the ratio of the variable portions to gross sales; and use those to forecast the coming year’s variable portions.</p>
+
+<table>
+  <tr>
+    <th colspan=2>
+      Metroline Manufacturing 2004 Pro Forma Income Statement<br>Based on the Fixed and Variable Cost Method
+    </th>
+  </tr>
+  <tr>
+    <th class="cen">Item</th>
+    <th class="cen">Forecast Amount ($000)</th>
+  </tr>
+  <tr>
+    <th>Sales revenue (est.)</th>
+    <td class="num">
+      <script>
+        document.write(dgEBIiH("2K4Sales"));
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th colspan=2>Less: Cost of goods sold</th>
+  </tr>  
+  <tr>
+    <td>Fixed</td>  
+    <td class="num" id="fcogs">210</td>
+  </tr>
+  <tr>
+    <td id="vcogsr"></td>  
+    <td class="num" id="vcogs"></td>
+  </tr>
+  <tr>
+    <th>Gross profits</th>
+    <td class="num" id="vgp"></td>
+  </tr>
+  <tr>
+    <th colspan=2>Less: Operating expenses</th>
+  </tr>
+  <tr>
+    <td>Fixed</td>  
+    <td class="num" id="fopx">36</td>
+  </tr>
+  <tr>
+    <td id="vopxr"></td>  
+    <td class="num" id="vopx"></td>
+  </tr>
+  <tr>
+    <th>Operating profits</th>
+    <td class="num" id="vop"></td>
+  </tr>
+  <tr>
+    <th>Less: Interest expense (same as 2003)</th>
+    <td class="num">
+      <script>
+        document.write(dgEBIiH("Int"));
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>Net profit before taxes</th>
+    <td class="num" id="vpb4t"></td>
+  </tr>
+  <tr>
+    <th>Less: Taxes (rate = 0.4)</th>
+    <td class="num" id="vtax"></td>
+  </tr>
+  <tr>
+    <th>Net profit after taxes</th>
+    <td class="num" id="vpaft"></td>
+  </tr>
+  <tr>
+    <th>Less: Cash dividends</th>
+    <td class="num">
+      <script>
+        document.write(dgEBIiH("Div"));
+      </script>
+    </td>
+  </tr>
+  <tr>
+    <th>To retained earnings</th>
+    <td class="num" id="vtre"></td>
+  </tr>
+</table>
+
+<p><strong>c</strong>) Compare and contrast a) and b).</p>
+
+<p>Clearly, the fixed and variable costs method gives a more optimistic forecast&mdash;$157,000 to retained earnings vs. $146,600; however, given that it recognizes and accounts for the fact that not all costs are proportional to gross sales, it probably also gives the more accurate forecast as well.
+<br><br></p>
+
+<p><strong>12</strong>) Using the <strong><em>judgemental approach</em></strong>, prepare a pro forma balance sheet (Part a) for 2004 for Leonard Industries, using the data given in the problem statement, and use it to answer:</p>
+
+<p><strong>b</strong>) How much, if any, additional financing will Leonard Industries require in 2004; and</p>
+
+<p><strong>c</strong>) Could LI adjust its planned 2004 dividend to avoid the situation described in Part b.</p>
+
+<p><strong>Solution</strong>:
+<br>
+Unless marked otherwise, numerical values are data given in the problem statement, and all values are in dollars, times 1,000.</p>
+
+<p>Sales forecast: <sp id="G3P12Sales">3,000</sp>
+<table>
+  <tr>
+    <th class="cen" colspan=2>
+      Pro Forma Balance Sheet for Leonard Industries for the Year Ending Dec. 31, 2004
+    </th>
+  </tr>
+  <tr>
+    <th colspan=2>Assets</th>
+  </tr>
+  <tr>
+    <td>Cash</td>
+    <td class="num" id="Cash">50</td>
+  </tr>
+  <tr>
+    <td>Marketable securities</td>
+    <td class="num" id="MS">15</td>
+  </tr>
+  <tr>
+    <td>Accounts receivable (<sp id="ARR">0.1</sp> x Sales)</td>
+    <td class="num" id="AR"></td>
+  </tr>
+  <tr>
+    <td>Inventories (<sp id="InvR">0.12</sp> x Sales)</td>
+    <td class="num" id="Inv"></td>
+  </tr>
+  <tr>
+    <th>Total current assets</td>
+    <td class="num" id="TCA"></td>
+  </tr>
+  <tr>
+    <td>Net fixed assets [<sp id="2K3NFA">600</sp> (2003 NFA) + <sp id="2K4FAA">90</sp> (2004 additions) - <sp id="2K4Dep">32</sp> (2004 depreciation)]</td>
+    <td class="num sum" id="2K4NFA">658</td>
+  </tr>
+  <tr>
+    <th>Forecast Total Assets</td>
+    <td class="num" id="TA"></td>
+  </tr>
+  <tr>
+    <td colspan=2></td>
+  </tr>
+  <tr>
+    <th colspan=2>Liabilities &amp; Stockholders’ Equity</td>
+  </tr>
+  <tr>
+    <td>Accounts payable (<sp id="APR">0.14</sp> x Sales)</td>
+    <td class="num" id="AP"></td>
+  </tr>
+  <tr>
+    <td>Accruals &amp; other cur. liab.(60 + 30, same as 2003)</td>
+    <td class="num sum" id="AOCL">90</td>
+  </tr>
+  <tr>
+    <th>Total current liabilities</td>
+    <td class="num" id="TCL"></td>
+  </tr>
+  <tr>
+    <td>Long-term debt &amp; common stock (350 + 200, same as 2003)</td>
+    <td class="num sum" id="DCS">550</td>
+  </tr>
+  <tr>
+    <td>Prior year’s retained earnings</td>
+    <td class="num sum" id="RE">220</td>
+  </tr>
+  <tr>
+    <td>Net profit (<sp id="PR">0.04</sp> x Sales) - Dividend paid (<sp id="G3P12Div">70</sp>)</td>
+    <td class="num sum" id="PnD"></td>
+  </tr>
+  <tr>
+    <th>Forecast Total Liabilities</td>
+    <td class="num" id="Tot"></td>
+  </tr>
+  <tr>
+    <th>Part b) External Financing Required (FTA - FTL)</td>
+    <td class="num" id="EFR"></td>
+  </tr>
+</table></p>
+
+<p><strong>c</strong>) Since the anticipated cash dividend pay-out&mdash;$70,000&mdash;excedes the forecast EFR&mdash;$53,000&mdash;and since the dividend is a simple summand in determining the EFR (i.e., it is not <q>scaled</q> or adjusted in any way prior to being included in the EFR calculation), Leonard Industries could eliminate their EFR by reducing the anticipated dividend pay-out by the EFR, i.e., by reducing the dividend to $70,000 \(-\) $53,000 \(=\) <strong>$17,000</strong> (which we confirmed by actually making the appropriate change, temporarily, in the Dividend paid amount above).
+<br><br></p>
+
+<p><strong>14</strong>) Prepare a pro forma Income Statement (Part a) and Balance Sheet (Part b), and determine the EFR (Part c) for Red Queen Restaurants for 2004, based on the data given in the problem statement. (Again, unless marked otherwise, dollar values <i>in tables</i> are data given in the problem statement and are times 1,000.)</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>First note that the stipulation in the problem statement that ending inventory and accounts payable <q>change directly</q> with sales means that the change in one is proportional to the change in the other. Consequently, since sales is forecast to increase by <strong>12.5%</strong> ( ($900,000 \(-\) $800,000) / $800,000 = 0.125), our 2004 forecast ending inventory and accounts payable are both 0.125 * $100,000 \(=\) $12,500 over their 2003 values, i.e., $<sp class=sum id="G3P14_2K4_AP">112,500</sp>. Additionally, from 2003, the cost of goods sold percent of sales is $600,000 / $800,000 = <strong>0.75</strong> and the operating expenses percent of sales is $100,000 / $800,000 = <strong>0.125</strong>. With this, the percent-of-sales-based pro forma income statement is:</p>
+
+<table>
+  <tr>
+    <th class=cen colspan=2>Red Queen Restaurants<br>Pro Forma Income Statement for the<br>Year Ending Dec. 31, 2004</th>
+  </tr>
+  <tr>
+    <td>Sales revenue</td>
+    <td class=num id="G3P14_2K4Sales">900</td>
+  </tr>
+  <tr>
+    <td>Less: Cost of goods sold (<sp id="G3P14_COGS%">0.75</sp> * Sales)</td>
+    <td class="num sum" id="G3P14_2K4COGS"></td>
+  </tr>
+  <tr>
+    <td>Gross profits</td>
+    <td class="num sum" id="G3P14_2K4GP"></td>
+  </tr>
+  <tr>
+    <td>Less: Operating expenses (<sp id="G3P14_OpX%">0.125</sp> * Sales)</td>
+    <td class="num sum" id="G3P14_2K4OpX"></td>
+  </tr>
+  <tr>
+    <td>Net profits before taxes</td>
+    <td class="num sum" id="G3P14_2K4NPB4T"></td>
+  </tr>
+  <tr>
+    <td>Less: Taxes (<sp id="G3P14_TaxR">0.4</sp> * NPB4T)</td>
+    <td class="num sum" id="G3P14_2K4Tax"></td>
+  </tr>
+  <tr>
+    <td>Net profits after taxes</td>
+    <td class="num sum" id="G3P14_2K4NPAT"></td>
+  </tr>
+  <tr>
+    <td>Less: Cash dividends</td>
+    <td class=num id="G3P14_2K4Div">35</td>
+  </tr>
+  <tr>
+    <td>To retained earnings</td>
+    <td class="num sum" id="G3P14_2K42RE"></td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p>Next, the judgmental approach pro forma balance sheet is:</p>
+
+<table> 
+  <tr>
+    <th class=cen colspan=4>Red Queen Restaurants<br>Pro Forma Balance Sheet<br>Dec. 31, 2004</th>
+  </tr>
+  <tr>
+    <th colspan=2>Assets</th>
+    <th colspan=2>Liabilities and Stockholders’ Equity</th>
+  </tr>
+  <tr>
+    <td>Cash (spec. in prob. statement)</td><td class=num id="G3P14_2K4Cash">30</td>
+    <td>Accounts payable (9/8<sup>ths</sup> 2003 amt.)</td><td class=num id="G3P14_2K4AP">112.5</td>
+  </tr>
+  <tr>
+    <td>Marketable securities (= 2003 amt.)</td><td class=num id="G3P14_2K4MS">18</td>
+    <td>Taxes payable (<sp id="G3P14_2K4TF">0.25</sp> * ann. tax liab.)</td><td class="num sum" id="G3P14_2K4TP"></td>
+  </tr>
+  <tr>
+    <td>Accounts receivable (<sp id="G3P14_2K4ARR">0.18</sp> * Sales)</td><td class="num sum" id="G3P14_2K4AR"></td>
+    <td>Other current liabilities (= 2003 amt.)</td><td class=num id="G3P14_2K4OCL">5</td>
+  </tr>
+  <tr>
+    <td>Inventories (9/8<sup>ths</sup> 2003 amt.) </td><td class=num id="G3P14_2K4Inv">112.5</td>
+    <td class=num>Total current liabilities</td><td class="num sum" id="G3P14_2K4TCL"></td>
+  </tr>
+  <tr>
+    <td class=num>Total current assets</td><td class="num sum" id="G3P14_2K4TCA"></td>
+    <td>Long-term debt (= 2003 amt.)</td><td class=num id="G3P14_2K4LTD">200</td>
+  </tr>
+  <tr>
+    <td>Net fixed assets ($<sp id="G3P14_2K3NFA">350</sp>,000 (2003 amt.) + $<sp id="G3P14_2K4CapPurch">42</sp>,000 mach. - $<sp id="G3P14_2K4Dep">17</sp>,000 dep.) </td><td class="num sum" id="G3P14_2K4NFA"></td>
+    <td>Common stock (= 2003 amt.)</td><td class=num id="G3P14_2K4CS">150</td>
+  </tr>
+  <tr>
+    <td>Total assets</td><td class="num sum" id="G3P14_2K4TA"></td>
+    <td>Retained earnings ($<sp id="G3P14_2K3RE">175</sp>,000 (2003 amt.) + $<sp id="G3P14_2K4ISRE"></sp> (from 2004 Inc. Stmt.))</td><td class="num sum" id="G3P14_2K4BSRE"></td>
+  </tr>
+  <tr>
+    <td colspan=2></td>
+    <td>Pre-EFR Total liabilities and stockholders’ equity</td><td class="num sum" id="G3P14_2K4PreEFR"></td>
+  </tr>
+  <tr>
+    <td colspan=2></td>
+    <td>External financing required</td><td class="num sum" id="G3P14_2K4EFR"></td>
+  </tr>
+  <tr>
+    <td colspan=2></td>
+    <td>Total liabilities and stockholders’ equity</td><td class="num sum" id="G3P14_2K4TLSE"></td>
+  </tr>
+</table> 
+
+<p>The projected external financing required is <strong>$11,250</strong>&mdash;less than $1000 per month and the second least quantity among the two tables, i.e., paltry in comparison to the other dollar amounts RQR is accustomed to dealing with. Thus one would expect that RQR should have little difficulty securing such financing: unless the assumptions underlying these pro forma estimates are grossly in error, RQR appears to be reliably secure for the year 2004.
+<br><br></p>
+
+<h3>Please Donate:</h3>
+
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>
+
+<p></body></p>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
