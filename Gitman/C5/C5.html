@@ -1,0 +1,637 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C5</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="../../Utilities.js"></script>
+
+<script src="../GRnR.js"></script>
+
+<script src="./Scripts.js"></script>
+
+<script>
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(G5P13);
+    google.charts.setOnLoadCallback(G5P23);
+</script>
+
+<style>
+  body {font-family: Palatino;}
+  form.pad {padding: 0px 0px 13px;}
+  .text {text-align: left;}
+  .cen {text-align: center;}
+  .num {text-align: right;}
+  .text {text-align: left;}
+  .sum {font-weight: bold;}
+</style>
+
+<p><body onload="G5P1(); G5P13(); G5P23();"></p>
+
+<h2><center>Selected Problem Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Gitman, L. J., 2003. <i>Principles of Managerial Finance (Brief) 3rd Edition.</i> Addison-Wesley, Boston.</h3>
+
+<h3><center>Chapter 5: Risk and Return</h3>
+
+<h3><center>&copy; 2019, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note 1: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p><i>Note 2: Despite the previous Chapter introducing the time value of money, i.e., the effect of compounding on return, no mention or use of compounding is made in this Chapter, so its influence is ignored in the solutions to these Problems.
+</i></p>
+
+<h3><u>Problem Solutions</u></h3>
+
+<p><strong>1)</strong> Estimate rates of return for two investments:</p>
+
+<p>X: Current market value &dollar;<sp id="G5P1XCMV">21,000</sp>, Previous year mv &dollar;<sp id="G5P1XPMV">20,000</sp>, Previous year cash flow &dollar;<sp id="G5P1XCF">1500</sp></p>
+
+<p>Y: Current market value &dollar;<sp id="G5P1YCMV">55,000</sp>, Previous year mv &dollar;<sp id="G5P1YPMV">55,000</sp>, Previous year cash flow &dollar;<sp id="G5P1YCF">6800</sp></p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>X rate of return = 100 * (&dollar;<sp id="G5P1XCFsol"></sp> + &dollar;<sp id="G5P1XCMVsol"></sp> &ndash; &dollar;<sp id="G5P1XPMVsol"></sp>) / &dollar;<sp id="G5P1XPMVsol2"></sp> = <sp id="G5P1XRoR"></sp>%</p>
+
+<p>Y rate of return = 100 * (&dollar;<sp id="G5P1YCFsol"></sp> + &dollar;<sp id="G5P1YCMVsol"></sp> &ndash; &dollar;<sp id="G5P1YPMVsol"></sp>) / &dollar;<sp id="G5P1YPMVsol2"></sp> = <sp id="G5P1YRoR"></sp>%
+<br><br></p>
+
+<p><strong>3)</strong> Which, if any, of the following RoR/Risk pairings are <q>competitive</q> with a 12% return on an investment with 6% risk index?</p>
+
+<p>Investment X: RoR = 14%, RI = 7%</p>
+
+<p>Investment Y: RoR = 12%, RI = 8%</p>
+
+<p>Investment Z: RoR = 10%, RI = 9%</p>
+
+<p><strong>Solution</strong>: Assuming that the RI is a direct measure of risk, meaning that the higher the RI, the greater the risk; and assuming the principle of risk aversion stated in the text, i.e., the greater the risk, the greater the return required to compensate for the greater risk; clearly investments Y and Z are <strong>not</strong> competitive: Y because it has the same (expected) return but greater (expected) risk, and Z because it has a lower (expected) return and yet an even higher (expected) risk. The only possibly competitive investment is X, because despite its higher risk, it also has a higher return; the question is, can we objectively compare it to the benchmark investment&mdash;and if so, how&mdash;given that both the expected returns and the expected risk indices are different.</p>
+
+<p>Suppose we’re OK with the change in return being <strong><em>proportional</em></strong> to the change in risk, i.e., that two investments, \(A\) and \(B\), are equally <q>attractive</q> if:
+\[\frac{RoR_A}{RI_A} = \frac{RoR_B}{RI_B} = k \text{, a constant}\]
+(from which it can be shown that change in RoR is proportional to change in RI; note that this truly is an assumption, not <q>a given</q>: some people may be so risk averse that they want the expected return to go up proportionally faster than the expected risk, and/or they may have a <q>risk ceiling,</q> i.e., an RI above which they just won’t go, regardless of the return; others may be so risk un-averse that they’ll tolerate the risk going up faster than the expected RoR, as long as the latter is going up). Then to compare two (or more) investments (with respect to expected return relative to expected risk), we can simply compare their \(RoR\)-to-\(RI\) ratios.</p>
+
+<p>In the present case, this ratio for the <q>benchmark</q> investment is 12%/6% = 2 and for Investment X it is 14%/7% = 2.  Thus, <strong><em>if we accept this <q>proportionality criterion</q></em></strong>, both the current investment and Investment X are equally <q>attractive.</q> (But again, 7% risk may just be too high for management, or they may insist on expected return going up <q>faster</q> than risk: ultimately, it’s a judgement call, upon which psychology may have a significant, even decisive, impact.)
+<br><br></p>
+
+<p><strong>5)</strong> Two choices, coded R and S, exist for an investment; they have the following probability distributions for predicted RoR: </p>
+
+<table>
+  <tr>
+    <th></th>
+    <th colspan=2 class=cen>R</th>
+    <th colspan=2 class=cen>S</th>
+  </tr>
+  <tr>
+    <th>Judgement</th>
+    <th>RoR (%)</th>
+    <th>Prob.</th>
+    <th>RoR (%)</th>
+    <th>Prob.</th>
+  </tr>
+  <tr>
+    <td>Pessimistic</th>
+    <td class=num>20</th>
+    <td class=num>0.25</th>
+    <td class=num>15</th>
+    <td class=num>0.20</th>
+  </tr>
+  <tr>
+    <td>Most Likely</th>
+    <td class=num>25</th>
+    <td class=num>0.50</th>
+    <td class=num>25</th>
+    <td class=num>0.55</th>
+  </tr>  
+  <tr>
+    <td>Optimistic</th>
+    <td class=num>30</th>
+    <td class=num>0.25</th>
+    <td class=num>35</th>
+    <td class=num>0.25</th>
+  </tr>
+</table>
+
+<p><strong>a)</strong> What is each investment’s RoR range?</p>
+
+<p><strong>Soln</strong>: The RoR range is simply the optimistic RoR minus the pessimistic RoR, so for investment R this is \(30\% - 20\% = \bf{10\%}\), while for investment S it is \(35\% - 15\% = \bf{20\%}\). </p>
+
+<p><strong>b)</strong> What is each investments expected RoR?</p>
+
+<p><strong>Soln</strong>: The expected value of a(ny random) variable is the sum of the products of each (numerical) outcome times its probability (as long as the probabilities sum to one, i.e., all the outcomes <q>span</q> the <q>sample space</q>). Thus R’s expected RoR \(= 0.25(20\%) + 0.5(25\%) + 0.25(30\%) = 5\% + 12.5\% + 7.5\% = \bf{25\%}\), while S’s expected RoR \(= 0.2(15\%) + 0.55(25\%) + 0.25(35\%) = 3\% + 13.75\% + 8.75\% = \bf{25.5\%}\)</p>
+
+<p><strong>c)</strong> Which investment is riskier? Why?</p>
+
+<p><strong>Soln</strong>: <strong>Investment S</strong> would be considered riskier because it has the <strong>greater RoR range</strong>, implying that there is <strong>greater uncertainty</strong> regarding the RoR on the investment.
+<br><br></p>
+
+<p><strong>7)</strong> Given the following data on expected rate of return (\(ERoR\)) and standard deviation of rate of return (\(SDRoR\)) on four alternative investments:</p>
+
+<table>
+  <tr>
+    <th>Alternative</th>
+    <th>ERoR (%)</th>
+    <th>SDRoR (%)</th>
+  </tr>
+  <tr>
+    <td class=cen>A</td>
+    <td class=cen>20</td>
+    <td class=cen>7.0</td>
+  </tr>
+  <tr>
+    <td class=cen>B</td>
+    <td class=cen>22</td>
+    <td class=cen>9.5</td>
+  </tr>
+  <tr>
+    <td class=cen>C</td>
+    <td class=cen>19</td>
+    <td class=cen>6.0</td>
+  </tr>
+  <tr>
+    <td class=cen>D</td>
+    <td class=cen>16</td>
+    <td class=cen>5.5</td>
+  </tr>
+</table>
+
+<p><strong>a)</strong> Calculate the coefficient of variation (\(CoV\)) for each alternative.</p>
+
+<p><strong>Sln</strong>: In our symbols, \(CoV = \displaystyle \frac{SDRoR}{ERoR}\) so (to three decimal places):</p>
+
+<p>\(CoV_A = \displaystyle \frac{7.0}{20} = \bf{0.350}\)</p>
+
+<p>\(CoV_B = \displaystyle \frac{9.5}{22} = \bf{0.432}\)</p>
+
+<p>\(CoV_C = \displaystyle \frac{6.0}{19} = \bf{0.316}\)</p>
+
+<p>\(CoV_D = \displaystyle \frac{5.5}{16} = \bf{0.344}\)</p>
+
+<p><strong>b)</strong> Which alternative would you recommend and why?</p>
+
+<p><strong>Soln</strong>: <strong>Alternative C</strong>, because it minimizes risk, (i.e., \(SDRoR\), i.e., variability, i.e., uncertainty), <strong><em>relative to the size of the expected return</em></strong> (which is what the \(CoV\) measures).
+<br><br></p>
+
+<p><strong>9)</strong> Given the following \(RoR\) probability distributions:</p>
+
+<table>
+  <tr>
+    <th colspan=2 class=cen>Asset F</th><th></th><th colspan=2 class=cen>Asset G</th><th></th><th colspan=2 class=cen>Asset H</th>
+  </tr>
+  <tr>
+    <th>Prob.</th><th>RoR (%)</th><th></th><th>Prob.</th><th>RoR (%)</th><th></th><th>Prob.</th><th>RoR (%)</th>
+  </tr>
+  <tr>
+    <td class=cen>0.10</td><td class=cen>40</td><td></td>
+    <td class=cen>0.40</td><td class=cen>35</td><td></td>
+    <td class=cen>0.10</td><td class=cen>40</td>
+  </tr>
+  <tr>
+    <td class=cen>0.20</td><td class=cen>10</td><td></td>
+    <td class=cen>0.30</td><td class=cen>10</td><td></td>
+    <td class=cen>0.20</td><td class=cen>20</td>
+  </tr>
+  <tr>
+    <td class=cen>0.40</td><td class=cen>0</td><td></td>
+    <td class=cen>0.30</td><td class=cen>&minus;20</td><td></td>
+    <td class=cen>0.40</td><td class=cen>10</td>
+  </tr>
+  <tr>
+    <td class=cen>0.20</td><td class=cen>&minus;5</td><td></td>
+    <td colspan=2></td><td></td>
+    <td class=cen>0.20</td><td class=cen>0</td>
+  </tr>
+  <tr>
+    <td class=cen>0.10</td><td class=cen>&minus;10</td><td></td>
+    <td colspan=2></td><td></td>
+    <td class=cen>0.10</td><td class=cen>&minus;20</td>
+  </tr>
+</table>
+
+<p>calculate, and highlight the largest result, for each of: <strong>a)</strong> \(ERoR\); <strong>b)</strong> \(SDRoR\); and <strong>c)</strong> \(CoV\).</p>
+
+<p><strong>Soln</strong>:</p>
+
+<p><strong>a)</strong> \(ERoR_F = 0.1(40) + 0.2(10) + 0.4(0) + 0.2(-5) + 0.1(-10) = 4 + 2 + 0 - 1 - 1 = \bf{4\%}\)</p>
+
+<p>\(ERoR_G = 0.4(35) + 0.3(10) + 0.3(-20) = 14 + 3 - 6 = \boxed{\bf{11\%}}\)</p>
+
+<p>\(ERoR_H = 0.1(40) + 0.2(20) + 0.4(10) + 0.2(0) + 0.1(-20) = 4 + 4 + 4 + 0 - 2 = \bf{10\%}\)</p>
+
+<p><strong>b)</strong></p>
+
+<p>\(\begin{eqnarray}
+SDRoR_F &amp; = &amp; \sqrt{0.1(40-4)^2 + 0.2(10-4)^2 + 0.4(0-4)^2 +0.2(-5-4)^2 + 0.1(-10-4)^2} \\ 
+&amp; = &amp; \sqrt{0.1(1296) + 0.2(36) + 0.4(16) +0.2(81) + 0.1(196)} \\
+&amp; = &amp; \sqrt{129.6 + 7.2 + 6.4 + 16.2 + 19.6} = \sqrt{179} \doteq \bf{13.38\%}
+\end{eqnarray}\)</p>
+
+<p>\(\begin{eqnarray}
+SDRoR_G &amp; = &amp; \sqrt{0.4(35-11)^2 + 0.3(10-11)^2 + 0.3(-20-11)^2} \\
+&amp; = &amp; \sqrt{0.4(576) + 0.3(1) + 0.3(961)} = \sqrt{230.4 + 0.3 + 288.3} \\
+&amp; = &amp; \sqrt{519} \doteq \boxed{\bf{22.78\%}}
+\end{eqnarray}\)</p>
+
+<p>\(\begin{eqnarray}
+SDRoR_H &amp; = &amp; \sqrt{0.1(40-10)^2 + 0.2(20-10)^2 + 0.4(10-10)^2 +0.2(0-10)^2 + 0.1(-20-10)^2} \\ 
+&amp; = &amp; \sqrt{0.1(900) + 0.2(100) + 0.4(0) +0.2(100) + 0.1(900)} \\
+&amp; = &amp; \sqrt{90 + 20 + 0 + 20 + 90} = \sqrt{220} \doteq \bf{14.83\%}
+\end{eqnarray}\)</p>
+
+<p><strong>c)</strong> \(CoV_F = \displaystyle \frac{13.38}{4} = \boxed{\bf{3.345}}\)</p>
+
+<p>\(CoV_G = \displaystyle \frac{22.78}{11} = \bf{2.071}\)</p>
+
+<p>\(CoV_H = \displaystyle \frac{14.83}{10} = \bf{1.483}\)</p>
+
+<p>Thus, even though Asset G is the <q>riskiest</q> on an absolute basis, <strong><em>relative to the size of expected return</em></strong>, <strong>Asset F is the riskiest</strong>.
+<br><br></p>
+
+<p><strong>11)</strong> Given the expected (annual) RoR (%) data on three Assets (coded <q>F,</q> <q>G,</q> &amp; <q>H</q>), and the portfolio alternatives: 1) 100% F; 2) 50% F, 50% G; 3) 50% F, 50% H, calculate each portfolio’s: <strong>a)</strong> expected (annual) return; <strong>b)</strong> annual return standard deviation; and <strong>c)</strong> annual return coefficient of variation; over the four year period. </p>
+
+<table>
+  <tr>
+    <th class=cen>Year</th><th class=cen>Asset F</th><th class=cen>Asset G</th><th class=cen>Asset H</th><th class=cen>Portfolio 1<br>(100% Asset F)</th><th class=cen>Portfolio 2<br>(50% F, 50% G)</th><th class=cen>Asset H<br>(50% F, 50% H)</th> 
+  </tr> 
+  <tr>
+    <td class=cen>2004</td><td class=cen>16</td><td class=cen>17</td><td class=cen>14</td><td class=cen>16</td><td class=cen>0.5(16) + 0.5(17) = 16.5</td><td class=cen>0.5(16) + 0.5(14) = 15</td> 
+  </tr> 
+  <tr>
+    <td class=cen>2005</td><td class=cen>17</td><td class=cen>16</td><td class=cen>15</td><td class=cen>17</td><td class=cen>16.5</td><td class=cen>16</td> 
+  </tr> 
+  <tr>
+    <td class=cen>2006</td><td class=cen>18</td><td class=cen>15</td><td class=cen>16</td><td class=cen>18</td><td class=cen>16.5</td><td class=cen>17</td> 
+  </tr> 
+  <tr>
+    <td class=cen>2007</td><td class=cen>19</td><td class=cen>14</td><td class=cen>17</td><td class=cen>19</td><td class=cen>16.5</td><td class=cen>18</td> 
+  </tr> 
+  <tr>
+    <td class=cen><b>a)</b> Ann. Avg.</td><td class=cen>17.5</td><td class=cen>15.5</td><td class=cen>15.5</td><td class="cen sum">17.5</td><td class="cen sum">16.5</td><td class="cen sum">16.5</td> 
+  </tr> 
+  <tr>
+    <td class=cen><b>b) </b>Std. Dev.</td><td class=cen>1.29</td><td class=cen>1.29</td><td class=cen>1.29</td><td class="cen sum">1.29</td><td class="cen sum">0</td><td class="cen sum">1.29</td> 
+  </tr> 
+  <tr>
+    <td class=cen><b>c) </b>CoV</td><td class=cen>1.29/17.5<br>= 0.074</td><td class=cen>1.29/15.5<br>= 0.083</td><td class=cen>0.083</td><td class="cen sum">0.074</td><td class="cen sum">0</td><td class="cen sum">1.29/16.5<br>= 0.078</td> 
+  </tr> 
+</table>
+
+<p><strong>a)</strong> 
+<strong>Soln</strong>: Since Portfolio 1) consists exclusively (100%) of Asset F, its annualized average return (AAR) over the four year period is simply Asset F’s AAR over the same period, i.e., <strong>17.5%</strong>; the AAR of Portfolio 2) is half the AAR of Asset F plus half the AAR of Asset G = 8.75% + 7.75% = <strong>16.5%</strong>; and the AAR of Portfolio 3) is the same, since the AAR of Asset H is the same as that of Asset G.</p>
+
+<p><strong>b)</strong> <strong>Soln</strong>: </p>
+
+<p>Portfolio 1): \(\displaystyle \sigma_1 = \sqrt{\frac{(17.5-16)^2 + (17.5-17)^2 + (17.5-18)^2 + (17.5-19)^2}{4-1}} = \sqrt{\frac{2(1.5^2 +0.5^2)}{3}} = \sqrt{\frac53} \doteq \bf{1.29}\)</p>
+
+<p>Portfolio 3): \(\displaystyle \sigma_3 = \sqrt{\frac{(16.5-15)^2 + (16.5-16)^2 + (16.5-17)^2 + (16.5-18)^2}{4-1}} = \sqrt{\frac{2(1.5^2 +0.5^2)}{3}} = \sqrt{\frac53} \doteq \bf{1.29}\)</p>
+
+<p><strong>c)</strong> <strong>Soln</strong>: </p>
+
+<p>P1: \(CV_1 = \frac{1.29}{17.5} \doteq \bf{0.074}\); P3: \(CV_3 = \frac{1.29}{16.5} \doteq \bf{0.078}\)</p>
+
+<p><strong>d)</strong> Based on these results, which portfolio would you recommend and why?</p>
+
+<p><strong>Soln</strong>: Because Portfolio 2 has zero estimated risk, and an estimated average annual return of only 1% less than Portfolio 1, (compared to an average estimated annual return <q>level</q> of 17\(\pm\)0.5%), I&#39;d recommend <strong>Portfolio 2</strong>, especially to a very risk-averse client. (If I know the client to be rather less risk-averse, I’d make sure they were aware that Portfolio 1, though more risky, has a 1% higher expected annual return; I definitely <strong><em>would not</em></strong> recommend Portfolio 3, as it is, albeit just marginally, riskier than Portfolio 1, but with a projected return of only that of the the zero-risk Portfolio 2.)
+<br><br></p>
+
+<p><strong>13)</strong> Given the following Portfolio Risk (%) vs. Number of Securities (#) data:</p>
+
+<table>
+  <tr>
+    <th class=cen>#</th>
+    <td class=cen>1</td>
+    <td class=cen>2</td>
+    <td class=cen>3</td>
+    <td class=cen>4</td>
+    <td class=cen>5</td>
+    <td class=cen>6</td>
+    <td class=cen>7</td>
+    <td class=cen>8</td>
+    <td class=cen>9</td>
+    <td class=cen>10</td>
+  </tr>
+  <tr>
+    <th class=cen>%</th>
+    <td class=cen id="G5P13r1">14.5</td>
+    <td class=cen id="G5P13r2">13.3</td>
+    <td class=cen id="G5P13r3">12.2</td>
+    <td class=cen id="G5P13r4">11.2</td>
+    <td class=cen id="G5P13r5">10.3</td>
+    <td class=cen id="G5P13r6">9.5</td>
+    <td class=cen id="G5P13r7">8.8</td>
+    <td class=cen id="G5P13r8">8.2</td>
+    <td class=cen id="G5P13r9">7.7</td>
+    <td class=cen id="G5P13r10">7.3</td>
+  </tr>
+  <tr><td colspan=11></td></tr>
+  <tr>
+    <th class=cen>#</th>
+    <td class=cen>11</td>
+    <td class=cen>12</td>
+    <td class=cen>13</td>
+    <td class=cen>14</td>
+    <td class=cen>15</td>
+    <td class=cen>16</td>
+    <td class=cen>17</td>
+    <td class=cen>18</td>
+    <td class=cen>19</td>
+    <td class=cen>20</td>
+  </tr>
+  <tr>
+    <th class=cen>%</th>
+    <td class=cen id="G5P13r11">7.0</td>
+    <td class=cen id="G5P13r12">6.8</td>
+    <td class=cen id="G5P13r13">6.7</td>
+    <td class=cen id="G5P13r14">6.65</td>
+    <td class=cen id="G5P13r15">6.6</td>
+    <td class=cen id="G5P13r16">6.56</td>
+    <td class=cen id="G5P13r17">6.52</td>
+    <td class=cen id="G5P13r18">6.5</td>
+    <td class=cen id="G5P13r19">6.48</td>
+    <td class=cen id="G5P13r20">6.47</td>
+  </tr>
+</table>
+
+<p><strong>a)</strong> Plot the risk (vertical axis) vs. the number of assets (horizontal axis), and </p>
+
+<p><strong>b)</strong> on the graph, distinguish and label the diversifiable and the nondiversifiable risk.</p>
+
+<p><strong>Soln</strong>: </p>
+
+<p><sp id="G5P13chart" alt="Line Chart of Total and Nondiversifiable Risk v. Number of Assets using given data"></sp></p>
+
+<p><strong>c)</strong> Which is the relevant risk, why is it relevant, and how much of it exists in this portfolio?</p>
+
+<p><strong>Soln</strong>: Nondiversifiable risk is the only relevant risk, because it can’t be eliminated through diversification; the amount of nondiversifiable risk is that portion of the total risk which is left after diversification has eliminated diversifiable risk, i.e., that which remains after further diversification results in negligible risk reduction; in this situation, that is indicated by the risk going down by only 0.01% with the addition of the twentieth security, so the nondiversifiable risk is approximately \(\bf{6.47\%}\).
+<br><br></p>
+
+<p><strong>15)</strong> A firm wishes to assess the impact of changes in the market return on an asset that has a beta of 1.20.</p>
+
+<p><strong>a)</strong> What is the expected effect on the asset of a market return change of +15%?</p>
+
+<p><strong>Soln</strong>: 1.2(+15%) = <strong>+18%</strong>, i.e., an 18% increase.</p>
+
+<p><strong>b)</strong> Same question, but the market return change is &minus;8%?</p>
+
+<p><strong>Soln</strong>: 1.2(&minus;8%) = <strong>&minus;9.6%</strong>, i.e., a 9.6% decrease.</p>
+
+<p><strong>c)</strong> Same question, but the market return change is 0%?</p>
+
+<p><strong>Soln</strong>: 1.2(0%) = <strong>0%</strong>, i.e., no change.</p>
+
+<p><strong>d)</strong> Would this asset be considered more risky or less risky than the market? Explain.</p>
+
+<p><strong>Soln</strong>: This asset would be considered <strong>more risky</strong> than the market, because the beta value greater than one means that its RoR changes more than that of the market.
+<br><br></p>
+
+<p><strong>17)</strong> Stock A has a beta of 0.80, B 1.40, C &minus;0.30.</p>
+
+<p><strong>a)</strong> Rank these stocks from most risky to least risky.</p>
+
+<p><strong>Soln</strong>: Stock B, Stock A, Stock C.</p>
+
+<p><strong>b)</strong> Give the expected change in return for each asset, given a +12% change in return on the market portfolio.</p>
+
+<p><strong>Soln</strong>: Stock A: 0.8(+12%) = <strong>+9.6%</strong>; Stock B: 1.4(+12%) = <strong>+16.8%</strong>; Stock C: &minus;0.3(+12%) = <strong>&minus;3.6%</strong>. </p>
+
+<p><strong>c)</strong> Same question, but the change in return on the market portfolio is &minus;5%.</p>
+
+<p><strong>Soln</strong>: Stock A: 0.8(&minus;5%) = <strong>&minus;4%</strong>; Stock B: 1.4(&minus;5%) = <strong>&minus;7%</strong>; Stock C: &minus;0.3(&minus;5%) = <strong>+1.5%</strong>. </p>
+
+<p><strong>d)</strong> Which stock should one choose if one suspects that the market return is about to decline, and why?</p>
+
+<p><strong>Soln</strong>: <strong>Stock C</strong>, because its return movement is counter to that of the market return.</p>
+
+<p><strong>e)</strong> Opposite of <strong>d)</strong></p>
+
+<p><strong>Soln</strong>: <strong>Stock B</strong>, because its return movement is with that of the market <strong><em>and</em></strong> its return is relatively greater than that of the market.
+<br><br></p>
+
+<p><strong>19)</strong> Use the Capital Asset Pricing Model to complete the table below:</p>
+
+<table>
+  <tr>
+    <th>Case</th>
+    <th class=cen>Risk-free<br>rate, <i>R<sub>F</sub></i> (%)</th>
+    <th class=cen>Market return,<br><i>k<sub>m</sub></i> (%)</th>
+    <th class=cen>Beta, <i>b</i></th>
+    <th class=cen>Required return,<br><i>k</i> (%)</th>
+  </tr>
+  <tr>
+    <td class=cen>A</td>
+    <td class=cen>5</td>
+    <td class=cen>8</td>
+    <td class=cen>1.3</td>
+    <td class=cen>5 + 1.3(8-5) = <b>8.9</b></td>
+  </tr>
+  <tr>
+    <td class=cen>B</td>
+    <td class=cen>8</td>
+    <td class=cen>13</td>
+    <td class=cen>0.9</td>
+    <td class=cen>8 + 0.9(13-8) = <b>12.5</b></td>
+  </tr>
+  <tr>
+    <td class=cen>C</td>
+    <td class=cen>9</td>
+    <td class=cen>12</td>
+    <td class=cen>&minus;0.2</td>
+    <td class=cen>9 &minus; 0.2(12-9) = <b>8.4</b></td>
+  </tr>
+  <tr>
+    <td class=cen>D</td>
+    <td class=cen>10</td>
+    <td class=cen>15</td>
+    <td class=cen>1.0</td>
+    <td class=cen>10 + 1.0(15-10) = <b>15</b></td>
+  </tr>
+  <tr>
+    <td class=cen>E</td>
+    <td class=cen>6</td>
+    <td class=cen>10</td>
+    <td class=cen>0.6</td>
+    <td class=cen>6 + 0.6(10-6) = <b>8.4</b></td>
+  </tr>
+</table>
+
+<p><br><br></p>
+
+<p><strong>21)</strong> Use the CAPM to find the following:</p>
+
+<p><strong>b)</strong> \(R_F\), given \(k = 0.15\), \(k_m = 0.14\), \(b = 1.25\)</p>
+
+<p><strong>Soln</strong>: We have \(0.15 = R_F + 1.25(0.14 - R_F) = (1-1.25)R_F + 1.25(0.14) \implies R_F = \displaystyle \frac{0.15 - 0.175}{-0.25} = \bf{0.10}\).  </p>
+
+<p><strong>c)</strong> \(k_m\), given \(k = 0.16\), \(R_F = 0.09\), \(b = 1.1\)</p>
+
+<p><strong>Soln</strong>: Here we have: \(0.16 = 0.09 + 1.1(k_m - 0.09) \implies k_m = \displaystyle \frac{0.16-0.09}{1.1} + 0.09 \doteq \bf{0.154}\)</p>
+
+<p><strong>d)</strong> \(b\), given \(k = 0.15\), \(R_F = 0.10\), \(k_m = 0.125\)</p>
+
+<p><strong>Soln</strong>: Here: \(0.15 = 0.1 + b(0.125-0.1) \implies b = \displaystyle \frac{0.05}{0.025} = \bf{2.0}\)
+<br><br></p>
+
+<p><strong>23a)</strong> Complete the following table:</p>
+
+<table>
+  <tr>
+    <th class=cen>Item</th><th class=cen><i>RoR (%)<i></th><th class=cen>Beta, <i>b<i></th>
+  </tr>
+  <tr>
+    <td>Risk-free asset</td><td class=cen>9</td><td class=cen>0</td>
+  </tr>
+  <tr>
+    <td>Market portfolio</td><td class=cen id="G5P23k1">14</td><td class=cen id="G5P23b1">1</td>
+  </tr>
+  <tr>
+    <td>Project A</td><td class=cen>9 + [1.5(14 - 9)] = <b id="G5P23k2">16.5</b></td><td class=cen id="G5P23b2">1.5</td>
+  </tr>
+  <tr>
+    <td>Project B</td><td class=cen>9 + [0.75(14 - 9)] = <b id="G5P23k3">12.75</b></td><td class=cen id="G5P23b3">0.75</td>
+  </tr>
+  <tr>
+    <td>Project C</td><td class=cen>9 + [2.0(14 - 9)] = <b id="G5P23k4">19</b></td><td class=cen id="G5P23b4">2.0</td>
+  </tr>
+  <tr>
+    <td>Project D</td><td class=cen>9 + [0(14 - 9)] = <b id="G5P23k5">9</b></td><td class=cen id="G5P23b5">0</td>
+  </tr>
+  <tr>
+    <td>Project E</td><td class=cen>9 + [&minus;0.5(14 - 9)] = <b id="G5P23k6">6.5</b></td><td class=cen id="G5P23b6">-0.5</td>
+  </tr>
+</table>
+
+<p><strong>b)</strong> Plot the results-implied Security Market Line</p>
+
+<p><strong>Soln</strong>:</p>
+
+<p><sp id="G5P23chart" alt="Problem 23 Security Market Line"></sp></p>
+
+<p><strong>c)</strong> Discuss the relative nondiversifiable risk of Projects A through E.</p>
+
+<p><strong>Soln</strong>: As discussed in the text, beta is a relative measure of nondiversifiable risk, with \(b=0\) corresponding to a risk free asset; \(0 \lt b \lt 1\) indicating an asset or portfolio relatively less risky than the market portfolio; \(b=1\) corresponding to the risk of the market portfolio; and \(b \gt 1\) indicating an asset or portfolio relatively more risky than the market portfolio; (\(b \lt 0\) indicates that the asset or portfolio return tends to move counter to the market portfolio, i.e., if the return of the latter goes down, then the return on the asset/portfolio with negative beta tends to go up, and vice versa).  Thus: Project A is estimated to be 50% (1.5 &minus; 1) more risky than the market; Project B is estimated to be 25% <i>less</i> risky than the market; Project C is estimated to be twice as risky as the market; Project D is estimated to be just as risky as the market; and Project E is estimated to be not only half as risky as the market, but also move opposite the market (i.e., it provides a <q>hedge</q> against the market going down.)
+<br></p>
+
+<h3>Credits</h3>
+
+<p>Graphs made using <a href="https://google-developers.appspot.com/chart/">Google Charts’</a> Javascript API.</p>
+
+<h3>Please Donate:</h3>
+
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image">
+      </form>
+    </td>
+  </tr>
+</table>
+
+<p></body>          </p>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>

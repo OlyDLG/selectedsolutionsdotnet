@@ -1,3 +1,24 @@
+function G5P1() {
+  var XCMV = Number(removeCommas(dgEBIiH("G5P1XCMV")));
+  var XPMV = Number(removeCommas(dgEBIiH("G5P1XPMV")));
+  var XCF = Number(dgEBIiH("G5P1XCF"));
+  var YCMV = Number(removeCommas(dgEBIiH("G5P1YCMV")));
+  var YPMV = Number(removeCommas(dgEBIiH("G5P1YPMV")));
+  var YCF = Number(dgEBIiH("G5P1YCF"));
+
+  dsEBIiH("G5P1XCFsol", XCF.toFixed(0));
+  dsEBIiH("G5P1XCMVsol", XCMV.toFixed(0));
+  dsEBIiH("G5P1XPMVsol", XPMV.toFixed(0));
+  dsEBIiH("G5P1XPMVsol2", XPMV.toFixed(0));
+  dsEBIiH("G5P1XRoR", (100*RateOfRet(XCF, XPMV, XCMV)).toFixed(2));
+
+  dsEBIiH("G5P1YCFsol", YCF.toFixed(0));
+  dsEBIiH("G5P1YCMVsol", YCMV.toFixed(0));
+  dsEBIiH("G5P1YPMVsol", YPMV.toFixed(0));
+  dsEBIiH("G5P1YPMVsol2", YPMV.toFixed(0));
+  dsEBIiH("G5P1YRoR", (100*RateOfRet(YCF, YPMV, YCMV)).toFixed(2));
+}
+
 function G5P13() { // G5P13 chart
   var data = [['Number of Stocks', 'Total Risk', 'Diversifiable Risk', 'Nondiversifiable Risk']];
         for (i=1; i < 21; i++) {
