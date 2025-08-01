@@ -132,7 +132,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p>Calculators for the ratios discussed in this chapter, implemented as HTML5 Forms, and utilizing my JavaScript functions implementing those ratios:</p>
 
-<h2><u>Liquidity Ratios</u><br></h2>
+<h3><u>Liquidity Ratios</u><br></h3>
 
 <form class="pad" alt="Current Ratio Calculator" name="CurrentRatio" 
 oninput="CR.value = (Current(assets.value, liabs.value)).toFixed(3)">
@@ -150,7 +150,7 @@ Inventory: <input type="number" id="inv" name="inv">
 QR: <output name="QR" for="ass inv lbs" ></output>
 </form>
 
-<h2><u>Activity Ratios</u><br></h2>
+<h3><u>Activity Ratios</u><br></h3>
 
 <form class="pad" alt="Inventory Turnover Calculator" name="InventoryTurnoverRatio" 
 oninput="IT.value = (InventoryTurnover(cost.value, inv.value)).toFixed(3)">
@@ -183,7 +183,7 @@ Assets: <input type="number" id="assets" name="assets">
 AT: <output name="AT" for="sales assets" ></output>
 </form>
 
-<h2><u>Debt Ratios</u><br></h2>
+<h3><u>Debt Ratios</u><br></h3>
 
 <form class="pad" alt="Debt Ratio Calculator" name="DebtRat" 
 oninput="DR.value = (Debt(liabs.value, assets.value)).toFixed(3)">
@@ -213,7 +213,7 @@ Tax Rate: <input type="number" id="tr" name="tr">
 FPC: <output name="FPC" for="earn ls int prin div tr" ></output>
 </form>
 
-<h2><u>Profitability Ratios</u><br></h2>
+<h3><u>Profitability Ratios</u><br></h3>
 
 <form class="pad" alt="Gross Margin Calculator" name="GrossMarg" 
 oninput="GM.value = (GrossMargin(sales.value, cog.value)).toFixed(3)">
@@ -263,7 +263,7 @@ Common Stock Equity: <input type="number" id="eq" name="eq">
 ROE: <output name="roe" for="ne eq" ></output>
 </form>
 
-<h2><u>Market Ratios</u><br></h2>
+<h3><u>Market Ratios</u><br></h3>
 
 <form class="pad" alt="Price to Earnings Calculator" name="PtoE" 
 oninput="p2e.value = (P2E(p.value, eps.value)).toFixed(3)">
@@ -282,9 +282,7 @@ Common Stock Shares Outstanding: <input type="number" id="cso" name="cso">
 MB: <output name="m2b" for="p cse cso" ></output>
 </form>
 
-<p><br></p>
-
-<h2><u>Problem Solutions</u></h2>
+<h3><u>Problem Solutions</u></h3>
 
 <p><strong>3)</strong> Prepare an income statement for Cathy Chen, CPA</p>
 

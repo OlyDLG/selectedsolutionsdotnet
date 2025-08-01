@@ -45,14 +45,13 @@ Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and 
             <ul>[Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
       </ul>
-<!---
+
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
-            <ul><b>BROKEN Links</b> [Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
-            <ul><b>BROKEN Links</b> [Chapter 2: Financial Statements and Analysis](./Gitman/C2/C2.html)</ul>
-            <ul><b>BROKEN Links</b> [Chapter 3: Cash Flow and Financial Planning](./Gitman/C3/C3.html)</ul>
-            <ul><b>BROKEN Links</b> [Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
-            <ul><b>BROKEN Links</b> [Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
---->
+            <ul>[Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
+            <ul>[Chapter 2: Financial Statements and Analysis](./Gitman/C2/C2.html)</ul>
+            <ul>[Chapter 3: Cash Flow and Financial Planning](./Gitman/C3/C3.html)</ul>
+            <ul>[Chapter 4: Time Value of Money](./Gitman/C4/C4.html)</ul>
+            <ul>[Chapter 5: Risk and Return](./Gitman/C5/C5.html)</ul>
 
 Lang, S.,
   <ul><b>\*</b> 2004, <i>Linear Algebra, 3rd Edition, Corrected Printing</i>, Springer, New York.
