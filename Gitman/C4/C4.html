@@ -1,0 +1,1069 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C4</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<script src="../../Utilities.js"></script>
+
+<script src="../GMisc.js"></script>
+
+<script src="../GPVFV.js"></script>
+
+<script src="./Scripts.js"></script>
+
+<style>
+  body {font-family: Palatino;}
+  form.pad {padding: 0px 0px 13px;}
+  .text {text-align: left;}
+  .cen {text-align: center;}
+  .num {text-align: right;}
+  .text {text-align: left;}
+  .sum {font-weight: bold;}
+</style>
+
+<p><body onload="G4P2(); G4P3(); G4P5(); G4P9(); G4P14(); G4P17(); G4P18(); G4P21(); G4P22(); G4P28(); G4P33(); G4P38(); G4P53();"></p>
+
+<h2><center>Selected Problem Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Gitman, L. J., 2003. <i>Principles of Managerial Finance (Brief) 3rd Edition.</i> Addison-Wesley, Boston.</h3>
+
+<h3><center>Chapter 4: Time Value of Money</h3>
+
+<h3><center>&copy; 2018, 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+
+<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<h3><u>Problem Solutions</u></h3>
+
+<p><strong>2)</strong> Using the formula given in the text (which we have implemented in file GPVFV.js using JavaScript), calculate the Future Value Interest Factor for each of the following pairs of interest rate and number of periods, and compare with the values given in text Table A-1.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<table>
+  <tr>
+    <th colspan=4 class=cen>Future Value Interest Factors for<br>Four Pairs of Interest Rate and Number of Periods
+    </th>
+  </tr>
+  <tr>
+    <th class=cen>Interest Rate (%)</th>
+    <th class=cen>Number of Periods</th>
+    <th class=cen>Formula</th>
+    <th class=cen>Text Table A-1</th>
+  </tr>
+  <tr>
+    <td class=cen id="P2r1">12</td>
+    <td class=cen id="P2n1">2</td>
+    <td class=cen id="P2f1"></td>
+    <td class=cen id="P2T1">1.254</td>
+  </tr>
+  <tr>
+    <td class=cen id="P2r2">6</td>
+    <td class=cen id="P2n2">3</td>
+    <td class=cen id="P2f2"></td>
+    <td class=cen id="P2T2">1.191</td>
+  </tr>
+  <tr>
+    <td class=cen id="P2r3">9</td>
+    <td class=cen id="P2n3">2</td>
+    <td class=cen id="P2f3"></td>
+    <td class=cen id="P2T3">1.188</td>
+  </tr>
+  <tr>
+    <td class=cen id="P2r4">3</td>
+    <td class=cen id="P2n4">4</td>
+    <td class=cen id="P2f4"></td>
+    <td class=cen id="P2T4">1.126</td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>3)</strong> Using text Table A-1, estimate the number of years for an initial investment to <strong>a</strong>) double and <strong>b</strong>) quadruple (increase by a factor of four) for the (annual) interest rates given in the Solution Table below.</p>
+
+<p><strong>Solution</strong>: </p>
+
+<p>We have implemented in JavaScript the formula to calculate \(n\), so we will use that to provide the answers; the reader can confirm these using Table A-1 as instructed.
+<br></p>
+
+<table>
+  <tr>
+    <th colspan=3 class=cen>
+    Doubling and Quadrupling Times (in years)<br>For Four Different Annual Interest Rates  
+    </th>
+  </tr>
+  <tr>
+    <th class=cen>Interest rate (%)</th>
+    <th class=cen>Doubling time</th>
+    <th class=cen>Quadrupling time</th>
+  </tr>
+  <tr>
+    <td class=cen id="P3r1">7</td>
+    <td class=cen id="P3D1"></td>
+    <td class=cen id="P3Q1"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P3r2">40</td>
+    <td class=cen id="P3D2"></td>
+    <td class=cen id="P3Q2"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P3r3">20</td>
+    <td class=cen id="P3D3"></td>
+    <td class=cen id="P3Q3"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P3r4">10</td>
+    <td class=cen id="P3D4"></td>
+    <td class=cen id="P3Q4"></td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>5</strong>) Compare the amounts of interest earned on $1500 after 3, 6, and 9 years at <sp id="P5r">7</sp>% APR, compounded annually. </p>
+
+<p><strong>Solution</strong>:
+<br>
+<strong>a</strong> &amp; <strong>b</strong>)
+<table>
+  <tr>
+    <th class=cen>Year</th>
+    <th class=cen>Balance (including<br>accumulated interest)</th>
+    <th class=cen>Difference</th>
+  </tr>
+  <tr>
+    <td class=cen id="P5Y0">0</td>
+    <td class=cen id="P5B0">1500</td>
+    <td class=cen id="P5D0">0</td>
+  </tr>
+  <tr>
+    <td class=cen id="P5Y3">3</td>
+    <td class=cen id="P5B3"></td>
+    <td class=cen id="P5D3"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P5Y6">6</td>
+    <td class=cen id="P5B6"></td>
+    <td class=cen id="P5D6"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P5Y9">9</td>
+    <td class=cen id="P5B9"></td>
+    <td class=cen id="P5D9"></td>
+  </tr>
+</table></p>
+
+<p><strong>c</strong>) What accounts for the increase in interest earned?  One word: compounding.
+<br><br></p>
+
+<p><strong>6</strong>) (Paraphrased) Find the future value of $14,000 after 5 five years at 2% APR and 4% APR, compounded annually, and the difference between the two. </p>
+
+<p><strong>Solution</strong>:</p>
+
+<p><strong>a</strong>) 2%: $14,000 * (1+0.02)<sup>5</sup> = $15,457.13<sup>&ast;<br></sup>
+\(~~~~\)4%: $14,000 * (1+0.04)<sup>5</sup> = $17,033.14</p>
+
+<p><strong>b</strong>) Difference: $17,033.14 - $15,457.13 = $1,576.01 </p>
+
+<p><sup>&ast;</sup> The answer in the back of the book, $15,456, comes from using the FVIF from Table A1&mdash;mine is more precise.
+<br><br></p>
+
+<p><strong>9</strong>) Using the formula given in the text (which gives just the reciprocal of the Future Value Interest Factor), calculate the Present Value Interest Factor for each of the following pairs of opportunity cost and number of periods, and compare with the values given in text Table A-2.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<table>
+  <tr>
+    <th colspan=4 class=cen>Present Value Interest Factors for<br>Four Pairs of Opportunity Cost and Number of Periods
+    </th>
+  </tr>
+  <tr>
+    <th class=cen>Opportunity Cost (%)</th>
+    <th class=cen>Number of Periods</th>
+    <th class=cen>Formula</th>
+    <th class=cen>Text Table A-2</th>
+  </tr>
+  <tr>
+    <td class=cen id="P9r1">2</td>
+    <td class=cen id="P9n1">4</td>
+    <td class=cen id="P9f1"></td>
+    <td class=cen id="P9T1">0.924</td>
+  </tr>
+  <tr>
+    <td class=cen id="P9r2">10</td>
+    <td class=cen id="P9n2">2</td>
+    <td class=cen id="P9f2"></td>
+    <td class=cen id="P9T2">0.826</td>
+  </tr>
+  <tr>
+    <td class=cen id="P9r3">5</td>
+    <td class=cen id="P9n3">3</td>
+    <td class=cen id="P9f3"></td>
+    <td class=cen id="P9T3">0.864</td>
+  </tr>
+  <tr>
+    <td class=cen id="P9r4">13</td>
+    <td class=cen id="P9n4">2</td>
+    <td class=cen id="P9f4"></td>
+    <td class=cen id="P9T4">0.783</td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>11d</strong>) Compare the following amounts:</p>
+
+<p><strong>a</strong>) An investment today that will be worth $6000 in six years at 12% APR (compounded annually);</p>
+
+<p><strong>b</strong>) The Present Value of $6000 in 6 years at a 12% discount rate;</p>
+
+<p><strong>c</strong>) The maximum payment today for a promise to receive $6000 in six years at a 12% opportunity cost.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>Note the text’s description of the problem: <q>Present value concept</q>; the referenced concept is that, despite the differences in jargon used, <strong><em>all three of these amounts are the same</em></strong>, namely, the Present Value of $6000 in six years at a discount rate of 12% = $6000 * 1/(1+0.12)<sup>6</sup> = $6000 * 0.507 = <strong>$3,042</strong> (using the PVIF from text Table A-2; using the formula gives the more precise result <strong>$3,039.79</strong>).
+<br><br></p>
+
+<p><strong>13</strong>) Assuming no cash payments prior to its maturity six years from now, at what current price should a $100 Iowa State bond be sold if it is to be competitive with a similar U.S. Savings Bond earning 8% APR, compounded annually?</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>In order to be competitive, it can’t be priced over the present value of the comparable $100 U.S. Savings Bond, which is the PV of $100 at a discount rate of 8% compounded annually for six years, i.e., it must be less than or equal to $100 * 1 / (1+0.08)<sup>6</sup> = $100 * 0.63017 = <strong>$63.02</strong>.
+<br><br></p>
+
+<p><strong>14c</strong>) (Paraphrased) Compare the present values of $1,000,000 at 6%, 9%, and 12% APR (compounded annually) after 10 and 15 years; comment on the relative impact of interest rate vs. number of periods.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>Note that, since the future value, $1,000,000, is fixed, all we really need to compare are the Present Value Interest Factors, which are given&mdash;calculated with JavaScript using the PVIF formula&mdash;in the following table:</p>
+
+<table>
+  <tr>
+    <th colspan=4 class=cen>Present Value Interest Factors and Differences&ast;<br>for Three Different Discount Rates and<br>Two Different Compounding Durations</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th colspan=2 class=cen>Duration (years)</th>
+    <th class=cen>PVIF Difference</th>
+  </tr>
+  <tr>
+    <th class=cen>Rate (%)</th>
+    <th class=cen id="P14n1">10</th>
+    <th class=cen id="P14n2">15</th>
+    <th class=cen>From 10 to 15 Years</th>
+  </tr>
+  <tr>
+    <th class=cen id="P14r1">6</th>
+    <td class=cen id="P14f11"></td>
+    <td class=cen id="P14f12"></td>
+    <td class=cen id="P14f12-11"></td>
+  </tr>
+  <tr>
+    <th class=cen id="P14r2">9</th>
+    <td class=cen id="P14f21"></td>
+    <td class=cen id="P14f22"></td>
+    <td class=cen id="P14f22-21"></td>
+  </tr>
+  <tr>
+    <th class=cen id="P14r3">12</th>
+    <td class=cen id="P14f31"></td>
+    <td class=cen id="P14f32"></td>
+    <td class=cen id="P14f32-31"></td>
+  </tr>
+  <tr>
+    <th class=cen>PVIF Dif</th>
+    <td colspan=2></td>
+    <td rowspan=3></td> 
+  </tr>
+  <tr>
+    <th class=cen>From 6% to 9%</th>
+    <td class=cen id="P14f21-11"></td>
+    <td class=cen id="P14f22-12"></td>
+  </tr>
+  <tr>
+    <th class=cen>From 9% to 12%</th>
+    <td class=cen id="P14f31-21"></td>
+    <td class=cen id="P14f32-22"></td>
+  </tr>
+</table>
+
+<p>&ast; Differences which are off by 0.001 are due to rounding.</p>
+
+<p><strong>Interpretation</strong>: It’s <q>dangerous</q> to interpret such an a) paucity, and b) disparity of data (i.e., we’re asked to compare the changes due to one change of five years vs. two changes of 3%, which is kind of like asking us to compare five apples to three oranges); so we’re going to <q>cheat</q>&mdash; below is a graph of the PVIF formula vs. number of periods (i.e., years) for the three different discount rates 6%, 9% and 12%:. </p>
+
+<p><center>Present Value Interest Factor vs. Number of Periods<br>for Discount Rates of 6, 9, and 12%</center>
+<img src=./P14.GIF></img>
+<center>Graph created on an iPhone with the WolframAlpha App</center></p>
+
+<p>A great deal of information can be gleaned from this graph; highlights:</p>
+
+<ul>
+<li>The 3% change in discount rate makes a bigger difference between 6% and 9% than it does between 9% and 12% (the distance between the 6% and 9% curves is greater than the distance between the 9% and 12% curves);</li>
+<li>Over this range of number of periods (the horizontal coordinate), the number of periods doesn’t significantly impact the <em>difference</em> between the different discount rates (the distances between the curves are very nearly constant);</li>
+<li>Both the PVIF itself, and <em>the rate at which it changes relative to the number of periods</em> decreases with increasing number of periods (e.g., the change in PVIF when going from year 10 to year 11 is greater than said change in going from year 15 to 16).
+<br><br></li>
+</ul>
+
+<p><strong>17</strong>) Calculate the future value of the following five annuities, assuming end-of-year payments.</p>
+
+<p><strong>Solution</strong>: Calculations done by the JavaScript function AnnFutVal in the file GPVFV.js:</p>
+
+<table>
+  <tr>
+    <th class=cen colspan=5>Future Value of Five Different Annuities</th>
+  </tr>
+  <tr>
+    <th>Annuity amount ($)</th>
+    <th>Interest rate (%)</th>
+    <th>Deposit Period (years)</th>
+    <th>Future Value ($)<br>(Exact formula)</th>
+    <th>Future Value ($)<br>(Using Table A-3)</th>
+  </tr>
+  <tr>
+    <td class=num id="P17d1">2500</td>
+    <td class=num id="P17r1">8</td>
+    <td class=num id="P17n1">10</td>
+    <td class=num id="P17f1"></td>
+    <td class=num>36,217.50</td>
+  </tr>
+  <tr>
+    <td class=num id="P17d2">500</td>
+    <td class=num id="P17r2">12</td>
+    <td class=num id="P17n2">6</td>
+    <td class=num id="P17f2"></td>
+    <td class=num>4,057.50</td>
+  </tr>
+  <tr>
+    <td class=num id="P17d3">30,000</td>
+    <td class=num id="P17r3">20</td>
+    <td class=num id="P17n3">5</td>
+    <td class=num id="P17f3"></td>
+    <td class=num>223,260.00</td>
+  </tr>
+  <tr>
+    <td class=num id="P17d4">11,500</td>
+    <td class=num id="P17r4">9</td>
+    <td class=num id="P17n4">8</td>
+    <td class=num id="P17f4"></td>
+    <td class=num>126,822.00</td>
+  </tr>
+  <tr>
+    <td class=num id="P17d5">6000</td>
+    <td class=num id="P17r5">14</td>
+    <td class=num id="P17n5">30</td>
+    <td class=num id="P17f5"></td>
+    <td class=num>2,140,668.00</td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>18</strong>) Same as 17, but present values instead of future values.</p>
+
+<p><strong>Solution</strong>: Calculations done by the JavaScript function AnnPresVal in the file GPVFV.js:</p>
+
+<table>
+  <tr>
+    <th class=cen colspan=5>Present Value of Five Different Annuities</th>
+  </tr>
+  <tr>
+    <th>Annuity amount ($)</th>
+    <th>Interest rate (%)</th>
+    <th>Deposit Period (years)</th>
+    <th>Present Value ($)<br>(Exact formula)</th>
+    <th>Present Value ($)<br>(Using Table A-4)</th>
+  </tr>
+  <tr>
+    <td class=num id="P18d1">12,000</td>
+    <td class=num id="P18r1">7</td>
+    <td class=num id="P18n1">3</td>
+    <td class=num id="P18p1"></td>
+    <td class=num>31,488.00</td>
+  </tr>
+  <tr>
+    <td class=num id="P18d2">55,000</td>
+    <td class=num id="P18r2">12</td>
+    <td class=num id="P18n2">15</td>
+    <td class=num id="P18p2"></td>
+    <td class=num>374,605.00</td>
+  </tr>
+  <tr>
+    <td class=num id="P18d3">700</td>
+    <td class=num id="P18r3">20</td>
+    <td class=num id="P18n3">9</td>
+    <td class=num id="P18p3"></td>
+    <td class=num>2,821.70</td>
+  </tr>
+  <tr>
+    <td class=num id="P18d4">140,000</td>
+    <td class=num id="P18r4">5</td>
+    <td class=num id="P18n4">7</td>
+    <td class=num id="P18p4"></td>
+    <td class=num>810,040.00</td>
+  </tr>
+  <tr>
+    <td class=num id="P18d5">22,500</td>
+    <td class=num id="P18r5">10</td>
+    <td class=num id="P18n5">5</td>
+    <td class=num id="P18p5"></td>
+    <td class=num>85,297.50</td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>21</strong>) At the end of 20 years from now, you wish to have enough in an 11% APR account to provide you with $20,000 per year for 30 years.</p>
+
+<p><strong>a</strong>) How much will you need in that account (at the end of 20 years from now) to make this possible?</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>We need the present value of a 30 year, $20,000/yr, 11% annuity; from text Table A-4, the appropriate interest factor is 8.694; multiplying this by $20,000 yields <strong>$173,880.00</strong>. (The exact formula gives $<sp id="P21a"></sp>, a difference of only $4.15. Note that this answer, which is consistent with the answer given in the back of the text for part b) of this problem, assumes that you don’t mind having nothing in the account at the end of the 30 years; if you wanted to be able to leave some money for an inheritance, you would thus need more in the account at the beginning of the 30 years; the reader might wish to calculate how much would need to be in the account so that the 11% interest alone would yield the $20,000/yr, so that at the end of the 30 years, the entire initial principal is still available for an inheritance; answer: $181,818.18, i.e., a little less than only an additional $8000; in part b) we will calculate how much more we would need to deposit now to have this amount at the end of 20 years from now.)</p>
+
+<p><strong>b</strong>) How much do you need to deposit now in a 9% APR account so that you will have the amount found in part a) in 20 years?</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p>We need the present value of $173,880 (or $173,875.85) at a discount rate of 9% for 20 years; from text Table A-2, the appropriate interest factor is 0.178, yielding a present value of <strong>$30,950.64</strong>, matching the answer in the back of the text. (Using the exact amount of $173,875.85 in the exact present value formula yields $<sp id="P21b"></sp>, a bigger difference both absolutely and relatively; this is the effect of repeatedly using rounded numbers in our Table-based calculations; for example, the next two digits after 8 in the exact PVIF are 43, i.e., although the Table value of 0.178 is the correct rounding of the exact value to three decimal places, the actual value is pretty close to the point where one would round up instead of down, i.e., it’s close to providing as much difference between the approximate and exact values as possible&mdash;one would hope and expect that a financial calculator is not using rounded numbers, and would thus provide the more accurate figures, so that you’re not in for a surprise 50 years from now. As for the present value of $181,818.18 under the same circumstances, the exact calculation gives $<sp id="P21b2"></sp>, a difference of $<sp id="P21b3"></sp>, i.e., for that additional amount of deposit now, you can have your $20,000/yr for 30 years and still leave your grandchildren all the money that was providing you that income!)
+<br><br></p>
+
+<p><strong>22</strong>) Which is worth more after 25 years of investment at a) 5% APR; and b) 7% APR (compounded annually): $500,000 invested now, or a 25 year annuity of $40,000/yr? c) At what APR are the two amounts equal?</p>
+
+<p><strong>Solution</strong>: This problem is given as a present value problem, but in my opinion it’s more intuitive to approach it as a future value problem, i.e., to compare the future value of $500,000 now invested for 25 years vs. the future value of a 25 year, $40,000/yr annuity, at the two different interest rates, so that is how I will do it. Using the exact formulae as implemented in JavaScript in file GPVFV.js:</p>
+
+<p><strong>a</strong>) @ 5% APR, the future value of the $500,000 now is $<sp id="P22a5"></sp>, whereas the future value of the annuity is $<sp id="P22a4"></sp>, so the annuity ultimately results in more money for you.</p>
+
+<p><strong>b</strong>) @ 7% APR, the future value of the $500,000 now is $<sp id="P22b5"></sp>, whereas the future value of the annuity is $<sp id="P22b4"></sp>, so the $500,000 now is the better choice.</p>
+
+<p><strong>c</strong>) Since 5% resulted in one option being better and 7% resulted in the other option being better, the <q>break-even point</q> must lie somewhere in between. Though the interest rate is straightforwardly calculable for simple compounding given the future (or present) value and number of periods, for an annuity, said calculation, in general, requires Calculus, which we wish to avoid at this level of presentation. Consequently, we will approximate the break-even interest rate by <q>guess and check,</q> i.e., trial and error:</p>
+
+<p>First guess, 6%: FV of $500,000 = $<sp id="P22c65"></sp>; of the annuity $<sp id="P22c64"></sp> so already they’re pretty close to equal, but the annuity is still a little bit better, so for our next guess, we move a little closer to the interest rate that made the $500,000 option better:</p>
+
+<p>Second guess, 6.2%: FV of $500,000 = $<sp id="P22c625"></sp>; of the annuity $<sp id="P22c624"></sp>; closer, but the annuity is still a little better.</p>
+
+<p>Third guess, 6.4%: FV of $500,000 = $<sp id="P22c645"></sp>; of the annuity $<sp id="P22c644"></sp>; overshot it&mdash; let’s try:</p>
+
+<p>Fourth guess, 6.3%: FV of $500,000 = $<sp id="P22c635"></sp>; of the annuity $<sp id="P22c634"></sp>; need to go lower still:</p>
+
+<p>Fifth guess, 6.25%: FV of $500,000 = $<sp id="P22c6255"></sp>; of the annuity $<sp id="P22c6254"></sp>; </p>
+
+<p>So somewhere between 6.20% and 6.25%, and there we will stop; the important thing is that the reader understand this <q>guess &amp; check</q> process. (To check your understanding, I suggest you continue the process to determine exactly at least this third digit; hint: to really be precise, you need to determine the fourth digit also, so you know the correct way to round the best value you find for the third digit. Answer (found using a graphing calculator): 6.2374%)
+<br><br></p>
+
+<p><strong>25</strong>) Calculate the future value <em>at the end of</em> the final year for each of the following <q>beginning-of-year</q> mixed-stream cash flows, assuming 12% APR (compounded annually).</p>
+
+<p><strong>Solution</strong>:</p>
+
+<table>
+  <tr>
+    <td></td>
+    <th class=cen>Year</th>
+    <th class=cen>Beginning of year<br>cash flow ($)</th>
+    <th class=cen>Interest factor<br>expression</th>
+    <th class=cen>Interest factor<br>value</th>
+    <th class=cen>Future value ($)</th>
+  </tr>
+  <tr>
+    <th rowspan=5>A</th>
+  </tr>
+  <tr>
+    <td class=cen>1</td>
+    <td class=num>900</td>
+    <td class=cen>(1 + 0.12)<sup>3</sup></td>
+    <td class=num>1.405</td>
+    <td class=num>1.405 * 900 = 1,264.50</td>
+  </tr>
+  <tr>
+    <td class=cen>2</td>
+    <td class=num>1000</td>
+    <td class=cen>(1 + 0.12)<sup>2</sup></td>
+    <td class=num>1.254</td>
+    <td class=num>1.254 * 1000 = 1,254.00</td>
+  </tr>
+  <tr>
+    <td class=cen>3</td>
+    <td class=num>1200</td>
+    <td class=cen>(1 + 0.12)<sup>1</sup></td>
+    <td class=num>1.120</td>
+    <td class=num>1.120 * 1200 = 1,344.00</td>
+  </tr>
+  <tr>
+    <td colspan=4 class="num sum">Total</td>
+    <td class="num sum">3,862.50</td>
+  </tr>
+  <tr>
+    <th rowspan=7>B</th>
+  </tr>
+  <tr>
+    <td class=cen>1</td>
+    <td class=num>30,000</td>
+    <td class=cen>(1 + 0.12)<sup>5</sup></td>
+    <td class=num>1.762</td>
+    <td class=num>1.762 * 30,000 = 52,860</td>
+  </tr>
+  <tr>
+    <td class=cen>2</td>
+    <td class=num>25,000</td>
+    <td class=cen>(1 + 0.12)<sup>4</sup></td>
+    <td class=num>1.574</td>
+    <td class=num>1.574 * 25,000 = 39,350</td>
+  </tr>
+  <tr>
+    <td class=cen>3</td>
+    <td class=num>20,000</td>
+    <td class=cen>(1 + 0.12)<sup>3</sup></td>
+    <td class=num>1.405</td>
+    <td class=num>1.405 * 20,000 = 28,100</td>
+  </tr>
+  <tr>
+    <td class=cen>4</td>
+    <td class=num>10,000</td>
+    <td class=cen>(1 + 0.12)<sup>2</sup></td>
+    <td class=num>1.254</td>
+    <td class=num>1.254 * 10,000 = 12,540</td>
+  </tr>
+  <tr>
+    <td class=cen>5</td>
+    <td class=num>5000</td>
+    <td class=cen>(1 + 0.12)<sup>1</sup></td>
+    <td class=num>1.120</td>
+    <td class=num>1.120 * 5000 = 5600</td>
+  </tr>
+  <tr>
+    <td colspan=4 class="num sum">Total</td>
+    <td class="num sum">138,450</td>
+  </tr>
+  <tr>
+    <th rowspan=6>C</th>
+  </tr>
+  <tr>
+    <td class=cen>1</td>
+    <td class=num>1200</td>
+    <td class=cen>(1 + 0.12)<sup>4</sup></td>
+    <td class=num>1.574</td>
+    <td class=num>1.574 * 1200 = 1,888.80</td>
+  </tr>
+  <tr>
+    <td class=cen>2</td>
+    <td class=num>1200</td>
+    <td class=cen>(1 + 0.12)<sup>3</sup></td>
+    <td class=num>1.405</td>
+    <td class=num>1.405 * 1200 = 1,686.00</td>
+  </tr>
+  <tr>
+    <td class=cen>3</td>
+    <td class=num>1000</td>
+    <td class=cen>(1 + 0.12)<sup>2</sup></td>
+    <td class=num>1.254</td>
+    <td class=num>1.254 * 1000 = 1,254.00</td>
+  </tr>
+  <tr>
+    <td class=cen>4</td>
+    <td class=num>1900</td>
+    <td class=cen>(1 + 0.12)<sup>1</sup></td>
+    <td class=num>1.120</td>
+    <td class=num>1.120 * 1900 = 2,128.00</td>
+  </tr>
+  <tr>
+    <td colspan=4 class="num sum">Total</td>
+    <td class="num sum">6,956.80</td>
+  </tr>
+</table>
+
+<p><q>Extra Credit</q>: What are the future values of A and C assuming the same data, except that the ending amounts are left in their accounts until the end of Year 5, i.e., the duration is the same as <q>Account B,</q> but $0 deposits are made in the <q>empty</q> years? Answer: A) $4,843.58; C) $7,791.62.
+<br><br></p>
+
+<p><strong>28</strong>) Assuming a <sp id="P28r">15</sp>% ADR (compounded annually), <strong>a</strong>) find the present value of each of the following two mixed-stream cash flows and <strong>b</strong>) comment in light of the equality of the two (undiscounted) cash flows. </p>
+
+<p><strong>Solution</strong>: 
+<strong>a</strong>)</p>
+
+<table>
+  <tr>
+    <th class=cen rowspan=3>Year</th>
+    <th class=cen rowspan=3>PVIF<br>(to 3 decimal places)</th>
+  </tr>
+  <tr>
+    <th class=cen colspan=2>A</th>
+    <th class=cen colspan=2>B</th>
+  </tr>
+  <tr>
+    <th class=cen>Cash flow ($)</th>
+    <th class=cen>Present value<br>($, exact)</th>
+    <th class=cen>Cash flow ($)</th>
+    <th class=cen>Present value<br>($, exact)</th>
+  </tr>
+  <tr>
+    <td class=cen id="P28Y1">1</td>
+    <td class=cen id="P28PVIF1"></td>
+    <td class=num id="P28CFA1">50,000</td>
+    <td class=num id="P28PVA1"></td>
+    <td class=num id="P28CFB1">10,000</td>
+    <td class=num id="P28PVB1"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P28Y2">2</td>
+    <td class=cen id="P28PVIF2"></td>
+    <td class=num id="P28CFA2">40,000</td>
+    <td class=num id="P28PVA2"></td>
+    <td class=num id="P28CFB2">20,000</td>
+    <td class=num id="P28PVB2"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P28Y3">3</td>
+    <td class=cen id="P28PVIF3"></td>
+    <td class=num id="P28CFA3">30,000</td>
+    <td class=num id="P28PVA3"></td>
+    <td class=num id="P28CFB3">30,000</td>
+    <td class=num id="P28PVB3"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P28Y4">4</td>
+    <td class=cen id="P28PVIF4"></td>
+    <td class=num id="P28CFA4">20,000</td>
+    <td class=num id="P28PVA4"></td>
+    <td class=num id="P28CFB4">40,000</td>
+    <td class=num id="P28PVB4"></td>
+  </tr>
+  <tr>
+    <td class=cen id="P28Y5">5</td>
+    <td class=cen id="P28PVIF5"></td>
+    <td class=num id="P28CFA5">10,000</td>
+    <td class=num id="P28PVA5"></td>
+    <td class=num id="P28CFB5">50,000</td>
+    <td class=num id="P28PVB5"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <th class=num>Totals</th>
+    <td class=num>150,000</td>
+    <td class=num id="P28Asum"></td>
+    <td class=num>150,000</td>
+    <td class=num id="P28Bsum"></td>
+  </tr>
+</table>
+
+<p><strong>b</strong>) So the present value of cash flow B is less than that of cash flow A; since they both have the same future value&mdash;$150,000&mdash;cash flow B represents the <em>greater growth in value</em> over the five year time period.
+<br><br></p>
+
+<p><strong>30</strong>) <strong>a</strong>) How much does one need to deposit now into an 8% APR account to exactly cover the following cash shortfalls:</p>
+
+<table>
+  <tr>
+    <th class=cen>End of Year</th>
+    <td class=cen>1</td>
+    <td class=cen>2</td>
+    <td class=cen>3</td>
+    <td class=cen>4</td>
+    <td class=cen>5</td>
+  </tr>
+  <tr>
+    <th class=cen>Shortfall ($)</th>
+    <td class=cen>5000</td>
+    <td class=cen>4000</td>
+    <td class=cen>6000</td>
+    <td class=cen>10,000</td>
+    <td class=cen>3000</td>
+  </tr>
+</table>
+
+<p>and <strong>b</strong>) what is the effect of an increase in the earnings rate?</p>
+
+<p><strong>Solution</strong>: </p>
+
+<p><strong>a</strong>) We need the present value of this mixed-stream cash flow = <br>\(\displaystyle{\frac{\$5000}{1.08^1} + \frac{\$4000}{1.08^2} + \frac{\$6000}{1.08^3} + \frac{\$10,000}{1.08^4} + \frac{\$3000}{1.08^5}} = \)<br><br>$4,629.63 + $3,429.36 + $4,762.99 + $7,350.30 + $2,041.75 = <strong>$22,214.03</strong>.</p>
+
+<p>(Note: the $0.97 difference between my answer and the answer in the back of the book is due to their having used rounded PVIF’s.)
+<br><br></p>
+
+<p><strong>33</strong>) For each case in the following table, calculate:</p>
+
+<p><strong>a</strong>) The future value</p>
+
+<p><strong>b</strong>) The EAR</p>
+
+<p><strong>c</strong>) compare the EAR and the NAR</p>
+
+<p><strong>Solution</strong>:</p>
+
+<table>
+  <tr>
+    <th class=cen>Initial<br>Deposit ($)</th>
+    <th class=cen>NAR<br>(%)</th>
+    <th class=cen>Frequency<br>(#/y)</th>
+    <th class=cen>Deposit<br>period (yrs)</th>
+    <th class=cen>a) Future<br>Value ($)</th>
+    <th class=cen>b) EAR<br>(%)</th>
+    <th class=cen>c) EAR &ndash; NAR<br>(%)</th>
+  </tr>
+  <tr>
+    <td class=num id="P33p1">2500</td>
+    <td class=num id="P33r1">6</td>
+    <td class=num id="P33m1">2</td>
+    <td class=num id="P33n1">5</td>
+    <td class=num id="P33fv1"></td>
+    <td class=num id="P33ear1"></td>
+    <td class=num id="P33dar1"></td>
+  </tr>
+  <tr>
+    <td class=num id="P33p2">50,000</td>
+    <td class=num id="P33r2">12</td>
+    <td class=num id="P33m2">6</td>
+    <td class=num id="P33n2">3</td>
+    <td class=num id="P33fv2"></td>
+    <td class=num id="P33ear2"></td>
+    <td class=num id="P33dar2"></td>
+  </tr>
+  <tr>
+    <td class=num id="P33p3">1000</td>
+    <td class=num id="P33r3">5</td>
+    <td class=num id="P33m3">1</td>
+    <td class=num id="P33n3">10</td>
+    <td class=num id="P33fv3"></td>
+    <td class=num id="P33ear3"></td>
+    <td class=num id="P33dar3"></td>
+  </tr>
+  <tr>
+    <td class=num id="P33p4">20,000</td>
+    <td class=num id="P33r4">16</td>
+    <td class=num id="P33m4">4</td>
+    <td class=num id="P33n4">6</td>
+    <td class=num id="P33fv4"></td>
+    <td class=num id="P33ear4"></td>
+    <td class=num id="P33dar4"></td>
+  </tr>
+</table>
+
+<p>So compounding with a frequency of 1 (Row 3) has no effect on the NAR, but doing so with a frequency greater than 1 increases the <q>return</q> (i.e., future value) over what it otherwise would be. (Additionally, though you can’t really tell with certainty from this paucity of data, the greater the frequency, the greater the effect, but the <em>rate</em> at which this betterment increases <em>slows</em> so that eventually, in the limit of <q>continuous</q> compounding, you reach the <em>best possible</em> improvement over the NAR, i.e., better than that, one cannot get!)
+<br><br></p>
+
+<p><strong>38</strong>) Determine the equal end-of-year payments required to accumulate the sums in the following table, subject to each sum’s terms (interest rates are annual, compounded annually).</p>
+
+<p><strong>Solution</strong>: The required payments are determined from text Equation 4.23, which is implemented in JavaScript as function AnnPmtFromFutVal in file GPVFV.js. (Difference of $0.03 between my answer for Case B and that given in the back of the text due to use of exact formula vs. use of Table value; if you use the text Table and your answers are close to mine, assume you got the correct answer.)</p>
+
+<table>
+  <tr>
+    <th class=cen>Sum to be<br>accumulated ($)</th>
+    <th class=cen>Period<br>(years)</th>
+    <th class=cen>APR<br>(%)</th>
+    <th class=cen>Req. Annual<br>Payment ($)</th>
+  </tr>
+  <tr>
+    <td class=num id="P38f1">5000</td>
+    <td class=num id="P38n1">3</td>
+    <td class=num id="P38r1">12</td>
+    <td class=num id="P38m1"></td>
+  </tr>
+  <tr>
+    <td class=num id="P38f2">100,000</td>
+    <td class=num id="P38n2">20</td>
+    <td class=num id="P38r2">7</td>
+    <td class=num id="P38m2"></td>
+  </tr>
+  <tr>
+    <td class=num id="P38f3">30,000</td>
+    <td class=num id="P38n3">8</td>
+    <td class=num id="P38r3">10</td>
+    <td class=num id="P38m3"></td>
+  </tr>
+  <tr>
+    <td class=num id="P38f4">15,000</td>
+    <td class=num id="P38n4">12</td>
+    <td class=num id="P38r4">8</td>
+    <td class=num id="P38m4"></td>
+  </tr>
+</table>
+
+<p><br><br></p>
+
+<p><strong>40</strong>) Determine required annual payments into an account paying 10% APR (compounded annually) over 20 years to accumulate the future value of $85,000 assuming an inflation rate of 6% APR (also compounded annually) </p>
+
+<p><strong>Solution</strong>: We must first calculate the target future value, i.e., the FV of $85,000 at 6% APR after 20 years:</p>
+
+<p>\(\$85,000 * (1 + 0.06)^{20} = \$85,000 * 3.207 =\) <strong>$272,606.52</strong> (I used the exact interest factor in this calculation, so my answer may differ slightly from yours.)</p>
+
+<p>Now that we have the required target FV, we use text Equation 4.23 to determine the required annual payment to accumulate this sum:</p>
+
+<p>\(PMT = \displaystyle{\frac{FVA_n}{FVIFA_{i,n}} = \frac{\$272,606.52}{[(1+0.1)^{20} - 1]/0.1}} = \frac{\$272,606.52}{57.275} =\) <strong>$4,759.61</strong>
+<br><br></p>
+
+<p><strong>43</strong>) For a three year, $15,000, 14% APR <q>mortgage</q>:</p>
+
+<p><strong>a</strong>) Calculate the required annual payment;</p>
+
+<p><strong>b</strong>) Prepare the <q>amortization schedule,</q> i.e., the table of interest and remaining principal amounts after each year;</p>
+
+<p><strong>c</strong>) Explain why the interest goes down in each payment.</p>
+
+<p><strong>Solution</strong>:</p>
+
+<p><strong>a</strong>) \(PMT = \displaystyle{\frac{PVA_n}{PVIFA_{i,n}} = \$15,000~\big{/} \left[\frac{1}{0.14} \times \left(1-\frac{1}{(1+0.14)^3}\right)\right]} =\) <strong>$6,460.97</strong></p>
+
+<p><strong>b</strong>)</p>
+
+<table>
+  <tr>
+    <th class=cen colspan=4>Amortization Schedule for a 3 Year, 14% APR, $15,000 Mortgage<br>(for which the required annual payment is $6,460.97)</th>
+  </tr>
+  <tr>
+    <th class=cen>Year</th>
+    <th class=cen>End-of-year<br>Debt Remaining ($)</th>
+    <th class=cen>End-of-year Interest<br>($)</th>
+    <th class=cen>Principal Reduction ($)<br>(Payment &minus; Interest)</th>
+  </tr>
+  <tr>
+    <td class=cen>0</td>
+    <td class=num>15,000.00</td>
+    <td class=cen>&times; 0.14 = 2100</td>
+    <td class=cen>4,360.97</td>
+  </tr>
+  <tr>
+    <td class=cen>1</td>
+    <td class=num>10,639.03</td>
+    <td class=cen>&times; 0.14 = 1,489.46</td>
+    <td class=cen>4,971.51</td>
+  </tr>
+  <tr>
+    <td class=cen>2</td>
+    <td class=num>5,667.52</td>
+    <td class=cen>&times; 0.14 = 793.45</td>
+    <td class=cen>5,667.52</td>
+  </tr>
+  <tr>
+    <td class=cen>3</td>
+    <td class=num>0</td>
+    <td class=cen>&times; 0.14 = 0</td>
+    <td class=cen>N/A</td>
+  </tr>
+</table>
+
+<p><strong>c</strong>) The reason the interest portion goes down with each payment is that you’re only charged interest on your remaining principal, and part of each payment goes towards reducing that.
+<br><br></p>
+
+<p><strong>45</strong>) Calculate the monthly payment on a 24 month, $4000 loan at <strong>a</strong>) 12% APR, and <strong>b</strong>) 9% APR. </p>
+
+<p><strong>Solution</strong>: This isn’t as hard as it may seem: the key is to recognize that it’s a <q>standard</q> mortgage of 24 periods, with a <q>per period</q> interest rate of the APR divided by the number of periods (months in this case) in the nominal interest period, i.e., one year. Thus the per period interest rate for:</p>
+
+<p><strong>a</strong>) 12% APR is 0.12/12 = 0.01 and the Present Value Annuity Payment formula (text Eqs. 4.25 &amp; 4.15a) gives:</p>
+
+<p>\(PMT = \displaystyle{\frac{PVA_n}{PVIFA_{i,n}} = \$4000~\big{/} \left[\frac{1}{0.01} \times \left(1-\frac{1}{(1+0.01)^{24}}\right)\right]} =\) <strong>$188.29</strong></p>
+
+<p>and for </p>
+
+<p><strong>b</strong>) 9% APR is 0.09/12 = 0.0075 \(\implies PMT = \displaystyle{\frac{PVA_n}{PVIFA_{i,n}} = \$4000~\big{/} \left[\frac{1}{0.0075} \times \left(1-\frac{1}{(1+0.0075)^{24}}\right)\right]} =\) <strong>$182.74</strong> (i.e., not much of a monthly savings). :-(
+<br><br></p>
+
+<p><strong>46</strong>) Give and <strong>c</strong>) compare (i.e., discuss) the <strong>a</strong>) compound and <strong>b</strong>) nominal annual growth rates of the three cash flows given in the table of the problem statement.</p>
+
+<p><strong>Solution</strong>: Key here is to recognize that all that is needed are the initial amounts, and, for part a), the final amounts and the number of years <em>between</em> Year 1 and the final year (which is one less than the final year number), and for part b), the year 2 amount (the rest of the supplied data is irrelevant to the required calculations).  Thus, for </p>
+
+<p><strong>a</strong>) (the compound annual growth rates) we have:</p>
+
+<p>Case A: \(i_c = 100 \times \left[\displaystyle{\left(\frac{800}{500}\right)^{\frac{1}{5-1}}} - 1\right] = 100 \times (1.6^{0.25} - 1) = \) <strong>12.47%</strong></p>
+
+<p>Case B: \(i_c = 100 \times \left[\displaystyle{\left(\frac{2280}{1500}\right)^{\frac{1}{10-1}}} - 1\right] = 100 \times (1.52^{1/9} - 1) = \) <strong>4.76%</strong></p>
+
+<p>Case C: \(i_c = 100 \times \left[\displaystyle{\left(\frac{2900}{2500}\right)^{\frac{1}{7-1}}} - 1\right] = 100 \times (1.16^{1/6} - 1) = \) <strong>2.50%</strong></p>
+
+<p>and for </p>
+
+<p><strong>b</strong>) (the NAR) the computations are as simple as:</p>
+
+<p>Case A: \(i_s = 100 \times  (\frac{560}{500} - 1) =  \) <strong>12%</strong></p>
+
+<p>Case B: \(i_s = 100 \times  (\frac{1550}{1500} - 1) =  \) <strong>3&frac13;%</strong></p>
+
+<p>Case C: \(i_s = 100 \times  (\frac{2600}{2500} - 1) =  \) <strong>4%</strong></p>
+
+<p><strong>c</strong>) Evidently, the growth rates in Cases A &amp; B went up (though precisely as much as one would expect from simple compounding of the nominal growth rates??? EC: check!) but in Case C, although there was growth in every year <em>except Year 4</em>, the <em>compund growth rate</em> went down compared to the initial nominal growth rate.
+<br><br></p>
+
+<p><strong>49</strong>) What is the rate of return for an annuity which pays $2000/yr. for each of the next 10 years for an initial investment of $10,606?</p>
+
+<p><strong>Solution</strong>: \(100 \times \left[\left(\frac{\$20,000}{\$10,606}\right)^{1/10} - 1\right] = 100 \times (1.065 - 1) = \) <strong>6.5%</strong>.
+<br><br></p>
+
+<p><strong>51</strong>) To the nearest 1%, figure out the interest rates (i.e., rates of return) associated with 25 year, $2,000,000 present value annuities with annual end-of-year payments of <strong>a</strong>) $156,000, <strong>b</strong>) $255,000, and <strong>c</strong>) figure out the annual payment corresponding to a 9% APR.</p>
+
+<p><strong>Solution</strong>: As mentioned above, without a financial calculator or spreadsheet app, it would require Calculus to estimate the answers to parts a) and b) more precisely than to 1%, but such precision is quite attainable from text Table A-4. As per text Eq. 4.26, we need to look up the \(PVIFA = PVA / PMT\) in the <q>innards</q> of the Table along the 25 year row, and then read up to get the required percent.</p>
+
+<p><strong>a</strong>) \(\displaystyle \frac{\$2,000,000}{\$156,000} = 12.82\) and the closest value along the Year 25 row in Table A-4 is 12.783, which corresponds to an APR of <strong>6%</strong>.</p>
+
+<p><strong>b</strong>) \(\displaystyle \frac{\$2,000,000}{\$255,000} = 7.843\) which is precisely the value corresponding to an APR of <strong>12%</strong>.</p>
+
+<p><strong>c</strong>) The PVIFA along the Year 25 row corresponding to 9% is 9.823, yielding a minimum acceptable annual payment of \(\displaystyle \frac{\$2,000,000}{9.823} =\) <strong>$203,603.79</strong>.
+<br><br></p>
+
+<p><strong>53</strong>) Determine the number of periods (years in this case) for each of the following single initial deposits to grow into their given future values at the stated APR’s.</p>
+
+<p><strong>Solution</strong>: Using JavaScript function FutValn in file GPVFV.js</p>
+
+<table>
+  <tr>
+    <th class=cen>Initial Deposit ($)</th>
+    <th class=cen>Target FV ($)</th>
+    <th class=cen>APR (%)</th>
+    <th class=cen>Years Required</th>
+  </tr>
+  <tr>
+    <td class=num id="P53p1">300</td>
+    <td class=num id="P53f1">1000</td>
+    <td class=num id="P53r1">7</td>
+    <td class=num id="P53n1"></td>
+  </tr>
+  <tr>
+    <td class=num id="P53p2">12,000</td>
+    <td class=num id="P53f2">15,000</td>
+    <td class=num id="P53r2">5</td>
+    <td class=num id="P53n2"></td>
+  </tr>
+  <tr>
+    <td class=num id="P53p3">9000</td>
+    <td class=num id="P53f3">20,000</td>
+    <td class=num id="P53r3">10</td>
+    <td class=num id="P53n3"></td>
+  </tr>
+  <tr>
+    <td class=num id="P53p4">100</td>
+    <td class=num id="P53f4">500</td>
+    <td class=num id="P53r4">9</td>
+    <td class=num id="P53n4"></td>
+  </tr>
+  <tr>
+    <td class=num id="P53p5">7500</td>
+    <td class=num id="P53f5">30,000</td>
+    <td class=num id="P53r5">15</td>
+    <td class=num id="P53n5"></td>
+  </tr>
+</table>
+
+<p><br></p>
+
+<p><strong>56</strong>) Determine the time to repay a $14,000 loan with end-of-year payments of $2450 at APR’s of <strong>a</strong>) 12%, <strong>b</strong>) 9%, and <strong>c</strong>) 15%. <strong>d</strong>) Based on these results, what is the relationship between APR and time to repay a loan (all else being equal)?</p>
+
+<p><strong>Solution</strong>: Using JavaScript function AnnPresValn in GPVFV.js</p>
+
+<p><strong>a</strong>) 12%: <script class=sum>document.write(AnnPresValn(2450, 14000, 0.12).toFixed(2));</script></p>
+
+<p><strong>b</strong>) 9%: <script class=sum>document.write(AnnPresValn(2450, 14000, 0.09).toFixed(2));</script></p>
+
+<p><strong>c</strong>) 15%: <script class=sum>document.write(AnnPresValn(2450, 14000, 0.15).toFixed(2));</script></p>
+
+<p><strong>d</strong>) Consistent with your intuition (hopefully), the higher the interest rate, the longer it takes to pay back a loan, (all else being equal).
+<br></p>
+
+<h3>Please Donate:</h3>
+
+<p><table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image">
+      </form>
+</body>          </p>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
