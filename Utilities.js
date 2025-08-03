@@ -65,6 +65,14 @@ function ChangeRelMid(beg, end) {
     return r;
 }
 
+function twoDvecComps(r, t) {// t in radians from standard position
+    return [r * Math.cos(t), r * Math.sin(t)];
+}
+
+function twoDvecPolar(x,y) {
+    return [Math.sqrt(x*x + y*y), Math.atan2(y, x)];
+}
+
 function dydx(y2, y1, x2, x1) {
     var dydx = (x2 != x1) ? (y2 - y1) / (x2 - x1) : NaN;
     return dydx;
@@ -244,6 +252,17 @@ function CoV(data, prob) {
     }
     return rslt;
 }
+
+/* Unit Conversions */
+function feet2Meters(ft) {return 0.3048 * ft;}
+
+function miles2Feet(mi) {return 5280 * mi;}
+
+function miles2Meters(mi) {return 1609.34 * mi;}
+
+function miph2Metps(mph) {return 0.44704 * mph;}
+
+function deg2Rads(deg) {return Math.PI * deg / 180;}
 
 /* Google Charts Support Functions 
 Not presently needed/used, development suspended
