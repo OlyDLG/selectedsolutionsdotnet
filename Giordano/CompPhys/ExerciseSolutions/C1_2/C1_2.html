@@ -93,12 +93,15 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <script src="./C1_2Scripts.js"></script>
 
+<script src="./C2E14.js"></script>
+
 <script>
     // Load google charts
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(GiorCPC1E4);
     google.charts.setOnLoadCallback(GiorCPC1E5);
     google.charts.setOnLoadCallback(GiorCPC2E5);
+    google.charts.setOnLoadCallback(GiorCPC2E14);
 </script>
 
 <style>
@@ -115,7 +118,9 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><body onload="makeC1E4Graph = GiorCPC1E4(); 
 makeC1E5Graph = GiorCPC1E5();
-makeC2E5Graph = GiorCPC2E5();"></p>
+makeC2E5Graph = GiorCPC2E5();
+makeC2E14Graph = GiorCPC2E14();
+"></p>
 
 <h2><center>Selected Exercise Solutions</h2>
 
@@ -266,25 +271,74 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 </center>
 <sp id="GiorCPC2E5chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 5."></sp></p>
 
-<h3><u>Exercise 2.10</u></h3>
-
-<h3>Solution</h3>
-
-<h3><u>Exercise 2.11</u></h3>
-
-<h3>Solution</h3>
-
-<h3><u>Exercise 2.12</u></h3>
-
-<h3>Solution</h3>
-
 <h3><u>Exercise 2.14</u></h3>
 
-<h3>Solution</h3>
-
-<h3><u>Exercise 2.15</u></h3>
+<p>\(~~~~\)Add a crosswind to the fly ball (hit baseball) model; determine how it affects the landing spot.</p>
 
 <h3>Solution</h3>
+
+<p>\(~~~~\)We are going to solve the general case, giving the reader five (horizontal) wind directions to choose from: tailwind, 45&deg; cross-tailwind, 90&deg; crosswind, 45&deg; cross-headwind, and headwind; \(x\) continues to denote the (fixed) initial horizontal direction of the batted ball, \(y\) continues to denote its altitude, and the new coordinate \(z\)&mdash;whose direction will be listed third in our ordered-triple vectors&mdash;denotes the direction orthogonal to both of these, i.e., the horizontal orthogonal to \(x\). The ball’s velocity vector (whose magnitude is denoted simply by \(\upsilon\)) is \(\vec{\upsilon} = (u, v, w)\); the (constant) wind vector (speed \(\omega\) user-selectable) is \(\vec{\omega} = (\omega_x, 0, \omega_z) = (\omega\cos\phi, 0, \omega\sin\phi)\), \(\phi\) such that a tailwind corresponds to \(\phi=0\). The initial position \((x_0, y_0, z_0)\), in meters, is \((0, 1, 0)\); the initial velocity is \((\upsilon_0\cos\theta, \upsilon_0\sin\theta, 0)\), where \(\upsilon_0\) is the initial speed (converted to meters per second from user-selectable miles per hour) and (user-selectable) \(\theta\) is the <q>launch angle.</q> For the time derivative we use Newton’s over-dot notation, e.g., \(dx/dt = \dot{x}\). </p>
+
+<p>\(~~~~\)With these notational conventions, our model is:</p>
+
+<p>\[\begin{eqnarray}
+\dot{x} &amp; = &amp; u, &amp; x_0 = 0 \\
+\dot{y} &amp; = &amp; v, &amp; y_0 = 1 \\
+\dot{z} &amp; = &amp; w, &amp; z_0 = 0 \\
+\dot{u} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{\omega}\right|(u-\omega_x), &amp; u_0 = \upsilon_0\cos\theta \\
+\dot{v} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{\omega}\right|v - g, &amp; v_0 = \upsilon_0\sin\theta \\
+\dot{w} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{\omega}\right|(w-\omega_z), &amp; w_0 = 0 \\
+\end{eqnarray}
+\]</p>
+
+<p>where \(\displaystyle \frac{B_2}{m} = 0.0039 + \frac{0.0058}{1+\exp\left[\left(\left|\vec{\upsilon}-\vec{\omega}\right|-35\right)/5\right]}\) is given. Discretized this becomes:</p>
+
+<p>\[\begin{eqnarray}
+x_{n+1} &amp; = &amp; x_n + u_n\Delta t \\
+y_{n+1} &amp; = &amp; y_n + v_n\Delta t \\
+z_{n+1} &amp; = &amp; z_n + w_n\Delta t \\
+u_{n+1} &amp; = &amp; u_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega}\right|(u_n-\omega_x)\Delta t \\
+v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega}\right|v_n + g\right)\Delta t \\
+w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega}\right|(w_n-\omega_z)\Delta t \\
+\end{eqnarray}
+\]</p>
+
+<p>with the same initial conditions. \(y\) vs. \(x\) and \(z\) vs. \(x\) trajectories are plotted below.</p>
+
+<p><sp id="GiorCPC2E14chartTitle" style="center"></sp>
+<center>
+  <table>
+    <tr style="border: none;">
+      <td style="border: none;">
+        <form id="C2E14ExitV" onchange="makeC2E14Graph()">
+          <label for="C2E14ExitVIn">Initial speed (miles/hour):</label>
+          <input type="number" name="C2E14ExitVIn" min="100" max="120" step="10" value="110">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="C2E14LaunchAngle" onchange="makeC2E14Graph()">
+          <label for="C2E14LaunchAngleIn">Launch angle (degrees):</label>
+          <input type="number" name="C2E14LaunchAngleIn" min="25" max="45" step="5" value="35">
+        </form>
+      </td>
+    </tr>
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <form id="C2E14windV" onchange="makeC2E14Graph()">
+          <label for="C2E14windVIn">Wind speed (miles/hour):</label>
+          <input type="number" name="C2E14windVIn" min="0" max="25" step="5" value="0">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="C2E14windDir" onchange="makeC2E14Graph()">
+          <label for="C2E14windDirIn">Wind direction (degrees, 0&deg; = tailwind):</label>
+          <input type="number" name="C2E14windDirIn" min="0" max="180" step="45" value="0">
+        </form>
+      </td>
+    </tr>
+  </table>
+</center>
+<sp id="GiorCPC2E14chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 14."></sp></p>
 
 <h3><u>Exercise 2.21</u></h3>
 

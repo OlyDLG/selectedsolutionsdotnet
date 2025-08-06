@@ -177,6 +177,14 @@ function dot(u, v) {
     return rslt;
 }
 
+function sqmag(v) {
+    return dot(v, v);
+}
+
+function mag(v) {
+    return Math.sqrt(sqmag(v));
+}
+
 function arrayMult(u, v) {
     rslt = [];
     if (isNumericalArray(u) &&
@@ -262,7 +270,7 @@ function miles2Meters(mi) {return 1609.34 * mi;}
 
 function miph2Metps(mph) {return 0.44704 * mph;}
 
-function deg2Rads(deg) {return Math.PI * deg / 180;}
+function deg2Rad(deg) {return Math.PI * deg / 180;}
 
 /* Google Charts Support Functions 
 Not presently needed/used, development suspended
