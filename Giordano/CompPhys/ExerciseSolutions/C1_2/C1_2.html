@@ -277,7 +277,7 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)We are going to solve the general case, giving the reader five (horizontal) wind directions to choose from: tailwind, 45&deg; cross-tailwind, 90&deg; crosswind, 45&deg; cross-headwind, and headwind; \(x\) continues to denote the (fixed) initial horizontal direction of the batted ball, \(y\) continues to denote its altitude, and the new coordinate \(z\)&mdash;whose direction will be listed third in our ordered-triple vectors&mdash;denotes the direction orthogonal to both of these, i.e., the horizontal orthogonal to \(x\). The ball’s velocity vector (whose magnitude is denoted simply by \(\upsilon\)) is \(\vec{\upsilon} = (u, v, w)\); the (constant) wind vector (speed \(\omega\) user-selectable) is \(\vec{\omega} = (\omega_x, 0, \omega_z) = (\omega\cos\phi, 0, \omega\sin\phi)\), \(\phi\) such that a tailwind corresponds to \(\phi=0\). The initial position \((x_0, y_0, z_0)\), in meters, is \((0, 1, 0)\); the initial velocity is \((\upsilon_0\cos\theta, \upsilon_0\sin\theta, 0)\), where \(\upsilon_0\) is the initial speed (converted to meters per second from user-selectable miles per hour) and (user-selectable) \(\theta\) is the <q>launch angle.</q> For the time derivative we use Newton’s over-dot notation, e.g., \(dx/dt = \dot{x}\). </p>
+<p>\(~~~~\)We are going to solve the general case, giving the reader five (horizontal) wind directions to choose from: tailwind, 45&deg; cross-tailwind, 90&deg; crosswind, 45&deg; cross-headwind, and headwind; \(x\) continues to denote the (fixed) initial horizontal direction of the batted ball, \(y\) continues to denote its altitude, and the new coordinate \(z\)&mdash;listed third in our ordered-triple vectors&mdash;denotes the horizontal orthogonal to \(x\), i.e., the <q>lateral</q> displacement. The ball’s velocity vector (whose magnitude is denoted simply by \(\upsilon\)) is \(\vec{\upsilon} = (u, v, w)\); the (constant) wind vector (speed \(\omega\) user-selectable) is \(\vec{\omega} = (\omega_x, 0, \omega_z) = (\omega\cos\phi, 0, \omega\sin\phi)\), \(\phi\) such that a tailwind corresponds to \(\phi=0\). The initial position \((x_0, y_0, z_0)\), in meters, is \((0, 1, 0)\); the initial velocity is \((\upsilon_0\cos\theta, \upsilon_0\sin\theta, 0)\), where \(\upsilon_0\) is the initial speed (converted to meters per second from user-selectable miles per hour) and (user-selectable) \(\theta\) is the <q>launch angle.</q> For the time derivative we use Newton’s over-dot notation, e.g., \(dx/dt = \dot{x}\). </p>
 
 <p>\(~~~~\)With these notational conventions, our model is:</p>
 
@@ -291,7 +291,7 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 \end{eqnarray}
 \]</p>
 
-<p>where \(\displaystyle \frac{B_2}{m} = 0.0039 + \frac{0.0058}{1+\exp\left[\left(\left|\vec{\upsilon}-\vec{\omega}\right|-35\right)/5\right]}\) is given. Discretized this becomes:</p>
+<p>where \(\displaystyle \frac{B_2}{m} = 0.0039 + \frac{0.0058}{1+\exp\left[\left(\left|\vec{\upsilon}-\vec{\omega}\right|-35\right)/5\right]}\) is given in the text. Discretized this becomes:</p>
 
 <p>\[\begin{eqnarray}
 x_{n+1} &amp; = &amp; x_n + u_n\Delta t \\
@@ -303,7 +303,7 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega
 \end{eqnarray}
 \]</p>
 
-<p>with the same initial conditions. \(y\) vs. \(x\) and \(z\) vs. \(x\) trajectories are plotted below.</p>
+<p>with the same initial conditions. \(y\) vs. \(x\) and \(z\) vs. \(x\) trajectories are plotted below, and below that we give the time aloft, the primary horizontal range, and the lateral displacement (these are taken from the last \(t, x,\&amp;~z\) values before the first negative \(y\) value&mdash;given our time step of 0.1 second, we regard these as <q>close enough.) <b>Note the lateral displacement from even just a</q>mild&quot; 5 mph (8 kph) 45&deg; crosswind</b>: this author was surprised by its magnitude.</p>
 
 <p><sp id="GiorCPC2E14chartTitle" style="center"></sp>
 <center>
@@ -337,8 +337,25 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega
       </td>
     </tr>
   </table>
-</center>
-<sp id="GiorCPC2E14chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 14."></sp></p>
+</center></p>
+
+<p><sp id="GiorCPC2E14chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 14."></sp></p>
+
+<p><center>
+  <table style="width: 100%">
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <b>Flight time</b>: <span id="FlightTime"></span> seconds
+      </td>
+      <td style="border: none;">
+        <b>Range</b>: <span id="Range"></span> meters (<span id="rangeFeet"></span> feet)
+      </td>
+      <td style="border: none;">
+        <b>Lateral displacement</b>: <span id="DeltaZ"></span> meters (<span id="deltaZFeet"></span> feet)
+      </td>
+    </tr>
+  </table>
+</center></p>
 
 <h3><u>Exercise 2.21</u></h3>
 

@@ -264,6 +264,8 @@ function CoV(data, prob) {
 /* Unit Conversions */
 function feet2Meters(ft) {return 0.3048 * ft;}
 
+function meters2Feet(m) {return m / 0.3048;}
+
 function miles2Feet(mi) {return 5280 * mi;}
 
 function miles2Meters(mi) {return 1609.34 * mi;}
