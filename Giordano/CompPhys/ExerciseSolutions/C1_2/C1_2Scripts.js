@@ -31,7 +31,7 @@ function addEuler(fprime, data, tauA, tauB, NA0, NB0, tMax, n=n1) {
     } 
 }
 
-function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
+function GiorCPC1E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 1 Ex. 4 chart
     const tMax = 10.0;
     const NA0 = 100.0; 
     const NB0 = 0.0;
@@ -96,7 +96,7 @@ function GiorCPC1E4() { // Giordano Comp. Phys. Chpt. 1 Ex. 4 chart
     return makeC1E4Graph;
 }
 
-function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
+function GiorCPC1E5() { // Giordano/Nakanishi Comp. Phys. Chpt. 1 Ex. 5 chart
     const tMax = 5.0;
     const altNoIntvlsForm = document.getElementById("C1E5altNoIntvls");
     const A0Form = document.getElementById("A0");
@@ -156,7 +156,7 @@ function GiorCPC1E5() { // Giordano Comp. Phys. Chpt. 1 Ex. 5 chart
     return makeC1E5Graph;
 }
 
-function GiorCPC2E5() { // Giordano Comp. Phys. Chpt. 2 Ex. 5 chart
+function GiorCPC2E5() { // Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 5 chart
     const tMax = 50.0; // seconds; according to the text, this should be ample time to see
                                     // the difference between the effect of air resistance vs. none
     const m = 70.0; // kg

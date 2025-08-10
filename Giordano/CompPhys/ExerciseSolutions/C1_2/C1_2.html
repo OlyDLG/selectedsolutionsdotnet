@@ -95,6 +95,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <script src="./C2E14.js"></script>
 
+<script src="./C2E21.js"></script>
+
 <script>
     // Load google charts
     google.charts.load('current', {'packages':['corechart']});
@@ -102,6 +104,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
     google.charts.setOnLoadCallback(GiorCPC1E5);
     google.charts.setOnLoadCallback(GiorCPC2E5);
     google.charts.setOnLoadCallback(GiorCPC2E14);
+    google.charts.setOnLoadCallback(GiorCPC2E21);
 </script>
 
 <style>
@@ -120,6 +123,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 makeC1E5Graph = GiorCPC1E5();
 makeC2E5Graph = GiorCPC2E5();
 makeC2E14Graph = GiorCPC2E14();
+makeC2E21Graph = GiorCPC2E21();
 "></p>
 
 <h2><center>Selected Exercise Solutions</h2>
@@ -188,7 +192,7 @@ where \(B_0 = N_B(0)\). (Check: \(\frac d{dt}N_B + \beta N_B = \cancel{-\beta B_
     </tr>
   </table>
 </center>
-<sp id="GiorCPC1E4chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 1 Ex. 4."></sp></p>
+<sp id="GiorCPC1E4chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 1 Ex. 4."></sp></p>
 
 <h3><u>Exercise 1.5</u></h3>
 
@@ -247,7 +251,7 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
     </tr>
   </table>
 </center>
-<sp id="GiorCPC1E5chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 1 Ex. 5."></sp></p>
+<sp id="GiorCPC1E5chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 1 Ex. 5."></sp></p>
 
 <h3><u>Exercise 2.5</u></h3>
 
@@ -269,7 +273,7 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
       <input type="number" name="C2E5TransitionVIn" min="3" max="11" step="2" value="7"> (m/s)
    </form>
 </center>
-<sp id="GiorCPC2E5chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 5."></sp></p>
+<sp id="GiorCPC2E5chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 5."></sp></p>
 
 <h3><u>Exercise 2.14</u></h3>
 
@@ -277,7 +281,7 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)We are going to solve the general case, giving the reader five (horizontal) wind directions to choose from: tailwind, 45&deg; cross-tailwind, 90&deg; crosswind, 45&deg; cross-headwind, and headwind; \(x\) continues to denote the (fixed) initial horizontal direction of the batted ball, \(y\) continues to denote its altitude, and the new coordinate \(z\)&mdash;listed third in our ordered-triple vectors&mdash;denotes the horizontal orthogonal to \(x\), i.e., the <q>lateral</q> displacement. The ball’s velocity vector (whose magnitude is denoted simply by \(\upsilon\)) is \(\vec{\upsilon} = (u, v, w)\); the (constant) wind vector (speed \(\omega\) user-selectable) is \(\vec{\omega} = (\omega_x, 0, \omega_z) = (\omega\cos\phi, 0, \omega\sin\phi)\), \(\phi\) such that a tailwind corresponds to \(\phi=0\). The initial position \((x_0, y_0, z_0)\), in meters, is \((0, 1, 0)\); the initial velocity is \((\upsilon_0\cos\theta, \upsilon_0\sin\theta, 0)\), where \(\upsilon_0\) is the initial speed (converted to meters per second from user-selectable miles per hour) and (user-selectable) \(\theta\) is the <q>launch angle.</q> For the time derivative we use Newton’s over-dot notation, e.g., \(dx/dt = \dot{x}\). </p>
+<p>\(~~~~\)We are going to solve the general case, giving the reader five (horizontal) wind directions to choose from: tailwind, 45&deg; cross-tailwind, 90&deg; crosswind, 45&deg; cross-headwind, and headwind; \(x\) continues to denote the (fixed) initial horizontal direction of the batted ball, \(y\) continues to denote its altitude, and the new coordinate \(z\)&mdash;listed third in our ordered-triple vectors&mdash;denotes the horizontal orthogonal to \(x\), i.e., the <q>lateral</q> displacement. The ball’s velocity vector (whose magnitude is denoted simply by \(\upsilon\)) is \(\vec{\upsilon} = (u, v, w)\); the (constant) wind vector (speed \(W\) user-selectable) is \(\vec{W} = (W_x, 0, W_z) = (W\cos\phi, 0, W\sin\phi)\), \(\phi\) such that a tailwind corresponds to \(\phi=0\). The initial position \((x_0, y_0, z_0)\), in meters, is \((0, 1, 0)\); the initial velocity is \((\upsilon_0\cos\theta, \upsilon_0\sin\theta, 0)\), where \(\upsilon_0\) is the initial speed (converted to meters per second from user-selectable miles per hour) and (user-selectable) \(\theta\) is the <q>launch angle.</q> For the time derivative we use Newton’s over-dot notation, e.g., \(dx/dt = \dot{x}\). </p>
 
 <p>\(~~~~\)With these notational conventions, our model is:</p>
 
@@ -285,21 +289,21 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 \dot{x} &amp; = &amp; u, &amp; x_0 = 0 \\
 \dot{y} &amp; = &amp; v, &amp; y_0 = 1 \\
 \dot{z} &amp; = &amp; w, &amp; z_0 = 0 \\
-\dot{u} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{\omega}\right|(u-\omega_x), &amp; u_0 = \upsilon_0\cos\theta \\
-\dot{v} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{\omega}\right|v - g, &amp; v_0 = \upsilon_0\sin\theta \\
-\dot{w} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{\omega}\right|(w-\omega_z), &amp; w_0 = 0 \\
+\dot{u} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{W}\right|(u-W_x), &amp; u_0 = \upsilon_0\cos\theta \\
+\dot{v} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{W}\right|v - g, &amp; v_0 = \upsilon_0\sin\theta \\
+\dot{w} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{W}\right|(w-W_z), &amp; w_0 = 0 \\
 \end{eqnarray}
 \]</p>
 
-<p>where \(\displaystyle \frac{B_2}{m} = 0.0039 + \frac{0.0058}{1+\exp\left[\left(\left|\vec{\upsilon}-\vec{\omega}\right|-35\right)/5\right]}\) is given in the text. Discretized this becomes:</p>
+<p>where \(\displaystyle \frac{B_2}{m} = 0.0039 + \frac{0.0058}{1+\exp\left[\left(\left|\vec{\upsilon}-\vec{W}\right|-35\right)/5\right]}\) is given in the text. Discretized this becomes:</p>
 
 <p>\[\begin{eqnarray}
 x_{n+1} &amp; = &amp; x_n + u_n\Delta t \\
 y_{n+1} &amp; = &amp; y_n + v_n\Delta t \\
 z_{n+1} &amp; = &amp; z_n + w_n\Delta t \\
-u_{n+1} &amp; = &amp; u_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega}\right|(u_n-\omega_x)\Delta t \\
-v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega}\right|v_n + g\right)\Delta t \\
-w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega}\right|(w_n-\omega_z)\Delta t \\
+u_{n+1} &amp; = &amp; u_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\right|(u_n-W_x)\Delta t \\
+v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\right|v_n + g\right)\Delta t \\
+w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\right|(w_n-W_z)\Delta t \\
 \end{eqnarray}
 \]</p>
 
@@ -339,19 +343,19 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega
   </table>
 </center></p>
 
-<p><sp id="GiorCPC2E14chart" alt="Plot of Solutions to Giordano Comp. Phys. Chpt. 2 Ex. 14."></sp></p>
+<p><sp id="GiorCPC2E14chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 14."></sp></p>
 
 <p><center>
   <table style="width: 100%">
     <tr style="border: none; background: white">
       <td style="border: none;">
-        <b>Flight time</b>: <span id="FlightTime"></span> seconds
+        <b>Flight time</b>: <span id="C2E14FlightTime"></span> seconds
       </td>
       <td style="border: none;">
-        <b>Range</b>: <span id="Range"></span> meters (<span id="rangeFeet"></span> feet)
+        <b>Range</b>: <span id="C2E14Range"></span> meters (<span id="C2E14rangeFeet"></span> feet)
       </td>
       <td style="border: none;">
-        <b>Lateral displacement</b>: <span id="DeltaZ"></span> meters (<span id="deltaZFeet"></span> feet)
+        <b>Lateral displacement</b>: <span id="C2E14DeltaZ"></span> meters (<span id="C2E14deltaZFeet"></span> feet)
       </td>
     </tr>
   </table>
@@ -359,15 +363,65 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{\omega
 
 <h3><u>Exercise 2.21</u></h3>
 
-<h3>Solution</h3>
-
-<h3><u>Exercise 2.22</u></h3>
+<p>\(~~~~\)Calculate the trajectory of a batted ball with side spin, i.e., spin parallel to the vertical axis.</p>
 
 <h3>Solution</h3>
 
-<h3><u>Exercise 2.23</u></h3>
+<p>\(~~~~\)We could just use the model given in the text for a thrown ball with side spin, but in that model, drag was assumed negligible in the \(y~\&amp;~z\) directions, and spin was assumed negligible in the \(x\) direction; however, we know from having solved Exercise 2.14 that, due to the larger <q>launch</q> angle and the much longer time-of-flight, these forces are less likely to be negligible; we will ignore wind in this model, however. </p>
 
-<h3>Solution</h3>
+<p>\(~~~~\)Our continuous model is thus:</p>
+
+<p><sp id="GiorCPC2E21chartTitle" style="center"></sp>
+<center>
+  <table>
+    <tr style="border: none;">
+      <td style="border: none;">
+        <form id="C2E21ExitV" onchange="makeC2E21Graph()">
+          <label for="C2E21ExitVIn">Initial speed (miles/hour):</label>
+          <input type="number" name="C2E21ExitVIn" min="100" max="120" step="10" value="110">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="C2E21LaunchAngle" onchange="makeC2E21Graph()">
+          <label for="C2E21LaunchAngleIn">Launch angle (degrees):</label>
+          <input type="number" name="C2E21LaunchAngleIn" min="25" max="45" step="5" value="35">
+        </form>
+      </td>
+    </tr>
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <form id="C2E21windV" onchange="makeC2E21Graph()">
+          <label for="C2E21windVIn">Wind speed (miles/hour):</label>
+          <input type="number" name="C2E21windVIn" min="0" max="25" step="5" value="0">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="C2E21windDir" onchange="makeC2E21Graph()">
+          <label for="C2E21windDirIn">Wind direction (degrees, 0&deg; = tailwind):</label>
+          <input type="number" name="C2E21windDirIn" min="0" max="180" step="45" value="0">
+        </form>
+      </td>
+    </tr>
+  </table>
+</center></p>
+
+<p><sp id="GiorCPC2E21chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 21."></sp></p>
+
+<p><center>
+  <table style="width: 100%">
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <b>Flight time</b>: <span id="C2E21FlightTime"></span> seconds
+      </td>
+      <td style="border: none;">
+        <b>Range</b>: <span id="C2E21Range"></span> meters (<span id="C2E21rangeFeet"></span> feet)
+      </td>
+      <td style="border: none;">
+        <b>Lateral displacement</b>: <span id="C2E21DeltaZ"></span> meters (<span id="C2E21deltaZFeet"></span> feet)
+      </td>
+    </tr>
+  </table>
+</center></p>
 
 <h3>Credits</h3>
 
