@@ -367,7 +367,7 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the <q>neglection</q> of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, we know, or at least should suspect, from having solved Exercise 2.14 that the larger initial vertical velocity component and the longer flight time (at least) <i>might</i> make these neglections untenable. Thus we will include drag in all three velocity component equations, and the general Magnus force&mdash;given in text footnote 22 to be \(\vec{F}_M = S_0\vec{\omega}\times \vec{\upsilon}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\omega}\times \vec{\upsilon}\) if \(\vec{\omega}\) is purely vertical?) In order to be able to see just the effect of spin, however, we will neglect wind in this Exercise.</p>
+<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the neglecting of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, from having solved Exercise 2.14, we know, or at least should suspect, that the larger initial vertical velocity component and the longer flight time (at least) <i>might</i> make these <q>neglections</q> unsupportable. Thus we will include drag<a href="#Note">*</a> in all three velocity component equations, and include the general Magnus force&mdash;given in Text footnote 22 to be \(\vec{F}_M = S_0\vec{\omega}\times \vec{\upsilon}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\omega}\times \vec{\upsilon}\) if \(\vec{\omega}\) is purely vertical?)</p>
 
 <p>\(~~~~\)Now, the cross product is an <q>oriented</q> operation: \(\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})\), i.e., <q>order matters.</q> Consequently, as a guard against making careless mistakes, in this Exercise, we are going to assign \(x, y, z~\&amp;~u, v, w\) their more customary roles: \(x\) still denotes the initial horizontal direction of flight, but now \(y\) denotes the lateral horizontal displacement, and \(z\) represents the vertical position (and \(u, v, w\) represent their respective derivatives). With this as our coordinate system, our continuous model is:</p>
 
@@ -380,6 +380,22 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
 \dot{w} &amp; = &amp; -\frac{B_2}{m}\upsilon w - g, &amp; w_0 = \upsilon_0\sin\theta \\
 \end{eqnarray}
 \]</p>
+
+<p>where, as in the text, \(\displaystyle\frac{S_0}{m} = 4.1\times 10^{-4}, \frac{B_2}{m}\) is as in Exercise 2.14, and \(\vec{\omega} = (0,0,\omega), \omega\) user-selectable. Discretized, this becomes:</p>
+
+<p>\[\begin{eqnarray}
+x_{n+1} &amp; = &amp; x_n + u_n\Delta t \\
+y_{n+1} &amp; = &amp; y_n + v_n\Delta t \\
+z_{n+1} &amp; = &amp; z_n + w_n\Delta t \\
+u_{n+1} &amp; = &amp; u_n -\left(\frac{{B_2}_{n}}{m}\upsilon_n u_n + \frac{S_0}{m}(\vec{\omega} \times \vec{\upsilon}_n)_x\right)\Delta t \\
+v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n v_n + \frac{S_0}{m}(\vec{\omega} \times \vec{\upsilon}_n)_y\right)\Delta t \\
+w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n w_n + g\right)\Delta t \\
+\end{eqnarray}
+\]</p>
+
+<p>Results are plotted below.</p>
+
+<p><a name="Note" onclick="window.history.back()">*</a>In order to highlight the effect of spin, we do not include wind in this Exercise; additionally, for the same purpose, we enable the reader to <q>turn off</q> (linear) drag in the lateral direction, despite that being <q>unphysical</q> (because without air resistance, spin does not give rise to a Magnus force).</p>
 
 <p><sp id="GiorCPC2E21chartTitle" style="center"></sp>
 <center>
@@ -400,15 +416,15 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
     </tr>
     <tr style="border: none; background: white">
       <td style="border: none;">
-        <form id="C2E21windV" onchange="makeC2E21Graph()">
-          <label for="C2E21windVIn">Wind speed (miles/hour):</label>
-          <input type="number" name="C2E21windVIn" min="0" max="25" step="5" value="0">
+        <form id="C2E21omega" onchange="makeC2E21Graph()">
+          <label for="C2E21omegaIn">Spin (rpm):</label>
+          <input type="number" name="C2E21omegaIn" min="0" max="3000" step="500" value="2000">
         </form>
       </td>
       <td style="border: none;">
-        <form id="C2E21windDir" onchange="makeC2E21Graph()">
-          <label for="C2E21windDirIn">Wind direction (degrees, 0&deg; = tailwind):</label>
-          <input type="number" name="C2E21windDirIn" min="0" max="180" step="45" value="0">
+        <form id="C2E21inclDrag" onchange="makeC2E21Graph()">
+          <label for="C2E21inclDragIn">Include drag:</label>
+          <input type="checkbox" name="C2E21inclDragIn" checked>
         </form>
       </td>
     </tr>
@@ -427,7 +443,7 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
         <b>Range</b>: <span id="C2E21Range"></span> meters (<span id="C2E21rangeFeet"></span> feet)
       </td>
       <td style="border: none;">
-        <b>Lateral displacement</b>: <span id="C2E21DeltaZ"></span> meters (<span id="C2E21deltaZFeet"></span> feet)
+        <b>Lateral displacement</b>: <span id="C2E21DeltaY"></span> meters (<span id="C2E21deltaYFeet"></span> feet)
       </td>
     </tr>
   </table>

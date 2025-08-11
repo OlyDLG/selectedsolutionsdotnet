@@ -280,6 +280,8 @@ function miph2Metps(mph) {return 0.44704 * mph;}
 
 function deg2Rad(deg) {return Math.PI * deg / 180;}
 
+function rpm2Radps(rpm) {return 2 * Math.PI * rpm / 60;}
+
 /* Google Charts Support Functions 
 Not presently needed/used, development suspended
 
