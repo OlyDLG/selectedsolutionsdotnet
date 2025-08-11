@@ -35,8 +35,9 @@
 
 Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.
 
-## Text Solution Sets (more to come)
-Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
+## Text Solution Sets
+
+Boyce, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
       <ul> Chapter 6: The Laplace Transform
             <ul>[Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
             </ul>
@@ -44,6 +45,10 @@ Boyce, W. E., and R. C. DiPrima, 1992, <i>Elementary Differential Equations and 
       <ul> Chapter 9: Nonlinear Differential Equations and Stability
             <ul>[Section 1: The Phase Plane: Linear Systems](./BoyceDiPrima/C9/C9S1.html)
             </ul>
+      </ul>
+
+Giordano, N. J. and H. Nakanishi, 2006, <i>Computational Physics, Second Edition.</i>, Pearson/Prentice-Hall, Upper Saddle River, NJ.
+      <ul>[Chapters 1 ("A First Numerical Problem") & 2 ("Realistic Projectile Motion")](./Giordano/CompPhys/ExerciseSolutions/C1_2/C1_2.html)
       </ul>
 
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
