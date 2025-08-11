@@ -290,7 +290,7 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 \dot{y} &amp; = &amp; v, &amp; y_0 = 1 \\
 \dot{z} &amp; = &amp; w, &amp; z_0 = 0 \\
 \dot{u} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{W}\right|(u-W_x), &amp; u_0 = \upsilon_0\cos\theta \\
-\dot{v} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{W}\right|v - g, &amp; v_0 = \upsilon_0\sin\theta \\
+\dot{v} &amp; = &amp; -\frac{B_2}{m}\upsilon v - g, &amp; v_0 = \upsilon_0\sin\theta \\
 \dot{w} &amp; = &amp; -\frac{B_2}{m}\left|\vec{\upsilon}-\vec{W}\right|(w-W_z), &amp; w_0 = 0 \\
 \end{eqnarray}
 \]</p>
@@ -302,7 +302,7 @@ x_{n+1} &amp; = &amp; x_n + u_n\Delta t \\
 y_{n+1} &amp; = &amp; y_n + v_n\Delta t \\
 z_{n+1} &amp; = &amp; z_n + w_n\Delta t \\
 u_{n+1} &amp; = &amp; u_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\right|(u_n-W_x)\Delta t \\
-v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\right|v_n + g\right)\Delta t \\
+v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n v_n + g\right)\Delta t \\
 w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\right|(w_n-W_z)\Delta t \\
 \end{eqnarray}
 \]</p>
@@ -363,13 +363,23 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
 
 <h3><u>Exercise 2.21</u></h3>
 
-<p>\(~~~~\)Calculate the trajectory of a batted ball with side spin, i.e., spin parallel to the vertical axis.</p>
+<p>\(~~~~\)Calculate the trajectory of a batted ball with side spin, i.e., angular velocity pseudovector parallel to the vertical axis.</p>
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)We could just use the model given in the text for a thrown ball with side spin, but in that model, drag was assumed negligible in the \(y~\&amp;~z\) directions, and spin was assumed negligible in the \(x\) direction; however, we know from having solved Exercise 2.14 that, due to the larger <q>launch</q> angle and the much longer time-of-flight, these forces are less likely to be negligible; we will ignore wind in this model, however. </p>
+<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the <q>neglection</q> of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, we know, or at least should suspect, from having solved Exercise 2.14 that the larger initial vertical velocity component and the longer flight time (at least) <i>might</i> make these neglections untenable. Thus we will include drag in all three velocity component equations, and the general Magnus force&mdash;given in text footnote 22 to be \(\vec{F}_M = S_0\vec{\omega}\times \vec{\upsilon}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\omega}\times \vec{\upsilon}\) if \(\vec{\omega}\) is purely vertical?) In order to be able to see just the effect of spin, however, we will neglect wind in this Exercise.</p>
 
-<p>\(~~~~\)Our continuous model is thus:</p>
+<p>\(~~~~\)Now, the cross product is an <q>oriented</q> operation: \(\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})\), i.e., <q>order matters.</q> Consequently, as a guard against making careless mistakes, in this Exercise, we are going to assign \(x, y, z~\&amp;~u, v, w\) their more customary roles: \(x\) still denotes the initial horizontal direction of flight, but now \(y\) denotes the lateral horizontal displacement, and \(z\) represents the vertical position (and \(u, v, w\) represent their respective derivatives). With this as our coordinate system, our continuous model is:</p>
+
+<p>\[\begin{eqnarray}
+\dot{x} &amp; = &amp; u, &amp; x_0 = 0 \\
+\dot{y} &amp; = &amp; v, &amp; y_0 = 0 \\
+\dot{z} &amp; = &amp; w, &amp; z_0 = 1 \\
+\dot{u} &amp; = &amp; -\frac{B_2}{m}\upsilon u - \frac{S_0}{m}(\vec{\omega} \times \vec{\upsilon})_x, &amp; u_0 = \upsilon_0\cos\theta \\
+\dot{v} &amp; = &amp; -\frac{B_2}{m}\upsilon v - \frac{S_0}{m}(\vec{\omega} \times \vec{\upsilon})_y, &amp; v_0 = 0 \\
+\dot{w} &amp; = &amp; -\frac{B_2}{m}\upsilon w - g, &amp; w_0 = \upsilon_0\sin\theta \\
+\end{eqnarray}
+\]</p>
 
 <p><sp id="GiorCPC2E21chartTitle" style="center"></sp>
 <center>
