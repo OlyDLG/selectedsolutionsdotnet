@@ -78,11 +78,11 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
         			    legend: 'bottom',
         			    width: 1000, height: 400,
         			    series: {
-        				    1: {lineDashStyle: [1, 1]},
-         				    2: {lineDashStyle: [2, 2]},
+        				    1: {lineDashStyle: [6, 3]},
+         				    2: {lineDashStyle: [4, 2]},
         			    	    3: {lineDashStyle: [3, 3]},
-        			    	    4: {lineDashStyle: [4, 4]},
-        			    	    5: {lineDashStyle: [5, 5]}}
+        			    	    4: {lineDashStyle: [2, 4]},
+        			    	    5: {lineDashStyle: [3, 6]}}
             			    };
         // Display the chart inside the <sp> element with id="GiorCPC3E4chart"
         var chart = new google.visualization.LineChart(document.getElementById("GiorCPC3E4chart"));
