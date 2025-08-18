@@ -84,7 +84,7 @@ function isNumericalArray(data) {
 }
 
 Number.prototype.zeroIfClose = function(prec) {
-  var test = Math.pow(10,prec)*this.valueOf();
+  var test = Math.pow(10, prec) * this.valueOf();
   if (Math.round(test)==0) return 0;
   else return this.valueOf();
 };

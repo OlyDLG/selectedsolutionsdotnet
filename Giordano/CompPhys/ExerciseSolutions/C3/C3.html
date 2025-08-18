@@ -1,0 +1,285 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C3</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="../../../../Utilities.js"></script>
+
+<script src="./C3E4.js"></script>
+
+<script>
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(GiorCPC3E4);
+</script>
+
+<style>
+  body {font-family: Palatino;}
+  form.pad {padding: 0px 0px 13px;}
+  .text {text-align: left;}
+  .cen {text-align: center;}
+  .num {text-align: right;}
+  .text {text-align: left;}
+  .sum {font-weight: bold;}
+</style>
+
+<p>\(\require{cancel}\)</p>
+
+<p><body onload="makeC3E4Graph = GiorCPC3E4(); 
+"></p>
+
+<h2><center>Selected Exercise Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Giordano, N. J. &amp; Nakanishi, H. 2006. <i>Computational Physics, Second Edition.</i></h3>
+
+<h3><center> Pearson/Prentice-Hall, Upper Saddle River, NJ.</h3>
+
+<h3><center>Chapter 3: <q>Oscillatory Motion and Chaos</q></h3>
+
+<h3><center>&copy; 2025 by</h3>
+
+<h3><center>David Lawrence Goldsmith</h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
+
+<p><i>Note 1: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p><i>Note 2: When convenient, we use the <q>over-dot</q> notation to denote ordinary differentiation, e.g., \(\displaystyle \dot{x} = \frac{dx}{dt}, \ddot{x} = \frac{d^2x}{dt^2}\), etc.</i></p>
+
+<h3><u>Exercise 3.4-ish</u></h3>
+
+<p>\(~~~~\)Numerically solve </p>
+
+<p>\[\begin{eqnarray}
+\ddot{x} &amp; = &amp; -x^{\alpha} \\
+x(0) &amp; = &amp; A \\
+\dot{x}(0) &amp; = &amp; 0  
+\end{eqnarray}\]</p>
+
+<p>for various positive odd integer values of \(\alpha\) and the amplitude, \(A\), and thereby show that the period depends on the amplitude, except for \(\alpha=1\).</p>
+
+<h3>Solution</h3>
+
+<p><sp id="GiorCPC3E4chartTitle" style="center"></sp>
+<center>
+  <form id="C3E4ampForm" onchange="makeC3E4Graph()">
+    <label for="C3E4AmpIn">Amplitude (initial displacement, length):</label>
+    <input type="number" name="C3E4AmpIn" min="0.5" max="2" step="0.5" value="1">
+  </form>
+</center></p>
+
+<p><sp id="GiorCPC3E4chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4."></sp></p>
+
+<!---
+<center>
+  <table style="width: 100%">
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <b>Flight time</b>: <span id="C2E21FlightTime"></span> seconds
+      </td>
+      <td style="border: none;">
+        <b>Range</b>: <span id="C2E21Range"></span> meters (<span id="C2E21rangeFeet"></span> feet)
+      </td>
+      <td style="border: none;">
+        <b>Lateral displacement</b>: <span id="C2E21DeltaY"></span> meters (<span id="C2E21deltaYFeet"></span> feet)
+      </td>
+    </tr>
+  </table>
+</center>
+
+### _Exercise 3.5_ 
+
+$~~~~$Analytically obtain the period of oscillation of $$\ddot{x} = -kx^{\alpha},~(k \gt 0)$$
+for "general" values of $\alpha$ in terms of "certain special functions," and describe how the relationship between the period and the amplitude depends on $\alpha$.
+
+### Solution
+
+$~~~~$We present our results, including numerical, for this Exercise, despite being unable to obtain an analytic expression for the period of oscillation for "general" values of $\alpha$. Indeed, it is unclear just how "general" values of $\alpha$ we’re supposed to be able to do this for: if $\alpha$ is an even integer, $\ddot{x} \lt 0$ for real $x\ne 0$ and the motion won’t be oscillatory; if $\alpha$ is a negative odd integer, $\ddot{x} \rightarrow \infty$ as $x \rightarrow 0$; and for almost all non-integer real $\alpha$, negative values of $x$ result in complex number values of $\ddot{x}.$ This leaves us the positive odd integers (and their reciprocals) to consider; it turns out even just the former (excluding $\alpha = 1$, which, of course, results in simple harmonic motion) are challenging enough to deal with, so we limit our discussion&mdash;and numerical exploration&mdash;to those.
+
+$~~~~$Following the hint in the text, $\displaystyle \dot{x} \ddot{x} = \frac12\frac{d}{dt}\left[(\dot{x})^2\right] = -kx^{\alpha}\frac{dx}{dt} \Rightarrow$ (upon multiplying through by $2dt$, integrating, and setting $\dot{x} = \upsilon$) $\int d [(\dot{x})^2] = \upsilon^2 = -2k\int x^{\alpha}dx = -\mu^2x^{\beta} + C_1, \beta = \alpha + 1, \mu = \displaystyle \sqrt{\frac{2k}{\beta}}$. Denoting $\upsilon(x=0) = \upsilon_0$, we have $C_1 = \upsilon_0^2 \Rightarrow \upsilon = \displaystyle \frac{dx}{dt} = \pm\sqrt{\upsilon_0^2 - \mu^2x^{\beta}}$; separating the variables and integrating yields $\displaystyle \int\frac{dx}{\pm\sqrt{\upsilon_0^2 - \mu^2 x^{\beta}}} = \int dt = t + C_2$. If we "start the clock," i.e., choose $t=0$, when $x=0$ and choose the positive $x$ direction such that $x$ is initially increasing, we have:
+
+$$t = \int_0^x \frac{d\xi}{\sqrt{\upsilon_0^2-\mu^2\xi^\beta}}.$$
+
+$~~~~$For $\beta = 4~(\alpha = 3)$ this is a so-called [elliptic integral](https://en.wikipedia.org/wiki/Elliptic_integral), not (finitely) expressible in terms of elementary functions; and the (invertible) function $t(x)$ it defines is in the family of [elliptic functions](https://en.wikipedia.org/wiki/Elliptic_function); for the larger values of $\alpha$ of interest to us, i.e., for $\beta \in \{6,8,10,...\},t(x)$ is a "hyperelliptic" function ([Sokolnikoff, 1934](#Sokolnikoff)). We will exhibit (numerical approximations) of solutions for some of the hyperelliptic cases, e.g., $\alpha = 5, 7, 9$; but for the remainder of our analytic discussion we confine ourselves to the elliptic case: 
+
+$$t = \int_0^x \frac{d\xi}{\sqrt{\upsilon_0^2-\mu^2\xi^4}}.$$
+
+$~~~~$
+
+<sp id="GiorCPC3E5chartTitle" style="center"></sp>
+<center>
+  <table>
+    <tr style="border: none;">
+      <td style="border: none;">
+        <form id="C2E21ExitV" onchange="makeC2E21Graph()">
+          <label for="C2E21ExitVIn">Initial speed (miles/hour):</label>
+          <input type="number" name="C2E21ExitVIn" min="100" max="120" step="10" value="110">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="C2E21LaunchAngle" onchange="makeC2E21Graph()">
+          <label for="C2E21LaunchAngleIn">Launch angle (degrees):</label>
+          <input type="number" name="C2E21LaunchAngleIn" min="25" max="45" step="5" value="35">
+        </form>
+      </td>
+    </tr>
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <form id="C2E21omega" onchange="makeC2E21Graph()">
+          <label for="C2E21omegaIn">Spin (rpm):</label>
+          <input type="number" name="C2E21omegaIn" min="0" max="3000" step="500" value="2000">
+        </form>
+      </td>
+      <td style="border: none;">
+        <form id="C2E21inclDrag" onchange="makeC2E21Graph()">
+          <label for="C2E21inclDragIn">Include drag:</label>
+          <input type="checkbox" name="C2E21inclDragIn" checked>
+        </form>
+      </td>
+    </tr>
+  </table>
+</center>
+
+<sp id="GiorCPC3E5chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 5."></sp>
+
+<center>
+  <table style="width: 100%">
+    <tr style="border: none; background: white">
+      <td style="border: none;">
+        <b>Flight time</b>: <span id="C2E21FlightTime"></span> seconds
+      </td>
+      <td style="border: none;">
+        <b>Range</b>: <span id="C2E21Range"></span> meters (<span id="C2E21rangeFeet"></span> feet)
+      </td>
+      <td style="border: none;">
+        <b>Lateral displacement</b>: <span id="C2E21DeltaY"></span> meters (<span id="C2E21deltaYFeet"></span> feet)
+      </td>
+    </tr>
+  </table>
+</center>
+
+### References
+
+$~~~~$<a name="Milne-Thompson" onclick="window.history.back()">Milne-Thomson</a>, L. M., "16. Jacobian Elliptic Functions and Theta Functions" and "17. Elliptic Integrals" in Abromowitz, M. & I. A. Stegun, 1972, <i>Handbook of Mathematical Functions</i>, Dover Publications, New York.
+
+$~~~~$<a name="Sokolnikoff" onclick="window.history.back()">Sokolnikoff</a>, I. S. & E. S. Sokolnikoff, 1934, <i>Higher Mathematics for Engineers and Physicists</i>, McGraw-Hill, New York.
+--->
+
+<h3>Credits</h3>
+
+<p>Graphs made using <a href="https://developers.google.com/chart">Google Charts JavaScript API</a>.</p>
+
+<h3>Please Donate:</h3>
+
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
