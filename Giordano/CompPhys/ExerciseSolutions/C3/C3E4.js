@@ -79,7 +79,7 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
         			    width: 1000, height: 400,
         			    series: {
         				    1: {lineDashStyle: [6, 3]},
-         				    2: {lineDashStyle: [4, 2]},
+         		 	    2: {lineDashStyle: [4, 2]},
         			    	    3: {lineDashStyle: [3, 3]},
         			    	    4: {lineDashStyle: [2, 4]},
         			    	    5: {lineDashStyle: [3, 6]}}
