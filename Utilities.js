@@ -140,6 +140,17 @@ function ExplicitEuler(df, dt, fn, tn, params) {
     return [fn[0] + dt * dfA, fn[1] + dt * dfB];
 }
 
+function RK22D(f, x, t, dt) {
+  // x = [x1, x2], dx1 = x2dt, dx2 = f(x,t)dt 
+    [x1, x2] = x;
+    x1p = x1 + 0.5 * x2 * dt;
+    x2p = x2 + 0.5 * f(x1, t) * dt;
+    tp  = t  + 0.5 * dt;
+    x1 += x2p * dt;
+    x2 += f(x1p, tp) * dt;
+    return [x1, x2];
+}
+
 /* MATRIX FUNCTIONS */
 
 function scalarmult(a, u) {

@@ -1,14 +1,11 @@
 function GiorCPC3E8() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8 chart
     const tmin = 0;
-    var N = 4001;
-    var dt = 0.001 * Math.PI;
+    var N = 401;
+    var dt = 0.01 * Math.PI;
     const ampForm = document.getElementById("C3E8ampForm");
     
-    function fnext(f) { //Use Euler-Cromer
-        [th, w] = f;
-        w -= Math.sin(th) * dt; // update w first
-        th += w * dt; // use updated w to calculate updated th
-        return [th, w];
+    function d2xdt2(x, t) { // For use with RK22D
+        return -1 * Math.sin(x);
     }
 
     function estPeriod(f, fnext, t, tnext) {
@@ -31,14 +28,14 @@ function GiorCPC3E8() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8 chart
         let data = [['t', '\u03B8(t)', 'Acos[(2\u03C0/T)t]']];
         for (let i=0; i < N; i++) {
             data.push([t, 180 * fn[0] / Math.PI, NaN]);
-            fnp1 = fnext(fn);
+            fnp1 = RK22D(d2xdt2, fn, t, dt); // 2nd order RK for 2D system
             if (T == 0) {
                 T = estPeriod(fn[0], fnp1[0], t, t + dt);
             }
             t += dt;
             fn = fnp1;
         }
-        for (i=0; i < N; i+=10) {
+        for (i=0; i < N; i++) {
             t = i * dt;
             data.push([t, NaN, A * Math.cos(2*Math.PI*t/T)]);
         }
@@ -59,7 +56,7 @@ function GiorCPC3E8() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8 chart
  	               vAxis: {title: 'Angular Displacement (degrees)'},
  	               series: {1: {lineDashStyle: [6, 6]}},
  	               width: 1000, height: 400};
-        // Display the chart inside the <sp> element with id="GiorCPC3E8chart"
+        // Display the chart inside the <div> element with id="GiorCPC3E8chart"
         var chart = new google.visualization.LineChart(document.getElementById("GiorCPC3E8chart"));
         chart.draw(dtable, options);
         dsEBIiH("GiorCPC3E8chartTitle", title);
