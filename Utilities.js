@@ -282,7 +282,9 @@ function deg2Rad(deg) {return Math.PI * deg / 180;}
 
 function rpm2Radps(rpm) {return 2 * Math.PI * rpm / 60;}
 
-/* Google Charts Support Functions 
+/* Google Charts Support */
+const globalChartOptions = {chartArea: {top: 10}, legend: 'bottom'};
+/*
 Not presently needed/used, development suspended
 
 function addDataSeries(DataTable, newDataArray, newDataLabels) {

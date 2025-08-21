@@ -90,19 +90,16 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
         }
         var dtable = google.visualization.arrayToDataTable(data);
         var title = "<center><h3>Solutions of d<sup>2</sup>x/dt<sup>2</sup> = &minus;x<sup>&alpha;</sup> for &alpha; = 1, 3, 5, 7</center>";
-        var options = {//allowHtml: true,
-       			       //title: title,
-        			    hAxis: {title: 'Time', ticks: ticks},
- 			    vAxis: {title: 'Displacement'},
-        			    legend: 'bottom',
-        			    width: 1000, height: 400,
-        			    series: {
-        				    1: {lineDashStyle: [6, 3]},
-         		 	    2: {lineDashStyle: [4, 2]},
-        			    	    3: {lineDashStyle: [3, 3]},
-        			    	    4: {lineDashStyle: [2, 4]},
-        			    	    5: {lineDashStyle: [3, 6]}}
-            			    };
+        var options = {...globalChartOptions,
+		      hAxis: {title: 'Time', ticks: ticks},
+		      vAxis: {title: 'Displacement'},
+		      width: 1000, height: 400,
+		      series: {1: {lineDashStyle: [6, 3]},
+                                2: {lineDashStyle: [4, 2]},
+                                3: {lineDashStyle: [3, 3]},
+                                4: {lineDashStyle: [2, 4]},
+                                5: {lineDashStyle: [3, 6]}}
+		      };
         // Display the chart inside the <sp> element with id="GiorCPC3E4chart"
         var chart = new google.visualization.LineChart(document.getElementById("GiorCPC3E4chart"));
         chart.draw(dtable, options);
