@@ -45,7 +45,8 @@ function GiorCPC3E8() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8 chart
         var dtable = google.visualization.arrayToDataTable(data);
         var title = "<center><h3>Solutions of d<sup>2</sup>\u03B8/dt<sup>2</sup> = &minus;sin\u03B8</center>";
         var options = {hAxis: {title: 'Time\nSolution Period = ' + (T/Math.PI).toFixed(2) + '\u03C0',
-                               ticks: [{v: 0.5 * Math.PI, f: '\u03C0/2'}, 
+                               ticks: [{v: 0, f: '0'},
+				     {v: 0.5 * Math.PI, f: '\u03C0/2'}, 
 				     {v: Math.PI, f: '\u03C0'},
 				     {v: 1.5 * Math.PI, f: '3\u03C0/2'},
 				     {v: 2 * Math.PI, f: '2\u03C0'},
@@ -57,6 +58,7 @@ function GiorCPC3E8() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8 chart
  	               vAxis: {title: 'Angular Displacement (degrees)'},
         		      series: {1: {lineDashStyle: [6, 6]}},
                        legend: 'bottom',
+//                       chartArea: {top: -20},
         		      width: 1000, height: 400};
         // Display the chart inside the <sp> element with id="GiorCPC3E8chart"
         var chart = new google.visualization.LineChart(document.getElementById("GiorCPC3E8chart"));

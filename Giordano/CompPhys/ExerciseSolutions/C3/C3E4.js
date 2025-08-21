@@ -30,18 +30,37 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
 
     function makeC3E4Graph() {
         let A = ampForm[0].valueAsNumber;
+        var ticks = [{v: 0, f: '0'}, 
+                     {v: 0.5 * Math.PI, f: '\u03C0/2'}, 
+                     {v: Math.PI, f: '\u03C0'},
+                     {v: 1.5 * Math.PI, f: '3\u03C0/2'},
+                     {v: 2 * Math.PI, f: '2\u03C0'}];
         switch (A) {
             case 0.5:
                 N = 6001;
                 dt = 6 * Math.PI / (N - 1);
+                ticks = ticks.concat([{v: 2.5 * Math.PI, f: '5\u03C0/2'},
+                                      {v: 3 * Math.PI, f: '3\u03C0'},
+                                      {v: 3.5 * Math.PI, f: '7\u03C0/2'},
+                                      {v: 4 * Math.PI, f: '4\u03C0'},
+                                      {v: 4.5 * Math.PI, f: '9\u03C0/2'},
+                                      {v: 5 * Math.PI, f: '5\u03C0'},
+                                      {v: 5.5 * Math.PI, f: '11\u03C0/2'},
+                                      {v: 6 * Math.PI, f: '6\u03C0'}]);
                 break;
             case 1.0:
                 N = 4001;
                 dt = 4 * Math.PI / (N - 1);
+	        ticks = ticks.concat([{v: 2.5 * Math.PI, f: '5\u03C0/2'},
+                                      {v: 3 * Math.PI, f: '3\u03C0'},
+                                      {v: 3.5 * Math.PI, f: '7\u03C0/2'},
+                                      {v: 4 * Math.PI, f: '4\u03C0'}]);
                 break;
             case 1.5:
                 N = 3001;
                 dt = 3 * Math.PI / (N - 1);
+	        ticks = ticks.concat([{v: 2.5 * Math.PI, f: '5\u03C0/2'},
+                                      {v: 3 * Math.PI, f: '3\u03C0'}]);
                 break;
             case 2.0:
                 N = 2001;
@@ -73,8 +92,8 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
         var title = "<center><h3>Solutions of d<sup>2</sup>x/dt<sup>2</sup> = &minus;x<sup>&alpha;</sup> for &alpha; = 1, 3, 5, 7</center>";
         var options = {//allowHtml: true,
        			       //title: title,
-        			   hAxis: {title: 'Time'},
- 			           vAxis: {title: 'Displacement'},
+        			    hAxis: {title: 'Time', ticks: ticks},
+ 			    vAxis: {title: 'Displacement'},
         			    legend: 'bottom',
         			    width: 1000, height: 400,
         			    series: {
