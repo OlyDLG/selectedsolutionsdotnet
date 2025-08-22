@@ -140,6 +140,14 @@ function ExplicitEuler(df, dt, fn, tn, params) {
     return [fn[0] + dt * dfA, fn[1] + dt * dfB];
 }
 
+function EulerCromer2D(f, x, t, dt) {
+  // x = [x1, x2], dx1 = x2dt, dx2 = f(x,t)dt 
+    [x1, x2] = x;
+    x2 += f(x1, t) * dt; // update x2 first
+    x1 += x2 * dt; // update x1 using updated x2
+    return [x1, x2];
+}
+
 function RK22D(f, x, t, dt) {
   // x = [x1, x2], dx1 = x2dt, dx2 = f(x,t)dt 
     [x1, x2] = x;
