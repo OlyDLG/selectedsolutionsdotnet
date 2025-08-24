@@ -179,7 +179,7 @@ c = \left[\begin{matrix}
 \frac{3+\sqrt3}{6}
 \end{matrix}\right]
 \)
-(<a href="#QinZhu">Qin &amp; Zhu, 1991</a>). Expanded, this is:
+(<a href="#QinZhu">Qin &amp; Zhu, 1991</a>)<a href="#Note1">\(^1\)</a>. Expanded, this is:
 \[\begin{eqnarray}
 g_1 &amp; = &amp; x_n + \frac{3+\sqrt3}{6}h\upsilon_n \\
 g_2 &amp; = &amp; x_n + \frac{3-\sqrt3}{6}h\upsilon_n + \frac{2-\sqrt3}{12}h^2f(g_1) \\
@@ -240,7 +240,13 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
 
 <div class="chart" id="GiorCPC3E8chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8."></div>
 
+<h3>Notes</h3>
+
+<p><a name="Note1" onclick="window.history.back()">1.</a> In <a href="#QinZhu">Qin &amp; Zhu, 1991</a>, the summation term in the expression for \(g_i\) is given as \(\sum_{j=1}^{s}\), where \(s\) is the number of <q>stages</q> of the method, i.e., 3 for the method we take from that source. However, as the eventual resulting matrix for \(a_{ij}\) clearly shows, for each \(g_i\) it is only necessary to sum to \(i-1\), i.e., each \(g_i\) depends only on preceding \(g_i\) values. This is an inherent characteristic of this being an <i>explicit</i> (as opposed to an implicit) RK method (<a href="#Butcher">Butcher, 2008</a>), and thus we feel justified, by the increased clarity, of the minor and inconsequential deviation from the primary source of expressing the sum as \(\sum_{j=1}^{i-1}\).</p>
+
 <h3>References</h3>
+
+<p><a name="Butcher" onclick="window.history.back()">Butcher</a>, J. C., 2008, <i>Numerical Methods for Ordinary Differential Equations, Second Edition</i>, John Wiley &amp; Sons, West Sussex, England, pg. 94.</p>
 
 <p><a name="QinZhu" onclick="window.history.back()">Qin</a>, Meng-Zhao and Wen-Jie Zhu, 1991, <a href="https://www.sciencedirect.com/science/article/pii/089812219190209M/pdf?md5=02fb14175fac36fd5d1961ee064420c4&amp;pid=1-s2.0-089812219190209M-main.pdf"><q>Canonical Runge-Kutta-Nyström (RKN) Methods for Second Order Ordinary Differential Equations,</q></a> <i>Computers Math. Applic.</i> <b>22</b>(9) pp. 85-95.</p>
 
