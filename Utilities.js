@@ -159,6 +159,27 @@ function RK22D(f, x, t, dt) {
     return [x1, x2];
 }
 
+function RKN42Dauton(f, x, h) {
+  /* 4-th order Runge-Kutta-Nystrom method for 2-D autonomous system, i.e., for
+     x=[x1,x2], x'=f(x), x(0)=A, x'(0)=B
+     Ref: Qin, M-Z & W-J Zhu, 1991,"Canonical Runge-Kutta-Nystrom (RKN) Methods for 
+          Ordinary Differential Equations," Computers Math. Applic. 22(9), pp 85-95. 
+  */
+    const rt3 = Math.sqrt(3), a21 = (2-rt3)/12, a32 = rt3/6;
+    const b1 = (3-2*rt3)/12, b2 = 0.5, b3 = (3+2*rt3)/12;
+    const bb1 = (5-3*rt3)/24, bb2 = (3+rt3)/12, bb3 = (1+rt3)/24;
+    const c1 = 2 * bb2, c2 = (3-rt3)/6, c3 = c1;
+    const h2 = h*h;
+
+    [x1, x2] = x;
+    g1 = x1 + c1*h*x2, f1 = f(g1);
+    g2 = x1 + c2*h*x2 + h2*a21*f(g1), f2 = f(g2);
+    g3 = x1 + c3*h*x2 + h2*a32*f(g2), f3 = f(g3);
+    x1 += h*x2 + h2*(bb1*f1 + bb2*f2 + bb3*f3);
+    x2 += h*(b1*f1 + b2*f2 + b3*f3);
+    return [x1, x2];
+}
+
 /* MATRIX FUNCTIONS */
 
 function scalarmult(a, u) {

@@ -1,20 +1,17 @@
 function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
     const tmin = 0;
     var N;
-    var dt;
+    const dt = 0.01 * Math.PI;
     const ampForm = document.getElementById("C3E4ampForm");
     
-    function fnext(f) { //Use Euler-Cromer
-        [x1, x3, x5, x7, v1, v3, v5, v7] = f;
-        v1 -= x1 * dt; // update v first
-        x1 += v1 * dt; // use updated v to calculate updated x
-        v3 -= Math.pow(x3, 3) * dt;
-        x3 += v3 * dt;
-        v5 -= Math.pow(x5, 5) * dt;
-        x5 += v5 * dt;
-        v7 -= Math.pow(x7, 7) * dt;
-        x7 += v7 * dt;
-        return [x1, x3, x5, x7, v1, v3, v5, v7];
+    function fnext(x, dt) { // Use RK22D for x1, x3, x5, RKN42Dauton for x7
+      // Weird bug where x1 had to be renamed to x0 to prevent it from being 
+      // over-written by x7
+        [x0, v1] = RK22D((x,t) => -1*x, [x[0], x[4]], 0, dt);
+        [x3, v3] = RK22D((x,t) => -1*Math.pow(x,3), [x[1], x[5]], 0, dt);
+        [x5, v5] = RK22D((x,t) => -1*Math.pow(x,5), [x[2], x[6]], 0, dt);
+        [x7, v7] = RKN42Dauton(x => -1*Math.pow(x,7), [x[3], x[7]], dt);
+        return [x0, x3, x5, x7, v1, v3, v5, v7];
     }
 
     function estPeriod(f, fnext, t, tnext) {
@@ -37,8 +34,7 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
                      {v: 2 * Math.PI, f: '2\u03C0'}];
         switch (A) {
             case 0.5:
-                N = 6001;
-                dt = 6 * Math.PI / (N - 1);
+                N = 601;
                 ticks = ticks.concat([{v: 2.5 * Math.PI, f: '5\u03C0/2'},
                                       {v: 3 * Math.PI, f: '3\u03C0'},
                                       {v: 3.5 * Math.PI, f: '7\u03C0/2'},
@@ -49,32 +45,29 @@ function GiorCPC3E4() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4 chart
                                       {v: 6 * Math.PI, f: '6\u03C0'}]);
                 break;
             case 1.0:
-                N = 4001;
-                dt = 4 * Math.PI / (N - 1);
+                N = 401;
 	        ticks = ticks.concat([{v: 2.5 * Math.PI, f: '5\u03C0/2'},
                                       {v: 3 * Math.PI, f: '3\u03C0'},
                                       {v: 3.5 * Math.PI, f: '7\u03C0/2'},
                                       {v: 4 * Math.PI, f: '4\u03C0'}]);
                 break;
             case 1.5:
-                N = 3001;
-                dt = 3 * Math.PI / (N - 1);
+                N = 301;
 	        ticks = ticks.concat([{v: 2.5 * Math.PI, f: '5\u03C0/2'},
                                       {v: 3 * Math.PI, f: '3\u03C0'}]);
                 break;
             case 2.0:
-                N = 2001;
-                dt = 2.0 * Math.PI / (N - 1);
+                N = 201;
                 break;
         }
         let t = 0;
         var periods = [0, 0, 0, 0];
         var fn = [A, A, A, A, 0, 0, 0, 0];
-        var fnp1 = Array.from(fn);
+        var fnp1 = [0, 0, 0, 0, 0, 0, 0, 0];
         let data = [['t', '\u03B1=1', '\u03B1=3', '\u03B1=5', '\u03B1=7', 'A = 1']];
         for (let i=0; i <= N; i++) {
             data.push([t, fn[0], fn[1], fn[2], fn[3], 1]);
-            fnp1 = fnext(fn);
+            fnp1 = fnext(fn, dt);
             if (periods.some(e => e == 0)) {
                 for (let j=0; j < 4; j++) {
                     if (periods[j] == 0) {
