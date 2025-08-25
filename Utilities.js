@@ -159,6 +159,29 @@ function RK22D(f, x, t, dt) {
     return [x1, x2];
 }
 
+function RK42Dnonauton(f, x, t, h) {
+  function k1() {return f(x,t);} 
+  function k2() {
+    k2x = vecsum(x, scalarmult(h2, k1()));
+    return f(k2x,th2);
+  } 
+  function k3() {
+    k3x = vecsum(x, scalarmult(h2, k2()));
+    return f(k3x,th2);
+  } 
+  function k4() {
+    k4x = vecsum(x, scalarmult(h, k3()));
+    return f(k4x,t + h);
+  } 
+    h2 = h/2;
+    th2 = t + h2;
+    temp = vecsum(k1(), scalarmult(2,k2()));
+    temp = vecsum(temp, scalarmult(2,k3()));
+    temp = vecsum(temp, k4());
+    temp = scalarmult(h/6, temp);
+    return vecsum(x, temp);    
+}
+
 function RKN42Dauton(f, x, h) {
   /* 4-th order Runge-Kutta-Nystrom method for 2-D autonomous system, i.e., for
      x=[x1,x2], x'=f(x), x(0)=A, x'(0)=B
