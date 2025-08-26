@@ -21,9 +21,9 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
         let t = 0;
         let fn = [0.2, 0];
         let fnp1 = [0, 0];
-        const data = [['t', '\u03B8(t)']];
+        const data = [['t', '\u03B8(t)', '\u03C9(t)']];
         for (let i=0; i < N; i++) {
-            data.push([t, fn[0]]);
+            data.push([t, fn[0], fn[1]]);
             fnp1 = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
             t += h;
             fn = fnp1;
@@ -32,7 +32,7 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
         const title = "<center><h3>Solution of Physical Pendulum Model</h3></center>";
         const options = {...globalChartOptions,
                          hAxis: {title: 'Time'},
-                         vAxis: {title: 'Angular Displacement (radians)'},
+                         vAxis: {title: '\u03B8: radians, \u03C9: rad/sec'},
                          width: 1000, height: 400};
         // Display the chart inside the <div> element with id="GiorCPC3E16chart"
         const chart = new google.visualization.LineChart(document.getElementById("GiorCPC3E16chart"));
