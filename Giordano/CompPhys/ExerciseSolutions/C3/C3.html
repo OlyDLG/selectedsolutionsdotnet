@@ -299,7 +299,7 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
     <td colspan=4 style="border: none;">
       <form id="C3E16tmax" onchange="makeC3E16Graph()">
         <label for="C3E16tmaxIn">\(t_{max}\) (seconds more than \(t_{min}\)):</label>
-        <input type="number" name="C3E16tmaxIn" min="60" max="120" step="60" value="60">
+        <input type="number" name="C3E16tmaxIn" min="60" max="780" step="180" value="60">
       </form>
     </td>
   </tr>
@@ -307,10 +307,16 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
 <center><table>
   <tr style="border: none;">
     <td class="cen" style="border: none;">
-      Time Domain
+      <form id="C3E16tdOff" onchange="makeC3E16Graph()">
+        <label for="C3E16tdOffIn">Time Domain (checked=shown)</label>
+        <input type="checkbox" name="C3E16tdOffIn" checked>
+      </form>
     </td>
     <td class="cen" style="border: none;">
-      Phase Plane
+      <form id="C3E16ppOff" onchange="makeC3E16Graph()">
+        <label for="C3E16ppOffIn">Phase Plane (checked=shown)</label>
+        <input type="checkbox" name="C3E16ppOffIn" checked>
+      </form>
     </td>
   </tr>
   <tr style="border: none; background-color: white;">
@@ -321,7 +327,17 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
       <div class="chart" id="GiorCPC3E16ppChart" alt="Phase Plane Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16."></div>
     </td>
   </tr>
-</table></center></p>
+</table></center>
+  <!--tr style="border: none;">
+    <td colspan=2 class="cen" style="border: none;"-->
+<p class="cen">Strange Attractor</p>
+    <!--/td>
+  </tr>
+  <tr style="border: none;"><!-- background-color: white;">
+    <td colspan=2 class="cen" style="border: none;"-->
+<center><div class="chart" id="GiorCPC3E16saChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16 Strange Attractor"></div></center>
+    <!--/td>
+  </tr--></p>
 
 <h3>Notes</h3>
 

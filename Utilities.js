@@ -1,13 +1,13 @@
 function removeCommas(s) {
-    var noCommas = s.replace(/,/g , "");
+    let noCommas = s.replace(/,/g , "");
     return noCommas;
 }
 
 function addCommas(s) {
     tmp = s.split(".");
-    var mant = tmp[0];
-    var dec = tmp[1]; 
-    var res = "." + dec;
+    let mant = tmp[0];
+    let dec = tmp[1]; 
+    let res = "." + dec;
     for (i=0; i<mant.length; i++) {
       res = mant[mant.length-1-i] + res;
       if ((i % 3)==2 && (i != mant.length-1)) {
@@ -45,23 +45,23 @@ function JSnote() {
 /* MATH FUNCTIONS */
 
 function AbsChange(beg, end) {
-    var d = end - beg;
+    let d = end - beg;
     return d;
 }
 
 function ChangeRelBeg(beg, end) {
-    var r = (beg != 0) ? (end - beg)/beg : NaN;
+    let r = (beg != 0) ? (end - beg)/beg : NaN;
     return r;
 }
 
 function ChangeRelEnd(beg, end) {
-    var r = (end != 0) ? (end - beg)/end : NaN;
+    let r = (end != 0) ? (end - beg)/end : NaN;
     return r;
 }
 
 function ChangeRelMid(beg, end) {
-    var b = Number(beg); var e = Number(end);
-    var r = (b + e != 0) ? 2*(e - b)/(b + e) : NaN;
+    let b = Number(beg); let e = Number(end);
+    let r = (b + e != 0) ? 2*(e - b)/(b + e) : NaN;
     return r;
 }
 
@@ -74,26 +74,33 @@ function twoDvecPolar(x,y) {
 }
 
 function dydx(y2, y1, x2, x1) {
-    var dydx = (x2 != x1) ? (y2 - y1) / (x2 - x1) : NaN;
+    let dydx = (x2 != x1) ? (y2 - y1) / (x2 - x1) : NaN;
     return dydx;
 }
 
 function isNumericalArray(data) {
-    var test = Array.isArray(data) && (typeof data[0] == "number");
+    let test = Array.isArray(data) && (typeof data[0] == "number");
     return test;
 }
 
 Number.prototype.zeroIfClose = function(prec) {
-  var test = Math.pow(10, prec) * this.valueOf();
+  const test = Math.pow(10, prec) * this.valueOf();
   if (Math.round(test)==0) return 0;
   else return this.valueOf();
 };
 
+Number.prototype.intIfClose = function(prec) {
+  const temp1 = this.valueOf();
+  const temp2 = Math.round(temp1);
+  const test = temp1 - temp2;
+  return (test.zeroIfClose(prec)==0) ? temp2 : temp1;
+};
+
 function simpleBisection(f, L, U, prec, tries) {
-  var res = NaN;
-  var fL = f(L).zeroIfClose(prec);
-  var fU = f(U).zeroIfClose(prec);
-  var count = 0, newGuess;
+  let res = NaN;
+  let fL = f(L).zeroIfClose(prec);
+  let fU = f(U).zeroIfClose(prec);
+  let count = 0, newGuess;
   
   while (isNaN(res) && count < tries) {
     if (fL*fU == 0) { // at least one of L or U is a root
@@ -206,7 +213,7 @@ function RKN42Dauton(f, x, h) {
 /* MATRIX FUNCTIONS */
 
 function scalarmult(a, u) {
-    var rslt = [];
+    let rslt = [];
     if (isNumericalArray(u)) {
         for (i=0; i < u.length; i++) {
             rslt[i] = a * u[i]; 
@@ -216,7 +223,7 @@ function scalarmult(a, u) {
 }
 
 function vecsum(u, v) {
-    var sum = [];
+    let sum = [];
     if (isNumericalArray(u) &&
          isNumericalArray(v) &&
          u.length == v.length) {
@@ -228,7 +235,7 @@ function vecsum(u, v) {
 }
 
 function dot(u, v) {
-    var rslt = Number.NaN;
+    let rslt = Number.NaN;
     if (isNumericalArray(u) &&
          isNumericalArray(v) &&
          u.length == v.length) {
@@ -269,7 +276,7 @@ function Xprod(u, v) {
 /* STATISTICAL FUNCTIONS */
 
 function MinMax(data) {
-    var rslt=[];
+    let rslt=[];
     if (isNumericalArray(data)) {
         rslt = [Math.min.apply(null, data), Math.max.apply(null, data)];
     }
@@ -277,16 +284,16 @@ function MinMax(data) {
 }
 
 function range(data) {
-    var rng = 0;
+    let rng = 0;
     if (isNumericalArray(data)) {
-        var mM = MinMax(data);
-        var rng = mM[1] - mM[0];
+        let mM = MinMax(data);
+        let rng = mM[1] - mM[0];
     }
     return rng;
 }
 
 function EV(data, prob) {
-    var rslt = Number.NaN;
+    let rslt = Number.NaN;
     if (isNumericalArray(data)) {
         if (typeof prob === "undefined") {
             rslt = data[0] / data.length;
@@ -302,7 +309,7 @@ function EV(data, prob) {
 }
 
 function subcnst(data, cnst) {
-    var rslt = [];
+    let rslt = [];
     if (isNumericalArray(data)) {
         for (i=0; i < data.length; i++) {
             rslt[i] = data[i] - cnst;
@@ -312,7 +319,7 @@ function subcnst(data, cnst) {
 }
 
 function SD(data, prob) {
-    var rslt, ev, tmp, temp, ttmp;
+    let rslt, ev, tmp, temp, ttmp;
     ev = (typeof prob === "undefined") ? EV(data) : EV(data,prob);
     tmp = subcnst(data, ev);
     temp = (typeof prob === "undefined") ? scalarmult(1/(data.length-1), tmp) : arrayMult(tmp, prob);
@@ -322,8 +329,8 @@ function SD(data, prob) {
 }
 
 function CoV(data, prob) {
-    var rslt;
-    var ev = EV(data, prob);
+    let rslt;
+    let ev = EV(data, prob);
     if (ev != Number.NaN) {
         rslt = SD(data,prob) / ev;
     }
@@ -351,15 +358,15 @@ const globalChartOptions = {chartArea: {top: 10}, legend: 'bottom'};
 Not presently needed/used, development suspended
 
 function addDataSeries(DataTable, newDataArray, newDataLabels) {
-	var origNCols = DataTable.getNumberOfColumns();
-	var origNRows = DataTable.getNumberOfRows();
-	var newNCols = newDataArray[0].length-1; //Don’t count the ind. var. col.
-	var newNRows = newDataArray.length;
-	var nDAtype = typeof(newDataArray[0][0]);
+	let origNCols = DataTable.getNumberOfColumns();
+	let origNRows = DataTable.getNumberOfRows();
+	let newNCols = newDataArray[0].length-1; //Don’t count the ind. var. col.
+	let newNRows = newDataArray.length;
+	let nDAtype = typeof(newDataArray[0][0]);
 	for (i=0; i < newDataLabels.length; i++) {
             DataTable.addColumn(nDAtype, newDataLabels[i]);
         }
-	var newRow = [];
+	let newRow = [];
 	for (i=0; i < newNRows; i++) {
 	    newRow[0] = newDataArray[i][0];
 	    for (j=1; j < origNCols; j++) {
