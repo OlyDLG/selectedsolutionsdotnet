@@ -254,25 +254,25 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
 
 <p><center><table>
   <tr style="border: none;">
-    <td colspan=3 style="border: none;">
+    <td style="border: none;">
       <form id="C3E16FD" onchange="makeC3E16Graph()">
         <label for="C3E16FDIn">\({F_D}\):</label>
         <input type="number" name="C3E16FDIn" min="1.16" max="1.24" step="0.01" value="1.2">
       </form>
     </td>
-    <td colspan=3 style="border: none;">
+    <td style="border: none;">
       <form id="C3E16WD" onchange="makeC3E16Graph()">
         <label for="C3E16WDIn">\(\Omega_D\) (units: 1/48ths):</label>
         <input type="number" name="C3E16wDIn" min="28" max="36" step="1" value="32">
       </form>
     </td>
-    <td colspan=3 style="border: none;">
+    <td style="border: none;">
       <form id="C3E16q" onchange="makeC3E16Graph()">
         <label for="C3E16qIn">\(q\):</label>
         <input type="number" name="C3E16qIn" min="0.46" max="0.54" step="0.01" value="0.5">
       </form>
     </td>
-    <td colspan=3 style="border: none;">
+    <td style="border: none;">
       <form id="C3E16el" onchange="makeC3E16Graph()"
         <label for="C3E16elIn">\(\ell\):</label>
         <input type="number" name="C3E16elIn" min="9.76" max="9.84" step="0.01" value="9.8">
@@ -280,7 +280,7 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
     </td>
   </tr>
   <tr style="border: none; background-color: white;">
-    <td colspan=4 style="border: none;">
+    <td style="border: none;">
       <form id="C3E16h" onchange="makeC3E16Graph()">
         <label for="C3E16hIn">\(\Delta t\) (seconds):</label>
         <select name="C3E16hIn">
@@ -290,33 +290,27 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
         </select>
       </form>
     </td>
-    <td colspan=4 style="border: none;">
+    <td style="border: none;">
       <form id="C3E16tmin" onchange="makeC3E16Graph()">
         <label for="C3E16tminIn">\(t_{min}\) (seconds):</label>
         <input type="number" name="C3E16tminIn" min="0" max="60" step="60" value="0">
       </form>
     </td>
-    <td colspan=4 style="border: none;">
-      <form id="C3E16tmax" onchange="makeC3E16Graph()">
-        <label for="C3E16tmaxIn">\(t_{max}\) (seconds more than \(t_{min}\)):</label>
-        <input type="number" name="C3E16tmaxIn" min="60" max="780" step="180" value="60">
+    <td colspan=2 style="border: none;">
+      <form id="C3E16N" onchange="makeC3E16Graph()">
+        <label for="C3E16NIn">\(N\) (total number of intervals<br>strange attractor plotted if = 15000):</label>
+        <input type="number" name="C3E16NIn" min="1500" max="15000" step="13500" value="1500">
       </form>
     </td>
   </tr>
 </table></center>
-<center><table>
+<center><table id="E16tsppGraphTable">
   <tr style="border: none;">
     <td class="cen" style="border: none;">
-      <form id="C3E16tdOff" onchange="makeC3E16Graph()">
-        <label for="C3E16tdOffIn">Time Domain (checked=shown)</label>
-        <input type="checkbox" name="C3E16tdOffIn" checked>
-      </form>
+      Time Domain
     </td>
     <td class="cen" style="border: none;">
-      <form id="C3E16ppOff" onchange="makeC3E16Graph()">
-        <label for="C3E16ppOffIn">Phase Plane (checked=shown)</label>
-        <input type="checkbox" name="C3E16ppOffIn" checked>
-      </form>
+      Phase Plane
     </td>
   </tr>
   <tr style="border: none; background-color: white;">
@@ -328,16 +322,8 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
     </td>
   </tr>
 </table></center>
-  <!--tr style="border: none;">
-    <td colspan=2 class="cen" style="border: none;"-->
-<p class="cen">Strange Attractor</p>
-    <!--/td>
-  </tr>
-  <tr style="border: none;"><!-- background-color: white;">
-    <td colspan=2 class="cen" style="border: none;"-->
-<center><div class="chart" id="GiorCPC3E16saChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16 Strange Attractor"></div></center>
-    <!--/td>
-  </tr--></p>
+<p id="E16saTitleID" class="cen">Strange Attractor</p>
+<center><div class="chart" id="GiorCPC3E16saChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16 Strange Attractor"></div></center></p>
 
 <h3>Notes</h3>
 
