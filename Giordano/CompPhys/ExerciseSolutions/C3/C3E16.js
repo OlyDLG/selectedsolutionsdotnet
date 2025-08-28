@@ -36,7 +36,7 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
     const tdData = [['t', '\u03B8(t)', '\u03C9(t)']];
     const ppData = [['\u03B8', '\u03C9']];
     const saData = [['\u03B8', '\u03C9']];
-    const sadetData = [['\u03B8', '\u03C9']];
+    let sadetswtch = false;
     let lb = 0, ub = 0;
     while (t < tmax) {
       if (t >= tmin) {
@@ -48,8 +48,8 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
           lb = WDo2pi * (t-h2); ub = WDo2pi * (t+h2);
           if (Math.ceil(lb) == Math.floor(ub)) {
             saData.push([fn[0], fn[1]]);
-            if (fn[0] > 2) {
-              sadetData.push([fn[0], fn[1]]);
+            if (!sadetswtch && fn[0] > 2) {
+              sadetswtch = true;
             }
           }
         }
@@ -106,19 +106,23 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
       saChart.draw(saTable, saOptions);
 
         // Strange attractor detail chart creation and placement
-      if (sadetData.length > 1) {
-        const detTable = google.visualization.arrayToDataTable(sadetData);
+      if (sadetswtch) {
+//        const detTable = google.visualization.arrayToDataTable(sadetData);
         const detOptions = {...globalChartOptions,
                             hAxis: {title: '\u03B8 (radians)',
                                     ticks: [{v: 2, f: '2'},
-                                            {v: pi, f: '\u03C0'}]},
-                            vAxis: {title: '\u03C9 (rad/sec)',
+                                            {v: pi, f: '\u03C0'}],
                                     viewWindowMode: 'explicit',
-                                    viewWindow: {min: -1.25, max: -0.5}},
+                                    viewWindow: {min: 2.0, max: pi}
+                                    },
+                            vAxis: {title: '\u03C9 (rad/sec)'//,
+//                                    viewWindowMode: 'explicit',
+//                                    viewWindow: {min: -1.25, max: -0.5}
+				 },
                             pointSize: 1, lineWidth: 0, legend: 'none', 
                             width: 500, height: 400};
         const detChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E16sadetChart"));
-        detChart.draw(detTable, detOptions);
+        detChart.draw(saTable, detOptions);
       }
       else {
         dsEBIiH("GiorCPC3E16sadetChart", "No Points in phase with \u03A9 = " + WD.toFixed(3) + "\nwith \u03B8 > 2");
