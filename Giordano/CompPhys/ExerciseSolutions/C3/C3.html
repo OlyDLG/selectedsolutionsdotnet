@@ -248,7 +248,38 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
 
 <h3><u>Exercises 3.16 &amp; 17</u></h3>
 
+<p>\(~~~~\)(For convenience, henceforth, except in the graph labels, we use \(x, v\) in place of \(\theta, \omega\)) For the physical pendulum model (PPM):
+\[\ddot{x} = -\frac g{\ell} \sin x - q\dot{x} + F_D\sin(\Omega_D t)\]
+observe the effect of small changes to \(F_D\) and \(\Omega_D\) on the in-phase-with-\(\Omega_D\) strange attractor occurring at \(F_D=1.2, \Omega_D=\frac23\) <span style="white-space: nowrap;">(\(g/\ell=1, q=0.5\))</span> (Ex. 16); and <q>zoom in</q> on the \(x \gt 2\) region of the attractor (Ex. 17).</p>
+
 <h3>Solution</h3>
+
+<p>\(~~~~\)<b>Alert</b>: depending on your computer’s speed, it may take <q>a moment or two</q> when switching from the time domain and phase plane graphs (plotted from \(t=0\) to \(60\) using \(1500\) intervals \(\Rightarrow \Delta t=0.04\)) to the strange attractor graphs (plotted from \(t=60\) to \(15060\) using \(150000\) intervals \(\Rightarrow \Delta t=0.1\)), and when changing parameter values while viewing the attractor graphs.</p>
+
+<p>\(~~~~\)We heed the advice given in the statement of Exercise 17 and use a Runge-Kutta (RK) method for both Exercises. However, rather than use the second-order RK method given in Appendix A, Section 2 (&sect;A2), we use the fourth-order RK method given in &sect;A1 because, although not stated there, it is valid for vector-valued dependent variables and functions (<a href="#Parker">Parker &amp; Chua, 1989</a>). In other words, using our variables and letting \(h(\vec{x}, t) = h((x, v), t) = -\frac g{\ell} \sin x - qv + F_D\sin(\Omega_D t)\), text Equation 3.19 is equivalent to: 
+\(\displaystyle \left[\begin{matrix}
+\dot{x} \\
+\dot{v}
+\end{matrix}\right]
+= \dot{\vec{x}} = \left[\begin{matrix}
+v \\
+h(\vec{x}, t)
+\end{matrix}\right]
+=\vec{f}(\vec{x}, t)\)
+and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid with \(x=\vec{x}, f=\vec{f},\) and the sums involving \(x\) and \(f\) being vector sums. Using (library or self-written) functions for multiplication of a vector by a scalar and for vector addition, and passing arrays (for \(\vec{x}\) and intermediate vector values) and array-returning functions as arguments, the algorithm can be implemented essentially verbatim. </p>
+
+<p>\(~~~~\)Keeping \(x\in[-\pi,\pi]\) is done simply by checking each \(x_{n+1}\): if it’s \(\lt -\pi\), \(2\pi\) is added to it, if \(\gt \pi\), \(2\pi\) is subtracted from it. Points <q>in phase</q> with \(\Omega_D\)&mdash;for the attractor&mdash;are found using the criterion given in Footnote 11 (pg. 63), \(|t-2n\pi/\Omega_D|\lt \Delta t/2\) for some integer \(n\), as follows: rather than trying to keep track of when \(n\) needs to be incremented, we take advantage of the fact that 
+\(\begin{eqnarray}
+|t-2n\pi/\Omega_D|\lt \Delta t/2 &amp; \Rightarrow &amp; -\Delta t/2 \lt t-2n\pi/\Omega_D \lt \Delta t/2 \\
+&amp; \Rightarrow &amp; -t-\Delta t/2 \lt -2n\pi/\Omega_D \lt -t + \Delta t/2 \\
+&amp; \Rightarrow &amp; \Omega_D/(2\pi)(t-\Delta t/2) \lt n \lt \Omega_D/(2\pi)(t+\Delta t/2)
+\end{eqnarray}\)</p>
+
+<p>and thus for each \(t\) we round \(\Omega_D/(2\pi)(t-\Delta t/2)\) up to the nearest integer and round \(\Omega_D/(2\pi)(t+\Delta t/2)\) down to the nearest integer&mdash;when these are the same, i.e., the two expressions bound an integer, we have found, and thus store in a dedicated array, an in-phase point to plot for the attractor. </p>
+
+<p>\(~~~~\)The page loads with graphs, below, of \(x(t), v(t)\) (the time domain solution) on one set of axes and \(v(x)\) (the phase plane solution) on another set of axes; as advised in the text, the default values used are those used to generate text Figures 3.6 and 3.9. A check box above the phase plane graph switches to graphs of the <q>targeted</q> strange attractor and a <q>close-up</q> of the attractor for values of \(x \gt 2\) (the \(v\) range is automatically determined by the graphing package to include all points satisfying the \(x \gt 2\) condition). In both views, the user can change \(F_D\) in increments of \(0.01\) between \(1.16\) and \(1.24\) (nine possible values) and \(\Omega_D\) in increments of \(1/48\) between \(28\) and \(36\) (nine possible values) for a total of \(9\times9=81\) different \((F_D,\Omega_D)\) pairings. (We originally implemented similar user-selectability for \(q\) and \(\ell\), but found that small variations in those weren’t as impactful; no doubt Giordano and Nakanishi knew this when they formulated the Exercises.)</p>
+
+<p>\(~~~~\)The other thing they no doubt knew when they formulated these Exercises is the <q>interesting-ness</q> of the region of the \(F_D \times \Omega_D\), i.e., <q>parameter</q> space they assigned the student to explore; we couldn’t possibly describe here all \(81\) results, but we will call attention to some <q>highlights.</q> The first thing to investigate in a situation such as this is the effect of one parameter as the other remains fixed. First leaving \(\Omega_D = 32/48 = 2/3\) fixed and scrolling through the options for \(F_D\), we find that specific points of the attractor change, but the general shape does not&mdash;mathematically, all of these \(F_D\), for this value of \(\Omega_D\), are in the attractor’s <a href="">basin of attraction</a></p>
 
 <div id="GiorCPC3E16Title" style="center"></div>
 
@@ -347,9 +378,7 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
       <div class="chart" id="GiorCPC3E16sadetChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16. Strange Attractor Detail"></div>
     </td>
   </tr>
-</table></center>
-<!--p id="E16saTitleID" class="cen">Strange Attractor</p>
-<center><div class="chart" id="GiorCPC3E16saChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16 Strange Attractor"></div></center--></p>
+</table></center></p>
 
 <h3>Notes</h3>
 
@@ -358,6 +387,8 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
 <h3>References</h3>
 
 <p><a name="Butcher" onclick="window.history.back()">Butcher</a>, J. C., 2008, <i>Numerical Methods for Ordinary Differential Equations, Second Edition</i>, John Wiley &amp; Sons, West Sussex, England, pg. 94.</p>
+
+<p><a name="Parker" onclick="window.history.back()">Parker</a>, T. S. and L. O. Chua, 1989, <i>Practical Numerical Algorithms for Chaotic Systems</i>, Springer-Verlag, New York, pg. 88.</p>
 
 <p><a name="QinZhu" onclick="window.history.back()">Qin</a>, Meng-Zhao and Wen-Jie Zhu, 1991, <a href="https://www.sciencedirect.com/science/article/pii/089812219190209M/pdf?md5=02fb14175fac36fd5d1961ee064420c4&amp;pid=1-s2.0-089812219190209M-main.pdf"><q>Canonical Runge-Kutta-Nyström (RKN) Methods for Second Order Ordinary Differential Equations,</q></a> <i>Computers Math. Applic.</i> <b>22</b>(9) pp. 85-95.</p>
 
