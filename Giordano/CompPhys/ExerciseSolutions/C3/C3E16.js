@@ -28,7 +28,7 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
     const N = (!swtch) ? 1500 : 150000;
     const tmax = tmin + N * h;
     const FD = Number(FDForm[0].value);
-    const WD = Number(WDForm[0].value) / 48;
+    const WD = Number(WDForm[0].value) / 96;
     const WDo2pi = WD / tpi;
     let t = 0;
     let fn = [0.2, 0];
