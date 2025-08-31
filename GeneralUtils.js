@@ -25,6 +25,10 @@ function dsEBIiH(id, val) {
     document.getElementById(id).innerHTML = val; 
 }
 
+function winhisback () {
+    window.history.back();
+}
+
 function dgCheckBoxState(id) {
     return document.getElementById(id).checked; 
 }
@@ -34,6 +38,7 @@ function toggleHidden(id) {
     element.hidden = !element.hidden;
 }
 
+/*
 function supJS(s) {
     return String(s) + "<sup>JS</sup>";
 }
@@ -41,3 +46,4 @@ function supJS(s) {
 function JSnote() {
     dsEBIiH("JSnote", supJS(""));
 }
+*/

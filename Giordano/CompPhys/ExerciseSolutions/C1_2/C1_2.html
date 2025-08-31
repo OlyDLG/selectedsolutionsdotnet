@@ -142,19 +142,21 @@ makeC2E21Graph = GiorCPC2E21();
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
-<p><i>Note: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Purple font indicates clicking on the text will return you to your prior place.</p>
 
 <h3>Contents</h3>
 
-<p><a href="#E1.4">Exercise 1.4</a><br>
-<a href="#E1.5">Exercise 1.5</a><br>
-<a href="#E2.5">Exercise 2.5</a><br>
-<a href="#E2.14">Exercise 2.14</a><br>
-<a href="#E2.21">Exercise 2.21</a><br>
-<a href="#Source">Source code links</a><br>
+<p><a href="#E1.4">Exercise 1.4</a>\(~~~~\)
+<a href="#E1.5">Exercise 1.5</a>\(~~~~\)
+<a href="#E2.5">Exercise 2.5</a>\(~~~~\)
+<a href="#E2.14">Exercise 2.14</a>\(~~~~\)
+<a href="#E2.21">Exercise 2.21</a>\(~~~~\)
+<a href="#Source">Source code links</a>\(~~~~\)
 <a href="#Notes">Notes, Credits, Donate links</a></p>
 
-<h3><a class="tooltip-container" name="E1.4" onclick="window.history.back()"><u>Exercise 1.4</u><span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="E1.4" onclick="winhisback()"><u>Exercise 1.4</u></a></h3>
 
 <p>\(~~~~\)Use the Euler method to solve the system:\[ \begin{eqnarray} 
 \frac{dN_A}{dt} &amp; = &amp; -&amp;\frac{N_A}{\tau_A} &amp; &amp; (\text{Eq. 1})\\
@@ -202,7 +204,7 @@ where \(B_0 = N_B(0)\). (Check: \(\frac d{dt}N_B + \beta N_B = \cancel{-\beta B_
 </center>
 <sp id="GiorCPC1E4chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 1 Ex. 4."></sp></p>
 
-<h3><a class="tooltip-container" name="E1.5" onclick="window.history.back()"><u>Exercise 1.5</u><span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="E1.5" onclick="winhisback()"><u>Exercise 1.5</u></a></h3>
 
 <p>\(~~~~\)Use the Euler method to solve the system:
 \[ \begin{eqnarray} 
@@ -261,7 +263,7 @@ N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
 </center>
 <sp id="GiorCPC1E5chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 1 Ex. 5."></sp></p>
 
-<h3><a class="tooltip-container" name="E2.5" onclick="window.history.back()"><u>Exercise 2.5</u><span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="E2.5" onclick="winhisback()"><u>Exercise 2.5</u></a></h3>
 
 <p>\(~~~~\)Modify the bicycle air resistance model to use constant force at low velocity, switching over to the given constant power model at some specified transition velocity.</p>
 
@@ -283,7 +285,7 @@ i.e., \(\varphi_{\text{lt}}\) is well-defined for \(\upsilon = 0\). (This is <q>
 </center>
 <sp id="GiorCPC2E5chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 5."></sp></p>
 
-<h3><a class="tooltip-container" name="E2.14" onclick="window.history.back()"><u>Exercise 2.14</u><span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="E2.14" onclick="winhisback()"><u>Exercise 2.14</u></a></h3>
 
 <p>\(~~~~\)Add a crosswind to the fly ball (hit baseball) model; determine how it affects the landing spot.</p>
 
@@ -369,7 +371,7 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
   </table>
 </center></p>
 
-<h3><a class="tooltip-container" name="E2.21" onclick="window.history.back()"><u>Exercise 2.21</u><span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="E2.21" onclick="winhisback()"><u>Exercise 2.21</u></a></h3>
 
 <p>\(~~~~\)Calculate the trajectory of a batted ball with side spin, i.e., angular velocity pseudovector parallel to the vertical axis.</p>
 
@@ -455,7 +457,7 @@ w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n w_n + g\right)\D
   </table>
 </center></p>
 
-<h3><a class="tooltip-container" name="Source" onclick="window.history.back()">Source Code (JavaScript)<span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
 
 <p>Local:
 <a href="./C1Scripts.js">Exercises 1.4 &amp; 1.5</a>\(~~~~\)<a href="./C2E5.js">Exercise 2.5</a>\(~~~~\)<a href="./C2E14.js">Exercise 2.14</a>\(~~~~\)<a href="./C2E21.js">Exercise 2.21</a><br>
@@ -465,9 +467,9 @@ w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n w_n + g\right)\D
 
 <p>Remote: Google Charts API <q>loader</q>: <a href="https://www.gstatic.com/charts/loader.js">https://www.gstatic.com/charts/loader.js</a> </p>
 
-<h3><a class="tooltip-container" name="Notes" onclick="window.history.back()">Notes<span class="tooltip-text">Click link to return to prior place</span></a></h3>
+<h3><a class="goback" name="Notes" onclick="winhisback()">Notes</a></h3>
 
-<p><a name="Note1" onclick="window.history.back()">1.</a> In order to highlight the effect of spin, we do not include wind in this Exercise; additionally, for the same purpose, we enable the reader to <q>turn off</q> (linear) drag in the lateral direction, despite that being <q>unphysical</q> (because without air resistance, spin does not give rise to a Magnus force).</p>
+<p><a class="goback" name="Note1" onclick="winhisback()">1.</a> In order to highlight the effect of spin, we do not include wind in this Exercise; additionally, for the same purpose, we enable the reader to <q>turn off</q> (linear) drag in the lateral direction, despite that being <q>unphysical</q> (because without air resistance, spin does not give rise to a Magnus force).</p>
 
 <h3>Credits</h3>
 
