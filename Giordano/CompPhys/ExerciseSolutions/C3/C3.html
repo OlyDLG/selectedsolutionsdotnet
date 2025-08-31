@@ -128,6 +128,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <h3><center>Chapter 3: <q>Oscillatory Motion and Chaos</q></h3>
 
+<h3><center>Part 1: Sections 1-5</h3>
+
 <h3><center>&copy; 2025 by</h3>
 
 <h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
@@ -136,13 +138,21 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
-<p><i>Note 1: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
-<p><i>Note 2: When convenient, we use the <q>over-dot</q> notation to denote ordinary differentiation, e.g., \(\displaystyle \dot{x} = \frac{dx}{dt}, \ddot{x} = \frac{d^2x}{dt^2}\), etc.</i></p>
+<p>When convenient, we use the <q>over-dot</q> notation to denote ordinary differentiation, e.g., \(\displaystyle \dot{x} = \frac{dx}{dt}, \ddot{x} = \frac{d^2x}{dt^2}\), etc.</p>
 
-<p><i>Note 3: Links to the JavaScript source code files used in this document are provided </i><a href="#Source">here</a></p>
+<p>Purple font indicates clicking on the text will return you to your prior place.</p>
 
-<h3><u>Exercise 3.4-ish</u></h3>
+<h3>Contents</h3>
+
+<p><a href="#E3.4">Exercise 3.4</a>\(~~~~\)
+<a href="#E3.8">Exercise 3.8</a>\(~~~~\)
+<a href="#E3.16">Exercise 3.16 &amp; 17</a>\(~~~~\)
+<a href="#Source">Source code links</a>\(~~~~\)
+<a href="#Notes">Notes, References, etc.</a></p>
+
+<h3><a class="goback" name="E3.4" onclick="winhisback()"><u>Exercise 3.4-ish</u></a></h3>
 
 <p>\(~~~~\)Numerically solve </p>
 
@@ -216,7 +226,7 @@ With a step size of \(0.01\pi\), for \(\alpha=7,~A=2\), this was found to produc
 
 <div class="chart" id="GiorCPC3E4chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 4."></div>
 
-<h3><u>Exercise 3.8</u></h3>
+<h3><a class="goback" name="E3.8" onclick="winhisback()"><u>Exercise 3.8</u></a></h3>
 
 <p>\(~~~~\)Investigate the relationship between the period and the amplitude for the non-linear pendulum:
 \[\begin{eqnarray}
@@ -253,9 +263,9 @@ and <q>recall</q> our results from Exercise 3.4: those clearly showed that when 
 
 <div class="chart" id="GiorCPC3E8chart" alt="Plot of Solutions to Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 8."></div>
 
-<h3><u>Exercises 3.16 &amp; 17</u></h3>
+<h3><a class="goback" name="E3.16" onclick="winhisback()"><u>Exercises 3.16 &amp; 17</u></a></h3>
 
-<p>\(~~~~\)(For convenience, henceforth, except in the graph labels, we use \(x, v\) in place of \(\theta, \omega\)) For the physical pendulum model (PPM):
+<p>\(~~~~\)(For convenience, henceforth, except in the graph labels, we use \(x, v\) in place of \(\theta, \omega\)) For the physical pendulum model:
 \[\ddot{x} = -\frac g{\ell} \sin x - q\dot{x} + F_D\sin(\Omega_D t)\]
 observe the effect of small changes to \(F_D\) and \(\Omega_D\) on the in-phase-with-\(\Omega_D\) strange attractor occurring at \(F_D=1.2, \Omega_D=\frac23\) <span style="white-space: nowrap;">(\(g/\ell=1, q=0.5\))</span> (Ex. 16); and <q>zoom in</q> on the \(x \gt 2\) region of the attractor (Ex. 17).</p>
 
@@ -389,7 +399,7 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
   </tr>
 </table></center></p>
 
-<h3><a name="Source" onclick="window.history.back()">Source Code (JavaScript)</a></h3>
+<h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
 
 <p>Local:
 <a href="./C3E4.js">Exercise 4</a>\(~~~~\)<a href="./C3E8.js">Exercise 8</a>\(~~~~\)<a href="./C3E16.js">Exercise 16/7</a><br>
@@ -399,17 +409,17 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
 
 <p>Remote: Google Charts API <q>loader</q>: <a href="https://www.gstatic.com/charts/loader.js">https://www.gstatic.com/charts/loader.js</a> </p>
 
-<h3>Notes</h3>
+<h3><a class="goback" name="Notes" onclick="winhisback()">Notes</a></h3>
 
-<p><a name="Note1" onclick="window.history.back()">1.</a> In <a href="#QinZhu">Qin &amp; Zhu, 1991</a>, the summation term in the expression for \(g_i\) is given as \(\sum_{j=1}^{s}\), where \(s\) is the number of <q>stages</q> of the method, i.e., 3 for the method we take from that source. However, as the eventual resulting matrix for \(a_{ij}\) clearly shows, for each \(g_i\) it is only necessary to sum to \(i-1\), i.e., each \(g_i\) depends only on preceding \(g_i\) values. This is an inherent characteristic of this being an <i>explicit</i> (as opposed to an implicit) RK method (<a href="#Butcher">Butcher, 2008</a>), and thus we feel justified, by the increased clarity, of the minor and inconsequential deviation from the primary source of expressing the sum as \(\sum_{j=1}^{i-1}\).</p>
+<p><a class="goback" name="Note1" onclick="winhisback()">1.</a> In <a href="#QinZhu">Qin &amp; Zhu, 1991</a>, the summation term in the expression for \(g_i\) is given as \(\sum_{j=1}^{s}\), where \(s\) is the number of <q>stages</q> of the method, i.e., 3 for the method we take from that source. However, as the eventual resulting matrix for \(a_{ij}\) clearly shows, for each \(g_i\) it is only necessary to sum to \(i-1\), i.e., each \(g_i\) depends only on preceding \(g_i\) values. This is an inherent characteristic of this being an <i>explicit</i> (as opposed to an implicit) RK method (<a href="#Butcher">Butcher, 2008</a>), and thus we feel justified, by the increased clarity, in the minor and inconsequential deviation from the primary source of expressing the sum as \(\sum_{j=1}^{i-1}\).</p>
 
 <h3>References</h3>
 
-<p><a name="Butcher" onclick="window.history.back()">Butcher</a>, J. C., 2008, <i>Numerical Methods for Ordinary Differential Equations, Second Edition</i>, John Wiley &amp; Sons, West Sussex, England, pg. 94.</p>
+<p><a class="goback" name="Butcher" onclick="winhisback()">Butcher</a>, J. C., 2008, <i>Numerical Methods for Ordinary Differential Equations, Second Edition</i>, John Wiley &amp; Sons, West Sussex, England, pg. 94.</p>
 
-<p><a name="Parker" onclick="window.history.back()">Parker</a>, T. S. and L. O. Chua, 1989, <i>Practical Numerical Algorithms for Chaotic Systems</i>, Springer-Verlag, New York.</p>
+<p><a class="goback" name="Parker" onclick="winhisback()">Parker</a>, T. S. and L. O. Chua, 1989, <i>Practical Numerical Algorithms for Chaotic Systems</i>, Springer-Verlag, New York.</p>
 
-<p><a name="QinZhu" onclick="window.history.back()">Qin</a>, Meng-Zhao and Wen-Jie Zhu, 1991, <a href="https://www.sciencedirect.com/science/article/pii/089812219190209M/pdf?md5=02fb14175fac36fd5d1961ee064420c4&amp;pid=1-s2.0-089812219190209M-main.pdf"><q>Canonical Runge-Kutta-Nyström (RKN) Methods for Second Order Ordinary Differential Equations,</q></a> <i>Computers Math. Applic.</i> <b>22</b>(9) pp. 85-95.</p>
+<p><a name="QinZhu" class="goback" onclick="winhisback()">Qin</a>, Meng-Zhao and Wen-Jie Zhu, 1991, <a href="https://www.sciencedirect.com/science/article/pii/089812219190209M/pdf?md5=02fb14175fac36fd5d1961ee064420c4&amp;pid=1-s2.0-089812219190209M-main.pdf"><q>Canonical Runge-Kutta-Nyström (RKN) Methods for Second Order Ordinary Differential Equations,</q></a> <i>Computers Math. Applic.</i> <b>22</b>(9) pp. 85-95.</p>
 
 <h3>Credits</h3>
 
