@@ -89,7 +89,9 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script src="../../../../Utilities.js"></script>
+<script src="../../../../GeneralUtils.js"></script>
+
+<script src="../../../../MathUtils.js"></script>
 
 <script src="./C1_2Scripts.js"></script>
 
@@ -108,6 +110,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 </script>
 
 <p><link rel="stylesheet" href="../../../../Styles.css">
+<title>Solutions of Selected Exercises from Giordano/Nakanishi <q>Computational Physics, 2nd Ed.</q> Chapters 1 &amp; 2</title>
 \(\require{cancel}\)</p>
 
 <p><body onload="makeC1E4Graph = GiorCPC1E4(); 
@@ -135,7 +138,9 @@ makeC2E21Graph = GiorCPC2E21();
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
-<p><i>Note: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Note 1: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p><i>Note 2: Links to the JavaScript source code files used in this document are provided </i><a href="#Source">here</a></p>
 
 <h3><u>Exercise 1.4</u></h3>
 
@@ -439,6 +444,15 @@ w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n w_n + g\right)\D
     </tr>
   </table>
 </center></p>
+
+<h3><a name="Source" onclick="window.history.back()">Source Code (JavaScript)</a></h3>
+
+<p>Local:
+<a href="./C1_2Scripts.js">Exercises 1.4, 1.5, 2.5</a>\(~~~~\)<a href="./C2E14.js">Exercise 2.14</a>\(~~~~\)<a href="./C2E21.js">Exercise 2.21</a><br>
+<a href="../../../../MathUtils.js">Math Utilities</a> (numerical method implementations, matrix arithmetic, etc.)<br>
+<a href="../../../../GeneralUtils.js">General Utilities</a> (used here primarily for innerHTML getting and setting aliases)<br>
+<!--[Google Charts Utilities](../../../../GChartsUtils.js) (presently used only for shared Google Charts API settings)--><br>
+Remote: Google Charts API <q>loader</q>: <a href="https://www.gstatic.com/charts/loader.js">https://www.gstatic.com/charts/loader.js</a> </p>
 
 <h3>Credits</h3>
 
