@@ -13,17 +13,17 @@ function GiorCPC2E14() { // Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 14 chart
     }
     
     function B2dM(airspeed) {
-           return 0.0039 + 0.0058 / (1 + Math.exp((airspeed - 35.0) / 5.0));
+        return 0.0039 + 0.0058 / (1 + Math.exp((airspeed - 35.0) / 5.0));
     }
 
     function makeC2E14Graph() {
         function C2E14fprime(fn, windVec) {
-            [x, y, z, u, v, w] = fn;
+            let [x, y, z, u, v, w] = fn;
             x += u * dt;
             y += v * dt;
             z += w * dt;
-            airspd = airSpeed([u, v, w], windVec);
-            B2m  = B2dM(airspd);
+            let airspd = airSpeed([u, v, w], windVec);
+            let B2m  = B2dM(airspd);
             u -= B2m * airspd * (u - windVec[0]) * dt;
             v -= (B2m * airspd * v + g) * dt;
             w -= B2m * airspd * (w - windVec[2]) * dt;
@@ -35,10 +35,10 @@ function GiorCPC2E14() { // Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 14 chart
         let windDir = deg2Rad(windDirForm[0].valueAsNumber);
         let windVec = [windSpd * Math.cos(windDir), 0, windSpd * Math.sin(windDir)];
         let n = 0;
-        var f = [0, 1, 0, initSpd * Math.cos(initDir), initSpd * Math.sin(initDir), 0];
+        let f = [0, 1, 0, initSpd * Math.cos(initDir), initSpd * Math.sin(initDir), 0];
         let data = [['x', 'y', 'z']];
         data.push(f.slice(0,3));
-        var fnext = C2E14fprime(f, windVec);
+        let fnext = C2E14fprime(f, windVec);
         while (fnext[1] >= 0) {
             f = fnext;
             data.push(f.slice(0,3));
@@ -51,17 +51,14 @@ function GiorCPC2E14() { // Giordano/Nakanishi Comp. Phys. Chpt. 2 Ex. 14 chart
         dsEBIiH("C2E14DeltaZ", (f[2]).toFixed(2));
         dsEBIiH("C2E14deltaZFeet", (meters2Feet(f[2])).toFixed(2));
 
-        var dtable = google.visualization.arrayToDataTable(data);
-        var title = "<center><h3>Hit Baseball Height and Orthogonal Horizontal Displacement vs. Parallel Horizontal Displacement</center>";
-        var options = {//allowHtml: true,
-       			       //title: title,
-        			   hAxis: {title: 'x (meters)'},
- 			           vAxis: {title: 'Displacement (meters)'},
-        			    legend: 'bottom',
-        			    width: 800, height: 400,
-            			    };
+        let dtable = google.visualization.arrayToDataTable(data);
+        let title = "<center><h3>Hit Baseball Height and Orthogonal Horizontal Displacement vs. Parallel Horizontal Displacement</center>";
+        let options = {...globalChartOptions,
+                       hAxis: {title: 'x (meters)'},
+                       vAxis: {title: 'Displacement (meters)'},
+                       width: 800, height: 400};
         // Display the chart inside the <sp> element with id="GiorCPC2E14chart"
-        var chart = new google.visualization.LineChart(document.getElementById("GiorCPC2E14chart"));
+        let chart = new google.visualization.LineChart(document.getElementById("GiorCPC2E14chart"));
         chart.draw(dtable, options);
         dsEBIiH("GiorCPC2E14chartTitle", title);
     }
