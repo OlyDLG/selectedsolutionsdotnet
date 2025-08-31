@@ -363,7 +363,7 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\upsilon}_n-\vec{W}\rig
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the neglecting of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, from having solved Exercise 2.14, we know, or at least should suspect, that the larger initial vertical velocity component and the longer flight time <i>might</i> make these <q>neglections</q> unsupportable. Thus we will include drag<a href="#Note">*</a> in all three velocity component equations, and include the general Magnus force&mdash;given in text footnote 22 to be \(\vec{F}_M = S_0\vec{\omega}\times \vec{\upsilon}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\omega}\times \vec{\upsilon}\) if \(\vec{\omega}\) is purely vertical?)</p>
+<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the neglecting of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, from having solved Exercise 2.14, we know, or at least should suspect, that the larger initial vertical velocity component and the longer flight time <i>might</i> make these <q>neglections</q> unsupportable. Thus we will include drag<a href="#Note1">\(^1\)</a> in all three velocity component equations, and include the general Magnus force&mdash;given in text footnote 22 to be \(\vec{F}_M = S_0\vec{\omega}\times \vec{\upsilon}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\omega}\times \vec{\upsilon}\) if \(\vec{\omega}\) is purely vertical?)</p>
 
 <p>\(~~~~\)Now, the cross product is an <q>oriented</q> operation: \(\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})\), i.e., <q>order matters.</q> Consequently, as a guard against making careless mistakes, in this Exercise, we are going to assign \(x, y, z~\&amp;~u, v, w\) their more customary roles: \(x\) still denotes the initial horizontal direction of flight, but now \(y\) denotes the lateral horizontal displacement, and \(z\) represents the vertical position (and \(u, v, w\) represent their respective derivatives). With this as our coordinate system, our continuous model is:</p>
 
@@ -390,8 +390,6 @@ w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n w_n + g\right)\D
 \]</p>
 
 <p>Results are plotted below.</p>
-
-<p><a name="Note" onclick="window.history.back()">*</a>In order to highlight the effect of spin, we do not include wind in this Exercise; additionally, for the same purpose, we enable the reader to <q>turn off</q> (linear) drag in the lateral direction, despite that being <q>unphysical</q> (because without air resistance, spin does not give rise to a Magnus force).</p>
 
 <p><sp id="GiorCPC2E21chartTitle" style="center"></sp>
 <center>
@@ -453,6 +451,10 @@ w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\upsilon_n w_n + g\right)\D
 <a href="../../../../GeneralUtils.js">General Utilities</a> (used here primarily for innerHTML getting and setting aliases)<br>
 <!--[Google Charts Utilities](../../../../GChartsUtils.js) (presently used only for shared Google Charts API settings)--><br>
 Remote: Google Charts API <q>loader</q>: <a href="https://www.gstatic.com/charts/loader.js">https://www.gstatic.com/charts/loader.js</a> </p>
+
+<h3>Notes</h3>
+
+<p><a name="Note1" onclick="window.history.back()">1.</a> In order to highlight the effect of spin, we do not include wind in this Exercise; additionally, for the same purpose, we enable the reader to <q>turn off</q> (linear) drag in the lateral direction, despite that being <q>unphysical</q> (because without air resistance, spin does not give rise to a Magnus force).</p>
 
 <h3>Credits</h3>
 
