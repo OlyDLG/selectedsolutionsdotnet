@@ -2,6 +2,8 @@
   body {font-family: Palatino;
     background-image: url("./PreciousBkgrnd2.png");}
 </style>
+<title>SelectedSolutionsDotNet Home Page</title>
+
 <body>
 <p><center><big><big><big><big>Welcome to<br>
 <big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p>
