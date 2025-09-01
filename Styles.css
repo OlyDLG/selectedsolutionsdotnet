@@ -3,11 +3,13 @@ form.pad {padding: 0px 0px 13px;}
 .text {text-align: left;}
 .cen {text-align: center;}
 .num {text-align: right;}
-.text {text-align: left;}
 .sum {font-weight: bold;}
 .goback {color: purple;} 
-/*         onclick: window.history.back();}
-*/ 
+th.cen {text-align: center;}
+td.num {text-align: right;}
+td.text {text-align: left;}
+td.cen {text-align: center;}
+
 .tooltip-container {
   position: relative;
   display: inline-block;
