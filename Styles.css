@@ -9,6 +9,7 @@ th.cen {text-align: center;}
 td.num {text-align: right;}
 td.text {text-align: left;}
 td.cen {text-align: center;}
+sp.sum {font-weight: bold;}
 
 .tooltip-container {
   position: relative;

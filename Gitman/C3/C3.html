@@ -87,45 +87,14 @@ pre code, pre tt{ background-color:transparent; border:none; }
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
 
-<!--script src="https://www.gstatic.com/charts/loader.js"></script-->
-
-<script src="../../Utilities.js"></script>
+<script src="../../GeneralUtils.js"></script>
 
 <script src="../GMisc.js"></script>
 
 <script src="./Scripts.js"></script>
 
-<style>
-  body {font-family: Palatino;}
-  th.cen {text-align: center;}
-  td.num {text-align: right;}
-  td.text {text-align: left;}
-  td.cen {text-align: center;}
-  form.pad {padding: 0px 0px 13px;}
-  sp.sum {font-weight: bold;}
- 
-  .tooltip-container {
-  position: relative;
-  display: inline-block;
-  }
-  .tooltip-text {
-  visibility: hidden;
-  width: 240px;
-  background-color: white;
-  color: #f00;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 100%; /* Position below the hovered element */
-  left: 105%;
-  margin-left: -60px; /* Center the tooltip */
-  }
-  .tooltip-container:hover .tooltip-text {
-  visibility: visible; /* Or display: block; */
-  }
-</style>
+<p><link rel="stylesheet" href="../../Styles.css">
+<title>Solutions of Selected Problems from Gitman <q>Principles of Managerial Finance (Brief) 3rd Ed. Chapter 3</q></title></p>
 
 <p><body onload="G3P1();G3P11(); G3P12(); G3P14();"></p>
 
@@ -139,15 +108,36 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <h3><center>&copy; 2018, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
 
-<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
-<p>Calculators for the formulas new to this chapter, implemented as HTML5 Forms, and utilizing my JavaScript functions implementing those formulas:</p>
+<p>Purple font indicates clicking on the text will return you to your prior place.</p>
+
+<h3>Contents</h3>
+
+<table>
+  <tr  style="border: none;">
+    <td style="border: none;"><a href="#P1">Problem 1</a></td>
+    <td style="border: none;"><a href="#P5">Problem 5</a></td>
+    <td style="border: none;"><a href="#P6">Problem 6</a></td>
+    <td style="border: none;"><a href="#P7">Problem 7</a></td>
+    <td style="border: none;"><a href="#P8">Problem 8</a></td>
+  </tr>
+  <tr  style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#P10">Problem 10</a></td>
+    <td style="border: none;"><a href="#P11">Problem 11</a></td>
+    <td style="border: none;"><a href="#P12">Problem 12</a></td>
+    <td style="border: none;"><a href="#P14">Problem 14</a></td>
+    <td style="border: none;"><a href="#Source">Source code links</a></td>
+  </tr>
+</table>
+
+<p>Calculators for the formulas new to this chapter, implemented as HTML5 Forms, and utilizing JavaScript functions implementing those formulas:</p>
 
 <form class="pad" alt="Operating Cash Flow Calculator" name="OCFForm" 
 oninput="OCF.value = OpCashFlow(ebit.value, tax.value, Number(dep.value))">
@@ -191,7 +181,8 @@ FCF: <output name="FCF" for="ocf nfai ncai" ></output>
 
 <h3><u>Problem Solutions</u></h3>
 
-<p><strong>1)</strong> Using the MARCS depreciation %-ages in (text) Table 3.2, prepare a depreciation schedule for the following assets:</p>
+<p><a name="P1" class="goback" onclick="winhisback()"><strong>1</strong>)</a> 
+Using the MARCS depreciation %-ages in (text) Table 3.2, prepare a depreciation schedule for the following assets:</p>
 
 <p><strong>Asset A</strong>: $17,000, recovered over three years<br>
 <strong>Asset B</strong>: $45,000, recovered over five years<br></p>
@@ -276,23 +267,24 @@ FCF: <output name="FCF" for="ocf nfai ncai" ></output>
 
 <p><br></p>
 
-<p><strong>5)</strong> (Note: my answers to parts b) and c) differ from those given in the back of my edition &amp; printing of the text; I have confirmed with the current (as of February, 2018) managing author of this series, <a href="https://business.pitt.edu/professors/chad-j-zutter/">Chad J. Zutter, Ph. D.</a>, that my answers are indeed correct.)</p>
+<p><a name="P5" class="goback" onclick="winhisback()"><strong>5</strong>)</a> 
+(Note: my answers to parts b) and c) differ from those given in the back of my edition &amp; printing of the text; I have confirmed with the current (as of February, 2018) managing author of this series, <a href="https://business.pitt.edu/professors/chad-j-zutter/">Chad J. Zutter, Ph. D.</a>, that my answers are indeed correct.)</p>
 
 <p>Given the Balance Sheet and Income Statement data in the problem statement, calculate:</p>
 
-<p><strong>a)</strong> the accounting cash flow from operations;</p>
+<p><strong>a</strong>) the accounting cash flow from operations;</p>
 
 <p><b><u>Solution</u></b></p>
 
 <p>This equals the <q>Net profits after taxes</q> entry in the Income Statement&mdash;$1,400&mdash;plus depreciation&mdash;$1,600&mdash;plus other noncash charges, which appear to be $0; thus the accounting cash flow from operations is simply $1,400 \(+\) $1,600 \(=\) <strong>$3,000</strong>.</p>
 
-<p><strong>b)</strong> the (financial) operating cash flow (OCF);</p>
+<p><strong>b</strong>) the (financial) operating cash flow (OCF);</p>
 
 <p><b><u>Solution</u></b></p>
 
 <p>This equals the <q>Earnings before interest and taxes</q> (EBIT)&mdash;$2,700&mdash;minus taxes&mdash;$933&mdash;plus depreciation&mdash;$1,600&mdash;and thus is $2,700 \(-\) $933 \(+\) $1,600 \(=\) <strong>$3,367</strong>.</p>
 
-<p><strong>c)</strong> the free cash flow (FCF);</p>
+<p><strong>c</strong>) the free cash flow (FCF);</p>
 
 <p><b><u>Solution</u></b></p>
 
@@ -348,14 +340,15 @@ FCF: <output name="FCF" for="ocf nfai ncai" ></output>
 
 <p>So, finally, the FCF = $3,367 \(-\) $1,400 \(-\) $1,400 \(=\) <strong>$567</strong>.</p>
 
-<p><strong>d)</strong> interpret, compare, and contrast the above results.</p>
+<p><strong>d</strong>) interpret, compare, and contrast the above results.</p>
 
 <p><b><u>Solution</u></b></p>
 
 <p>The $367 by which OCF is greater than the accounting cash flow from operations, reflects interest expense deducted from the latter but not the former. The $567 in FCF is the amount of cash available after operating income and expenses (other than interest) have been <q>settled,</q> i.e., it is what is available to <q>cover</q> interest and any non-operational expenses, e.g., paying dividends to shareholders, increasing the firm’s cash balance, etc. Since the interest commitment appears to be $367, that leaves $200 for such other non-operational expenses.
-<br><br></p>
+<br></p>
 
-<p><strong>6)</strong> Project June, July, and August cash receipts, given the following sales and collections data: April: $65,000; May: $60,000; June: $70,000; July and August: $100,000 each; 50% collected in <q>month zero,</q> i.e., the month of the sale, and 25% collected in each of the following two months.</p>
+<p><a name="P6" class="goback" onclick="winhisback()"><strong>6</strong>)</a> 
+Project June, July, and August cash receipts, given the following sales and collections data: April: $65,000; May: $60,000; June: $70,000; July and August: $100,000 each; 50% collected in <q>month zero,</q> i.e., the month of the sale, and 25% collected in each of the following two months.</p>
 
 <p><b><u>Solution</u></b></p>
 
@@ -364,7 +357,8 @@ FCF: <output name="FCF" for="ocf nfai ncai" ></output>
 <p>Similarly, July receipts \(=\) $50,000 \(+\) $17,500 \(+\) $15,000 \(=\) <strong>$82,500</strong>; August receipts \(=\) $50,000 \(+\) $25,000 \(+\) $17,500 \(=\) <strong>$92,500</strong>.
 <br><br></p>
 
-<p><strong>7)</strong> Give a Cash Budget for Grenoble Enterprises for May, June, and July.</p>
+<p><a name="P7" class="goback" onclick="winhisback()"><strong>7</strong>)</a> 
+Give a Cash Budget for Grenoble Enterprises for May, June, and July.</p>
 
 <p><u>Data</u> (all in thousands of $):<br>
 Cash on hand May 1: 5<br>
@@ -568,7 +562,8 @@ Goal: maintain a minimum cash balance of 5</p>
 <p>At the end of <strong>May</strong>, Grenoble will have surplus cash of <strong>$3,000</strong>, but, in order to maintain their desired $5,000 minimum cash balance, by the end of <strong>June</strong> they will have to secure financing of <strong>$18,000</strong> cash, and an additional $31,000 \(-\) $18,000 \(=\) <strong>$13,000</strong> cash by the end of <strong>July</strong>.
 <br><br></p>
 
-<p><strong>8</strong>) Given the data, actual and forecast, in the problem statement, produce a cash budget for Xenocore, Inc., for the months Sept., 2003 through April, 2004, and use it to determine each of the following:</p>
+<p><a name="P8" class="goback" onclick="winhisback()"><strong>8</strong>)</a> 
+Given the data, actual and forecast, in the problem statement, produce a cash budget for Xenocore, Inc., for the months Sept., 2003 through April, 2004, and use it to determine each of the following:</p>
 
 <p><strong>a</strong>) each end-of-month cash balance, assuming October’s is $22,000 (i.e., this is Novenber’s starting cash balance);</p>
 
@@ -1487,7 +1482,7 @@ Goal: maintain a minimum cash balance of 5</p>
   </tr>
   <tr>
     <th>
-      <a  class="tooltip-container"  name="Answer2PartA" onclick="window.history.back()">Ending cash
+      <a class="tooltip-container" name="Answer2PartA" onclick="window.history.back()">Ending cash
         <span class="tooltip-text">Click link to return to prior place</span>
       </a>
     </th>
@@ -1592,8 +1587,10 @@ Goal: maintain a minimum cash balance of 5</p>
 </table>
 
 <p>c) From the Cash Budget projections, we see that the maximum expected cash deficiency is <strong>$37,000</strong>, and thus this amount is the <q>minimum maximum</q> required line-of-credit. (To account for uncertainty, it would probably be wise to seek an LoC of from $40-50,000, depending on how confident we are in our projections.)
-<br><br>
-<strong>10)</strong> Brownstein, Inc. forecasts the following cash receipts and disbursements over the next three months: Sales: $100,000 each month; Purchases: $60,000 e. m.; Wages &amp; Salaries: $10,000 + 5%(Sales) = $10,000 + $5,000 = $15,000 e.m.; One-time adjustments: Month one: $20,000 payment (tax); Month two: $15,000 payment (fixed-asset purchase); Month three: $8,000 receipt (asset sale); Month one beginning cash and each month minimum cash balance: $0.</p>
+<br><br></p>
+
+<p><a name="P10" class="goback" onclick="winhisback()"><strong>10</strong>)</a> 
+Brownstein, Inc. forecasts the following cash receipts and disbursements over the next three months: Sales: $100,000 each month; Purchases: $60,000 e. m.; Wages &amp; Salaries: $10,000 + 5%(Sales) = $10,000 + $5,000 = $15,000 e.m.; One-time adjustments: Month one: $20,000 payment (tax); Month two: $15,000 payment (fixed-asset purchase); Month three: $8,000 receipt (asset sale); Month one beginning cash and each month minimum cash balance: $0.</p>
 
 <p><strong>a</strong>) Construct a cash budget for Brownstein for these three months.</p>
 
@@ -1906,7 +1903,8 @@ Goal: maintain a minimum cash balance of 5</p>
 <p>The financial manager needs to make arrangements for a line-of-credit of at least <strong>$23,000</strong> (probably $25,000, just to be safe); and also make arrangements to possibly <strong>invest up to $105,000</strong> in highly-liquid assets, over the next three months.
 <br><br></p>
 
-<p><strong>11)</strong> Given the following 2004 forecast data for Metroline Manufacturing: Total sales&mdash;$<sp id="2K4Sales">1,500</sp>,000; Interest expense (unchanged)&mdash;$<sp id="Int">35</sp>,000; Cash dividends&mdash;$<sp id="Div">70</sp>,000; and the 2003 data given in the tables in the problem statement; prepare year-2004 pro forma income statements:</p>
+<p><a name="P11" class="goback" onclick="winhisback()"><strong>11</strong>)</a> 
+Given the following 2004 forecast data for Metroline Manufacturing: Total sales&mdash;$<sp id="2K4Sales">1,500</sp>,000; Interest expense (unchanged)&mdash;$<sp id="Int">35</sp>,000; Cash dividends&mdash;$<sp id="Div">70</sp>,000; and the 2003 data given in the tables in the problem statement; prepare year-2004 pro forma income statements:</p>
 
 <p><strong>a</strong>) Using the percent-of-sales method.</p>
 
@@ -2074,7 +2072,8 @@ Goal: maintain a minimum cash balance of 5</p>
 <p>Clearly, the fixed and variable costs method gives a more optimistic forecast&mdash;$157,000 to retained earnings vs. $146,600; however, given that it recognizes and accounts for the fact that not all costs are proportional to gross sales, it probably also gives the more accurate forecast as well.
 <br><br></p>
 
-<p><strong>12</strong>) Using the <strong><em>judgemental approach</em></strong>, prepare a pro forma balance sheet (Part a) for 2004 for Leonard Industries, using the data given in the problem statement, and use it to answer:</p>
+<p><a name="P12" class="goback" onclick="winhisback()"><strong>12</strong>)</a>
+Using the <strong><em>judgemental approach</em></strong>, prepare a pro forma balance sheet (Part a) for 2004 for Leonard Industries, using the data given in the problem statement, and use it to answer:</p>
 
 <p><strong>b</strong>) How much, if any, additional financing will Leonard Industries require in 2004; and</p>
 
@@ -2165,7 +2164,8 @@ Unless marked otherwise, numerical values are data given in the problem statemen
 <p><strong>c</strong>) Since the anticipated cash dividend pay-out&mdash;$70,000&mdash;excedes the forecast EFR&mdash;$53,000&mdash;and since the dividend is a simple summand in determining the EFR (i.e., it is not <q>scaled</q> or adjusted in any way prior to being included in the EFR calculation), Leonard Industries could eliminate their EFR by reducing the anticipated dividend pay-out by the EFR, i.e., by reducing the dividend to $70,000 \(-\) $53,000 \(=\) <strong>$17,000</strong> (which we confirmed by actually making the appropriate change, temporarily, in the Dividend paid amount above).
 <br><br></p>
 
-<p><strong>14</strong>) Prepare a pro forma Income Statement (Part a) and Balance Sheet (Part b), and determine the EFR (Part c) for Red Queen Restaurants for 2004, based on the data given in the problem statement. (Again, unless marked otherwise, dollar values <i>in tables</i> are data given in the problem statement and are times 1,000.)</p>
+<p><a name="P14" class="goback" onclick="winhisback()"><strong>14</strong>)</a>
+Prepare a pro forma Income Statement (Part a) and Balance Sheet (Part b), and determine the EFR (Part c) for Red Queen Restaurants for 2004, based on the data given in the problem statement. (Again, unless marked otherwise, dollar values <i>in tables</i> are data given in the problem statement and are times 1,000.)</p>
 
 <p><strong>Solution</strong>:</p>
 
@@ -2268,7 +2268,7 @@ Unless marked otherwise, numerical values are data given in the problem statemen
 </table> 
 
 <p>The projected external financing required is <strong>$11,250</strong>&mdash;less than $1000 per month and the second least quantity among the two tables, i.e., paltry in comparison to the other dollar amounts RQR is accustomed to dealing with. Thus one would expect that RQR should have little difficulty securing such financing: unless the assumptions underlying these pro forma estimates are grossly in error, RQR appears to be reliably secure for the year 2004.
-<br><br></p>
+<br></p>
 
 <h3>Please Donate:</h3>
 
