@@ -1,6 +1,10 @@
 function G3P1() {
   // Asset A
     const Acost = Number(dgEBIiH("Acost"));
+    dsEBIiH("Acost1", Acost);
+    dsEBIiH("Acost2", Acost);
+    dsEBIiH("Acost3", Acost);
+
   // Year 1
     const Ap1 = Number(dgEBIiH("A%1"));
     const Adep1 =  Acost * Ap1 / 100;
@@ -25,6 +29,12 @@ function G3P1() {
 
   // Asset B
     const Bcost = Number(dgEBIiH("Bcost"));
+    dsEBIiH("Bcost1", Bcost);
+    dsEBIiH("Bcost2", Bcost);
+    dsEBIiH("Bcost3", Bcost);
+    dsEBIiH("Bcost4", Bcost);
+    dsEBIiH("Bcost5", Bcost);
+
   // Year 1
     const Bp1 = Number(dgEBIiH("B%1"));
     const Bdep1 =  Bcost * Bp1 / 100;
