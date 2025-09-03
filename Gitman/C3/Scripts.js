@@ -66,13 +66,13 @@ function G3P1() {
     dsEBIiH("BdepTot", BdepTot);
 }
 
-function G3P8() {
+function G3P8() { /*
     const Mon0ARR = dgEBIiH("Mon0ARR");
     const Nov03Sales = dgEBIiH("Nov03Sales")
     let str = Mon0ARR + "(" + Nov03Sales + ") = <b id=\"NovLag0Rec\">" + 
               Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Nov03Sales")) + "</b>";
-//    dsEBIiH("Nov03CashSales", str);
-}
+    dsEBIiH("Nov03CashSales", str);
+*/}
 
 function G3P11() {
   const s = Number(removeCommas(dgEBIiH("2K4Sales")));
