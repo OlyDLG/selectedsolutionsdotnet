@@ -65,6 +65,15 @@ function G3P1() {
     const BdepTot = Bdep1 + Bdep2 + Bdep3 + Bdep4 + Bdep5 + Bdep6;
     dsEBIiH("BdepTot", BdepTot);
 }
+
+function G3P8() {
+    const Mon0ARR = dgEBIiH("Mon0ARR");
+    const Nov03Sales = dgEBIiH("Nov03Sales")
+    let str = Mon0ARR + "(" + Nov03Sales + ") = <b id=\"NovLag0Rec\">" + 
+              Number(dgEBIiH("Mon0ARR")) * Number(dgEBIiH("Nov03Sales")) + "</b>";
+//    dsEBIiH("Nov03CashSales", str);
+}
+
 function G3P11() {
   const s = Number(removeCommas(dgEBIiH("2K4Sales")));
   dsEBIiH("Sales", s);
