@@ -3,7 +3,7 @@ function RateOfRet(c, p0, p1) {
 }
 
 function Riskier(p1, p2) {
-    var riskier = (p1 == p2);
+    let riskier = (p1 == p2);
     if (riskier) {
         riskier = "equally risky";
     }
@@ -14,12 +14,11 @@ function Riskier(p1, p2) {
 }
 
 function PB(weights, betas) {
-    var rslt = Number.NaN;
+    let rslt = Number.NaN;
     if ((weights.length==betas.length) &&
          isNumericalArray(weights) &&
-         isNumericalArray(betas)
-         ) {
-         rslt = dot(weights, betas);
-         }
+         isNumericalArray(betas)) {
+        rslt = dot(weights, betas);
+    }
     return rslt;
 }
