@@ -83,10 +83,17 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <style type="text/css">
 </style>
 </head>
-<body><p>\(\require{cancel}\)
+<body><script>
+  function winhisback() {window.history.back();}
+</script>
+
 <style>
-body {font-family: Palatino}
-</style></p>
+  body {font-family: Palatino}
+  .goback {color: purple}
+</style>
+
+<p><title>Solutions of Selected Problems from Boyce/DiPrima <q>Elem. DEs &amp; BVPs 5th Ed. Chapter 9 Sec. 1</q></title>
+\(\require{cancel}\)</p>
 
 <h2><center>Selected Problem Solutions</h2>
 
@@ -98,15 +105,31 @@ body {font-family: Palatino}
 
 <h3><center>&copy; 2019, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
-<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
-<p><b>12)</b> For \(\dot{\mathbf{x}}\)\( = 
+<p>Purple font indicates clicking on the text will return you to your prior place.</p>
+
+<h3>Contents</h3>
+
+<table>
+  <tr  style="border: none;">
+    <td style="border: none;"><a href="#P12">Problem 12</a></td>
+    <td style="border: none;"><a href="#P16">Problem 16</a></td>
+    <td style="border: none;"><a href="#P18">Problem 18</a></td>
+    <td style="border: none;"><a href="#P19">Problem 19</a></td>
+    <td style="border: none;"><a href="#P20">Problem 20</a></td>
+    <td style="border: none;"><a href="#P21">Problem 21</a></td>
+  </tr>
+</table>
+
+<p><a name="P12" class="goback" onclick="winhisback()"><strong>12</strong>)</a>
+For \(\dot{\mathbf{x}}\)\( = 
 \left(\begin{array}{c c}
   2 &amp; \displaystyle \scriptsize{-\frac52} \\
  \displaystyle \scriptsize{\frac95} &amp; -1 \\
@@ -271,7 +294,8 @@ as the solution fitting arbitrary initial condition \(\mathbf{x}(0) = (x_0, y_0)
 <img src=./BDiP9.1.12x_1.jpg></img>
 <br><br></p>
 
-<p><b>16)</b> For \(\dot{\mathbf{x}} = \left(\begin{array}{c c} 0 &amp; -\beta \\ \delta &amp; 0 \end{array}\right) \mathbf{x} + \left(\begin{array}{c} \alpha \\ \gamma \end{array}\right)\); \(\alpha, \beta, \gamma, \delta \gt 0\), determine the critical point \(\mathbf{x}^*\) and classify its type and stability.</p>
+<p><a name="P16" class="goback" onclick="winhisback()"><strong>16</strong>)</a>
+For \(\dot{\mathbf{x}} = \left(\begin{array}{c c} 0 &amp; -\beta \\ \delta &amp; 0 \end{array}\right) \mathbf{x} + \left(\begin{array}{c} \alpha \\ \gamma \end{array}\right)\); \(\alpha, \beta, \gamma, \delta \gt 0\), determine the critical point \(\mathbf{x}^*\) and classify its type and stability.</p>
 
 <p><b>Sln</b>: Setting \(\dot{\mathbf{x}}\)\( = 0\), the system is equivalent to: 
 \(\begin{eqnarray}
@@ -290,7 +314,8 @@ as the solution fitting arbitrary initial condition \(\mathbf{x}(0) = (x_0, y_0)
 <p>The reader should not find it surprising that, within each graph, i.e., for fixed \(\alpha, \beta, \gamma,\) and \(\delta\), the trajectories are: a) concentric; b) non-intersecting; and c) appear to (indeed do) all have the same eccentricity&mdash;why?
 <br><br></p>
 
-<p><b>18)</b> Consider the system \(\mathbf{x}’= \mathbf{Ax}\) and suppose that \(\mathbf{A}\) has one zero eigenvalue.</p>
+<p><a name="P18" class="goback" onclick="winhisback()"><strong>18</strong>)</a>
+Consider the system \(\mathbf{x}’= \mathbf{Ax}\) and suppose that \(\mathbf{A}\) has one zero eigenvalue.</p>
 
 <p><b>a)</b> Show that \(\mathbf{x} = \mathbf{0}\) is a critical point, but not an isolated one.</p>
 
@@ -323,7 +348,8 @@ as the solution fitting arbitrary initial condition \(\mathbf{x}(0) = (x_0, y_0)
 <p>If the latter is the case, i.e., if the initial condition happens to lie on the line \(\displaystyle y = \frac{y_1}{x_1}x\) (the case of it being on this line with \(x_0 = 0\) already having been excluded&mdash;where and why?), i.e., on the line passing through the origin with direction the same as the eigenvector corresponding to the zero eigenvalue, then, substituting \(\displaystyle \frac{x_1}{x_0}y_0\) in for \(y_1\) in our general trajectory equation yields: \(\displaystyle \frac{x - ax_1}{x_0 - ax_1} = \frac{y - ax_1y_0/x_0}{y_0 - ax_1y_0/x_0} = \frac{x_0y - ax_1y_0}{x_0y_0 - ax_1y_0} = \frac{x_0y - ax_1y_0}{y_0(x_0 - ax_1)} \overset{x_0 \ne ax_1}{\implies} y_0x -\cancel{ax_1y_0} = x_0y - \cancel{ax_1y_0} \implies y = \frac{y_0}{x_0}x\), i.e., if \(\displaystyle \frac{y_0}{x_0} = \frac{y_1}{x_1}\), then \(\mathbf{x}(t)\) remains on this line for all \(t\). (The <q>sub-case</q> of \(x_0 = ax_1\) and indicating the direction of motion on the trajectories are left for the reader.)\(~~\blacksquare\)
 <br><br></p>
 
-<p><b>19)</b> For \(\left(\begin{array}{c} x \\ y \end{array}\right)’ = \left(\begin{array}{c c} p &amp; q \\ r &amp; s\end{array}\right) \left(\begin{array}{c} x \\ y \end{array}\right)\)</p>
+<p><a name="P19" class="goback" onclick="winhisback()"><strong>19</strong>)</a>
+For \(\left(\begin{array}{c} x \\ y \end{array}\right)’ = \left(\begin{array}{c c} p &amp; q \\ r &amp; s\end{array}\right) \left(\begin{array}{c} x \\ y \end{array}\right)\)</p>
 
 <p><b>a)</b> Show that \(\lambda_{\pm} = \gamma i,~\gamma \in \mathbb{R} \iff p + s = 0, ps - qr \gt 0\).</p>
 
@@ -341,7 +367,8 @@ as the solution fitting arbitrary initial condition \(\mathbf{x}(0) = (x_0, y_0)
 <p><b>Pf</b>: Integrating both sides of Eq. 2 yields: \(rx^2 - qy^2 = 2pxy + k\) (\(k\) a constant of integration) \(\implies rx^2 + 2sxy - qy^2 = k\) (where we have again used \(s = -p\)). To show that this is the equation of an ellipse, we utilize a theorem from Analytic Geometry (see, e.g., Leithold, L., 1981. <i>The Calculus with Analytic Geometry, Fourth Edition.</i> Harper &amp; Row, New York.) which states that, given the equation \(Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0\), its graph is an ellipse if \(B^2 - 4AC \lt 0\). In our case, we need to examine \((2s)^2 - 4(r)(-q) = 4(s^2 + rq) = 4(rq - ps)~(\because p = -s) \lt 0 \iff ps - rq &gt; 0.~~~\blacksquare\)
 <br><br></p>
 
-<p><b>20)</b> Given \(\displaystyle \frac{dx}{dt} = \alpha x + \beta y, \frac{dy}{dt} = \gamma x + \delta y, \alpha, \beta, \gamma, \delta\) real constants, and define \(p = \alpha + \delta, q = \alpha \delta - \beta \gamma, \Delta = p^2 - 4q\). Show that the c.p. \(\mathbf{0}\) is: a node if \(q \gt 0\) and \(\Delta \ge 0\); a saddle point if \(q \lt 0\); a spiral point if \(p \ne 0\) and \(\Delta \lt 0\); a center if \(p = 0\) and \(q \gt 0\).</p>
+<p><a name="P20" class="goback" onclick="winhisback()"><strong>20</strong>)</a>
+Given \(\displaystyle \frac{dx}{dt} = \alpha x + \beta y, \frac{dy}{dt} = \gamma x + \delta y, \alpha, \beta, \gamma, \delta\) real constants, and define \(p = \alpha + \delta, q = \alpha \delta - \beta \gamma, \Delta = p^2 - 4q\). Show that the c.p. \(\mathbf{0}\) is: a node if \(q \gt 0\) and \(\Delta \ge 0\); a saddle point if \(q \lt 0\); a spiral point if \(p \ne 0\) and \(\Delta \lt 0\); a center if \(p = 0\) and \(q \gt 0\).</p>
 
 <p><b>Sln</b>: The eigenvalues, \(r_{\pm}\), upon which all these characterizations depend, are the solutions of </p>
 
@@ -351,7 +378,8 @@ whose solutions are \(r_{\pm} = \displaystyle \frac{p \pm \sqrt{\Delta}}2 \there
 Now, \(\Delta \ge 0 \implies r_+, r_-\) both real and \(q \gt 0 \implies r_+, r_-\) both \(\gt 0\) or both \(\lt 0\), thus, by text Table 9.1.1, these two conditions together imply \(\mathbf{0}\) <b>is a node</b> (possibly proper if \(\Delta = 0\)); \(q \lt 0 \implies\) both \(\Delta \gt 0 \implies r_{\pm} \in \mathbb{R}\) and \(r_- \lt 0 \lt r_+\), thus by Table 9.1.1 this single condition implies \(\mathbf{0}\) <b>is a saddle point</b>; \(\Delta \lt 0 \implies \text{Im}(r_{\pm}) \ne 0\) so if additionally \(p\ne 0\), Table 9.1.1 tells us \(\mathbf{0}\) <b>is a spiral point</b>; and finally if \(q \gt 0\), \(p=0 \implies\) both \(\Delta \lt 0 \implies \text{Im}(r_{\pm}) \ne 0\), and \(\text{Re}(r_{\pm}) = 0\) and by Table 9.1.1 this implies \(\mathbf{0}\) <b>is a center</b>.\(~~~\blacksquare\)
 <br><br></p>
 
-<p><b>21)</b> Continuing problem 20), show that \(\mathbf{0}\) is: asymptotically stable if \(q \gt 0, p \lt 0\); stable if \(q \gt 0, p = 0\); unstable if \(q \lt 0\) or \(p \gt 0\).</p>
+<p><a name="P21" class="goback" onclick="winhisback()"><strong>21</strong>)</a>
+Continuing problem 20), show that \(\mathbf{0}\) is: asymptotically stable if \(q \gt 0, p \lt 0\); stable if \(q \gt 0, p = 0\); unstable if \(q \lt 0\) or \(p \gt 0\).</p>
 
 <p><b>Sln</b>: By Table 9.1.1, centers are the only stable c.p.’s and 20) demonstrated that \(q \gt 0, p = 0\) is the only way to have a center, so the middle claim is trivially true.<br></p>
 
