@@ -87,7 +87,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
 
-<script src="../../Utilities.js"></script>
+<script src="../../GeneralUtils.js"></script>
 
 <script src="../GMisc.js"></script>
 
@@ -95,15 +95,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <script src="./Scripts.js"></script>
 
-<style>
-  body {font-family: Palatino;}
-  form.pad {padding: 0px 0px 13px;}
-  .text {text-align: left;}
-  .cen {text-align: center;}
-  .num {text-align: right;}
-  .text {text-align: left;}
-  .sum {font-weight: bold;}
-</style>
+<p><link rel="stylesheet" href="../../Styles.css">
+<title>Solutions of Selected Problems from Gitman <q>Principles of Managerial Finance (Brief) 3rd Ed. Chapter 4</q></title></p>
 
 <p><body onload="G4P2(); G4P3(); G4P5(); G4P9(); G4P14(); G4P17(); G4P18(); G4P21(); G4P22(); G4P28(); G4P33(); G4P38(); G4P53();"></p>
 
@@ -117,17 +110,63 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <h3><center>&copy; 2018, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
 
-<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Purple font indicates clicking on the text will return you to your prior place.</p>
+
+<h3>Contents</h3>
+
+<table>
+  <tr  style="border: none;">
+    <td style="border: none;"><a href="#P2">Problem 2</a></td>
+    <td style="border: none;"><a href="#P3">Problem 3</a></td>
+    <td style="border: none;"><a href="#P5">Problem 5</a></td>
+    <td style="border: none;"><a href="#P6">Problem 6</a></td>
+    <td style="border: none;"><a href="#P9">Problem 9</a></td>
+  </tr>
+  <tr  style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#P11d">Problem 11d</a></td>
+    <td style="border: none;"><a href="#P13">Problem 13</a></td>
+    <td style="border: none;"><a href="#P14c">Problem 14c</a></td>
+    <td style="border: none;"><a href="#P17">Problem 17</a></td>
+    <td style="border: none;"><a href="#P18">Problem 18</a></td>
+  </tr>
+  <tr  style="border: none;">
+    <td style="border: none;"><a href="#P21">Problem 21</a></td>
+    <td style="border: none;"><a href="#P22">Problem 22</a></td>
+    <td style="border: none;"><a href="#P25">Problem 25</a></td>
+    <td style="border: none;"><a href="#P28">Problem 28</a></td>
+    <td style="border: none;"><a href="#P30">Problem 30</a></td>
+  </tr>
+  <tr  style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#P33">Problem 33</a></td>
+    <td style="border: none;"><a href="#P38">Problem 38</a></td>
+    <td style="border: none;"><a href="#P40">Problem 40</a></td>
+    <td style="border: none;"><a href="#P43">Problem 43</a></td>
+    <td style="border: none;"><a href="#P45">Problem 45</a></td>
+  </tr>
+  <tr  style="border: none;">
+    <td style="border: none;"><a href="#P46">Problem 46</a></td>
+    <td style="border: none;"><a href="#P49">Problem 49</a></td>
+    <td style="border: none;"><a href="#P51">Problem 51</a></td>
+    <td style="border: none;"><a href="#P53">Problem 53</a></td>
+    <td style="border: none;"><a href="#P56">Problem 56</a></td>
+  </tr>
+  <tr  style="border: none; background-color: white;">
+    <td colspan=5 style="border: none;"><a href="#Source">Source code links</a>, including to GPVFV.js</td>
+  </tr>
+</table>
 
 <h3><u>Problem Solutions</u></h3>
 
-<p><strong>2)</strong> Using the formula given in the text (which we have implemented in file GPVFV.js using JavaScript), calculate the Future Value Interest Factor for each of the following pairs of interest rate and number of periods, and compare with the values given in text Table A-1.</p>
+<p><a name="P2" class="goback" onclick="winhisback()"><strong>2</strong>)</a> 
+Using the formula given in the text (which we have implemented in file <a href="#GPVFV">GPVFV.js</a> using JavaScript), calculate the Future Value Interest Factor for each of the following pairs of interest rate and number of periods, and compare with the values given in text Table A-1.</p>
 
 <p><strong>Solution</strong>:</p>
 
@@ -170,7 +209,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br></p>
 
-<p><strong>3)</strong> Using text Table A-1, estimate the number of years for an initial investment to <strong>a</strong>) double and <strong>b</strong>) quadruple (increase by a factor of four) for the (annual) interest rates given in the Solution Table below.</p>
+<p><a name="P3" class="goback" onclick="winhisback()"><strong>3</strong>)</a> 
+Using text Table A-1, estimate the number of years for an initial investment to <strong>a</strong>) double and <strong>b</strong>) quadruple (increase by a factor of four) for the (annual) interest rates given in the Solution Table below.</p>
 
 <p><strong>Solution</strong>: </p>
 
@@ -212,7 +252,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br></p>
 
-<p><strong>5</strong>) Compare the amounts of interest earned on $1500 after 3, 6, and 9 years at <sp id="P5r">7</sp>% APR, compounded annually. </p>
+<p><a name="P5" class="goback" onclick="winhisback()"><strong>5</strong>)</a> 
+Compare the amounts of interest earned on $1500 after 3, 6, and 9 years at <sp id="P5r">7</sp>% APR, compounded annually. </p>
 
 <p><strong>Solution</strong>:
 <br>
@@ -248,19 +289,21 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>c</strong>) What accounts for the increase in interest earned?  One word: compounding.
 <br><br></p>
 
-<p><strong>6</strong>) (Paraphrased) Find the future value of $14,000 after 5 five years at 2% APR and 4% APR, compounded annually, and the difference between the two. </p>
+<p><a name="P6" class="goback" onclick="winhisback()"><strong>6</strong>)</a> 
+(Paraphrased) Find the future value of $14,000 after 5 five years at 2% APR and 4% APR, compounded annually, and the difference between the two. </p>
 
 <p><strong>Solution</strong>:</p>
 
-<p><strong>a</strong>) 2%: $14,000 * (1+0.02)<sup>5</sup> = $15,457.13<sup>&ast;<br></sup>
+<p><strong>a</strong>) 2%: $14,000 * (1+0.02)<sup>5</sup> = $15,457.13<sup>&dagger;<br></sup>
 \(~~~~\)4%: $14,000 * (1+0.04)<sup>5</sup> = $17,033.14</p>
 
 <p><strong>b</strong>) Difference: $17,033.14 - $15,457.13 = $1,576.01 </p>
 
-<p><sup>&ast;</sup> The answer in the back of the book, $15,456, comes from using the FVIF from Table A1&mdash;mine is more precise.
+<p><sup>&dagger;</sup> The answer in the back of the book, $15,456, comes from using the FVIF from Table A1&mdash;mine is more precise.
 <br><br></p>
 
-<p><strong>9</strong>) Using the formula given in the text (which gives just the reciprocal of the Future Value Interest Factor), calculate the Present Value Interest Factor for each of the following pairs of opportunity cost and number of periods, and compare with the values given in text Table A-2.</p>
+<p><a name="P9" class="goback" onclick="winhisback()"><strong>9</strong>)</a> 
+Using the formula given in the text (which gives just the reciprocal of the Future Value Interest Factor), calculate the Present Value Interest Factor for each of the following pairs of opportunity cost and number of periods, and compare with the values given in text Table A-2.</p>
 
 <p><strong>Solution</strong>:</p>
 
@@ -303,7 +346,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br></p>
 
-<p><strong>11d</strong>) Compare the following amounts:</p>
+<p><a name="P11d" class="goback" onclick="winhisback()"><strong>11d</strong>)</a> 
+Compare the following amounts:</p>
 
 <p><strong>a</strong>) An investment today that will be worth $6000 in six years at 12% APR (compounded annually);</p>
 
@@ -316,14 +360,16 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p>Note the text’s description of the problem: <q>Present value concept</q>; the referenced concept is that, despite the differences in jargon used, <strong><em>all three of these amounts are the same</em></strong>, namely, the Present Value of $6000 in six years at a discount rate of 12% = $6000 * 1/(1+0.12)<sup>6</sup> = $6000 * 0.507 = <strong>$3,042</strong> (using the PVIF from text Table A-2; using the formula gives the more precise result <strong>$3,039.79</strong>).
 <br><br></p>
 
-<p><strong>13</strong>) Assuming no cash payments prior to its maturity six years from now, at what current price should a $100 Iowa State bond be sold if it is to be competitive with a similar U.S. Savings Bond earning 8% APR, compounded annually?</p>
+<p><a name="P13" class="goback" onclick="winhisback()"><strong>13</strong>)</a> 
+Assuming no cash payments prior to its maturity six years from now, at what current price should a $100 Iowa State bond be sold if it is to be competitive with a similar U.S. Savings Bond earning 8% APR, compounded annually?</p>
 
 <p><strong>Solution</strong>:</p>
 
 <p>In order to be competitive, it can’t be priced over the present value of the comparable $100 U.S. Savings Bond, which is the PV of $100 at a discount rate of 8% compounded annually for six years, i.e., it must be less than or equal to $100 * 1 / (1+0.08)<sup>6</sup> = $100 * 0.63017 = <strong>$63.02</strong>.
 <br><br></p>
 
-<p><strong>14c</strong>) (Paraphrased) Compare the present values of $1,000,000 at 6%, 9%, and 12% APR (compounded annually) after 10 and 15 years; comment on the relative impact of interest rate vs. number of periods.</p>
+<p><a name="P14c" class="goback" onclick="winhisback()"><strong>14c</strong>)</a> 
+(Paraphrased) Compare the present values of $1,000,000 at 6%, 9%, and 12% APR (compounded annually) after 10 and 15 years; comment on the relative impact of interest rate vs. number of periods.</p>
 
 <p><strong>Solution</strong>:</p>
 
@@ -331,7 +377,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <table>
   <tr>
-    <th colspan=4 class=cen>Present Value Interest Factors and Differences&ast;<br>for Three Different Discount Rates and<br>Two Different Compounding Durations</th>
+    <th colspan=4 class=cen>Present Value Interest Factors and Differences<sup>&dagger;</sup><br>for Three Different Discount Rates and<br>Two Different Compounding Durations</th>
   </tr>
   <tr>
     <th></th>
@@ -379,7 +425,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
   </tr>
 </table>
 
-<p>&ast; Differences which are off by 0.001 are due to rounding.</p>
+<p><sup>&dagger;</sup> Differences which are off by 0.001 are due to rounding.</p>
 
 <p><strong>Interpretation</strong>: It’s <q>dangerous</q> to interpret such an a) paucity, and b) disparity of data (i.e., we’re asked to compare the changes due to one change of five years vs. two changes of 3%, which is kind of like asking us to compare five apples to three oranges); so we’re going to <q>cheat</q>&mdash; below is a graph of the PVIF formula vs. number of periods (i.e., years) for the three different discount rates 6%, 9% and 12%:. </p>
 
@@ -396,7 +442,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <br><br></li>
 </ul>
 
-<p><strong>17</strong>) Calculate the future value of the following five annuities, assuming end-of-year payments.</p>
+<p><a name="P17" class="goback" onclick="winhisback()"><strong>17</strong>)</a> 
+Calculate the future value of the following five annuities, assuming end-of-year payments.</p>
 
 <p><strong>Solution</strong>: Calculations done by the JavaScript function AnnFutVal in the file GPVFV.js:</p>
 
@@ -450,7 +497,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br></p>
 
-<p><strong>18</strong>) Same as 17, but present values instead of future values.</p>
+<p><a name="P18" class="goback" onclick="winhisback()"><strong>18</strong>)</a> 
+Same as 17, but present values instead of future values.</p>
 
 <p><strong>Solution</strong>: Calculations done by the JavaScript function AnnPresVal in the file GPVFV.js:</p>
 
@@ -504,7 +552,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br></p>
 
-<p><strong>21</strong>) At the end of 20 years from now, you wish to have enough in an 11% APR account to provide you with $20,000 per year for 30 years.</p>
+<p><a name="P21" class="goback" onclick="winhisback()"><strong>21</strong>)</a> 
+At the end of 20 years from now, you wish to have enough in an 11% APR account to provide you with $20,000 per year for 30 years.</p>
 
 <p><strong>a</strong>) How much will you need in that account (at the end of 20 years from now) to make this possible?</p>
 
@@ -519,7 +568,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p>We need the present value of $173,880 (or $173,875.85) at a discount rate of 9% for 20 years; from text Table A-2, the appropriate interest factor is 0.178, yielding a present value of <strong>$30,950.64</strong>, matching the answer in the back of the text. (Using the exact amount of $173,875.85 in the exact present value formula yields $<sp id="P21b"></sp>, a bigger difference both absolutely and relatively; this is the effect of repeatedly using rounded numbers in our Table-based calculations; for example, the next two digits after 8 in the exact PVIF are 43, i.e., although the Table value of 0.178 is the correct rounding of the exact value to three decimal places, the actual value is pretty close to the point where one would round up instead of down, i.e., it’s close to providing as much difference between the approximate and exact values as possible&mdash;one would hope and expect that a financial calculator is not using rounded numbers, and would thus provide the more accurate figures, so that you’re not in for a surprise 50 years from now. As for the present value of $181,818.18 under the same circumstances, the exact calculation gives $<sp id="P21b2"></sp>, a difference of $<sp id="P21b3"></sp>, i.e., for that additional amount of deposit now, you can have your $20,000/yr for 30 years and still leave your grandchildren all the money that was providing you that income!)
 <br><br></p>
 
-<p><strong>22</strong>) Which is worth more after 25 years of investment at a) 5% APR; and b) 7% APR (compounded annually): $500,000 invested now, or a 25 year annuity of $40,000/yr? c) At what APR are the two amounts equal?</p>
+<p><a name="P22" class="goback" onclick="winhisback()"><strong>22</strong>)</a> 
+Which is worth more after 25 years of investment at a) 5% APR; and b) 7% APR (compounded annually): $500,000 invested now, or a 25 year annuity of $40,000/yr? c) At what APR are the two amounts equal?</p>
 
 <p><strong>Solution</strong>: This problem is given as a present value problem, but in my opinion it’s more intuitive to approach it as a future value problem, i.e., to compare the future value of $500,000 now invested for 25 years vs. the future value of a 25 year, $40,000/yr annuity, at the two different interest rates, so that is how I will do it. Using the exact formulae as implemented in JavaScript in file GPVFV.js:</p>
 
@@ -542,7 +592,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p>So somewhere between 6.20% and 6.25%, and there we will stop; the important thing is that the reader understand this <q>guess &amp; check</q> process. (To check your understanding, I suggest you continue the process to determine exactly at least this third digit; hint: to really be precise, you need to determine the fourth digit also, so you know the correct way to round the best value you find for the third digit. Answer (found using a graphing calculator): 6.2374%)
 <br><br></p>
 
-<p><strong>25</strong>) Calculate the future value <em>at the end of</em> the final year for each of the following <q>beginning-of-year</q> mixed-stream cash flows, assuming 12% APR (compounded annually).</p>
+<p><a name="P25" class="goback" onclick="winhisback()"><strong>25</strong>)</a> 
+Calculate the future value <em>at the end of</em> the final year for each of the following <q>beginning-of-year</q> mixed-stream cash flows, assuming 12% APR (compounded annually).</p>
 
 <p><strong>Solution</strong>:</p>
 
@@ -665,7 +716,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><q>Extra Credit</q>: What are the future values of A and C assuming the same data, except that the ending amounts are left in their accounts until the end of Year 5, i.e., the duration is the same as <q>Account B,</q> but $0 deposits are made in the <q>empty</q> years? Answer: A) $4,843.58; C) $7,791.62.
 <br><br></p>
 
-<p><strong>28</strong>) Assuming a <sp id="P28r">15</sp>% ADR (compounded annually), <strong>a</strong>) find the present value of each of the following two mixed-stream cash flows and <strong>b</strong>) comment in light of the equality of the two (undiscounted) cash flows. </p>
+<p><a name="P28" class="goback" onclick="winhisback()"><strong>28</strong>)</a> 
+Assuming a <sp id="P28r">15</sp>% ADR (compounded annually), <strong>a</strong>) find the present value of each of the following two mixed-stream cash flows and <strong>b</strong>) comment in light of the equality of the two (undiscounted) cash flows. </p>
 
 <p><strong>Solution</strong>: 
 <strong>a</strong>)</p>
@@ -738,7 +790,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>b</strong>) So the present value of cash flow B is less than that of cash flow A; since they both have the same future value&mdash;$150,000&mdash;cash flow B represents the <em>greater growth in value</em> over the five year time period.
 <br><br></p>
 
-<p><strong>30</strong>) <strong>a</strong>) How much does one need to deposit now into an 8% APR account to exactly cover the following cash shortfalls:</p>
+<p><a name="P30" class="goback" onclick="winhisback()"><strong>30</strong>)</a> 
+<strong>a</strong>) How much does one need to deposit now into an 8% APR account to exactly cover the following cash shortfalls:</p>
 
 <table>
   <tr>
@@ -768,7 +821,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p>(Note: the $0.97 difference between my answer and the answer in the back of the book is due to their having used rounded PVIF’s.)
 <br><br></p>
 
-<p><strong>33</strong>) For each case in the following table, calculate:</p>
+<p><a name="P33" class="goback" onclick="winhisback()"><strong>33</strong>)</a> 
+For each case in the following table, calculate:</p>
 
 <p><strong>a</strong>) The future value</p>
 
@@ -829,7 +883,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p>So compounding with a frequency of 1 (Row 3) has no effect on the NAR, but doing so with a frequency greater than 1 increases the <q>return</q> (i.e., future value) over what it otherwise would be. (Additionally, though you can’t really tell with certainty from this paucity of data, the greater the frequency, the greater the effect, but the <em>rate</em> at which this betterment increases <em>slows</em> so that eventually, in the limit of <q>continuous</q> compounding, you reach the <em>best possible</em> improvement over the NAR, i.e., better than that, one cannot get!)
 <br><br></p>
 
-<p><strong>38</strong>) Determine the equal end-of-year payments required to accumulate the sums in the following table, subject to each sum’s terms (interest rates are annual, compounded annually).</p>
+<p><a name="P38" class="goback" onclick="winhisback()"><strong>38</strong>)</a> 
+Determine the equal end-of-year payments required to accumulate the sums in the following table, subject to each sum’s terms (interest rates are annual, compounded annually).</p>
 
 <p><strong>Solution</strong>: The required payments are determined from text Equation 4.23, which is implemented in JavaScript as function AnnPmtFromFutVal in file GPVFV.js. (Difference of $0.03 between my answer for Case B and that given in the back of the text due to use of exact formula vs. use of Table value; if you use the text Table and your answers are close to mine, assume you got the correct answer.)</p>
 
@@ -868,7 +923,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br><br></p>
 
-<p><strong>40</strong>) Determine required annual payments into an account paying 10% APR (compounded annually) over 20 years to accumulate the future value of $85,000 assuming an inflation rate of 6% APR (also compounded annually) </p>
+<p><a name="P40" class="goback" onclick="winhisback()"><strong>40</strong>)</a> 
+Determine required annual payments into an account paying 10% APR (compounded annually) over 20 years to accumulate the future value of $85,000 assuming an inflation rate of 6% APR (also compounded annually) </p>
 
 <p><strong>Solution</strong>: We must first calculate the target future value, i.e., the FV of $85,000 at 6% APR after 20 years:</p>
 
@@ -879,7 +935,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p>\(PMT = \displaystyle{\frac{FVA_n}{FVIFA_{i,n}} = \frac{\$272,606.52}{[(1+0.1)^{20} - 1]/0.1}} = \frac{\$272,606.52}{57.275} =\) <strong>$4,759.61</strong>
 <br><br></p>
 
-<p><strong>43</strong>) For a three year, $15,000, 14% APR <q>mortgage</q>:</p>
+<p><a name="P43" class="goback" onclick="winhisback()"><strong>43</strong>)</a> 
+For a three year, $15,000, 14% APR <q>mortgage</q>:</p>
 
 <p><strong>a</strong>) Calculate the required annual payment;</p>
 
@@ -932,7 +989,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>c</strong>) The reason the interest portion goes down with each payment is that you’re only charged interest on your remaining principal, and part of each payment goes towards reducing that.
 <br><br></p>
 
-<p><strong>45</strong>) Calculate the monthly payment on a 24 month, $4000 loan at <strong>a</strong>) 12% APR, and <strong>b</strong>) 9% APR. </p>
+<p><a name="P45" class="goback" onclick="winhisback()"><strong>45</strong>)</a> 
+Calculate the monthly payment on a 24 month, $4000 loan at <strong>a</strong>) 12% APR, and <strong>b</strong>) 9% APR. </p>
 
 <p><strong>Solution</strong>: This isn’t as hard as it may seem: the key is to recognize that it’s a <q>standard</q> mortgage of 24 periods, with a <q>per period</q> interest rate of the APR divided by the number of periods (months in this case) in the nominal interest period, i.e., one year. Thus the per period interest rate for:</p>
 
@@ -945,7 +1003,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>b</strong>) 9% APR is 0.09/12 = 0.0075 \(\implies PMT = \displaystyle{\frac{PVA_n}{PVIFA_{i,n}} = \$4000~\big{/} \left[\frac{1}{0.0075} \times \left(1-\frac{1}{(1+0.0075)^{24}}\right)\right]} =\) <strong>$182.74</strong> (i.e., not much of a monthly savings). :-(
 <br><br></p>
 
-<p><strong>46</strong>) Give and <strong>c</strong>) compare (i.e., discuss) the <strong>a</strong>) compound and <strong>b</strong>) nominal annual growth rates of the three cash flows given in the table of the problem statement.</p>
+<p><a name="P46" class="goback" onclick="winhisback()"><strong>46</strong>)</a> 
+Give and <strong>c</strong>) compare (i.e., discuss) the <strong>a</strong>) compound and <strong>b</strong>) nominal annual growth rates of the three cash flows given in the table of the problem statement.</p>
 
 <p><strong>Solution</strong>: Key here is to recognize that all that is needed are the initial amounts, and, for part a), the final amounts and the number of years <em>between</em> Year 1 and the final year (which is one less than the final year number), and for part b), the year 2 amount (the rest of the supplied data is irrelevant to the required calculations).  Thus, for </p>
 
@@ -970,12 +1029,14 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>c</strong>) Evidently, the growth rates in Cases A &amp; B went up (though precisely as much as one would expect from simple compounding of the nominal growth rates??? EC: check!) but in Case C, although there was growth in every year <em>except Year 4</em>, the <em>compund growth rate</em> went down compared to the initial nominal growth rate.
 <br><br></p>
 
-<p><strong>49</strong>) What is the rate of return for an annuity which pays $2000/yr. for each of the next 10 years for an initial investment of $10,606?</p>
+<p><a name="P49" class="goback" onclick="winhisback()"><strong>49</strong>)</a> 
+What is the rate of return for an annuity which pays $2000/yr. for each of the next 10 years for an initial investment of $10,606?</p>
 
 <p><strong>Solution</strong>: \(100 \times \left[\left(\frac{\$20,000}{\$10,606}\right)^{1/10} - 1\right] = 100 \times (1.065 - 1) = \) <strong>6.5%</strong>.
 <br><br></p>
 
-<p><strong>51</strong>) To the nearest 1%, figure out the interest rates (i.e., rates of return) associated with 25 year, $2,000,000 present value annuities with annual end-of-year payments of <strong>a</strong>) $156,000, <strong>b</strong>) $255,000, and <strong>c</strong>) figure out the annual payment corresponding to a 9% APR.</p>
+<p><a name="P51" class="goback" onclick="winhisback()"><strong>51</strong>)</a> 
+To the nearest 1%, figure out the interest rates (i.e., rates of return) associated with 25 year, $2,000,000 present value annuities with annual end-of-year payments of <strong>a</strong>) $156,000, <strong>b</strong>) $255,000, and <strong>c</strong>) figure out the annual payment corresponding to a 9% APR.</p>
 
 <p><strong>Solution</strong>: As mentioned above, without a financial calculator or spreadsheet app, it would require Calculus to estimate the answers to parts a) and b) more precisely than to 1%, but such precision is quite attainable from text Table A-4. As per text Eq. 4.26, we need to look up the \(PVIFA = PVA / PMT\) in the <q>innards</q> of the Table along the 25 year row, and then read up to get the required percent.</p>
 
@@ -986,7 +1047,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>c</strong>) The PVIFA along the Year 25 row corresponding to 9% is 9.823, yielding a minimum acceptable annual payment of \(\displaystyle \frac{\$2,000,000}{9.823} =\) <strong>$203,603.79</strong>.
 <br><br></p>
 
-<p><strong>53</strong>) Determine the number of periods (years in this case) for each of the following single initial deposits to grow into their given future values at the stated APR’s.</p>
+<p><a name="P53" class="goback" onclick="winhisback()"><strong>53</strong>)</a> 
+Determine the number of periods (years in this case) for each of the following single initial deposits to grow into their given future values at the stated APR’s.</p>
 
 <p><strong>Solution</strong>: Using JavaScript function FutValn in file GPVFV.js</p>
 
@@ -1031,7 +1093,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><br></p>
 
-<p><strong>56</strong>) Determine the time to repay a $14,000 loan with end-of-year payments of $2450 at APR’s of <strong>a</strong>) 12%, <strong>b</strong>) 9%, and <strong>c</strong>) 15%. <strong>d</strong>) Based on these results, what is the relationship between APR and time to repay a loan (all else being equal)?</p>
+<p><a name="P56" class="goback" onclick="winhisback()"><strong>56</strong>)</a> 
+Determine the time to repay a $14,000 loan with end-of-year payments of $2450 at APR’s of <strong>a</strong>) 12%, <strong>b</strong>) 9%, and <strong>c</strong>) 15%. <strong>d</strong>) Based on these results, what is the relationship between APR and time to repay a loan (all else being equal)?</p>
 
 <p><strong>Solution</strong>: Using JavaScript function AnnPresValn in GPVFV.js</p>
 
@@ -1043,6 +1106,10 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><strong>d</strong>) Consistent with your intuition (hopefully), the higher the interest rate, the longer it takes to pay back a loan, (all else being equal).
 <br></p>
+
+<h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
+
+<p><a href="./Scripts.js">Problem-specific scripts</a>\(~~~~\)<a href="../GPVFV.js">New functions defined this Chapter</a> (<a class="goback" name="GPVFV" onclick="winhisback()">GPVFV.js</a>)\(~~~~\)<a href="../GMisc.js">Chapter 3 functions</a>\(~~~~\)<a href="../../GeneralUtils.js">General Utilities</a> (innerHTML getting and setting aliases, comma handling, etc.)<br></p>
 
 <h3>Please Donate:</h3>
 
