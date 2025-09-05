@@ -83,9 +83,16 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <style type="text/css">
 </style>
 </head>
-<body><style>
-body {font-family: Palatino}
+<body><script>
+  function winhisback() {window.history.back();}
+</script>
+
+<style>
+  body {font-family: Palatino}
+  .goback {color: purple}
 </style>
+
+<p><title>Solutions of Selected Exercises from Lang, S <q>Calculus of Several Variables 3rd Ed. Chapter 1</q></title></p>
 
 <h2><center>Selected Exercise Solutions</h2>
 
@@ -97,13 +104,16 @@ body {font-family: Palatino}
 
 <h3><center>&copy; 2019, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
-<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes: These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Purple font indicates clicking on the text will return you to your prior place.
+<br></p>
 
 <h3>Symbols used:</h3>
 
@@ -122,9 +132,42 @@ body {font-family: Palatino}
 
 <p>(We assume symbols from set theory, e.g., \(\in, \subset, \cap, \cup,\) etc., are known to the reader from prior math courses.)</p>
 
+<h3>Contents</h3>
+
+<table>
+  <tr style="border: none;">
+    <td style="border: none;"><a href="#E1.9">Exercise 1.9a-d</a></td>
+    <td style="border: none;"><a href="#E2.1">Exercise 2.1</a></td>
+    <td style="border: none;"><a href="#E2.4">Exercise 2.4</a></td>
+    <td style="border: none;"><a href="#E2.5">Exercise 2.5</a></td>
+    <td style="border: none;"><a href="#E2.8">Exercise 2.8</a></td>
+    <td style="border: none;"><a href="#E3.3">Exercise 3.3</a></td>
+    <td style="border: none;"><a href="#E3.5">Exercise 3.5</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#E4.10">Exercise 4.10</a></td>
+    <td style="border: none;"><a href="#E5.1">Exercise 5.1b</a></td>
+    <td style="border: none;"><a href="#E5.3">Exercise 5.3</a></td>
+    <td style="border: none;"><a href="#E5.4">Exercise 5.4</a></td>
+    <td style="border: none;"><a href="#E5.5">Exercise 5.5</a></td>
+    <td style="border: none;"><a href="#E6.5">Exercise 6.5</a></td>
+    <td style="border: none;"><a href="#E6.10">Exercise 6.10</a></td>
+  </tr>
+  <tr style="border: none;">
+    <td style="border: none;"><a href="#E6.12">Exercise 6.12</a></td>
+    <td style="border: none;"><a href="#E6.13">Exercise 6.13a & d</a></td>
+    <td style="border: none;"><a href="#E6.14">Exercise 6.14a & b</a></td>
+    <td style="border: none;"><a href="#E6.16">Exercise 6.16a</a></td>
+    <td style="border: none;"><a href="#E7.7">Exercise 7.7</a></td>
+    <td style="border: none;"><a href="#E7.10">Exercise 7.10</a></td>
+    <td style="border: none;"><a href="#E7.12">Exercise 7.12</a></td>
+  </tr>
+</table>
+
 <h3><u>Section 1</u></h3>
 
-<p><b>1.1.9)</b> Draw \(A - B\)</p>
+<p><a name="E1.9" class="goback" onclick="winhisback()"><strong>1.9</strong>)</a>
+Draw \(A - B\)</p>
 
 <p>a) <img src=./1.9a.png align="top" height="240" width="240">
 b) <img src=./1.9b.png align="top" height="240" width="240">
@@ -136,44 +179,51 @@ d) <img src=./1.9d.png align="top" height="240" width="240">
 
 <p>For Exercises 1 &amp; 4: Are located vectors \(\vec{PQ}, \vec{AB}\) equivalent?</p>
 
-<p><b>1.2.1)</b> \(P = (1, -1), Q = (4, 3), A = (-1, 5), B = (5, 2)\)</p>
+<p><a name="E2.1" class="goback" onclick="winhisback()"><strong>2.1</strong>)</a>
+\(P = (1, -1), Q = (4, 3), A = (-1, 5), B = (5, 2)\)</p>
 
 <p><b>Sln:</b> \(Q - P = (3, 4), B - A = (6, -3) \therefore\) <b>not equivalent</b>.
 <br><br></p>
 
-<p><b>1.2.4)</b> \(P = (2, 3, -4), Q = (-1, 3, 5), A = (-2, 3, -1), B = (-5, 3, 8)\)</p>
+<p><a name="E2.4" class="goback" onclick="winhisback()"><strong>2.4</strong>)</a>
+\(P = (2, 3, -4), Q = (-1, 3, 5), A = (-2, 3, -1), B = (-5, 3, 8)\)</p>
 
 <p><b>Sln:</b> \(Q - P = (-3, 0, 9), B - A = (-3, 0, 9) \therefore\) <b>equivalent</b>.
 <br><br></p>
 
 <p>For Exercises 5 &amp; 8: Are located vectors \(\vec{PQ}, \vec{AB}\) parallel?</p>
 
-<p><b>1.2.5)</b> \(P = (1, -1), Q = (4, 3), A = (-1, 5), B = (7, 1)\)</p>
+<p><a name="E2.5" class="goback" onclick="winhisback()"><strong>2.5</strong>)</a>
+\(P = (1, -1), Q = (4, 3), A = (-1, 5), B = (7, 1)\)</p>
 
 <p><b>Sln:</b> \(Q - P = (3, 4), B - A = (8, -4) \therefore\) <b>not parallel</b>.
 <br><br></p>
 
-<p><b>1.2.8)</b> \(P = (2, 3, -4), Q = (-1, 3, 5), A = (-2, 3, -1), B = (-11, 3, -28)\)</p>
+<p><a name="E2.8" class="goback" onclick="winhisback()"><strong>2.8</strong>)</a>
+\(P = (2, 3, -4), Q = (-1, 3, 5), A = (-2, 3, -1), B = (-11, 3, -28)\)</p>
 
 <p><b>Sln:</b> \(Q - P = (-3, 0, 9), B - A = (-9, 0, -27); \because \nexists a \in \mathbb{R} : Q - P = a(B - A)\), <b>not parallel</b>.
 <br><br></p>
 
 <h3><u>Section 3</u></h3>
 
-<p><b>1.3.3)</b> Using only the four properties of the scalar product, verify in detail the identities given in the text for \((A \pm B)^2\).</p>
+<p><a name="E3.3" class="goback" onclick="winhisback()"><strong>3.3</strong>)</a>
+Using only the four properties of the scalar product, verify in detail the identities given in the text for \((A \pm B)^2\).</p>
 
 <p><b>Sln:</b> \((A \pm B)^2 = A \cdot (A \pm B) \pm B \cdot (A \pm B) = A^2 \pm A \cdot B \pm B \cdot A \pm B \cdot (\pm B) =\)<br>
 \(A^2 \pm A \cdot B \pm A \cdot B + B^2 = A^2 \pm 2A \cdot B + B^2~~~\blacksquare\)
 <br><br></p>
 
-<p><b>1.3.5)</b> Given that \(A \cdot X = 0~\forall X\), show \(A = \vec{~0~}\).</p>
+<p><a name="E3.5" class="goback" onclick="winhisback()"><strong>3.5</strong>)</a>
+Given that \(A \cdot X = 0~\forall X\), show \(A = \vec{~0~}\).</p>
 
 <p><b>Sln:</b> \(A \cdot X = A \cdot \sum_{i=1}^N x_i \vec{e~}_i = \sum_{i=1}^N x_i (A \cdot \vec{e~}_i) = 0~\forall X \implies A \cdot \vec{e~}_i = 0~\forall \vec{e~}_i \implies A \equiv \vec{~0~}.~~~\blacksquare\) 
 <br><br></p>
 
 <h3><u>Section 4</u></h3>
 
-<p><b>1.4.10)</b> Let \(A, B, C\) be three non-zero vectors such that \(A \cdot B = A \cdot C\). Show by example that this does NOT imply \(B = C\).</p>
+<p><a name="E4.10" class="goback" onclick="winhisback()"><strong>4.10</strong>)</a>
+Let \(A, B, C\) be three non-zero vectors such that \(A \cdot B = A \cdot C\). Show by example that this does NOT imply \(B = C\).</p>
 
 <p><b>Sln:</b> Let \(A=(1,1), B=(-1,1), C=(1,-1)\). Clearly \(B \ne C\), but \(A\cdot B = (1)(-1) + (1)(1) = 0 = (1)(1) + (1)(-1) = A \cdot C~~~\blacksquare\)</p>
 
@@ -182,7 +232,8 @@ d) <img src=./1.9d.png align="top" height="240" width="240">
 
 <h3><u>Section 5</u></h3>
 
-<p><b>1.5.1b)</b> Give a parametric representation for the line passing through \(P_1 = (-1, 5, 3), P_2 = (-2, 4, 7)\).</p>
+<p><a name="E5.1" class="goback" onclick="winhisback()"><strong>5.1b</strong>)</a>
+Give a parametric representation for the line passing through \(P_1 = (-1, 5, 3), P_2 = (-2, 4, 7)\).</p>
 
 <p><b>Sln:</b> From the general parameterization \(L(t) = (1-t)P_1 + tP_2\), we get the component parameterization:<br>
 \(x(t) = (-1)(1-t) + (-2)t = \mathbf{-t - 1}\)<br>
@@ -190,7 +241,8 @@ d) <img src=./1.9d.png align="top" height="240" width="240">
 \(z(t) = 3(1-t) + 7t~~~~~~~~~~~= \mathbf{4t + 3}\)
 <br><br></p>
 
-<p><b>1.5.3)</b> Ditto for \((-1, 5, 2)\) and \((3, -4, 1).\)</p>
+<p><a name="E5.3" class="goback" onclick="winhisback()"><strong>5.3</strong>)</a>
+Ditto for \((-1, 5, 2)\) and \((3, -4, 1).\)</p>
 
 <p><b>Sln:</b> \(L(t) = (1-t)(-1, 5, 2) + t(3, -4, 1) \implies\)<br>
 \(x(t) = -1(1-t) + 3t = \mathbf{4t - 1}\)<br>
@@ -198,7 +250,8 @@ d) <img src=./1.9d.png align="top" height="240" width="240">
 \(z(t) = 2(1-t) + 1t~~~= \mathbf{-t + 2}\)
 <br><br></p>
 
-<p><b>1.5.4)</b> Given a pair of points, e.g. \((1, 3, -1), (-4, 5, 2)\),  find the point a specified fraction of the way between the points.</p>
+<p><a name="E5.4" class="goback" onclick="winhisback()"><strong>5.4</strong>)</a>
+Given a pair of points, e.g. \((1, 3, -1), (-4, 5, 2)\),  find the point a specified fraction of the way between the points.</p>
 
 <p><b>Sln:</b> Here&#39;s the general case: the point, \(A\), lying \(\alpha \in [0,1]\) of the way from \(P\) to \(Q\) is \(\boxed{(1 - \alpha)P + \alpha Q}\).<br>
 Pf: Clearly, from the discussion in the text, \(A\) lies on the line passing through \(P\) and \(Q\) (if this isn&#39;t clear, the reader should re-read Section 1.5 until it is, as this is, perhaps arguably, the main point of this Section), so we <q>simply</q> need to show that \(||A - P|| = \alpha ||Q - P||\). We have:<br>
@@ -210,19 +263,22 @@ Pf: Clearly, from the discussion in the text, \(A\) lies on the line passing thr
 \((1-\frac25)P + \frac25Q = \frac35(1, 3, -1) + \frac25(-4, 5, 2) = (-1, \frac{19}5, \frac15).\)  (Exercise for the reader: verify this result using the 3-D distance formula.)
 <br><br></p>
 
-<p><b>1.5.5)</b> \(P, Q \in \mathbb{R}^n \implies \frac12(P+Q)\) is half-way, i.e., is the midpoint, between \(P,Q\).</p>
+<p><a name="E5.5" class="goback" onclick="winhisback()"><strong>5.5</strong>)</a>
+\(P, Q \in \mathbb{R}^n \implies \frac12(P+Q)\) is half-way, i.e., is the midpoint, between \(P,Q\).</p>
 
 <p><b>Sln:</b> Observe that in the previous Exercise, although the example we used the result on was in \(\mathbb{R}^3\), the statement and proof of the result didn’t rely, in any way, on the dimension of the space in which \(P,Q\) are elements: the result is completely general for \(\mathbb{R}^n\), and the formula for the midpoint is an immediate corollary.
 <br><br></p>
 
 <h3><u>Section 6</u></h3>
 
-<p><b>1.6.5)</b> Show that \(3x - 5y = 1 \text{ is not}\perp 2x + 3y = 5\).</p>
+<p><a name="E6.5" class="goback" onclick="winhisback()"><strong>6.5</strong>)</a>
+Show that \(3x - 5y = 1 \text{ is not}\perp 2x + 3y = 5\).</p>
 
 <p><b>Sln:</b> \(m_1 = \frac35,~m_2 = -\frac23,~m_1m_2 = -\frac25 \ne -1\) therefore  <b>not</b> \(\mathbf{\perp}\).
 <br><br></p>
 
-<p><b>1.6.10)</b> Find a vector parallel to the line of intersection of the two planes:
+<p><a name="E6.10" class="goback" onclick="winhisback()"><strong>6.10</strong>)</a>
+Find a vector parallel to the line of intersection of the two planes:
 \[2x - y + z = 1,~~~~~3x + y + z = 2\]</p>
 
 <p><b>Sln:</b> Each plane&#39;s normal must be normal to their line of intersection (why?), therefore a vector parallel to this line must also be normal to each of their normals. Thus, if \(\vec{~v~} = (x, y, z)\) is the desired vector, we must have:
@@ -231,7 +287,8 @@ Pf: Clearly, from the discussion in the text, \(A\) lies on the line passing thr
 Adding these (to eliminate \(y\)) gives \(5x + 2z = 0\). To get a (non-trivial) answer (consisting of integers), choose \(z=5\) (why?) which gives \(x = -2\). Substituting these into the first of our <q>= 0</q> equations gives \(-4 - y + 5 = 1 - y = 0 \implies y = 1 \implies \vec{~v~} = \boxed{(-2, 1, 5)}\), which <em>is</em> the answer given in the back of the text (at least, in the Second Edition.) (Questions for exploration/contemplation: What happens if one chooses a different non-zero value of \(z\)? For \(x\)? What if one eliminates \(x\) or \(z\) instead of \(y\)? If one chooses any of these equal to zero?)
 <br><br></p>
 
-<p><b>1.6.12)</b> Find a parameterization for the line of intersection of the planes in Exercise 1.6.11: \[2x + y + 5z = 2,~~~~~3x - 2y + z = 3\]</p>
+<p><a name="E6.12" class="goback" onclick="winhisback()"><strong>6.12</strong>)</a>
+Find a parameterization for the line of intersection of the planes in Exercise 1.6.11: \[2x + y + 5z = 2,~~~~~3x - 2y + z = 3\]</p>
 
 <p><b>Sln:</b> A direction vector for the required line is found by simultaneously solving the corresponding <q>homogeneous</q> equations:
 \[2(2x + y + 5z = 0)\] \[\underline{+(3x - 2y + z = 0)}\] \[~~7x~~+~~~11z=0\]Choosing \(z = -7\) gives \(x = 11\) and substituting these into the second <q>= 0</q> equation yields \(33 - 2y - 7 = 26 - 2y = 0\) gives \(y = 13\). Now we just need to find a point on the line:
@@ -242,7 +299,8 @@ How does one check this result (other than checking the answer in the back)?  Th
 \(3(1+11t) - 2(0 + 13t) +  (0 -7t) = 3 + (33 - 26 - 7)t = 3 + 0t = 3~\checkmark\)
 <br><br></p>
 
-<p><b>1.6.13)</b> Find the cosine of the angle between the planes<br>
+<p><a name="E6.13" class="goback" onclick="winhisback()"><strong>6.13</strong>)</a>
+Find the cosine of the angle between the planes<br>
 <b>a)</b> \(x + y + z = 1\)  (1)<br>
 \(~~~~x - y - z = 5\)  (2)</p>
 
@@ -256,7 +314,8 @@ How does one check this result (other than checking the answer in the back)?  Th
 \[\frac{(2,1,1)\cdot(-1,-1,1)}{\|(2,1,1)\|\|(-1,-1,1)\|} = \frac{-2 - 1 + 1}{\sqrt6\sqrt3} = \boxed{-\frac{\sqrt2}3}\]
 <br><br></p>
 
-<p><b>1.6.14)</b> Find the intersection of the line through \(P\) in the direction of \(A\) and the given plane<br>
+<p><a name="E6.14" class="goback" onclick="winhisback()"><strong>6.14</strong>)</a>
+Find the intersection of the line through \(P\) in the direction of \(A\) and the given plane<br>
 <b>a)</b> \(P = (1, 3, 5),~A = (-2, 1, 1),~2x + 3y - z = 1\)</p>
 
 <p><b>Sln:</b> A parameterization for the line \(L(t)\) through \(P\) in the direction of \(A\) is \(L(t) = P + tA\) since \(L(0) = P\) and \(tA\) has the same direction as \(A~\forall t \in \mathbb{R}\ne 0\); in terms of components \(L(t) = (1,3,5) + t(-2, 1, 1)\). Substituting into the equation of the plane gives \(1 = 2(1-2t) + 3(3+t) - (5+t) = 6 - 2t \implies t = \frac52 \implies\) the point of intersection is \[\boxed{\left(-4, \frac{11}2, \frac{15}2\right)}.\]
@@ -269,7 +328,8 @@ Check: \(2(-4) +3(\frac{11}2) - \frac{15}2 = -8 + \frac{18}2 = 1~\checkmark\)</p
 (Check is left to the reader.)
 <br><br></p>
 
-<p><b>1.6.16)</b> Find the distance between:</p>
+<p><a name="E6.16" class="goback" onclick="winhisback()"><strong>6.16</strong>)</a>
+Find the distance between:</p>
 
 <p><b>a)</b> \((1, 1, 2)\) and \(3x + y - 5z = 2\)</p>
 
@@ -278,14 +338,16 @@ Check: \(2(-4) +3(\frac{11}2) - \frac{15}2 = -8 + \frac{18}2 = 1~\checkmark\)</p
 
 <h3><u>Section 7</u></h3>
 
-<p><b>1.7.7)</b> Does \(E_1 \times (E_1 \times E_2) = (E_1 \times E_1) \times E_2\)?</p>
+<p><a name="E7.7" class="goback" onclick="winhisback()"><strong>7.7</strong>)</a>
+Does \(E_1 \times (E_1 \times E_2) = (E_1 \times E_1) \times E_2\)?</p>
 
 <p><b>Sln:</b> No: by Exercise 5 we know that \(E_1 \times E_2 = E_3\), and by <strong>CP1</strong> we know that \(E_1 \times E_3 = -(E_3 \times E_1) = -E_2\), again by Exercise 5. On the other hand, by Exercise 6 we know that \((E_1 \times E_1) = 0\) and \(0 \times A = 0~\forall A\), \(\therefore (E_1 \times E_1) \times E_2 = 0.~~\blacksquare\)</p>
 
 <p><i>Note: We do Exercises 1.7.10 and 1.7.12 assuming that the reader has read Chapter 2, Section 1, as instructed in the text.</i>
 <br><br></p>
 
-<p><b>1.7.10)</b> Show \(\displaystyle \frac{d}{dt}\left[X(t) \times Y(t)\right] = X(t) \times \frac{dY(t)}{dt} + \frac{dX(t)}{dt} \times Y(t)\)</p>
+<p><a name="E7.10" class="goback" onclick="winhisback()"><strong>7.10</strong>)</a>
+Show \(\displaystyle \frac{d}{dt}\left[X(t) \times Y(t)\right] = X(t) \times \frac{dY(t)}{dt} + \frac{dX(t)}{dt} \times Y(t)\)</p>
 
 <p><b>Sln:</b> Let \(X(t) = (x_1(t), x_2(t), x_3(t))\) and similarly for \(Y(t)\); for brevity, we will now <q>drop</q> the \((t)\)’s. We have: 
 \(\begin{eqnarray}\displaystyle 
@@ -296,7 +358,8 @@ Check: \(2(-4) +3(\frac{11}2) - \frac{15}2 = -8 + \frac{18}2 = 1~\checkmark\)</p
 \end{eqnarray} \\ \blacksquare\)
 <br><br></p>
 
-<p><b>1.7.12)</b> Show that \(\displaystyle\frac{d}{dt}\left[X(t) \cdot \left(X’(t) \times X’’(t)\right)\right] = X(t) \cdot \left(X’(t) \times X’’’(t)\right)\)</p>
+<p><a name="E7.12" class="goback" onclick="winhisback()"><strong>7.12</strong>)</a>
+Show that \(\displaystyle\frac{d}{dt}\left[X(t) \cdot \left(X’(t) \times X’’(t)\right)\right] = X(t) \cdot \left(X’(t) \times X’’’(t)\right)\)</p>
 
 <p><b>Sln:</b> (As with 1.7.10, we drop the \((t)\)’s.) By <q>The Product Rule</q> for the dot product (<q>Rule 3</q> of Chapter 2, Section 1), 
 \(\begin{eqnarray}\displaystyle
