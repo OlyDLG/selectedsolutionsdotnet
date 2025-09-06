@@ -83,23 +83,24 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <style type="text/css">
 </style>
 </head>
-<body><script type="text/x-mathjax-config">
+<body><script>
+  function winhisback() {window.history.back();}
+</script>
+
+<script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
 
-<p>\(\definecolor{red}{RGB}{255,0,0}
+<p><link rel="stylesheet" href="../../Styles.css">
+<title>Solutions of Selected Exercises from Sullivan, M. <q>Algebra &amp; Trigonometry, 9th Ed. Chapter 1</q></title>
+\(\definecolor{red}{RGB}{255,0,0}
 \definecolor{orange}{RGB}{245, 165, 0}
 \definecolor{yellow}{RGB}{255,215,0}
 \definecolor{green}{RGB}{0,255,0}
 \definecolor{indigo}{RGB}{0,0,255}
 \definecolor{violet}{RGB}{138,43,226}
 \definecolor{black}{RGB}{0,0,0}\)
-\(\require{cancel}\)
-<style>
-body {font-family: Palatino}
-.top{border-bottom:solid black 1px; display:inline-block; float:left}
-.bottom{ display:inline-block; clear:left; float:left}
-</style></p>
+\(\require{cancel}\)</p>
 
 <h2><center> Selected Exercise Solutions</h2>
 
@@ -111,19 +112,201 @@ body {font-family: Palatino}
 
 <h3><center>&copy; 2020, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
 
-<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p><b>About <q>the check step</q></b>: later in this chapter, and then throughout much of the rest of this text, as well as mathematics in general, we encounter situations in which our perfectly legitimate and correct solution procedures <i>inevitably and unavoidably</i> yield <i>spurious</i> or <i>extraneous</i> solutions, i.e., <q>candidate</q> solutions which actually don’t satisfy the original equation. In such situations, the check step is an <i>absolutely essential</i> part of the solution procedure (in order to determine which candidate solutions are valid and which are not). Even though linear and quadratic equations are not of this type&mdash;our procedures give the solution(s) and only the solution(s)&mdash;it is still <q>good mathematical practice</q> to treat the check step as an essential part of solving a problem. I believe in this principle so strongly that I always include the check step as part of my solutions (except when I <q>leave it to the reader</q>), even when it may seem <q>trivial.</q> (At first, when the check step is not required to <q>weed out</q> extraneous solutions, I will set it apart with its own section within each solution; later, when it does become absolutely essential, it will become an integral part of the solution narrative).</p>
+
+<p>Purple font indicates clicking on the text will return you to your prior place.
+<br></p>
+
+<h3>Contents</h3>
+
+<table>
+  <tr style="border: none;">
+   <th colspan=10 style="border: none;">Section 1: Linear Functions</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#1.16">1.16</a></td>
+    <td style="border: none;"><a href="#1.32">1.32</a></td>
+    <td style="border: none;"><a href="#1.36">1.36</a></td>
+    <td style="border: none;"><a href="#1.40">1.40</a></td>
+    <td style="border: none;"><a href="#1.44">1.44</a></td>
+    <td style="border: none;"><a href="#1.48">1.48</a></td>
+    <td style="border: none;"><a href="#1.52">1.52</a></td>
+    <td style="border: none;"><a href="#1.56">1.56</a></td>
+    <td style="border: none;"><a href="#1.60">1.60</a></td>
+    <td style="border: none;"><a href="#1.64">1.64</a></td>
+  </tr>
+  <tr style="border: none;">
+    <td style="border: none;"><a href="#1.68">1.68</a></td>
+    <td style="border: none;"><a href="#1.74">1.74</a></td>
+    <td style="border: none;"><a href="#1.76">1.76</a></td>
+    <td style="border: none;"><a href="#1.78">1.78</a></td>
+    <td style="border: none;"><a href="#1.88">1.88</a></td>
+    <td style="border: none;"><a href="#1.90">1.90</a></td>
+    <td style="border: none;"><a href="#1.94">1.94</a></td>
+  </tr>
+  <tr style="border: none;">
+   <th colspan=10 style="border: none; background-color: white;">Section 2: Quadratic Equations</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#2.20">2.20</a></td>
+    <td style="border: none;"><a href="#2.24">2.24</a></td>
+    <td style="border: none;"><a href="#2.28">2.28</a></td>
+    <td style="border: none;"><a href="#2.34">2.34</a></td>
+    <td style="border: none;"><a href="#2.40">2.40</a></td>
+    <td style="border: none;"><a href="#2.44">2.44</a></td>
+    <td style="border: none;"><a href="#2.54">2.54</a></td>
+    <td style="border: none;"><a href="#2.64">2.64</a></td>
+    <td style="border: none;"><a href="#2.70">2.70</a></td>
+    <td style="border: none;"><a href="#2.72">2.72</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#2.76">2.76</a></td>
+    <td style="border: none;"><a href="#2.82">2.82</a></td>
+    <td style="border: none;"><a href="#2.86">2.86</a></td>
+    <td style="border: none;"><a href="#2.90">2.90</a></td>
+    <td style="border: none;"><a href="#2.92">2.92</a></td>
+    <td style="border: none;"><a href="#2.96">2.96</a></td>
+    <td style="border: none;"><a href="#2.100">2.100</a></td>
+    <td style="border: none;"><a href="#2.104">2.104</a></td>
+    <td style="border: none;"><a href="#2.108">2.108</a></td>
+    <td style="border: none;"><a href="#2.112">2.112</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#2.114">2.114</a></td>
+    <td style="border: none;"><a href="#2.116">2.116</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+   <th colspan=10 style="border: none; background-color: white;">Section 3: Complex Numbers; Quadratic Equations in the Complex Number System</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#3.12">3.12</a></td>
+    <td style="border: none;"><a href="#3.20">3.20</a></td>
+    <td style="border: none;"><a href="#3.28">3.28</a></td>
+    <td style="border: none;"><a href="#3.36">3.36</a></td>
+    <td style="border: none;"><a href="#3.42">3.42</a></td>
+    <td style="border: none;"><a href="#3.46">3.46</a></td>
+    <td style="border: none;"><a href="#3.52">3.52</a></td>
+    <td style="border: none;"><a href="#3.56">3.56</a></td>
+    <td style="border: none;"><a href="#3.64">3.64</a></td>
+    <td style="border: none;"><a href="#3.68">3.68</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#3.72">3.72</a></td>
+    <td style="border: none;"><a href="#3.78">3.78</a></td>
+    <td style="border: none;"><a href="#3.80">3.80</a></td>
+    <td style="border: none;"><a href="#3.84">3.84</a></td>
+    <td style="border: none;"><a href="#3.86">3.86</a></td>
+    <td style="border: none;"><a href="#3.90">3.90</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+   <th colspan=10 style="border: none; background-color: white;">Section 4: Radical Equations; Equations Quadratic in Form; Factorable Equations</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#4.10">4.10</a></td>
+    <td style="border: none;"><a href="#4.20">4.20</a></td>
+    <td style="border: none;"><a href="#4.30">4.30</a></td>
+    <td style="border: none;"><a href="#4.40">4.40</a></td>
+    <td style="border: none;"><a href="#4.44">4.44</a></td>
+    <td style="border: none;"><a href="#4.52">4.52</a></td>
+    <td style="border: none;"><a href="#4.60">4.60</a></td>
+    <td style="border: none;"><a href="#4.68">4.68</a></td>
+    <td style="border: none;"><a href="#4.72">4.72</a></td>
+    <td style="border: none;"><a href="#4.80">4.80</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#4.88">4.88</a></td>
+    <td style="border: none;"><a href="#4.92">4.92</a></td>
+    <td style="border: none;"><a href="#4.96">4.96</a></td>
+    <td style="border: none;"><a href="#4.98">4.98</a></td>
+    <td colspan=6 style="border: none;"><a href="#BPQ">Bonus Problem from Quora</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+   <th colspan=10 style="border: none; background-color: white;">Section 5: Solving Inequalities</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#5.16">5.16</a></td>
+    <td style="border: none;"><a href="#5.22d">5.22d</a></td>
+    <td style="border: none;"><a href="#5.24">5.24</a></td>
+    <td style="border: none;"><a href="#5.28">5.28</a></td>
+    <td style="border: none;"><a href="#5.34">5.34</a></td>
+    <td style="border: none;"><a href="#5.38">5.38</a></td>
+    <td style="border: none;"><a href="#5.46">5.46</a></td>
+    <td style="border: none;"><a href="#5.52">5.52</a></td>
+    <td style="border: none;"><a href="#5.60">5.60</a></td>
+    <td style="border: none;"><a href="#5.66">5.66</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#5.72">5.72</a></td>
+    <td style="border: none;"><a href="#5.78">5.78</a></td>
+    <td style="border: none;"><a href="#5.84">5.84</a></td>
+    <td style="border: none;"><a href="#5.88">5.88</a></td>
+    <td style="border: none;"><a href="#5.94">5.94</a></td>
+    <td style="border: none;"><a href="#5.98">5.98</a></td>
+    <td style="border: none;"><a href="#5.100">5.100</a></td>
+    <td style="border: none;"><a href="#5.106">5.106</a></td>
+    <td style="border: none;"><a href="#5.110">5.110</a></td>
+    <td style="border: none;"><a href="#5.114">5.114</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#5.118">5.118</a></td>
+    <td style="border: none;"><a href="#5.121">5.121</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+   <th colspan=10 style="border: none; background-color: white;">Section 6: Equations and Inequalities Involving Absolute Value</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#6.10">6.10</a></td>  
+    <td style="border: none;"><a href="#6.20">6.20</a></td>  
+    <td style="border: none;"><a href="#6.30">6.30</a></td>  
+    <td style="border: none;"><a href="#6.32">6.32</a></td>  
+    <td style="border: none;"><a href="#6.34">6.34</a></td>  
+    <td style="border: none;"><a href="#6.42">6.42</a></td>  
+    <td style="border: none;"><a href="#6.46">6.46</a></td>  
+    <td style="border: none;"><a href="#6.50">6.50</a></td>  
+    <td style="border: none;"><a href="#6.54">6.54</a></td>  
+    <td style="border: none;"><a href="#6.58">6.58</a></td>  
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#6.62">6.62</a></td>  
+    <td style="border: none;"><a href="#6.70">6.70</a></td>  
+    <td style="border: none;"><a href="#6.76">6.76</a></td>  
+    <td style="border: none;"><a href="#6.82">6.82</a></td>  
+    <td style="border: none;"><a href="#6.88">6.88</a></td>  
+    <td style="border: none;"><a href="#6.90">6.90</a></td>  
+    <td style="border: none;"><a href="#6.92">6.92</a></td>  
+  </tr>
+  <tr style="border: none; background-color: white;">
+   <th colspan=10 style="border: none; background-color: white;">Section 7: Problem Solving: Interest, Mixture, Uniform Motion, Constant Rate Job Applications</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#7.12">7.12</a></td>  
+    <td style="border: none;"><a href="#7.16">7.16</a></td>  
+    <td style="border: none;"><a href="#7.20">7.20</a></td>  
+    <td style="border: none;"><a href="#7.24">7.24</a></td>  
+    <td style="border: none;"><a href="#7.28">7.28</a></td>  
+    <td style="border: none;"><a href="#7.32">7.32</a></td>  
+    <td style="border: none;"><a href="#7.36">7.36</a></td>  
+    <td style="border: none;"><a href="#7.40">7.40</a></td>  
+    <td style="border: none;"><a href="#7.44">7.44</a></td>  
+    <td style="border: none;"><a href="#7.50">7.50</a></td>  
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#7.54">7.54</a></td>  
+  </tr>
+</table>
 
 <h3><u>Section 1: Linear Functions</u></h3>
 
-<p><b>A note about <q>the check step</q></b>: later in this chapter, and then throughout much of the rest of this text, as well as mathematics in general, we encounter situations in which our perfectly legitimate and correct solution procedures <i>inevitably and unavoidably</i> yield <i>spurious</i> or <i>extraneous</i> solutions, i.e., <q>candidate</q> solutions which actually don’t satisfy the original equation. In such situations, the check step is an <i>absolutely essential</i> part of the solution procedure (in order to determine which candidate solutions are valid and which are not). Even though linear and quadratic equations are not of this type&mdash;our procedures give the solution(s) and only the solution(s)&mdash;it is still <q>good mathematical practice</q> to treat the check step as an essential part of solving a problem. I believe in this principle so strongly that I always include the check step as part of my solutions (except when I <q>leave it to the reader</q>), even when it may seem <q>trivial.</q> (At first, when the check step is not required to <q>weed out</q> extraneous solutions, I will set it apart with its own section within each solution; later, when it does become absolutely essential, it will become an integral part of the solution narrative).</p>
-
-<p><strong>16</strong>) Solve \(\displaystyle \frac23 x = \frac92\) <q>in your head.</q></p>
+<p><a name="1.16" class="goback" onclick="winhisback()"><strong>1.16</strong>)</a>
+Solve \(\displaystyle \frac23 x = \frac92\) <q>in your head.</q></p>
 
 <p><strong>Sln</strong>: The idea here is that you’re supposed to have reached the point in your mathematical development that you understand that to solve this equation, the (most efficient) way is to <q>multiply through</q> by the reciprocal of the thing that’s <q>messing up</q> the \(x\)&mdash;in this case, multiplication by \(\displaystyle \frac23\)&mdash;the reciprocal of which is \(\displaystyle \frac32\); and that the thus required multiplication, \(\displaystyle \left(\frac32\right)\left(\frac92\right) = \boxed{\frac{27}4}\), is simple enough that you should be able to do everything I just described <q>in your head.</q> (We tend to agree with this expectation of the reader’s preparation level, but refrain from insisting upon it.)</p>
 
@@ -132,42 +315,48 @@ body {font-family: Palatino}
 
 <p>Solve each of the following equations.</p>
 
-<p><strong>32</strong>) \(\displaystyle 1 - \frac12 x = 6\)</p>
+<p><a name="1.32" class="goback" onclick="winhisback()"><strong>1.32</strong>)</a>
+\(\displaystyle 1 - \frac12 x = 6\)</p>
 
 <p><strong>Sln</strong>: I always like to begin by <q>clearing denominators</q> and giving variables positive coefficients, which we can do here with one multiplication by \(-2: \displaystyle \color{red}{-2}\)\((1 - \frac12 x) = \color{red}-2\)\((6) \implies -2 + x = -12\); now we add \(2\) to both sides: \(-2 \color{red}+2\) \( +~x = -12\color{red}+2\) \(\implies \boxed{x=-10}\)</p>
 
 <p><strong>Chk</strong>: \(\displaystyle 1 - \frac12(-10) =  1 + 5 = 6~\checkmark\)
 <br><br></p>
 
-<p><strong>36</strong>) \(0.9t = 1 + t\)</p>
+<p><a name="1.36" class="goback" onclick="winhisback()"><strong>1.36</strong>)</a>
+\(0.9t = 1 + t\)</p>
 
 <p><strong>Sln</strong>: Subtract \(0.9t\) and \(1\) from both sides: \(0.9t - \color{red}0.9t \color{blue}-1\) \(= 1 \color{blue}-1\) \(+~t \color{red}-0.9t\) \(\implies -1 = 0.1t\); now we multiply both sides by 10: \(\color{red}10\)\((-1) = \color{red}10\)\((0.1t) \implies \boxed{t=-10}\)</p>
 
 <p><strong>Chk</strong>: \(0.9(-10) = -9 = 1 + (-10)~\checkmark\)
 <br><br></p>
 
-<p><strong>40</strong>) \(\displaystyle \frac4y - 5 = \frac5{2y}\)</p>
+<p><a name="1.40" class="goback" onclick="winhisback()"><strong>1.40</strong>)</a>
+\(\displaystyle \frac4y - 5 = \frac5{2y}\)</p>
 
 <p><strong>Sln</strong>: (After noting that \(y\) can’t equal 0), as mentioned above, when dealing with rational expressions, i.e., <q>fractions,</q> I begin by clearing denominators by multiplying through by the least common multiple (LCM) of the denominators, which in this case is \(2y\):<br>\(\color{red}2y\)\(\displaystyle \left(\frac4y - 5\right) = \color{red}2y\)\(\displaystyle\left(\frac5{2y}\right) \implies 8 - 10y = 5\); I also <q>don’t like</q> negative numbers (I know how to operate with them, but when I can avoid it, I do, because it’s just one more thing one can mess up), so rather than subtracting 8 from both sides and ending up with \(-10y = -3\), I prefer to add \(10y\) to and subtract 5 from both sides: \(8\color{blue}-5~\)\(- ~10y\color{red}+ 10y\)\(~\)\(= 5\color{blue}-5\color{red}+10y\) \(\implies 3 = 10y\); dividing both sides by 10 yields: \(\boxed{y=0.3}\)</p>
 
 <p><strong>Chk</strong>: \(\displaystyle \frac4{0.3} - 5 = \frac{40}3 - \frac{15}3 = \frac{25}3\) and \(\displaystyle \frac5{2(0.3)} = \frac5{0.6} = \frac{50}6 = \frac{25}3~\checkmark\)
 <br><br></p>
 
-<p><strong>44</strong>) \((x + 2)(x - 3) = (x + 3)^2\)</p>
+<p><a name="1.44" class="goback" onclick="winhisback()"><strong>1.44</strong>)</a>
+\((x + 2)(x - 3) = (x + 3)^2\)</p>
 
 <p><strong>Sln</strong>: Despite this being the section on linear equations, the reader should: a) recognize this as a quadratic equation (QE), at least as initially posed; and b) know, e.g., from a prior course in algebra, that (with one exception) QE’s generally require us to get the equation into \(ax^2+bx+c = 0\) form in order to solve them. Thus, we <i>must</i> begin by multiplying out both sides: \((x + 2)(x - 3) = (x + 3)^2 \implies x^2 - x - 6 = x^2 + 6x + 9\), followed by <q>getting everything over to one side</q> and combining like terms: \(\cancel{x^2}\color{red}{-\cancel{x^2}}\)\(-~x~\color{blue}{-~6x}\)\(~- 6\color{violet}{~-9}~\)\(= 0 \implies -7x-15=0\): low and behold, it is a linear equation after all, the solution of which is: \[\boxed{x = -\frac{15}7}\]</p>
 
 <p><strong>Chk</strong>: \(\displaystyle \left(-\frac{15}7 + 2\right)\left(-\frac{15}7 - 3\right) = \left(-\frac{15}7 + \frac{14}7\right)\left(-\frac{15}7 - \frac{21}7\right) = \left(-\frac17\right)\left(-\frac{36}7\right) = \frac{36}{49}\) while \(\displaystyle \left(-\frac{15}7 + 3\right)^2 = \left(-\frac{15}7 + \frac{21}7\right)^2 = \left(\frac67\right)^2 = \frac{36}{49}~\checkmark\)
 <br><br></p>
 
-<p><strong>48</strong>) \(w(4 - w^2) = 8 - w^3\)</p>
+<p><a name="1.48" class="goback" onclick="winhisback()"><strong>1.48</strong>)</a>
+\(w(4 - w^2) = 8 - w^3\)</p>
 
 <p><strong>Sln</strong>: Again, not initially linear, so we have to begin by multiplying everything out, <q>solving for 0,</q> and <q>hoping for the best</q> (though by now the reader should have caught on that, because this is the section on linear equations, all these problems have been designed to become linear at some point in the solution procedure). We have: \(w(4 - w^2) = 8 - w^3 \implies\) \(4w-w^3 = 8 - w^3\); adding \(w^3\) to both sides gives: \(4w = 8 \implies \boxed{w=2}\)</p>
 
 <p><strong>Chk</strong>: \(2(4 - 2^2) = 2(4-4) = 2(0) = 0 = 8 - 8 = 8 - 2^3~\checkmark\)
 <br><br></p>
 
-<p><strong>52</strong>) \(\displaystyle \frac{x}{x^2 - 9} + \frac4{x + 3} = \frac3{x^2 - 9}\)</p>
+<p><a name="1.52" class="goback" onclick="winhisback()"><strong>1.52</strong>)</a>
+\(\displaystyle \frac{x}{x^2 - 9} + \frac4{x + 3} = \frac3{x^2 - 9}\)</p>
 
 <p><strong>Sln</strong>: Begin by factoring the quadratic denominators: a) so that we know from the start what values \(x\) <i>can’t</i> be; and b) to figure out the LCM of the denominators so that we can multiply through by that to <q>clear</q> them: \(x^2 - 9 = (x+3)(x-3)\) so \(x\ne \pm3\), and the LCM is simply \((x+3)(x-3)\). Multiplying <q>through</q> by that yields: \((x-3)(x+3)\left[\displaystyle \frac{x}{x^2 - 9} + \frac4{x + 3} = \frac3{x^2 - 9}\right] \implies x + 4(x-3) = 3 \implies 5x-12=3 \implies 5x = 15 \implies x=3\), but we already know this can’t be a solution (but if you’re not sure, try substituting this in for \(x\) in the original equation and see what happens). Consequently, we conclude that there is no solution, i.e., the solution set is the empty set, \(\boxed{\emptyset}\).</p>
 
@@ -178,7 +367,8 @@ body {font-family: Palatino}
 <p>(I recognize that at this point in the reader’s mathematical development, this graph may be less than convincing, as it looks like it might eventually equal 0 for <q>adequately large</q> positive and negative values of \(x\), but in fact, it never does.)
 <br><br></p>
 
-<p><strong>56</strong>) \(\displaystyle \frac{-4}{x + 4} = \frac{-3}{x + 6}\)</p>
+<p><a name="1.56" class="goback" onclick="winhisback()"><strong>1.56</strong>)</a>
+\(\displaystyle \frac{-4}{x + 4} = \frac{-3}{x + 6}\)</p>
 
 <p><strong>Sln</strong>: Method 1: multiply through by \((x+4)(x+6)\): \(\color{red}\cancel{(x+4)}(x+6)\)\(\displaystyle \frac{-4}{\cancel{x + 4}} = \frac{-3}{\cancel{x + 6}}\color{red}(x+4)\cancel{(x+6)}\)\(\implies\) \(\cancel{-4x} \color{red} + \cancel{4x}\)\(~- 24\color{blue}+12\)\(~= -3x\color{red} + 4x\)\(~-\cancel{12}\color{blue}+\cancel{12}\) \(\implies \boxed{x=-12}\)</p>
 
@@ -187,14 +377,16 @@ body {font-family: Palatino}
 <p><strong>Chk</strong>: \(\displaystyle \frac{-4}{-12 + 4} = \frac{-4}{-8} = \frac12 = \frac{-3}{-6} = \frac{-3}{-12 + 6}~\checkmark\)
 <br><br></p>
 
-<p><strong>60</strong>) \(\displaystyle \frac{-4}{2x + 3} + \frac1{x - 1} = \frac1{(2x + 3)(x - 1)}\)</p>
+<p><a name="1.60" class="goback" onclick="winhisback()"><strong>1.60</strong>)</a>
+\(\displaystyle \frac{-4}{2x + 3} + \frac1{x - 1} = \frac1{(2x + 3)(x - 1)}\)</p>
 
 <p><strong>Sln</strong>: This we can’t just reciprocate both sides, we have to multiply through by the LCM of the denominators, which in this case is \((2x + 3)(x - 1)\): \(\color{red}(2x + 3)(x - 1)\)\(\displaystyle \left[\frac{-4}{2x + 3} + \frac1{x - 1} = \frac1{(2x + 3)(x - 1)}\right] \implies -4(x-1)+2x+3 = 1 = -2x+7 \implies 2x = 6 \implies\) \(\boxed{x=3}\)</p>
 
 <p><strong>Chk</strong>: \(\displaystyle \frac{-4}{2(3) + 3} + \frac1{3 - 1} = -\frac49 + \frac12 = \frac{-8+9}{18} = \frac1{18} = \frac1{9\cdot2} = \frac1{(2(3)+3)(3-1)}~\checkmark\)
 <br><br></p>
 
-<p><strong>64</strong>) \(\displaystyle \frac{x + 1}{x^2 + 2x} - \frac{x + 4}{x^2 + x} = \frac{-3}{x^2 + 3x + 2}\)</p>
+<p><a name="1.64" class="goback" onclick="winhisback()"><strong>1.64</strong>)</a>
+\(\displaystyle \frac{x + 1}{x^2 + 2x} - \frac{x + 4}{x^2 + x} = \frac{-3}{x^2 + 3x + 2}\)</p>
 
 <p><strong>Sln</strong>: We need to multiply through by the LCM of the denominators, so we need to factor them to figure out what that is: \(\displaystyle \frac{x + 1}{x(x + 2)} - \frac{x + 4}{x(x + 1)} = \frac{-3}{(x + 1)(x + 2)} \implies x(x+1)(x+2)\) is the LCM (and we know that \(x\) can’t equal \(0,-1,-2\)). Multiplying through by the LCM we get: \(\color{red}x(x+1)(x+2)\)\(\left[\displaystyle \frac{x + 1}{x^2 + 2x} - \frac{x + 4}{x^2 + x} = \frac{-3}{x^2 + 3x + 2}\right] \implies\) </p>
 
@@ -205,7 +397,8 @@ body {font-family: Palatino}
 <p>\(\displaystyle \frac{-3}{(-7)^2 + 3(-7) + 2} = -\frac3{49-21+2} = -\frac3{30} = -\frac1{10}~\checkmark\)
 <br><br></p>
 
-<p><strong>68</strong>) \(\displaystyle 18.63x - \frac{21.2}{2.6} = \frac{14}{2.32}x - 20\)</p>
+<p><a name="1.68" class="goback" onclick="winhisback()"><strong>1.68</strong>)</a>
+\(\displaystyle 18.63x - \frac{21.2}{2.6} = \frac{14}{2.32}x - 20\)</p>
 
 <p><strong>Sln</strong>: Method 1: \(\displaystyle \color{red}(2.6)(2.32)\)\(\left[\displaystyle 18.63x - \frac{21.2}{2.6} = \frac{14}{2.32}x - 20\right] \implies 112.37616x-49.184 = 36.4x-120.64 \implies\) \((112.37616-36.4)x=49.184-120.64 \implies \boxed{x = \frac{-71.456}{75.97616} \doteq -0.941}\)</p>
 
@@ -214,7 +407,8 @@ body {font-family: Palatino}
 <p><strong>Chk</strong>: \(\displaystyle 18.63(-0.941) - \frac{21.2}{2.6} \doteq -25.68\), \(\displaystyle \frac{14}{2.32}(-0.941) - 20 \doteq -25.68~\checkmark\)
 <br><br></p>
 
-<p><strong>74</strong>) Solve for \(x\): \(\displaystyle \frac{b + c}{x + a} = \frac{b - c}{x - a}, c \ne 0, a\)</p>
+<p><a name="1.74" class="goback" onclick="winhisback()"><strong>1.74</strong>)</a>
+Solve for \(x\): \(\displaystyle \frac{b + c}{x + a} = \frac{b - c}{x - a}, c \ne 0, a\)</p>
 
 <p><strong>Sln</strong>: Multiply through by both denominators (or, equivalently, <q>cross-multiply</q>), yielding: \(\displaystyle \frac{b + c}{x + a} = \frac{b - c}{x - a} \implies (b+c)(x-a) = (b-c)(x+a) \implies (b+c)x-a(b+c) = (b-c)x+a(b-c) \implies\) \([b+c-(b-c)]x=a[b-c+(b+c)] \implies 2cx = 2ab \implies \boxed{x=\frac{ab}c}\)</p>
 
@@ -223,7 +417,8 @@ body {font-family: Palatino}
 <p>\(\displaystyle \frac{b - c}{ab/c - a} = \frac{c(b-c)}{a(b-c)} = \frac ca~\checkmark\)
 <br><br></p>
 
-<p><strong>76</strong>) Find the number \(b\) for which \(x=2\) is a solution of:
+<p><a name="1.76" class="goback" onclick="winhisback()"><strong>1.76</strong>)</a>
+Find the number \(b\) for which \(x=2\) is a solution of:
 \[x + 2b = x - 4 + 2bx\]</p>
 
 <p><strong>Sln</strong>: Substituting 2 in for \(x\) gives: \(2 + 2b = 2 - 4 + 2b(2) \implies 2+2b = 4b-2 \implies 2b = 4 \implies\) \[\boxed{b = 2}\]</p>
@@ -231,14 +426,16 @@ body {font-family: Palatino}
 <p><strong>Chk</strong>: Substituting 2 in for \(b\) <i>and</i> \(x\) in the original equation yields: \(2+2(2) = 2+4 = 6\), \(2-4+2(2)(2) = 8+2-4 = 6~\checkmark\)
 <br><br></p>
 
-<p><strong>78</strong>) Solve \(A = P(1 + rt)\) for \(r\)</p>
+<p><a name="1.78" class="goback" onclick="winhisback()"><strong>1.78</strong>)</a>
+Solve \(A = P(1 + rt)\) for \(r\)</p>
 
 <p><strong>Sln</strong>: \(A = P(1 + rt) \implies \displaystyle \frac AP = 1+rt \implies \frac AP - 1 = rt \implies\) \[\boxed{r = \frac1t\left(\frac AP - 1\right)}\]</p>
 
 <p><strong>Chk</strong>: \(\displaystyle P(1 + \frac1{\cancel t}\left(\frac AP - 1\right)\cancel t) = P(\cancel 1+\frac AP - \cancel 1) = \cancel{P}\left(\frac A{\cancel P}\right) = A~\checkmark\)
 <br><br></p>
 
-<p><strong>88</strong>) Going into the final exam, which will count as two-thirds of the final grade, Mike has test scores of 86, 80, 84, and 90; what score does Mike need on the final in order to earn a B, which requires an average score of 80? What does he need to earn an A, which requires an average
+<p><a name="1.88" class="goback" onclick="winhisback()"><strong>1.88</strong>)</a>
+Going into the final exam, which will count as two-thirds of the final grade, Mike has test scores of 86, 80, 84, and 90; what score does Mike need on the final in order to earn a B, which requires an average score of 80? What does he need to earn an A, which requires an average
 of 90?</p>
 
 <p><strong>Sln</strong>: (I chose this one because it is an <i>extremely</i> common question students have; henceforth, the reader should never have to ask.) Let \(x = \) the score needed; since it will count as two-thirds of the final score, the other four scores <i>together</i> count as one-third of the final score (assuming there are no other grades we haven’t been told about). Assuming none of these count any more than the others, since there are four of them, each counts as one-fourth <i>of</i> one-third, i.e., \(\displaystyle \left(\frac14\right)\left(\frac13\right) = \frac1{12}\) of the final score. Thus to figure out the \(x\) which gives a final score of 80, we need to solve: \(\displaystyle \frac23x+\frac1{12}(86 + 80 + 84 + 90) = 80 \implies \frac23 x = 80 - \frac{340}{12} \implies x = \frac32\left(80-\frac{85}3\right) = 120-\frac{85}2 = \boxed{77.5}\)</p>
@@ -248,7 +445,8 @@ of 90?</p>
 <p>Figuring out \(x\) to attain a score of 90 is left to the reader.
 <br><br></p>
 
-<p><strong>90</strong>) A car dealer, at a year-end clearance, reduces the list price of last year’s models by 15%. If a certain four-door model has a discounted price of $8000, what was its list price? How much can be saved by
+<p><a name="1.90" class="goback" onclick="winhisback()"><strong>1.90</strong>)</a>
+A car dealer, at a year-end clearance, reduces the list price of last year’s models by 15%. If a certain four-door model has a discounted price of $8000, what was its list price? How much can be saved by
 purchasing last year’s model?</p>
 
 <p><strong>Sln</strong>: Let \(x\) equal last year’s list price; then the discounted price is \(x-0.15x = (1-0.15)x = 0.85x = \$8000 \implies\) \(x = \$8000/0.85 = \boxed{\$9411.76}\) and thus the savings from purchasing last year’s model is \(\$9411.76-\$8000 = \boxed{\$1411.76}\).</p>
@@ -256,7 +454,8 @@ purchasing last year’s model?</p>
 <p><strong>Chk</strong>: \(\$9411.76-0.15(\$9411.76) = \$9411.76-\$1411.76 = \$8000~\checkmark\)
 <br><br></p>
 
-<p><strong>94</strong>) A wool suit, discounted by 30% for a clearance sale, has a price tag of $399. What was the suit’s original price?</p>
+<p><a name="1.94" class="goback" onclick="winhisback()"><strong>1.94</strong>)</a>
+A wool suit, discounted by 30% for a clearance sale, has a price tag of $399. What was the suit’s original price?</p>
 
 <p><strong>Sln</strong>: Let \(x\) equal the original price; then \(\$399 = x - 0.3x = (1-0.3)x = 0.7x \implies x = \$399/0.7 = \boxed{\$570}\).</p>
 
@@ -270,7 +469,8 @@ purchasing last year’s model?</p>
 <p>Factoring is an important skill; however, factoring by <q>trial-and-error</q> is not: what’s important is being able to factor by identifying the solutions (a.k.a. the <q>roots,</q> a.k.a. the <q>zeros</q>) of the quadratic <q>set equal to zero,</q> using the fact that if \(r,s\) are the zeros of \(ax^2+bx+c=0\) then \(ax^2+bx+c=a(x-r)(x-s)\) and vice-versa. (Proof: suppose \(ax^2+bx+c=a(x-r)(x-s)\); then if \(x=r, ar^2+br+c=a(r-r)(r-s) = a(0)(r-s) = 0\), i.e., \(r\) is a solution of \(ax^2+bx+c=0\), and similarly for \(s\). Conversely, suppose \(r,s\) are solutions of \(ax^2+bx+c=0\); we know from the quadratic formula that \(r,s = \displaystyle \frac{-b\pm\sqrt{b^2-4ac}}{2a}\); without loss of generality, let \(r=\displaystyle \frac{-b+\sqrt{b^2-4ac}}{2a}\), \(s=\displaystyle \frac{-b-\sqrt{b^2-4ac}}{2a}\) and consider the product \(a(x-r)(x-s) = \displaystyle a\left(x-\frac{-b+\sqrt{b^2-4ac}}{2a}\right)\left(x-\frac{-b-\sqrt{b^2-4ac}}{2a}\right) =\)  \(\displaystyle a\left[x^2 - \left(\frac{-b+\cancel{\sqrt{b^2-4ac}}}{2a} + \frac{-b-\cancel{\sqrt{b^2-4ac}}}{2a}\right)x + \left(\frac{-b+\sqrt{b^2-4ac}}{2a}\right)\left(\frac{-b-\sqrt{b^2-4ac}}{2a}\right)\right] =\) \(\displaystyle a\left[x^2+\left(\frac{\cancel2b}{\cancel2a}\right)x + \frac{(-b)^2-\left(\sqrt{b^2-4ac}\right)^2}{4a^2}\right] = a\left(x^2 + \frac ba x + \frac{b^2-b^2+4ac}{4a^2}\right) = a\left(x^2 + \frac ba x + \frac{c}{a}\right) = \)<br><br>\(ax^2+bx+c.~~\blacksquare\)) Consequently, we will not solve these by factoring; rather, we will <q>factor by solving,</q> using the quadratic formula to solve, and then writing down the factorization based on that result.
 <br><br></p>
 
-<p><strong>20</strong>) \(x(x + 4) = 12\)</p>
+<p><a name="2.20" class="goback" onclick="winhisback()"><strong>2.20</strong>)</a>
+\(x(x + 4) = 12\)</p>
 
 <p><strong>Sln</strong>: In order to use the quadratic formula, the quadratic needs to be in \(ax^2+bx+c=0\) form, so we need to expand the product and bring the constant term over to the other side: </p>
 
@@ -279,7 +479,8 @@ purchasing last year’s model?</p>
 <p><strong>Chk</strong>: \(2(2+4) = 2(6) = 12~\checkmark, (-6)(-6+4) = (-6)(-2) = 12~\checkmark\)
 <br><br></p>
 
-<p><strong>24</strong>) \(2(2u^2 - 4u) + 3 = 0\)</p>
+<p><a name="2.24" class="goback" onclick="winhisback()"><strong>2.24</strong>)</a>
+\(2(2u^2 - 4u) + 3 = 0\)</p>
 
 <p><strong>Sln</strong>: Even though this is <q>solved for zero,</q> it is not yet in \(ax^2+bx+c=0\) form, so we need to start by expanding the product: </p>
 
@@ -288,7 +489,8 @@ purchasing last year’s model?</p>
 <p><strong>Chk</strong>: \(\displaystyle 2\left(2\left(\frac12\right)^2 - 4\left(\frac12\right)\right) + 3 = 2\left(\frac12 - 2\right) + 3 = 1-4+3 = 0~\checkmark\) \(2\left(2\left(\frac32\right)^2 - 4\left(\frac32\right)\right) + 3 = 2\left(\frac92 - 6\right) + 3 = 9-12+3 = 0~\checkmark\)
 <br><br></p>
 
-<p><strong>28</strong>) \(\displaystyle \frac5{x + 4} = 4 + \frac3{x - 2}\)</p>
+<p><a name="2.28" class="goback" onclick="winhisback()"><strong>2.28</strong>)</a>
+\(\displaystyle \frac5{x + 4} = 4 + \frac3{x - 2}\)</p>
 
 <p><strong>Sln</strong>: Begin by <q>clearing denominators</q> by multiplying through by \((x+4)(x-2)\): </p>
 
@@ -299,14 +501,16 @@ purchasing last year’s model?</p>
 <p>\(\displaystyle \frac5{-5/2 + 4} - 4 - \frac3{-5/2 - 2} = \frac5{3/2} - 4 - \frac3{-9/2} = \frac{10}3 - \frac{12}3 + \frac23 = 0~\checkmark\)
 <br><br></p>
 
-<p><strong>34</strong>) Solve \((3z - 2)^2 = 4\) using <q>the square-root method.</q></p>
+<p><a name="2.34" class="goback" onclick="winhisback()"><strong>2.34</strong>)</a>
+Solve \((3z - 2)^2 = 4\) using <q>the square-root method.</q></p>
 
 <p><strong>Sln</strong>: This is the one kind of quadratic I believe in solving not using the quadratic formula. The method is that we take the square-root of the side containing the variable, and the <q>positive/negative square-root</q> of the side containing only a number: \(\sqrt{(3z - 2)^2} = 3z-2 = \pm\sqrt4 = \pm2 \implies 3z-2 = 2\) or \(3z-2=-2\); adding 2 to both sides in both equations yields: \(3z=4\) or \(3z=0 \implies z = \displaystyle \boxed{\frac43}\) or \(z=\boxed{0}\). </p>
 
 <p><strong>Chk</strong>: \((3(4/3) - 2)^2 = (4-2)^2 = 2^2 = 4~\checkmark, (3(0) - 2)^2 = (-2)^2 = 4~\checkmark\)
 <br><br></p>
 
-<p><strong>40</strong>) Solve \(2x^2 - 3x - 1 = 0\) by completing the square.</p>
+<p><a name="2.40" class="goback" onclick="winhisback()"><strong>2.40</strong>)</a>
+Solve \(2x^2 - 3x - 1 = 0\) by completing the square.</p>
 
 <p><strong>Sln</strong>: Completing the square is not an efficient way to solve a quadratic, but it is an important skill in advanced math, so I will go ahead and do this one as instructed to provide an additional illustration. Begin by dividing through by 2 to make the leading coefficient 1: \(2x^2 - 3x - 1 = 0 \implies \displaystyle x^2-\frac32 x - \frac12 = 0\). Now, in order for \(\displaystyle x^2-\frac32 x\) to be the first two terms of a perfect square trinomial, the constant term has to be \(\displaystyle\left[\frac12\left(-\frac32\right)\right]^2 = \frac9{16}\), so we have to add \(\displaystyle \frac9{16}+\frac12 = \frac{9+8}{16} = \frac{17}{16}\) to both sides yielding: \(\displaystyle x^2-\frac32x+\frac9{16} = \left(x-\frac34\right)^2 = \frac{17}{16}\); now we can solve using the square-root method: \(\displaystyle \sqrt{\left(x-\frac34\right)^2} = x-\frac34 = \pm\sqrt{\frac{17}{16}} = \pm\frac{\sqrt{17}}4 \implies x-\frac34 = \frac{\sqrt{17}}4 \implies x = \boxed{\frac{3+\sqrt{17}}4}\) or \(\displaystyle x-\frac34 = -\frac{\sqrt{17}}4 \implies x = \boxed{\frac{3-\sqrt{17}}4}\)</p>
 
@@ -315,14 +519,16 @@ purchasing last year’s model?</p>
 
 <p>In Problems <strong>44</strong>, <strong>54</strong>, &amp; <strong>64</strong>, find the real solutions, if any, of each equation using the quadratic formula (QF): \[ax^2+bx+c=0 \iff x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}\].</p>
 
-<p><strong>44</strong>) \(x^2 + 6x + 1 = 0\)</p>
+<p><a name="2.44" class="goback" onclick="winhisback()"><strong>2.44</strong>)</a>
+\(x^2 + 6x + 1 = 0\)</p>
 
 <p><strong>Sln</strong>: \(x^2 + 6x + 1 = ax^2+bx+c=0\) with the identifications \(a=1, b=6, c=1\), so \(\displaystyle x=\frac{-6\pm\sqrt{6^2-4(1)(1)}}{2(1)} = \) \(\displaystyle \frac{-6\pm\sqrt{36-4}}2 = \frac{-6\pm\sqrt{32}}2 = \frac{-6\pm4\sqrt2}2 = \boxed{-3\pm2\sqrt2}\)</p>
 
 <p><strong>Chk</strong>: \((-3+2\sqrt2)^2 + 6(-3+2\sqrt2) + 1 = 9 -12\sqrt2+8-18+12\sqrt2+1 = 0~\checkmark\); the check for \(x=-3-2\sqrt2\)  is left for the reader.
 <br><br></p>
 
-<p><strong>54</strong>) \(4u^2 - 6u + 9 = 0\)</p>
+<p><a name="2.54" class="goback" onclick="winhisback()"><strong>2.54</strong>)</a>
+\(4u^2 - 6u + 9 = 0\)</p>
 
 <p><strong>Sln</strong>: \(a=4, b=-6, c=9\), so \(\displaystyle u = \frac{-(-6)\pm\sqrt{(-6)^2-4(4)(9)}}{2(4)} = \frac{6\pm\sqrt{36-144}}8 = \frac{6\pm\sqrt{-108}}8\); since the discriminant is less than zero, this equation has \(\boxed{\text{no real solutions}}\). (Note: if we know we’re only interested in real number solutions, it’s never <q>wrong</q> to evaluate the discriminant first&mdash;if it’s less than zero, then you know <q>no real solutions</q> and you don’t have to waste time evaluating the rest of the QF.)</p>
 
@@ -333,7 +539,8 @@ purchasing last year’s model?</p>
 <p>You <i>should</i> remember enough from <q>Algebra II</q> (or equivalent) to recognize that this graph will never go lower than its exhibited minimum, and therefore we can be certain that \(y\ne0\) for all real \(u\), as just determined algebraically.
 <br><br></p>
 
-<p><strong>64</strong>) \(\displaystyle \frac{2x}{x - 3} + \frac1x = 4\)</p>
+<p><a name="2.64" class="goback" onclick="winhisback()"><strong>2.64</strong>)</a>
+\(\displaystyle \frac{2x}{x - 3} + \frac1x = 4\)</p>
 
 <p><strong>Sln</strong>: Begin by <q>multiplying through</q> by \(x(x-3)\) yielding: </p>
 
@@ -342,7 +549,8 @@ purchasing last year’s model?</p>
 <p><strong>Chk</strong>: \(\displaystyle \frac{2\left(\frac{13+\sqrt{145}}4\right)}{\left(\frac{13+\sqrt{145}}4\right) - 3} + \frac1{\left(\frac{13+\sqrt{145}}4\right)} = \left(\frac{13+\sqrt{145}}2\right)\left(\frac4{13+\sqrt{145}-12}\right) + \frac4{13+\sqrt{145}} = \frac{2(13+\sqrt{145})}{1+\sqrt{145}} + \frac4{13+\sqrt{145}} = \) \(\displaystyle \frac{26+2\sqrt{145})}{1+\sqrt{145}}\frac{\sqrt{145}-1}{\sqrt{145}-1} + \frac4{13+\sqrt{145}}\frac{13-\sqrt{145}}{13-\sqrt{145}} = \frac{26\sqrt{145} - 26 + 2(145) - 2\sqrt{145}}{145-1} + \frac{52-4\sqrt{145}}{169-145} = \) \(\displaystyle \frac{264+24\sqrt{145}}{144} + \left(\frac{52-4\sqrt{145}}{24}\right)\left(\frac66\right) = \frac{264+\cancel{24\sqrt{145}} + 312 - \cancel{24\sqrt{145}}}{144} = \frac{576}{144} = 4~\checkmark\); the check for the <q>minus</q> solution is left to the reader (it’s a good arithmetic exercise: do it!)
 <br><br></p>
 
-<p><strong>70</strong>) Use the quadratic formula and a calculator to solve \(\pi x^2 + \pi x - 2 = 0\); express any solutions rounded to two decimal places.</p>
+<p><a name="2.70" class="goback" onclick="winhisback()"><strong>2.70</strong>)</a>
+Use the quadratic formula and a calculator to solve \(\pi x^2 + \pi x - 2 = 0\); express any solutions rounded to two decimal places.</p>
 
 <p><strong>Sln</strong>: \(\pi x^2 + \pi x - 2 = 0 \implies x=\displaystyle \frac{-\pi \pm \sqrt{\pi^2-4(\pi)(-2)}}{2\pi} = \boxed{\frac{-\pi + \sqrt{\pi^2+8\pi}}{2\pi} \doteq 0.44}\) or \(\displaystyle \boxed{\frac{-\pi - \sqrt{\pi^2+8\pi}}{2\pi} \doteq -1.44}\)</p>
 
@@ -352,7 +560,8 @@ purchasing last year’s model?</p>
 <p>In Problems <strong>72</strong> &amp; <strong>76</strong>, use the discriminant to determine whether each quadratic equation has two unequal real solutions, a repeated real
 solution, or no real solution, without solving the equation.</p>
 
-<p><strong>72</strong>) \(x^2 + 4x + 7 = 0\)</p>
+<p><a name="2.72" class="goback" onclick="winhisback()"><strong>2.72</strong>)</a>
+\(x^2 + 4x + 7 = 0\)</p>
 
 <p><strong>Sln</strong>: \(\Delta\) (the capital Greek letter <q>delta,</q> a commonly used symbol for the discriminant) \(= b^2-4ac = 4^2-4(1)(7) = 16-28 = -12 \lt 0\) \(\implies \boxed{\text{no real solutions}}\) </p>
 
@@ -361,7 +570,8 @@ solution, or no real solution, without solving the equation.</p>
 <p><img src="./Graphs/SullivanC1S2P72.png" height=300>
 <br></p>
 
-<p><strong>76</strong>) \(2x^2 - 3x - 7 = 0\)</p>
+<p><a name="2.76" class="goback" onclick="winhisback()"><strong>2.76</strong>)</a>
+\(2x^2 - 3x - 7 = 0\)</p>
 
 <p><strong>Sln</strong>: \(\Delta = (-3)^2-4(2)(-7) = 9+56 = 65 \gt 0 \implies \boxed{\text{two distinct real solutions}}\)</p>
 
@@ -372,21 +582,24 @@ solution, or no real solution, without solving the equation.</p>
 
 <p>In Problems <strong>82</strong>, <strong>86</strong>, &amp; <strong>90</strong>, find the real solutions, if any, of each equation; use any method.</p>
 
-<p><strong>82</strong>) \(6x^2 + 7x - 20 = 0\)</p>
+<p><a name="2.82" class="goback" onclick="winhisback()"><strong>2.82</strong>)</a>
+\(6x^2 + 7x - 20 = 0\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle x=\frac{-7\pm\sqrt{7^2-4(6)(-20)}}{2(6)} = \frac{-7\pm\sqrt{49+480}}{12} = \frac{-7\pm\sqrt{529}}{12} = \frac{-7\pm23}{12} = \frac{16}{12} = \boxed{\frac43}\) or \(\displaystyle x = \frac{-30}{12} = \boxed{-\frac52}\)</p>
 
 <p><strong>Chk</strong>: \(\displaystyle 6\left(\frac43\right)^2 + 7\left(\frac43\right) - 20 = \frac{32}3 + \frac{28}3 - 20 = \frac{60}3-20 = 0~\checkmark\)<br><br>\(\displaystyle 6\left(-\frac52\right)^2 + 7\left(-\frac52\right) - 20 = \frac{75}2 - \frac{35}2 - \frac{40}2 = 0~\checkmark\).
 <br><br></p>
 
-<p><strong>86</strong>) \(\displaystyle \frac12 x^2 = \sqrt2 x + 1\)</p>
+<p><a name="2.86" class="goback" onclick="winhisback()"><strong>2.86</strong>)</a>
+\(\displaystyle \frac12 x^2 = \sqrt2 x + 1\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \frac12 x^2 = \sqrt2 x + 1 \implies x^2 - 2\sqrt2 x - 2 = 0 \implies x = \frac{2\sqrt2 \pm \sqrt{8-4(1)(-2)}}2 = \frac{2\sqrt2 \pm \sqrt{16}}2 = \boxed{\sqrt2\pm2}\) </p>
 
 <p><strong>Chk</strong>: \(\displaystyle \frac12 (\sqrt2\pm2)^2 = \frac{2 \pm 4\sqrt2 + 4}2 = 3\pm2\sqrt2 = 2 \pm 2\sqrt2 + 1 = \sqrt2(\sqrt2\pm2) + 1~\checkmark\) 
 <br><br></p>
 
-<p><strong>90</strong>) \(\displaystyle \frac{3x}{x + 2} + \frac1{x - 1} = \frac{4 - 7x}{x^2 + x - 2}\)</p>
+<p><a name="2.90" class="goback" onclick="winhisback()"><strong>2.90</strong>)</a>
+\(\displaystyle \frac{3x}{x + 2} + \frac1{x - 1} = \frac{4 - 7x}{x^2 + x - 2}\)</p>
 
 <p><strong>Sln</strong>: We note at the outset that \(x\ne-2, 1\). Now, \(x^2 + x - 2 = (x+2)(x-1)\) so, multiplying through by that, we get:<br>\(\color{red}(x+2)(x-1)\)\(\displaystyle \left[\frac{3x}{x + 2} + \frac1{x - 1} = \frac{4 - 7x}{x^2 + x - 2}\right] \implies (3x)(x-1) + 1(x+2) = 4-7x \implies 3x^2 + 5x - 2 = 0 \implies \) \(\displaystyle x=\frac{-5\pm\sqrt{25-4(3)(-2)}}{2(3)} = \frac{-5\pm\sqrt{25+24}}6 = \frac{-5\pm7}6 \implies x = \frac13\) or \(x = -2,\) except that we know that \(x\ne -2\), so the only solution is \(\boxed{\frac13}\).</p>
 
@@ -399,21 +612,24 @@ solution, or no real solution, without solving the equation.</p>
 <p>We will learn in Chapter 5, Section 3 that this shows us enough of the graph to know that the one \(x\)-intercept we see is the only \(x\)-intercept this function has. \(\blacksquare\)
 <br><br></p>
 
-<p><strong>92</strong>) How many right triangles have a hypotenuse that measures \(4x + 5\) inches and legs that measure \(3x + 13\) inches and \(x\) inches? What are the dimensions of the triangle(s)?</p>
+<p><a name="2.92" class="goback" onclick="winhisback()"><strong>2.92</strong>)</a>
+How many right triangles have a hypotenuse that measures \(4x + 5\) inches and legs that measure \(3x + 13\) inches and \(x\) inches? What are the dimensions of the triangle(s)?</p>
 
 <p><strong>Sln</strong>: In other words, from the Pythagorean Theorem, how many <i>positive, real</i> solutions are there to the equation \(x^2 + (3x+13)^2 = (4x+5)^2 \implies (16-9-1)x^2 + (40 - 78)x + (25-169) = 6x^2 - 38x - 144 = 0 \implies 3x^2 - 19x - 72 = 0\) \(\implies \displaystyle x = \frac{-(-19) \pm \sqrt{(-19)^2 - 4(3)(-72)}}{2(3)} = \frac{19 \pm \sqrt{361+ 864}}6 = \frac{19 \pm \sqrt{1225}}6 = \frac{19\pm 35}6 = 9\) or \(\displaystyle -\frac83\), but the second solution of the algebraic equation can’t be the length of the side of a triangle (lengths are strictly positive), so there is only \(\boxed{\text{one}}\) right triangle satisfying the given criteria, and the lengths of its sides are \(\boxed{9}\), \(3(9)+ 13 = \boxed{40}\), and  \(4(9)+5 = \boxed{41}\) inches.</p>
 
 <p><strong>Chk</strong>: We confirm that \(9^2+40^2 = 41^2\): the left-hand-side \(= 81 + 1600 = 1681 = 41^2.~\checkmark~\) (Confirming that this is indeed the only right triangle satisfying the requirements can be done by graphing \(y=3x^2-19x-72\) to see that the other \(x\)-intercept is negative; doing so is left to the reader.)
 <br><br></p>
 
-<p><strong>96</strong>) An adjustable water sprinkler that sprays water in a circular pattern is placed at the center of a square field whose area is 1250 square feet (see the figure in the text). What is the shortest radius setting that can be used if the field is to be completely enclosed within the circle?</p>
+<p><a name="2.96" class="goback" onclick="winhisback()"><strong>2.96</strong>)</a>
+An adjustable water sprinkler that sprays water in a circular pattern is placed at the center of a square field whose area is 1250 square feet (see the figure in the text). What is the shortest radius setting that can be used if the field is to be completely enclosed within the circle?</p>
 
 <p><strong>Sln</strong>: Let \(r\) be the required shortest radius setting; from the figure, it should be clear that \(2r\) is the length of the square’s diagonal. Now, because the field is a square, each corner is a right angle, so the diagonal is the hypotenuse of a right triangle; furthermore, also because the field is a square, the legs of said right triangle are equal, say \(s\). From the Pythagorean Theorem we know that \(s^2 + s^2 = 2s^2 = (2r)^2 = 4r^2 \implies r^2 = s^2/2\); but, once more using the fact that the field is a square, we know that \(s^2 = \) the area of the field, which is given to be 1250 ft\(^2\). Thus \(r^2 = 1250/2 \implies\) \(r = \sqrt{625} = \boxed{25\text{ ft}}.\)</p>
 
 <p><strong>Chk</strong>: \(r=25\) ft implies that the diagonal of the enclosed square is 50 ft, and we know that \(50^2 = 2s^2 \implies\) \(s^2 = 2500/2 = 1250\) ft\(^2~\checkmark\)
 <br><br></p>
 
-<p><strong>100</strong>) (<strong>Physics</strong>) An object is propelled vertically upward with an
+<p><a name="2.100" class="goback" onclick="winhisback()"><strong>2.100</strong>)</a>
+(<strong>Physics</strong>) An object is propelled vertically upward with an
 initial velocity of 20 meters per second. The distance \(s\) (in
 meters) of the object from the ground after \(t\) seconds is \(s = -4.9t^2 + 20t\). <strong>a</strong>) When will the object be 15 meters above the ground? <strong>b</strong>) When will it strike the ground? <strong>c</strong>) Will the object reach a height of 100 meters?</p>
 
@@ -438,7 +654,8 @@ meters) of the object from the ground after \(t\) seconds is \(s = -4.9t^2 + 20t
 <p><strong>Chk</strong>: one check is, as before, to graph \(s=-4.9t^2+20t\) to see that it never reaches \(s=100\); but soon enough we’ll be learning another way: we’ll learn (or perhaps you already did in <q>Algebra II</q>?) how to find the maximum value \(s\) does attain (hint: it attains that value half-way between \(t=0\) and \(t=20/4.9\)), so calculating that and seeing that it is less than 100 becomes another way for us to check this result (or indeed, answer the question!)
 <br><br></p>
 
-<p><strong>104</strong>) A circular pool measures 10 feet across; one cubic yard of concrete is to be used to create a circular border of uniform width around the pool. If the border is to have a depth of 4 inches, how
+<p><a name="2.104" class="goback" onclick="winhisback()"><strong>2.104</strong>)</a>
+A circular pool measures 10 feet across; one cubic yard of concrete is to be used to create a circular border of uniform width around the pool. If the border is to have a depth of 4 inches, how
 wide will the border be? (1 cubic yard \(=\) 27 cubic feet) See illustration (Note: not to scale).</p>
 
 <p><img src="./Graphs/SullivanC1S2P104.png"  height="250"></p>
@@ -450,7 +667,8 @@ wide will the border be? (1 cubic yard \(=\) 27 cubic feet) See illustration (No
 <p><strong>Chk</strong>: \(\frac13\pi(5+2.126)^2-\frac13\pi(5^2) = \frac{\pi}3((7.126)^2-25) \doteq \frac{\pi}3(25.780) \doteq 26.997\) ft\(^3~\checkmark\)
 <br><br></p>
 
-<p><strong>108</strong>) The screen size of a television is determined by the length of the diagonal of the rectangular screen; traditional TVs come in a 4 : 3 format (a.k.a. <q>aspect ratio</q>), meaning the ratio of the length to the width of the rectangular screen is 4 to 3; find the screen area of a traditional 50-inch TV and compare it with a 50-inch Plasma TV whose screen is in a 16 : 9 format; which screen is larger?</p>
+<p><a name="2.108" class="goback" onclick="winhisback()"><strong>2.108</strong>)</a>
+The screen size of a television is determined by the length of the diagonal of the rectangular screen; traditional TVs come in a 4 : 3 format (a.k.a. <q>aspect ratio</q>), meaning the ratio of the length to the width of the rectangular screen is 4 to 3; find the screen area of a traditional 50-inch TV and compare it with a 50-inch Plasma TV whose screen is in a 16 : 9 format; which screen is larger?</p>
 
 <p><strong>Sln</strong>: Let \(\ell = \) the length of the TV, and \(w = \) its width; then what <q>the ratio of the length to the width of the rectangular screen is 4 to 3</q> means is that \(\displaystyle \frac{\ell}w = \frac43 \implies \ell = \frac43w\). Since the screen is rectangular, the 50 inch diagonal is the hypotenuse of a right triangle whose legs are \(\ell\) and \(w\), so we additionally know that \(50^2 = \ell^2 + w^2 = \left(\frac43w\right)^2 + w^2 = \left(\frac{16}9+1\right)w^2 = \frac{25}9w^2\) \(\implies w^2=(\cancel5\cdot 10)^2\frac9{\cancel5^2} = 900 \implies \boxed{w = 30\text{ in.}} \implies \boxed{\ell = \frac43(30) = 40\text{ in.}}\) (<strong>Chk</strong>: \(\ell/w = 40/30 = 4/3~\checkmark\), \(40^2+30^2 = 1600 + 900 = 2500 = 50^2~\checkmark\)) for a screen area of \((30\text{ in.})(40\text{ in.}) = \boxed{1200\text{ in.}^2}\)</p>
 
@@ -461,7 +679,8 @@ wide will the border be? (1 cubic yard \(=\) 27 cubic feet) See illustration (No
 <p>So the 4:3 TV has a larger screen area.
 <br><br></p>
 
-<p><strong>112</strong>) Show that the product of the roots of a quadratic equation
+<p><a name="2.112" class="goback" onclick="winhisback()"><strong>2.112</strong>)</a>
+Show that the product of the roots of a quadratic equation
 is \(\displaystyle \frac ca\).</p>
 
 <p><strong>Pf</strong>: This statement is only true if \(a,c\) have their usual meanings when the equation is in the form \(ax^2+bx+c=0\), so we assume that is the case; additionally, we assume \(a\ne 0\) (for otherwise, the ratio \(c/a\) is undefined, <i>and</i> the equation is not quadratic, and thus does not have two solutions, and thus it doesn’t even make sense to speak of <q>the product of the roots</q>). With these assumptions, the product of the two roots is: </p>
@@ -469,7 +688,8 @@ is \(\displaystyle \frac ca\).</p>
 <p>\(\displaystyle \left(\frac{-b+\sqrt{b^2-4ac}}{2a}\right)\left(\frac{-b-\sqrt{b^2-4ac}}{2a}\right) = \frac{(-b)^2-\left(\sqrt{b^2-4ac}\right)^2}{4a^2} = \frac{b^2-(b^2-4ac)}{4a^2} = \frac{\cancel{4}\cancel{a}c}{\cancel{4}a^{\cancel{2} 1}} = \frac ca.~~~\blacksquare\)
 <br><br></p>
 
-<p><strong>114</strong>) Find \(k\) such that the equation \(x^2 - kx + 4 = 0\) has a repeated real solution.</p>
+<p><a name="2.114" class="goback" onclick="winhisback()"><strong>2.114</strong>)</a>
+Find \(k\) such that the equation \(x^2 - kx + 4 = 0\) has a repeated real solution.</p>
 
 <p><strong>Sln</strong>: (I chose this one because this type of question&mdash;find values of such-and-such so that some expression or equation, which depends on such-and-such, has a specified property&mdash;is a common question on mathematics exams, and, in my experience, it <q>trips students up</q> simply because it is new to them.) </p>
 
@@ -478,7 +698,8 @@ is \(\displaystyle \frac ca\).</p>
 <p><strong>Chk</strong>: \(x^2-4x+4 = (x-2)^2 = 0 \implies 2\) is a repeated solution, and similarly \(x^2+4x+4 = (x+2)^2 = 0 \implies -2\) is a repeated solution. \(\checkmark\) (Note that the solution to the Problem&mdash;\(\pm4\)&mdash;is <i>not</i> the same as the repeated solutions of the equations resulting from the solution to the problem.)
 <br><br></p>
 
-<p><strong>116</strong>) Show that the real solutions of the equation \[ax^2+bx+c=0~~~(\text{Eq. &quot;}ac\text{&quot;})\]
+<p><a name="2.116" class="goback" onclick="winhisback()"><strong>2.116</strong>)</a>
+Show that the real solutions of the equation \[ax^2+bx+c=0~~~(\text{Eq. &quot;}ac\text{&quot;})\]
 are the reciprocals of the real solutions of the equation 
 \[cx^2 + bx + a = 0~~~(\text{Eq. &quot;}ca\text{&quot;}).\]Assume that \(b^2 - 4ac \ge 0\).</p>
 
@@ -497,44 +718,52 @@ are the reciprocals of the real solutions of the equation
 
 <p>Express all answers in \(a+bi\) form.</p>
 
-<p><strong>12</strong>) \((3 - 4i) - (-3 - 4i)\)</p>
+<p><a name="3.12" class="goback" onclick="winhisback()"><strong>3.12</strong>)</a>
+\((3 - 4i) - (-3 - 4i)\)</p>
 
 <p><strong>Sln</strong>: \((3 - 4i) - (-3 - 4i) = 3 - (-3) + (-4-(-4))i = \boxed{6 + 0i}\)
 <br><br></p>
 
-<p><strong>20</strong>) \((5 + 3i)(2 - i)\)</p>
+<p><a name="3.20" class="goback" onclick="winhisback()"><strong>3.20</strong>)</a>
+\((5 + 3i)(2 - i)\)</p>
 
 <p><strong>Sln</strong>: \((5 + 3i)(2 - i) = (5)(2) - 5i + 6i + (3i)(-i) = 10 + 3 +(6-5)i = \boxed{13+i}\)
 <br><br></p>
 
-<p><strong>28</strong>) \(\displaystyle \frac{2 + 3i}{1 - i}\)</p>
+<p><a name="3.28" class="goback" onclick="winhisback()"><strong>3.28</strong>)</a>
+\(\displaystyle \frac{2 + 3i}{1 - i}\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \frac{2 + 3i}{1 - i} \cdot \frac{1+i}{1+i} = \frac{(2)(1)+2i+3i+(3i)i}{1-(-1)} = \frac{2-3 + (2+3)i}2 = \frac{-1+ 5i}{2} = \boxed{-\frac12 + \frac52 i}\)
 <br><br></p>
 
-<p><strong>36</strong>) \(i^{-23}\)</p>
+<p><a name="3.36" class="goback" onclick="winhisback()"><strong>3.36</strong>)</a>
+\(i^{-23}\)</p>
 
 <p><strong>Sln</strong>: \(i^{-23} = i^{-24+1} = i^{-24}(i) = (i^4)^{-6}(i) = (1)^{-6}(i) = 1(i) = \boxed{0+i}\)
 <br><br></p>
 
-<p><strong>42</strong>) \((3i)^4 + 1\)</p>
+<p><a name="3.42" class="goback" onclick="winhisback()"><strong>3.42</strong>)</a>
+\((3i)^4 + 1\)</p>
 
 <p><strong>Sln</strong>: \((3i)^4 + 1 = (3^4)(i^4) + 1 = 81(1)+1 = \boxed{82 + 0i}\)
 <br><br></p>
 
-<p><strong>46</strong>) \(i^7 + i^5 + i^3 + i\)</p>
+<p><a name="3.46" class="goback" onclick="winhisback()"><strong>3.46</strong>)</a>
+\(i^7 + i^5 + i^3 + i\)</p>
 
 <p><strong>Sln</strong>: \(i^7 + i^5 + i^3 + i = i^{4+3}+i^{4+1}-i+i = (1)i^3 + (1)i + 0i = -i + i  +0i = 0i+0i = \boxed{0 + 0i}\)
 <br><br></p>
 
-<p><strong>52</strong>) \(\sqrt{(4 + 3i)(3i - 4)}\)</p>
+<p><a name="3.52" class="goback" onclick="winhisback()"><strong>3.52</strong>)</a>
+\(\sqrt{(4 + 3i)(3i - 4)}\)</p>
 
 <p><strong>Sln</strong>: \(\sqrt{(4 + 3i)(3i - 4)} = \sqrt{12i-16-9-12i} = \sqrt{-25+0i} = \boxed{0+5i}\)
 <br><br></p>
 
 <p>Solve each equation.</p>
 
-<p><strong>56</strong>) \(x^2+25=0\)</p>
+<p><a name="3.56" class="goback" onclick="winhisback()"><strong>3.56</strong>)</a>
+\(x^2+25=0\)</p>
 
 <p><strong>Sln</strong>: Method 1: \(x^2+25=0 \implies x^2=-25 \implies x=\pm\sqrt{-25} \implies x = \boxed{\pm5i}\)</p>
 
@@ -545,14 +774,16 @@ are the reciprocals of the real solutions of the equation
 <p><strong>Chk</strong>: \((\pm5i)^2+25 = -25+25 = 0~\checkmark\)
 <br><br></p>
 
-<p><strong>64</strong>) \(13x^2 + 1 = 6x\)</p>
+<p><a name="3.64" class="goback" onclick="winhisback()"><strong>3.64</strong>)</a>
+\(13x^2 + 1 = 6x\)</p>
 
 <p><strong>Sln</strong>: \(13x^2 + 1 = 6x \implies 13x^2-6x+1=0 \implies x = \displaystyle \frac{-(-6)\pm\sqrt{36-4(13)(1)}}{2(13)} = \frac{6\pm\sqrt{-16}}{2(13)} = \frac{6\pm4i}{2(13)} = \boxed{\frac3{13}\pm\frac2{13}i}\) </p>
 
 <p><strong>Chk</strong>: \(\displaystyle 13\left(\frac{3\pm2i}{13}\right)^2 + 1 = \frac{9\pm12i-4}{13} + \frac{13}{13} = \frac{18\pm12i}{13} = 6\left(\frac{3\pm2i}{13}\right)~\checkmark\)
 <br><br></p>
 
-<p><strong>68</strong>) \(x^3 + 27 = 0\)</p>
+<p><a name="3.68" class="goback" onclick="winhisback()"><strong>3.68</strong>)</a>
+\(x^3 + 27 = 0\)</p>
 
 <p><strong>Sln</strong>: \(0 = x^3 + 27 = (x+3)(x^2-3x+9) \implies x+3=0\implies x=\boxed{-3}\) or \(x^2-3x+9=0 \implies \displaystyle x = \frac{-(-3)\pm\sqrt{9-4(1)(9)}}{2(1)} = \frac{3\pm\sqrt{9-36}}2 = \frac{3\pm\sqrt{-27}}2 = \boxed{\frac32\pm\frac{3\sqrt3}2i}\)</p>
 
@@ -561,30 +792,35 @@ are the reciprocals of the real solutions of the equation
 <p>\(\displaystyle \left(\frac32\pm\frac{3\sqrt3}2i\right)^3 + 27 = \left(\frac32\right)^3 + 3\left(\frac32\right)^2\left(\pm\frac{3\sqrt3}2i\right) + 3\left(\frac32\right)\left(\pm\frac{3\sqrt3}2i\right)^2 + \left(\pm\frac{3\sqrt3}2i\right)^3 + 27 =\)<br><br>\(\displaystyle\frac{27}8 \pm \frac{81\sqrt3}8i - \frac{243}8 \mp \frac{81\sqrt3}8i + \frac{8(27)}8 = \frac{1(27)-9(27)+8(27)+0i}8 = 0~\checkmark\)
 <br><br></p>
 
-<p><strong>72</strong>) \(x^4 + 3x^2 - 4 = 0\)</p>
+<p><a name="3.72" class="goback" onclick="winhisback()"><strong>3.72</strong>)</a>
+\(x^4 + 3x^2 - 4 = 0\)</p>
 
 <p><strong>Sln</strong>: \(x^4 + 3x^2 - 4 = (x^2)^2 + 3(x^2)^1 - 4 = 0 \implies x^2 = \displaystyle \frac{-3\pm\sqrt{9-4(1)(-4)}}{2(1)} = \frac{-3\pm\sqrt{9+16}}2 = \frac{-3\pm5}2 = \frac22 = 1\) or \(\displaystyle x^2 = -\frac82 = -4\); in turn, \(x^2=1 \implies x=\boxed{\pm1}\) and \(x^2 = -4 \implies x=\boxed{\pm2i}\).</p>
 
 <p><strong>Chk</strong>: \((\pm1)^4 + 3(\pm1)^2 - 4 = 1 + 3(1) - 4 = 0~\checkmark\), \((\pm2i)^4 + 3(\pm2i)^2 - 4 = 16 - 12 - 4 = 0~\checkmark\)
 <br><br></p>
 
-<p><strong>78</strong>) Determine the character of the solutions of \(4x^2 + 12x + 9 = 0\) without solving the equation.</p>
+<p><a name="3.78" class="goback" onclick="winhisback()"><strong>3.78</strong>)</a>
+Determine the character of the solutions of \(4x^2 + 12x + 9 = 0\) without solving the equation.</p>
 
 <p><strong>Sln</strong>: \(b^2-4ac = (12)^2-4(4)(9) = 144 - 144 = 0 \implies \boxed{\text{ one real solution (of multiplicity 2)}}\).
 <br><br></p>
 
-<p><strong>80</strong>) \(4-i\) is a solution of a quadratic equation with real
+<p><a name="3.80" class="goback" onclick="winhisback()"><strong>3.80</strong>)</a>
+\(4-i\) is a solution of a quadratic equation with real
 coefficients. Find the other solution.</p>
 
 <p><strong>Sln</strong>: If a quadratic equation with <i>real</i> coefficients (the coefficients must be real for the following to be true) has one complex solution, then the solutions <i>must</i> be the complex conjugate of one another; so, if we’re given that one solution of such an equation is \(4-i\), then the other must be \(\boxed{4+i}\).
 <br><br></p>
 
-<p><strong>84</strong>) Given \(z = 3 - 4i\) and \(w = 8 + 3i\), write \(\overline{z - w}\) in \(a+bi\) form.</p>
+<p><a name="3.84" class="goback" onclick="winhisback()"><strong>3.84</strong>)</a>
+Given \(z = 3 - 4i\) and \(w = 8 + 3i\), write \(\overline{z - w}\) in \(a+bi\) form.</p>
 
 <p><strong>Sln</strong>: \(\overline{z - w} = \overline{(3-4i)-(8 + 3i)} = \overline{3-8+(-4-3)i} = \overline{-5-7i} = \boxed{-5+7i}\)
 <br><br></p>
 
-<p><strong>86</strong>) In an ac (electrical) circuit with two parallel pathways, the total impedance \(Z\), in ohms, satisfies the formula \(\displaystyle \frac1Z = \frac1{Z_1} +\frac1{Z_2}\), where \(Z_1\) is the impedance of the first pathway and \(Z_2\) is the impedance of the second pathway. Determine the total impedance if the impedances of the two pathways
+<p><a name="3.86" class="goback" onclick="winhisback()"><strong>3.86</strong>)</a>
+In an ac (electrical) circuit with two parallel pathways, the total impedance \(Z\), in ohms, satisfies the formula \(\displaystyle \frac1Z = \frac1{Z_1} +\frac1{Z_2}\), where \(Z_1\) is the impedance of the first pathway and \(Z_2\) is the impedance of the second pathway. Determine the total impedance if the impedances of the two pathways
 are \(Z_1 = 2 + i\) ohms and \(Z_2 = 4 - 3i\) ohms.</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \frac1Z = \frac1{Z_1} +\frac1{Z_2} = \frac1{2+i} + \frac1{4-3i}\)</p>
@@ -598,7 +834,8 @@ are \(Z_1 = 2 + i\) ohms and \(Z_2 = 4 - 3i\) ohms.</p>
 <p>\(\displaystyle \frac1{2+i} + \frac1{4-3i} = \frac{4-3i+2+i}{(2+i)(4-3i)} = \frac{6-2i}{8+3+(4-6)i} = \frac{6-2i}{11-2i}\) (be sure <i>not</i> to cancel the \(-2i\)’s at this stage: there are <q>understood parentheses</q> around the numerator and the denominator, i.e., in general, \(\frac{a+b}{c+d} \ne \frac ab + \frac cd\)) \( \implies \displaystyle \frac{6-2i}{11-2i}\left(\frac{11+2i}{11+2i}\right) = \frac{66+4+(12-22)i}{121+4} = \frac{70-10i}{125} = \frac{14-2i}{25}\) ohms.
 <br><br></p>
 
-<p><strong>90</strong>) Use \(z = a + bi\) and \(w = c + di\) to show that \(\overline{z \cdot w} = \overline{z} \cdot \overline{w}\).</p>
+<p><a name="3.90" class="goback" onclick="winhisback()"><strong>3.90</strong>)</a>
+Use \(z = a + bi\) and \(w = c + di\) to show that \(\overline{z \cdot w} = \overline{z} \cdot \overline{w}\).</p>
 
 <p><strong>Pf</strong>: \(\overline{(a+bi)(c+di)} - \left(\overline{a+bi}\right)\left(\overline{c+di}\right) =  \overline{(ac-bd)+(ad+bc)i} - (a-bi)(c-di) =\) \((ac-bd)-(ad+bc)i - [(ac-bd)-(ad+bc)i] = (ac-bd)-(ac-bd) + [(ad+bc)-(ad+bc)]i =\) \(0 + 0i = 0 \implies \overline{(a+bi)(c+di)} = \left(\overline{a+bi}\right)\left(\overline{c+di}\right)~~~\blacksquare\)
 <br><br></p>
@@ -607,77 +844,91 @@ are \(Z_1 = 2 + i\) ohms and \(Z_2 = 4 - 3i\) ohms.</p>
 
 <p>Find the real solutions of the following equations:</p>
 
-<p><strong>10</strong>) \(\sqrt{5t + 3} = -2\)</p>
+<p><a name="4.10" class="goback" onclick="winhisback()"><strong>4.10</strong>)</a>
+\(\sqrt{5t + 3} = -2\)</p>
 
 <p><strong>Sln</strong>: By convention, \(\sqrt{}\) with no sign out in front is understood to be the positive square-root, so the left side of this equation, when a real number, must be non-negative (it might be zero, which, by convention, has no sign), so there’s no way it can equal \(-2\), for any value of \(x\), so this equation has \[\boxed{\text{no solution.}}\] (Note: it does have a solution in the complex numbers, but we won’t learn how to find that till Chapter 10, Section 3.)
 <br><br></p>
 
-<p><strong>20</strong>) \(\sqrt{12 - x} = x\)</p>
+<p><a name="4.20" class="goback" onclick="winhisback()"><strong>4.20</strong>)</a>
+\(\sqrt{12 - x} = x\)</p>
 
 <p><strong>Sln</strong>: \(\sqrt{12 - x} = x \implies 12-x = x^2\) (note that this step introduces a spurious solution, because \(12-x = x^2\) is also true for \(-\sqrt{12 - x} = x\), but the best way to deal with this problem is by performing the check step, which will indicate which of the two solutions of \(12-x = x^2\) is not a solution of the original equation) \(\implies 0 = x^2+x-12 = (x+4)(x-3) \implies\) \(x = -4\) or \(x=3\); (obligatory) check: \(\sqrt{12-(-4)} = \sqrt{16} = 4 \ne -4~\cancel{\checkmark}, \sqrt{12-3} = \sqrt9=3~\checkmark\), so \[\boxed{x=3}\] 
 is the only solution.
 <br><br></p>
 
-<p><strong>30</strong>) \(\sqrt{3x - 5} - \sqrt{x + 7} = 2\)</p>
+<p><a name="4.30" class="goback" onclick="winhisback()"><strong>4.30</strong>)</a>
+\(\sqrt{3x - 5} - \sqrt{x + 7} = 2\)</p>
 
 <p><strong>Sln</strong>: \(\sqrt{3x - 5} - \sqrt{x + 7} = 2 \implies \left(\sqrt{3x - 5} - \sqrt{x + 7}\right)^2 = (3x-5) - 2\sqrt{3x-5}\sqrt{x+7} + (x+7) =\) \(4x+2 - 2\sqrt{3x-5}\sqrt{x+7} = 2^2 = 4 \implies 4x-2 = 2\sqrt{3x-5}\sqrt{x+7} \implies\) \((2x-1)^2 = 4x^2-4x + 1 = (\sqrt{3x-5}\sqrt{x+7})^2 = (3x-5)(x+7) = 3x^2+16x-35 \implies x^2-20x+36 = 0 \implies\) \(\displaystyle x=\frac{-(-20)\pm\sqrt{20^2-4(1)(36)}}{2(1)} = \frac{20\pm\sqrt{400-144}}2 = \frac{20\pm\sqrt{256}}2 = \frac{20\pm16}2 = 18\) or \(2\); check: \(\sqrt{3(18) - 5} - \sqrt{18 + 7} = \sqrt{49}- \sqrt{25} = 7-5 = 2~\checkmark, \sqrt{3(2) - 5} - \sqrt{2 + 7} = \sqrt1-\sqrt9 = 1 - 3 = -2 \ne 2~\cancel{\checkmark}\), so \[\boxed{x=18}\]is the only solution. (Observe how the value of the left hand side for the spurious solution is the negative of the correct result: why does this make sense?)
 <br><br></p>
 
-<p><strong>40</strong>) \(x^{3/4} - 9x^{1/4} = 0\)</p>
+<p><a name="4.40" class="goback" onclick="winhisback()"><strong>4.40</strong>)</a>
+\(x^{3/4} - 9x^{1/4} = 0\)</p>
 
 <p><strong>Sln</strong>: Let \(y=x^{1/4} \implies x^{3/4} = (x^{1/4})^3 = y^3 \implies 0 = x^{3/4} - 9x^{1/4} = y^3-9y = y(y^2-9) = y(y-3)(y+3) \implies\) \(y = x^{1/4} = 0 \implies x=0\); or \(y = x^{1/4} = 3 \implies x = 3^4 = 81\); or  \(y = x^{1/4}=-3\), which is untrue for all real \(x\) (again, there is a solution in the complex numbers, for which we will have to wait; note: if you raise both sides of \(x^{1/4}=-3\) to the fourth power, you don’t get a distinct solution, you just get the \(x=81\) solution we already have); check: \(0^{3/4}-9(0^{1/4}) = 0 - 9(0) = 0~\checkmark, (81)^{3/4}-9(81)^{1/4} = (3^4)^{3/4} - 9(3^4)^{1/4} = 3^3 - 9(3^1) = 27 - 27 = 0~\checkmark\), so \[\boxed{x=0, 81}\]are the only solutions. (Extra credit: <q>confirm</q> by using technology to graph \(y = x^{3/4} - 9x^{1/4}\).)
 <br><br></p>
 
-<p><strong>44</strong>) \(2x^4 - 5x^2 - 12 = 0\)</p>
+<p><a name="4.44" class="goback" onclick="winhisback()"><strong>4.44</strong>)</a>
+\(2x^4 - 5x^2 - 12 = 0\)</p>
 
 <p><strong>Sln</strong>: Let \(y=x^2 \implies 2x^4 - 5x^2 - 12 = 2y^2-5y-12 = 0 \implies y = \displaystyle \frac{-(-5)\pm\sqrt{25-4(2)(-12)}}{2(2)} = \frac{5\pm\sqrt{25+96}}4 = \frac{5\pm11}4 =\) \(4 = x^2\) \(\implies x=\pm2\) or \(y = -\frac64=-\frac32 = x^2\) is untrue for all real \(x\); check: \(2(\pm2)^4 - 5(\pm2)^2 - 12 = 2(16) - 5(4) - 12 =\) \(32-20-12 = 0~\checkmark\)so the only (real) solutions are:\[\boxed{x=\pm2}\]
 <br></p>
 
-<p><strong>52</strong>) \(3(1 - y)^2 + 5(1 - y) + 2 = 0\)</p>
+<p><a name="4.52" class="goback" onclick="winhisback()"><strong>4.52</strong>)</a>
+\(3(1 - y)^2 + 5(1 - y) + 2 = 0\)</p>
 
 <p><strong>Sln</strong>: We could expand this out&mdash;the result would still be a quadratic in \(y\)&mdash;but that would involve a lot of unnecessary algebra; unnecessary because (the left hand side of) the equation is already <q>quadratic in form</q>: let \(z=1-y \implies 3(1 - y)^2 + 5(1 - y) + 2 = 3z^2 + 5z + 2 = 0\implies z = \displaystyle \frac{-5\pm\sqrt{25-4(3)(2)}}{2(3)} = \frac{-5\pm1}6 \implies\) \(z = 1-y = -1 \implies y=2\) or \(z = 1-y = -\frac23 \implies y = \frac53\); check: \(3(1 - 2)^2 + 5(1 - 2) + 2 = 3(-1)^2 + 5(-1) + 2 =\) \(3-5+2 = 0~\checkmark\), \(3(1 - \frac53)^2 + 5(1 - \frac53) + 2 = 3(-2/3)^2 + 5(-2/3) + 2 = \frac{4-10+6}{3} = 0~\checkmark\):\[\boxed{y=2,\frac53}\]
 <br></p>
 
-<p><strong>60</strong>) \(x^{1/2} - 3x^{1/4} + 2 = 0\)</p>
+<p><a name="4.60" class="goback" onclick="winhisback()"><strong>4.60</strong>)</a>
+\(x^{1/2} - 3x^{1/4} + 2 = 0\)</p>
 
 <p><strong>Sln</strong>: \(x^{1/2} = x^{2/4} = (x^{1/4})^2\) so \(x^{1/2} - 3x^{1/4} + 2 = (x^{1/4})^2 - 3x^{1/4} + 2 = 0 \implies x^{1/4} = \displaystyle \frac{-(-3)\pm\sqrt{9-4(1)(2)}}2 = \frac{3\pm1}2 \implies x^{1/4} = 2 \implies x = 2^4 = 16\) or \(x^{1/4} = 1 \implies x=1\); check: \((1)^{1/2}-3(1)^{1/4}+2 = 1 - 3 + 2 = 0~\checkmark\), \((16)^{1/2}-3(16)^{1/4}+2 = 4 - 3(2) + 2 = 6-6 = 0~\checkmark\):\[\boxed{x=1,16}\]
 <br></p>
 
-<p><strong>68</strong>) \(2x^{-2} - 3x^{-1} - 4 = 0\)</p>
+<p><a name="4.68" class="goback" onclick="winhisback()"><strong>4.68</strong>)</a>
+\(2x^{-2} - 3x^{-1} - 4 = 0\)</p>
 
 <p><strong>Sln</strong>: By now the reader should <q>just recognize</q> that this is quadratic in \(x^{-1}\), so we can immediately write down: \(\displaystyle x^{-1} = \frac{-(-3)\pm\sqrt{9-4(2)(-4)}}{2(2)} = \frac{3\pm\sqrt{9+32}}4 = \frac{3\pm\sqrt{41}}4 \implies x = \frac4{3\pm\sqrt{41}}\left(\frac{3\mp\sqrt{41}}{3\mp\sqrt{41}}\right) = \frac{12\pm4\sqrt{41}}{9-41} =\) \(\displaystyle \frac{12\pm4\sqrt{41}}{-32} = -\frac{3\pm\sqrt{41}}8\); check: \(\displaystyle 2\left(-\frac{3\pm\sqrt{41}}8\right)^{-2} - 3\left(-\frac{3\pm\sqrt{41}}8\right)^{-1} - 4 = 2\left(\frac{3\pm\sqrt{41}}4\right)^2 - \left(\frac{9\pm3\sqrt{41}}4\right) - \frac{16}4 =\) \(\displaystyle \frac{9\pm6\sqrt{41}+41}8 - \frac{18\pm6\sqrt{41}}8 - \frac{32}8 = \frac{50-18-32 \pm 6\sqrt{41} \mp 6\sqrt{41}}8 = 0~\checkmark \implies\) \[\boxed{x=-\frac{3\pm\sqrt{41}}8}\]
 <br><br></p>
 
-<p><strong>72</strong>) \(\displaystyle \left(\frac{y}{y - 1}\right)^2 = 6\left(\frac{y}{y - 1}\right) + 7\)</p>
+<p><a name="4.72" class="goback" onclick="winhisback()"><strong>4.72</strong>)</a>
+\(\displaystyle \left(\frac{y}{y - 1}\right)^2 = 6\left(\frac{y}{y - 1}\right) + 7\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \left(\frac{y}{y - 1}\right)^2 = 6\left(\frac{y}{y - 1}\right) + 7 \implies \left(\frac{y}{y - 1}\right)^2 - 6\left(\frac{y}{y - 1}\right) - 7 = 0 \implies \frac{y}{y-1} = \frac{6\pm\sqrt{36-4(1)(-7)}}2 = \frac{6\pm8}2 = 7\) or \(-1\); now \(\displaystyle \frac y{y-1} = -1 \implies \frac{y-1}y = -1 = 1-\frac1y \implies \frac1y = 2 \implies y=\frac12\), while \(\displaystyle \frac{y}{y-1}=7 \implies 1-\frac1y=\frac17 \implies \frac1y = \frac67 \implies y=\frac76\); check: \(\displaystyle \left(\frac{1/2}{1/2 - 1}\right)^2 = \left(\frac{1/2}{-1/2}\right)^2 = (-1)^2 = 1\), while \(\displaystyle 6\left(\frac{1/2}{1/2 - 1}\right) + 7 = 6(-1) + 7 = 1~\checkmark\); \(\displaystyle \left(\frac{7/6}{7/6-1}\right)^2 = \left(\frac{7/6}{1/6}\right)^2 = (7)^2 = 49\), while \(\displaystyle 6\left(\frac{7/6}{1/6}\right) + 7 = 42+7 = 49~\checkmark\) so\[\boxed{y=\frac12,\frac76}\]
 <br></p>
 
-<p><strong>80</strong>) \(x^3 + 4x^2 - x - 4 = 0\)</p>
+<p><a name="4.80" class="goback" onclick="winhisback()"><strong>4.80</strong>)</a>
+\(x^3 + 4x^2 - x - 4 = 0\)</p>
 
 <p><strong>Sln</strong>: \(0 = x^3 + 4x^2 - x - 4 = x^2(x+4)-1(x+4) = (x^2-1)(x+4) = (x+1)(x-1)(x+4) \implies x+1 = 0 \implies x=-1\) or \(x-1=0 \implies x=1\) or \(x+4 = 0 \implies x=-4\); check: \((1)^3+4(1)^2-1-4 = 1+4-1-4 = 0~\checkmark\), \((-1)^3+4(-1)^2-(-1)-4 = -1+4+1-4 = 0~\checkmark\), \((-4)^3+4(-4)^2-(-4)-4 = -64+4(16)+4-4 = 0~\checkmark\) so\[\boxed{x=-4,\pm1}\]
 <br><br></p>
 
-<p><strong>88</strong>) \(3x(x^2 + 2x)^{1/2} - 2(x^2 + 2x)^{3/2} = 0\)</p>
+<p><a name="4.88" class="goback" onclick="winhisback()"><strong>4.88</strong>)</a>
+\(3x(x^2 + 2x)^{1/2} - 2(x^2 + 2x)^{3/2} = 0\)</p>
 
 <p><strong>Sln</strong>: Let \(y=(x^2 + 2x)^{1/2}\); then \(3x(x^2 + 2x)^{1/2} - 2(x^2 + 2x)^{3/2} = 3xy - 2y^3 = y(3x-2y^2) = 0 \implies y=(x^2+2x)^{1/2} = 0 \implies x^2+2x= 0 \implies x=0\) or \(x=-2\), or \(3x-2y^2 = 3x-2(x^2+2x) = -2x^2-x = -x(2x+1) = 0 \implies x=0\) or \(x=-\frac12\); check: \(3(0)(0^2 + 2(0))^{1/2} - 2(0^2 + 2(0))^{3/2} = 0 - 2(0) = 0~\checkmark\), \(3(-2)((-2)^2 + 2(-2))^{1/2} - 2((-2)^2 + 2(-2))^{3/2} = -6(4-4)^{1/2}-2(4-4)^{3/2} = -6(0)^{1/2}-2(0)^{3/2} = 0~\checkmark\), \(3(-1/2)((-1/2)^2 + 2(-1/2))^{1/2} - 2((-1/2)^2 + 2(-1/2))^{3/2} = (-3/2)(1/4 - 1)^{1/2} - 2(1/4 - 1)^{3/2} = -3/2(-3/4)^{1/2}-2(-3/4)^{3/2}\) which is undefined over the real numbers, so the only solutions are: \[\boxed{x=0,-2}\]<br>
 <br></p>
 
-<p><strong>92</strong>) \(x^4 + \sqrt2 x^2 - 2 = 0\)</p>
+<p><a name="4.92" class="goback" onclick="winhisback()"><strong>4.92</strong>)</a>
+\(x^4 + \sqrt2 x^2 - 2 = 0\)</p>
 
 <p><strong>Sln</strong>: \(x^4 + \sqrt2 x^2 - 2 = (x^2)^2 + \sqrt2 (x^2)^1 - 2 = 0 \implies \displaystyle x^2 = \frac{-\sqrt2\pm\sqrt{2-4(1)(-2)}}2 = \frac{-\sqrt2\pm\sqrt{10}}2 = \frac{-\sqrt2\pm\sqrt5\sqrt2}2 = \) \(\displaystyle \frac{\sqrt2(\pm\sqrt5-1)}2 = \frac{\pm\sqrt5-1}{\sqrt2}\), or, clearing out the cruft: \(x^2=\displaystyle \frac{\pm\sqrt5-1}{\sqrt2}\); now we run into a new (for us) situation: <q>clearly</q> \(x^2=\displaystyle \frac{-\sqrt5-1}{\sqrt2}\) has no real solutions (make sure you understand why), but what about \(x^2=\displaystyle \frac{\sqrt5-1}{\sqrt2}\)? Whether or not this has real solutions depends on whether or not \(\displaystyle \frac{\sqrt5-1}{\sqrt2}\) is non-negative; since \(\sqrt2\) is positive, this depends on whether or not \(\sqrt5-1\) is non-negative; now, you can type this into a calculator, but you <i>should</i> learn that, given <i>any</i> real number greater than 1, its square-root is also greater than one, and consequently \(\sqrt5-1\) is greater than 0, i.e., positive, and thus \(\displaystyle \frac{\sqrt5-1}{\sqrt2}\) is positive, and thus its square-root is a real number. Thus \(x^2=\displaystyle \frac{\sqrt5-1}{\sqrt2}\) has real solutions, which we find simply by taking the positive and negative square-root of both sides: \(x^2=\displaystyle \frac{\sqrt5-1}{\sqrt2} \implies\) \[x = \boxed{\pm\sqrt{\frac{\sqrt5 - 1}{\sqrt2}} = \pm\frac{\sqrt{\sqrt5 - 1}}{\sqrt[\large4]2} \doteq \pm 0.93}\]</p>
 
 <p>Check: \((0.93)^4 + \sqrt2 (0.93)^2 - 2 \doteq 0.748 +1.414(0.865) - 2 = -0.029~\checkmark\) (As a good, challenging exercise in arithmetic, the reader should check the exact answers in the original equation.)
 <br><br></p>
 
-<p><strong>96</strong>) If \(k = \displaystyle \frac{x+3}{x-4}\) and \(k^2 - 3k = 28\), find \(x\).</p>
+<p><a name="4.96" class="goback" onclick="winhisback()"><strong>4.96</strong>)</a>
+If \(k = \displaystyle \frac{x+3}{x-4}\) and \(k^2 - 3k = 28\), find \(x\).</p>
 
 <p><strong>Sln</strong>: We can solve this by first solving for \(k\) in \(k^2 - 3k = 28\) and then setting those results equal to \(\displaystyle \frac{x+3}{x-4}\) and solving for \(x\) (the check will be to calculate the values of \(k\) given by those values of \(x\), and then checking those values of \(k\) in its quadratic).</p>
 
 <p>\(k^2 - 3k = 28 \implies k^2 - 3k - 28 = (k-7)(k+4) = 0 \implies k=7\) or \(k=-4\); now, if we calculated these wrong, we’ll get the values of \(x\) wrong in the next step, so we do an <q>intermediate check</q> at this point (which will obviate the need of checking the values of \(k\) again at the end): check: \((7)^2-3(7) = 49-21 = 28~\checkmark\), \((-4)^2-3(-4) = 16+12 = 28~\checkmark\). Those solutions confirmed, we proceed to solve: \(\displaystyle \frac{x+3}{x-4} = 7 \implies x+3 = 7(x-4) = 7x-28 \implies 6x = 31 \implies x = \frac{31}6\) or \(\displaystyle \frac{x+3}{x-4} = -4 \implies x+3 = -4(x-4) = -4x+16 \implies 5x=13 \implies x=\frac{13}5\); check: \(\displaystyle \frac{(31/6)+3}{(31/6)-4} = \frac{(31+18)/6}{(31-24)/6} = \frac{49}{7} = 7~\checkmark\), \(\displaystyle \frac{(13/5)+3}{(13/5)-4} = \frac{(13+15)/5}{(13-20)/5} = \frac{28}{-7} = -4~\checkmark\), so: \[\boxed{x=\frac{13}5, \frac{31}6}\]
 <br></p>
 
-<p><strong>98</strong>) <strong>Crushing Load</strong> A civil engineer relates the thickness \(T\), in inches, and height \(H\), in feet, of a square wooden pillar to its crushing
+<p><a name="4.98" class="goback" onclick="winhisback()"><strong>4.98</strong>)</a>
+<strong>Crushing Load</strong> A civil engineer relates the thickness \(T\), in inches, and height \(H\), in feet, of a square wooden pillar to its crushing
 load \(L\), in tons, using the model \(\displaystyle T = \sqrt[\large4]{\frac{LH^2}{25}}\). If a square wooden pillar is 4 inches thick and 10 feet high, what is its crushing load?</p>
 
 <p><strong>Sln</strong>: We need to solve: \(\displaystyle 4 = \sqrt[\large4]{\frac{L(10)^2}{25}} \implies (4)^4 = \frac{100}{25}L = 4L \implies L=4^3=\boxed{64\text{ tons}}\)</p>
@@ -685,7 +936,7 @@ load \(L\), in tons, using the model \(\displaystyle T = \sqrt[\large4]{\frac{LH
 <p><strong>Chk</strong>: \(\displaystyle \sqrt[\large4]{\frac{(64)(10)^2}{25}} = \sqrt[\large4]{(4^3)(4)} = 4~\checkmark\)
 <br><br></p>
 
-<p><a href="https://www.quora.com/How-do-I-solve-the-equation-in-C-x-8-12x-4-13-0"><strong>Bonus Problem from Quora</strong></a></p>
+<p><a name="BPQ" class="goback" onclick="winhisback()"><strong>Bonus Problem from Quora</strong></a></p>
 
 <p>Coincidentally, literally the day after I finished the solutions for this section, someone on Quora asked how to solve \(x^8+12x^4-13=0\), which is quadratic in form and thus fits perfectly in this section (as well as Section 10.3, after which we will be able to find all the complex solutions; for now, all we will find are all the real solutions).</p>
 
@@ -694,69 +945,80 @@ load \(L\), in tons, using the model \(\displaystyle T = \sqrt[\large4]{\frac{LH
 
 <h3><u>Section 5: Solving Inequalities</u></h3>
 
-<p><strong>16</strong>) Express the graph shown in blue using interval notation, and as an inequality involving \(x\).</p>
+<p><a name="5.16" class="goback" onclick="winhisback()"><strong>5.16</strong>)</a>
+Express the graph shown in blue using interval notation, and as an inequality involving \(x\).</p>
 
 <p><img src="./Graphs/SullivanC1S5P16.png" height="100"></p>
 
 <p><strong>Sln</strong>: The nice thing about this way of denoting the bounds of intervals on number line graphs (it is not the only convention used) is that it immediately translates into standard interval notation: the pictured interval is simply \(\boxed{(-1,1]}\).
 <br><br></p>
 
-<p><strong>22d</strong>) Write the inequality obtained multiplying \(1 - 2x \gt 5\) by \(-2\).</p>
+<p><a name="5.22d" class="goback" onclick="winhisback()"><strong>5.22d</strong>)</a>
+Write the inequality obtained multiplying \(1 - 2x \gt 5\) by \(-2\).</p>
 
 <p><strong>Sln</strong>: One just needs to remember that when one multiplies (which includes division) by a negative number, one must <q>flip</q> the inequality: \(1 - 2x \gt 5\) multiplied by \(-2\) is equivalent to \(-2(1 - 2x) \lt -2(5) \implies \boxed{4x-2 \lt -10}\)
 <br><br></p>
 
 <p>In Problems <strong>24</strong> and <strong>28</strong>, write each inequality using interval notation, and illustrate each inequality using the real number line.</p>
 
-<p><strong>24</strong>) \(-1 \lt x \lt 5\)</p>
+<p><a name="5.24" class="goback" onclick="winhisback()"><strong>5.24</strong>)</a>
+\(-1 \lt x \lt 5\)</p>
 
 <p><strong>Sln</strong>: \(\boxed{(-1,5)}\) <img src="./Graphs/SullivanC1S5P24.png">
 <br></p>
 
-<p><strong>28</strong>) \(x \le 5\)</p>
+<p><a name="5.28" class="goback" onclick="winhisback()"><strong>5.28</strong>)</a>
+\(x \le 5\)</p>
 
 <p><strong>Sln</strong>: \(\boxed{(-\infty, 5]}\) <img src="./Graphs/SullivanC1S5P28.png">
 <br></p>
 
 <p>In Problems <strong>34</strong> and <strong>38</strong>, write each interval as an inequality involving \(x\), and illustrate each inequality using the real number line.</p>
 
-<p><strong>34</strong>) \([0, 1)\)</p>
+<p><a name="5.34" class="goback" onclick="winhisback()"><strong>5.34</strong>)</a>
+\([0, 1)\)</p>
 
 <p><strong>Sln</strong>: \(\boxed{0 \le x \lt 1}\) <img src="./Graphs/SullivanC1S5P34.png" height="60">
 <br></p>
 
-<p><strong>38</strong>) \((-8,\infty)\)</p>
+<p><a name="5.38" class="goback" onclick="winhisback()"><strong>5.38</strong>)</a>
+\((-8,\infty)\)</p>
 
 <p><strong>Sln</strong>: \(\boxed{-8 \lt x}\) (Or, if you prefer your variable on the left, \(\boxed{x \gt -8}\), but the inequalities are equivalent statements.) <img src="./Graphs/SullivanC1S5P38.png" height="60">
 <br></p>
 
 <p>In Problems <strong>46</strong> and <strong>52</strong>, fill in the blank with the correct inequality symbol.</p>
 
-<p><strong>46</strong>) If \(x \gt -2\), then \(-4x\;\_\_\_\;8.\)</p>
+<p><a name="5.46" class="goback" onclick="winhisback()"><strong>5.46</strong>)</a>
+If \(x \gt -2\), then \(-4x\;\_\_\_\;8.\)</p>
 
 <p><strong>Sln</strong>: Method 1: Since one transforms both sides of the inequality by multiplying by \(-4\), we have to flip the inequality so \(x \gt -2 \implies \boxed{-4x \lt 8}\).</p>
 
 <p>Method 2: Starting with \( -4x\) ? \(8\), to <q>solve</q> for \(x\), we must divide by \(-4\), which flips an inequality, so if the end result is \(x \gt -2\), then the original relationship must have been \(-4x \lt 8\).
 <br><br></p>
 
-<p><strong>52</strong>) If \(\displaystyle -\frac14 x \gt 1\), then \(x\;\_\_\_\;-4.\)</p>
+<p><a name="5.52" class="goback" onclick="winhisback()"><strong>5.52</strong>)</a>
+If \(\displaystyle -\frac14 x \gt 1\), then \(x\;\_\_\_\;-4.\)</p>
 
 <p><strong>Sln</strong>: Again, to get from \(\displaystyle -\frac14 x\) to \(x\), we must multiply by \(-4\) which flips the inequality, so \(\displaystyle -\frac14 x \gt 1 \implies \boxed{x \lt -4}\)
 <br><br></p>
 
 <p>Solve each inequality, express your answer using set notation or interval notation, and graph the solution set. (I’m going to alternate between the two solution set representations.)</p>
 
-<p><strong>60</strong>) \(2x - 2 \ge 3 + x\)</p>
+<p><a name="5.60" class="goback" onclick="winhisback()"><strong>5.60</strong>)</a>
+\(2x - 2 \ge 3 + x\)</p>
 
 <p><strong>Sln</strong>: \(2x\color{red}{-x}\) \( - 2\color{blue}{+2}\) \(\ge 3\color{blue}{+2}\) \(+~x\color{red}{-x}\) \(\implies x \ge 5\); check: \(2(5)-2 = 8 = 3+5~\checkmark\), \(2(5.1) - 2 = 10.2-2 = 8.2 \gt 8.1 = 3+5.1~\checkmark\), \(2(4.9)-2 = 9.8-2 = 7.8 \cancel{\ge} 7.9 = 3+4.9~\checkmark\) so the solutions set is: \(\boxed{\{x~|~x \ge 5\}}\), <img src="./Graphs/SullivanC1S5P60.png" height=60>
 <br></p>
 
-<p><strong>66</strong>) \(3x + 4 \gt \displaystyle \frac13(x - 2)\)</p>
+<p><a name="5.66" class="goback" onclick="winhisback()"><strong>5.66</strong>)</a>
+\(3x + 4 \gt \displaystyle \frac13(x - 2)\)</p>
 
 <p><strong>Sln</strong>: \(\color{red}3\)\(\left[3x + 4 \gt \displaystyle \frac13(x - 2)\right]\implies 9x\color{red}{-x}\) \(+~12\color{blue}{-12}\) \(\gt x\color{red}{-x}\) \(-~2\color{blue}{-12}\) \(\implies \displaystyle \color{red}\frac18\)\((8x \gt -14) \implies \displaystyle x \gt -\frac{14}8 = -\frac74\); check: \(3(-\frac74) + 4 = \frac{-21+16}4 = -\frac54\), \(\frac13(-\frac74-2) = \frac13(\frac{-7-8}4) = \frac13(-\frac{15}4) = -\frac54\), so the boundary point is correct; \(0 \gt -\frac74\), so we’ll use that to check the <q>positive side</q> (in the logical sense, not the numerical) of the inequality: \(3(0)+4 = 4 \gt -\frac23 = \frac13(0-2)~\checkmark\); for the <q>negative side,</q> \(-\frac84 = -2 \lt -\frac74\) will do: \(3(-2) + 4 = -6+4 = -2\), while \(\frac13(-2-2) = -\frac43\) and \(-2 \cancel{\gt} -\frac43~\checkmark\), so the solution set, in interval notation, is: \(\boxed{\left(-\frac74, \infty\right)}\), whose graph is: <img src="./Graphs/SullivanC1S5P66.png" height=80>
 <br></p>
 
-<p><strong>72</strong>) \(-3 \le 3 - 2x \le 9\)</p>
+<p><a name="5.72" class="goback" onclick="winhisback()"><strong>5.72</strong>)</a>
+\(-3 \le 3 - 2x \le 9\)</p>
 
 <p><strong>Sln</strong>: \(-3\color{red}{-3}\) \(\le 3\color{red}{-3}\) \( -~2x \le 9\color{red}{-3}\) \(\implies \color{blue}-\frac12\)\(\left[-6 \le -2x \le 6\right] \implies 3 \ge x \ge -3\), or in set notation \(\boxed{\{x|-3 \le x \le 3\}}\)</p>
 
@@ -765,19 +1027,22 @@ load \(L\), in tons, using the model \(\displaystyle T = \sqrt[\large4]{\frac{LH
 <p>Partial check: \(3-2(0) = 3\) which is \(\gt -3\) and \(\lt 9~\checkmark\); \(3 - 2(\pm3) = 3\pm6 = -3\) or \(9\), so the boundary points are right; we leave it to the reader to <q>spot-check</q> that if \(x\lt-3\) or \(x\gt3\) then the compound inequality is false (or better yet, prove that we don’t need to, i.e, prove that the checks we’ve performed so far suffice).
 <br><br></p>
 
-<p><strong>78</strong>) \((x - 1)(x + 1) \gt (x - 3)(x + 4)\)</p>
+<p><a name="5.78" class="goback" onclick="winhisback()"><strong>5.78</strong>)</a>
+\((x - 1)(x + 1) \gt (x - 3)(x + 4)\)</p>
 
 <p><strong>Sln</strong>: \((x - 1)(x + 1) \gt (x - 3)(x + 4) \implies x^2\color{red}{-x^2}\) \(-~1\color{blue}{+12}\) \(\gt x^2\color{red}{-x^2}\) \(+~x-12\color{blue}{+12}\) \(\implies 11 \gt x\) or \(x \lt 11\); check: \((11-1)(11+1) = 120 = (8)(15) = (11-3)(11+4)\), so the boundary point is correct; \(10 \lt 11\), so should make the original inequality a true statement: \((10-1)(10+1)=(9)(11)=99 \gt 98 = (7)(14) = (10-3)(10+4)~\checkmark\); checking that \(x \gt 11\) makes the statement false is left to the reader. So in interval notation the solution set is: \(\boxed{(-\infty, 11)}\), whose graph is:
 <img src="./Graphs/SullivanC1S5P78.png" height=60> 
 <br></p>
 
-<p><strong>84</strong>) \((2x - 1)^{-1} \gt 0\)</p>
+<p><a name="5.84" class="goback" onclick="winhisback()"><strong>5.84</strong>)</a>
+\((2x - 1)^{-1} \gt 0\)</p>
 
 <p><strong>Sln</strong>: \((2x - 1)^{-1} = \displaystyle \frac1{2x-1}\) which can only be \(\gt 0\), i.e., positive, if \(2x - 1 \gt 0\) (make sure you understand why; hint: what is the sign of 1?) so \((2x - 1)^{-1} \gt 0 \implies 2x-1\color{red}{+1}\) \(\gt 0\color{red}{+1}\) \( \implies \displaystyle \color{blue}\frac12\)\(\left[2x \gt 1\right]\implies x \gt \displaystyle \frac12\); check: \(x=\frac12\) makes the expression undefined (so even if it were \((2x - 1)^{-1} \ge 0\) we’d still have to reject \(x=\frac12\)); \(1 \gt \frac12\) should make the inequality true: \((2(1) - 1)^{-1} = (2-1)^{-1} = 1^{-1} = 1 \gt 0~\checkmark\); \(0 \lt \frac12\) should make it false: \((2(0) - 1)^{-1} = (0-1)^{-1} = (-1)^{-1} = -1 \cancel{\gt} 0~\checkmark\); so the solution set is \(\boxed{\left\{x|x \gt \frac12\right\}}\), the graph of which is:
 <img src="./Graphs/SullivanC1S5P84.png" height=60>
 <br></p>
 
-<p><strong>88</strong>) \(0 \lt (3x + 6)^{-1} \lt \frac13\)</p>
+<p><a name="5.88" class="goback" onclick="winhisback()"><strong>5.88</strong>)</a>
+\(0 \lt (3x + 6)^{-1} \lt \frac13\)</p>
 
 <p><strong>Sln</strong>: Remember that this is an abbreviation for two <q>simultaneous</q> inequalities: \(0 \lt (3x + 6)^{-1}\) <i>and</i> \((3x + 6)^{-1} \lt \frac13\), where the <i>and</i> means that \(x\) is only a solution if it makes both inequalities true at the same time. Now, as with Problem <strong>84</strong>, the first inequality simply tells us that \(3x+6 \gt 0\), while the second one is only true if \(3x+6 \gt 3\) (to see this, multiply both sides by \(3(3x+6)\), which we can do without having to flip the inequality because we just established that the first inequality tells us that \(3x+6\) must be positive), and if \(3x+6 \gt 3\) then it is also greater than zero, so the first inequality is now redundant: all solutions will be found by solving just the second inequality.</p>
 
@@ -786,22 +1051,26 @@ load \(L\), in tons, using the model \(\displaystyle T = \sqrt[\large4]{\frac{LH
 
 <p>In Problems <strong>94</strong> and <strong>98</strong>, find \(a\) and \(b\) (such that the implication is true).</p>
 
-<p><strong>94</strong>) If \(-3 \lt x \lt 3\), then \(a \lt 1 - 2x \lt b\).</p>
+<p><a name="5.94" class="goback" onclick="winhisback()"><strong>5.94</strong>)</a>
+If \(-3 \lt x \lt 3\), then \(a \lt 1 - 2x \lt b\).</p>
 
 <p><strong>Sln</strong>: What we want to do here is manipulate the first inequality to transform it into the second; since multiplication is performed first in order of operations, the first transformation we need to make is the multiplication by \(-2\): \(\color{red}-2\)\(\left[-3 \lt x \lt 3\right] \implies 6 \gt -2x \gt -6\) (remember to flip the inequalities when multiplying by a negative number); next we add \(1\): \(6\color{blue}+1\) \(\gt \color{blue}+1\) \(-~2x \gt -6\color{blue}+1\) \(\implies \boxed{-5} \lt 1-2x \lt \boxed{7}\)
 <br><br></p>
 
-<p><strong>98</strong>) If \(0 \lt 2x \lt 6\), then \(a \lt x^2 \lt b\).</p>
+<p><a name="5.98" class="goback" onclick="winhisback()"><strong>5.98</strong>)</a>
+If \(0 \lt 2x \lt 6\), then \(a \lt x^2 \lt b\).</p>
 
 <p><strong>Sln</strong>: First we multiply by \(\frac12\): \(\frac12[0 \lt 2x \lt 6] \implies 0 \lt x \lt 3 \implies \boxed{0} \lt x^2 \lt 3^2=\boxed{9}\)
 <br><br></p>
 
-<p><strong>100</strong>) What is the (<q>natural</q>) domain of the variable in the expression \(\sqrt{8+2x}\)?</p>
+<p><a name="5.100" class="goback" onclick="winhisback()"><strong>5.100</strong>)</a>
+What is the (<q>natural</q>) domain of the variable in the expression \(\sqrt{8+2x}\)?</p>
 
 <p><strong>Sln</strong>: The (natural) domain of the variable is such that the function is well-defined; in this case, the only reason why it wouldn’t be is if the argument of the square-root function were less than zero, so the domain is determined by the condition: \(8+2x \ge 0 \implies 2x \ge -8 \implies x \ge -8/2 = -4\); in set notation: \(\boxed{\{x|x \ge -4\}}\) Check: \(8+2(-4) = 0\), so the boundary point is right; \(8+2(-3) = 8-6 = 2 \gt 0\), so we can take the square-root of it, so points to the right of \(-4\) are in the domain; \(8+2(-5) = 8-10 = -2\), whose square-root is not a real number, so points to the left of \(-4\) are not in the domain.
 <br><br></p>
 
-<p><strong>106</strong>) <strong>Sales Commission</strong> A used car salesperson is paid a
+<p><a name="5.106" class="goback" onclick="winhisback()"><strong>5.106</strong>)</a>
+<strong>Sales Commission</strong> A used car salesperson is paid a
 commission of $25 plus 40% of the selling price in excess of
 owner’s cost. The owner claims that used cars typically sell
 for at least owner’s cost plus $200 and at most owner’s cost
@@ -811,7 +1080,8 @@ salesperson expect the commission to vary?</p>
 <p><strong>Sln</strong>: <q>The selling price in excess of owner’s cost</q> is just an awkward way of saying the difference between the selling price and the owner’s cost (or just <q>cost</q>); stating that a car sells for owner’s cost plus $200 is equivalent to stating that $200 is that difference, and similarly for $3000; so for the selling price of $200 <q>over cost,</q> the commission will be \(\$25 + 0.4(\$200) = \$25 + \$80 = \$105\), while the commission for a selling price of $3000 over cost will be \(\$25+0.4(\$3000) = \$25 + \$1200 = \$1225\); in summary, if \(c\) is the commission, then: \[\boxed{\$105 \le c \le \$1225}\]characterizes the implied commission range.
 <br><br></p>
 
-<p><strong>110</strong>) <strong>Water Bills</strong> The Village of Oak Lawn charges homeowners
+<p><a name="5.110" class="goback" onclick="winhisback()"><strong>5.110</strong>)</a>
+<strong>Water Bills</strong> The Village of Oak Lawn charges homeowners
 $37.62 per quarter-year plus $3.86 per 1000 gallons for water
 usage in excess of 10,000 gallons. In 2010 one homeowner’s
 quarterly bill ranged from a high of $122.54 to a low of
@@ -820,7 +1090,8 @@ $68.50. Over what range did water usage vary?</p>
 <p><strong>Sln</strong>: Let \(c\) be the (quarterly) cost, \(u\) the (quarterly) usage; then the the stated relation between the two is given by the formula: \(c = \$37.62 + \$3.86(u-10,000)/1000 = \$3.86\times 10^{-3}u - \$38.60 + \$37.62 = \$(0.00386u - 0.98)\). Setting this equal to $68.50 and solving for \(u\): \(0.00386u - 0.98 = 68.50 \implies 0.00386u = 69.48 \implies u = (69.48)/(0.00386) = 18,000\) gallons as the low usage; doing the same for $122.54: \(0.00386u - 0.98 = 122.54 \implies 0.00386u = 123.52 \implies u = (123.52)/(0.00386) = 32,000\) gallons as the high usage; in summary:\[\boxed{18,000 \le u \le 32,000}\]was the water usage range, in gallons.
 <br><br></p>
 
-<p><strong>114</strong>) <strong>“Light” Foods</strong> For food products to be labeled “light,” the
+<p><a name="5.114" class="goback" onclick="winhisback()"><strong>5.114</strong>)</a>
+<strong>“Light” Foods</strong> For food products to be labeled “light,” the
 U.S. Food and Drug Administration requires that the
 altered product must either contain one-third or fewer
 calories than the regular product or it must contain one-half
@@ -832,7 +1103,8 @@ the grams of fat in a serving of regular Miracle Whip®?</p>
 <p><strong>Sln</strong>: Let \(C, c = \) the number of calories in the regular and <q>light</q>  products, respectively, and \(F, f = \) the grams of fat in them, respectively; then we may express the calorie requirement for <q>light-ness</q> as: \(c \le \frac13 C\) and the fat requirement for light-ness as: \(f \le \frac12 F\). So, given that MWL contains \(c=20\) cal and \(f=1.5\) g of fat, the <q>regular</q> product presumably has either: \(20 \le \frac13 C \implies C \ge 3(20) = 60\) cal, or \(1.5 \le \frac12 F \implies F \ge 2(1.5) = 3\) g of fat, i.e., MW has  \(\boxed{60\text{ or more calories, and/or }3\text{ or more grams of fat.}}\) (presumably <q>per serving.</q>)
 <br><br></p>
 
-<p><strong>118</strong>) If \(0\lt a \lt b\), show that \(\sqrt{ab} \lt (a+b)/2\) (i.e., the geometric mean is less than the arithmetic mean).</p>
+<p><a name="5.118" class="goback" onclick="winhisback()"><strong>5.118</strong>)</a>
+If \(0\lt a \lt b\), show that \(\sqrt{ab} \lt (a+b)/2\) (i.e., the geometric mean is less than the arithmetic mean).</p>
 
 <p>For a proof like this, to discover how to <q>go forward,</q> it sometimes helps to start at the end and <q>work backward</q>: we know we want to end up with \(\sqrt{ab} \lt (a+b)/2\), so let’s start there, <q>play around</q> and see if we can arrive at something we know is (or can reason must be) true, and then see if we can start there and end up at our desired destination. \(\sqrt{ab} \lt (a+b)/2 \implies 2\sqrt{ab} \lt (a+b)\); squaring both sides doesn’t affect the inequality (because everything involved is positive) so \(2\sqrt{ab} \lt (a+b) \implies 4ab \lt (a+b)^2 = a^2+2ab+b^2\). Now, it is frequently <q>easy</q> to reason out <q>where</q> a quantity is relative to zero, so let’s subtract (which doesn’t affect the direction of the inequality) \(4ab\) from both sides, yielding: \(0 \lt a^2-2ab+b^2 = (b-a)^2\); but this last inequality is <i>always</i> true, for any real \(a, b\) not both zero and not equal to one another, which is true of \(a, b\) in our case by supposition (note that we don’t even need \(a\lt b\), except to make it clear that they’re not equal to one another). So let’s try this as our starting point and see if we can <q>go forward</q> and get the conclusion we wanted to show.</p>
 
@@ -841,7 +1113,8 @@ the grams of fat in a serving of regular Miracle Whip®?</p>
 <p>(Note that we never actually used that \(a \lt b\), only that they’re both \(\gt 0\), and not equal to one another, but why exactly did we need this second assumption? Hint: is the inequality still true if \(a=b\)?)<br>
 <br><br></p>
 
-<p><strong>121</strong>) <strong>Another Reciprocal Property</strong> Prove that if \(0 \lt a \lt b\), then \(\displaystyle 0 \lt \frac1b \lt \frac1a\).</p>
+<p><a name="5.121" class="goback" onclick="winhisback()"><strong>5.121</strong>)</a>
+<strong>Another Reciprocal Property</strong> Prove that if \(0 \lt a \lt b\), then \(\displaystyle 0 \lt \frac1b \lt \frac1a\).</p>
 
 <p><strong>Pf</strong>: This one is easier than it looks: simply <q>divide through</q> by \(ab\) (which is okay because neither \(a\) nor \(b = 0\), and which doesn’t flip the inequalities because both \(a\) and \(b \gt 0\)):</p>
 
@@ -852,61 +1125,72 @@ the grams of fat in a serving of regular Miracle Whip®?</p>
 
 <p>Solve each equation.</p>
 
-<p><strong>10</strong>) \(|3x - 1| = 2\)</p>
+<p><a name="6.10" class="goback" onclick="winhisback()"><strong>6.10</strong>)</a>
+\(|3x - 1| = 2\)</p>
 
 <p><strong>Sln</strong>: \(|3x - 1| = 2 \implies 3x-1 = 2\) or \(3x-1 = -2\); the first equation gives: \(3x-1+1 = 2+1 \implies 3x=3 \implies \boxed{x = 1}\), the second gives \(3x = -2+1 = -1 \implies \boxed{x = -\frac13}\); check: \(|3(1)-1| = |2| = 2~\checkmark\), \(|3(-\frac13) - 1| = |-1-1| = |-2| = 2~\checkmark\).
 <br><br></p>
 
-<p><strong>20</strong>) \(\displaystyle \left|\frac{x}{2}-\frac13\right| = 1\)</p>
+<p><a name="6.20" class="goback" onclick="winhisback()"><strong>6.20</strong>)</a>
+\(\displaystyle \left|\frac{x}{2}-\frac13\right| = 1\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \left|\frac{x}{2}-\frac13\right| = 1 \implies \color{blue}6\)\(\displaystyle \left[\frac{x}{2}-\frac13 = \pm 1\right] \implies 3x - 2\color{red}+2\) \(= \pm 6\color{red}+2\) \(\implies 3x = 8 \implies \boxed{x=\frac83}\) or \(3x = -4 \implies \boxed{x=-\frac43}\); check: \(\displaystyle \left|\frac{8/3}2 - \frac13\right| = \left|\frac43-\frac13\right| = 1~\checkmark\), \(\displaystyle \left|-\frac{4/3}2 - \frac13\right| = \left|-\frac23-\frac13\right| = |-1| = 1~\checkmark\)
 <br><br></p>
 
-<p><strong>30</strong>) \(|x^2 + 3x - 2| = 2\)</p>
+<p><a name="6.30" class="goback" onclick="winhisback()"><strong>6.30</strong>)</a>
+\(|x^2 + 3x - 2| = 2\)</p>
 
 <p><strong>Sln</strong>: \(|x^2 + 3x - 2| = 2 \implies x^2 + 3x - 2 = 2\) (Eq. 1) or \(x^2 + 3x - 2 = -2\) (Eq. 2); Eq. 1 \(\implies\) \(x^2 + 3x - 4 = 0 = (x+4)(x-1) \implies x = -4\) or \(x=1\); Eq. 2 \(\implies x^2 + 3x = 0 = x(x+3) \implies x=0\) or \(x=-3\); 
 check: \(|0^2 + 3(0) - 2| = |-2| = 2~\checkmark\), \(|(1)^2 + 3(1) - 2| = |2| = 2~\checkmark\), \(|(-3)^2 + 3(-3) - 2| = |9-9-2| = |-2| = 2~\checkmark\), \(|(-4)^2 + 3(-4) - 2| = |16-12-2| = |2| = 2~\checkmark\). So the solution set is: \[\boxed{\{-4,-3,0,1\}}\] 
 <br></p>
 
-<p><strong>32</strong>) \(\displaystyle \left|\frac{2x+1}{3x+4}\right| = 1\)</p>
+<p><a name="6.32" class="goback" onclick="winhisback()"><strong>6.32</strong>)</a>
+\(\displaystyle \left|\frac{2x+1}{3x+4}\right| = 1\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \left|\frac{2x+1}{3x+4}\right| = 1 \implies \frac{2x+1}{3x+4} = 1\) (Eq. 1) or \(\displaystyle \frac{2x+1}{3x+4} = -1\) (Eq. 2); Eq. 1 \(\implies 2x+1 = 3x+4 \implies \boxed{-3 = x}\); Eq. 2 \(\implies 2x+1 = -3x-4 \implies 5x = -5 \implies \boxed{x=-1}\); check: \(\displaystyle \left|\frac{2(-1)+1}{3(-1)+4}\right| = \left|\frac{-1}{1}\right| = 1~\checkmark\), \(\displaystyle \left|\frac{2(-3)+1}{3(-3)+4}\right| = \left|\frac{-6+1}{-9+4}\right| = \left|\frac{-5}{-5}\right| = 1~\checkmark\)
 <br><br></p>
 
-<p><strong>34</strong>) \(|x^2 - 2x| = |x^2+6x|\)</p>
+<p><a name="6.34" class="goback" onclick="winhisback()"><strong>6.34</strong>)</a>
+\(|x^2 - 2x| = |x^2+6x|\)</p>
 
 <p><strong>Sln</strong>: \(|x^2 - 2x| = |x^2+6x| \implies x^2-2x = x^2+6x\) (E1) or \(x^2-2x=-x^2-6x\) (E2) (make sure you understand why we don’t need to consider \(-(x^2-2x) = x^2+6x\) and \(-(x^2-2x)=-(x^2+6x)\)); E1 \(\implies -2x = 6x \implies 0=8x \implies \boxed{x=0}\); E2 \(\implies 2x^2+4x = 0 = 2x(x+2) \implies \boxed{x=-2}\), in addition to the solution we’ve already found; check: \(|0^2 - 2(0)| = |0| = 0 = |(0)^2+6(0)|~\checkmark\), \(|(-2)^2 - 2(-2)| = |4+4| = 8 = |-8| = |4-12| = |(-2)^2+6(-2)|~\checkmark\) 
 <br><br></p>
 
 <p>Solve each inequality; express your answer using set notation or interval notation, and graph the solution set.</p>
 
-<p><strong>42</strong>) \(|2u + 5| \le 7\)</p>
+<p><a name="6.42" class="goback" onclick="winhisback()"><strong>6.42</strong>)</a>
+\(|2u + 5| \le 7\)</p>
 
 <p><strong>Sln</strong>: \(|2u + 5| \le 7 \implies -7\color{red}-5\) \(\le 2u+5\color{red}-5\) \( \le 7\color{red}-5\) \(\implies \color{blue}\frac12\)\([-12 \le 2u \le 2] \implies -6 \le u \le 1\); check: \(|2(-6)+5| = |-12+5| = |-7| = 7, |2(1)+5| = |7| = 7\), so we got the boundary points right; \(|2(0)+5| = |5| = 5 \lt 7\) so we got the interior right, and it follows that the exterior makes the inequality false (but if the reader wants to confirm this, that would be a good exercise); so in interval notation the solution set is: \[\boxed{[-6,1]}\]the graph of which is: <img src="./Graphs/SullivanC1S6P42.png" height=60>
 <br></p>
 
-<p><strong>46</strong>) \(|1 - 2x| - 4 \lt -1\)</p>
+<p><a name="6.46" class="goback" onclick="winhisback()"><strong>6.46</strong>)</a>
+\(|1 - 2x| - 4 \lt -1\)</p>
 
 <p><strong>Sln</strong>: \(|1 - 2x| - 4\color{red}+4\) \(\lt -1\color{red}+4\) \(\implies |1-2x| \lt 3 \implies -3\color{red}-1\) \(\lt 1\color{red}-1\) \(-~2x \lt 3\color{red}-1\) \(\implies \color{blue}-\frac12\)\([-4 \lt -2x \lt 2] \implies 2 \gt x \gt -1\); check: \(|1 - 2(2)| - 4 = |1-4|-4 = |-3|-4 = 3-4 = -1, |1-2(-1)|-4 = |1+2|-4 = 3-4 = -1\), so we got the boundary points right; \(|1-2(0)|-4 = |1|-4 = -3 \lt -1\) so we got the interior right; the solution set is: \[\boxed{\{x|-1\lt x\lt2\}}\]whose graph is: <img src="./Graphs/SullivanC1S6P46.png" height=60>
 <br></p>
 
-<p><strong>50</strong>) \(|-x| - |4| \le 2\)</p>
+<p><a name="6.50" class="goback" onclick="winhisback()"><strong>6.50</strong>)</a>
+\(|-x| - |4| \le 2\)</p>
 
 <p><strong>Sln</strong>: This one is easier than it looks because \(|4| = 4\) and \(|-x| = |x|\) for all \(x\) (proof?); so: \(|-x| - |4| \le 2 \implies |x| - 4 \le 2\) \(\implies |x| \le 2+4 = 6 \implies -6 \le x \le 6\): \(\boxed{[-6,6]}\)<img src="./Graphs/SullivanC1S6P50.png" height=60>Check is left to the reader.<br>
 <br></p>
 
-<p><strong>54</strong>) \(-|1 - 2x| \ge -3\)</p>
+<p><a name="6.54" class="goback" onclick="winhisback()"><strong>6.54</strong>)</a>
+\(-|1 - 2x| \ge -3\)</p>
 
 <p><strong>Sln</strong>: \(\color{blue}-1\)\([-|1 - 2x| \ge -3] \implies |1 - 2x| \le 3 \implies -3 \le 1-2x \le 3 \implies -4 \le -2x \le 2\) which is Problem <strong>46</strong> with \(\le\) instead of \(\lt\), so the solution set is \(\boxed{\{x|-1\le x\le 2\}}\) with graph <img src="./Graphs/SullivanC1S6P5
 4.png" width=300>
 <br></p>
 
-<p><strong>58</strong>) \(|6x| \lt -2\)</p>
+<p><a name="6.58" class="goback" onclick="winhisback()"><strong>6.58</strong>)</a>
+\(|6x| \lt -2\)</p>
 
 <p><strong>Sln</strong>: This can never be true (make sure you understand why); the solution set is thus \(\boxed{\emptyset}\) (the empty set).
 <br><br></p>
 
-<p><strong>62</strong>) \(\displaystyle \left|\frac{2x - 3}2 + \frac13\right|
+<p><a name="6.62" class="goback" onclick="winhisback()"><strong>6.62</strong>)</a>
+\(\displaystyle \left|\frac{2x - 3}2 + \frac13\right|
 \gt 1\)</p>
 
 <p><strong>Sln</strong>: \(\displaystyle \left|\frac{2x - 3}2 + \frac13\right|
@@ -916,18 +1200,21 @@ check: \(|0^2 + 3(0) - 2| = |-2| = 2~\checkmark\), \(|(1)^2 + 3(1) - 2| = |2| = 
 <img src="./Graphs/SullivanC1S6P62.png">
 <br></p>
 
-<p><strong>70</strong>) Express the statement <q>\(x\) differs from 2 by more than 3</q> as an
+<p><a name="6.70" class="goback" onclick="winhisback()"><strong>6.70</strong>)</a>
+Express the statement <q>\(x\) differs from 2 by more than 3</q> as an
 inequality involving an absolute value and solve for \(x\).</p>
 
 <p><strong>Sln</strong>: <q>\(x\) differs from 2 by more than 3</q> means that the <i>distance</i> between \(x\) and 2 on the number line is greater than (but not equal to) 3; in turn, the distance between two numbers on the number line is <i>defined</i> to be the absolute value of their difference; so <q>the distance between \(x\) and 2 on the number line</q> gets translated into symbols as: \(|x-2|\); and this is to be more (i.e., greater) than 3, so the complete translation is: \[\boxed{|x-2| \gt 3}\]This implies that \(x-2 \gt 3 \implies x \gt 5\) <i>or</i> \(x-2 \lt -3 \implies x \lt -1\), i.e., the solution set is \(\boxed{(-\infty,-1) \cup (5,\infty)}\); the check is left to the reader.
 <br><br></p>
 
-<p><strong>76</strong>) Find \(a,b\) such that the following implication is true: if \(|x+1| \le 3\), then \(\displaystyle a \le \frac1{x+5} \le b\).</p>
+<p><a name="6.76" class="goback" onclick="winhisback()"><strong>6.76</strong>)</a>
+Find \(a,b\) such that the following implication is true: if \(|x+1| \le 3\), then \(\displaystyle a \le \frac1{x+5} \le b\).</p>
 
 <p><strong>Sln</strong>: \(|x+1| \le 3 \implies -3\color{red}+4\) \(\le x+1\color{red}+4\) \( \le 3\color{red}+4\) \(\implies 1 \le x+5 \le 7 \implies \displaystyle \frac11 \ge \frac1{x+5} \ge \frac17\), i.e., \(\boxed{a=\frac17, b = 1}\) are the required values. Check: \(\displaystyle \frac17=\frac1{x+5} \implies x+5 = 7 \implies x = 2\) and \(|2+1| = 3\), \(\displaystyle 1 = \frac1{x+5} \implies x+5 = 1 \implies x = -4\) and \(|-4+1| = |-3| = 3\), so the boundary points are right; \(\displaystyle \frac17 \lt \frac12 \lt 1\) so we’ll use that as an interior point check: \(\displaystyle \frac12 = \frac1{x+5} \implies x+5 = 2 \implies x=-3\) and \(|-3+1| = |-2| = 2 \lt 3~\checkmark\)
 <br><br></p>
 
-<p><strong>82</strong>) If \(a \gt 0\), show that \(\left\{x| x \lt -\sqrt a \text{ or } x \gt \sqrt a\right\}\) is the solution set of \(x^2 \gt a\).</p>
+<p><a name="6.82" class="goback" onclick="winhisback()"><strong>6.82</strong>)</a>
+If \(a \gt 0\), show that \(\left\{x| x \lt -\sqrt a \text{ or } x \gt \sqrt a\right\}\) is the solution set of \(x^2 \gt a\).</p>
 
 <p><strong>Pf</strong>: Note that the main reason for assuming \(a \gt 0\) is simply to ensure that \(\sqrt a\) is a real number (and that this assumption is <q>stronger,</q> i.e., more <q>exclusionary,</q> than it needs to be: the claim is still true if \(a=0\)).</p>
 
@@ -936,17 +1223,20 @@ inequality involving an absolute value and solve for \(x\).</p>
 
 <p>Using the results of <strong>81</strong> (\(a \gt 0, x^2 \lt a \implies -\sqrt a \lt x \lt \sqrt a\)) and <strong>82</strong>, solve the following inequalities.</p>
 
-<p><strong>88</strong>) \(x^2 \le 9\)</p>
+<p><a name="6.88" class="goback" onclick="winhisback()"><strong>6.88</strong>)</a>
+\(x^2 \le 9\)</p>
 
 <p><strong>Sln</strong>: This one uses the result of <strong>81</strong>, which tells us that \(x^2 \le 9 \implies -\sqrt9 = -3 \le x \le \sqrt9 = 3\) for a solution set of \(\boxed{\left\{x| -3\le x\le 3\right\}}\) (Check left to the reader.)
 <br><br></p>
 
-<p><strong>90</strong>) \(x^2 \gt 16\)</p>
+<p><a name="6.90" class="goback" onclick="winhisback()"><strong>6.90</strong>)</a>
+\(x^2 \gt 16\)</p>
 
 <p><strong>Sln</strong>: This one uses the result of <strong>82</strong> which implies that \(x^2 \gt 16 \implies x \lt -\sqrt{16} = -4\) or \(x \gt \sqrt{16} =  4\) for a solution set of \(\boxed{(-\infty,-4) \cup (4,\infty)}\) (Ditto.)
 <br><br></p>
 
-<p><strong>92</strong>) Solve \(\left|x + |3x - 2| \right| = 2\).</p>
+<p><a name="6.92" class="goback" onclick="winhisback()"><strong>6.92</strong>)</a>
+Solve \(\left|x + |3x - 2| \right| = 2\).</p>
 
 <p><strong>Sln</strong>: Method 1: \(\left|x + |3x - 2| \right| = 2 \implies x + |3x - 2|= 2\) or \(x + |3x - 2| = -2\);</p>
 
@@ -965,19 +1255,22 @@ inequality involving an absolute value and solve for \(x\).</p>
 
 <p><strong>12</strong> and <strong>16</strong>: Translate into a mathematical (i.e., symbolic) equation, and define all symbols used.</p>
 
-<p><strong>12</strong>) <strong>Physics</strong> Pressure is force per unit area.</p>
+<p><a name="7.12" class="goback" onclick="winhisback()"><strong>7.12</strong>)</a>
+<strong>Physics</strong> Pressure is force per unit area.</p>
 
 <p><strong>Sln</strong>: The English preposition <q>per</q> means <q>divided by</q> and <q>is</q> means <q>equals,</q> so, letting \(P =\) pressure, \(F =\) force, and \(A =\) area, <q>Pressure is force per unit area</q> gets translated as: \[\boxed{P=\frac FA}\] 
 <br></p>
 
-<p><strong>16</strong>) <strong>Business</strong> The total revenue derived from selling \(x\) dishwashers is $250 per dishwasher times the number of dishwashers
+<p><a name="7.16" class="goback" onclick="winhisback()"><strong>7.16</strong>)</a>
+<strong>Business</strong> The total revenue derived from selling \(x\) dishwashers is $250 per dishwasher times the number of dishwashers
 sold.</p>
 
 <p><strong>Sln</strong>: Let \(R =\) the revenue, measured in $; we’re told to use \(x\) to represent the number of dishwashers sold; then by analyzing the units, we see that \(R~\$ = \displaystyle \frac{\$250}{1~\cancel{\text{dishwasher}}} x~\cancel{\text{dishwashers}}\) or simply: \[\boxed{R=250x}\]
 (Note: all of the following problems which have a <q>per</q> in them&mdash;expressed or implied&mdash;are variations on this one idea of figuring out how to <q>convert</q> from one <q>unit</q> to another <q>unit</q>; the <q>trick</q> is to <q>find the per</q> (if it’s not made explicit), and you’ll see that I reduce most of these problems to this kind of <q>unit analysis.</q>)<br>
 <br></p>
 
-<p><strong>20</strong>) <strong>Banking</strong> Wendy, a loan officer at a bank, has $1,000,000 to
+<p><a name="7.20" class="goback" onclick="winhisback()"><strong>7.20</strong>)</a>
+<strong>Banking</strong> Wendy, a loan officer at a bank, has $1,000,000 to
 lend and is required to obtain an average return of 18% per
 year. If she can lend at the rate of 19% or at the rate of 16%,
 how much can she lend at the 16% rate and still meet her
@@ -988,7 +1281,8 @@ requirement?</p>
 <p>(Note: if it occurs to you that 18% divides the interval between 16% and 19% into two-thirds and one-third, and can infer the result from that, you’re developing the right intuition regarding how (constant) rates work.)
 <br><br></p>
 
-<p><strong>24</strong>) <strong>Business: Mixing Candy</strong> A candy store sells boxes of
+<p><a name="7.24" class="goback" onclick="winhisback()"><strong>7.24</strong>)</a>
+<strong>Business: Mixing Candy</strong> A candy store sells boxes of
 candy containing caramels and cremes. Each box sells for
 $12.50 and holds 30 pieces of candy (all pieces are the same
 size). If the caramels cost $0.25 to produce and the cremes
@@ -998,7 +1292,8 @@ to make a profit of $3?</p>
 <p><strong>Sln</strong>: If the selling price is $12.50 and the profit is to be $3, then the total cost of a box must be $12.50 - $3 = $9.50. Now, let \(x =\) the number of caramels in the box; then \(30-x =\) the number of cremes; given the stated <i>per</i> unit costs, the cost of \(x\) caramels is \(\$0.25x\) and the cost of \(30-x\) cremes is \(\$0.45(30-x)\); together these must total $9.50, i.e., we must have: \(\$0.25x + \$0.45(30-x) = \$9.50 \implies \$13.50-\$9.50 = (\$0.45-\$0.25)x \implies \$4 = \$0.2x \implies x = \displaystyle \frac{\$4}{\$0.2} = 20\), i.e., each box should contain \(\boxed{20\text{ caramels and } 10\text{ cremes}}\). Check: \(20(\$0.25) + 10(\$0.45) = \$5+\$4.50 = \$9.50~\checkmark\)
 <br><br></p>
 
-<p><strong>28</strong>) <strong>Physics: Uniform Motion</strong> Two cars enter the Florida
+<p><a name="7.28" class="goback" onclick="winhisback()"><strong>7.28</strong>)</a>
+<strong>Physics: Uniform Motion</strong> Two cars enter the Florida
 Turnpike at Commercial Boulevard at 8:00 AM, each
 heading for Wildwood. One car’s average speed is 10 miles
 per hour more than the other’s. The faster car arrives at
@@ -1007,7 +1302,8 @@ Wildwood at 11:00 AM, \(\displaystyle \frac12\)hour before the other car. What w
 <p><strong>Sln</strong>: Let \(x =\) the speed, in miles <i>per</i> hour, of the slower car, so that \(x+10\) is the speed, also in miles <i>per</i> hour, of the faster car; the faster car traveled 11 AM \(-\) 8 AM = 3 hours, for a distance of \(3(x+10)\); the slower car traveled the same distance, but took one half-hour longer, i.e., \(3.5x=3(x+10) \implies 0.5x = 30 \implies \boxed{x = 60\text{ mph}} \implies x+10=\boxed{70\text{ mph}}\), and the distance travelled was thus \(3(70) = \boxed{210\text{ miles}}\), which does equal \(3.5(60)~\checkmark\)
 <br><br></p>
 
-<p><strong>32</strong>) <strong>Laser Printers</strong> It takes an HP LaserJet 1300 laser printer
+<p><a name="7.32" class="goback" onclick="winhisback()"><strong>7.32</strong>)</a>
+<strong>Laser Printers</strong> It takes an HP LaserJet 1300 laser printer
 10 minutes longer to complete a 600-page print job by itself
 than it takes an HP LaserJet 2420 to complete the same job
 by itself. Together the two printers can complete the job in
@@ -1017,7 +1313,8 @@ the print job alone, and what is the speed of each printer?</p>
 <p><strong>Sln</strong>: Define <q>1 job</q> to be the common 600-page print job, and let \(x=\) the number of minutes required by the faster printer to complete 1 job, so that the <q>speed</q> of the faster printer is <q>1 job <i>per</i> \(x\) minutes</q> or \(\displaystyle \frac{1\text{ job}}{x\text{ min}}\); the slower printer takes 10 min longer to complete the same job, so its speed is \(\displaystyle \frac{1\text{ job}}{(x+10)\text{ min}}\). Thus in 12 min the faster printer completes \(12\displaystyle \left(\frac1x\right)\) of the job, while the slower printer completes \(12\displaystyle \left(\frac1{x+10}\right)\) of the job, and together that equals 1 full job: \(1 = \displaystyle 12\left(\frac1x\right) + 12\left(\frac1{x+10}\right) = 12\left(\frac1x + \frac1{x+10}\right) \implies x(x+10) = 12(x+10+x) = 12(2x+10) \implies\) \(x^2 + 10x - 24x - 120 = x^2 - 14x -120 = 0 \implies x = \displaystyle \frac{14\pm\sqrt{196+4(120)}}2 = \frac{14\pm\sqrt{676}}2 = \frac{14\pm26}2\) \(\implies \boxed{x = 20\text{ min}}\) (because the other solution is negative and thus doesn’t make sense in this context) \(\implies x+10 = \boxed{30\text{ min}}\) and the speed of the faster printer (in more <q>transferable</q> units) is \(\displaystyle \frac{600\text{ pages}}{20\text{ min}} = \boxed{30\text{ pages per minute}}\), while that of the slower printer is \(\displaystyle \frac{600\text{ pages}}{30\text{ min}} = \boxed{20\text{ pages per minute}}\) (Check is left to the reader.)
 <br><br></p>
 
-<p><strong>36</strong>) <strong>Construction</strong> A pond is enclosed by a wooden deck that is
+<p><a name="7.36" class="goback" onclick="winhisback()"><strong>7.36</strong>)</a>
+<strong>Construction</strong> A pond is enclosed by a wooden deck that is
 3 feet wide; the fence surrounding the deck is 100 feet long.</p>
 
 <p>For each of these, I’m going to forego providing a graphic, but you should draw a picture.</p>
@@ -1044,7 +1341,8 @@ the print job alone, and what is the speed of each printer?</p>
 <p><strong>Sln</strong>: Having calculated the areas in advance, we readily see that \(\boxed{\text{the circular pond}}\) has the greatest area. (It is a <q>well-known</q> result that, for a given perimeter, the circle is the shape that encloses the greatest area, i.e., of all planar shapes, a circle has the largest area-to-perimeter ratio.)
 <br><br></p>
 
-<p><strong>40</strong>) <strong>Mixing Water and Antifreeze</strong> The cooling system of a
+<p><a name="7.40" class="goback" onclick="winhisback()"><strong>7.40</strong>)</a>
+<strong>Mixing Water and Antifreeze</strong> The cooling system of a
 certain foreign-made car has a capacity of 15 liters. If the
 system is filled with a mixture that is 40% antifreeze, how
 much of this mixture should be drained and replaced by
@@ -1054,7 +1352,8 @@ that is 60% antifreeze?</p>
 <p><strong>Sln</strong>: Let \(x =\) the required amount in liters; then \(15-x\) is the amount of 40% mix that remains in the tank after draining, meaning that the amount of antifreeze which remains is \(0.4(15-x) = 6-0.4x\); this plus 100% of \(x\)&mdash;\(x + 6 - 0.4x = 0.6x+6\)&mdash;should amount to 60% of the 15 liters, \(0.6(15) = 9\) liters, upon refilling the tank with pure AF; in other words, we need to solve \(0.6x+6=9 \implies x = 3/(0.6) = \boxed{5\text{ liters}}\). Check: \(0.4(15-5) + 5 = 9 = 0.6(15)~\checkmark\)
 <br><br></p>
 
-<p><strong>44</strong>) <strong>Chemistry: Sugar Molecules</strong> A sugar molecule has twice
+<p><a name="7.44" class="goback" onclick="winhisback()"><strong>7.44</strong>)</a>
+<strong>Chemistry: Sugar Molecules</strong> A sugar molecule has twice
 as many atoms of hydrogen as it does (of) oxygen and one more
 atom of carbon than (of) oxygen. If a sugar molecule has a
 total of 45 atoms, how many are oxygen, and how many are
@@ -1063,7 +1362,8 @@ hydrogen?</p>
 <p><strong>Sln</strong>: Let \(O = \) the number of oxygen atoms in a molecule of (this kind of) sugar (see note at the beginning of the Solution of <strong>36b</strong>, which is applicable here as well); then the number of hydrogen atoms is \(2O\) and the number of carbon atoms is \(O+1\); all together, these must total 45 atoms, i.e., we must have: \(O+(2O)+(O+1) = 4O+1 = 45 \implies \boxed{O = 11} \implies\) the number of hydrogen atoms is \(2(11) = \boxed{22}\) (and 12 are carbon; check: 11+22+12 = 45 atoms \(\checkmark\))
 <br><br></p>
 
-<p><strong>50</strong>) <strong>Using Two Pumps</strong> A 5-horsepower (hp) pump can empty a
+<p><a name="7.50" class="goback" onclick="winhisback()"><strong>7.50</strong>)</a>
+<strong>Using Two Pumps</strong> A 5-horsepower (hp) pump can empty a
 pool in 5 hours; a smaller, 2-hp pump empties the same pool
 in 8 hours. The pumps are used together to begin emptying
 this pool; after two hours, the 2-hp pump breaks down: how
@@ -1072,7 +1372,8 @@ this pool; after two hours, the 2-hp pump breaks down: how
 <p><strong>Sln</strong>: Let \(t =\) the (additional) time it will take the larger pump to empty what remains in the pool after two hours of the two pumps working together; then \(\displaystyle \frac{1\text{ pool}}{5\text{ hours}}(t\text{ hours})\) is the volume of water (measured in units of <q>pools</q>) it pumps in this time; but that amount is also given by: 1 pool \(-\) the volume of water (again in units of <q>pools</q>) pumped by both pumps in two hours, which volume equals \(\displaystyle \frac{1\text{ pool}}{5\text{ hours}}(2\text{ hours}) + \frac{1\text{ pool}}{8\text{ hours}}(2\text{ hours}) = \frac25 + \frac14 = 0.4+0.25 = 0.65\) pools. In other words, we must have: \(\displaystyle \frac15 t=(1-0.65) = 0.35 \implies \boxed{t = 1.75\text{ hours}}\). Check: \(\frac15(2) + \frac18(2) + \frac15(1.75) = 0.4+0.25+0.35 = 1\) whole pool.\(~\checkmark\)
 <br><br></p>
 
-<p><strong>54</strong>) <strong>Constructing a Coffee Can</strong> A 39-ounce can of Hills Bros.®
+<p><a name="7.54" class="goback" onclick="winhisback()"><strong>7.54</strong>)</a>
+<strong>Constructing a Coffee Can</strong> A 39-ounce can of Hills Bros.®
 coffee requires 188.5 square inches of aluminum. If its
 height is 7 inches, what is its radius? [Hint: The surface area,
 \(S\), of a right cylinder is \(2\pi r^2 + 2\pi rh\), where \(r\) is the

@@ -5,6 +5,8 @@ form.pad {padding: 0px 0px 13px;}
 .num {text-align: right;}
 .sum {font-weight: bold;}
 .goback {color: purple;} 
+.top{border-bottom:solid black 1px; display:inline-block; float:left}
+.bottom{ display:inline-block; clear:left; float:left}
 th.cen {text-align: center;}
 td.num {text-align: right;}
 td.text {text-align: left;}
