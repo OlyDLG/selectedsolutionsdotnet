@@ -78,6 +78,7 @@ Purple font indicates clicking on the text will return you to your prior place.
     <td style="border: none;"><a href="#2.138">2.138</a></td>
     <td style="border: none;"><a href="#2.142">2.142</a></td>
     <td style="border: none;"><a href="#2.148">2.148</a></td>
+    <td style="border: none;"><a href="#2.152">2.152</a></td>
     <td style="border: none;"><a href="#2.160">2.160</a></td>
     <td style="border: none;"><a href="#2.162">2.162</a></td>
     <td style="border: none;"><a href="#2.163">2.163</a></td>
@@ -223,31 +224,36 @@ Purple font indicates clicking on the text will return you to your prior place.
 
 ### _Section 1: Real Numbers_
 
-__4__) “The product of 5 and $x+3$ equals 6” may be written as ______.
+<a name="1.4" class="goback" onclick="winhisback()">__1.4__)</a>
+“The product of 5 and $x+3$ equals 6” may be written as ______.
 
 __Sln__: "Product" means "multiplication" so "The product of 5 and $x+3$ equals 6" may be written as $\boxed{5(x+3) = 6}$
 <br>
 
-__8__) <i><b>True or False</b></i> No real number is both rational andirrational.
+<a name="1.8" class="goback" onclick="winhisback()">__1.8__)</a>
+<i><b>True or False</b></i> No real number is both rational andirrational.
 
 __Sln__: An irrational number is <i>defined</i> as a number that is not rational, so $\boxed{\text{True}}$, no number is both rational and irrational.
 <br>
 
 Use $U = \{0,1,2,3,4,5,6,7,8,9\} = $ universal set, $A = \{1,3,4,5,9\}, B = \{2,4,6,7,8\}$, and $C = \{1,3,4,6\}$ to findeach set.
 
-__14__) $(A \cap B) \cup C$
+<a name="1.14" class="goback" onclick="winhisback()">__1.14__)</a>
+$(A \cap B) \cup C$
 
 __Sln__: $(A \cap B) = $ everything that’s in <i>both</i> $A$ <i>and</i> $B$ so $(A \cap B) = \{4\}$, so $(A \cap B) \cup C = \{4\} \cup C = $ everything that’s in $\{4\}$ <i>or</i> in $C$ (or both) so $\{4\} \cup C = \{1,3,4,6\} = C$, so $(A \cap B) \cup C = \boxed{C}$. (In this particular case: it is certainly <i>not</i> generally true that $(A \cap B) \cup C = C$, which I emphasize because there are similar-looking statements about $\cap$ and $\cup$&mdash;called identities&mdash;which are always true.)
 <br>
 
-__20__) $\overline{B} \cap \overline{C}$
+<a name="1.20" class="goback" onclick="winhisback()">__1.20__)</a>
+$\overline{B} \cap \overline{C}$
 
 __Sln__: $\overline{B} = $ everything in $U$ but not in $B$ so $\overline{B} = \{0,1,3,5,9\}$; similarly, $\overline{C} = \{0,2,5,7,8,9\}$; and  $\overline{B} \cap \overline{C} = $ everything that’s in <i>both</i> $\overline{B}$ <i>and</i> $\overline{C}$ so finally $\overline{B} \cap \overline{C} = \boxed{\{0,5,9\}}$.
 <br>
 
 In __22__ & __26__, list the numbers in each set that are: __a__) Natural numbers, __b__) Integers, __c__) Rational numbers, __d__) Irrational numbers, and __e__) Real numbers.
 
-__22__) $B = \displaystyle \left\{-\frac{5}{3}, 2.\overline{06}, 1.25, 0, 1, \sqrt5\right\}$
+<a name="1.22" class="goback" onclick="winhisback()">__1.22__)</a>
+$B = \displaystyle \left\{-\frac{5}{3}, 2.\overline{06}, 1.25, 0, 1, \sqrt5\right\}$
 
 __Sln__: It’s actually easiest to work backwards: 
 
@@ -262,7 +268,8 @@ __b__) $0~\&~1$ are the only integers in the set.
 __a__) Using the definition in the text&mdash;which is the definition I learned&mdash;the only natural number in the set is $1$ (however, unfortunately, unanimity in the mathematical community about the status of "0" appears to be lacking: see, e.g., https://www.quora.com/Does-the-set-of-Natural-Numbers-include-zero?q=Is%20zero%20a%20natural%20number; note: ordinarily I wouldn’t cite a Quora thread as authoritative, but in light of it, I did my own research, and I confirmed independently that whether 0 is a natural number or not depends on which mathematician you ask).
 <br>
 
-__26__) $F = \displaystyle \left\{-\sqrt2, \pi + \sqrt2, \frac12+10.3\right\}$
+<a name="1.26" class="goback" onclick="winhisback()">__1.26__)</a>
+$F = \displaystyle \left\{-\sqrt2, \pi + \sqrt2, \frac12+10.3\right\}$
 
 __Sln__: __e__) Again, they’re all real numbers (until we learn about complex numbers, all the numbers we deal with are real numbers).
 
@@ -277,14 +284,16 @@ __b__ & __a__) the set contains no integers and no natural numbers.
 
 In Problems __30__ & __36__, approximate each number: __a__) rounded and __b__) truncated to three decimal places. (Note: the text teaches a different method for [rounding](https://en.wikipedia.org/wiki/Rounding) than the one I was taught, which is called "[round-half-to-even](https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even)." Although I regard round-half-to-even as preferable, especially in science and finance where it is the standard, in order to avoid confusion, I will follow the method given in the text.)
 
-__30__) $99.05249$
+<a name="1.30" class="goback" onclick="winhisback()">__1.30__)</a>
+$99.05249$
 
 __Sln__: __a__) The third digit after the decimal point is 2 and the next digit is 4, which is less than five, so we round simply by dropping all the digits after the 2, so the answer is $\boxed{99.052}$. (Note that what we definitely <i>do not</i> do is go all the way to the 9, say "oh, 9 is greater than 5, so we round the 4 up to 5, and then there’s a 5 following the 2, so we round that up to 3." The principle here is that we look at the 249 in isolation, and ask ourselves "If that was 249 and I had to round to the nearest hundred, what would that be? Is 249 closer to 200 or 300?" Clearly (hopefully), you see that it is closer to 200 than 300, although, admittedly, not by much; to the smart-aleck who says "well, it’s (much) closer to 250 than either 200 or 300, so why don’t we round it to that?" the answer is simply because that is not what we were asked to do: had we been asked to round to <i>four</i> decimal places, then yes, that is what we would do, but no, we were asked to round to three, so the problem becomes equivalent to asking "which hundred is 249 closest to?" not "which half-hundred is it closest to?" But fair question.)
 
 __b__) In this case, truncation gives the same result: $\boxed{99.052}$.
 <br>
 
-__36__) $\displaystyle \frac59$
+<a name="1.36" class="goback" onclick="winhisback()">__1.36__)</a>
+$\displaystyle \frac59$
 
 __Sln__: __a__) As a decimal, $\displaystyle \frac59 = 0.\overline{5}$, so the fourth decimal place is a 5, so the third decimal place, also a five, gets rounded up to 6, so the answer is $\boxed{0.556}$.
 
@@ -293,23 +302,27 @@ __b__) However, truncating, we just drop all the digits after the third, so the 
 
 In Problems __44__ & __48__, write each statement using symbols.
 
-__44__) The product of 2 and $x$ is the product of 4 and 6.
+<a name="1.44" class="goback" onclick="winhisback()">__1.44__)</a>
+The product of 2 and $x$ is the product of 4 and 6.
 
 __Sln__: "Product" means "times" or multiply and any form of the verb "to be" means equals, so this gets translated as: $$\boxed{2x = (4)(6)}$$
 
-__48__) The quotient 2 divided by x is 6.
+<a name="1.48" class="goback" onclick="winhisback()">__1.48__)</a>
+The quotient 2 divided by x is 6.
 
 __Sln__: Here the inclusion of the word quotient is actually redundant: the answer is simply: $$\boxed{\frac2x = 6}$$
 <br>
 
 In Problems 58, 76, & 84, evaluate the expression.
 
-__58__) $2 \cdot [8 - 3(4 + 2)] - 3$
+<a name="1.58" class="goback" onclick="winhisback()">__1.58__)</a>
+$2 \cdot [8 - 3(4 + 2)] - 3$
 
 __Sln__: $2 \cdot [8 - 3(4 + 2)] - 3 = 2 \cdot [8 - 3(6)] - 3 = 2 \cdot [8 - 18] - 3 = 2\cdot (-10) - 3 = -20 - 3 = \boxed{-23}$ 
 <br>
 
-__76__) $\displaystyle \frac2{15} + \frac89$
+<a name="1.76" class="goback" onclick="winhisback()">__1.76__)</a>
+$\displaystyle \frac2{15} + \frac89$
 
 __Sln__: We actually always have a choice when adding (which includes subtracting) fractions: we can do it like this:
 
@@ -318,7 +331,8 @@ $\displaystyle \frac2{15} + \frac89 = \left(\frac99\right)\left(\frac2{15}\right
 or we can find the "least common denominator" (LCD) = least common multiple (LCM) of the denominators: $15 = (3)(5), 9 = 3^2$, so the LCM is $(3^2)(5) = (9)(5) = 45$; and then multiply each fraction by "1" in the form that makes each have that LCD: $\displaystyle \left(\frac33\right)\left(\frac2{15}\right) + \left(\frac55\right)\left(\frac89\right) = \frac6{45} + \frac{40}{45} = \boxed{\frac{46}{45}}$. The first way saves time and effort "at the front end" of the evaluation, but <i>may</i> result in us having to reduce at the end (but not always: can you think of when it won’t? Hint: what does the second way have us doing if the LCM is simply the product of the denominators?); whereas the second way involves more effort at the front end, but we never have to reduce the answer (assuming the summands&mdash;the things we’re adding&mdash;are in "lowest terms" to begin with. Proof?) So you have to ask yourself: do I want to start easy, but then possibly have to find common factors in larger-than-necessary numbers in order to reduce; or do I want to do the work of finding the LCD up front, and end up with an answer I won’t have to reduce? (Me, knowing that both ways work, I always "play it by ear": if I just "see" the LCD without too much work, then I’ll do it the second way; but if finding the LCD is going to be troublesome, I’ll do it the first way and save the factoring&mdash;required by both methods&mdash;for figuring out what gets cancelled at the end.)
 <br>
 
-__84__) $\displaystyle \frac23 + \frac45 \cdot \frac16$
+<a name="1.84" class="goback" onclick="winhisback()">__1.84__)</a>
+$\displaystyle \frac23 + \frac45 \cdot \frac16$
 
 __Sln__: Order of operations dictates that we do the multiplication first, then the addition; before we do the multiplication, however, we observe that we can "cancel" the common factor of 2 from 4 and 6: $$\frac45 \cdot \frac16 = \frac{2\cdot \cancel2}5 \cdot \frac1{\cancel2\cdot 3} = \frac{(2)(1)}{(5)(3)} = \frac2{15}$$simplifying the addition to:$$\frac23 + \frac2{15}$$
 Hopefully the reader has no trouble "just seeing" that the least common denominator is 15, so the second fraction doesn’t need to have its appearance modified at all, but we do have to multiply the first fraction by "1" in the form $\frac55$:$$\frac23 + \frac2{15} = \frac55\cdot\frac23 + \frac2{15} = \frac{10}{15} + \frac2{15}=\frac{10+2}{15} = \frac{12}{15} = \frac{\cancel3\cdot4}{\cancel3\cdot5} = \boxed{\frac45}$$
@@ -327,51 +341,60 @@ Hopefully the reader has no trouble "just seeing" that the least common denomina
 
 In Problems __92__ and __98__, use the Distributive Property to remove the parentheses.
 
-__92__) $\displaystyle3\left(\frac23x + \frac16\right)$
+<a name="1.92" class="goback" onclick="winhisback()">__1.92__)</a>
+$\displaystyle3\left(\frac23x + \frac16\right)$
 
 __Sln__: $\displaystyle3\left(\frac23x + \frac16\right) = a(b+c)$ with the identifications $a=3, b=\frac23x, c = \frac16$ so we have:$$3\left(\frac23x + \frac16\right) = a(b+c) = ab + ac = \cancel3\left(\frac2{\cancel3}x\right) + \cancel3\left(\frac1{\cancel6 2}\right) = $$
 $$\boxed{2x + \frac12}$$ 
 
-__98__) $(x - 4)(x - 2)$
+<a name="1.98" class="goback" onclick="winhisback()">__1.98__)</a>
+$(x - 4)(x - 2)$
 
 __Sln__: $(x - 4)(x - 2) = a(b+c)$ with the identifications $a=(x-4), b=x, c=-2$ so $(x - 4)(x - 2) = a(b+c) = ab+ac = (x-4)(x)+(x-4)(-2)$; but we still have parentheses, so we need to use the Distributive Property again; I’m not going belabor the identifications stage&mdash;this is supposed to be review after all&mdash;and you need to be comfortable using the Distributive Property in combination with the Commutative Property of Multiplication, so that the following manipulations should not be bothersome (if they are, at a minimum, you need more review before proceeding):$$(x-4)(x)+(x-4)(-2) = (x)(x)+(-4)(x) + (-2)(x) + (-2)(-4) = x^2 - 4x -2x + 8 = $$ $$\boxed{x^2 - 6x + 8}$$(where we have used the Distributive Property "in reverse" to "combine the like terms" $-2x$ and $-4x$ into $-6x$).
 <br>
 
-__102__) Explain why $\displaystyle \frac{4+3}{2+5} \ne \frac42 + \frac35$
+<a name="1.102" class="goback" onclick="winhisback()">__1.102__)</a>
+Explain why $\displaystyle \frac{4+3}{2+5} \ne \frac42 + \frac35$
 
 __Sln__: This one is perhaps more subtle than it appears, because we’re supposed to do division before addition, so exactly <i>why</i> isn’t it true? Because of a convention, i.e., an agreement, made long ago, probably not formally, that in any expression like: $$\frac{a+b+c~+...}{d+e+f~+...}$$
 there are "understood" parentheses: $$\frac{a+b+c~+...}{d+e+f~+...} = \frac{(a+b+c~+...)}{(d+e+f~+...)}$$
 <i>by convention</i>: it’s really no "deeper" than that. So $\displaystyle \frac{4+3}{2+5}$ really means $\displaystyle \frac{(4+3)}{(2+5)} = \frac77 = 1$, whereas $\displaystyle \frac42 + \frac35 = \frac{10}5 + \frac35 = \frac{13}5.$
 <br>
 
-__110__) Explain why the sum of a rational number and an irrationalnumber must be irrational.
+<a name="1.110" class="goback" onclick="winhisback()">__1.110__)</a>
+Explain why the sum of a rational number and an irrationalnumber must be irrational.
 
 __Sln__: Suppose $a$ is rational, $b$ is irrational, and $a+b$ is rational. $a$ rational means there exist integers $m~\&~n, n \ne 0$ such that $a = m/n$, and $a+b$ rational means there exist integers $M~\&~N, N \ne 0$ such that $a+b = M/N$. But $a = m/n$ so $a+b = M/N = m/n + b \implies b = \displaystyle \frac MN - \frac mn = \frac{Mn - mN}{nN}$; but $Mn-mN$ and $nN$ are integers (why, exactly?) so that $b$ is the ratio of two integers, contrary to our supposition that $b$ is irrational. Thus, assuming that $a$ rational, $b$ irrational, and $a+b$ rational leads to a contradiction, so all three statements can’t be simultaneously true: if the first two are true, the third can’t be, i.e., $a+b$ can’t be rational, which, by definition, means that it is irrational.$~~~\blacksquare$
 <br><br>
 
 ### _Section 2: Algebra Essentials_
 
-__18__) Is $\sqrt2 \lt, \gt, $ or $= 1.41$?
+<a name="2.18" class="goback" onclick="winhisback()">__2.18__)</a>
+Is $\sqrt2 \lt, \gt, $ or $= 1.41$?
 
 __Sln__: $\sqrt2 \gt 1.41$ because $\left(\sqrt2\right)^2 = 2 \gt 1.9881 = (1.41)^2$.
 <br>
 
-__24__) Write "$z$ is negative" as an inequality.
+<a name="2.24" class="goback" onclick="winhisback()">__2.24__)</a>
+Write "$z$ is negative" as an inequality.
 
 __Sln__: If $z$ is negative, then it is less than zero, and not equal to zero (since zero is neither positive nor negative), so this may be translated as either $\boxed{z \lt 0 \text{ or }0 \gt z}$ (they are equivalent, and thus both are correct).
 <br>
 
-__44__) Evaluate $\displaystyle \frac{x+y}{x-y}$ for $x=-2, y=3$.
+<a name="2.44" class="goback" onclick="winhisback()">__2.44__)</a>
+Evaluate $\displaystyle \frac{x+y}{x-y}$ for $x=-2, y=3$.
 
 __Sln__: If $x=-2, y=3$ then $\displaystyle \frac{x+y}{x-y} = \frac{(-2+3)}{(-2-3)} = \frac1{-5} = \boxed{-\frac15}$
 <br>
 
-__50__) Evaluate $|x|-|y|$ for $x=3, y=-2$.
+<a name="2.50" class="goback" onclick="winhisback()">__2.50__)</a>
+Evaluate $|x|-|y|$ for $x=3, y=-2$.
 
 __Sln__: If $x=3, y=-2$ then $|x|-|y| = |3|-|-2| = 3 - 2 = \boxed{1}$
 <br>
 
-__64__) Which of the following: __a__) $x = 3$; __b__) $x = 1$; __c__) $x = 0$; __d__) $x = -1$; are (not) in the domain of $\displaystyle \frac{-9x^2 - x + 1}{x^3 + x}$?
+<a name="2.64" class="goback" onclick="winhisback()">__2.64__)</a>
+Which of the following: __a__) $x = 3$; __b__) $x = 1$; __c__) $x = 0$; __d__) $x = -1$; are (not) in the domain of $\displaystyle \frac{-9x^2 - x + 1}{x^3 + x}$?
 
 __Sln__: All the operations in the expression&mdash;(positive integer) exponentiation, multiplication/division, and addition/subtraction&mdash;are well-defined for all real numbers <i>except</i> division when the denominator equals zero, so we just need to determine which of the values in question make $x^3+x = 0$ (the value of the numerator is irrelevant):
 
@@ -384,19 +407,22 @@ __c__) $x=0$: $x^3+x = (0)^3 + 0 = 0$, so $x=0$ is $\boxed{\text{not in}}$ the d
 __d__) $x=-1$: $x^3+x = (-1)^3 + (-1) = -1 + (-1) = -2 \ne 0$, so $x=-1$ is $\boxed{\text{in}}$ the domain.
 <br>
 
-__84__) Simplify $\sqrt{(-3)^2}$
+<a name="2.84" class="goback" onclick="winhisback()">__2.84__)</a>
+Simplify $\sqrt{(-3)^2}$
 
 __Sln__: I’m doing this one because it’s important to understand that we can’t simply "cancel" the square-root and the squaring operations (which would give us an answer of $-3$), because, since the square-root symbol extends over the squaring operation like so: $\sqrt{(\cdot)^2}$, there are "understood" brackets around the squaring operation shouting "do me first," i.e., the given expression is (to be understood as) equivalent to $\sqrt{\left[(-3)^2\right]} = \sqrt{[(-3)(-3)]} = \sqrt9$; additionally, the square-root without a sign out in front is understood to be the positive square-root, so $\sqrt9 = \boxed{3}$ (unambiguously).
 <br>
 
 In Problems __90__ & __94__, simplify the expression, expressing the answer so that any remaining exponents are positive (whenever an exponent is 0 or negative, assume that the base is not 0).
 
-__90__) $\displaystyle \frac{x^{\large-2}y}{xy^{\large2}}$
+<a name="2.90" class="goback" onclick="winhisback()">__2.90__)</a>
+$\displaystyle \frac{x^{\large-2}y}{xy^{\large2}}$
 
 __Sln__: $\displaystyle \frac{x^{\large-2}y}{xy^{\large2}} = \frac1{x^{\large1-(-2)}y^{\large(2-1)}} = \boxed{\frac1{x^{\large3}y}}$
 <br>
 
-__94__) $\displaystyle \left(\frac{5x^{\large-2}}{6y^{\large-2}}\right)^{\large-3}$
+<a name="2.94" class="goback" onclick="winhisback()">__2.94__)</a>
+$\displaystyle \left(\frac{5x^{\large-2}}{6y^{\large-2}}\right)^{\large-3}$
 
 __Sln__: Method 1: $\displaystyle \left(\frac{5x^{\large-2}}{6y^{\large-2}}\right)^{\large-3} = \frac{5^{\large-3}x^{\large(-2)(-3)}}{6^{\large-3}y^{\large(-2)(-3)}} = \boxed{\frac{6^{\large3}x^{\large6}}{5^{\large3}y^{\large6}} = \frac{216x^{\large6}}{125y^{\large6}}}$
 
@@ -407,44 +433,52 @@ Method 2: $\displaystyle \left(\frac{5x^{\large-2}}{6y^{\large-2}}\right)^{\larg
 
 In Problems __96__ & __106__, find the value of each expression if $x = 2$ and $y = -1$.
 
-__96__) $-3x^{\large-1}y$
+<a name="2.96" class="goback" onclick="winhisback()">__2.96__)</a>
+$-3x^{\large-1}y$
 
 __Sln__: $-3x^{\large-1}y$ if $x = 2$ and $y = -1$ is $(-3)(2^{\large-1})(-1) = (-3)(\displaystyle\frac12)(-1) = (-\frac32)(-1) = \boxed{\frac32}$
 <br>
 
-__106__) $y^{\large x}$
+<a name="2.106" class="goback" onclick="winhisback()">__2.106__)</a>
+$y^{\large x}$
 
 __Sln__: $y^{\large x}$ if $x = 2$ and $y = -1$ is $(-1)^{\large2} = (-1)(-1) = \boxed{1}$
 <br>
 
-__118__) Calculate $-(8.11)^{\large-4}$ and give the answer rounded to three decimal places.
+<a name="2.118" class="goback" onclick="winhisback()">__2.118__)</a>
+Calculate $-(8.11)^{\large-4}$ and give the answer rounded to three decimal places.
 
 __Sln__: $-(8.11)^{\large-4} = (-1)\left((8.11)^{\large-4}\right) $ (<i>not</i> $(-8.11)^{\large-4}$, which is positive) $\doteq (-1)(2.31162074\times10^{\large-4}) \doteq -0.0002$, which, rounded to three decimal places, is $\boxed{0}$. (Note that the final answer would be the same if you interpreted this the way I said not to, but that’s only because of the instruction to give the answer rounded to three decimal places: if we were instructed to give the answer rounded to more decimal places, or in scientific notation with <i>any</i> number of significant figures, then the correct answer would be negative, but if you evaluate $(-8.11)^{\large-4}$, you will find that it has the same absolute value, but is positive, i.e., the wrong sign.)
 <br>
 
 In Problems __136__, __138__, and __142__, express each statement as an equation involving the indicated variables.
 
-__136__) "The perimeter $P$ of a rectangle is twice the sum of its length $l$ and its width $w$."
+<a name="2.136" class="goback" onclick="winhisback()">__2.136__)</a>
+"The perimeter $P$ of a rectangle is twice the sum of its length $l$ and its width $w$."
 
 __Sln__: "Twice" means "double," i.e., "two times," and since it’s "twice the sum of," that tells us we’re supposed to sum, i.e., add <i>before</i> we multiply, so we’re going to need to include parentheses; the proper translation is thus: $$\boxed{P = 2(l+w)}$$
 <br>
 
-__138__) "The area $A$ of a triangle is one-half the product of its base $b$ and its height $h$."
+<a name="2.138" class="goback" onclick="winhisback()">__2.138__)</a>
+"The area $A$ of a triangle is one-half the product of its base $b$ and its height $h$."
 
 __Sln__: A potential difficulty here is omission of the preposition "of" between "one-half" and "the product": "of" means "times," so one has to understand that in English "one-half the product" means "one-half <i>of</i> the product"; product (also) means "times," so putting this all together the proper translation is: $$\boxed{A = \frac12bh}$$
 <br>
 
-__142__) "The surface area $S$ of a sphere is 4 times $\pi$ times the square of the radius $r$."
+<a name="2.142" class="goback" onclick="winhisback()">__2.142__)</a>
+"The surface area $S$ of a sphere is 4 times $\pi$ times the square of the radius $r$."
 
 __Sln__: "The square of" is (sort of) an exception to the "of = times" rule: "the square of $x$" is, of course, $x^2$; with that understanding, the rest of this is translated just as written: $$\boxed{S = 4\pi r^2}$$
 <br>
 
-__148__) Write "$x$ is more than 5 units from 2" as an inequality involving absolute value.
+<a name="2.148" class="goback" onclick="winhisback()">__2.148__)</a>
+Write "$x$ is more than 5 units from 2" as an inequality involving absolute value.
 
 __Sln__: This is saying that the distance between $x$ and 2, which is given by $|x-2|$, is greater than 5, so the required inequality is $\boxed{|x-2| \gt 5}$.
 <br>
 
-__152__) Normal human body temperature is98.6&deg; F.[$^1$](#Note1) A temperature that differs from normal by at least 1.5&deg; F is considered unhealthy. Thus one is considered  unhealthy if one’s temperature, $x$, makes the inequality: $$|x-98.6|\ge1.5$$a true statement.
+<a name="2.152" class="goback" onclick="winhisback()">__2.152__)</a>
+Normal human body temperature is98.6&deg; F.[$^1$](#Note1) A temperature that differs from normal by at least 1.5&deg; F is considered unhealthy. Thus one is considered  unhealthy if one’s temperature, $x$, makes the inequality: $$|x-98.6|\ge1.5$$a true statement.
 __a__) Show that a temperature of 97&deg; F is considered unhealthy;
 __Sln__: $|97-98.6| = |-1.6| = 1.6 \gt 1.5$, therefore "unhealthy"
 <br>
@@ -454,17 +488,20 @@ __b__) Show that a temperature of 100&deg; F is not considered unhealthy.
 __Sln__: $|100-98.6| = |1.4| = 1.4 \lt 1.5$, therefore "not unhealthy"
 <br>
 
-__160__) How long does it take a beam of light to reach Earth from the Sun when the Sun is 93,000,000 miles from Earth; express your answer in seconds, using scientific notation.
+<a name="2.160" class="goback" onclick="winhisback()">__2.160__)</a>
+How long does it take a beam of light to reach Earth from the Sun when the Sun is 93,000,000 miles from Earth; express your answer in seconds, using scientific notation.
 
 __Sln__: $9.3\times 10^7~\cancel{\text{miles}}~\times \displaystyle \frac{1\text{ sec }}{1.86\times 10^5~\cancel{\text{miles}}} = \frac{9.3}{1.86} \times 10^2 = \boxed{5.0 \times 10^2\text{ sec}}$ ($\doteq$ 8.3 min., which is a "well-known" fact.)
 <br>
 
-__162__) Does $\displaystyle \frac23$ equal 0.666? If not, which is larger? By how much?
+<a name="2.162" class="goback" onclick="winhisback()">__2.162__)</a>
+Does $\displaystyle \frac23$ equal 0.666? If not, which is larger? By how much?
 
 __Sln__: No: $0.666 = \displaystyle\frac{666}{1000} = \frac{333}{500}$ (in "lowest terms"); $\displaystyle \frac23$ is larger by $\displaystyle \left(\frac23 - \frac{333}{500}\right) = \frac{2(500)-3(333)}{(3)(500)} = \frac1{1500} = 0.000\overline{6}$, i.e., $0.666\overline{6} - 0.666$.
 <br>
 
-__163__) Is there a positive real number "closest" to zero?
+<a name="2.163" class="goback" onclick="winhisback()">__2.163__)</a>
+Is there a positive real number "closest" to zero?
 
 __Sln__: No: for any positive real number we may choose, we can always divide it by 2 and thereby obtain a positive real number still "closer" to 0.$~~~\blacksquare$
 
