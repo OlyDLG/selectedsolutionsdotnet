@@ -510,35 +510,40 @@ __Sln__: No: for any positive real number we may choose, we can always divide it
 
 ### _Section 3: Geometry Essentials_
 
- 
-__34__) Find the volume, $V$, and surface area, $S$, of a sphere of radius 3 feet.
+<a name="3.34" class="goback" onclick="winhisback()">__3.34__)</a>
+Find the volume, $V$, and surface area, $S$, of a sphere of radius 3 feet.
 
 __Sln__: For a sphere of radius $r, S = 4\pi r^2$ and $V = \frac43\pi r^3$ so for a sphere of radius 3 ft., $S = 4\pi(3\text{ ft.})^2 = \boxed{36\pi\text{ sq. ft.} \doteq  113.1\text{ ft}^2}$ (sq. ft. and $\text{ft}^2$ are both standard abbreviations for the area unit "square-feet," but in the metric system, one typically uses square-length units expressed as (length-unit)$^2$, so that is what you will see more often, and that is the notation I will tend to use, even for so-called "English" units); and $V = \frac43\pi (3\text{ ft.})^3 = \frac43 \pi (27\text{ ft}^3) = \boxed{36\pi\text{ ft}^3 \doteq 113.1\text{ ft}^3.}$ (Note: though the surface area and volume of this sphere are <i>numerically</i> equal, they are in no sense whatsoever "the same": $S$ measures, for example, how much carpet one would need to cover the sphere, whereas $V$ measures, for example, how much water would be required to fill the sphere&mdash;they are "physically" two very different quantities, and the fact that they are numerically equal in this particular case is an artificial coincidence manufactured by the author of the text problems; in general, $S\ne V$, not even numerically.)
 <br>
 
-__36__) Find the volume, $V$, and surface area, $S$, of a right circular cylinder with radius 8 inches and height 9 inches.
+<a name="3.36" class="goback" onclick="winhisback()">__3.36__)</a>
+Find the volume, $V$, and surface area, $S$, of a right circular cylinder with radius 8 inches and height 9 inches.
 
 __Sln__: For a right circular cylinder, e.g., a "can," $S$ (including both the "side" of the can and both its "top" and "bottom") $= 2\pi r^2 + 2\pi rh = 2\pi\left[(8\text{ in})^2 + (8\text{ in})(9\text{ in})\right] = 2\pi(8(17))\text{ in}^2 = \boxed{272\pi\text{ in}^2 \doteq 854.5\text{ in}^2}$; and $V=\pi r^2h = \pi(8\text{ in})^2(9\text{ in}) = \boxed{576\pi\text{ in}^3 \doteq 1809.6\text{ in}^3}$
 <br>
 
-__40__) Find the area of the shaded region: <img src="./Graphs/SullivanRS3P40.png" width=150>
+<a name="3.40" class="goback" onclick="winhisback()">__3.40__)</a>
+Find the area of the shaded region: <img src="./Graphs/SullivanRS3P40.png" width=150>
 
 __Sln__: The required area is the area of the pictured circle, minus the area of the <i>concentric</i> (meaning "with the same center") inscribed square of side length 2, the latter area being simply $2^2 = 4$ sq. length units. In order to calculate the area of the circle, $\pi r^2$, we need to know $r^2$; because a segment drawn from the center of the circle to one of the corners of the square is a radius of the circle (why?), and because the square and the circle are concentric, such a segment is the hypotenuse of an isosceles right triangle of leg length $1$, as illustrated in the following diagram: <img src="./Graphs/SullivanRS3P40Solved.png" width=150>
 (make sure you understand why the triangle is a right triangle; why it is an isosceles triangle; and why the two equal sides have length 1). Thus, by the Pythagorean theorem, $r^2 = 1^2 + 1^2 = 1 + 1 = 2$, so the area of the circle is $2\pi$; thus the area of the shaded region is: $$\boxed{2\pi - 4 \doteq 2.283\text{ sq. length units}}$$
 <br>
 
-__44__) Two triangles are given, one with known side lengths of 10 and 50 length units, included angle (the angle between them) of measure 125&deg;, the angle opposite the side of length 50 has measure 50&deg;, and the other angle has measure 5&deg;; in the other triangle, the length of the side corresponding to the first triangle’s side of length 10, is 8, and the length of the side corresponding to the first triangle’s side of length 50 is unspecified (denoted in the text as $x$). Given that the triangles are similar, what is $x$, and what are the measures of the second triangle’s angles?
+<a name="3.44" class="goback" onclick="winhisback()">__3.44__)</a>
+Two triangles are given, one with known side lengths of 10 and 50 length units, included angle (the angle between them) of measure 125&deg;, the angle opposite the side of length 50 has measure 50&deg;, and the other angle has measure 5&deg;; in the other triangle, the length of the side corresponding to the first triangle’s side of length 10, is 8, and the length of the side corresponding to the first triangle’s side of length 50 is unspecified (denoted in the text as $x$). Given that the triangles are similar, what is $x$, and what are the measures of the second triangle’s angles?
 
 __Sln__: For similar triangles, the <i>ratio</i> of the lengths of corresponding sides is constant, i.e., the same, for each corresponding pair of sides; and corresponding angles are equal. Thus for the second triangle we have:$$\frac{x}{50} = \frac8{10} = \frac45 \implies x = \frac45(50) = \boxed{40\text{ length units}}$$
 and the angle between the sides of length 40 and 8 (labeled $B$ in the text) is $\boxed{125^{\circ}}$, the angle opposite the side of length 40 (labeled $A$ in the text) is $\boxed{50^{\circ}}$, and the other angle (labeled $C$) is $\boxed{5^{\circ}}$
 <br>
 
-__46__) How many revolutions will a circular disk with a diameter of4 feet have completed after it has rolled 20 feet?
+<a name="3.46" class="goback" onclick="winhisback()">__3.46__)</a>
+How many revolutions will a circular disk with a diameter of4 feet have completed after it has rolled 20 feet?
 
 __Sln__: Such a disk has a circumference of $4\pi$ ft, which is thus how far it rolls in one revolution (assuming no slipping) so:$$20\cancel{\text{ ft}} \times \frac{1\text{ rev}}{4\pi\cancel{\text{ ft}}} = \boxed{\frac5{\pi} \doteq 1.592\text{ rev.}}$$
 <br>
 
-__48__) Refer to the figure. Square $ABCD$ has an area of 100 square feet; square $BEFG$ has an area of 16 square feet. What is the area of the triangle $CGF$?
+<a name="3.48" class="goback" onclick="winhisback()">__3.48__)</a>
+Refer to the figure. Square $ABCD$ has an area of 100 square feet; square $BEFG$ has an area of 16 square feet. What is the area of the triangle $CGF$?
 
 <img src="./Graphs/SullivanRS3P48.png" height="250">
 
@@ -547,7 +552,8 @@ __Sln__: Since the area of square $ABCD$ is 100 ft$^2$, the length of each of it
 <img src="./Graphs/SullivanRS3P48Solved.png" height="250">
 <br>
 
-__50__) A circular swimming pool, 20 feet in diameter,is enclosed by a wooden deck that is 3 feet wide (see figure).
+<a name="3.50" class="goback" onclick="winhisback()">__3.50__)</a>
+A circular swimming pool, 20 feet in diameter,is enclosed by a wooden deck that is 3 feet wide (see figure).
 
 <img src="./Graphs/SullivanRS3P50.png" height="250">
 
@@ -565,102 +571,121 @@ __Sln__: Fence is measured in length units, in this case feet, so what is requir
 In Problems __8__, __10__, __12__, and __16__: is the given expression a monomial? If so, specify the variable(s), the coefficient, and the degree; if not, state why not. (Note: all the expressions below are valid algebraic expressions; it’s just that some don’t meet our particular requirements for calling an algebraic expression a monomial or polynomial: all mo-/poly-nomials are algebraic expressions, but not all algebraic expressions are mo-/poly-nomials.)
 <br>
 
-__8__) $-4x^2$
+<a name="4.8" class="goback" onclick="winhisback()">__4.8__)</a>
+$-4x^2$
 
 __Sln__: Yes: the variable is $x$, the coefficient is $-4$, and the degree is $2$.
 <br>
-__10__) $-2x^{-3}$
+<a name="4.10" class="goback" onclick="winhisback()">__4.10__)</a>
+$-2x^{-3}$
 
 __Sln__: No: the exponent, $-3$, is not a nonnegative integer.
 <br>
 
-__12__) $5x^2y^3$
+<a name="4.12" class="goback" onclick="winhisback()">__4.12__)</a>
+$5x^2y^3$
 
 __Sln__: Yes: the variables are $x~\&~y$, the coefficient is $5$, and the degree is $2+3=5$. 
 <br>
-__16__) $3x^2 + 4$
+<a name="4.16" class="goback" onclick="winhisback()">__4.16__)</a>
+$3x^2 + 4$
 
 __Sln__: No: the expression contains a(n unsimplifiable) sum.
 <br>
 
 In Problems __18__ - __26__ (even numbered), state whether the expression is a polynomial; if it is, give its degree; if not, state why not.
 
-__18__) $1 - 4x$
+<a name="4.18" class="goback" onclick="winhisback()">__4.18__)</a>
+$1 - 4x$
 
 __Sln__: Yes: $1 - 4x = -4x^1 + 1$ so it is a sum of monomials, and its degree is $\boxed{1}$. (It is important to understand that just because a polynomial is not written in standard form doesn’t mean it is not a polynomial.) 
 <br>
 
-__20__) $-\pi$
+<a name="4.20" class="goback" onclick="winhisback()">__4.20__)</a>
+$-\pi$
 
 __Sln__: Yes: this is a constant polynomial ($\pi$ is always understood to be the constant ratio of a circle’s circumference to its diameter, never a variable, and $-\pi$ is just the additive inverse of that ratio, i.e., a real number, as valid a number as $-5, -0.2, -3.452\times10^{33}$, etc.), so its degree is $\boxed{0}$.
 <br>
 
-__22__) $\displaystyle \frac3x + 2$
+<a name="4.22" class="goback" onclick="winhisback()">__4.22__)</a>
+$\displaystyle \frac3x + 2$
 
 __Sln__: No: $\displaystyle \frac3x = 3x^{-1}$, which is not a monomial, so the sum is not a polynomial.
 <br>
 
-__24__) $10z^2 + z$
+<a name="4.24" class="goback" onclick="winhisback()">__4.24__)</a>
+$10z^2 + z$
 
 __Sln__: Yes: the use of $z$ instead of $x$ does not make this expression not a polynomial; its degree is $\boxed{2}$
 <br>
-__26__) $\displaystyle \frac{3x^3 + 2x - 1}{x^2 + x + 1}$
+<a name="4.26" class="goback" onclick="winhisback()">__4.26__)</a>
+$\displaystyle \frac{3x^3 + 2x - 1}{x^2 + x + 1}$
 
 __Sln__: No: this is a ratio of polynomials, which is called a <i>rational expression</i>. (It is possible that, if the denominator is a factor of the numerator, so that it could be "cancelled out," the expression could be simplified to a polynomial, but in this instance, that is not the case, and in any event, the expression <i>as given </i>is not a polynomial.)
 <br>
 
 In Problems __30__, __36__, __40__, and __46__, add, subtract, or multiply, as indicated; express your answer as a single polynomial in standard form.
 
-__30__) $(x^2 - 3x - 4) - (x^3 - 3x^2 + x + 5)$
+<a name="4.30" class="goback" onclick="winhisback()">__4.30__)</a>
+$(x^2 - 3x - 4) - (x^3 - 3x^2 + x + 5)$
 
 __Sln__: $(x^2 - 3x - 4) - (x^3 - 3x^2 + x + 5) = x^2 - 3x - 4 + (-1)(x^3 - 3x^2 + x + 5) = x^2 - 3x - 4 - x^3 + 3x^2 - x - 5 = $ $-x^3 + x^2 + 3x^2 - 3x - x - 4 - 5 = -x^3 + (1+3)x^2 - (3+1)x - (4+5) =$ $$\boxed{-x^3 + 4x^2 - 4x - 9}$$
 <br>
-__36__) $8(4x^3 - 3x^2 - 1) - 6(4x^3 + 8x - 2)$
+<a name="4.36" class="goback" onclick="winhisback()">__4.36__)</a>
+$8(4x^3 - 3x^2 - 1) - 6(4x^3 + 8x - 2)$
 
 __Sln__: $8(4x^3 - 3x^2 - 1) - 6(4x^3 + 8x - 2) = 32x^3-24x^2-8 - 24x^3-48x+12 = (32-24)x^3 - 24x^2 - 48x + (12-8) =$ $$\boxed{8x^3-24x^2-48x+4}$$
 <br>
 
-__40__) $8(1 - y^3) + 4(1 + y + y^2 + y^3)$
+<a name="4.40" class="goback" onclick="winhisback()">__4.40__)</a>
+$8(1 - y^3) + 4(1 + y + y^2 + y^3)$
 
 __Sln__: $8(1 - y^3) + 4(1 + y + y^2 + y^3) = 8-8y^3 + 4+4y+4y^2+4y^3 = (-8+4)y^3+4y^2+4y+(8+4) =$ $$\boxed{-4y^3+4y^2+4y+12}$$
 <br>
-__46__) $(2x - 3)(x^2 + x + 1)$
+<a name="4.46" class="goback" onclick="winhisback()">__4.46__)</a>
+$(2x - 3)(x^2 + x + 1)$
 
 __Sln__: $(2x - 3)(x^2 + x + 1) = (2x-3)x^2 + (2x-3)x + (2x-3)(1) = (2x)x^2 - 3x^2 + (2x)x - 3x +(2x)(1) - 3(1) =$ $2x^3 + (-3+2)x^2 + (-3+2)x - 3 = $ $$\boxed{2x^3 - x^2 - x - 3}$$
 <br>
 
 In Problems __60__ and __64__, multiply the polynomials using the FOIL method; express your answer as a single polynomial in standard form.
 
-__60__) $(-2x - 3)(3 - x)$
+<a name="4.60" class="goback" onclick="winhisback()">__4.60__)</a>
+$(-2x - 3)(3 - x)$
 
 __Sln__: $(-2x - 3)(3 - x) = (-2x)(3) + (-2x)(-x) + (-3)(3) + (-3)(-x) = -6x + 2x^2 - 9 + 3x = $ $$\boxed{2x^2 - 3x - 9}$$
 <br>
 
-__64__) $(x - 3y)(-2x+y)$
+<a name="4.64" class="goback" onclick="winhisback()">__4.64__)</a>
+$(x - 3y)(-2x+y)$
 
 __Sln__: $(x - 3y)(-2x+y) = (x)(-2x) + (x)(y) + (-3y)(-2x) + (-3y)(y) = -2x^2 + xy + 6xy - 3y^2 = $ $$\boxed{-2x^2 + 7xy - 3y^2}$$
 <br>
 
 In Problems __76__, __80__, and __88__, multiply the polynomials using the special product formulas; express your answer as a single polynomial in standard form.
 
-__76__) $(3x - 4)^2$
+<a name="4.76" class="goback" onclick="winhisback()">__4.76__)</a>
+$(3x - 4)^2$
 
 __Sln__: $(3x - 4)^2 = (a+b)^2 = a^2 + 2ab + b^2$ with the identifications $a=3x, b = -4$, so $(3x - 4)^2 = (3x)^2 + 2(3x)(-4) + (-4)^2 = $ $$\boxed{9x^2 - 24x + 16}$$
 <br>
 
-__80__) $(3x + 4y)(3x - 4y)$
+<a name="4.80" class="goback" onclick="winhisback()">__4.80__)</a>
+$(3x + 4y)(3x - 4y)$
 
 __Sln__: $(3x + 4y)(3x - 4y) = (a+b)(a-b) = a^2 - b^2$ with the identifications $a=3x, b=4y$, so $(3x + 4y)(3x - 4y) = (3x)^2 - (4y)^2 =$ $$\boxed{9x^2 - 16y^2}$$
 <br>
 
-__88__) $(3x - 2)^3$
+<a name="4.88" class="goback" onclick="winhisback()">__4.88__)</a>
+$(3x - 2)^3$
 
 __Sln__: $(3x - 2)^3 = (a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$ with the identifications $a=3x, b = -2$, so $(3x - 2)^3 = (3x)^3 + 3(3x)^2(-2) + 3(3x)(-2)^2 + (-2)^3 = $ $$\boxed{27x^3 - 54x^2 + 36x - 8}$$
 <br>
 
 In Problems __92__, __100__, and __104__, find the quotient and the remainder; check your answer by verifying that (Quotient)(Divisor) + Remainder = Dividend.
 
-__92__) $x^2~\overline{)~3x^3 - x^2 + x - 2}$
+<a name="4.92" class="goback" onclick="winhisback()">__4.92__)</a>
+$x^2~\overline{)~3x^3 - x^2 + x - 2}$
 
 __Sln__: $\color{blue}{\text{Blue = "Step 1"}}, \color{violet}{\text{Violet = "Step 2"}},$ and $\color{red}{\text{Red}}$ is in both steps:
 
@@ -678,7 +703,8 @@ and since the rest of the dividend has degree less than the divisor, it is the r
 <i>Required</i> check-step: $(3x-1)(x^2) + (x-2) = (3x)(x^2)-1(x^2) + x -2 = 3x^3 - x^2 + x -2~\checkmark$
 <br>
 
-__100__) $x - 1\overline{)~-3x^4 - 2x - 1}$
+<a name="4.100" class="goback" onclick="winhisback()">__4.100__)</a>
+$x - 1\overline{)~-3x^4 - 2x - 1}$
 
 __Sln__: $\color{blue}{\text{Blue = "Step 1"}}, \color{violet}{\text{Violet = "Step 2"}}, \color{darkgreen}{\text{Green = "Step 3"}}, \color{brown}{\text{Brown = "Step 4"}},$ and $\color{red}{\text{Red}}$ is involved in all steps:
 
@@ -700,7 +726,8 @@ So the quotient is $\boxed{-3x^3 - 3x^2 - 3x - 5}$ with a remainder of $\boxed{-
 Check: $(-3x^3 - 3x^2 - 3x - 5)(x-1) - 6 = -3x^4 \color{blue}{- \cancel{3x^3}} \color{red}{- \cancel{3x^2}}$ $-~5x \color{blue}{+ \cancel{3x^3}} \color{red}{+ \cancel{3x^2}}$ $ +~3x + 5 - 6 = $ $-3x^4 - 2x - 1~\checkmark$
 <br>
 
-__104__) $x - a\overline{)~x^5 - a^5}$
+<a name="4.104" class="goback" onclick="winhisback()">__4.104__)</a>
+$x - a\overline{)~x^5 - a^5}$
 
 __Sln__: $\color{blue}{\text{Blue = "Step 1"}}, \color{violet}{\text{Violet = "Step 2"}}, \color{darkgreen}{\text{Green = "Step 3"}}, \color{brown}{\text{Brown = "Step 4"}}, \color{black}{\text{Black = "Step 5"}},$ and $\color{red}{\text{Red}}$ is involved in all steps:
 
@@ -730,49 +757,58 @@ General Note: in principle, factoring always has a "check step": multiplying the
 
 In Problems __8__ and __14__, factor each polynomial by removing the common monomial factor.
 
-__8__) $ax-a$
+<a name="5.8" class="goback" onclick="winhisback()">__5.8__)</a>
+$ax-a$
 
 __Sln__: $ax-a = ax - a(1) =$ $$\boxed{a(x-1)}$$
 <br>
 
-__14__) $60x^2y - 48xy^2 + 72x^3y$
+<a name="5.14" class="goback" onclick="winhisback()">__5.14__)</a>
+$60x^2y - 48xy^2 + 72x^3y$
 
 __Sln__: The greatest common factor (GCF) of the coefficients is 12, the maximum powers of $x$ and $y$ which occur in <i>all three terms</i> is 1 for each, so the GCF of the three terms is $12xy$. Factoring this out of $60x^2y$ "leaves" $5x$; out of $-48xy^2$ leaves $-4y$; and out of $72x^3y$ leaves $6x^2$. Therefore, the factorization (written in standard form) is: $$\boxed{12xy(6x^2 + 5x - 4y)}$$
 <br>
 
 In Problems __22__, __32__, __34__, __38__, __40__, and __50__, completely factor the polynomial using the most appropriate method.
 
-__22__) $36x^2 - 9$
+<a name="5.22" class="goback" onclick="winhisback()">__5.22__)</a>
+$36x^2 - 9$
 
 __Sln__: Step 1 should always be to factor out a GCF if there is one, and in this case there is, namely 9: $36x^2 - 9 = 9(4x^2 - 1)$. Now we’re to recognize that $(4x^2 - 1) = (2x)^2 - (1)^2 = a^2 - b^2 = (a+b)(a-b)$ with the identifications $a=2x, b=1$, so $(4x^2 - 1) = (2x+1)(2x-1)$ giving: $$\boxed{9(2x+1)(2x-1)}$$as the complete factorization of $36x^2 - 9.$
 <br>
 
-__32__) $25x^2 + 10x + 1$
+<a name="5.32" class="goback" onclick="winhisback()">__5.32__)</a>
+$25x^2 + 10x + 1$
 
 __Sln__: The GCF of all three terms is 1, so we proceed to see if this expression matches any of our "special forms"; indeed it does: $25x^2 + 10x + 1 = (5x)^2 + 2(5x)(1) + (1)^2 = a^2 + 2ab + b^2 = (a+b)^2$ with the identifications $a=5x, b=1$, so $25x^2 + 10x + 1=$ $$\boxed{(5x+1)^2}$$
 <br>
 
-__34__) $x^3+125$
+<a name="5.34" class="goback" onclick="winhisback()">__5.34__)</a>
+$x^3+125$
 
 __Sln__: Again the GCF is 1 so again we check to see if this matches one of our special forms; since $x^3$ is a "perfect cube," we check to see if $125$ is also; since it ends in $5$, if it is a perfect cube of something, that something has to end in $5$ (why?), so we first check $5^3$ and sure enough find that it equals $125$. Thus $x^3+125 = (x)^3 + (5)^3 = a^3 + b^3 = (a+b)(a^2-ab+b^2)$ with the identifications $a=x, b=5$, so $x^3+125 = $ $$\boxed{(x+5)(x^2-5x+25)}$$
 <br>
 
-__38__) $64-27x^3$
+<a name="5.38" class="goback" onclick="winhisback()">__5.38__)</a>
+$64-27x^3$
 
 __Sln__: GCF = 1, $64 = 4^3, 27x^3 = (3x)^3$ so $64-27x^3 = a^3 - b^3 = (a-b)(a^2+ab+b^2)$ with the identifications $a=4, b=3x$, so $64-27x^3 = (4-3x)(16+12x+9x^2)$ or, in standard form: $$\boxed{-(3x-4)(9x^2+12x+16)}$$(If you prefer, you can factor out the $-1$ at the beginning so as to not have to factor it out at the end, or not factor it out at all, but in that last case you have to be prepared to recognize $(4-3x)~\&~(3x-4)$ as the negatives of one another, because when we get to Section 7, "Rational Expressions," you’ll be expected to be able to "reduce" fractions like $\displaystyle \frac{4-3x}{3x-4} = \frac{3x-4}{4-3x} = -1$.)
 <br>
 
-__40__) $x^2+6x+8$
+<a name="5.40" class="goback" onclick="winhisback()">__5.40__)</a>
+$x^2+6x+8$
 
 __Sln__: GCF = 1 and this doesn’t match any of our special forms (e.g., 8 is not the perfect square of an integer; perfect cube, yes, but that doesn’t help us here). Since the coefficient of the $x^2$ term is 1, <i>if</i> this factors, the result will have the form $(x+a)(x+b)$, with $ab = 8$ and $a+b = 6$, i.e., we need two integers that multiply to 8 and add to 6; moreover, since both of the coefficients are positive, we know that $a~\&~b$ must be as well (make sure you understand why; hint: what other combination of $a,b$ could result in $ab \gt 0$; if that were the case, what would be the sign of $a+b$?) Thankfully, 8 only has two positive factor pairs&mdash;1 & 8, and 2 & 4&mdash;so without too much effort we see that $x^2+6x+8 =$ $$\boxed{(x+2)(x+4)}$$
 <br>
 
-__50__) $x^2+2x-8$
+<a name="5.50" class="goback" onclick="winhisback()">__5.50__)</a>
+$x^2+2x-8$
 
 __Sln__: Same as the one we just did, except that now, since the constant term is negative, one of our pair of factors of 8 must be negative, with their sum being $(+)2$, i.e., we need two integers that multiply to $-8$; that differ in absolute value by $2$; and the larger of the two factors should be the positive one (make sure you understand why). Again without too much effort, we see that $4~\&~-2$ meet these criteria, so $x^2+2x-8 = $ $$\boxed{(x-2)(x+4)}$$
 <br>
 
-__56__) Factor $9x^2 - 6x + 3x - 2$ by grouping.
+<a name="5.56" class="goback" onclick="winhisback()">__5.56__)</a>
+Factor $9x^2 - 6x + 3x - 2$ by grouping.
 
 __Sln__: $9x^2 - 6x + 3x - 2 = (3x)(3x - 2) + (1)(3x - 2) = ac + bc = (a+b)c$ with the identifications $a=3x, b=1, c=(3x-2)$, so $9x^2 - 6x + 3x - 2 = $ $$\boxed{(3x+1)(3x-2)}$$
 <br>
@@ -785,18 +821,21 @@ The method relies on the so-called "Zero Principle" (ZP), which states that if a
 
 Why is this helpful? Well, for quadratics we have a formula for the solutions of $ax^2+bx+c=0$ that <i>always</i> works: $$x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$$ (even when, later, we get to complex numbers!), i.e., we can <i>always</i> find $r~\&~s$, and thus write down the factors of $ax^2+bx+c$ without having to do any trial-and-error with (potentially very long) factor pair lists! I will use the following problems to illustrate this method, which I call the "Quadratic Formula Method" (QFM).
 
-__60__) $6z^2 + 5z + 1$
+<a name="5.60" class="goback" onclick="winhisback()">__5.60__)</a>
+$6z^2 + 5z + 1$
 
 __Sln__: The solutions of $6z^2 + 5z + 1 = 0$ are $z = \displaystyle \frac{-5\pm\sqrt{5^2-4(6)(1)}}{2(6)} = \frac{-5\pm\sqrt{25-24}}{12} = \frac{-5\pm\sqrt1}{12} = \frac{-5\pm1}{12} = \frac{-4}{12} = -\frac13$ or $\displaystyle \frac{-6}{12} = -\frac12$; therefore $6z^2 + 5z + 1 = a(z-(-\frac13))(z-(-\frac12)) = 6(z+\frac13)(z+\frac12)$, where we have figured out that $a=6$ because the leading coefficient of the product of the other two factors is 1 (in general, when we use this method, initially the leading coefficient of the factorization will be the same as the coefficient of the quadratic term; proof?) That factorization is fine and correct (check it!), but not "traditional": traditionally, one gets rid of the fractions by a suitable factorization of the leading coefficient (which will always be possible), whose factors are then distributed through the terms necessary to "clear" the fractions: $6(z+\frac13)(z+\frac12) = (3)(2)(z+\frac13)(z+\frac12) = 3(z+\frac13)\cdot 2(z+\frac12) = $ $$\boxed{(3z+1)(2z+1)}$$ 
 (Since we are doing these differently than the book, I will do the check step for these: $\checkmark: (3z+1)(2z+1) = (3z)(2z) + (3z)(1) + (1)(2z) + (1)(1) = 6z^2 + 3z + 2z + 1 = 6z^2 + 5z + 1~\checkmark$)
 <br>
 
-__64__) $3x^2 - 10x + 8$
+<a name="5.64" class="goback" onclick="winhisback()">__5.64__)</a>
+$3x^2 - 10x + 8$
 
 __Sln__: The solutions of $3x^2 - 10x + 8 = 0$ are $x=\displaystyle \frac{-(-10)\pm\sqrt{(-10)^2-4(3)(8)}}{2(3)} = \frac{10\pm\sqrt{100-96}}6 = \frac{10\pm\sqrt4}6 = \frac{10+2}6 = 2$ or $\displaystyle \frac{10-2}6 = \frac43$. Therefore, $3x^2 - 10x + 8 = 3(x-\frac43)(x-2) = $ $$\boxed{(3x-4)(x-2)}$$ $\checkmark: (3x-4)(x-2) = (3x)(x) + (3x)(-2) + (-4)(x) + (-4)(-2) = 3x^2 - 6x - 4x + 8 = 3x^2 - 10x + 8~\checkmark$
 <br>
 
-__68__) $3x^2 - 10x - 8$
+<a name="5.68" class="goback" onclick="winhisback()">__5.68__)</a>
+$3x^2 - 10x - 8$
 
 __Sln__: The solutions of $3x^2 - 10x - 8 = 0$ are $x=\displaystyle \frac{-(-10)\pm\sqrt{(-10)^2-4(3)(-8)}}{2(3)} = \frac{10\pm\sqrt{196}}6 = \frac{10\pm14}6 = \frac{24}6 = 4$ or $\frac{-4}6 = -\frac23$. Therefore, $3x^2 - 10x - 8 = 3(x-(-\frac23))(x-4) = $ $$\boxed{(3x+2)(x-4)}$$ $\checkmark: (3x+2)(x-4) = (3x)(x) +  (3x)(-4) + (2)(x) + (2)(-4) = 3x^2 -12x +2x -8 = 3x^2 -10x -8~\checkmark$
 <br>
@@ -805,58 +844,68 @@ __Sln__: The solutions of $3x^2 - 10x - 8 = 0$ are $x=\displaystyle \frac{-(-10)
 
 In Problems __70__ and __74__, determine the number that should be added to complete the square of each expression; then add it and factor the result.
 
-__70__) $p^2 + 14p$
+<a name="5.70" class="goback" onclick="winhisback()">__5.70__)</a>
+$p^2 + 14p$
 
 __Sln__: (When the leading coefficient of the quadratic is 1), the summand required to complete the square is the square of half the linear coefficient; in this case, the linear coefficient is $(+)14$, half of which is $7$, the square of which is $\boxed{49}$, so that is what we must add to complete this square. The result: $p^2 + 14p + 49 = a^2 + 2ab + b^2 = (a+b)^2$ with the identifications $a=p, b=7$, so $p^2 + 14p + 49 = \boxed{(p+7)^2}$
 <br>
 
-__74__) $x^2 + \displaystyle \frac13 x$
+<a name="5.74" class="goback" onclick="winhisback()">__5.74__)</a>
+$x^2 + \displaystyle \frac13 x$
 
 __Sln__: The required summand is $\displaystyle \left(\frac12 \cdot \frac13\right)^2 = \left(\frac16\right)^2 = \boxed{\frac1{36}}$ and the resulting quadratic trinomial and its factorization are: $$\boxed{x^2+\frac13 x+\frac1{36} = \left(x+\frac16\right)^2}$$ $\checkmark: \left(x+\frac16\right)^2 = x^2 + 2\left(\frac16\right)x + \left(\frac16\right)^2 = x^2 + \frac13 x + \frac1{36}~\checkmark$
 <br>
 
 In the remainder of the Problems, factor completely the given polynomial.
 
-__78__) $3-27x^2$
+<a name="5.78" class="goback" onclick="winhisback()">__5.78__)</a>
+$3-27x^2$
 
 __Sln__: $3-27x^2 = -3(9x^2-1) = -3(a^2-b^2) = -3(a+b)(a-b)$ with $a=3x, b=1 \implies 3-27x^2 =$ $$\boxed{-3(3x+1)(3x-1)}$$
 <br>
 
-__86__) $x^2+12x+36$
+<a name="5.86" class="goback" onclick="winhisback()">__5.86__)</a>
+$x^2+12x+36$
 
 __Sln__: You’re supposed to recognize this as a perfect square trinomial, but what if you don’t: can we use the QFM to get the factors? Yes! That’s the point of the QFM: it <i>always</i> works (you can even use it&mdash;and will be expected to, perhaps in Calculus, or definitely in some courses you may have to take after that if you intend to go into engineering or one of of the physical sciences, e.g., physics, chemistry, astronomy, etc.&mdash;to factor trinomials whose solutions are not rational numbers!) But the outcome of the QFM is a little different than when the trinomial is not a perfect square, so we will do this one using that method to exhibit what happens.
 
 $x^2+12x+36 = 0 \implies x = \displaystyle \frac{-12\pm\sqrt{(12)^2-4(1)(36)}}{2(1)} = \frac{-12\pm\sqrt{144-144}}2 = \frac{-12\pm\sqrt{0}}2 = \frac{-12\pm0}2 = \frac{-12}2 = -6$: we got only one solution! Does this mean this trinomial has only one factor? No: the case of the <i>discriminant</i>&mdash;the quantity under the square-root in the quadratic formula, $b^2-4ac$&mdash;equaling 0 corresponds <i>precisely</i> with the case of the trinomial being a perfect square: our quadratic formula result tells us that $x^2+12x+36 = (x-(-6))(x-(-6)) = $ $$\boxed{(x+6)^2}$$(which is why we say, you may recall, that the solution $-6$ has "multiplicity 2").
 <br>
 
-__94__) $9x^2-12x+4$
+<a name="5.94" class="goback" onclick="winhisback()">__5.94__)</a>
+$9x^2-12x+4$
 
 __Sln__: The GCF is one, so we proceed immediately to the QFM: 
 
 $9x^2-12x+4 = 0 \implies x = \displaystyle \frac{-(-12)\pm \sqrt{(-12)^2-4(9)(4)}}{2(9)} = \frac{12 \pm \sqrt{144-144}}{18} = \frac{12}{18} = \frac23$: a-ha! one solution: the $x-\frac23$ factor is repeated, i.e., $9x^2-12x+4 = 9(x-\frac23)(x-\frac23) = 3(x-\frac23) \cdot 3(x-\frac23) = $ $$\boxed{(3x-2)^2}$$i.e., $9x^2-12x+4$ is a perfect square trinomial (just like I said it would be whenever the discriminant is zero, and the QFM worked to find the required factorization, without having to recognize that fact).
 <br>
 
-__102__) $x^8-x^5$
+<a name="5.102" class="goback" onclick="winhisback()">__5.102__)</a>
+$x^8-x^5$
 
 __Sln__: The GCF is $x^5$ so "step one" is to factor that out, yielding: $x^8-x^5 = x^5(x^{8-5}-1) = x^5(x^3-1)$; $x^3-1$ is a difference of cubes: $a^3-b^3 = (a-b)(a^2+ab+b^2)$ with $a=x, b=1$, so $x^8-x^5 = $ $$\boxed{x^5(x-1)(x^2+x+1)}$$
 <br>
 
-__110__) $4-14x^2-8x^4$
+<a name="5.110" class="goback" onclick="winhisback()">__5.110__)</a>
+$4-14x^2-8x^4$
 
 __Sln__: The GCF is 2, but we will factor out $-2$ so that the other factor will be in standard form: $4-14x^2-8x^4 = -2(4x^4 + 7x^2 - 2)$. $4x^4$ is a perfect square (of $2x^2$) but $-2$ isn’t, so we know immediately that the second factor can’t be a perfect square trinomial. Furthermore, although it is not a quadratic, it is "quadratic in form": if we let $x^2 = y \implies x^4 = y^2$, then $4x^4 + 7x^2 - 2 = 4y^2 + 7y -2$, which we can attempt to factor using the QFM. We have: $4y^2 + 7y -2 = 0 \implies y = \displaystyle \frac{-7 \pm \sqrt{7^2-4(4)(-2)}}{2(4)} = \frac{-7 \pm \sqrt{49+32}}{8} = \frac{-7 \pm \sqrt{81}}{8} = \frac{-7\pm 9}{8} = \frac28 = \frac14$ or $\displaystyle \frac{-16}8 = -2$, so $4y^2 + 7y -2 = 4(y-\frac14)(y-(-2)) = (4y-1)(y+2) = (4x^2-1)(x^2+2)$ upon substituting $x^2$ back in for $y$. However, we’re not done yet: $x^2+2$ is "prime" (over $\mathbb{R}$), but $4x^2-1 = a^2-b^2 = (a+b)(a-b)$ with the identifications $a=2x, b = 1$, so $4x^2-1 = (2x+1)(2x-1)$. Putting it all together we have: $4-14x^2-8x^4 = $ $$\boxed{-2(2x+1)(2x-1)(x^2+2)}$$ $\checkmark: -2(2x+1)(2x-1)(x^2+2) = -2(4x^2-1)(x^2+2) = (2-8x^2)(x^2+2) = 2x^2 + 4 - 8x^4 - 16x^2 = 4 - 14x^2 - 8x^4~\checkmark$
 <br>
 
-__116__) $(5x+1)^3-1$
+<a name="5.116" class="goback" onclick="winhisback()">__5.116__)</a>
+$(5x+1)^3-1$
 
 __Sln__: This is a difference of cubes: $a^3-b^3 = (a-b)(a^2+ab+b^2)$ with the identifications $a=(5x+1), b=1$, so $(5x+1)^3-1 = [(5x+1)-1][(5x+1)^2+(5x+1)(1)+1^2] = (5x+1-1)(25x^2+10x+1+5x+1+1) = $ $$\boxed{5x(25x^2 + 15x + 3)}$$(To determine if $25x^2 + 15x + 3$ is prime, we can check the discriminant: $15^2-4(25)(3) = 225-300 = -75$&mdash;since this is less than zero, $25x^2 + 15x + 3$ has no real "zeros," and therefore doesn’t factor over $\mathbb{R}$, much less the set of rationals: it is prime, confirming that our result is the complete factorization, over $\mathbb{R}$.)
 <br>
 
-__122__) $x^4+x^3+x+1$
+<a name="5.122" class="goback" onclick="winhisback()">__5.122__)</a>
+$x^4+x^3+x+1$
 
 __Sln__: This one is done by grouping: $x^4+x^3+x+1 = (x^4+x^3) + (x+1) = x^3(x+1) + (1)(x+1) = (x^3+1)(x+1) = (x+1)(x^2-1x+1)(x+1) = $ $$\boxed{(x+1)^2(x^2-x+1)}$$(Again, examining the discriminant of $x^2-x+1: (-1)^2-4(1)(1) = 1-4 = -3$ and finding a negative result confirms that $x^2-x+1$ is prime, and ours is the complete factorization, over $\mathbb{R}$.)
 <br>
 
-__128__) $4(x + 5)^3(x - 1)^2 + (x + 5)^4 \cdot 2(x - 1)$
+<a name="5.128" class="goback" onclick="winhisback()">__5.128__)</a>
+$4(x + 5)^3(x - 1)^2 + (x + 5)^4 \cdot 2(x - 1)$
 
 __Sln__: The GCF is $2(x-1)(x+5)^3$; factoring that out, we have: $4(x + 5)^3(x - 1)^2 + (x + 5)^4 \cdot 2(x - 1) = 2(x-1)(x+5)^3[2(x-1) + (x+5)] = 2(x-1)(x+5)^3(2x-2+x+5) = $ $2(x-1)(x+5)^3(3x+3) = $ $$\boxed{6(x+1)(x-1)(x+5)^3}$$ $\checkmark: 6(x+1)(x-1)(x+5)^3 = 6(x^2-1)(x^3+3(5)x^2+3(5^2)x+5^3) = 6(x^2-1)(x^3+15x^2+75x+125) = $ $6(x^5 + 15x^4 + 75x^3 +125x^2 - x^3 - 15x^2 - 75x -125) = \\ \boxed{6x^5 + 90x^4 + 444x^3 + 660x^2 - 450x - 750}\\$<br>while $4(x + 5)^3(x - 1)^2 + (x + 5)^4 \cdot 2(x - 1)$ multiplied out = <br>
 $(x^3+3(5)x^2+3(5^2)x+5^3)(2x-2)^2 + (2x-2)(x+5)^2(x+5)^2 \\= (x^3+15x^2+75x+125)(4x^2-8x+4) + (2x-2)(x^2+10x+25)^2 \\=
@@ -865,7 +914,8 @@ $(x^3+3(5)x^2+3(5^2)x+5^3)(2x-2)^2 + (2x-2)(x+5)^2(x+5)^2 \\= (x^3+15x^2+75x+125
 \boxed{6x^5 + 90x^4 + 444x^3 + 660x^2 - 450x - 750}~\checkmark$
 <br>
 
-__132__) $3(4x + 5)^2 \cdot 4(5x + 1)^2 + (4x + 5)^3 \cdot 2(5x + 1) \cdot 5$
+<a name="5.132" class="goback" onclick="winhisback()">__5.132__)</a>
+$3(4x + 5)^2 \cdot 4(5x + 1)^2 + (4x + 5)^3 \cdot 2(5x + 1) \cdot 5$
 
 __Sln__: The GCF is $2(5x+1)(4x+5)^2$; factoring that out gives: $3(4x + 5)^2 \cdot 4(5x + 1)^2 + (4x + 5)^3 \cdot 2(5x + 1) \cdot 5 = 2(5x+1)(4x+5)^2[3(2)(5x+1) + 5(4x+5)] \\= 2(5x+1)(4x+5)^2(30x+6+20x+25) = $ $$\boxed{2(5x+1)(50x+31)(4x+5)^2}$$
 $\checkmark: 2(5x+1)(50x+31)(4x+5)^2 = 
@@ -876,7 +926,7 @@ $3(4x + 5)^2 \cdot 4(5x + 1)^2 + (4x + 5)^3 \cdot 2(5x + 1) \cdot 5 \\= (16x^2+4
 \boxed{8000x^4+26560x^3+29892x^2+12730x+1550}~\checkmark$
 <br><br>
 
-### _Section 6: Synthetic Division_
+<a name="SD" class="goback" onclick="winhisback()"><b><u>Section 6: Synthetic Division</u></b></a>
 
 In my opinion, this is a non-essential skill, especially in this day of ubiquitous, free symbolic algebra calculators (e.g., [WolframAlpha](https://www.wolframalpha.com/), [GeoGebra](https://www.geogebra.org/), [Desmos](https://www.desmos.com/)), so I am omitting this Section in my initial publication of these solutions. (For the sake of completeness, I will come back to it eventually, but probably not until I’ve finished the rest of the text.)
 <br>
