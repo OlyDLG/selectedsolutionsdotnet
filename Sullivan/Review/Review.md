@@ -939,19 +939,22 @@ check</i> the answers s/he obtains (I did).
 
 In Problems __8__, __12__, and __16__, "reduce" each "fraction."
 
-__8__) $\displaystyle \frac{15x^2 + 24x}{3x^2}$
+<a name="7.8" class="goback" onclick="winhisback()">__7.8__)</a>
+$\displaystyle \frac{15x^2 + 24x}{3x^2}$
 
 __Sln__: $\displaystyle \frac{15x^2 + 24x}{3x^2} = \frac{\cancel{3x}(5x+8)}{\cancel{3x}(x)} = \boxed{\frac{5x+8}x}$ (assuming $x\ne0$)
 <br>
 
-__12__) $\displaystyle \frac{3y^2 - y - 2}{3y^2 + 5y + 2}$
+<a name="7.12" class="goback" onclick="winhisback()">__7.12__)</a>
+$\displaystyle \frac{3y^2 - y - 2}{3y^2 + 5y + 2}$
 
 __Sln__: We need to factor the numerator and denominator to see if there are any common factors; since the leading coefficient of each is not 1, this would be a tedious process without what I’ve called the QFM (illustrated above in the Section 5 solutions), so we use that here.
 
 $3y^2 - y - 2 = 0 \implies y=\displaystyle \frac{-(-1)\pm\sqrt{(-1)^2-4(3)(-2)}}{2(3)} = \frac{1\pm\sqrt{1+24}}6 = \frac{1+5}6 = 1$ or $\displaystyle \frac{1-5}6 = -\frac23$, so $3y^2 - y - 2 = 3(y+\frac23)(y-1) = (3y+2)(y-1)$; and $3y^2 + 5y + 2 = 0 \implies y=\displaystyle \frac{-5\pm\sqrt{5^2-4(3)(2)}}{2(3)} = \frac{-5\pm\sqrt{25-24}}6 = \frac{-5+1}6 = -\frac23$ or $\displaystyle \frac{-6}6 = -1$, so $3y^2 + 5y + 2 = 3(y+\frac23)(y+1) = (3y+2)(y+1)$. Therefore, $\displaystyle \frac{3y^2 - y - 2}{3y^2 + 5y + 2} = \frac{\cancel{(3y+2)}(y-1)}{\cancel{(3y+2)}(y+1)} = $ $$\boxed{\frac{y-1}{y+1}}~(\text{assuming }y \ne -\frac23)$$
 <br>
 
-__16__) $\displaystyle \frac{2x^2 + 5x - 3}{1 - 2x}$
+<a name="7.16" class="goback" onclick="winhisback()">__7.16__)</a>
+$\displaystyle \frac{2x^2 + 5x - 3}{1 - 2x}$
 
 __Sln__: Since the leading coefficient of the numerator is positive, we factor out $-1$ from the denominator (to make it easier to recognize if one of the factors of the top matches the denominator): $$\frac{2x^2 + 5x - 3}{1 - 2x} = -\frac{2x^2 + 5x - 3}{2x-1}$$
 Since this will only reduce if $(2x-1)$ is a factor of the numerator, we seek $ax+b$ such that $(2x-1)(ax+b) = 2x^2 + 5x - 3$; $2ax^2 = 2x^2 \implies a=1$, and $(-1)b = -3 \implies b=3$ (Check: $(2x-1)(x+3) = 2x^2 + 6x - x - 3 = 2x^2 + 5x - 3~\checkmark$; note that in this instance, since we already knew what one of the factors needed to be, it was easier to find the other factor <i>without</i> using the QFM: this is general&mdash;when you have to factor "from scratch," I recommend the QFM, but if you already have one of the factors, I recommend the approach just used.)
@@ -961,17 +964,20 @@ Thus, $\displaystyle \frac{2x^2 + 5x - 3}{1 - 2x} = -\frac{\cancel{(2x-1)}(x+3)}
 
 In Problems __20__, __26__, and __34__ perform the indicated operation and simplify the result; leave your answer in factored form.
 
-__20__) $\displaystyle \frac{12}{x^2+x}\cdot \frac{x^3+1}{4x-2}$
+<a name="7.20" class="goback" onclick="winhisback()">__7.20__)</a>
+$\displaystyle \frac{12}{x^2+x}\cdot \frac{x^3+1}{4x-2}$
 
 __Sln__: $\displaystyle \frac{12}{x^2+x}\cdot \frac{x^3+1}{4x-2} = \frac{\cancel{2}(6)\cancel{(x+1)}(x^2-x+1)}{\cancel{2}x\cancel{(x+1)}(2x-1)} = \boxed{\frac{6(x^2-x+1)}{x(2x-1)}}$ (assuming $x\ne -1$).
 <br>
 
-__26__) $\displaystyle \large{\frac{\frac{12x}{5x + 20}}{\frac{4x^2}{x^2-16}}}$
+<a name="7.26" class="goback" onclick="winhisback()">__7.26__)</a>
+$\displaystyle \large{\frac{\frac{12x}{5x + 20}}{\frac{4x^2}{x^2-16}}}$
 
 __Sln__: $\displaystyle \large{\frac{\frac{12x}{5x + 20}}{\frac{4x^2}{x^2-16}}} \small = \frac{12x}{5x + 20}\frac{x^2-16}{4x^2} =  \frac{\cancel{4}(3)\cancel{x}(x-4)\cancel{(x+4)}}{\cancel{4}(5)\cancel{(x + 4)}x^{\cancel{2}1}} = \boxed{\frac{3(x-4)}{5x}}$ (assuming $x\ne 0, -4$).
 <br>
 
-__34__) $\displaystyle \large{\frac{\frac{9x^2 + 3x - 2}{12x^2 + 5x - 2}}{\frac{9x^2 - 6x + 1}{8x^2 - 10x - 3}}}$
+<a name="7.34" class="goback" onclick="winhisback()">__7.34__)</a>
+$\displaystyle \large{\frac{\frac{9x^2 + 3x - 2}{12x^2 + 5x - 2}}{\frac{9x^2 - 6x + 1}{8x^2 - 10x - 3}}}$
 
 __Sln__: We need the factorizations of each of these polynomials, and when the leading coefficients are not 1, "we" use the QFM:
 
@@ -988,21 +994,24 @@ So, $\displaystyle \large{\frac{\frac{9x^2 + 3x - 2}{12x^2 + 5x - 2}}{\frac{9x^2
 
 In Problems __44__, __48__, and __52__, perform the indicated operation and simplify the result; leave your answer in factored form.
 
-__44__) $\displaystyle \frac6{x - 1} - \frac x{1 - x}$
+<a name="7.44" class="goback" onclick="winhisback()">__7.44__)</a>
+$\displaystyle \frac6{x - 1} - \frac x{1 - x}$
 
 __Sln__: Upon factoring out $-1$ from the denominator of the second summand, the fractions have the same denominator, so the numerators can be added without modification:
 
 $\displaystyle \frac6{x - 1} - \frac x{1 - x} = \frac6{x - 1} - \frac x{-1(x-1)} = \frac6{x - 1} + \frac x{x-1} = \boxed{\frac{x+6}{x-1}}$
 <br>
 
-__48__) $\displaystyle \frac{3x}{x - 4} + \frac{2x}{x + 3}$
+<a name="7.48" class="goback" onclick="winhisback()">__7.48__)</a>
+$\displaystyle \frac{3x}{x - 4} + \frac{2x}{x + 3}$
 
 __Sln__: The LCM of the two denominators is simply their product, so to make the two fractions have a common denominator, we multiply the first summand by "1" expressed as the second denominator divided by itself, and multiply the second summand by "1" expressed as the first denominator divided by itself:
 
 $\displaystyle \frac{3x}{x - 4} + \frac{2x}{x + 3} = \frac{x+3}{x+3}\left(\frac{3x}{x - 4}\right) + \frac{x-4}{x-4}\left(\frac{2x}{x + 3}\right) = \frac{3x^2+9x + 2x^2-8x}{(x+3)(x-4)} = \boxed{\frac{x(5x+1)}{(x+3)(x-4)}}$ (assuming $x \ne -3, 4$)
 <br>
 
-__52__) $\displaystyle \frac{x - 1}{x^3} + \frac x{x^2 + 1}$
+<a name="7.52" class="goback" onclick="winhisback()">__7.52__)</a>
+$\displaystyle \frac{x - 1}{x^3} + \frac x{x^2 + 1}$
 
 __Sln__: Again, the LCM of the two denominators is simply their product, so we have:
 
@@ -1011,7 +1020,8 @@ __Sln__: Again, the LCM of the two denominators is simply their product, so we h
 
 In Problems __56__ and __60__, find the LCM of the given polynomials.
 
-__56__) $3x^2 - 27, 2x^2 - x - 15$
+<a name="7.56" class="goback" onclick="winhisback()">__7.56__)</a>
+$3x^2 - 27, 2x^2 - x - 15$
 
 __Sln__: The LCM is found by completely factoring all the expressions of concern, and taking the greatest power of each factor that occurs among the factorizations. Thus we begin by factoring:
 
@@ -1022,7 +1032,8 @@ $2x^2 - x - 15 = (x+3)(ax+b), ax^2 = 2x^2 \implies a=2, 3b=-15, \implies b=-5 \i
 $2x^2 - x - 15 = (x-3)(ax+b), ax^2 = 2x^2 \implies a=2, -3b=-15 \implies b=5 \implies -3a+b = -6+5 = -1$, so $2x^2 - x - 15 = (x-3)(2x+5)$ so the LCM is: $$\boxed{3(x+3)(x-3)(2x+5)}$$
 <br>
 
-__60__) $x^2 + 4x + 4, x^3 + 2x^2, (x + 2)^3$
+<a name="7.60" class="goback" onclick="winhisback()">__7.60__)</a>
+$x^2 + 4x + 4, x^3 + 2x^2, (x + 2)^3$
 
 __Sln__: Again, "Step 1" is to factor each expression completely:
 
@@ -1031,7 +1042,8 @@ $x^2 + 4x + 4 = (x+2)^2$; $x^3 + 2x^2 = x^2(x+2)$; and $(x+2)^3$ is already fact
 
 In Problems __68__, __70__, and __72__, perform the indicated operations and simplify the result; leave your answer in factored form.
 
-__68__) $\displaystyle \frac{2x - 3}{x^2 + 8x + 7} - \frac{x - 2}{(x + 1)^2}$
+<a name="7.68" class="goback" onclick="winhisback()">__7.68__)</a>
+$\displaystyle \frac{2x - 3}{x^2 + 8x + 7} - \frac{x - 2}{(x + 1)^2}$
 
 __Sln__: We begin by finding the LCM of $x^2 + 8x + 7$ and $(x + 1)^2$; since it’s simply their product unless they have a common factor, and $x+1$ is the only factor (albeit twice) of the second expression, it only matters if $x+1$ is a factor of $x^2 + 8x + 7$, so we write $x^2 + 8x + 7 = (x+b)(x+1)$ and see if there’s a $b$ such that $1b=7~\&~b+1=8$ (we know that the coefficient of $x$ has to be 1; why?); $1b=7 \implies b=7$ and $7+1 = 8$, so $x^2 + 8x + 7 = (x+1)(x+7)$, so the LCM of $x^2 + 8x + 7$ and $(x + 1)^2$ is $(x+7)(x+1)^2$.
 
@@ -1041,14 +1053,16 @@ $\displaystyle \frac{2x - 3}{x^2 + 8x + 7} - \frac{x - 2}{(x + 1)^2} = \frac{(x+
 (assuming $x \ne -1, -7$; we readily confirm that the numerator is prime by checking its discriminant: $(-6)^2-4(1)(11) = 36-44 \lt 0 \implies x^2-6x+11$ is prime).
 <br>
 
-__70__) $\displaystyle \frac x{(x - 1)^2} + \frac2x - \frac{x + 1}{x^3 - x^2}$
+<a name="7.70" class="goback" onclick="winhisback()">__7.70__)</a>
+$\displaystyle \frac x{(x - 1)^2} + \frac2x - \frac{x + 1}{x^3 - x^2}$
 
 __Sln__: The first two denominators are already completely factored, and the third $ = x^2(x-1)$, so we see that the only factors are $x~\&~(x-1)$, and the maximum power to which they both occur is $2$, so their LCM is $x^2(x-1)^2$. To get the first fraction to have that denominator we must multiply it by $\displaystyle\frac{x^2}{x^2}$, the second we must multiply by $\displaystyle \frac{x(x-1)^2}{x(x-1)^2}$, and the third by $\displaystyle \frac{x-1}{x-1}$; doing so yields: 
 
 $\displaystyle \frac x{(x - 1)^2} + \frac2x - \frac{x + 1}{x^3 - x^2} = \frac {(x^2)x+2x(x-1)^2-(x-1)(x+1)}{x^2(x - 1)^2} = \frac {x^3+2x(x^2-2x+1)-(x^2-1)}{x^2(x - 1)^2} = $<br><br>$\displaystyle \frac{x^3+2x^3-4x^2+2x-x^2+1}{x^2(x - 1)^2} = \boxed{\frac{3x^3-5x^2+2x+1}{x^2(x - 1)^2}}$ (assuming $x\ne0,1$; again, verifying that this doesn’t reduce may be done either by long/synthetic division, or by showing that neither of the zeros of the denominator&mdash;0 & 1&mdash;are zeros of the numerator (why does that work? hint: what does being a zero of the numerator imply about its factorization?), but determining the factorization (over the integers) of the numerator, if any, is more advanced.)
 <br>
 
-__72__) $\displaystyle \frac1h \left[\frac1{(x + h)^2} - \frac1{x^2}\right]$
+<a name="7.72" class="goback" onclick="winhisback()">__7.72__)</a>
+$\displaystyle \frac1h \left[\frac1{(x + h)^2} - \frac1{x^2}\right]$
 
 __Sln__: Note that we can do the subtraction inside the brackets first, and then multiply by $\displaystyle \frac1h$. The LCM is simply the product of the denominators so we have: 
 
@@ -1057,12 +1071,14 @@ $\displaystyle \frac1{(x + h)^2} - \frac1{x^2} = \frac{x^2-(x+h)^2}{x^2(x+h)^2} 
 
 In Problems __76__, __80__, and __84__, perform the indicated operations and simplify the result; leave your answer in factored form.
 
-__76__) $\displaystyle \frac{1 - \large\frac x{x+1}}{2 - \large\frac{x - 1}x}$
+<a name="7.76" class="goback" onclick="winhisback()">__7.76__)</a>
+$\displaystyle \frac{1 - \large\frac x{x+1}}{2 - \large\frac{x - 1}x}$
 
 __Sln__: $\displaystyle {\frac{1 - \large\frac x{x+1}}{2 - \large\frac{x - 1}x}} = \large\frac{\frac{x+1-x}{x+1}}{\frac{2x-(x-1)}{x}} \small = \frac1{x+1} \cdot \frac{x}{x+1} = \boxed{\frac{x}{(x+1)^2}}$ (assuming $x\ne-1,0$)
 <br>
 
-__80__) $\displaystyle \large{\frac{\frac{2x + 5}x \small- \large\frac x{x - 3}}{\frac{x^2}{x - 3} \small- \large\frac{(x + 1)^2}{x + 3}}}$
+<a name="7.80" class="goback" onclick="winhisback()">__7.80__)</a>
+$\displaystyle \large{\frac{\frac{2x + 5}x \small- \large\frac x{x - 3}}{\frac{x^2}{x - 3} \small- \large\frac{(x + 1)^2}{x + 3}}}$
 
 __Sln__: I like to use what the text calls "Method 2" in problems like this: "clear the denominators" by multiplying the "top" and "bottom" by the LCM of all the denominators, which in this case is $x(x-3)(x+3)$: 
 
@@ -1071,14 +1087,16 @@ $$\boxed{\frac{(x+3)(x^2-x-15)}{x(4x^2+5x+3)}}$$
 (assuming $x\ne 0, \pm3$; note: I don’t usually include the denominator "1"s, I just did here for increased clarity.)
 <br>
 
-__84__) $\displaystyle \frac{4(x + 2)^{-1} - 3}{3(x + 2)^{-1} - 1}$
+<a name="7.84" class="goback" onclick="winhisback()">__7.84__)</a>
+$\displaystyle \frac{4(x + 2)^{-1} - 3}{3(x + 2)^{-1} - 1}$
 
 __Sln__: $\displaystyle \frac{4(x + 2)^{-1} - 3}{3(x + 2)^{-1} - 1} = \frac{4(x + 2)^{-1} - 3}{3(x + 2)^{-1} - 1} \cdot \frac{x+2}{x+2} = \frac{4-3(x+2)}{3-(x+2)} = \frac{4-6-3x}{3-2-x} = \frac{-(3x+2)}{-(x-1)} = \boxed{\frac{3x+2}{x-1}}$ (assuming $x\ne -2$).
 <br>
 
 In Problems __86__ and __92__, reduce each expression to lowest terms.
 
-__86__) $\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2}$
+<a name="7.86" class="goback" onclick="winhisback()">__7.86__)</a>
+$\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2}$
 
 __Sln__: If you’re tempted to do this: $\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2} = \frac{5(4x + 1)}{(5x - 2)^2} - \frac{4\cancel{(5x - 2)}}{(5x - 2)^{\cancel{2}1}} = \frac{5(4x + 1)}{(5x - 2)^2} - \frac4{5x-2}$, you haven’t done anything algebraically wrong, but your result is not a single fraction  in lowest terms, and thus you haven’t fulfilled the requirement of the Problem’s instructions.
 
@@ -1088,12 +1106,14 @@ $\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2} = \frac{20x+5 - (20x-8)}
 where the <i>simplification process</i> did not compel any domain restrictions (the final result has the domain restriction $x \ne \frac25$, but so did the original expression.)
 <br>
 
-__92__) $\displaystyle \frac{2(x^2 + 9) - 2x(2x - 5)}{(x^2 + 9)^2}$
+<a name="7.92" class="goback" onclick="winhisback()">__7.92__)</a>
+$\displaystyle \frac{2(x^2 + 9) - 2x(2x - 5)}{(x^2 + 9)^2}$
 
 __Sln__: $\displaystyle \frac{2(x^2 + 9) - 2x(2x - 5)}{(x^2 + 9)^2} = \frac{2x^2+18 - (4x^2-10x)}{(x^2 + 9)^2} = \frac{-2x^2+10x+18)}{(x^2 + 9)^2} = \boxed{-\frac{2(x^2-5x-9)}{(x^2+9)^2}}$ where, again, the simplification process does not compel any domain restrictions, nor are there any inherent in the expression (because $x^2+9 \ne 0$ for all real $x$&mdash;why? hint: can you solve $x^2+9 = 0$ over $\mathbb{R}$?) Showing that $x^2+9$ (which is prime over $\mathbb{R}$) is not a factor of $x^2-5x-9$, i.e., showing that this fraction doesn’t reduce further, may be done either by using long/synthetic division, or by showing that, unlike $x^2+9$, $x^2-5x-9=0$ has two real (albeit irrational) solutions (and therefore isn’t prime over $\mathbb{R}$).
 <br>
 
-__94__) An electrical circuit contains three resistors connected in parallel. If the resistance of each is $R_1, R_2,$ and $R_3,$ respectively, their combined resistance, $R$, is given by the formula: $$\frac1R = \frac1{R_1} + \frac1{R_2} + \frac1{R_3}$$Express $R$ as a rational expression, and evaluate $R$ for$R_1$ = 5 ohms, $R_2$ = 4 ohms, and $R_3$ = 10 ohms.
+<a name="7.94" class="goback" onclick="winhisback()">__7.94__)</a>
+An electrical circuit contains three resistors connected in parallel. If the resistance of each is $R_1, R_2,$ and $R_3,$ respectively, their combined resistance, $R$, is given by the formula: $$\frac1R = \frac1{R_1} + \frac1{R_2} + \frac1{R_3}$$Express $R$ as a rational expression, and evaluate $R$ for$R_1$ = 5 ohms, $R_2$ = 4 ohms, and $R_3$ = 10 ohms.
 
 __Sln__: The LCM of the right-hand-side denominators is $R_1R_2R_3$, yielding: $$\frac1R = \frac{R_2R_3 + R_1R_3 + R_1R_2}{R_1R_2R_3}$$
 Reciprocating both sides gives: $$\boxed{R = \frac{R_1R_2R_3}{R_1R_2 + R_1R_3 + R_2R_3}}$$
@@ -1106,74 +1126,86 @@ Thus if $R_1$ = 5 ohms, $R_2$ = 4 ohms, and $R_3$ = 10 ohms, $$R = \frac{(5)(4)(
 
 In Problems __14__ through __42__ (every fourth one), simplify each expression; assume that all variables are positive when they appear.
 
-__14__) $\large \sqrt[4]{\small48x^5}$
+<a name="8.14" class="goback" onclick="winhisback()">__8.14__)</a>
+$\large \sqrt[4]{\small48x^5}$
 
 __Sln__: $\large \sqrt[4]{\small48x^5} \small= \large \sqrt[4]{\small(2^4)(3)x^4x} \small = \large \sqrt[4]{\small3}~\large \sqrt[\cancel{4}]{\small2^{\cancel{4}}}\large \sqrt[4]{\small x}~\large \sqrt[\cancel{4}]{\small x^{\cancel4}} \small = \large \sqrt[4]{\small3}~\small(2)\large \sqrt[4]{\small x}~\small (x) =  \boxed{2x\large \sqrt[4]{\small3x}}$ (Note: should eventually be able to do it like this: $\large \sqrt[4]{\small48x^5} \small= \large\sqrt[4]{\small(2^4)(3)x^4x} \small= 2x\large\sqrt[4]{\small3x}$, i.e., the middle two steps should become "automatic.")
 <br>
 
-__18__) $\large \sqrt[3]{\frac{3xy^2}{81x^4y^2}}$
+<a name="8.18" class="goback" onclick="winhisback()">__8.18__)</a>
+$\large \sqrt[3]{\frac{3xy^2}{81x^4y^2}}$
 
 __Sln__: Here’s one way to do it: $\large \sqrt[3]{\frac{3xy^2}{81x^4y^2}} \large \overset{\text{Step 1}}{\small=} \sqrt[3]{\frac{3^1x^1\cancel{y^2}(1)}{3^{4}x^4\cancel{y^2}}}  \large \overset{\text{Step 2}}{\small=} \sqrt[3]{\frac{1}{3^{4-1}x^{4-1}}} \large \overset{\text{Step 3}}{\small=} \sqrt[3]{\frac1{3^3x^3}} \large\overset{\text{Step 4}}{\small=} \frac{\large \sqrt[3]{1}}{\large \sqrt[3]{3^3x^3}} \large\overset{\text{Step 5}}{\small=} \small\boxed{\frac1{3x}}$ (Should eventually be able to "skip" steps (SEBATSS) 1, 2, and 4, at the very least (ATVL).)
 <br>
 
-__22__) $\large\sqrt{\small5x}\sqrt{\small20x^3}$
+<a name="8.22" class="goback" onclick="winhisback()">__8.22__)</a>
+$\large\sqrt{\small5x}\sqrt{\small20x^3}$
 
 __Sln__: $\large\sqrt{\small5x}\sqrt{\small20x^3} \large \overset{\text{Step 1}}{\small=} \small\sqrt{5(20)xx^3} \large \overset{\text{Step 2}}{\small=} \small \sqrt{100x^{3+1}} \large\overset{\text{Step 3}}{\small=} \small\sqrt{10^2x^4} \large \overset{\text{Step 4}}{\small=} \small\sqrt{10^2}\sqrt{(x^2)^2} \large \overset{\text{Step 5}}{\small=} \small\boxed{10x^2}$ (SEBATSS 1 and 4 ATVL)
 <br>
 
-__26__) $\left(5\sqrt8\right)\left(-3\sqrt3\right)$
+<a name="8.26" class="goback" onclick="winhisback()">__8.26__)</a>
+$\left(5\sqrt8\right)\left(-3\sqrt3\right)$
 
 __Sln__: $\left(5\sqrt8\right)\left(-3\sqrt3\right) \large\overset{\text{Step 1}}{\small=} \small(-3)(5)\sqrt{2^3(3)}~ \large\overset{\text{Step 2}}{\small=}\small -15\sqrt{2^2(2)(3)}~\large \large\overset{\text{Step 3}}{\small=} \small-15\sqrt{2^2}\sqrt6 ~\large \large\overset{\text{Step 4}}{\small=} \small -15(2)\sqrt6 ~\large \large\overset{\text{Step 5}}{\small=} \small \boxed{-30\sqrt6}$ (SEBATSS 1, 3, and 4 ATVL)
 <br>
 
-__30__) $2\sqrt{12} - 3\sqrt{27}$
+<a name="8.30" class="goback" onclick="winhisback()">__8.30__)</a>
+$2\sqrt{12} - 3\sqrt{27}$
 
 __Sln__: $2\sqrt{12} - 3\sqrt{27} ~\large\overset{\text{Step 1}}{\small=}\small 2\sqrt{2^2(3)} - 3\sqrt{3^2(3)} ~\large\overset{\text{Step 2}}{\small=}\small 2\sqrt{2^2}\sqrt3 - 3\sqrt{3^2}\sqrt3 ~ \large\overset{\text{Step 3}}{\small=}\small 2(2)\sqrt3 - 3(3)\sqrt3 ~ \large\overset{\text{Step 4}}{\small=}\small 4\sqrt3 - 9\sqrt3 \\ \large\overset{\text{Step 5}}{\small=}\small (4-9)\sqrt3 ~ \large\overset{\text{Step 6}}{\small=}\small \boxed{-5\sqrt3}\text{ (SEBATSS 2 and 4 ATVL)}$
 
 <br>
-
-__34__) $9\large\sqrt[3]{\small24} \small- \large\sqrt[3]{\small81}$
+<a name="8.34" class="goback" onclick="winhisback()">__8.34__)</a>
+$9\large\sqrt[3]{\small24} \small- \large\sqrt[3]{\small81}$
 
 __Sln__: $9\large\sqrt[3]{\small24} \small- \large\sqrt[3]{\small81} ~\large\overset{\text{Step 1}}{\small=} \small 9\large \sqrt[3]{\small2^3(3)} \small- \large \sqrt[3]{\small3^3(3)} ~\large\overset{\text{Step 2}}{\small=} \small 9\large \sqrt[3]{\small2^3}\large\sqrt[3]{\small3} \small- \large \sqrt[3]{\small3^3}\large\sqrt[3]{\small3} ~\large\overset{\text{Step 3}}{\small=} \small 9(2)\large\sqrt[3]{\small3} \small- 3\large\sqrt[3]{\small3} \\ \large\overset{\text{Step 4}}{\small=} \small (18-3)\large\sqrt[3]{\small3} ~\large\overset{\text{Step 5}}{\small=} \small \boxed{15\large\sqrt[3]{\small3}}\text{ (SEBATSS 2, and 3 or 4, ATVL)}$ 
 <br>
 
-__38__) $\large \sqrt[4]{\small32x} \small+ \large\sqrt[4]{\small2x^5}$
+<a name="8.38" class="goback" onclick="winhisback()">__8.38__)</a>
+$\large \sqrt[4]{\small32x} \small+ \large\sqrt[4]{\small2x^5}$
 
 __Sln__: $\large \sqrt[4]{\small32x} \small+ \large\sqrt[4]{\small2x^5}  ~\large\overset{\text{Step 1}}{\small=} \large \sqrt[4]{\small2^5x} \small+ \large\sqrt[4]{\small2x^{4+1}} ~\large\overset{\text{Step 2}}{\small=} \large \sqrt[4]{\small2^{4+1}x} \small+ \large\sqrt[4]{\small2}\large\sqrt[4]{\small x^4} \large\sqrt[4]{\small x} ~\large\overset{\text{Step 3}}{\small=} \large \sqrt[4]{\small2^4}\large \sqrt[4]{\small2x} \small+ x\large\sqrt[4]{\small2x} \\ \large\overset{\text{Step 4}}{\small=} \small2\large \sqrt[4]{\small2x} \small+ x\large\sqrt[4]{\small2x} \large\overset{\text{Step 5}}{\small=} \small\boxed{(x+2)\large\sqrt[4]{\small2x}}\text{ (SEBATSS 2 and 3)}$
 <br>
 
 I’m now going to suspend doing these in excruciating detail (I may yet do so if I feel it will increase clarity) and thus also commenting on which steps one SEBATS.
 
-__42__) $8xy - \large\sqrt{\small25x^2y^2} \small+ \large\sqrt[3]{\small8x^3y^3}$
+<a name="8.42" class="goback" onclick="winhisback()">__8.42__)</a>
+$8xy - \large\sqrt{\small25x^2y^2} \small+ \large\sqrt[3]{\small8x^3y^3}$
 
 __Sln__: $8xy - \large\sqrt{\small25x^2y^2} \small+ \large\sqrt[3]{\small8x^3y^3} \small= 8xy - 5xy \small+ 2xy = \boxed{5xy}$ 
 <br>
 
 In Problems __46__, __50__, and __54__, rationalize the denominator of each expression; assume that all variables are positive when they appear.
 
-__46__) $\displaystyle \frac{-\sqrt3}{\sqrt8}$
+<a name="8.46" class="goback" onclick="winhisback()">__8.46__)</a>
+$\displaystyle \frac{-\sqrt3}{\sqrt8}$
 
 __Sln__: $\displaystyle \frac{-\sqrt3}{\sqrt8} = -\frac{\sqrt3}{2\sqrt2}\cdot\frac{\sqrt2}{\sqrt2} = \boxed{-\frac{\sqrt6}{4}}$
 <br>
 
-__50__) $\displaystyle \frac{\sqrt3 - 1}{2\sqrt3 + 3}$
+<a name="8.50" class="goback" onclick="winhisback()">__8.50__)</a>
+$\displaystyle \frac{\sqrt3 - 1}{2\sqrt3 + 3}$
 
 __Sln__: $\displaystyle \frac{\sqrt3 - 1}{2\sqrt3 + 3} = \frac{\sqrt3 - 1}{2\sqrt3 + 3} \cdot \frac{2\sqrt3 - 3}{2\sqrt3 - 3} = \frac{(2\sqrt3)(\sqrt3) + (-3)(\sqrt3) + (-1)(2\sqrt3) + (-1)(-3)}{(2\sqrt3)^2-3^2} = \frac{6+3-3\sqrt3-2\sqrt3}{12-9} = $ $$\boxed{\frac{9-5\sqrt3}3}$$
 <br>
 
-__54__) $\displaystyle \frac{\sqrt{x + h} + \sqrt{x - h}}{\sqrt{x + h} - \sqrt{x - h}}$
+<a name="8.54" class="goback" onclick="winhisback()">__8.54__)</a>
+$\displaystyle \frac{\sqrt{x + h} + \sqrt{x - h}}{\sqrt{x + h} - \sqrt{x - h}}$
 
 __Sln__: $\displaystyle \frac{\sqrt{x + h} + \sqrt{x - h}}{\sqrt{x + h} - \sqrt{x - h}} = \frac{\sqrt{x + h} + \sqrt{x - h}}{\sqrt{x + h} - \sqrt{x - h}} \cdot \frac{\sqrt{x + h} + \sqrt{x - h}}{\sqrt{x + h} + \sqrt{x - h}} = \frac{(\sqrt{x + h} + \sqrt{x - h})^2}{(\sqrt{x + h})^2 - (\sqrt{x - h})^2} = \frac{x+h + 2\sqrt{x+h}\sqrt{x-h} + (x-h)}{x+h-(x-h)} $<br><br>$= \displaystyle \frac{2x+2\sqrt{x^2-h^2}}{2h} = \boxed{\frac{x+\sqrt{x^2-h^2}}h}$ 
 <br>
 
 In Problems __58__, __62__, and __66__, simplify each expression.
 
-__58__) $16^{\large3/4}$
+<a name="8.58" class="goback" onclick="winhisback()">__8.58__)</a>
+$16^{\large3/4}$
 
 __Sln__: $16^{\large3/4} = (2^{\large4})^{\large3/4} = 2^{\large[4\cdot(3/4)]} = 2^{\large3} = \boxed{8}$
 <br>
 
-__62__) $16^{\large-3/2}$
+<a name="8.62" class="goback" onclick="winhisback()">__8.62__)</a>
+$16^{\large-3/2}$
 
 __Sln__: Method 1: $16^{\large-3/2} = \displaystyle\frac1{(2^{\large4})^{\large3/2}} = \frac1{2^{\large[4\cdot(3/2)]}} = \frac1{2^{\large6}} = \boxed{\frac1{64}}$
 
@@ -1182,7 +1214,8 @@ Method 2: $16^{\large-3/2} = (2^{\large4})^{\large-3/2} = 2^{\large[4\cdot(-3/2)
 (There are other ways as well; although it is fine to decide on a way you prefer and stick to that, in principle, you should be able to do it just about any way it can be done.)
 <br>
 
-__66__) $\displaystyle \left(\frac8{27}\right)^{\large-2/3}$
+<a name="8.66" class="goback" onclick="winhisback()">__8.66__)</a>
+$\displaystyle \left(\frac8{27}\right)^{\large-2/3}$
 
 __Sln__: Method 1: $\displaystyle \left(\frac8{27}\right)^{\large-2/3} = \left(\frac{27}8\right)^{\large2/3} = \frac{(3^{\large3})^{\large2/3}}{(2^{\large3})^{\large2/3}} = \frac{3^{\large2}}{2^{\large2}} = \boxed{\frac94}$
 
@@ -1193,29 +1226,34 @@ Ditto the previous comment.
 
 In Problems __70__ and __74__, simplify each expression; express your answer so that only positive exponents occur; assume that the variables arepositive.
 
-__70__) $\left(x^{\large4}y^{\large8}\right)^{\large3/4}$
+<a name="8.70" class="goback" onclick="winhisback()">__8.70__)</a>
+$\left(x^{\large4}y^{\large8}\right)^{\large3/4}$
 
 __Sln__: $\left(x^{\large4}y^{\large8}\right)^{\large3/4} = (x^{\large4})^{\large3/4}(y^{\large8})^{\large3/4} = \boxed{x^{\large3}y^{\large6}}$
 <br>
 
-__74__) $\displaystyle \frac{\left(4x^{\large-1}y^{\large1/3}\right)^{\large3/2}}{\left(xy\right)^{\large3/2}}$
+<a name="8.74" class="goback" onclick="winhisback()">__8.74__)</a>
+$\displaystyle \frac{\left(4x^{\large-1}y^{\large1/3}\right)^{\large3/2}}{\left(xy\right)^{\large3/2}}$
 
 __Sln__: $\displaystyle \frac{\left(4x^{\large-1}y^{\large1/3}\right)^{\large3/2}}{\left(xy\right)^{\large3/2}} = \left(\frac{4x^{\large-1}y^{\large1/3}}{xy}\right)^{\large3/2} = \left(\frac4{x^{\large1-(-1)}y^{\large1-(1/3)}}\right)^{\large3/2} = \left(\frac4{x^{\large2}y^{\large2/3}}\right)^{\large3/2} = \frac{(2^{\large2})^{\large3/2}}{(x^{\large2})^{\large3/2}(y^{\large2/3})^{\large3/2}} =$ $$\boxed{\frac8{x^{\large3}y}}$$
 <br>
 
 In Problems __76__, __82__, and __88__, write each expression as a single quotient in which only positive exponents and/or radicals appear.
 
-__76__) $\displaystyle \frac{1+x}{2x^{\large1/2}} + x^{\large1/2},~~x \gt 0$
+<a name="8.76" class="goback" onclick="winhisback()">__8.76__)</a>
+$\displaystyle \frac{1+x}{2x^{\large1/2}} + x^{\large1/2},~~x \gt 0$
 
 __Sln__: $\displaystyle \frac{1+x}{2x^{\large1/2}} + x^{\large1/2} = \frac{1+x}{2x^{\large1/2}} + \left(x^{\large1/2}\cdot \frac{2x^{\large1/2}}{2x^{\large1/2}}\right) = \frac{1+x+2x}{2x^{\large1/2}} = \boxed{\frac{3x+1}{2x^{\large1/2}}}$ or, if your instructor insists on rationalized denominators, $\boxed{\frac{x^{\large1/2}(3x+1)}{2x} = \frac{3x^{\large3/2}+x^{\large1/2}}{2x}}$ 
 <br>
 
-__82__) $\displaystyle \frac{\sqrt{x^2+1} - x \cdot \large\frac{2x}{2\sqrt{x^2+1}}}{x^2+1}$
+<a name="8.82" class="goback" onclick="winhisback()">__8.82__)</a>
+$\displaystyle \frac{\sqrt{x^2+1} - x \cdot \large\frac{2x}{2\sqrt{x^2+1}}}{x^2+1}$
 
 __Sln__: Note that we can immediately cancel the 2: $\displaystyle \frac{\sqrt{x^2+1} - x \cdot \large\frac{\cancel2x}{\cancel2\sqrt{x^2+1}}}{x^2+1}$; after that, this one is simplified if we make a<br><br>temporary variable substitution: letting $y = \sqrt{x^2+1} = (x^2+1)^{\large1/2}$, our expression becomes:<br><br>$\displaystyle \frac1{y^2}\left(y-\frac{x^2}{y}\right) = \frac{y^2-x^2}{y^3} = \frac{x^2+1-x^2}{(x^2+1)^{3/2}} = \boxed{\frac1{(x^2+1)^{3/2}}}$ upon substituting $(x^2+1)^{1/2}$ back in for $y$ (or, again if your instructor insists on rationalized denominators, multiply the top and the bottom by $\sqrt{x^2+1}$ to obtain $\displaystyle \boxed{\frac{\sqrt{x^2+1}}{(x^2+1)^2}}$, but in Calculus, $\displaystyle \frac1{(x^2+1)^{3/2}}$ or even $(x^2+1)^{-3/2}$ are perfectly acceptable.) 
 <br>
 
-__88__) $\displaystyle \frac{2x(1-x^2)^{1/3} + \frac23x^3(1-x^2)^{-2/3}}{(1-x^2)^{2/3}},~~x \ne \pm1$
+<a name="8.88" class="goback" onclick="winhisback()">__8.88__)</a>
+$\displaystyle \frac{2x(1-x^2)^{1/3} + \frac23x^3(1-x^2)^{-2/3}}{(1-x^2)^{2/3}},~~x \ne \pm1$
 
 __Sln__: Again, our work will be simplified if we make a temporary variable substitution, this time setting $y=(1-x^2)^{1/3}$; doing so, we obtain: 
 
@@ -1224,12 +1262,14 @@ $\displaystyle \frac{2x(1-x^2)^{1/3} + \frac23x^3(1-x^2)^{-2/3}}{(1-x^2)^{2/3}} 
 
 In Problems __92__ and __96__, factor each expression; express your answer so that only positive exponents occur.
 
-__92__) $6x^{1/2}(2x + 3) + x^{3/2} \cdot 8,~~x \ge 0$
+<a name="8.92" class="goback" onclick="winhisback()">__8.92__)</a>
+$6x^{1/2}(2x + 3) + x^{3/2} \cdot 8,~~x \ge 0$
 
 __Sln__: $6x^{1/2}(2x + 3) + x^{3/2} \cdot 8 = 2x^{1/2}(3)(2x+3) + 2x^{1/2}(4x) = 2x^{1/2}(6x+9+4x) = \boxed{2x^{1/2}(10x+9)}$ 
 <br>
 
-__96__) $6(6x + 1)^{1/3}(4x - 3)^{3/2} + 6(6x + 1)^{4/3}(4x - 3)^{1/2},~~x \ge \frac34$
+<a name="8.96" class="goback" onclick="winhisback()">__8.96__)</a>
+$6(6x + 1)^{1/3}(4x - 3)^{3/2} + 6(6x + 1)^{4/3}(4x - 3)^{1/2},~~x \ge \frac34$
 
 __Sln__: This will be easier if we make a couple of temporary variable substitutions: $y = (6x+1)^{1/3}$ and $z = (4x-3)^{1/2}$ which give us $6(6x + 1)^{1/3}(4x - 3)^{3/2} + 6(6x + 1)^{4/3}(4x - 3)^{1/2} = 6yz^3 + 6y^4z = 6yz(z^2 + y^3) = 6(6x+1)^{1/3}(4x-3)^{1/2}(4x-3+6x+1) = $ $ 6(10x-2)(6x+1)^{1/3}(4x-3)^{1/2} = \boxed{12(5x-1)(6x+1)^{1/3}(4x-3)^{1/2}}$ 
 <br>
@@ -1238,26 +1278,29 @@ In Problems __102__ and __106__, approximate each radical; round your answer to 
 
 Calculator input syntax varies enough that all I’m going to do here is provide the answers, and how to check them.
 
-__102__) $\large\sqrt[3]{\small-5}$
+<a name="8.102" class="goback" onclick="winhisback()">__8.102__)</a>
+$\large\sqrt[3]{\small-5}$
 
 __Sln__: $\large\sqrt[3]{\small-5} \small \doteq -1.70997595$, which, rounded to two decimal places, is $\boxed{-1.71}$. Check: $(-1.71)^3 = -5.000211~\checkmark$
 <br>
 
-__106__) $\displaystyle \frac{2\large\sqrt{\small3} \small- \large\sqrt[3]{\small4}}{\sqrt2}$
+<a name="8.106" class="goback" onclick="winhisback()">__8.106__)</a>
+$\displaystyle \frac{2\large\sqrt{\small3} \small- \large\sqrt[3]{\small4}}{\sqrt2}$
 
 __Sln__: This can actually be simplified a little before calculating, to decrease the complexity of the calculation, thereby decreasing the chance of making an error when calculating: $\displaystyle \frac{2\large\sqrt{\small3} \small- \large\sqrt[3]{\small4}}{\sqrt2} = \frac2{\sqrt2} \sqrt3 - \frac{(2^{\large2})^{\large1/3}}{2^{\large1/2}} = (\sqrt2)(\sqrt3) - 2^{\large [(2/3)-(1/2)]} = \sqrt6 - 2^{\large1/6} \doteq 1.32702769 \doteq \boxed{1.33}$ to two decimal places. Check: $\left[1.33(\sqrt2) + \large\sqrt[3]{\small 4}\small \right]/\sqrt3 \doteq 2.00242688~\checkmark$
 <br>
 
-__112__) Find the period in seconds, $T = 2\pi\displaystyle \sqrt{\frac{l}{32}}, l$ in feet, of a pendulum of length 4 inches; express your answer both as a square root and as a decimal.
+<a name="8.112" class="goback" onclick="winhisback()">__8.112__)</a>
+Find the period in seconds, $T = 2\pi\displaystyle \sqrt{\frac{l}{32}}, l$ in feet, of a pendulum of length 4 inches; express your answer both as a square root and as a decimal.
 
 __Sln__: The formula is valid for $l$ in feet, but $l$ is given to us in inches, so we first need to convert it to feet: $4\cancel{\text{ in.}} \times \displaystyle \frac{1\text{ ft.}}{12\cancel{\text{ in.}}} = \frac13$ ft.; substituting this into the formula gives: $T = \displaystyle 2\pi \sqrt{\frac1{3(32)}} = 2\pi\sqrt{\frac1{16(6)}} = 2\pi\left(\frac14\right)\sqrt{\frac16} = $ $$\boxed{\frac{\pi}{2\sqrt6} \doteq 0.641\text{ sec.}}$$
 <br>
 
 ### Notes
 
-<a name="Note1" onclick="window.history.back()">1</a>. Not any more: see, e.g., https://www.healthline.com/health-news/forget-98-6-humans-now-have-lower-body-temperature-on-average-heres-why
+<a name="Note1" class="goback" onclick="winhisback()">1</a>. Not any more: see, e.g., https://www.healthline.com/health-news/forget-98-6-humans-now-have-lower-body-temperature-on-average-heres-why
 
-<a name="Note2" onclick="window.history.back()">2</a>. This property of the reals (and the rationals)&mdash;that, given <i>any</i> two distinct reals (or rationals), there <i>always</i> exists another real (or rational) that is "between" them&mdash;we summarize by saying that the reals (and the rationals) are "dense"; moreover, it can be shown that the irrationals are dense, and that the rationals are "dense within the irrationals" (between any two distinct irrationals, there always exists a rational) and the irrationals are "dense within the rationals" (between any two distinct rationals there always exists an irrational). And yet, despite the rationals and the irrationals being dense within one another, it can be shown that, in an important sense, there are "more" irrationals than rationals (the rationals are "countable," whereas the irrationals, and therefore the reals, are not, i.e., they are "uncountable").
+<a name="Note2" class="goback" onclick="winhisback()">2</a>. This property of the reals (and the rationals)&mdash;that, given <i>any</i> two distinct reals (or rationals), there <i>always</i> exists another real (or rational) that is "between" them&mdash;we summarize by saying that the reals (and the rationals) are "dense"; moreover, it can be shown that the irrationals are dense, and that the rationals are "dense within the irrationals" (between any two distinct irrationals, there always exists a rational) and the irrationals are "dense within the rationals" (between any two distinct rationals there always exists an irrational). And yet, despite the rationals and the irrationals being dense within one another, it can be shown that, in an important sense, there are "more" irrationals than rationals (the rationals are "countable," whereas the irrationals, and therefore the reals, are not, i.e., they are "uncountable").
 
 ### Credits
 Original graphs generated using [GeoGebra](http://www.geogebra.org/).
