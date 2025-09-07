@@ -1,6 +1,11 @@
+<script>
+  function winhisback() {window.history.back();}
+</script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
+<link rel="stylesheet" href="../../Styles.css">
+<title>Solutions of Selected Exercises from Sullivan, M. "Algebra & Trigonometry, 9th Ed. Chapter 0"</title>
 $\definecolor{red}{RGB}{255,0,0}
 \definecolor{orange}{RGB}{245, 165, 0}
 \definecolor{yellow}{RGB}{255,215,0}
@@ -9,25 +14,22 @@ $\definecolor{red}{RGB}{255,0,0}
 \definecolor{violet}{RGB}{138,43,226}
 \definecolor{black}{RGB}{0,0,0}$
 $\require{cancel}$
-<style>
-body {font-family: Palatino}
-.top{border-bottom:solid black 1px; display:inline-block; float:left}
-.bottom{ display:inline-block; clear:left; float:left}
-</style>
 
 ## <center> Selected Exercise Solutions
 <center>from</center>
 ### <center>Sullivan, M., 2012. <i>Algebra & Trigonometry, Ninth Edition.</i> Prentice Hall, Boston
 ### <center>Chapter 0: Review
 ### <center>&copy; 2020, 2025 by
-### <center>David Lawrence Goldsmith
+### <center>[David Lawrence Goldsmith](https://www.linkedin.com/in/olydlg)
 <center>for</center>
 ## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)</center>
 
-<i>Note:  These solutions are provided "as-is," for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
+<i>Notes:  These solutions are provided "as-is," for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
 
 Though not presented in the text, a "blackboard bold" capital $\mathbb{R}$ is used ubiquitously to represent the set of "all real numbers," and I will use it freely herein (often with the preposition "over," as in the phrase "the expression is well-defined over $\mathbb{R}$," meaning that it is well-defined&mdash;meaning, gives a real-number result&mdash;for all real number inputs).
-<br><br>
+
+Purple font indicates clicking on the text will return you to your prior place.
+<br>
 
 ### _Section 1: Real Numbers_
 
