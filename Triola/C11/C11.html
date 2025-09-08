@@ -83,9 +83,16 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <style type="text/css">
 </style>
 </head>
-<body><style>
-body {font-family: Palatino;}
+<body><script>
+  function winhisback() {window.history.back();}
+</script>
+
+<style>
+  body {font-family: Palatino}
+  .goback {color: purple}
 </style>
+
+<p><title>Solutions of Selected Exercises from Triola, M. F. <q>Elementary Statistics, 13th Ed. Chapter 11</q></title></p>
 
 <h2><center>Selected Exercise Solutions</h2>
 
@@ -97,17 +104,48 @@ body {font-family: Palatino;}
 
 <h3><center>&copy; 2019, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
 
-<p><i>Note 1:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Purple font indicates clicking on the text will return you to your prior place.
+<br></p>
+
+<h3>Contents</h3>
+
+<table>
+  <tr style="border: none;">
+   <th colspan=10 style="border: none;">Section 1: Goodness-of-Fit</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#1.7">1.7</a></td>
+    <td style="border: none;"><a href="#1.10">1.10</a></td>
+    <td style="border: none;"><a href="#1.13">1.13</a></td>
+    <td style="border: none;"><a href="#1.16">1.16</a></td>
+    <td style="border: none;"><a href="#1.19">1.19</a></td>
+    <td style="border: none;"><a href="#1.22">1.22</a></td>
+    <td style="border: none;"><a href="#1.25">1.25</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+   <th colspan=10 style="border: none;">Section 2: Contingency Tables</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#2.7">2.7</a></td>
+    <td style="border: none;"><a href="#2.10">2.10</a></td>
+    <td style="border: none;"><a href="#2.13">2.13</a></td>
+    <td style="border: none;"><a href="#2.16">2.16</a></td>
+    <td style="border: none;"><a href="#2.19">2.19</a></td>
+  </tr>
+</table>
 
 <h3><u>Section 1: Goodness-of-Fit</u></h3>
 
-<p><strong>7</strong>) Given the following <q>loaded</q> die roll results:</p>
+<p><a name="1.7" class="goback" onclick="winhisback()"><strong>1.7</strong>)</a>
+Given the following <q>loaded</q> die roll results:</p>
 
 <table>
 <thead>
@@ -146,7 +184,8 @@ body {font-family: Palatino;}
 <p>Since \(P\) is (much) greater than the specified \(0.05\) significance level, we <strong>fail to reject the null hypothesis</strong> and conclude that the results are not statistically distinguishable from those which one might obtain from a fair die: the loading of the die <i>appears</i> to have had no effect.
 <br><br></p>
 
-<p><strong>10</strong>) Do South London World War II bomb hits fit a Poisson distribution?</p>
+<p><a name="1.10" class="goback" onclick="winhisback()"><strong>1.10</strong>)</a>
+Do South London World War II bomb hits fit a Poisson distribution?</p>
 
 <p><strong>Sln</strong>: The data and results of a \(\chi^2\) goodness-of-fit test are included below:</p>
 
@@ -155,7 +194,8 @@ body {font-family: Palatino;}
 <p>Since \(P\) is (much, MUCH) greater than the specified 0.05 significance level, we <strong>fail to reject the null hypothesis</strong> and conclude that the bomb hit counts probably do fit a Poisson distribution.
 <br><br></p>
 
-<p><strong>13</strong>) Does post position matter in the Kentucky Derby horse race?</p>
+<p><a name="1.13" class="goback" onclick="winhisback()"><strong>1.13</strong>)</a>
+Does post position matter in the Kentucky Derby horse race?</p>
 
 <p><strong>Sln</strong>: If it doesn’t matter, we’d expect the likelihood of winning to be equal at each post position, i.e., we’d expect the results to come from a uniform distribution; since we’re limiting consideration to just the first 10 post positions, we expect the probability of winning from each post position to be \(1/10^{\text{th}}\); also due to this limitation, despite the data coming from 141 runnings of the Kentucky Derby, we actually have only 117 results, so the expected number of wins at each post position is 117/10 = 11.7.</p>
 
@@ -166,7 +206,8 @@ body {font-family: Palatino;}
 <p>Since \(P\) is greater than the specified 0.05 significance level, we <strong>fail to reject the null hypothesis</strong> and conclude that post position does not appear to make a difference in the Kentucky Derby: bettors would be ill-advised to factor post position into their betting choices.
 <br><br></p>
 
-<p><strong>16</strong>) Major League Baseball player birth-months: are the birth-months of MLB players equally distributed, statistically speaking, among the months of the year?</p>
+<p><a name="1.16" class="goback" onclick="winhisback()"><strong>1.16</strong>)</a>
+Major League Baseball player birth-months: are the birth-months of MLB players equally distributed, statistically speaking, among the months of the year?</p>
 
 <p><strong>Sln</strong>: If so, then the expected number of births (not adjusted for the different number of days in each month) in each month is 1/12<sup>th</sup> of the total number&mdash;3746&mdash;of MLB players sampled, i.e., 312\(\frac16\) players with birthdays in each month.  The data and results of a \(\chi^2\) goodness-of-fit test are given in the table below:</p>
 
@@ -175,7 +216,8 @@ body {font-family: Palatino;}
 <p>Since the \(P\)-value of 0.000 is less than the specified significance level of 0.05, we <strong>reject the null hypothesis</strong> that MLB players’ birthdays are, statistically speaking, equally distributed among the months of the year: some months would appear to have more MLB player birthdays than others. Additionally, although the test itself doesn’t tell us in which month(s) there are more birthdays, an examination of the \((O-E)^2/E\) values does suggest that more MLB birthdays occur after July 31, as was claimed.
 <br><br></p>
 
-<p><strong>19</strong>) Using Text Data Set 27 <q>M&amp;M Weights,</q> test, at a 0.05 significance level, Mars, Inc.’s claim that M&amp;M’s are 16% green, 20% orange, 14% yellow, 24% blue, 13% red, and 13% brown.</p>
+<p><a name="1.19" class="goback" onclick="winhisback()"><strong>1.19</strong>)</a>
+Using Text Data Set 27 <q>M&amp;M Weights,</q> test, at a 0.05 significance level, Mars, Inc.’s claim that M&amp;M’s are 16% green, 20% orange, 14% yellow, 24% blue, 13% red, and 13% brown.</p>
 
 <p><strong>Sln</strong>: Note: despite the data being weights, to get the answer in the back of the book, one needs to assume that these claimed percentages are <q>by number,</q> i.e., count, not <q>by weight.</q> Summary data, i.e., observed counts for each color, and results of a \(\chi^2\) goodness-of-fit test are given in the table below:</p>
 
@@ -184,7 +226,8 @@ body {font-family: Palatino;}
 <p>Since \(P\) is greater than the specified 0.05 significance level, we <strong>fail to reject the null hypothesis</strong> that Mars, Inc.’s color count distribution is as claimed: there is insufficient evidence to dispute the claim that M&amp;M’s come as, by count, 16% green, 20% orange, 14% yellow, 24% blue, 13% red, and 13% brown. 
 <br><br></p>
 
-<p><strong>22</strong>) At a 0.01 significance level, test the null hypothesis that the distribution of the leading digits of the text author’s most recent 250 check amounts fits Benford’s Law. Does the conclusion change if we use a significance level of 0.05?</p>
+<p><a name="1.22" class="goback" onclick="winhisback()"><strong>1.22</strong>)</a>
+At a 0.01 significance level, test the null hypothesis that the distribution of the leading digits of the text author’s most recent 250 check amounts fits Benford’s Law. Does the conclusion change if we use a significance level of 0.05?</p>
 
 <p><strong>Sln</strong>: Data and \(\chi^2\) g.o.f. test results are given in the table below:</p>
 
@@ -193,7 +236,8 @@ body {font-family: Palatino;}
 <p>The \(P\)-value of 0.015 is greater than a significance level of 0.01, so at that s.l., we <strong>fail to reject the null hypothesis</strong> that the distribution of leading digits conforms to Benford’s Law; however, at an s.l. of 0.05, we would <strong>reject the null hypothesis</strong> and conclude that there is sufficient evidence to believe that the distribution <strong><em>does not</em></strong> conform to Benford’s Law: these results are <q>border-line,</q> in the sense that they result in a \(P\)-value which causes us to reach different conclusions for two not-exceedingly-different significance levels.
 <br><br></p>
 
-<p><strong>25</strong>) Are the female heights in Text Data Set 1 <q>Body Data</q> distributed normally?</p>
+<p><a name="1.25" class="goback" onclick="winhisback()"><strong>1.25</strong>)</a>
+Are the female heights in Text Data Set 1 <q>Body Data</q> distributed normally?</p>
 
 <p><strong>Sln</strong>: Note: <q>half</q> the work of this Exercise is efficiently extracting just the female heights from the data set; the other <q>half</q> is getting the frequency counts&mdash;both observed and expected&mdash;right. I’m not going to detail the machinations I went through to accomplish the former; but this wouldn’t be much of a <q>solution</q> if I didn’t at least provide the spreadsheet functions and methods I used to obtain the answers. Accordingly, the first table below shows said functions, while the second table shows the numerical results. (Note that where my numerical results differ, ever-so-slightly, from those in the back of the book, it is because&mdash;and I checked to confirm this&mdash;the answers in the back to Parts C and D use the rounded-to-four-decimal-places answers in the back to Part B, whereas the numerical values I present here use unrounded values throughout the calculations.)</p>
 
@@ -210,7 +254,8 @@ body {font-family: Palatino;}
 
 <h3><u>Section 2: Contingency Tables</u></h3>
 
-<p><strong>7</strong>) At a 0.05 significance level, do the data given in this Exercise suggest that, among teens, drinking alcohol while driving and texting while driving are independent behaviors?</p>
+<p><a name="2.7" class="goback" onclick="winhisback()"><strong>2.7</strong>)</a>
+At a 0.05 significance level, do the data given in this Exercise suggest that, among teens, drinking alcohol while driving and texting while driving are independent behaviors?</p>
 
 <p><strong>Sln</strong>: The data and the contingency table results are given below:</p>
 
@@ -219,7 +264,8 @@ body {font-family: Palatino;}
 <p>Given the \(P\)-value of 0.000, we <strong>reject the null hypothesis</strong> that the surveyed behaviors are independent of one another among teenagers: there is sufficient evidence to conclude that these behaviors are not independent of one another among teenagers. (However, the usual caveats regarding voluntary reporting when using surveys apply.)<br>
 <br></p>
 
-<p><strong>10</strong>) On average, does the 2011 rule change in the NFL regarding overtime play appear to have affected the outcome of overtime games?</p>
+<p><a name="2.10" class="goback" onclick="winhisback()"><strong>2.10</strong>)</a>
+On average, does the 2011 rule change in the NFL regarding overtime play appear to have affected the outcome of overtime games?</p>
 
 <p><strong>Sln</strong>: A little background is in order: before the rule change, in the event of a tie at the regular end of a game, a full overtime period was played, regardless of which team scored first in the overtime period: there was no <q>sudden death</q> situation. The rule change created a <q>sudden death</q> situation: if either team scored a <q>touchdown</q>&mdash;the highest-scoring play in American football&mdash;that team would immediately win, regardless of how much time was left in the period. Superficially, relative to before the rule change, this would appear to give an advantage to whichever team possesses the ball first, which in turn is determined by a coin toss before the period commences; thus, superficially, whichever team wins the coin toss would appear to have an advantage under this new overtime rule. But do actual overtime game results after the rule change support this, or does the loser of the coin toss have just as much chance of winning the game as they did before the rule change?</p>
 
@@ -230,7 +276,8 @@ body {font-family: Palatino;}
 <p>With a \(P\)-value of 0.626, we <strong>fail to reject the null hypothesis</strong> that the rule change had no effect on whether or not the winner of the coin toss gained an advantage after the rule change: it appears that the result of the coin toss has just as much (or as little) impact on the final outcome of the game as it did prior to the 2011 rule change.
 <br><br></p>
 
-<p><strong>13</strong>) In penalty kick situations, do soccer goalies have to decide which way to jump before they can see which direction the ball is coming from, i.e., is jump direction independent of ball direction? Test using a 0.05 significance level.</p>
+<p><a name="2.13" class="goback" onclick="winhisback()"><strong>2.13</strong>)</a>
+In penalty kick situations, do soccer goalies have to decide which way to jump before they can see which direction the ball is coming from, i.e., is jump direction independent of ball direction? Test using a 0.05 significance level.</p>
 
 <p><strong>Sln</strong>: Data regarding ball direction and jump direction, as well as contingency table results are given in the following table:</p>
 
@@ -239,7 +286,8 @@ body {font-family: Palatino;}
 <p>Since the \(P\)-value of 0.0056 is less than the specified significance level of 0.05, we <strong>reject the null hypothesis</strong> that jump direction is independent of ball direction: it appears that, at least to some extent, goalies do have enough time to choose jump direction based on ball direction. (One might note in passing, however, that two of the expected frequencies just barely exceed the threshold of 5, which the text specifies as required to justify the use of this \(\chi^2\)-based contingency table procedure.)
 <br><br></p>
 
-<p><strong>16</strong>) Is outcome&mdash;injury or fatality vs. not&mdash;of a motorcycle accident independent of helmet color? From a safety standpoint, are certain helmet colors better than others, and if so which appears to be best?</p>
+<p><a name="2.16" class="goback" onclick="winhisback()"><strong>2.16</strong>)</a>
+Is outcome&mdash;injury or fatality vs. not&mdash;of a motorcycle accident independent of helmet color? From a safety standpoint, are certain helmet colors better than others, and if so which appears to be best?</p>
 
 <p><strong>Sln</strong>: Interestingly, this problem does not specify a significance level to use! This is significant (no pun intended) because the \(P\)-value resulting from the contingency table analysis below:</p>
 
@@ -250,7 +298,8 @@ body {font-family: Palatino;}
 <p>As regards the second part of the question: although rejection of the null hypothesis in and of itself doesn’t tell us <strong><em>which</em></strong> color is best, an examination of the \((O-E)^2/E\) results points to white helmets exhibiting the greatest relative difference between expected and observed outcomes; subsequent examination of the actual observed vs. expected <q>cases</q> (i.e., actual incidents of injury or death) indicates that indeed the observed frequency of cases for white helmets, 112, is notably less than its expected frequency of 135; thus, though there is of course no guarantee, white would appear to be the safest helmet color choice, for the motorcycle driver inclined to interpret these results as indicating that helmet color does indeed make a difference.
 <br><br></p>
 
-<p><strong>19</strong>) Based on the given data (collected by the text author), and using a 0.05 significance level, are car license plate display laws in California, Connecticut, and New York obeyed with <q>more-or-less</q> equal compliance, or does compliance appear to depend on the state?</p>
+<p><a name="2.19" class="goback" onclick="winhisback()"><strong>2.19</strong>)</a>
+Based on the given data (collected by the text author), and using a 0.05 significance level, are car license plate display laws in California, Connecticut, and New York obeyed with <q>more-or-less</q> equal compliance, or does compliance appear to depend on the state?</p>
 
 <p><strong>Sln</strong>: The data and resulting contingency table analysis are given below:</p>
 
