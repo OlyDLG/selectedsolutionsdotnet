@@ -6,18 +6,24 @@ $\definecolor{green}{RGB}{0,175,0}
   \definecolor{normal}{RGB}{110,110,110}
   \require{cancel}$
 <style>
-body {font-family: Palatino}
+  body {font-family: Palatino}
+  .goback {color: purple}
 </style>
+<title>Modeling Initial U. S. A. COVID-19 Case Growth: An "Exercise" in Exponential and Logistic Regression</title>
+
 ## <center><i>Modeling Initial U. S. A. COVID-19 Case Growth:<br>An "Exercise" in Exponential and Logistic Regression,<br>With an Emphasis on the Concept of Doubling Time</i>
 #### <center>&copy; 2020, 2025 by 
-#### <center>David Lawrence Goldsmith
+#### <center>[David Lawrence Goldsmith](https://www.linkedin.com/in/olydlg)
 #### <center>for
 ## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)
 
-<i>Note:  This content is provided "as-is," for educational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
+<i>Notes:  This content is provided "as-is," for educational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
 
 This Exercise was partially inspired by questions on Quora ([here](https://www.quora.com/How-do-you-use-a-logarithmic-trendline-equation-e-g-y-c-Ln-X-b-to-calculate-concentrations-in-ELISA-assays/answer/David-Goldsmith-9) and [here](https://www.quora.com/How-do-you-find-the-logarithmic-regression-equation/answer/David-Goldsmith-9)).
 
+Purple font indicates clicking on the text will return you to your prior place.
+
+<br>
 __Exercise__: Using simple linear regression on appropriately transformed values of the (cumulative) daily number of reported COVID-19 cases in the United States of America for the month of March, 2020,[$^0$](#Note0)find and graph base-2 (i.e., "doubling-time"): __a__) exponential; and __b__) logistic[$^1$](#Note1)models; __c__) remark on your results; __d__) (on a new graph) use those models to plot predicted case numbers through: (for the exponential model) the number of cases equaling the April, 2020 U.S. population (approximately 329,485,000 people); and (for the logistic model) the number of cases equaling 99% of the U.S. population; and give the expected calendar dates for those "milestones"; and __e__) for the logistic model, the date when the predicted number of cases will reach half the U.S. population. __Calculus Extra Credit__: For the logistic model, show that this "half-population time" is when the instantaneous rate of change (IROC) of the model begins to decrease, i.e., up to that point in time, the IROC is increasing, but after it, the IROC is decreasing.
 
 __Solution__:
@@ -25,14 +31,14 @@ __Solution__:
 Supporting content&mdash;raw data, "scratch" work, regression results, and plots&mdash;are available at ["the reference sheet"](http://bit.ly/selsolCOVID19GS) (note: external link to a viewable Google Sheet). Nevertheless, we shall reproduce some of it here as part of a (hopefully) cogent narrative, beginning with the raw data:
 
 <table>
-  <tr><th>Date<br>(March, 2020)<td>1<td>2<td>3<td>4<td>5<td>6<td>7<td>8<td>9<td>10</td></tr>
-  <tr><th>Day #<td>0<td>1<td>2<td>3<td>4<td>5<td>6<td>7<td>8<td>9</tr>
-  <tr><th># of Cases<td>89<td>110<td>130<td>160<td>229<td>333<td>446<td>545<td>702<td>1010   
-  <tr><td colspan=11>
-  <tr><th>Date<td>11<td>12<td>13<td>14<td>15<td>16<td>17<td>18<td>19<td>20
-  <tr><th>Day #<td>10<td>11<td>12<td>13<td>14<td>15<td>16<td>17<td>18<td>19
-  <tr><th># of Cases<td>1265<td>1664<td>2167<td>2776<td>3387<td>4419<td>6080<td>8265<td>13479<td>18860 
-  <tr><td colspan=11>
+  <tr style="border: none;"><th>Date<br>(March, 2020)<td>1<td>2<td>3<td>4<td>5<td>6<td>7<td>8<td>9<td>10<td style="border: none;"></tr>
+  <tr style="border: none;"><th>Day #<td>0<td>1<td>2<td>3<td>4<td>5<td>6<td>7<td>8<td>9</tr>
+  <tr style="border: none;"><th># of Cases<td>89<td>110<td>130<td>160<td>229<td>333<td>446<td>545<td>702<td>1010</tr>
+  <tr style="border: none;"><td colspan=11>
+  <tr style="border: none;"><th>Date<td>11<td>12<td>13<td>14<td>15<td>16<td>17<td>18<td>19<td>20<td style="border: none;"></tr>
+  <tr style="border: none;"><th>Day #<td>10<td>11<td>12<td>13<td>14<td>15<td>16<td>17<td>18<td>19<td style="border: none; background-color: white;"></tr>
+  <tr style="border: none;"><th># of Cases<td>1265<td>1664<td>2167<td>2776<td>3387<td>4419<td>6080<td>8265<td>13479<td>18860<td style="border: none;"></tr> 
+  <tr style="border: none;"><td colspan=11>
   <tr><th>Date<td>21<td>22<td>23<td>24<td>25<td>26<td>27<td>28<td>29<td>30<td>31
   <tr><th>Day #<td>20<td>21<td>22<td>23<td>24<td>25<td>26<td>27<td>28<td>29<td>30
   <tr><th># of Cases<td>23432<td>34221<td>43151<td>53548<td>65418<td>83372<td>101624<td>121006<td>141921<td>162837<td>186258
@@ -52,7 +58,7 @@ $N(0) = N_0\left(2^{0/d}\right) = N_0(2^0) = N_0(1) = N_0$ (this shows, incident
 
 Fitting this model to data using regression means finding "best" values of $N_0$ and $d$, where we mean "best" in the least-squares sense.[$^2$](#Note2)We assume the Reader has already been exposed to least-squares regression, as well as its execution using some sort of technology (e.g., a graphing calculator, a spreadsheet program, or an app), to fit data to the simple linear model, $y = mx +b.$ We will now demonstrate how that method can be used to calculate least-squares best fit values for $N_0$ and $d$ in our exponential model. 
 
-Observe what happens if we take the $\log_2$ ("log base 2") of both sides of our model: $$\log_2(N) \color{violet}= \log_2(N_0(2^{t/d})) = \log_2(N_0) + \log_2(2^{t/d}) \color{normal} = \log_2(N_0) + \frac{t}d~~~~~~~~~~~~(\text{Eq. 1})$$
+Observe what happens if we take the $\log_2$ ("log base 2") of both sides of our model: $$\log_2(N) \color{limegreen}= \log_2(N_0(2^{t/d})) = \log_2(N_0) + \log_2(2^{t/d}) \color{normal} = \log_2(N_0) + \frac{t}d~~~~~~~~~~~~(\text{Eq. 1})$$
 
 Making the identifications $y = \log_2 N, b = \log_2(N_0), t = x,$ and $\displaystyle m = \frac1d$, we see that our model is now in the "linear regression friendly" form $y = mx + b$.
 
@@ -150,35 +156,35 @@ Enjoy! [$^6$](#Note6)
 
 ##### Notes
 
-<a name="Note0" onclick="window.history.back()">0.</a> NBC News-sourced data, presented April 1, 2020 on "The Rachel Maddow Show," MSNBC.
+<a class="goback" name="Note0" onclick="window.history.back()">0.</a> NBC News-sourced data, presented April 1, 2020 on "The Rachel Maddow Show," MSNBC.
 
-<a name="Note1" onclick="window.history.back()">1.</a> Ordinarily fitting a logistic model to data requires non-linear regression, placing it far above the intended level of this essay (despite this, it is now implemented as a "black box" on many of today’s calculators, spreadsheets, and apps, and is thus penetrating the mathematics curriculum as "low" as "Algebra II" & "Precalculus"; see, e.g., [Sullivan, 2012](#Sullivan)). However, in this circumstance&mdash;namely, a new virus infecting an essentially universally-susceptible population&mdash;"knowing" the "carrying capacity"&mdash;namely, the population of the United States&mdash;makes possible a transformation of the data which, uncharacteristically, enables us to calculate the (remaining) logistic model parameters using simple linear regression. Thus the inclusion of logistic regression here, when usually the author would consider it too advanced for this essay’s intended audience.
+<a class="goback" name="Note1" onclick="window.history.back()">1.</a> Ordinarily fitting a logistic model to data requires non-linear regression, placing it far above the intended level of this essay (despite this, it is now implemented as a "black box" on many of today’s calculators, spreadsheets, and apps, and is thus penetrating the mathematics curriculum as "low" as "Algebra II" & "Precalculus"; see, e.g., [Sullivan, 2012](#Sullivan)). However, in this circumstance&mdash;namely, a new virus infecting an essentially universally-susceptible population&mdash;"knowing" the "carrying capacity"&mdash;namely, the population of the United States&mdash;makes possible a transformation of the data which, uncharacteristically, enables us to calculate the (remaining) logistic model parameters using simple linear regression. Thus the inclusion of logistic regression here, when usually the author would consider it too advanced for this essay’s intended audience.
 
-<a name="Note2" onclick="window.history.back()">2.</a> A full exposition of least-squares regression requires multivariable Calculus; see, e.g., [Bain & Engelhardt, 1992](#Bain). We assume a familiarity and computational facility with simple linear least-squares regression at the level presented in, e.g., [Sullivan, 2012](#Sullivan) or [Triola, 2018](#Triola).
+<a class="goback" name="Note2" onclick="window.history.back()">2.</a> A full exposition of least-squares regression requires multivariable Calculus; see, e.g., [Bain & Engelhardt, 1992](#Bain). We assume a familiarity and computational facility with simple linear least-squares regression at the level presented in, e.g., [Sullivan, 2012](#Sullivan) or [Triola, 2018](#Triola).
 
-<a name="Note3" onclick="window.history.back()">3.</a> I emphasize that $t$ is <i>not</i> $\log$-transformed in this situation, because there is another, very similar-looking situation in which it is, namely, "power-law" regression. In power-law regression, $\log$-transformation of <i>both</i> the dependent <i>and</i> the independent variable is used to fit data to the model $y = px^q$. __Exercise__: take the $\log$&mdash;choice of base doesn’t matter&mdash;of both sides of the power-law model and state which two quantities are then linearly related to one another; what the "slope" is; what the "$y$-intercept" is; and how one then recovers the parameters $p$ and $q$ from those results. __Answer__: Assuming use of the natural $\log$, i.e., $\log_e$, $\log y$ is linearly related to $\log x$, with slope $m = q$, $y$-intercept $b = \log p$, and thus the linear regression result for $m$ gives $q$ directly (i.e., no "back transformation" is required), but to get $p$ we need to calculate $e^b$ (again, assuming we used the natural logarithm to transform the data).
+<a class="goback" name="Note3" onclick="window.history.back()">3.</a> I emphasize that $t$ is <i>not</i> $\log$-transformed in this situation, because there is another, very similar-looking situation in which it is, namely, "power-law" regression. In power-law regression, $\log$-transformation of <i>both</i> the dependent <i>and</i> the independent variable is used to fit data to the model $y = px^q$. __Exercise__: take the $\log$&mdash;choice of base doesn’t matter&mdash;of both sides of the power-law model and state which two quantities are then linearly related to one another; what the "slope" is; what the "$y$-intercept" is; and how one then recovers the parameters $p$ and $q$ from those results. __Answer__: Assuming use of the natural $\log$, i.e., $\log_e$, $\log y$ is linearly related to $\log x$, with slope $m = q$, $y$-intercept $b = \log p$, and thus the linear regression result for $m$ gives $q$ directly (i.e., no "back transformation" is required), but to get $p$ we need to calculate $e^b$ (again, assuming we used the natural logarithm to transform the data).
 
-<a name="Note4" onclick="window.history.back()">4.</a> If you study LINEST, you may note the perhaps counter-intuitive argument ordering: LINEST requires the dependent variable first, independent variable second; this is because specification of the independent variable is optional&mdash;if omitted, LINEST assumes equally spaced integers for the independent variable&mdash;and it is a standard programming convention that optional arguments follow required arguments.
+<a class="goback" name="Note4" onclick="window.history.back()">4.</a> If you study LINEST, you may note the perhaps counter-intuitive argument ordering: LINEST requires the dependent variable first, independent variable second; this is because specification of the independent variable is optional&mdash;if omitted, LINEST assumes equally spaced integers for the independent variable&mdash;and it is a standard programming convention that optional arguments follow required arguments.
 
-<a name="Note5" onclick="window.history.back()">5.</a> The logistic model is a standard, "first-order" attempt to modify the exponential growth model for the notion of "carrying capacity," i.e., the fact that no environment can support exponential growth forever; a rudimentary discussion is given in [Sullivan, 2012](#Sullivan), while a more complete discussion, including the differential equation basis for the model and its derivation therefrom, may be found in, e.g., [Boyce & DiPrima, 1992](#Boyce). 
+<a class="goback" name="Note5" onclick="window.history.back()">5.</a> The logistic model is a standard, "first-order" attempt to modify the exponential growth model for the notion of "carrying capacity," i.e., the fact that no environment can support exponential growth forever; a rudimentary discussion is given in [Sullivan, 2012](#Sullivan), while a more complete discussion, including the differential equation basis for the model and its derivation therefrom, may be found in, e.g., [Boyce & DiPrima, 1992](#Boyce). 
 
-<a name="Note6" onclick="window.history.back()">6.</a> I’m all-but-certain there’s a way to implement the described algorithm completely within Google Sheets, and I am certain it’s possible to implement it in JavaScript (I imagine one way to implement it in Sheets would involve using JS), but I feel like I should leave <i>something</i> for the "inspired" reader to do...
+<a class="goback" name="Note6" onclick="window.history.back()">6.</a> I’m all-but-certain there’s a way to implement the described algorithm completely within Google Sheets, and I am certain it’s possible to implement it in JavaScript (I imagine one way to implement it in Sheets would involve using JS), but I feel like I should leave <i>something</i> for the "inspired" reader to do...
 
 ##### Data Sources
 
 NBC News, via "The Rachel Maddow Show," April 1, 2020, MSNBC, New York 
 
-<a name="popclock" onclick="window.history.back()">U. S. Census "Population Clock"</a>, https://www.census.gov/popclock/
+<a class="goback" name="popclock" onclick="window.history.back()">U. S. Census "Population Clock"</a>, https://www.census.gov/popclock/
 
 ##### References
 
-<a name="Bain" onclick="window.history.back()">Bain</a>, L. J. and M. Engelhardt, 1992, <i>Introduction to Probability and Mathematical Statistics, Second Edition</i>, Duxbury Press, Belmont, CA, USA.
+<a class="goback" name="Bain" onclick="window.history.back()">Bain</a>, L. J. and M. Engelhardt, 1992, <i>Introduction to Probability and Mathematical Statistics, Second Edition</i>, Duxbury Press, Belmont, CA, USA.
 
-<a name="Boyce" onclick="window.history.back()">Boyce</a>, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
+<a class="goback" name="Boyce" onclick="window.history.back()">Boyce</a>, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
 
-<a name="Sullivan" onclick="window.history.back()">Sullivan</a>, M., 2012, <i>Algebra & Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
+<a class="goback" name="Sullivan" onclick="window.history.back()">Sullivan</a>, M., 2012, <i>Algebra & Trigonometry, Ninth Edition</i>, Prentice Hall, Boston.
 
-<a name="Triola" onclick="window.history.back()">Triola</a>, M. F., with L. Iossi, 2018, <i>Elementary Statistics, 13^th Edition</i>, Pearson, Boston.
+<a class="goback" name="Triola" onclick="window.history.back()">Triola</a>, M. F., with L. Iossi, 2018, <i>Elementary Statistics, 13^th Edition</i>, Pearson, Boston.
 
 ### Credits
 Numerical computations and graphs created using Google Sheets.
