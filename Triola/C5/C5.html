@@ -83,9 +83,16 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <style type="text/css">
 </style>
 </head>
-<body><style>
-body {font-family: Palatino}
+<body><script>
+  function winhisback() {window.history.back();}
+</script>
+
+<style>
+  body {font-family: Palatino}
+  .goback {color: purple}
 </style>
+
+<p><title>Solutions of Selected Exercises from Triola, M. F. <q>Elementary Statistics, 13th Ed. Chapter 5</q></title></p>
 
 <h2><center>Selected Exercise Solutions</h2>
 
@@ -97,22 +104,77 @@ body {font-family: Palatino}
 
 <h3><center>&copy; 2019, 2025 by</h3>
 
-<h3><center>David Lawrence Goldsmith</h3>
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
 
 <p><center>for</center></p>
 
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
 
-<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p><i>Notes:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p>Purple font indicates clicking on the text will return you to your prior place.
+<br></p>
+
+<h3>Contents</h3>
+
+<table>
+  <tr style="border: none;">
+   <th colspan=10 style="border: none;">Section 1: Probability Distributions</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#1.4">1.4</a></td>
+    <td style="border: none;"><a href="#1.6">1.6</a></td>
+    <td style="border: none;"><a href="#1.8">1.8</a></td>
+    <td style="border: none;"><a href="#1.11">1.11</a></td>
+    <td style="border: none;"><a href="#1.14">1.14</a></td>
+    <td style="border: none;"><a href="#1.18">1.18</a></td>
+    <td style="border: none;"><a href="#1.21">1.21</a></td>
+    <td style="border: none;"><a href="#1.24">1.24</a></td>
+    <td style="border: none;"><a href="#1.27">1.27</a></td>
+    <td style="border: none;"><a href="#1.30">1.30</a></td>
+  </tr>
+  <tr style="border: none;">
+   <th colspan=10 style="border: none;">Section 2: Binomial Probability Distributions</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#2.3">2.3</a></td>
+    <td style="border: none;"><a href="#2.6">2.6</a></td>
+    <td style="border: none;"><a href="#2.9">2.9</a></td>
+    <td style="border: none;"><a href="#2.12">2.12</a></td>
+    <td style="border: none;"><a href="#2.17">2.17</a></td>
+    <td style="border: none;"><a href="#2.20">2.20</a></td>
+    <td style="border: none;"><a href="#2.24">2.24</a></td>
+    <td style="border: none;"><a href="#2.27">2.27</a></td>
+    <td style="border: none;"><a href="#2.30">2.30</a></td>
+    <td style="border: none;"><a href="#2.33">2.33</a></td>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#2.36">2.36</a></td>
+    <td style="border: none;"><a href="#2.39">2.39</a></td>
+    <td style="border: none;"><a href="#2.42">2.42</a></td>
+  </tr>
+  <tr style="border: none;">
+   <th colspan=10 style="border: none; background-color: white;">Section 3: Poisson Probability Distributions</th>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td style="border: none;"><a href="#3.4">3.4</a></td>
+    <td style="border: none;"><a href="#3.7">3.7</a></td>
+    <td style="border: none;"><a href="#3.10">3.10</a></td>
+    <td style="border: none;"><a href="#3.13">3.13</a></td>
+    <td style="border: none;"><a href="#3.16">3.16</a></td>
+  </tr>
+</table>
 
 <h3><u>Section 1: Probability Distributions</u></h3>
 
-<p><strong>4</strong>) For 100 births, \(P(\text{exactly 56 girls}) = 0.0390\), \(P(\text{56 or more girls}) = 0.136\): is 56 girls in 100 births a <strong><em>significantly</em></strong> high number of girls, and which probability is the relevant one in answering that question?</p>
+<p><a name="1.4" class="goback" onclick="winhisback()"><strong>1.4</strong>)</a>
+For 100 births, \(P(\text{exactly 56 girls}) = 0.0390\), \(P(\text{56 or more girls}) = 0.136\): is 56 girls in 100 births a <strong><em>significantly</em></strong> high number of girls, and which probability is the relevant one in answering that question?</p>
 
 <p><strong>Sln</strong>: The relevant probability is \(P(\text{56 or more girls}) = 0.136\); since this is greater than \(0.05\), by the text’s standard, 56 girls out of 100 births is not a significantly high number. (It might reasonably be considered a high number, but significantly high number? Well, even that may be a matter of opinion, varying with  one’s criteria for making that judgement; what the text author is communicating is kind of the <q>industry standard</q> for what constitutes <q>significantly</q> high and low.)
 <br><br></p>
 
-<p><strong>6</strong>) State (with explanation) whether each of the following is a discrete random variable, a continuous random variable, or not a random variable.</p>
+<p><a name="1.6" class="goback" onclick="winhisback()"><strong>1.6</strong>)</a>
+State (with explanation) whether each of the following is a discrete random variable, a continuous random variable, or not a random variable.</p>
 
 <p><strong>a</strong>) Grades (A, B, C, D, F) earned in statistics classes.</p>
 
@@ -141,7 +203,8 @@ body {font-family: Palatino}
 
 <p>In Exercises <strong>8</strong>, <strong>11</strong>, and <strong>14</strong> determine whether a probability distribution is given; if so, find its mean and standard deviation; if not, state why it isn’t.</p>
 
-<p><strong>8</strong>) This data is for a study of male color blindness: \(x\) represents the number of males in a random group of 5 who exhibit some form of color blindness, \(P(x)\) is the relative frequency of observing \(x\).</p>
+<p><a name="1.8" class="goback" onclick="winhisback()"><strong>1.8</strong>)</a>
+This data is for a study of male color blindness: \(x\) represents the number of males in a random group of 5 who exhibit some form of color blindness, \(P(x)\) is the relative frequency of observing \(x\).</p>
 
 <table>
 <thead>
@@ -180,7 +243,8 @@ body {font-family: Palatino}
 <p>(Note the <q>oddity</q> that, the standard deviation being larger than the mean, \(\mu - \sigma \lt 0\), i.e., an impossible value for the random variable; this is not unheard of in statistics and is in no way erroneous or <q>pathological</q>&mdash;it is similar to the fact that the mean of a discrete distribution is seldom a possible value of the random variable.)
 <br><br></p>
 
-<p><strong>11</strong>) \(x\) represents the number of subjects in a random group of 3 who say that <q>in person</q> is the most fun way to flirt, \(P(x)\) is the relative frequency of observing \(x\).</p>
+<p><a name="1.11" class="goback" onclick="winhisback()"><strong>1.11</strong>)</a>
+\(x\) represents the number of subjects in a random group of 3 who say that <q>in person</q> is the most fun way to flirt, \(P(x)\) is the relative frequency of observing \(x\).</p>
 
 <table>
 <thead>
@@ -213,7 +277,8 @@ body {font-family: Palatino}
 <p>Its standard deviation, \(\sigma = \sqrt{(0)^2(0.091) + (1)^2(0.334) + (2)^2(0.408) + (3)^2(0.166) - (1.648)^2} = \sqrt{0.744\,096} \doteq \boxed{0.863}\)
 <br><br></p>
 
-<p><strong>14</strong>) \(x\) represents the number of <q>pass line</q> craps table bets which must be placed before a win, \(P(x)\) is the relative frequency of observing \(x\).</p>
+<p><a name="1.14" class="goback" onclick="winhisback()"><strong>1.14</strong>)</a>
+\(x\) represents the number of <q>pass line</q> craps table bets which must be placed before a win, \(P(x)\) is the relative frequency of observing \(x\).</p>
 
 <table>
 <thead>
@@ -242,7 +307,8 @@ body {font-family: Palatino}
 <p><strong>Sln</strong>: This is \(\boxed{\text{not}}\) a probability distribution, both because not all possible values of \(x\) are included (it’s certainly possible that 5 or more bets are required before a win, even if the casino doesn’t want to call attention to that fact); and because the probabilities don’t sum (close enough) to 1 (for the difference to be attributable to round-off error; in fact, the <q>missing probability</q> is probably precisely that attributable to the <q>missing</q> values of \(x\)).
 <br><br></p>
 
-<p><strong>18</strong>) The following table gives the probability of obtaining \(x\) number of girls out of 8 (single) births:</p>
+<p><a name="1.18" class="goback" onclick="winhisback()"><strong>1.18</strong>)</a>
+The following table gives the probability of obtaining \(x\) number of girls out of 8 (single) births:</p>
 
 <table>
 <thead>
@@ -328,7 +394,8 @@ body {font-family: Palatino}
 </tbody>
 </table>
 
-<p><strong>21</strong>) Find the mean and standard deviation of the number of sleepwalkers in a random group of 5.</p>
+<p><a name="1.21" class="goback" onclick="winhisback()"><strong>1.21</strong>)</a>
+Find the mean and standard deviation of the number of sleepwalkers in a random group of 5.</p>
 
 <p><strong>Sln</strong>: We (are to) assume that the total of the probabilities not equaling 1.0 precisely is due to rounding of the individual probabilities, and thus this is a valid probability distribution. Thus the mean is given by: </p>
 
@@ -339,7 +406,8 @@ body {font-family: Palatino}
 <p>\(\sqrt{(0.172)(0)^2 + (0.363)(1)^2 + (0.306)(2)^2 + (0.129)(3)^2 + (0.027)(4)^2 + (0.002)(5)^2-(1.48)^2} = \boxed{\sqrt{3.23} \doteq 1.797}\)
 <br><br></p>
 
-<p><strong>24</strong>) <strong>a</strong>) Find the probability of getting exactly 4 sleepwalkers among 5 adults.</p>
+<p><a name="1.24" class="goback" onclick="winhisback()"><strong>1.24</strong>)</a>
+<strong>a</strong>) Find the probability of getting exactly 4 sleepwalkers among 5 adults.</p>
 
 <p><strong>Sln</strong>: This is precisely the probability value entry in the table under the observed value of 4, i.e., \(\boxed{0.027}\)
 <br></p>
@@ -363,7 +431,8 @@ body {font-family: Palatino}
 <p><strong>Sln</strong>: \(\boxed{\text{Yes}}\), because 0.029&mdash;the probability of it occurring due to random chance&mdash;is pretty low (as a percent, it’s 2.9%, i.e., if we took many, many samples of 5 adults, we would expect 4 or more sleepwalkers in only about 3% of such samples due to random chance), so if we actually observe it, the logical conclusion is that it may not be due to random chance, i.e., there is probably (though not definitely) some <q>not random</q> explanation.
 <br><br></p>
 
-<p><strong>27</strong>) In Virginia’s <q>Pick 3</q> lottery game, one pays $1 to pick a three digit number (i.e., a number between 000 and 999) and wins $500 if one’s pick matches exactly the number <q>drawn</q> by the lottery agency.</p>
+<p><a name="1.27" class="goback" onclick="winhisback()"><strong>1.27</strong>)</a>
+In Virginia’s <q>Pick 3</q> lottery game, one pays $1 to pick a three digit number (i.e., a number between 000 and 999) and wins $500 if one’s pick matches exactly the number <q>drawn</q> by the lottery agency.</p>
 
 <p><strong>a</strong>) How many different <q>picks</q> are possible?</p>
 
@@ -412,7 +481,8 @@ body {font-family: Palatino}
 <p><strong>Sln</strong>: \(-50\)&cent; \(= -\$0.50\), so \(\boxed{\text{neither}}\) is better for the bettor, they both have the same expected loss.
 <br><br></p>
 
-<p><strong>30</strong>) Fidelity life charges $226 for a life insurance policy that pays $50,000 in the event of the purchaser’s death within the year; the purchaser has a 0.9968 probability of surviving the year.</p>
+<p><a name="1.30" class="goback" onclick="winhisback()"><strong>1.30</strong>)</a>
+Fidelity life charges $226 for a life insurance policy that pays $50,000 in the event of the purchaser’s death within the year; the purchaser has a 0.9968 probability of surviving the year.</p>
 
 <p><strong>a</strong>) From the perspective of the purchaser, what are the (monetary) values corresponding to the two events surviving the year vs. not surviving?</p>
 
@@ -453,14 +523,16 @@ body {font-family: Palatino}
 
 <h3><u>Section 2: Binomial Probability Distributions</u></h3>
 
-<p><strong>3</strong>) In a survey of 1009 customers, 42% said they were comfortable receiving deliveries by drones. Consider the probability that, of 30 customers randomly selected without replacement from the 1009, <strong><em>at least</em></strong> 10 will be OK with drone deliveries: are the 30 selections independent? Can they be treated as independent? Can the probability be found by using the binomial probability formula? Why or why not?</p>
+<p><a name="2.3" class="goback" onclick="winhisback()"><strong>2.3</strong>)</a>
+In a survey of 1009 customers, 42% said they were comfortable receiving deliveries by drones. Consider the probability that, of 30 customers randomly selected without replacement from the 1009, <strong><em>at least</em></strong> 10 will be OK with drone deliveries: are the 30 selections independent? Can they be treated as independent? Can the probability be found by using the binomial probability formula? Why or why not?</p>
 
 <p><strong>Sln</strong>: Since the customers are selected without replacement, the selections are not independent (selection of one customer reduces the size of the sample space, and thus affects the probability of selecting subsequent customers). However, \(\displaystyle \frac{30}{1009} \doteq 0.0297 \lt 0.05\), so according to the text, we may treat the samples as independent without incurring significant error (which is how the reader should think of it: the results will not be exact, but they will be <q>close enough</q>). With that <q>idealization,</q> \(\boxed{\text{yes}}\) this is a <q>binomial experiment,</q> so one could calculate the stated probability using the binomial distribution formula...but it would require using said formula either 21 times to calculate the probability directly, i.e., to calculate the probabilities of each of the results <q>precisely 10 OK,</q> <q>precisely 11 OK,</q>...<q>precisely 30 OK</q>; or, more efficiently, using it 10 times to calculate the complementary probability&mdash;given by the probability of <q>precisely 9 OK</q> or <q>precisely 8 OK</q> or...<q>precisely 0 OK</q>&mdash;and subtracting that result from 1 (or using technology capable of calculating the <i>cumulative</i> binomial probability; see, e.g., our solution to Exercise 39c below, and then use that method to calculate the stated probability: you should get approximatley 0.875 or 87.5%).<br>
 <br></p>
 
 <p>In Exercises <strong>6</strong>, <strong>9</strong>, and <strong>12</strong>, determine whether the given procedure results in a binomial distribution (or equivalent), and if it doesn’t give at least one reason why.</p>
 
-<p><strong>6</strong>) 291 couples give birth to 291 babies and the gender of each baby is recorded.</p>
+<p><a name="2.6" class="goback" onclick="winhisback()"><strong>2.6</strong>)</a>
+291 couples give birth to 291 babies and the gender of each baby is recorded.</p>
 
 <p><strong>Sln</strong>: We must consider the following:</p>
 
@@ -475,12 +547,14 @@ body {font-family: Palatino}
 <p>Thus, depending on what the underlying population is supposed to be, this may or may not be a binomial <q>experiment.</q> 
 <br><br></p>
 
-<p><strong>9</strong>) Forty different Senators are randomly selected without replacement from a population of 80 males and 20 females, and the gender of each selected Senator is recorded.</p>
+<p><a name="2.9" class="goback" onclick="winhisback()"><strong>2.9</strong>)</a>
+Forty different Senators are randomly selected without replacement from a population of 80 males and 20 females, and the gender of each selected Senator is recorded.</p>
 
 <p><strong>Sln</strong>: This is essentially the same as Exercise 6, except that it is clear that the population is the 100 U. S. Senators, and consequently the sample size of 40 is 40% of the population, much too large a fraction to ignore the lack of independence created by the sampling without replacement (which is implied by the specification that forty <i>different</i> Senators are selected).
 <br><br></p>
 
-<p><strong>12</strong>) 1000 different people are randomly selected without replacement and their <q>yes</q> or <q>no</q> answer to a question is recorded.</p>
+<p><a name="2.12" class="goback" onclick="winhisback()"><strong>2.12</strong>)</a>
+1000 different people are randomly selected without replacement and their <q>yes</q> or <q>no</q> answer to a question is recorded.</p>
 
 <p><strong>Sln</strong>: i. Does the <q>procedure</q> have a fixed number of trials? Yes: 1000.</p>
 
@@ -497,7 +571,8 @@ body {font-family: Palatino}
 
 <p>In Exercises <strong>17</strong> and <strong>20</strong>, the problems refer to an 8 question multiple-choice exam, each exam question having 5 alternatives, so the probability of getting each individual question correct by random selection is \(p=0.2\).</p>
 
-<p><strong>17</strong>) Find the probability that the number of correct answers (from random guessing) is fewer than 3.</p>
+<p><a name="2.17" class="goback" onclick="winhisback()"><strong>2.17</strong>)</a>
+Find the probability that the number of correct answers (from random guessing) is fewer than 3.</p>
 
 <p><strong>Sln</strong>: This is a binomial <q>experiment</q> with \(n=8, p=0.2, q=1-0.2=0.8\), and let \(x=\) the random variable <q># correct</q>; thus:</p>
 
@@ -508,14 +583,16 @@ body {font-family: Palatino}
 <p>\((0.8)^6\left[(0.8)^2 + 1.6(0.8) + 28(0.04)\right] = (0.8)^6(0.64+1.28+1.12) = (0.8)^6(3.04) \doteq \boxed{0.797}\)
 <br><br></p>
 
-<p><strong>20</strong>) Find the probability of guessing at least one answer correctly.</p>
+<p><a name="2.20" class="goback" onclick="winhisback()"><strong>2.20</strong>)</a>
+Find the probability of guessing at least one answer correctly.</p>
 
 <p><strong>Sln</strong>: \(P(\text{guessing at least one correctly}) = P(x \gt0) = 1-P(x=0)\) (make sure you understand why this equality is true; hint: what is the complementary event of <q>at least one correct</q>? Is it possible to get a negative number correct, i.e., can \(x\) be less than zero?)</p>
 
 <p>\( = 1 - \displaystyle{8\choose0}(0.2)^0(0.8)^8 = 1 - (0.8)^8 \doteq \boxed{0.832}\)
 <br><br></p>
 
-<p><strong>24</strong>) 54% of adult smartphone users (admit to) using them in meetings or classes: find the probability that, of 12 randomly selected smartphone users, fewer than 3 of them (admit to) using their smartphones in meetings or classes.</p>
+<p><a name="2.24" class="goback" onclick="winhisback()"><strong>2.24</strong>)</a>
+54% of adult smartphone users (admit to) using them in meetings or classes: find the probability that, of 12 randomly selected smartphone users, fewer than 3 of them (admit to) using their smartphones in meetings or classes.</p>
 
 <p><strong>Sln</strong>: This is a binomial experiment with \(n=12, p=0.54, q=1-0.54=0.46\), so letting \(x=\) the random variable <q>number of selected smartphone users who admit to using their cellphones in meetings or classes,</q> we have:</p>
 
@@ -526,7 +603,8 @@ body {font-family: Palatino}
 <p>\((1)(1)(0.46)^{12} + 12(0.54)(0.46)^{11} + 66(0.2916)(0.46)^{10} \doteq 0.009\,518 \doteq \boxed{0.010}\) or (a little less than) 1%.
 <br><br></p>
 
-<p><strong>27</strong>) 20% of adults believe in reincarnation; find the probability that, of 6 randomly selected adults:</p>
+<p><a name="2.27" class="goback" onclick="winhisback()"><strong>2.27</strong>)</a>
+20% of adults believe in reincarnation; find the probability that, of 6 randomly selected adults:</p>
 
 <p><strong>a</strong>) Exactly 5 believe in reincarnation.</p>
 
@@ -550,7 +628,8 @@ body {font-family: Palatino}
 <p><strong>Sln</strong>: The relevant probability is the last one we calculated; the fact that it is very small (less than 0.2%) means that it is <i>highly unlikely</i> that a survey of 6 adults would randomly encounter 5 (or more) adults who believe in reincarnation; thus 5 is a significantly high number: if we encountered such a result, we would be wise to suspect a <q>causal</q> explanation (e.g., a convention of such believers in the vicinity of our survey).
 <br><br></p>
 
-<p><strong>30</strong>) For 16 parental pairs (i.e., sixteen single birth events):</p>
+<p><a name="2.30" class="goback" onclick="winhisback()"><strong>2.30</strong>)</a>
+For 16 parental pairs (i.e., sixteen single birth events):</p>
 
 <p><strong>a</strong>) Find the mean and standard deviation of the number of girls in groups of 16 births.</p>
 
@@ -567,7 +646,8 @@ body {font-family: Palatino}
 <p><strong>Sln</strong>: Based on the result in Part b, \(\boxed{\text{no}}\), 11 girl births is not a significantly high number: there is a reasonable probability that such could happen due to random chance, and thus, at best, the effectiveness of the XSORT method of gender selection is indeterminate (more data may yet show its effectiveness convincingly, but 11 girls out of 16 single births does not.)
 <br><br></p>
 
-<p><strong>33</strong>) Worldwide, it is estimated that 1% of persons between the ages of 15 and 49 are infected with HIV. In blood tests for the virus, samples from 36 individuals are combined and tested: what is the probability that the combined sample tests positive; is this <q>unlikely</q>?</p>
+<p><a name="2.33" class="goback" onclick="winhisback()"><strong>2.33</strong>)</a>
+Worldwide, it is estimated that 1% of persons between the ages of 15 and 49 are infected with HIV. In blood tests for the virus, samples from 36 individuals are combined and tested: what is the probability that the combined sample tests positive; is this <q>unlikely</q>?</p>
 
 <p><strong>Sln</strong>: Neglecting the occurrence of false positives and false negatives, i.e., presence of the virus yields a positive test and absence of the virus yields a negative test, both with 100% accuracy,</p>
 
@@ -586,7 +666,8 @@ body {font-family: Palatino}
 <p>\(= 1 - \displaystyle{36\choose0}(0.01)^0(1-0.01)^{36-0} = 1 - (1)(1)(0.99)^{36} \doteq 1 - 0.696\,413 \doteq \boxed{0.304}\), i.e., <q>on average,</q> (about) 304 out of 1000 such pooled tests will test positive: I agree with the text author that this is <q>not unlikely.</q>
 <br><br></p>
 
-<p><strong>36</strong>) A shipment of 2000 batteries contains 2% defective; such a shipment is accepted if, out of 50 randomly selected, at most 2 are found to be defective (i.e., the <q>acceptable number</q> of defectives is 0, 1, or 2). What is the probability that the shipment will be accepted? Will almost all such shipments be accepted, or will many be rejected?</p>
+<p><a name="2.36" class="goback" onclick="winhisback()"><strong>2.36</strong>)</a>
+A shipment of 2000 batteries contains 2% defective; such a shipment is accepted if, out of 50 randomly selected, at most 2 are found to be defective (i.e., the <q>acceptable number</q> of defectives is 0, 1, or 2). What is the probability that the shipment will be accepted? Will almost all such shipments be accepted, or will many be rejected?</p>
 
 <p><strong>Sln</strong>: Since the batteries are sampled without replacement (presumably, or we wouldn’t necessarily be sampling 50 different batteries!), the samples are not independent; however, the sample size of 50 is \(\displaystyle\frac{50}{2000} = 0.025 = 2.5\%\) of the population size, so we may treat them as independent without significant error.</p>
 
@@ -603,7 +684,8 @@ body {font-family: Palatino}
 <p>So <q>on average,</q> 92.2%&mdash;922 out of 1000&mdash;such shipments would be accepted, 78 out of a 1000 rejected; this seems to us like a high number rejected (but it’s really an economic question: one has to weigh the costs of rejecting shipments&mdash;e.g., the costs of having less-than-anticipated inventory, etc.&mdash;against the costs of passing along bad product to the consumer, e.g., the possibility of reduced sales, etc.; if one is more worried about the latter costs, then rejecting 7.8% of shipments might be too little!)
 <br><br></p>
 
-<p><strong>39</strong>) Out of 611 randomly selected voters, 308 stated that they voted for the winning candidate in a Presidential election; the actual percentage of votes for the winning candidate was 43%. Assume that 43% of voters actually did vote for the winning candidate, and assume 611 voters are randomly selected.</p>
+<p><a name="2.39" class="goback" onclick="winhisback()"><strong>2.39</strong>)</a>
+Out of 611 randomly selected voters, 308 stated that they voted for the winning candidate in a Presidential election; the actual percentage of votes for the winning candidate was 43%. Assume that 43% of voters actually did vote for the winning candidate, and assume 611 voters are randomly selected.</p>
 
 <p><strong>a</strong>) Use the range rule to determine the limits separating values that are significantly high and significantly low; is the 308 out of 611 voters who said they voted for the winner significantly high?</p>
 
@@ -634,7 +716,8 @@ body {font-family: Palatino}
 <p><strong>Sln</strong>: It calls them into question/makes them <q>suspect.</q>  (But, again, without additional information, it is unclear whether this is due to flaws in the design and/or execution of the survey, or in the unreliability of the responses of people when asked these kinds of questions. For example, people might not to want to admit to having voted for the losing candidate, even if told the responses will remain anonymous.)
 <br><br></p>
 
-<p><strong>42</strong>) <strong>The Multinomial Distribution</strong> applies to trials which are like binomial trials, except there are more than two possible outcomes. For example, suppose there are precisely three possible outcomes, called \(A, B,\) and \(C\), with probabilities \(p_1, p_2,\) and \(p_3,\) respectively. (Note that, if these are the only possible outcomes, then performing a trial is sure to result in one of them, so that \(p_1+p_2+p_3 = 1\).) Then in \(n\) independent trials, the probability of obtaining precisely \(x_1\) occurrences of \(A\), \(x_2\) occurrences of \(B\), and \(x_3\) occurrences of \(C\) (\(x_1+x_2+x_3 = n\)) is given by: \[\frac{n!}{x_1!x_2!x_3!}(p_1^{x_1})(p_2^{x_2})(p_3^{x_3})\]
+<p><a name="2.42" class="goback" onclick="winhisback()"><strong>2.42</strong>)</a>
+<strong>The Multinomial Distribution</strong> applies to trials which are like binomial trials, except there are more than two possible outcomes. For example, suppose there are precisely three possible outcomes, called \(A, B,\) and \(C\), with probabilities \(p_1, p_2,\) and \(p_3,\) respectively. (Note that, if these are the only possible outcomes, then performing a trial is sure to result in one of them, so that \(p_1+p_2+p_3 = 1\).) Then in \(n\) independent trials, the probability of obtaining precisely \(x_1\) occurrences of \(A\), \(x_2\) occurrences of \(B\), and \(x_3\) occurrences of \(C\) (\(x_1+x_2+x_3 = n\)) is given by: \[\frac{n!}{x_1!x_2!x_3!}(p_1^{x_1})(p_2^{x_2})(p_3^{x_3})\]
 Suppose a roulette wheel has 18 red slots, 18 black slots, and 2 green slots: find the probability of getting 7 red outcomes, 6 black outcomes, and 2 green outcomes (in \(7+6+2=15\) trials).  </p>
 
 <p><strong>Sln</strong>: Here, \(n=15, x_1 = 7, x_2 =6, x_3=2\), while \(p_1 = p_2 = \displaystyle \frac{18}{18+18+2} = \frac9{19}, p_3 = \frac2{38} = \frac1{19}\). (\(\checkmark: \frac9{19}+\frac9{19}+\frac1{19} = 1\checkmark\)), so \[P(x_1=7,x_2=6,x_3=2) = \frac{15!}{(7!)(6!)(2!)}\left(\frac9{19}\right)^7\left(\frac9{19}\right)^6\left(\frac1{19}\right)^2 = \\ \boxed{(180,\!180)\left(\frac{9^{13}}{19^{15}}\right) \doteq 0.030}\]
@@ -642,13 +725,15 @@ Suppose a roulette wheel has 18 red slots, 18 black slots, and 2 green slots: fi
 
 <h3><u>Section 3: Poisson Probability Distributions</u></h3>
 
-<p><strong>4</strong>) In the Poisson probability formula \[P(x) = \frac{\mu^xe^{-\mu}}{x!},\]what does \(P(0)\) represent? Simplify the formula for the case \(x=0\).</p>
+<p><a name="3.4" class="goback" onclick="winhisback()"><strong>3.4</strong>)</a>
+In the Poisson probability formula \[P(x) = \frac{\mu^xe^{-\mu}}{x!},\]what does \(P(0)\) represent? Simplify the formula for the case \(x=0\).</p>
 
 <p><strong>Sln</strong>: \(P(0)\) represents the probability of zero, i.e., no occurrences of the random event in the interval over which \(\mu\) is expressed (\(\mu\) is always a <q>rate,</q> i.e., the average number of occurrences of something <strong><em>per</em></strong> some other unit). \(P(0) = \displaystyle \frac{\mu^0e^{-\mu}}{0!} = (1)(e^{-\mu})/(1)\) (because \(\mu^0 = 1\) for any value of \(\mu\), and \(0!=1\) by convention) \(= e^{-\mu}\), i.e., \[\boxed{P(0) = e^{-\mu}}\]
 (Note: this formula, along with the permutations and combinations formulae, is one of the reasons why we define \(0!=1\).)
 <br><br></p>
 
-<p><strong>7</strong>) Assume that the mean number of (Atlantic) hurricanes per year is 6.1, and that the actual number in a year is a random variable with a Poisson distribution.</p>
+<p><a name="3.7" class="goback" onclick="winhisback()"><strong>3.7</strong>)</a>
+Assume that the mean number of (Atlantic) hurricanes per year is 6.1, and that the actual number in a year is a random variable with a Poisson distribution.</p>
 
 <p><strong>a</strong>) Find the probability of 7 hurricanes in a given year.</p>
 
@@ -669,14 +754,16 @@ Suppose a roulette wheel has 18 red slots, 18 black slots, and 2 green slots: fi
 <p><strong>Sln</strong>: The difference of 0.7 years is \(\displaystyle \frac{0.7}{55} \doteq 0.013 = 1.3\%\) of the 55 years, i.e., a really small fraction thereof; therefore, based on this <q>sample of one,</q> the Poisson distribution does appear to be a good model in this particular instance (but see the comment following Problem 13c below).
 <br><br></p>
 
-<p><strong>10</strong>) A recent year in New York City saw 333 murders; assuming the actual number of murders on any given day is a Poisson distributed random variable with mean given by that data, find the probability of a day without any murders? Are there expected to be many days with no murders in NYC?</p>
+<p><a name="3.10" class="goback" onclick="winhisback()"><strong>3.10</strong>)</a>
+A recent year in New York City saw 333 murders; assuming the actual number of murders on any given day is a Poisson distributed random variable with mean given by that data, find the probability of a day without any murders? Are there expected to be many days with no murders in NYC?</p>
 
 <p><strong>Sln</strong>: The mean number of murders per day is \(\mu = \displaystyle \frac{333}{365} \doteq 0.912\,329\); therefore, letting \(x = \) the random variable <q>number of murders on a given day,</q> we have:</p>
 
 <p>\(P(\text{a day with no murders}) = P(x=0) = e^{-\mu} \doteq \boxed{ 0.402}\) and the expected number of days with no murders is \((0.402)(365) \doteq 147\) days, or just about 2 out of every 5 days with no murders. (If this seems like too many days, given that the average is almost one per day, remember that the complement of 0 or 1 murders is 2 or 3 or 4 or...so even though on a majority of days there are only 0 or 1 murders, there are <q>enough</q> days with multiple murders to <q>make up for</q> that.) 
 <br><br></p>
 
-<p><strong>13</strong>) In South London in WWII, a total of 535 bombs fell on an area which was divided into 576 regions of 0.25 km<sup>2</sup> each. Assuming the actual number of bombs to hit a region is a Poisson distributed random variable with mean given by the above data:</p>
+<p><a name="3.13" class="goback" onclick="winhisback()"><strong>3.13</strong>)</a>
+In South London in WWII, a total of 535 bombs fell on an area which was divided into 576 regions of 0.25 km<sup>2</sup> each. Assuming the actual number of bombs to hit a region is a Poisson distributed random variable with mean given by the above data:</p>
 
 <p><strong>a</strong>) Find the probability of a randomly-selected region receiving exactly 2 hits.</p>
 
@@ -695,7 +782,8 @@ or 98 rounded to the nearest whole number of regions. (Note that if you use the 
 <p><strong>Sln</strong>: The difference &mdash; \(98.1-93=5.1\) &mdash; is only \(\displaystyle \frac{5.1}{576} \doteq 0.009 = 0.9\%\) of the 576 total number of regions. Therefore we conclude that the absolute difference of (very nearly) 5 regions is actually <strong><em>relatively</em></strong> quite small, and this one piece of evidence would tend to support the appropriateness of the Poisson distribution in this instance. (However, this is what we would call <q>in the biz</q> <q>a sample of one,</q> which proves absolutely nothing in statistics: we would need to perform the same analysis for at least 0, 1, 3, and 4 hits (and perhaps more, if there are regions with that many hits) to say with reasonable confidence that the Poisson distribution is a good model for all the data; in Chapter 12 we learn how to ask and answer this question more precisely, at which time this problem is revisited.)
 <br><br></p>
 
-<p><strong>16</strong>) In a recent year, the text author wrote 181 checks; assuming the number of checks written on a given day is a Poisson distributed random variable with mean given by the above data, what is the probability that on a randomly selected day, the author wrote at least one check?</p>
+<p><a name="3.16" class="goback" onclick="winhisback()"><strong>3.16</strong>)</a>
+In a recent year, the text author wrote 181 checks; assuming the number of checks written on a given day is a Poisson distributed random variable with mean given by the above data, what is the probability that on a randomly selected day, the author wrote at least one check?</p>
 
 <p><strong>Sln</strong>: The mean we need for the Poisson distribution formula is \(\mu =\displaystyle \frac{181\text{ checks}}{365\text{ days}} \doteq 0.496\) checks per day, and the <q>event</q> <q>wrote at least one check</q> is the complement of the event <q>wrote no, i.e., zero checks,</q> so: </p>
 
