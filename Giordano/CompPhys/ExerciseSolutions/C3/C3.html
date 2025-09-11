@@ -414,29 +414,47 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
 
 <div id="GiorCPC3E20Title" style="center"></div>
 
-<form id="C3E20swtch" onchange="makeC3E20Graph()">
+<form class=cen id="C3E20swtch" onchange="makeC3E20Graph()">
     <label for="C3E20swtchIn">Generate Plots (Note: takes a little while)</label>
     <input type="checkbox" name="C3E20swtchIn">
 </form>
 
-<p><center><table id="E20bifdiaGraphTable">
-  <tr style="border: none;">
-    <td class="cen" style="border: none;">
-      PPM Bifurcation Diagram
-    </td>
-    <td class="cen" style="border: none;">
-      Bifurcation Diagram Detail
-    </td>
-  </tr>
-  <tr style="border: none; background-color: white;">
-    <td class="cen" style="border: none;">
-      <div class="chart" id="GiorCPC3E20bifdiaChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20. PPM Bifurcation Diagram"></div>
-    </td>
-    <td class="cen" style="border: none;">
-      <div class="chart" id="GiorCPC3E20bddetChart" alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20. Bifurcation Diagram Detail"></div>
-    </td>
-  </tr>
-</table></center></p>
+<p><center>
+  <table>
+    <tr style="border: none; background-color: white;">
+      <td class="cen" style="border: none;">
+        PPM Bifurcation Diagram
+      </td>
+      <td class="cen" style="border: none;">
+        BD Detail 1
+      </td>
+      <td class="cen" style="border: none;">
+        BD Detail 2
+      </td>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <td class="cen" style="border: none;">
+        <div class="chart"  id="GiorCPC3E20bifdiaChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20. PPM Bifurcation Diagram">
+        </div>
+      </td>
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E20bddetLChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20.   Bifurcation Diagram Detail Lower Portion"></div>
+      </td>
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E20bddetUChart" 
+            alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20. Bifurcation Diagram Detail Upper Portion"></div>
+      </td>
+    </tr>
+    <!--tr style="border: none; background-color: white;">
+      <td colspan=3 class="cen" style="border: none;">
+        $F_D$
+      </td>
+    </tr-->
+  </table>
+        \(F_D\)
+</center></p>
 
 <h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
 
