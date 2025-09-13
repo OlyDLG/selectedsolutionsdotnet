@@ -52,6 +52,15 @@ Number.prototype.intIfClose = function(prec) {
   return (test.zeroIfClose(prec)==0) ? temp2 : temp1;
 };
 
+Array.prototype.someClose = function(val, prec) {
+  if (isNumericalArray(this)) {
+    return this.some((e) => (e-val).zeroIfClose(prec) == 0);
+  }
+  else {
+    return this.some((e) => e==val);
+  }
+}
+
 function simpleBisection(f, L, U, prec, tries) {
   let res = NaN;
   let fL = f(L).zeroIfClose(prec);
