@@ -15,31 +15,26 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         swtchForm = document.getElementById("C3E20swtch"),
         mainData = [['FD', 'theta']],
         mainOptions = {...globalChartOptions,
-                       hAxis: {//title: 'F_D',
-                               viewWindowMode: 'explicit',
-                               viewWindow: {min: 1.42, max: 1.49}},
-                       vAxis: {title: '\u03B8 (radians)',
-                               viewWindowMode: 'explicit',
+                       hAxis: {viewWindowMode: 'explicit',
+                               viewWindow: {min: 1.42, max: 1.49},
+                               ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
+                       vAxis: {viewWindowMode: 'explicit',
                                viewWindow: {min: 0.75, max: 3},
                                ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none', //lineWidth: 0,  
-                       width: 400, height: 400},
+                       pointSize: 1, legend: 'none',
+                       width: 300, height: 300},
         mainChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E20bifdiaChart")),
         detData = [['FD', 'theta']],
         detOptions = {...globalChartOptions,
-                      hAxis: {//title: 'F_D',
-                              viewWindowMode: 'explicit',
+                      hAxis: {viewWindowMode: 'explicit',
                               viewWindow: {min: 1.476, max: 1.485},
                               ticks: [1.476, 1.479, 1.482, 1.485]},
-                      vAxis: {title: '\u03B8 (radians)',
-                              viewWindowMode: 'explicit',
+                      vAxis: {viewWindowMode: 'explicit',
                               },
-                      pointSize: 1, legend: 'none', //lineWidth: 0, 
-                      width: 400, height: 400},
+                      pointSize: 1, legend: 'none', 
+                      width: 300, height: 300},
         detLChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E20bddetLChart")),
-        detUChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E20bddetUChart")),
-        title = "<center><h3>PPM Bifurcation Diagram & Details</h3></center>";
-  dsEBIiH("GiorCPC3E20Title", title);
+        detUChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E20bddetUChart"));
 
   let FD = FDmin;
   
@@ -92,12 +87,10 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         FD += dFDmain;
       }
     }
-    mainOptions.chartArea.bottom = -10;
     draw(mainChart, mainData, mainOptions);
 
-    detOptions.chartArea.bottom = -10;
-    detOptions.vAxis.viewWindow = {min: 0.8, max: 1.2};
-    detOptions.vAxis.ticks = [0.8, 1.0, 1.2];
+    detOptions.vAxis.viewWindow = {min: 0.95, max: 1.15};
+    detOptions.vAxis.ticks = [0.95, 1.05, 1.15];
     draw(detLChart, detData, detOptions);
 
     detOptions.vAxis.viewWindow = {min: 2.0, max: 3.0};
