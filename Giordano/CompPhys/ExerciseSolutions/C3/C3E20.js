@@ -6,14 +6,15 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         WD = 2.0 / 3, 
         T = tpi / WD,
         tmin = 0, 
-        tmax = 400 * T, 
+        tmax = 364 * T, 
         Xient = 300 * T,
         FDmin = 1.42, 
         FDmax = 1.49,
-        FDper2 = 1.424,
+        FDper2 = 1.4235,
         dFDmain = 0.001, 
-        dFDdet = 0.00025,
+        dFDdet = 0.0002,
         distinctTheta = [],
+        XFD = [],
         swtchForm = document.getElementById("C3E20swtch"),
         mainData = [['FD', 'theta']],
         mainOptions = {...globalChartOptions,
@@ -41,6 +42,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
   let FD = FDmin, 
       inDet = false, 
       detCntr = 0,
+      nDistinctTheta = 0,
       newFD = false;
   
   function makeC3E20Graph() {
@@ -61,7 +63,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
       while (FD < FDmax) {
         inDet = (FD >= 1.475) && (FD <= 1.485);
         let t = 0;
-        let h = 0.04 * T;
+        let h = 0.02 * T;
         let fn = [0.2, 0];
         while (t < Xient) { // Calculate but "throw away" first 300 driving period results
           fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
@@ -76,7 +78,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         h /= 10;
         let h2 = h/2; 
         let nT = 301;
-        while (t <= tmax) { // Begin accumulating results
+        while (t < tmax) { // Begin accumulating results
           fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
           if (fn[0] > pi) {
             fn[0] -= tpi;
@@ -92,7 +94,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
             }
             if (inDet) {
               detData.push([FD, fn[0]]);
-              if ((detCntr % 4)==0) {
+              if ((detCntr % 5)==0) {
                 mainData.push([FD, fn[0]]);
               }
               detCntr += 1;
@@ -104,7 +106,12 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
           }
           t += h;
         }
+        if (distinctTheta.length > nDistinctTheta) {
+          XFD.push(FD);
+          nDistinctTheta = distinctTheta.length;
+        }
         FD += (inDet) ? dFDdet : dFDmain;
+        distinctTheta.length = 0;
       }
     }
     draw(mainChart, mainData, mainOptions);
