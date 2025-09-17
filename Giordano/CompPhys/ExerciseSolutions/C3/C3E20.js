@@ -1,5 +1,5 @@
 function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
-  const g = 9.8, 
+  const //g = 9.8, 
         pi = Math.PI, 
         npi = -1 * pi,
         tpi = 2 * pi,
@@ -12,7 +12,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         FDmax = 1.49,
         FDper2 = 1.4235,
         dFDmain = 0.001, 
-        dFDdet = 0.0002,
+        dFDdet = 0.0001,
         distinctTheta = [],
         XFD = [],
         swtchForm = document.getElementById("C3E20swtch"),
@@ -43,7 +43,8 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
       inDet = false, 
       detCntr = 0,
       nDistinctTheta = 0,
-      newFD = false;
+      newFD = false,
+      prec = -Math.log10(0.05);
   
   function makeC3E20Graph() {
 
@@ -63,10 +64,12 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
       while (FD < FDmax) {
         inDet = (FD >= 1.475) && (FD <= 1.485);
         let t = 0;
-        let h = 0.02 * T;
+//        let h = 0.01 * T;
+        let h = 0.01;
         let fn = [0.2, 0];
         while (t < Xient) { // Calculate but "throw away" first 300 driving period results
-          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+//          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+          fn = EulerCromer2D(dxdt, fn, t, h);
           if (fn[0] > pi) {
             fn[0] -= tpi;
           }
@@ -75,11 +78,12 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
           }
           t += h;
         }
-        h /= 10;
+//        h /= 10;
         let h2 = h/2; 
         let nT = 301;
         while (t < tmax) { // Begin accumulating results
-          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+//          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+          fn = EulerCromer2D(dxdt, fn, t, h);
           if (fn[0] > pi) {
             fn[0] -= tpi;
           }
@@ -88,13 +92,13 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
           }
           if (Math.abs(t - nT * T) < h2) {
             if (FD >= FDper2) {
-              if (distinctTheta.length==0 || !distinctTheta.someClose(fn[0],3)) {
+              if (distinctTheta.length==0 || !distinctTheta.someClose(fn[0],prec)) {
                 distinctTheta.push(fn[0]);
               }
             }
             if (inDet) {
               detData.push([FD, fn[0]]);
-              if ((detCntr % 5)==0) {
+              if ((detCntr % 10)==0) {
                 mainData.push([FD, fn[0]]);
               }
               detCntr += 1;
@@ -109,6 +113,9 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         if (distinctTheta.length > nDistinctTheta) {
           XFD.push(FD);
           nDistinctTheta = distinctTheta.length;
+          if (nDistinctTheta==8) {
+            prec *= 1.1;
+          }
         }
         FD += (inDet) ? dFDdet : dFDmain;
         distinctTheta.length = 0;
