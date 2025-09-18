@@ -1,6 +1,5 @@
 function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
-  const //g = 9.8, 
-        pi = Math.PI, 
+  const pi = Math.PI, 
         npi = -1 * pi,
         tpi = 2 * pi,
         WD = 2.0 / 3, 
@@ -48,7 +47,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
   
   function makeC3E20Graph() {
 
-    function dxdt(x, t) { // For use with RK42Dnonauton
+    function dxdt(x, t) { // For use with RK42Dnonauton & EulerCromer2d
       let [x1, x2] = x;
       let temp = -1*Math.sin(x1) - [x2]/2 + FD*Math.sin(WD*t);
       return [x2, temp];

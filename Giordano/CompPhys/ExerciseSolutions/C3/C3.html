@@ -103,6 +103,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <script src="./C3E20.js"></script>
 
+<script src="./C3E24.js"></script>
+
 <script>
     // Load google charts
     google.charts.load('current', {'packages':['corechart']});
@@ -110,6 +112,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
     google.charts.setOnLoadCallback(GiorCPC3E8);
     google.charts.setOnLoadCallback(GiorCPC3E16);
     google.charts.setOnLoadCallback(GiorCPC3E20);
+    google.charts.setOnLoadCallback(GiorCPC3E24);
 </script>
 
 <p><link rel="stylesheet" href="../../../../Styles.css">
@@ -120,6 +123,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
                              makeC3E8Graph = GiorCPC3E8(); 
                              makeC3E16Graph = GiorCPC3E16(); 
                              makeC3E20Graph = GiorCPC3E20(); 
+                             makeC3E24Graph = GiorCPC3E24(); 
 "></p>
 
 <h2><center>Selected Exercise Solutions</h2>
@@ -156,6 +160,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <a href="#E3.8">3.8</a>\(~~~~\)
 <a href="#E3.16">3.16 &amp; 17</a>\(~~~~\)
 <a href="#E3.20">3.20</a>\(~~~~\)
+<a href="#E3.24">3.24</a>\(~~~~\)
 <a href="#Source">Source code links</a>\(~~~~\)
 <a href="#Notes">Notes, References, etc.</a></p>
 
@@ -323,44 +328,6 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
         <input type="number" name="C3E16WDIn" min="60" max="68" step="1" value="64">
       </form>
     </td>
-<!--  
-    <td style="border: none;">
-      <form id="C3E16q" onchange="makeC3E16Graph()">
-        <label for="C3E16qIn">$q$:</label>
-        <input type="number" name="C3E16qIn" min="0.46" max="0.54" step="0.01" value="0.5">
-      </form>
-    </td>
-    <td style="border: none;">
-      <form id="C3E16el" onchange="makeC3E16Graph()"
-        <label for="C3E16elIn">$\ell$:</label>
-        <input type="number" name="C3E16elIn" min="9.76" max="9.84" step="0.01" value="9.8">
-      </form>
-    </td>
-  </tr>
-  <tr style="border: none; background-color: white;">
-    <td style="border: none;">
-      <form id="C3E16h" onchange="makeC3E16Graph()">
-        <label for="C3E16hIn">$\Delta t$ (seconds):</label>
-        <select name="C3E16hIn">
-          <option value="0.01">0.01</option>
-          <option value="0.04" selected>0.04</option>
-          <option value="0.08">0.08</option>
-        </select>
-      </form>
-    </td>
-    <td style="border: none;">
-      <form id="C3E16tmin" onchange="makeC3E16Graph()">
-        <label for="C3E16tminIn">$t_{min}$ (seconds):</label>
-        <input type="number" name="C3E16tminIn" min="0" max="60" step="60" value="0">
-      </form>
-    </td>
-    <td colspan=2 style="border: none;">
-      <form id="C3E16N" onchange="makeC3E16Graph()">
-        <label for="C3E16NIn">$N$ (total number of intervals<br>strange attractor plotted if = 15000):</label>
-        <input type="number" name="C3E16NIn" min="1500" max="15000" step="13500" value="1500">
-      </form>
-    </td>
--->
     <td style="border: none;">
       <form id="C3E16swtch" onchange="makeC3E16Graph()">
         <label for="C3E16swtchIn">Switch between time domain and phase plane (unchecked, N=1500)<br>and attractor (checked, N=150000, takes a moment to compute)</label>
@@ -406,7 +373,7 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
   </tr>
 </table></center></p>
 
-<h3><a class="goback" name="E3.20" onclick="winhisback()"><u>Exercises 3.20</u></a></h3>
+<h3><a class="goback" name="E3.20" onclick="winhisback()"><u>Exercise 3.20</u></a></h3>
 
 <p>\(~~~~\)Calculate the bifurcation diagram for the PPM, including a magnified plot where the periodicity is greater than 4, and obtain an estimate of the Feigenbaum \(\delta\). </p>
 
@@ -453,10 +420,119 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
   </table>
 </center></p>
 
+<h3><a class="goback" name="E3.24" onclick="winhisback()"><u>Exercise 3.24</u></a></h3>
+
+<p>\(~~~~\)Investigate the maps 
+\[\begin{eqnarray}
+\text{a) } &amp; x_{i+1} = &amp; \left[\alpha x_i 2^n + \beta\right](\text{mod }2^n)/2^n &amp; \text{ and} \\
+\text{b) } &amp; x_{i+1} = &amp; \left[\alpha \lfloor x_i 2^n \rfloor + \beta\right](\text{mod }2^n)/2^n
+\end{eqnarray}\] 
+for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers of the form \(8m\pm1, 8m\pm3, m\) an integer, and \(\lfloor x \rfloor\) is the greatest-integer-not-exceeding-\(x\) (the <q>floor</q>) function. </p>
+
+<h3>Solution</h3>
+
+<div id="GiorCPC3E24Title" style="center"></div>
+
+<p><center>
+  <table>
+    <tr style="border: none;">
+      <td colspan=2 style="border: none;">
+        <form id="C3E24Alpha" onchange="makeC3E24Graph()">
+          <label for="C3E24AlphaIn">\(\alpha\):</label>
+          <input type="number" name="C3E24AlphaIn" min="1" max="15" step="1" value="1">
+        </form>
+      </td>
+      <td colspan=2 style="border: none;">
+        <form id="C3E24Beta" onchange="makeC3E24Graph()">
+          <label for="C3E24BetaIn">\(\beta\):</label>
+          <input type="number" name="C3E24BetaIn" min="0" max="2" step="1" value="0">
+        </form>
+      </td>
+      <td colspan=2 style="border: none;">
+        <form id="C3E24x0" onchange="makeC3E24Graph()">
+          <label for="C3E24x0In">\(x_0\):</label>
+          <input type="number" name="C3E24x0In" min="0" max="0.9" step="0.1" value="0.5">
+        </form>
+      </td>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <td colspan=3 style="border: none;">
+        <form id="C3E24Base" onchange="makeC3E24Graph()">
+          <label for="C3E24BaseIn">Base:</label>
+          <input type="number" name="C3E24BaseIn" min="2" max="3" step="1" value="2">
+        </form>
+      </td>
+      <td colspan=3 style="border: none;">
+        <form id="C3E24n" onchange="makeC3E24Graph()">
+          <label for="C3E24nIn">\(n\):</label>
+          <input type="number" name="C3E24nIn" min="5" max="11" step="3" value="8">
+        </form>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr style="border: none; background-color: white;">
+      <th class="cen" style="border: none;">Model a)</th>
+      <th class="cen" style="border: none;">Model b)</th>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <th colspan=2 class="cen" style="border: none;">
+         <q>Time Series</q> (\(x_i\) vs. \(i\))
+      </th>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <td class="cen" style="border: none;">
+        <div class="chart"  id="GiorCPC3E24TSaChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. Time Series Chart">
+        </div>
+      </td>
+      <td class="cen" style="border: none;">
+        <div class="chart"  id="GiorCPC3E24TSbChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. Time Series Chart">
+        </div>
+      </td>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <th colspan=2 class="cen" style="border: none;">
+         \(x_{i+1}\) vs. \(x_i\)
+      </th>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E24XnVxaChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. xnext vs. xcurrent Chart">
+        </div>
+      </td>
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E24XnVxbChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. xnext vs. xcurrent Chart">
+        </div>
+      </td>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <th colspan=2 class="cen" style="border: none;">
+         <q>Phase Plane</q>: \(\Delta x = x_{i+1} - x_i\) vs. \(x_i\)
+      </th>
+    </tr>
+    <tr style="border: none; background-color: white;">
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E24PPaChart" 
+            alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. Phase Plane Chart">
+        </div>
+      </td>
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E24PPbChart" 
+            alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. Phase Plane Chart">
+        </div>
+      </td>
+    </tr>
+  </table>
+</center></p>
+
 <h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
 
-<p>Local:
-<a href="./C3E4.js">Exercise 4</a>\(~~~~\)<a href="./C3E8.js">Exercise 8</a>\(~~~~\)<a href="./C3E16.js">Exercise 16/7</a><br>
+<p>Local:<br>
+Exercise #: <a href="./C3E4.js">4</a>\(~~~~\)<a href="./C3E8.js">8</a>\(~~~~\)<a href="./C3E16.js">16/17</a>\(~~~~\)<a href="./C3E20.js">20</a>\(~~~~\)<a href="./C3E24a.js">24a</a><br>
 <a href="../../../../MathUtils.js">Math Utilities</a> (numerical method implementations, matrix arithmetic, etc.)<br>
 <a href="../../../../GeneralUtils.js">General Utilities</a> (used here primarily for innerHTML getting and setting aliases)<br>
 <a href="../../../../GChartsUtils.js">Google Charts Utilities</a> (presently used only for shared Google Charts API settings)<br></p>
