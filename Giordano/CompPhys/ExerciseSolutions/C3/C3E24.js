@@ -1,84 +1,48 @@
 function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
-  const imax = 50,
-//        xa = [], xb = [],
+  const imax = 51,
         alphaForm = document.getElementById("C3E24Alpha"),
         betaForm = document.getElementById("C3E24Beta"),
         x0Form = document.getElementById("C3E24x0"),
         baseForm = document.getElementById("C3E24Base"),
         nForm = document.getElementById("C3E24n"),
+        tsOptions = {...globalChartOptions,
+                     hAxis: {viewWindowMode: 'explicit',
+                             viewWindow: {min: 0, max: 50},
+                             ticks: [0, 10, 20, 30, 40, 50]},
+                     vAxis: {viewWindowMode: 'explicit',
+                             viewWindow: {min: 0, max: 1},
+                             ticks: [0, 0.25, 0.5, 0.75, 1.0],
+                             titleTextStyle: {fontSize: 12, bold: true}},
+                     pointSize: 1, legend: 'none',
+                     width: 300, height: 300},
+        otherOptions = {...globalChartOptions,
+                        hAxis: {viewWindowMode: 'explicit',
+                                viewWindow: {min: 0, max: 1},
+                                ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
+                        vAxis: {viewWindowMode: 'explicit',
+                                viewWindow: {min: 0, max: 1},
+                                ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
+                        pointSize: 1, legend: 'none',
+                        width: 300, height: 300},
 
   // Model a)
         tsaData = [],//['i', 'x_i']], // ts = "time series", i.e., plot of x_i vs. i
-        tsaOptions = {...globalChartOptions,
-                     //  hAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 1.42, max: 1.49},
-                     //          ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
-                     //  vAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 0.75, max: 3},
-                     //          ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none',
-                       width: 400, height: 300},
         tsaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24TSaChart")),
 
         xnVxaData = [],//['x_i', 'x_(i+1)']], // plot of xnext vs. xcurrent
-        xnVxaOptions = {...globalChartOptions,
-                     //  hAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 1.42, max: 1.49},
-                     //          ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
-                     //  vAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 0.75, max: 3},
-                     //          ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none',
-                       width: 300, height: 300},
         xnVxaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24XnVxaChart")),
 
         ppaData = [],//['x_i', 'dx_i']], // discrete "phase plane" plot, dx = xnext - xcurrent vs. xcurrent
-        ppaOptions = {...globalChartOptions,
-                     //  hAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 1.42, max: 1.49},
-                     //          ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
-                     //  vAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 0.75, max: 3},
-                     //          ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none',
-                       width: 300, height: 300},
         ppaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24PPaChart"));
   
   // Model b)
         tsbData = [],//['i', 'x_i']],
-        tsbOptions = {...globalChartOptions,
-                     //  hAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 1.42, max: 1.49},
-                     //          ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
-                     //  vAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 0.75, max: 3},
-                     //          ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none',
-                       width: 400, height: 300},
         tsbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24TSbChart")),
 
         xnVxbData = [],//['x_i', 'x_(i+1)']],
-        xnVxbOptions = {...globalChartOptions,
-                     //  hAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 1.42, max: 1.49},
-                     //          ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
-                     //  vAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 0.75, max: 3},
-                     //          ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none',
-                       width: 300, height: 300},
         xnVxbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24XnVxbChart")),
 
         ppbData = [],//['x_i', 'dx_i']],
-        ppbOptions = {...globalChartOptions,
-                     //  hAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 1.42, max: 1.49},
-                     //          ticks: [1.42, 1.4375, 1.455, 1.4725, 1.49]},
-                     //  vAxis: {viewWindowMode: 'explicit',
-                     //          viewWindow: {min: 0.75, max: 3},
-                     //          ticks: [0.75, 1.5, 2.25, 3.0]},
-                       pointSize: 1, legend: 'none',
-                       width: 300, height: 300},
         ppbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24PPbChart"));
   
   function makeC3E24Graph() {
@@ -122,13 +86,17 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
       ppbData.push([xb, tempb-xb]);
       xb = tempb;
     }
-           
-    draw(tsaChart, tsaData, tsaOptions);
-    draw(xnVxaChart, xnVxaData, xnVxaOptions);
-    draw(ppaChart, ppaData, ppaOptions);
-    draw(tsbChart, tsbData, tsbOptions);
-    draw(xnVxbChart, xnVxbData, xnVxbOptions);
-    draw(ppbChart, ppbData, ppbOptions);
+    
+    tsOptions.vAxis.title = 'Model "a"';
+    draw(tsaChart, tsaData, tsOptions);
+    draw(xnVxaChart, xnVxaData, otherOptions);
+    draw(ppaChart, ppaData, otherOptions);
+
+    tsOptions.vAxis.title = 'Model "b"';       
+    draw(tsbChart, tsbData, tsOptions);
+    draw(xnVxbChart, xnVxbData, otherOptions);
+    draw(ppbChart, ppbData, otherOptions);
+
     tsaData.length=0;
     xnVxaData.length=0;
     ppaData.length=0;

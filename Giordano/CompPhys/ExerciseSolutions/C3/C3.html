@@ -431,9 +431,10 @@ for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers 
 
 <h3>Solution</h3>
 
-<div id="GiorCPC3E24Title" style="center"></div>
+<p>Here, we discuss the results following the graphs.</p>
 
 <p><center>
+  <h3>Multiplicative Congruential Method Pseudo-random Number Generation Results</h3>
   <table>
     <tr style="border: none;">
       <td colspan=2 style="border: none;">
@@ -472,52 +473,45 @@ for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers 
   </table>
   <table>
     <tr style="border: none; background-color: white;">
-      <th class="cen" style="border: none;">Model a)</th>
-      <th class="cen" style="border: none;">Model b)</th>
-    </tr>
-    <tr style="border: none; background-color: white;">
-      <th colspan=2 class="cen" style="border: none;">
+      <!--td style="border: none;"></td-->
+      <th class="cen" style="border: none;">
          <q>Time Series</q> (\(x_i\) vs. \(i\))
+      </th>
+      <th class="cen" style="border: none;">
+         \(x_{i+1}\) vs. \(x_i\)
+      </th>
+      <th class="cen" style="border: none;">
+         <q>Phase Plane</q>: \(\Delta x = x_{i+1} - x_i\) vs. \(x_i\)
       </th>
     </tr>
     <tr style="border: none; background-color: white;">
+      <!--th class="cen" style="border: none; valign: middle;">Model "a"</th-->
       <td class="cen" style="border: none;">
         <div class="chart"  id="GiorCPC3E24TSaChart" 
              alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. Time Series Chart">
         </div>
       </td>
       <td class="cen" style="border: none;">
-        <div class="chart"  id="GiorCPC3E24TSbChart" 
-             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. Time Series Chart">
-        </div>
-      </td>
-    </tr>
-    <tr style="border: none; background-color: white;">
-      <th colspan=2 class="cen" style="border: none;">
-         \(x_{i+1}\) vs. \(x_i\)
-      </th>
-    </tr>
-    <tr style="border: none; background-color: white;">
-      <td class="cen" style="border: none;">
         <div class="chart" id="GiorCPC3E24XnVxaChart" 
              alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. xnext vs. xcurrent Chart">
         </div>
       </td>
       <td class="cen" style="border: none;">
-        <div class="chart" id="GiorCPC3E24XnVxbChart" 
-             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. xnext vs. xcurrent Chart">
+        <div class="chart" id="GiorCPC3E24PPaChart" 
+            alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. Phase Plane Chart">
         </div>
       </td>
     </tr>
     <tr style="border: none; background-color: white;">
-      <th colspan=2 class="cen" style="border: none;">
-         <q>Phase Plane</q>: \(\Delta x = x_{i+1} - x_i\) vs. \(x_i\)
-      </th>
-    </tr>
-    <tr style="border: none; background-color: white;">
+      <!--th class="cen" style="border: none; vertical-align: middle;">Model "b"</th-->
       <td class="cen" style="border: none;">
-        <div class="chart" id="GiorCPC3E24PPaChart" 
-            alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. Phase Plane Chart">
+        <div class="chart"  id="GiorCPC3E24TSbChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. Time Series Chart">
+        </div>
+      </td>
+      <td class="cen" style="border: none;">
+        <div class="chart" id="GiorCPC3E24XnVxbChart" 
+             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. xnext vs. xcurrent Chart">
         </div>
       </td>
       <td class="cen" style="border: none;">
@@ -528,6 +522,27 @@ for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers 
     </tr>
   </table>
 </center></p>
+
+<h3>Interesting parameter sets</h3> 
+
+<p>\(~~\)<h4>Model <q>a</q></h4>
+\(~~~~\)<h5>Appears to be <q>good</q> for generating pseudorandom numbers</h5></p>
+
+<p>\(~~~~\)<h5>Appears to have a <q>long</q> cycle</h5></p>
+
+<p>\(~~\)<h4>Model <q>b</q></h4>
+\(~~~~\)<h5>Appears to be <q>good</q> for generating pseudorandom numbers<h5>
+\(\alpha=3, \beta=0, x_0=0.1, Base=2, n=8\)<br>
+\(\alpha=3, \beta=0, x_0=0.2, Base=2, n=8\)<br>
+\(\alpha=3, \beta=0, x_0=0.6, Base=2, n=8\)<br>
+\(\alpha=3, \beta=0, x_0=0.7, Base=2, n=8\)<br></p>
+
+<p>\(~~~~\)<h5>Appear to have a <q>long</q> cycle</h5>
+\(\alpha=3, \beta=0, x_0=0.3, Base=2, n=8\): appears to have a period-16 cycle.<br>
+\(\alpha=3, \beta=0, x_0=0.4, Base=2, n=8\): appears to have a period-32 cycle.<br>
+\(\alpha=3, \beta=0, x_0=0.8, Base=2, n=8\): appears to have a period-16 cycle.<br>
+\(\alpha=3, \beta=0, x_0=0.9, Base=2, n=8\): appears to have a period-32 cycle.<br>
+\(\alpha=5, \beta=0, x_0=0.3, Base=2, n=8\): appears to have a period-18 cycle.<br></p>
 
 <h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
 
