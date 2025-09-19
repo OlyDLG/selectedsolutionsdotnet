@@ -15,15 +15,25 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
                              titleTextStyle: {fontSize: 12, bold: true}},
                      pointSize: 1, legend: 'none',
                      width: 300, height: 300},
-        otherOptions = {...globalChartOptions,
-                        hAxis: {viewWindowMode: 'explicit',
-                                viewWindow: {min: 0, max: 1},
-                                ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
-                        vAxis: {viewWindowMode: 'explicit',
-                                viewWindow: {min: 0, max: 1},
-                                ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
-                        pointSize: 1, legend: 'none',
-                        width: 300, height: 300},
+        xnVxOptions = {...globalChartOptions,
+                       hAxis: {viewWindowMode: 'explicit',
+                               viewWindow: {min: 0, max: 1},
+                               ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
+                       vAxis: {viewWindowMode: 'explicit',
+                               viewWindow: {min: 0, max: 1},
+                               ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
+                       pointSize: 1, legend: 'none',
+                       width: 300, height: 300},
+        ppOptions = {...globalChartOptions,
+                     hAxis: {viewWindowMode: 'explicit',
+                             viewWindow: {min: 0, max: 1},
+                             ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
+                     vAxis: {viewWindowMode: 'explicit',
+                             viewWindow: {min: -1, max: 1},
+                             ticks: [-1, -0.75, -0.5, -0.25, 0, 
+                                     0.25, 0.5, 0.75, 1.0]},
+                     pointSize: 1, legend: 'none',
+                     width: 300, height: 300},
 
   // Model a)
         tsaData = [],//['i', 'x_i']], // ts = "time series", i.e., plot of x_i vs. i
@@ -89,13 +99,13 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
     
     tsOptions.vAxis.title = 'Model "a"';
     draw(tsaChart, tsaData, tsOptions);
-    draw(xnVxaChart, xnVxaData, otherOptions);
-    draw(ppaChart, ppaData, otherOptions);
+    draw(xnVxaChart, xnVxaData, xnVxOptions);
+    draw(ppaChart, ppaData, ppOptions);
 
     tsOptions.vAxis.title = 'Model "b"';       
     draw(tsbChart, tsbData, tsOptions);
-    draw(xnVxbChart, xnVxbData, otherOptions);
-    draw(ppbChart, ppbData, otherOptions);
+    draw(xnVxbChart, xnVxbData, xnVxOptions);
+    draw(ppbChart, ppbData, ppOptions);
 
     tsaData.length=0;
     xnVxaData.length=0;
