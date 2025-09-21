@@ -1,5 +1,11 @@
 function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
   const imax = 51,
+        tsaData = [], // ts = "time series", i.e., plot of x_i vs. i
+        xnVxaData = [], // plot of xnext vs. xcurrent
+        ppaData = [], // discrete "phase plane" plot, dx = xnext - xcurrent vs. xcurrent
+        tsbData = [],
+        xnVxbData = [],
+        ppbData = [],
         alphaForm = document.getElementById("C3E24Alpha"),
         betaForm = document.getElementById("C3E24Beta"),
         x0Form = document.getElementById("C3E24x0"),
@@ -33,28 +39,8 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
                              ticks: [-1, -0.75, -0.5, -0.25, 0, 
                                      0.25, 0.5, 0.75, 1.0]},
                      pointSize: 1, legend: 'none',
-                     width: 300, height: 300},
+                     width: 300, height: 300};  
 
-  // Model a)
-        tsaData = [],//['i', 'x_i']], // ts = "time series", i.e., plot of x_i vs. i
-        tsaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24TSaChart")),
-
-        xnVxaData = [],//['x_i', 'x_(i+1)']], // plot of xnext vs. xcurrent
-        xnVxaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24XnVxaChart")),
-
-        ppaData = [],//['x_i', 'dx_i']], // discrete "phase plane" plot, dx = xnext - xcurrent vs. xcurrent
-        ppaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24PPaChart"));
-  
-  // Model b)
-        tsbData = [],//['i', 'x_i']],
-        tsbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24TSbChart")),
-
-        xnVxbData = [],//['x_i', 'x_(i+1)']],
-        xnVxbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24XnVxbChart")),
-
-        ppbData = [],//['x_i', 'dx_i']],
-        ppbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24PPbChart"));
-  
   function makeC3E24Graph() {
 
     function xanext(x) { 
@@ -74,7 +60,14 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
           x0 = Number(x0Form[0].value);
           B = Number(baseForm[0].value),
           n = Number(nForm[0].value),
-          mod = B**n;
+          mod = B**n,
+      tsaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24TSaChart")),
+      xnVxaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24XnVxaChart")),
+      ppaChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24PPaChart")),
+      tsbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24TSbChart")),
+      xnVxbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24XnVxbChart")),
+      ppbChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E24PPbChart"));
+
     let xa = x0, xb = x0;
     tsaData.push(['i', 'x_i']);
     xnVxaData.push(['x_i', 'x_(i+1)']);
