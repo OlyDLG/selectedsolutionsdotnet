@@ -424,14 +424,16 @@ and the fourth-order RK method given in &sect;A1 by Eq.s A9 &amp; A10, is valid 
 
 <p>\(~~~~\)Investigate the maps 
 \[\begin{eqnarray}
-\text{a) } &amp; x_{i+1} = &amp; \left[\alpha x_i 2^n + \beta\right](\text{mod }2^n)/2^n &amp; \text{ and} \\
-\text{b) } &amp; x_{i+1} = &amp; \left[\alpha \lfloor x_i 2^n \rfloor + \beta\right](\text{mod }2^n)/2^n
+\text{a) } &amp; x_{i+1} = &amp; \left[\alpha x_i b^n + \beta\right](\text{mod }b^n)/b^n &amp;~~~~\text{(&quot;Model 1&quot;) and} \\
+\text{b) } &amp; x_{i+1} = &amp; \left[\alpha \lfloor x_i b^n \rfloor + \beta\right](\text{mod }b^n)/b^n &amp;~~~~\text{(&quot;Model 2&quot;)}
 \end{eqnarray}\] 
-for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers of the form \(8m\pm1, 8m\pm3, m\) an integer, and \(\lfloor x \rfloor\) is the greatest-integer-not-exceeding-\(x\) (the <q>floor</q>) function. </p>
+for \(b=2; 0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers of the form \(8m\pm1, 8m\pm3, m\) an integer; and \(\lfloor x \rfloor\) is the greatest-integer-not-exceeding-\(x\) (the <q>floor</q>) function. </p>
 
 <h3>Solution</h3>
 
-<p>Here, we discuss the results following the graphs.</p>
+<p>\(~~~~\)We generalized the <q>models</q> to allow for bases, \(b\), other than \(b=2\) because, well, because it’s not hard to do and because we’re curious by nature. Thus the reader can see the first 64 iterates (the one parameter we have not made user-settable) for \(b=2,3; n=5, 8, 11; \beta=0,1,2; \alpha \in \{1,2,...,15\};\) and \(x_0 \in \{0.1, 0.2, ..., 0.9\}\). (Actually, <q>don’t tell anybody,</q> but if you type in a different number in any of the numerical entry boxes and then <q>tab</q> away from the box&mdash;at least on Google Chrome on a Mac; don’t hit return, though, as that will reload the page and reset all parameters to their defaults&mdash;you may get a <q>complaint,</q> but the program won’t crash and in fact it will perform the programmed iteration using the values in the boxes; thus you can actually study the first-fifty-iterates-behavior of these models for any floating-point values of the parameters you choose.) Also, in addition to graphs of the <q>time series</q>&mdash;\(x_i\) vs. \(i\)&mdash;and the <q>next \(x\) vs. current \(x\)</q>&mdash;\(x_{i+1}\) vs. \(x_i\)&mdash;for each model, we provide a graph of \(\Delta x_i = x_{i+1} - x_i\) vs. \(x_i\)&mdash;the discrete equivalent of plotting \(\displaystyle \frac{dx}{dt}\) vs. \(x\), i.e., the discrete <q>phase plane</q> graph</p>
+
+<p>\(~~~~\)The reader will notice, however, some values omitted from the <q>approved choices</q></p>
 
 <p><center>
   <h3>Multiplicative Congruential Method Pseudo-random Number Generation Results</h3>
@@ -477,21 +479,13 @@ for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers 
          <q>Time Series</q> (\(x_i\) vs. \(i\))
       </th>
       <th class="cen" style="border: none;">
-         \(x_{i+1}\) vs. \(x_i\)
-      </th>
-      <th class="cen" style="border: none;">
-         <q>Phase Plane</q>: \(\Delta x = x_{i+1} - x_i\) vs. \(x_i\)
+         <q>Phase Plane</q> (\(x_{i+1}\) vs. \(x_i\))
       </th>
     </tr>
     <tr style="border: none; background-color: white;">
       <td class="cen" style="border: none;">
         <div class="chart"  id="GiorCPC3E24TSaChart" 
              alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. Time Series Chart">
-        </div>
-      </td>
-      <td class="cen" style="border: none;">
-        <div class="chart" id="GiorCPC3E24XnVxaChart" 
-             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24a. xnext vs. xcurrent Chart">
         </div>
       </td>
       <td class="cen" style="border: none;">
@@ -507,11 +501,6 @@ for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers 
         </div>
       </td>
       <td class="cen" style="border: none;">
-        <div class="chart" id="GiorCPC3E24XnVxbChart" 
-             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. xnext vs. xcurrent Chart">
-        </div>
-      </td>
-      <td class="cen" style="border: none;">
         <div class="chart" id="GiorCPC3E24PPbChart" 
             alt="Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24b. Phase Plane Chart">
         </div>
@@ -522,15 +511,15 @@ for \(0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including integers 
 
 <h3>Interesting parameter sets</h3> 
 
-<p>\(~~\)<h4>Model <q>a</q></h4>
-\(~~~~\)<h5>Appears to be <q>good</q> for generating pseudorandom numbers</h5></p>
+<p>\(~~~~\)<h4>Model <q>a</q></h4>
+\(~~~~~~\)<h5>Appears to be <q>good</q> for generating pseudorandom numbers</h5></p>
 
-<p>\(~~~~\)<h5>Appears to have a <q>long</q> cycle</h5></p>
+<p>\(~~~~~~\)<h5>Appears to have a <q>long</q> cycle</h5></p>
 
-<p>\(~~\)<h4>Model <q>b</q></h4>
-\(\beta=0\), Base\(=2\), n=8\(:&lt;br&gt;
-&lt;h5&gt;Appears to be &quot;good&quot; for generating pseudo-random numbers&lt;h5&gt;
-\)\alpha=3, 5; x_0=0.1, 0.2, 0.6, 0.7$<br></p>
+<p>\(~~~~\)<h4>Model <q>b</q></h4>
+\(\beta=0\), Base \(=2\), \(n=8\):<br>
+<h5>Appears to be <q>good</q> for generating pseudo-random numbers<h5>
+\(\alpha=3, 5; x_0=0.1, 0.2, 0.6, 0.7\)</p>
 
 <h5>Appears to have a period-8 cycle</h5>
 
