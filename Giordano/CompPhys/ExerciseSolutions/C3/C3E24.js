@@ -10,7 +10,8 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
         baseForm = document.getElementById("C3E24Base"),
         nForm = document.getElementById("C3E24n"),
         tsOptions = {...globalChartOptions,
-                     hAxis: {viewWindowMode: 'explicit',
+                     hAxis: {title: 'i',
+                             viewWindowMode: 'explicit',
                              viewWindow: {min: 0, max: 64},
                              ticks: [0, 16, 32, 48, 64]},
                      vAxis: {viewWindowMode: 'explicit',
@@ -20,10 +21,12 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
                      pointSize: 2, legend: 'none',
                      width: 480, height: 300},
         ppOptions = {...globalChartOptions,
-                     hAxis: {viewWindowMode: 'explicit',
+                     hAxis: {title: 'x_i',
+                             viewWindowMode: 'explicit',
                              viewWindow: {min: 0, max: 1},
                              ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
-                     vAxis: {viewWindowMode: 'explicit',
+                     vAxis: {title: 'x_(i+1)',
+                             viewWindowMode: 'explicit',
                              viewWindow: {min: 0, max: 1},
                              ticks: [0, 0.2, 0.4, 0.6, 0.8, 1.0]},
                      pointSize: 2, legend: 'none',
@@ -71,11 +74,11 @@ function GiorCPC3E24() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 24
       xb = tempb;
     }
     
-    tsOptions.vAxis.title = 'Model "a"';
+    tsOptions.vAxis.title = 'Model "a"\nx_i';
     draw(tsaChart, tsaData, tsOptions);
     draw(ppaChart, ppaData, ppOptions);
 
-    tsOptions.vAxis.title = 'Model "b"';       
+    tsOptions.vAxis.title = 'Model "b"\nx_i';       
     draw(tsbChart, tsbData, tsOptions);
     draw(ppbChart, ppbData, ppOptions);
 

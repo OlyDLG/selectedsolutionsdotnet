@@ -431,9 +431,9 @@ for \(b=2; 0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including inte
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)We generalized the <q>models</q> to allow for bases, \(b\), other than \(b=2\) because, well, because it’s not hard to do and because we’re curious by nature. Thus the reader can see the first 64 iterates (the one parameter we have not made user-settable) for \(b=2,3; n=5, 8, 11; \beta=0,1,2; \alpha \in \{1,2,...,15\};\) and \(x_0 \in \{0.1, 0.2, ..., 0.9\}\). (Actually, <q>don’t tell anybody,</q> but if you type in a different number in any of the numerical entry boxes and then <q>tab</q> away from the box&mdash;at least on Google Chrome on a Mac; don’t hit return, though, as that will reload the page and reset all parameters to their defaults&mdash;you may get a <q>complaint,</q> but the program won’t crash and in fact it will perform the programmed iteration using the values in the boxes; thus you can actually study the first-fifty-iterates-behavior of these models for any floating-point values of the parameters you choose.) Also, in addition to graphs of the <q>time series</q>&mdash;\(x_i\) vs. \(i\)&mdash;and the <q>next \(x\) vs. current \(x\)</q>&mdash;\(x_{i+1}\) vs. \(x_i\)&mdash;for each model, we provide a graph of \(\Delta x_i = x_{i+1} - x_i\) vs. \(x_i\)&mdash;the discrete equivalent of plotting \(\displaystyle \frac{dx}{dt}\) vs. \(x\), i.e., the discrete <q>phase plane</q> graph</p>
+<p>\(~~~~\)We generalized the <q>models</q> to allow for bases, \(b\), other than \(b=2\) because, well, because it’s not hard to do and because we’re curious by nature. Thus the reader can see the first 64 iterates (the one parameter we have not made user-settable; 64 was chosen because our investigations revealed other <q>long</q> cycles with periods equal to a power of 2, e.g., 16 and 32) for \(b=2,3\); \(n=5, 8, 11\); \(\beta=0,1,2\); \(\alpha \in \{1,2,...,15\}\); and \(x_0 \in \{0.1, 0.2, ..., 0.9\}\). (Actually, <q>don’t tell anybody,</q> but if you type in a different number in any of the numerical entry boxes and then <q>tab</q> away from the box&mdash;at least on Google Chrome on a Mac; don’t hit return, though, as that will reload the page and reset all parameters to their defaults&mdash;you may get a <q>complaint,</q> but the program won’t crash and in fact it will perform the programmed iteration using the values in the boxes; thus you can actually study the first-sixty-four-iterates-behavior of these models for any floating-point values of the parameters you choose.)</p>
 
-<p>\(~~~~\)The reader will notice, however, some values omitted from the <q>approved choices</q></p>
+<p>\(~~~~\)</p>
 
 <p><center>
   <h3>Multiplicative Congruential Method Pseudo-random Number Generation Results</h3>
@@ -454,7 +454,7 @@ for \(b=2; 0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including inte
       <td colspan=2 style="border: none;">
         <form id="C3E24x0" onchange="makeC3E24Graph()">
           <label for="C3E24x0In">\(x_0\):</label>
-          <input type="number" name="C3E24x0In" min="0.1" max="0.9" step="0.1" value="0.5">
+          <input type="number" name="C3E24x0In" min="0.0" max="0.9" step="0.1" value="0.5">
         </form>
       </td>
     </tr>
