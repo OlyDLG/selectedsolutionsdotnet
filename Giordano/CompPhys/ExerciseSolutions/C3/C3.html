@@ -431,25 +431,29 @@ for \(b=2; 0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including inte
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)We generalized the <q>models</q> and enable the reader to choose the five parameters \(\alpha, \beta, x_0, b,\text{ and }\)n\( (the reader will have to keep track of the \)m\( implied by their choice of \)\alpha$); fixed at 64 is the number of iterates displayed (64 was chosen because our investigations revealed <q>long</q> cycles with periods equal to a power of 2, e.g., 16 and 32). We have provided defaults and options for each of those parameters; however, the reader can actually type other values into those fields and as long as one either <q>tabs away</q> or clicks elsewhere (don’t hit <q>enter/return</q> though!), the program will run correctly with the entered values (it may <q>complain</q> about an illegal value&mdash;just ignore that).</p>
+<p>\(~~~~\)We generalized the <q>models</q> and enable the reader to choose the five parameters \(\alpha, \beta, x_0, b,\text{ and } n\) (the reader will have to keep track of the \(m\) implied by their choice of \(\alpha\)); fixed at 64 is the number of iterates displayed (64 was chosen because our investigations revealed <q>long</q> cycles with periods equal to a power of 2, e.g., 16 and 32). We have provided defaults and options for each of those parameters; however, the reader can actually type other values into those fields and as long as one either <q>tabs away</q> or clicks elsewhere (don’t hit <q>enter/return</q> though!), the program will run correctly with the displayed values (it may <q>complain</q> about an illegal value&mdash;just ignore that).</p>
 
-<p>\(~~~~\)Investigating \(\beta=0\) first, we almost omitted \(x_0=0\) from that parameter’s provided options, because when \(\beta=0\), \(x=0\) is a fixed point for any values of the other parameters: \(x_{i+1}(0) = \left[\alpha (0) b^n + 0\right] (\text{mod }b^n) / b^n = 0(\text{mod }b^n) /b^n\) (for both Models) \(= 0/b^n = 0\). However, this result only holds for \(\beta=0\): set \(beta \ne 0\) and even \(\alpha=1\)&mdash;which one might guess wouldn’t be very interesting&mdash;produces <q>saw-tooth</q> waves, including products of saw-tooth waves, some of which (e.g., \(\beta=101, \alpha=1, x_0=0, b=3, n=5\)) might be confused for pseudo-random number sequences if the user is not careful. There are plenty of other interesting sequences starting with \(x_0=0\) as long as \(\beta\ne 0\).</p>
+<p>\(~~~~\)Investigating \(\beta=0\) first, we almost omitted \(x_0=0\) from that parameter’s provided options, because when \(\beta=0\), \(x=0\) is a fixed point for any values of the other parameters: \(x_{i+1}(0) = \left[\alpha (0) b^n + 0\right] (\text{mod }b^n) / b^n = 0(\text{mod }b^n) /b^n\) (for both Models) \(= 0/b^n = 0\). However, this result only holds for \(\beta=0\): set \(\beta \ne 0\) and even \(\alpha=1\)&mdash;which one might suppose wouldn’t be very interesting&mdash;produces <q>saw-tooth</q> waves, including products of saw-tooth waves, some of which (e.g., \(\beta=101, \alpha=1, x_0=0, b=3, n=5\)) might be confused for pseudo-random number sequences if the user is not careful. There are plenty of other interesting sequences starting with \(x_0=0\) as long as \(\beta\ne 0\).</p>
 
-<p>\(~~~~\)Using the suggestions given in the Exercise, i.e, \(b=2, n=8, \beta \in \{0,1\}, \alpha\) an integer, we find the following patterns:</p>
+<p>\(~~~~\)Using the suggestions given in the Exercise, i.e., \(b=2, n=8, \beta \in \{0,1\}, \alpha\) an integer, we find the following patterns:</p>
 
 <p>\(\beta=0\):</p>
 
-<p>\(~~~\alpha=1\): \(x \in [0,1)\) is a fixed point (and \(x\) outside that interval immediately <q>gets sent to</q> the fractional part of \(x\), and thenceforth remains there).</p>
+<p>\(~~~\alpha=1\): \(x \in [0,1)\) is a fixed point (and \(x\) outside that interval immediately <q>gets sent to</q> the fractional part of \(x\), and henceforth remains there).</p>
 
-<p>\(~~~\alpha\) even, \(x_0=0.5 \Rightarrow x_1= 0\), \(\alpha\) odd \(x_0=0.5 \Rightarrow x_1= 0.5\), both of which are fixed points for their respective types of \(\alpha\).</p>
+<p>\(~~~\alpha\) even, \(x_0=0.5 \Rightarrow x_1= 0\); \(\alpha\) odd, \(x_0=0.5 \Rightarrow x_1= 0.5\), both of which are fixed points for their respective types of \(\alpha\).</p>
 
-<p>\(~~~\alpha\) even, \(x_0\) (rational) \(\in (0,0.5) \cup (0.5,1.0)\) appears to consistently result&mdash;in about 48 iterations (or half or a third of that) for Model a, and in four or fewer iterations for Model b&mdash;in a value of the form \(1-k/2^j, j\) an integer, \(k \in \{1, 2, ..., 2^{j-1}\}\), which gets sent to the fixed point 0 in \(j\) steps.</p>
+<p>\(~~~\alpha\) even, \(x_0\) (rational) \(\in (0,0.5) \cup (0.5,1.0)\) appears to consistently result&mdash;in about 48 iterations (or half or a third of that) for Model a, and in four or fewer iterations for Model b&mdash;in an \(x_i\) value of the form \(k/2^j, j\) an integer, \(k \in \{1, 2, ..., 2^j-1\}\), which gets sent to the fixed point 0 in \(j\) or fewer steps.</p>
 
-<p>\(~~~\alpha\) odd can result in landing on either of the fixed points (e.g., \(\alpha=5, x_0\) a multiple of 0.1); transient oscillations or apparent fixed points followed by apparent pseudo-random behavior; apparently stable oscillations; or apparent pseudo-random behavior.</p>
+<p>\(~~~\alpha\) odd can result in: landing on either of the fixed points (e.g., \(\alpha=5, x_0\) a multiple of 0.1); transient oscillations or apparent fixed points followed by apparent pseudo-random behavior; apparently stable oscillations; or apparent pseudo-random behavior.</p>
 
 <p>\(\beta=1\): </p>
 
-<p>\(~~~\)</p>
+<p>\(~~~\alpha=1\): results in a line of slope \(1/256\) (why?), until \(256x_i \ge 255\), at which point the line <q>resets</q> to a point close to zero and then resumes climbing at a rate of \(1/256\), until... In other words, \(\alpha=1\) produces a <q>long</q> saw-tooth wave.</p>
+
+<p>\(~~~\alpha\) even: each even \(\alpha\) (in the range we examined, i.e., from 2 to 14) appears to have a distinct fixed point, \(x^*\), independent of (rational) \(x_0\), and <q>reached</q> after a <q>transient</q> of <q>extent</q> and <q>regularity</q> dependent on \(x_0\); in other words, \(x^*\) depends on \(\alpha\) but not on \(x_0\), while the first \(i\) at which \(x_i=x^*\) <i>does</i> depend on <i>both</i> \(\alpha\) and \(x_0\). Examples: \(\alpha=2\) has \(x^* \doteq 0.996\) (independent of the choice of \(x_0\); we conjecture that \(x^*\) is actually exactly \(= \displaystyle \frac{255}{256}=0.99609375\), which we invite the reader to try to prove); \(\alpha=12\) has \(x^* \doteq 0.363\) (again, independent of \(x_0\)). General conjecture: each even \(\alpha\) has a fixed point \(x^*=k/2^8, k \in \{1,...,2^8-1\}\): Proof?</p>
+
+<p>\(~~~\alpha\) odd: most values of \(x_0\) appear to give pseudo-random sequences (within our limit of 64 iterations), but <q>be careful</q>: there are <q>interesting</q> exceptions, especially using Model b, especially for \(\alpha=2^j-1, j \in \{4,5,6,7\}\) (any \(x_0\)), which produce cycles of periods 32, 16, 8, and 4, respectively. (Larger \(j\) all appear to produce 2-cycles, and \(j=3, 2\) may theoretically produce period 64 and 128-cycles, respectively; but for \(j=3\), i.e., \(\alpha=7\), our \(x_{64}\) is consistently a little different than the sequence’s \(x_0\); but this may be an artifact of the finite precision of floating-point binary representation: reader, can you prove that, for any \(x_0\), \(\alpha=2^j-1, j \lt 8\) always produces a cycle of period \(2^{8-(j-1)}\) and/or that \(\alpha=2^j-1, j \ge 8\) always produces a 2-cycle?) </p>
 
 <p><center>
   <h3>Multiplicative Congruential Method Pseudo-random Number Generation Results</h3>
@@ -525,36 +529,10 @@ for \(b=2; 0 \le x_0 \lt 1; n=8; \beta=0, 1; \alpha\) an integer, including inte
   </table>
 </center></p>
 
-<h3>Interesting parameter sets</h3> 
-
-<p>\(~~~~\)<h4>Model <q>a</q></h4>
-\(~~~~~~\)<h5>Appears to be <q>good</q> for generating pseudorandom numbers</h5></p>
-
-<p>\(~~~~~~\)<h5>Appears to have a <q>long</q> cycle</h5></p>
-
-<p>\(~~~~\)<h4>Model <q>b</q></h4>
-\(\beta=0\), Base \(=2\), \(n=8\):<br>
-<h5>Appears to be <q>good</q> for generating pseudo-random numbers<h5>
-\(\alpha=3, 5; x_0=0.1, 0.2, 0.6, 0.7\)</p>
-
-<h5>Appears to have a period-8 cycle</h5>
-
-<p>$\alpha=7; x_0=0.3, 0.8<br></p>
-
-<h5>Appears to have a period-16 cycle</h5>
-
-<p>\(\alpha=3, 5; x_0=0.3, 0.8&lt;br&gt;
-\)\alpha=7; x_0=0.4, 0.9<br></p>
-
-<h5>Appears to have a period-32 cycle</h5>
-
-<p>\(\alpha=3, 5; x_0=0.4, 0.9&lt;br&gt;
-\)\alpha=7; x_0=0.1, 0.2, 0.6, 0.7<br></p>
-
 <h3><a class="goback" name="Source" onclick="winhisback()">Source Code (JavaScript)</a></h3>
 
 <p>Local:<br>
-Exercise #: <a href="./C3E4.js">4</a>\(~~~~\)<a href="./C3E8.js">8</a>\(~~~~\)<a href="./C3E16.js">16/17</a>\(~~~~\)<a href="./C3E20.js">20</a>\(~~~~\)<a href="./C3E24a.js">24a</a><br>
+Exercise #: <a href="./C3E4.js">4</a>\(~~~~\)<a href="./C3E8.js">8</a>\(~~~~\)<a href="./C3E16.js">16/17</a>\(~~~~\)<a href="./C3E20.js">20</a>\(~~~~\)<a href="./C3E24.js">24</a><br>
 <a href="../../../../MathUtils.js">Math Utilities</a> (numerical method implementations, matrix arithmetic, etc.)<br>
 <a href="../../../../GeneralUtils.js">General Utilities</a> (used here primarily for innerHTML getting and setting aliases)<br>
 <a href="../../../../GChartsUtils.js">Google Charts Utilities</a> (presently used only for shared Google Charts API settings)<br></p>
