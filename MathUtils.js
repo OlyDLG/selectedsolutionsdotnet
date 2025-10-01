@@ -63,8 +63,6 @@ Array.prototype.someClose = function(val, prec) {
 
 /* COMPLEX NUMBERS */
 
-const I = Complex(0.0, 1.0);
-
 class Complex {
     constructor(a, b, prec=10) {
       this.a = a.zeroIfClose(prec); 
@@ -118,6 +116,8 @@ class Complex {
 
     pow(w) {return (w.mult(this.log())).exp();}
 }
+
+const I = new Complex(0.0, 1.0);
 
 /* NUMERICAL METHODS FUNCTIONS */
 
@@ -241,7 +241,7 @@ function RKN42Dauton(f, x, h) {
 
 function reverseBits(n) {
     let reversed = 0;
-    if n.isInteger() {
+    if (n.isInteger()) {
       for (let i=0; i<32; i++) {
         ;
       }

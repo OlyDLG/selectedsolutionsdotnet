@@ -12,8 +12,8 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         FDper2 = 1.4235,
         dFDmain = 0.001, 
         dFDdet = 0.0001,
-        distinctTheta = [],
-        XFD = [],
+//        distinctTheta = [],
+//        XFD = [],
         swtchForm = document.getElementById("C3E20swtch"),
         mainData = [['FD', 'theta']],
         mainOptions = {...globalChartOptions,
@@ -39,10 +39,10 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
 
   let FD = FDmin, 
       inDet = false, 
-      detCntr = 0,
-      nDistinctTheta = 0,
-      newFD = false,
-      prec = -Math.log10(0.05);
+      detCntr = 0;
+//      nDistinctTheta = 0,
+//      newFD = false,
+//      prec = -Math.log10(0.05);
   
   function makeC3E20Graph() {
 
@@ -89,11 +89,13 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
             fn[0] += tpi;
           }
           if (Math.abs(t - nT * T) < h2) {
+/*
             if (FD >= FDper2) {
               if (distinctTheta.length==0 || !distinctTheta.someClose(fn[0],prec)) {
                 distinctTheta.push(fn[0]);
               }
             }
+*/
             if (inDet) {
               detData.push([FD, fn[0]]);
               if ((detCntr % 10)==0) {
@@ -108,6 +110,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
           }
           t += h;
         }
+/*
         if (distinctTheta.length > nDistinctTheta) {
           XFD.push(FD);
           nDistinctTheta = distinctTheta.length;
@@ -115,8 +118,9 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
             prec *= 1.1;
           }
         }
-        FD += (inDet) ? dFDdet : dFDmain;
         distinctTheta.length = 0;
+*/
+        FD += (inDet) ? dFDdet : dFDmain;
       }
     }
     draw(mainChart, mainData, mainOptions);
