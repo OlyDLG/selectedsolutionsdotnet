@@ -31,8 +31,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
                       hAxis: {viewWindowMode: 'explicit',
                               viewWindow: {min: 1.476, max: 1.485},
                               ticks: [1.476, 1.479, 1.482, 1.485]},
-                      vAxis: {viewWindowMode: 'explicit',
-                              },
+                      vAxis: {viewWindowMode: 'explicit'},
                       pointSize: 1, legend: 'none', 
                       width: 300, height: 300},
         detLChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E20bddetLChart")),
@@ -63,12 +62,12 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
       while (FD < FDmax) {
         inDet = (FD >= 1.475) && (FD <= 1.485);
         let t = 0;
-//        let h = 0.01 * T;
-        let h = 0.01;
+        let h = 0.01 * T;
+//        let h = 0.01;
         let fn = [0.2, 0];
         while (t < Xient) { // Calculate but "throw away" first 300 driving period results
-//          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
-          fn = EulerCromer2D(dxdt, fn, t, h);
+          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+//          fn = EulerCromer2D(dxdt, fn, t, h);
           if (fn[0] > pi) {
             fn[0] -= tpi;
           }
@@ -81,8 +80,8 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         let h2 = h/2; 
         let nT = 301;
         while (t < tmax) { // Begin accumulating results
-//          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
-          fn = EulerCromer2D(dxdt, fn, t, h);
+          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+//          fn = EulerCromer2D(dxdt, fn, t, h);
           if (fn[0] > pi) {
             fn[0] -= tpi;
           }

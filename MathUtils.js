@@ -61,6 +61,68 @@ Array.prototype.someClose = function(val, prec) {
   }
 }
 
+/* COMPLEX NUMBERS */
+
+const I = Complex(0.0, 1.0);
+
+class Complex {
+    constructor(a, b, prec=10) {
+      this.a = a.zeroIfClose(prec); 
+      this.b = b.zeroIfClose(prec);
+    }
+    
+    print() {
+      return this.a.toFixed() + " + " + this.b.toFixed() + "i";
+    }
+
+    printpolar() {
+      return "r: " + this.mag().toFixed() + ", arg: " + this.arg().toFixed();
+    }
+
+    real() {return this.a;}
+
+    imag() {return this.b;}
+
+    mag2() {return this.a**2 + this.b**2;}
+
+    mag() {return Math.sqrt(this.mag2());}
+
+    arg() {return Math.atan2(this.b, this.a);}
+
+    conj() {return Complex(this.a, -this.b);}
+
+    add(z) {return Complex(this.a + z.real(), this.b + z.imag());}
+
+    mult(z) {return Complex(this.a * z.real() - this.b * z.imag(),
+                            this.a * z.imag() + this.b * z.real());}
+
+    recip() {
+      const r2 = this.mag2();
+      return (r2 != 0) ? Complex(this.a / r2, -this.b / r2) : Complex(NaN,NaN);
+    }
+
+    div(z) {return (z.mag2() != 0) ? this.mult(z.recip()) : Complex(NaN,NaN);}
+
+    log() {return (this.mag2() != 0) ? 
+           Complex(Math.log(this.mag()), this.arg()) : Complex(NaN,NaN);
+    }
+
+    exp() {
+      const r = Math.exp(this.a);
+      return Complex(r * Math.cos(this.b), r * Math.sin(this.b));
+    }
+
+    expi() {
+      return this.mult(I).exp()
+    }
+
+    pow(w) {return (w.mult(this.log())).exp();}
+}
+
+/* NUMERICAL METHODS FUNCTIONS */
+
+  /* Zero Finding */
+
 function simpleBisection(f, L, U, prec, tries) {
   let res = NaN;
   let fL = f(L).zeroIfClose(prec);
@@ -101,7 +163,7 @@ function simpleBisection(f, L, U, prec, tries) {
   return res.zeroIfClose(prec);
 }
 
-/* NUMERICAL METHODS FUNCTIONS */
+  /* ODE Solvers */
 
 function dt(tMax, n) {
     return tMax / n;
@@ -173,6 +235,18 @@ function RKN42Dauton(f, x, h) {
     x1 += h*x2 + h2*(bb1*f1 + bb2*f2 + bb3*f3);
     x2 += h*(b1*f1 + b2*f2 + b3*f3);
     return [x1, x2];
+}
+
+  /* FFT */
+
+function reverseBits(n) {
+    let reversed = 0;
+    if n.isInteger() {
+      for (let i=0; i<32; i++) {
+        ;
+      }
+    }
+    return reversed; 
 }
 
 /* MATRIX FUNCTIONS */
