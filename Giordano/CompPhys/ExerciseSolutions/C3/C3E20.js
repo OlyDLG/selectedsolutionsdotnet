@@ -10,8 +10,8 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         FDmin = 1.42, 
         FDmax = 1.49,
         FDper2 = 1.4235,
-        dFDmain = 0.001, 
-        dFDdet = 0.0001,
+        dFDmain = 0.002, 
+        dFDdet = 0.0002,
         swtchForm = document.getElementById("C3E20swtch"),
         mainData = [['FD', 'theta']],
         mainOptions = {...globalChartOptions,
@@ -85,7 +85,6 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
               if ((detCntr % 10)==0) {
                 mainData.push([FD, fn[0]]);
               }
-              detCntr += 1;
             }
             else {
               mainData.push([FD, fn[0]]);
@@ -95,16 +94,17 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
           t += h;
         }
         FD += (inDet) ? dFDdet : dFDmain;
+        detCntr += (inDet) ? 1 : 0;
       }
     }
     draw(mainChart, mainData, mainOptions);
 
-    detOptions.vAxis.viewWindow = {min: 0.95, max: 1.15};
-    detOptions.vAxis.ticks = [0.95, 1.05, 1.15];
+    detOptions.vAxis.viewWindow = {min: 0.84, max: 1.05};
+    detOptions.vAxis.ticks = [0.84, 0.91, 0.98, 1.05];
     draw(detLChart, detData, detOptions);
 
-    detOptions.vAxis.viewWindow = {min: 2.0, max: 3.0};
-    detOptions.vAxis.ticks = [2.0, 2.5, 3.0];
+    detOptions.vAxis.viewWindow = {min: 2.07, max: 2.85};
+    detOptions.vAxis.ticks = [2.07, 2.33, 2.59, 2.85];
     draw(detUChart, detData, detOptions);
   }
   return makeC3E20Graph;
