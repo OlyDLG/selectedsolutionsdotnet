@@ -9,7 +9,6 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         Xient = 300 * T,
         FDmin = 1.42, 
         FDmax = 1.49,
-        FDper2 = 1.4235,
         dFDmain = 0.002, 
         dFDdet = 0.0002,
         swtchForm = document.getElementById("C3E20swtch"),
