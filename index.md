@@ -52,6 +52,8 @@ Boyce, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and B
 Giordano, N. J. and H. Nakanishi, 2006, <i>Computational Physics, Second Edition.</i>, Pearson/Prentice-Hall, Upper Saddle River, NJ.
       <ul>[Chapters 1 ("A First Numerical Problem") & 2 ("Realistic Projectile Motion")](./Giordano/CompPhys/ExerciseSolutions/C1_2/C1_2.html)
       </ul>
+      <ul>[Chapter 3 ("Oscillatory Motion and Chaos"), Part 1 (Sections 1-5)](./Giordano/CompPhys/ExerciseSolutions/C3/C3P1.html)
+      </ul>
 
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
             <ul>[Chapter 1: The Role and Environment of Managerial Finance](./Gitman/C1/C1.html)</ul>
