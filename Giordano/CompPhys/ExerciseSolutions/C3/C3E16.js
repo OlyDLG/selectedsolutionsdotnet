@@ -1,4 +1,4 @@
-function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
+function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16/17
   const g = 9.8;
   const pi = Math.PI;
   const npi = -1 * pi;
@@ -107,7 +107,6 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
 
         // Strange attractor detail chart creation and placement
       if (sadetswtch) {
-//        const detTable = google.visualization.arrayToDataTable(sadetData);
         const detOptions = {...globalChartOptions,
                             hAxis: {title: '\u03B8 (radians)',
                                     ticks: [{v: 2, f: '2'},
@@ -116,8 +115,6 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16
                                     viewWindow: {min: 2.0, max: pi}
                                     },
                             vAxis: {title: '\u03C9 (rad/sec)'//,
-//                                    viewWindowMode: 'explicit',
-//                                    viewWindow: {min: -1.25, max: -0.5}
 				 },
                             pointSize: 1, lineWidth: 0, legend: 'none', 
                             width: 500, height: 400};
