@@ -193,7 +193,7 @@ function RK22D(f, x, t, dt) {
     return [x1, x2];
 }
 
-function RK42Dnonauton(f, x, t, h) {
+function RK4nonauton(f, x, t, h) {
   function k1() {return f(x,t);} 
   function k2() {
     k2x = vecsum(x, scalarmult(h2, k1()));

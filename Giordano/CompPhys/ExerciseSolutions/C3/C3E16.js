@@ -8,7 +8,7 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16/17
   const swtchForm = document.getElementById("C3E16swtch");
 
   function makeC3E16Graph() {
-    function dxdt(x, t) { // For use with RK42Dnonauton
+    function dxdt(x, t) { // For use with RK4nonauton
       let [x1, x2] = x;
       let temp = -1*Math.sin(x1) - [x2]/2 + FD*Math.sin(WD*t);
       return [x2, temp];
@@ -54,7 +54,7 @@ function GiorCPC3E16() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 16/17
           }
         }
       }
-      fnp1 = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+      fnp1 = RK4nonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
       if (fnp1[0] > pi) {
         fnp1[0] -= tpi;
       }

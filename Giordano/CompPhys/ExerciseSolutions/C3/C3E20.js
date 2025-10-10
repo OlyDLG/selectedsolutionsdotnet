@@ -40,7 +40,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
   
   function makeC3E20Graph() {
 
-    function dxdt(x, t) { // For use with RK42Dnonauton & EulerCromer2d
+    function dxdt(x, t) { // For use with RK4nonauton & EulerCromer2d
       let [x1, x2] = x;
       let temp = -1*Math.sin(x1) - [x2]/2 + FD*Math.sin(WD*t);
       return [x2, temp];
@@ -59,7 +59,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         let h = 0.01 * T;
         let fn = [0.2, 0];
         while (t < Xient) { // Calculate but "throw away" first 300 driving period results
-          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+          fn = RK4nonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
           if (fn[0] > pi) {
             fn[0] -= tpi;
           }
@@ -71,7 +71,7 @@ function GiorCPC3E20() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 20
         let h2 = h/2; 
         let nT = 301;
         while (t < tmax) { // Begin accumulating results
-          fn = RK42Dnonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
+          fn = RK4nonauton(dxdt, fn, t, h); // 4th order RK for non-autonomous 2D system
           if (fn[0] > pi) {
             fn[0] -= tpi;
           }
