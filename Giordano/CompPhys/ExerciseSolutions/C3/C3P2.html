@@ -95,7 +95,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <script src="../../../../GChartsUtils.js"></script>
 
-<!--script src="./C3E26n7.js"></script-->
+<script src="./C3E26n7.js"></script>
 
 <!--script src="./C3E31n2.js"></script-->
 
@@ -104,7 +104,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <script>
     // Load google charts
     google.charts.load('current', {'packages':['corechart']});
-//    google.charts.setOnLoadCallback(GiorCPC3E26n7);
+    google.charts.setOnLoadCallback(GiorCPC3E26n7);
 //    google.charts.setOnLoadCallback(GiorCPC3E31n2);
 //    google.charts.setOnLoadCallback(GiorCPC3E37);
 </script>
@@ -113,8 +113,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <title>Solutions of Selected Exercises from Giordano/Nakanishi <q>Computational Physics, 2nd Ed.</q> Chapter 3 (Part 2)</title>
 \(\require{cancel}\)</p>
 
-<p><body onload="/*makeC3E26n7Graph = GiorCPC3E26n7();
-                             makeC3E31n2Graph = GiorCPC3E31n2();
+<p><body onload="makeC3E26n7Graph = GiorCPC3E26n7();
+                             /*makeC3E31n2Graph = GiorCPC3E31n2();
                              makeC3E37Graph = GiorCPC3E37(); */
 "></p>
 
@@ -196,6 +196,41 @@ pre code, pre tt{ background-color:transparent; border:none; }
         <input type="number" name="C3E26n7z0In" min="0" max="2" step="0.2" value="0">
       </form>
     </td>
+  </tr>
+</table>
+<table>
+  <tr style="border: none;">
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7xvtChart" alt="Lorenz model x(t)"></div>
+    </td><br>
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7yvtChart" alt="Lorenz model y(t)"></div>
+    </td><br>
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7zvtChart" alt="Lorenz model z(t)"></div>
+    </td>
+  </tr><br>
+  <tr style="border: none; background-color: white;">
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7yvxChart" alt="Lorenz model y(x)"></div>
+    </td><br>
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7zvxChart" alt="Lorenz model z(x)"></div>
+    </td><br>
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7zvyChart" alt="Lorenz model z(y)"></div>
+    </td><br>
+  </tr>
+  <tr style="border: none; background-color: white;">
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7yvxPChart" alt="Lorenz model y(x), z=0"></div>
+    </td><br>
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7zvxPChart" alt="Lorenz model z(x), y=0"></div>
+    </td><br>
+    <td class="cen" style="border: none;">
+      <div class="chart" id="GiorCPC3E26n7zvyPChart" alt="Lorenz model z(y), x=0"></div>
+    </td><br>
   </tr>
 </table>
 </center></p>
