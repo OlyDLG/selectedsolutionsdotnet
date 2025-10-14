@@ -65,33 +65,46 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
           yvxPDTable = google.visualization.arrayToDataTable(yvxPData),
           zvxPDTable = google.visualization.arrayToDataTable(zvxPData),
           zvyPDTable = google.visualization.arrayToDataTable(zvyPData);
-    const Options = {...globalChartOptions,
-//                         hAxis: {title: 'Time'},
-//                         vAxis: {title: '\u03B8: radians, \u03C9: rad/sec',
+    let Options = {...globalChartOptions,
+//                      vAxis: {title: 'x',
 //                                 viewWindowMode: 'explicit',
 //                                 viewWindow: {min: -3.5, max: 3.5}},
-                         width: 300, height: 300};
-    const xvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7xvtChart"));
-    xvtChart.draw(xvtDTable, Options);
-    const yvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvtChart"));
-    yvtChart.draw(yvtDTable, Options);
-    const zvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvtChart"));
-    zvtChart.draw(zvtDTable, Options);
+                      width: 300, height: 300, legend: 'none'};
+    let tsOptions = {...Options, 
+                        hAxis: {ticks: [{v: 0, f: '0'},
+                                        {v: 15, f: '15'},
+                                        {v: 30, f: '30\nt'},
+                                        {v: 45, f: '45'},
+                                        {v: 60, f: '60'}]}};
 
+    tsOptions.vAxis = {title: 'x'};    
+    const xvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7xvtChart"));
+    xvtChart.draw(xvtDTable, tsOptions);
+
+    tsOptions.vAxis = {title: 'y'};    
+    const yvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvtChart"));
+    yvtChart.draw(yvtDTable, tsOptions);
+
+    tsOptions.vAxis = {title: 'z'};    
+    const zvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvtChart"));
+    zvtChart.draw(zvtDTable, tsOptions);
+
+    Options.hAxis = {title: 'x'}, Options.vAxis = {title: 'y'};    
     const yvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvxChart"));
     yvxChart.draw(yvxDTable, Options);
-    const zvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvxChart"));
-    zvxChart.draw(zvxDTable, Options);
-    const zvyChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyChart"));
-    zvyChart.draw(zvyDTable, Options);
-
-    const yvxPChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvxPChart"));
+    const yvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7yvxPChart"));
     yvxPChart.draw(yvxPDTable, Options);
 
-    const zvxPChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvxPChart"));
+    Options.vAxis = {title: 'z'};    
+    const zvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvxChart"));
+    zvxChart.draw(zvxDTable, Options);
+    const zvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvxPChart"));
     zvxPChart.draw(zvxPDTable, Options);
 
-    const zvyPChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyPChart"));
+    Options.hAxis = {title: 'y'};    
+    const zvyChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyChart"));
+    zvyChart.draw(zvyDTable, Options);
+    const zvyPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvyPChart"));
     zvyPChart.draw(zvyPDTable, Options);
   }
   makeC3E26n7Graph();
