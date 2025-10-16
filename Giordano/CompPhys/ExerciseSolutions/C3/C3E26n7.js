@@ -21,26 +21,23 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
           h = 0.01,
           tXient = 30,
           tmax = 60,
-          xvtData = [['t', 'x']],
-          yvtData = [['t', 'y']],
-          zvtData = [['t', 'z']],
           yvxData = [['x', 'y']],
           zvxData = [['x', 'z']],
           zvyData = [['y', 'z']],
           yvxPData = [['x', 'y']],
           zvxPData = [['x', 'z']],
-          zvyPData = [['y', 'z']];
-
+          zvyPData = [['y', 'z']],
+          xvtData = [['t', 'x']],
+          yvtData = [['t', 'y']],
+          zvtData = [['t', 'z']];
     let t = 0,
         fn = [x0, y0, z0],
         fnp1 = [0, 0, 0],
         xmin=0, xmax=0,
         ymin=0, ymax=0,
-        zmin=0, zmax=0;
+        zmin=0, zmax=0,
+        x0swtch = false, y0swtch = false, z0swtch = false;
     while (t < tmax) {
-      xvtData.push([t,fn[0]]);
-      yvtData.push([t,fn[1]]);
-      zvtData.push([t,fn[2]]);
       yvxData.push([fn[0],fn[1]]);
       zvxData.push([fn[0],fn[2]]);
       zvyData.push([fn[1],fn[2]]);
@@ -48,12 +45,15 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       if (t => tXient) {
         if (fn[0]*fnp1[0] < 0) { // x(t) crossed zero
           zvyPData.push([0.5*(fn[1]+fnp1[1]), 0.5*(fn[2]+fnp1[2])]);
+          if (!x0swtch) {x0swtch = !x0swtch;}
         }
         if (fn[1]*fnp1[1] < 0) { // y(t) crossed zero
           zvxPData.push([0.5*(fn[0]+fnp1[0]), 0.5*(fn[2]+fnp1[2])]);
+          if (!y0swtch) {y0swtch = !y0swtch;}
         }
         if (fn[2]*fnp1[2] < 0) { // z(t) crossed zero
           yvxPData.push([0.5*(fn[0]+fnp1[0]), 0.5*(fn[1]+fnp1[1])]);
+          if (!z0swtch) {z0swtch = !z0swtch;}
         }
       }
       fn = fnp1;
@@ -63,10 +63,7 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       t += h;
     }
       // Create Data Tables
-    const xvtDTable = google.visualization.arrayToDataTable(xvtData),
-          yvtDTable = google.visualization.arrayToDataTable(yvtData),
-          zvtDTable = google.visualization.arrayToDataTable(zvtData),
-          yvxDTable = google.visualization.arrayToDataTable(yvxData),
+    const yvxDTable = google.visualization.arrayToDataTable(yvxData),
           zvxDTable = google.visualization.arrayToDataTable(zvxData),
           zvyDTable = google.visualization.arrayToDataTable(zvyData),
           yvxPDTable = google.visualization.arrayToDataTable(yvxPData),
@@ -101,40 +98,6 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
     let Options = {...globalChartOptions,
                       vAxis: {viewWindowMode: 'explicit'},
                       width: 300, height: 300, legend: 'none'};
-    let tsOptions = {...Options,
-                        hAxis: {ticks: [{v: 0, f: '0'},
-                                        {v: 15, f: '15'},
-                                        {v: 30, f: '30\nt'},
-                                        {v: 45, f: '45'},
-                                        {v: 60, f: '60'}]}};
-
-    tsOptions.vAxis = {viewWindow: {min: xmin, max: xmax},
-                       ticks: [{v: xmin, f: xminst},
-                               {v: x1q, f: x1qst}, 
-                               {v: xmid, f: 'x\u00A0\u00A0\u00A0' + xmidst}, 
-                               {v: x3q, f: x3qst}, 
-                               {v: xmax, f: xmaxst}]};    
-    const xvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7xvtChart"));
-    xvtChart.draw(xvtDTable, tsOptions);
-
-    tsOptions.vAxis = {viewWindow: {min: ymin, max: ymax},
-                       ticks: [{v: ymin, f: yminst},
-                               {v: y1q, f: y1qst}, 
-                               {v: ymid, f: 'y\u00A0\u00A0\u00A0' + ymidst}, 
-                               {v: y3q, f: y3qst}, 
-                               {v: ymax, f: ymaxst}]};    
-    const yvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvtChart"));
-    yvtChart.draw(yvtDTable, tsOptions);
-
-    tsOptions.vAxis = {viewWindow: {min: zmin, max: zmax},
-                       ticks: [{v: zmin, f: zminst},
-                               {v: z1q, f: z1qst}, 
-                               {v: zmid, f: 'z\u00A0\u00A0\u00A0' + zmidst}, 
-                               {v: z3q, f: z3qst}, 
-                               {v: zmax, f: zmaxst}]};
-   const zvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvtChart"));
-    zvtChart.draw(zvtDTable, tsOptions);
-
     let ppOptions = {...Options, 
                      hAxis: {viewWindowMode: 'explicit',
                              viewWindow: {min: xmin, max: xmax},
@@ -151,9 +114,6 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
                                      {v: ymax, f: ymaxst}]}};
     const yvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvxChart"));
     yvxChart.draw(yvxDTable, ppOptions);
-    const yvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7yvxPChart"));
-    yvxPChart.draw(yvxPDTable, ppOptions);
-
     ppOptions.vAxis = {viewWindow: {min: zmin, max: zmax},
                             ticks: [{v: zmin, f: zminst},
                                     {v: z1q, f: z1qst},
@@ -162,8 +122,6 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
                                     {v: zmax, f: zmaxst}]};
     const zvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvxChart"));
     zvxChart.draw(zvxDTable, ppOptions);
-    const zvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvxPChart"));
-    zvxPChart.draw(zvxPDTable, ppOptions);
 
     ppOptions.hAxis = {viewWindow: {min: ymin, max: ymax},
                             ticks: [{v: ymin, f: yminst},
@@ -173,8 +131,33 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
                                     {v: ymax, f: ymaxst}]};
     const zvyChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyChart"));
     zvyChart.draw(zvyDTable, ppOptions);
-    const zvyPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvyPChart"));
-    zvyPChart.draw(zvyPDTable, ppOptions);
+
+    if (!z0swtch) {
+      dsEBIiH("GiorCPC3E26n7yvxPChart", "No z=0 points in phase space<br>(after t=30)");
+    }
+    else {
+      const yvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7yvxPChart"));
+      Options['title'] = "Phase Space Points with z=0";
+      yvxPChart.draw(yvxPDTable, Options);
+    }
+
+    if (!y0swtch) {
+      dsEBIiH("GiorCPC3E26n7zvxPChart", "No y=0 points in phase space<br>(after t=30)");
+    }
+    else {
+      const zvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvxPChart"));
+      Options['title'] = "Phase Space Points with y=0";
+      zvxPChart.draw(zvxPDTable, Options);
+    }
+
+    if (!x0swtch) {
+      dsEBIiH("GiorCPC3E26n7zvyPChart", "No x=0 points in phase space<br>(after t=30)");
+    }
+    else {
+      const zvyPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvyPChart"));
+      Options['title'] = "Phase Space Points with x=0";
+      zvyPChart.draw(zvyPDTable, Options);
+    }
   }
   makeC3E26n7Graph();
   return makeC3E26n7Graph;
