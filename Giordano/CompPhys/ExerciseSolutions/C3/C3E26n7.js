@@ -14,6 +14,18 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       let x3dot = x1*x2 - b*x3;
       return [x1dot, x2dot, x3dot];
     }
+    function crossing(t, X, Y) { 
+      /* Linearly interpolate the value Y(tcross), where 
+         tcross is the linearly-interpolated value of t
+         where X(tcross) = 0
+         Inputs: t, the current value of t
+                 X = [X(t), X(t+h)], X the variable whose sign has changed
+                 Y = [Y(t), Y(t+h)], Y the variable whose value at the crossing point is sought
+      */
+      tcross = t + h * X[0] / (X[0] - X[1]);
+      return (Y[1]-Y[0]) * (tcross-t) / h + Y[0];
+    }
+
     const r = Number(rForm[0].value),
           x0 = Number(x0Form[0].value),
           y0 = Number(y0Form[0].value),
@@ -30,13 +42,14 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
           xvtData = [['t', 'x']],
           yvtData = [['t', 'y']],
           zvtData = [['t', 'z']];
-    let t = 0,
+    let t = 0, 
         fn = [x0, y0, z0],
         fnp1 = [0, 0, 0],
-        xmin=0, xmax=0,
-        ymin=0, ymax=0,
-        zmin=0, zmax=0,
-        x0swtch = false, y0swtch = false, z0swtch = false;
+        xmin=0, xmax=0, xPmin=0, xPmax=0,
+        ymin=0, ymax=0, yPmin=0, yPmax=0,
+        zmin=0, zmax=0, zPmin=0, zPmax=0,
+        x0swtch = false, y0swtch = false, z0swtch = false,
+        xX = 0, yX = 0, zX = 0;
     while (t < tmax) {
       yvxData.push([fn[0],fn[1]]);
       zvxData.push([fn[0],fn[2]]);
@@ -44,15 +57,21 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       fnp1 = RK4nonauton(dxdt, fn, t, h); // 4th order RK
       if (t => tXient) {
         if (fn[0]*fnp1[0] < 0) { // x(t) crossed zero
-          zvyPData.push([0.5*(fn[1]+fnp1[1]), 0.5*(fn[2]+fnp1[2])]);
+          yX = crossing(t, [fn[0],fnp1[0]], [fn[1],fnp1[1]]); 
+          zX = crossing(t, [fn[0],fnp1[0]], [fn[2],fnp1[2]]); 
+          zvyPData.push([yX, zX]);
           if (!x0swtch) {x0swtch = !x0swtch;}
         }
         if (fn[1]*fnp1[1] < 0) { // y(t) crossed zero
-          zvxPData.push([0.5*(fn[0]+fnp1[0]), 0.5*(fn[2]+fnp1[2])]);
+          xX = crossing(t, [fn[1],fnp1[1]], [fn[0],fnp1[0]]); 
+          zX = crossing(t, [fn[1],fnp1[1]], [fn[2],fnp1[2]]); 
+          zvxPData.push([xX, zX]);
           if (!y0swtch) {y0swtch = !y0swtch;}
         }
         if (fn[2]*fnp1[2] < 0) { // z(t) crossed zero
-          yvxPData.push([0.5*(fn[0]+fnp1[0]), 0.5*(fn[1]+fnp1[1])]);
+          xX = crossing(t, [fn[2],fnp1[2]], [fn[0],fnp1[0]]); 
+          yX = crossing(t, [fn[2],fnp1[2]], [fn[1],fnp1[1]]); 
+          yvxPData.push([xX, yX]);
           if (!z0swtch) {z0swtch = !z0swtch;}
         }
       }
@@ -132,6 +151,7 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
     const zvyChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyChart"));
     zvyChart.draw(zvyDTable, ppOptions);
 
+    Options['pointSize'] = 1; 
     if (!z0swtch) {
       dsEBIiH("GiorCPC3E26n7yvxPChart", "No z=0 points in phase space<br>(after t=30)");
     }
