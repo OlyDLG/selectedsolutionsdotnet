@@ -32,8 +32,11 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
           zvyPData = [['y', 'z']];
 
     let t = 0,
-        fn = [x0, y0, z0];
-        fnp1 = [0, 0, 0];
+        fn = [x0, y0, z0],
+        fnp1 = [0, 0, 0],
+        xmin=0, xmax=0,
+        ymin=0, ymax=0,
+        zmin=0, zmax=0;
     while (t < tmax) {
       xvtData.push([t,fn[0]]);
       yvtData.push([t,fn[1]]);
@@ -53,9 +56,13 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
           yvxPData.push([0.5*(fn[0]+fnp1[0]), 0.5*(fn[1]+fnp1[1])]);
         }
       }
-      t += h;
       fn = fnp1;
+      [xmin, xmax] = [Math.min(fn[0], xmin), Math.max(fn[0], xmax)];
+      [ymin, ymax] = [Math.min(fn[1], ymin), Math.max(fn[1], ymax)];
+      [zmin, zmax] = [Math.min(fn[2], zmin), Math.max(fn[2], zmax)];
+      t += h;
     }
+      // Create Data Tables
     const xvtDTable = google.visualization.arrayToDataTable(xvtData),
           yvtDTable = google.visualization.arrayToDataTable(yvtData),
           zvtDTable = google.visualization.arrayToDataTable(zvtData),
@@ -65,47 +72,109 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
           yvxPDTable = google.visualization.arrayToDataTable(yvxPData),
           zvxPDTable = google.visualization.arrayToDataTable(zvxPData),
           zvyPDTable = google.visualization.arrayToDataTable(zvyPData);
+      // Compute viewing windows and tick places
+    xmin = (xmin < 0) ? 1.05*xmin : 0.95*xmin;
+    xmax = (xmax > 0) ? 1.05*xmax : 0.95*xmax;
+    ymin = (ymin < 0) ? 1.05*ymin : 0.95*ymin;
+    ymax = (ymax > 0) ? 1.05*ymax : 0.95*ymax;
+    zmin = (zmin < 0) ? 1.05*zmin : 0.95*zmin;
+    zmax = (zmax > 0) ? 1.05*zmax : 0.95*zmax;
+    const xminst = xmin.toFixed(2),
+          xmaxst = xmax.toFixed(2),
+          yminst = ymin.toFixed(2),
+          ymaxst = ymax.toFixed(2),
+          zminst = zmin.toFixed(2),
+          zmaxst = zmax.toFixed(2),
+          xrng = xmax - xmin,
+          x1q = xmin + 0.25*xrng, x1qst = x1q.toFixed(2),
+          xmid = xmin + 0.5*xrng, xmidst = xmid.toFixed(2),          
+          x3q = xmin + 0.75*xrng, x3qst = x3q.toFixed(2),
+          yrng = ymax - ymin,
+          y1q = ymin + 0.25*yrng, y1qst = y1q.toFixed(2),
+          ymid = ymin + 0.5*yrng, ymidst = ymid.toFixed(2),
+          y3q = ymin + 0.75*yrng, y3qst = y3q.toFixed(2),
+          zrng = zmax - zmin,
+          z1q = zmin + 0.25*zrng, z1qst = z1q.toFixed(2),
+          zmid = zmin + 0.5*zrng, zmidst = zmid.toFixed(2),
+          z3q = zmin + 0.75*zrng, z3qst = z3q.toFixed(2);
+      // Set Options
     let Options = {...globalChartOptions,
-//                      vAxis: {title: 'x',
-//                                 viewWindowMode: 'explicit',
-//                                 viewWindow: {min: -3.5, max: 3.5}},
+                      vAxis: {viewWindowMode: 'explicit'},
                       width: 300, height: 300, legend: 'none'};
-    let tsOptions = {...Options, 
+    let tsOptions = {...Options,
                         hAxis: {ticks: [{v: 0, f: '0'},
                                         {v: 15, f: '15'},
                                         {v: 30, f: '30\nt'},
                                         {v: 45, f: '45'},
                                         {v: 60, f: '60'}]}};
 
-    tsOptions.vAxis = {title: 'x'};    
+    tsOptions.vAxis = {viewWindow: {min: xmin, max: xmax},
+                       ticks: [{v: xmin, f: xminst},
+                               {v: x1q, f: x1qst}, 
+                               {v: xmid, f: 'x\u00A0\u00A0\u00A0' + xmidst}, 
+                               {v: x3q, f: x3qst}, 
+                               {v: xmax, f: xmaxst}]};    
     const xvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7xvtChart"));
     xvtChart.draw(xvtDTable, tsOptions);
 
-    tsOptions.vAxis = {title: 'y'};    
+    tsOptions.vAxis = {viewWindow: {min: ymin, max: ymax},
+                       ticks: [{v: ymin, f: yminst},
+                               {v: y1q, f: y1qst}, 
+                               {v: ymid, f: 'y\u00A0\u00A0\u00A0' + ymidst}, 
+                               {v: y3q, f: y3qst}, 
+                               {v: ymax, f: ymaxst}]};    
     const yvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvtChart"));
     yvtChart.draw(yvtDTable, tsOptions);
 
-    tsOptions.vAxis = {title: 'z'};    
-    const zvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvtChart"));
+    tsOptions.vAxis = {viewWindow: {min: zmin, max: zmax},
+                       ticks: [{v: zmin, f: zminst},
+                               {v: z1q, f: z1qst}, 
+                               {v: zmid, f: 'z\u00A0\u00A0\u00A0' + zmidst}, 
+                               {v: z3q, f: z3qst}, 
+                               {v: zmax, f: zmaxst}]};
+   const zvtChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvtChart"));
     zvtChart.draw(zvtDTable, tsOptions);
 
-    Options.hAxis = {title: 'x'}, Options.vAxis = {title: 'y'};    
+    let ppOptions = {...Options, 
+                     hAxis: {viewWindowMode: 'explicit',
+                             viewWindow: {min: xmin, max: xmax},
+                             ticks: [{v: xmin, f: xminst},
+                                     {v: x1q, f: x1qst},
+                                     {v: xmid, f: xmidst + '\nx'},
+                                     {v: x3q, f: x3qst},
+                                     {v: xmax, f: xmaxst}]},
+                     vAxis: {viewWindow: {min: ymin, max: ymax},
+                             ticks: [{v: ymin, f: yminst},
+                                     {v: y1q, f: y1qst},
+                                     {v: ymid, f: 'y\u00A0\u00A0\u00A0' + ymidst},
+                                     {v: y3q, f: y3qst},
+                                     {v: ymax, f: ymaxst}]}};
     const yvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7yvxChart"));
-    yvxChart.draw(yvxDTable, Options);
+    yvxChart.draw(yvxDTable, ppOptions);
     const yvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7yvxPChart"));
-    yvxPChart.draw(yvxPDTable, Options);
+    yvxPChart.draw(yvxPDTable, ppOptions);
 
-    Options.vAxis = {title: 'z'};    
+    ppOptions.vAxis = {viewWindow: {min: zmin, max: zmax},
+                            ticks: [{v: zmin, f: zminst},
+                                    {v: z1q, f: z1qst},
+                                    {v: zmid, f: 'z\u00A0\u00A0\u00A0' + zmidst},
+                                    {v: z3q, f: z3qst},
+                                    {v: zmax, f: zmaxst}]};
     const zvxChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvxChart"));
-    zvxChart.draw(zvxDTable, Options);
+    zvxChart.draw(zvxDTable, ppOptions);
     const zvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvxPChart"));
-    zvxPChart.draw(zvxPDTable, Options);
+    zvxPChart.draw(zvxPDTable, ppOptions);
 
-    Options.hAxis = {title: 'y'};    
+    ppOptions.hAxis = {viewWindow: {min: ymin, max: ymax},
+                            ticks: [{v: ymin, f: yminst},
+                                    {v: y1q, f: y1qst},
+                                    {v: ymid, f: ymidst + '\ny'},
+                                    {v: y3q, f: y3qst},
+                                    {v: ymax, f: ymaxst}]};
     const zvyChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyChart"));
-    zvyChart.draw(zvyDTable, Options);
+    zvyChart.draw(zvyDTable, ppOptions);
     const zvyPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvyPChart"));
-    zvyPChart.draw(zvyPDTable, Options);
+    zvyPChart.draw(zvyPDTable, ppOptions);
   }
   makeC3E26n7Graph();
   return makeC3E26n7Graph;
