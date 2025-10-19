@@ -1,5 +1,28 @@
 /* Google Charts Support */
+
 const globalChartOptions = {chartArea: {top: 10}, legend: 'bottom'};
+
+function computeTicks(data, labl, vert, prec=0) {
+/* data = an axis of numerical values as a 1-D array
+   labl = the axis lable, a string
+   vert = "boolean" indicating if a vertical axis (1) or horizontal (0)
+   prec = integer indicating number of decimal places to display for the tick labels 
+*/
+  let ticks = {v: [], s: []};
+  [min, max, rng] = MinMaxRng(data);
+  for (let i=0; i < 5; i++) {
+    ticks.v[i] = min + i/4.0 * rng;
+    ticks.s[i] = ticks.v[i].toFixed(prec);
+  }
+  if (vert) {
+    ticks.s[2] = labl + '\u00A0\u00A0\u00A0' + ticks.s[2];
+  }
+  else {
+    ticks.s[2] += ('\n' + labl);
+  }
+  return ticks;
+}
+
 /*
 Not presently needed/used, development suspended
 

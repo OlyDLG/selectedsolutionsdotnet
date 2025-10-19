@@ -251,6 +251,39 @@ function reverseBits(n) {
 
 /* MATRIX FUNCTIONS */
 
+function getColumn(M, j) {
+/* Returns column j of nrows by ncols(<j+1) matrix M
+   as an nrows x 1 array, i.e., an nrows column vector
+*/
+  const col = [];
+  for (let i=0; i < M.length; i++) {
+    col[i] = M[i][j];
+  }
+  return col;
+}
+
+function transpose(M) { 
+/* M is an nrows by ncols matrix to be transposed to 
+   an ncols x nrows matrix Mt
+*/
+  const nrows = M.length, 
+        ncols = M[0].length,
+        Mt = [];
+    
+  // Give new array the right number of rows
+  for (let i=0; i < ncols; i++) {
+    Mt[i] = [];
+  }
+
+  // Populate Mt
+  for (let i=0; i < nrows; i++) {
+    for (let j=0; j < ncols; j++) {
+      Mt[j][i] = M[i][j];
+    }
+  }
+  return Mt;
+}
+
 function scalarmult(a, u) {
     let rslt = [];
     if (isNumericalArray(u)) {
@@ -314,14 +347,16 @@ function Xprod(u, v) {
 
 /* STATISTICAL FUNCTIONS */
 
-function MinMax(data) {
-    let rslt=[];
+function MinMaxRng(data) {
+    let rslt = [];
     if (isNumericalArray(data)) {
-        rslt = [Math.min.apply(null, data), Math.max.apply(null, data)];
+        rslt = [Math.min.apply(null, data), Math.max.apply(null, data), 0];
+        rslt[rslt.length-1] = rslt[1] - rslt[0];
     }
     return rslt;
 }
 
+/*
 function range(data) {
     let rng = 0;
     if (isNumericalArray(data)) {
@@ -330,6 +365,7 @@ function range(data) {
     }
     return rng;
 }
+*/
 
 function EV(data, prob) {
     let rslt = Number.NaN;
