@@ -2,7 +2,7 @@
 
 const globalChartOptions = {chartArea: {top: 10}, legend: 'bottom'};
 
-function computeTicks(data, labl, vert, prec=0) {
+function computeTicks(data, labl, vert) {
 /* data = an axis of numerical values as a 1-D array
    labl = the axis lable, a string
    vert = "boolean" indicating if a vertical axis (1) or horizontal (0)
@@ -10,9 +10,25 @@ function computeTicks(data, labl, vert, prec=0) {
 */
   let ticks = {v: [], s: []};
   [min, max, rng] = MinMaxRng(data);
+  const buf = 0.05 * rng;//,
+//        oom = -Math.floor(Math.log10(rng)),
+//        oomf = Math.pow(10, oom);
+  min -= buf, max += buf;//, rng = max - min;
+/*  let oom = -Math.floor(Math.log10(rng)),
+      oomf = Math.pow(10, oom);
+  min = Math.floor(oomf*min) / oomf;
+  max = Math.ceil(oomf*max) / oomf;
+*/
+  let minoom = -Math.floor(Math.log10(Math.abs(min))),
+      minoomf = Math.pow(10, minoom+2),
+      maxoom = -Math.floor(Math.log10(Math.abs(max))),
+      maxoomf = Math.pow(10, maxoom+2);
+  min = Math.floor(minoomf*min) / minoomf;
+  max = Math.ceil(maxoomf*max) / maxoomf;
+  rng = max - min;
   for (let i=0; i < 5; i++) {
     ticks.v[i] = min + i/4.0 * rng;
-    ticks.s[i] = ticks.v[i].toFixed(prec);
+    ticks.s[i] = ticks.v[i].toString();
   }
   if (vert) {
     ticks.s[2] = labl + '\u00A0\u00A0\u00A0' + ticks.s[2];
