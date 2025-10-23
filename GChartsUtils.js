@@ -10,24 +10,15 @@ function computeTicks(data, labl, vert) {
 */
   let ticks = {v: [], s: []};
   [min, max, rng] = MinMaxRng(data);
-  const buf = 0.05 * rng;//,
-//        oom = -Math.floor(Math.log10(rng)),
-//        oomf = Math.pow(10, oom);
-  min -= buf, max += buf;//, rng = max - min;
-/*  let oom = -Math.floor(Math.log10(rng)),
-      oomf = Math.pow(10, oom);
-  min = Math.floor(oomf*min) / oomf;
-  max = Math.ceil(oomf*max) / oomf;
-*/
-  let minoom = -Math.floor(Math.log10(Math.abs(min))),
-      minoomf = Math.pow(10, minoom+2),
-      maxoom = -Math.floor(Math.log10(Math.abs(max))),
-      maxoomf = Math.pow(10, maxoom+2);
-  min = Math.floor(minoomf*min) / minoomf;
-  max = Math.ceil(maxoomf*max) / maxoomf;
-  rng = max - min;
+  const mdpt = 0.5*(min + max),
+        oom = Math.floor(Math.log2(rng)),
+        oomf = Math.pow(2, oom-2),
+        temprng = oomf * Math.ceil(rng/oomf),
+        plotmin = oomf * Math.floor((mdpt - 0.5*temprng)/oomf),
+        plotmax = oomf * Math.ceil((mdpt + 0.5*temprng)/oomf),
+        plotrng = plotmax - plotmin;
   for (let i=0; i < 5; i++) {
-    ticks.v[i] = min + i/4.0 * rng;
+    ticks.v[i] = plotmin + i/4.0 * plotrng;
     ticks.s[i] = ticks.v[i].toString();
   }
   if (vert) {
