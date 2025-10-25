@@ -27,38 +27,39 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
     }
 
     const r = Number(rForm[0].value),
+// Initial values
           x0 = Number(x0Form[0].value),
           y0 = Number(y0Form[0].value),
           z0 = Number(z0Form[0].value),
-          h = 0.01,
+          h = 0.01, // = dt
           tXient = 30,
           tmax = 60,
+// Results arrays
           yvxData = [['x', 'y']],
           zvxData = [['x', 'z']],
           zvyData = [['y', 'z']],
           yvxPData = [['x', 'y']],
           zvxPData = [['x', 'z']],
           zvyPData = [['y', 'z']];
+// Dynamic variables
     let t = 0, 
-        fn = [x0, y0, z0],
-        fnp1 = [0, 0, 0],
-        xmin, xmax, xrng, 
-        ymin, ymax, yrng, 
-        zmin, zmax, zrng,
-        x_y0_min, x_y0_max, x_y0_rng,
-        x_z0_min, x_z0_max, x_z0_rng,
-        y_x0_min, y_x0_max, y_x0_rng, 
-        y_z0_min, y_z0_max, y_z0_rng,
-        z_x0_min, z_x0_max, z_x0_rng,
-        z_y0_min, z_y0_max, z_y0_rng,
-        xTicks, yTicks, zTicks,
-        x0swtch = false, y0swtch = false, z0swtch = false,
-        xX, yX, zX;
+        fn = [x0, y0, z0], // "current" values
+        fnp1 = [0, 0, 0], // "next" values
+        xTicks, yhTicks, yvTicks, zTicks, // Structures for customized pp graph ticks
+        x0swtch = false, y0swtch = false, z0swtch = false, 
+        xX, yX, zX,
+// Stuctures for customized Poincare section graph ticks
+        x0yTicks, x0zTicks,
+        y0xTicks, y0zTicks,
+        z0xTicks, z0yTicks;
     while (t < tmax) {
+// Record the current values
       yvxData.push([fn[0],fn[1]]);
       zvxData.push([fn[0],fn[2]]);
       zvyData.push([fn[1],fn[2]]);
+// Compute the next values
       fnp1 = RK4nonauton(dxdt, fn, t, h); // 4th order RK
+
       if (t => tXient) {
         if (fn[0]*fnp1[0] < 0) { // x(t) crossed zero
           yX = crossing(t, [fn[0],fnp1[0]], [fn[1],fnp1[1]]);
@@ -82,47 +83,18 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       fn = fnp1;
       t += h;
     }
-      // Create Phase Plane Data Tables
+// Create Phase Plane Data Tables
     const yvxDTable = google.visualization.arrayToDataTable(yvxData),
           zvxDTable = google.visualization.arrayToDataTable(zvxData),
           zvyDTable = google.visualization.arrayToDataTable(zvyData);
-      // Compute phase plane viewing windows and tick places
 
-    [xmin, xmax, xrng] = MinMaxRng(getColumn(yvxData.slice(1,), 0));
-    [ymin, ymax, yrng] = MinMaxRng(getColumn(yvxData.slice(1,), 1));
-    [zmin, zmax, zrng] = MinMaxRng(getColumn(zvxData.slice(1,), 1));
+// Compute phase plane viewing windows and tick places
     xTicks = computeTicks(getColumn(yvxData.slice(1,),0), 'x', 0);
     yhTicks = computeTicks(getColumn(yvxData.slice(1,),1), 'y', 0);
     yvTicks = computeTicks(getColumn(yvxData.slice(1,),1), 'y', 1);
     zTicks = computeTicks(getColumn(zvxData.slice(1,),1), 'z', 1);
 
-    xmin = (xmin == 0) ? 1.1*xmin : 0.95*xmin;
-
-    xmax = (xmax > 0) ? 1.1*xmax : 0.95*xmax;
-    ymin = (ymin < 0) ? 1.1*ymin : 0.95*ymin;
-    ymax = (ymax > 0) ? 1.1*ymax : 0.95*ymax;
-    zmin = (zmin < 0) ? 1.1*zmin : 0.95*zmin;
-    zmax = (zmax > 0) ? 1.1*zmax : 0.95*zmax;
-    const xminst = xmin.toFixed(2),
-          xmaxst = xmax.toFixed(2),
-          yminst = ymin.toFixed(2),
-          ymaxst = ymax.toFixed(2),
-          zminst = zmin.toFixed(2),
-          zmaxst = zmax.toFixed(2),
-//          xrng = xmax - xmin,
-          x1q = xmin + 0.25*xrng, x1qst = x1q.toFixed(2),
-          xmid = xmin + 0.5*xrng, xmidst = xmid.toFixed(2),          
-          x3q = xmin + 0.75*xrng, x3qst = x3q.toFixed(2),
-//          yrng = ymax - ymin,
-          y1q = ymin + 0.25*yrng, y1qst = y1q.toFixed(2),
-          ymid = ymin + 0.5*yrng, ymidst = ymid.toFixed(2),
-          y3q = ymin + 0.75*yrng, y3qst = y3q.toFixed(2),
-//          zrng = zmax - zmin,
-          z1q = zmin + 0.25*zrng, z1qst = z1q.toFixed(2),
-          zmid = zmin + 0.5*zrng, zmidst = zmid.toFixed(2),
-          z3q = zmin + 0.75*zrng, z3qst = z3q.toFixed(2);
-
-      // Set Options
+// Set Options
     let Options = {...globalChartOptions,
                       hAxis: {viewWindowMode: 'explicit'},
                       vAxis: {viewWindowMode: 'explicit'},
@@ -164,21 +136,29 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
     const zvyChart = new google.visualization.LineChart(document.getElementById("GiorCPC3E26n7zvyChart"));
     zvyChart.draw(zvyDTable, ppOptions);
 
-      // Plot non-empty Poincare sections
-    Options['pointSize'] = 1; 
+// Plot non-empty Poincare sections
+// Just use Options object for these graphs' options
+    Options['pointSize'] = 1;    
     if (!z0swtch) {
       dsEBIiH("GiorCPC3E26n7yvxPChart", "No z=0 points in phase space<br>(after t=30)");
     }
     else {
-/*      xPmin = (xPmin < 0) ? 1.1*xPmin : 0.95*xPmin;
-      xPmax = (xPmax > 0) ? 1.1*xPmax : 0.95*xPmax;
-      yPmin = (yPmin < 0) ? 1.1*yPmin : 0.95*yPmin;
-      yPmax = (yPmax > 0) ? 1.1*yPmax : 0.95*yPmax;
-*/
       const yvxPDTable = google.visualization.arrayToDataTable(yvxPData);
       const yvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7yvxPChart"));
-//      Options.hAxis.viewWindow = {min: xPmin, max: xPmax};
-//      Options.vAxis.viewWindow = {min: yPmin, max: yPmax};
+      z0xTicks = computeTicks(getColumn(yvxPData.slice(1,),0), 'x', 0);
+      z0yTicks = computeTicks(getColumn(yvxPData.slice(1,),1), 'y', 1);
+      Options.hAxis.viewWindow = {min: z0xTicks.v[0], max: z0xTicks.v[4]};
+      Options.hAxis.ticks = [{v: z0xTicks.v[0], f: z0xTicks.s[0]},
+                             {v: z0xTicks.v[1], f: z0xTicks.s[1]},
+                             {v: z0xTicks.v[2], f: z0xTicks.s[2]},
+                             {v: z0xTicks.v[3], f: z0xTicks.s[3]},
+                             {v: z0xTicks.v[4], f: z0xTicks.s[4]}];
+      Options.vAxis.viewWindow = {min: z0yTicks.v[0], max: z0yTicks.v[4]};
+      Options.vAxis.ticks = [{v: z0yTicks.v[0], f: z0yTicks.s[0]},
+                             {v: z0yTicks.v[1], f: z0yTicks.s[1]},
+                             {v: z0yTicks.v[2], f: z0yTicks.s[2]},
+                             {v: z0yTicks.v[3], f: z0yTicks.s[3]},
+                             {v: z0yTicks.v[4], f: z0yTicks.s[4]}];
       yvxPChart.draw(yvxPDTable, Options);
     }
 
@@ -186,15 +166,22 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       dsEBIiH("GiorCPC3E26n7zvxPChart", "No y=0 points in phase space<br>(after t=30)");
     }
     else {
-/*      xPmin = (xPmin < 0) ? 1.1*xPmin : 0.95*xPmin;
-      xPmax = (xPmax > 0) ? 1.1*xPmax : 0.95*xPmax;
-      zPmin = (zPmin < 0) ? 1.1*zPmin : 0.95*zPmin;
-      zPmax = (zPmax > 0) ? 1.1*zPmax : 0.95*zPmax;
-*/
       const zvxPDTable = google.visualization.arrayToDataTable(zvxPData);
       const zvxPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvxPChart"));
-//      Options.hAxis.viewWindow = {min: xPmin, max: xPmax};
-//      Options.vAxis.viewWindow = {min: zPmin, max: zPmax};
+      y0xTicks = computeTicks(getColumn(zvxPData.slice(1,),0), 'x', 0);
+      y0zTicks = computeTicks(getColumn(zvxPData.slice(1,),1), 'z', 1);
+      Options.hAxis.viewWindow = {min: y0xTicks.v[0], max: y0xTicks.v[4]};
+      Options.hAxis.ticks = [{v: y0xTicks.v[0], f: y0xTicks.s[0]},
+                             {v: y0xTicks.v[1], f: y0xTicks.s[1]},
+                             {v: y0xTicks.v[2], f: y0xTicks.s[2]},
+                             {v: y0xTicks.v[3], f: y0xTicks.s[3]},
+                             {v: y0xTicks.v[4], f: y0xTicks.s[4]}];
+      Options.vAxis.viewWindow = {min: y0zTicks.v[0], max: y0zTicks.v[4]};
+      Options.vAxis.ticks = [{v: y0zTicks.v[0], f: y0zTicks.s[0]},
+                             {v: y0zTicks.v[1], f: y0zTicks.s[1]},
+                             {v: y0zTicks.v[2], f: y0zTicks.s[2]},
+                             {v: y0zTicks.v[3], f: y0zTicks.s[3]},
+                             {v: y0zTicks.v[4], f: y0zTicks.s[4]}];
       zvxPChart.draw(zvxPDTable, Options);
     }
 
@@ -202,15 +189,22 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
       dsEBIiH("GiorCPC3E26n7zvyPChart", "No x=0 points in phase space<br>(after t=30)");
     }
     else {
-/*      yPmin = (yPmin < 0) ? 1.1*yPmin : 0.95*yPmin;
-      yPmax = (yPmax > 0) ? 1.1*yPmax : 0.95*yPmax;
-      zPmin = (zPmin < 0) ? 1.1*zPmin : 0.95*zPmin;
-      zPmax = (zPmax > 0) ? 1.1*zPmax : 0.95*zPmax;
-*/
       const zvyPDTable = google.visualization.arrayToDataTable(zvyPData);
       const zvyPChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E26n7zvyPChart"));
-//      Options.hAxis.viewWindow = {min: yPmin, max: yPmax};
-//      Options.vAxis.viewWindow = {min: zPmin, max: zPmax};
+      x0yTicks = computeTicks(getColumn(zvyPData.slice(1,),0), 'y', 0);
+      x0zTicks = computeTicks(getColumn(zvyPData.slice(1,),1), 'z', 1);
+      Options.hAxis.viewWindow = {min: x0yTicks.v[0], max: x0yTicks.v[4]};
+      Options.hAxis.ticks = [{v: x0yTicks.v[0], f: x0yTicks.s[0]},
+                             {v: x0yTicks.v[1], f: x0yTicks.s[1]},
+                             {v: x0yTicks.v[2], f: x0yTicks.s[2]},
+                             {v: x0yTicks.v[3], f: x0yTicks.s[3]},
+                             {v: x0yTicks.v[4], f: x0yTicks.s[4]}];
+      Options.vAxis.viewWindow = {min: x0zTicks.v[0], max: x0zTicks.v[4]};
+      Options.vAxis.ticks = [{v: x0zTicks.v[0], f: x0zTicks.s[0]},
+                             {v: x0zTicks.v[1], f: x0zTicks.s[1]},
+                             {v: x0zTicks.v[2], f: x0zTicks.s[2]},
+                             {v: x0zTicks.v[3], f: x0zTicks.s[3]},
+                             {v: x0zTicks.v[4], f: x0zTicks.s[4]}];
       zvyPChart.draw(zvyPDTable, Options);
     }
   }
