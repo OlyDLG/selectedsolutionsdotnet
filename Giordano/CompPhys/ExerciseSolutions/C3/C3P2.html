@@ -166,6 +166,12 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <h3>Solution</h3>
 
+<p>\(~~~~\)The physics is discussed in the text, we’re simply charged with <q>verifying</q> it. This involves generalizing the numerical methods we’ve used so far to a mapping from \(\mathbb{R}^3 \rightarrow \mathbb{R}^3\), and, for the Poincaré sections, figuring out how to detect when the solution crosses a coordinate plane (after the transient time period has elapsed). Since we wrote our Runge-Kutta solver to work for domain and range spaces of any (finite) dimension, no new/extra work is required for the first part. To detect coordinate plane crossings: at each time step past the transient, we compute, for example, the product \((x_n)(x_{n+1})\); when this is less than zero, it means that, for some \(t\) between \(t_n\) and \(t_{n+1}\), \(x=0\), i.e., we intersected the \(y\)-\(z\) plane. We then use linear interpolation to approximate \(t\), and use that \(t\) to linearly interpolate the value of \(y\) between \(y_n\) and \(y_{n+1}\) (resp. \(z\) between \(z_n\) and \(z_{n+1}\)) at that \(t\). Similarly, the inequality \((y_n)(y_{n+1})\lt 0\) tells us when we’ve crossed the \(x\)-\(z\) plane, and \((z_n)(z_{n+1}) \lt 0\) tells us when we’ve crossed the \(x\)-\(y\) plane. (It should be noted that there’s no reason to expect any \(y\)-\(z\) crossings, for example, to occur for the same value of \(t\) as an \(x\)-\(y\) or \(x\)-\(z\) crossing, so when the reader is implementing this algorithm for themself, be sure not to make the mistake of keeping track of just one variable to find appropriate \(t\) and then assuming that all planes have been crossed. Question: what would your Poincaré section plots look like if you make this mistake?)</p>
+
+<p>\(~~~~\)We have provided the reader with \(r\) in increments of \(5\) from \(5\) (the default) to \(165\); \(x_0\) from \(-9\) to \(9\) in increments of \(2\) (default: \(1\)); and \(y_0\) and \(z_0\) from \(-5\) to \(5\) in increments of \(1\) (default: 0). However, you can actually type any number into any of these fields and the program will work correctly (it may <q>complain,</q> but you may ignore that). Thus, for example, the reader can type in \(24.74\)&mdash;the approximate value the text gives as the value of \(r\) at which the transition to chaos occurs&mdash;and <q>near-by</q> values for \(r\) to try to observe this transition. (For the default initial conditions, \(x_0=1, y_0=z_0=0\), using an \(r\) increment of \(0.1\), we find that the qualitative appearance of the the phase plane plots remains similar to \(r=25\) all the way down to \(r=24.2\); we assume this <q>discrepancy</q> is due to the numerical error we incur by using a \(\Delta t\) large enough to avoid our browser’s <q>need more time?</q> message.) Similarly, the reader can type in any initial values, and thereby observe that the Poincaré sections do remain qualitatively the same regardless (though the exact values found, including the result ranges, vary somewhat, which we again attribute to inherent numerical imprecision).</p>
+
+<p>\(~~~~\)(The reader who examines the code closely will observe considerably more added than just what is required to compute the above, including, for example, calls to new functions, such as computeTicks, which is in GChartsUtils.js. These have no bearing on the physics or its computation: they merely provide <q>cosmetic support</q> and can safely be ignored.)</p>
+
 <p><center>
 <h3><q>Standard</q> Lorenz Model Phase Space Plots and Poincaré Sections</h3>
 <table>
@@ -179,19 +185,19 @@ pre code, pre tt{ background-color:transparent; border:none; }
     <td class="cen" style="border: none;">
       <form id="C3E26n7x0" onchange="makeC3E26n7Graph()">
         <label for="C3E26n7x0In">\(x_0\,\):</label>
-        <input type="number" name="C3E26n7x0In" min="0" max="2" step="0.2" value="1">
+        <input type="number" name="C3E26n7x0In" min="-9" max="9" step="2" value="1">
       </form>
     </td>
     <td class="cen" style="border: none;">
       <form id="C3E26n7y0" onchange="makeC3E26n7Graph()">
         <label for="C3E26n7y0In">\(y_0\,\):</label>
-        <input type="number" name="C3E26n7y0In" min="0" max="2" step="0.2" value="0">
+        <input type="number" name="C3E26n7y0In" min="-5" max="5" step="1" value="0">
       </form>
     </td>
     <td class="cen" style="border: none;">
       <form id="C3E26n7z0" onchange="makeC3E26n7Graph()">
         <label for="C3E26n7z0In">\(z_0\,\):</label>
-        <input type="number" name="C3E26n7z0In" min="0" max="2" step="0.2" value="0">
+        <input type="number" name="C3E26n7z0In" min="-5" max="5" step="1" value="0">
       </form>
     </td>
   </tr>
