@@ -239,14 +239,60 @@ function RKN42Dauton(f, x, h) {
 
   /* FFT */
 
-function reverseBits(n) {
-    let reversed = 0;
-    if (n.isInteger()) {
-      for (let i=0; i<32; i++) {
-        ;
-      }
+function FFT(data, inverse=false) {
+/* Fast Fourier Transform of numerical array data, N * InvFFT if inverse is true
+   Adapted from Press, et al. 2007 "Numerical Recipes, 3rd Ed." Cambridge U. Press
+*/
+  const tpi = 2 * Math.pi,
+        stp = (inverse) ? -tpi : tpi;
+  let i, j=1, m, mM=2, step,
+      wR, wI, wpR, wpI, 
+      wtmp, th, rtmp, itmp;  
+      
+/* Ensure data.length is a power of two */
+  const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
+  while (data.length < N) {data.push(0);}
+  const n = N << 1;
+
+/* Bit reversal Section */
+  for (i=1; i<n; i+=2) { 
+    if (j > i) {
+      data.swap(j-1, i-1);
+      data.swap(j, i);
     }
-    return reversed; 
+    m = N;
+    while ((m >= 2) && (j > m)) {
+      j -= m;
+      m >>= 1;
+    }
+    j += m;
+  }
+
+/* Danielson-Lanczos Section */
+  while (n > mM) { // while we haven't gotten to one-term-sums yet
+    step = mM << 1;
+    th = stp / mM; // init. trig recurrence
+    wtmp = Math.sin(0.5 * th);
+    wpR = -2 * wtmp * wtmp;
+    wpI = Math.sin(th);
+    wR = 1; wI = 0;
+/* The D-L summation implementation */
+    for (m=1; m<mM; m+=2) { 
+      for (i=m; i<=n; i+=step) {
+        j = i + mM; 
+        rtmp = wR * data[j-1] - wI * data[j];
+        itmp = wR * data[j] + wI * data[j-1];
+        data[j-1] = data[i-1] - rtmp;
+        data[j] = data[i] - itmp;
+        data[i-1] += rtmp;
+        data[i] += itmp;
+      }
+      wtmp = wR;
+      wR = wtmp * wpR - wI * wpI + wR;
+      wI = wI * wpR + wtmp * wpI + wI; 
+    }
+    mM = step;
+  }
 }
 
 /* MATRIX FUNCTIONS */

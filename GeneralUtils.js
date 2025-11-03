@@ -38,6 +38,13 @@ function toggleHidden(id) {
     element.hidden = !element.hidden;
 }
 
+function Array.prototype.swap(i, j) {
+/* Swap the values this[i] and this[j] */
+  const temp = this[i];
+  this[i] = this[j];
+  this[j] = temp;
+}
+
 /*
 function supJS(s) {
     return String(s) + "<sup>JS</sup>";
