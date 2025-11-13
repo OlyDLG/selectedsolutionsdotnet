@@ -1,12 +1,10 @@
-function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
-  const s = 10.0;
-  const b = 8.0/3;
-  const rForm = document.getElementById("C3E26n7r");
-  const x0Form = document.getElementById("C3E26n7x0");
-  const y0Form = document.getElementById("C3E26n7y0");
-  const z0Form = document.getElementById("C3E26n7z0");
+function GiorCPC3E37() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 37
+  const N = 128,
+        tpi = 2 * Math.pi;
 
-  function makeC3E26n7Graph() {
+//  const rForm = document.getElementById("C3E26n7r");
+
+  function makeC3E37Graph() {
     function dxdt(x, t) { // For use with RK4nonauton
       let [x1, x2, x3] = x;
       let x1dot = s*(x2 - x1);
@@ -210,25 +208,4 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
   }
   makeC3E26n7Graph();
   return makeC3E26n7Graph;
-}
-
-function GiorCPC3E37() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 37
-  const N = 128,
-        tpi = 2 * Math.PI;
-  const tdata = [];
-  for (let n=0; n < N; n++) {
-    tdata.push(Math.cos(tpi*n/N));
-    tdata.push(0);
-  }
-//  const fdata = 
-  FFT(tdata);
-  FFT(tdata,-1);
-  const pdata = [['f', 'A']];
-  for (let m=0; m < tdata.length; m+=2) {
-    pdata.push([m, tdata[m]]);
-    pdata.push([m+1, tdata[m+1]]);
-  }
-  const FFTTable = google.visualization.arrayToDataTable(pdata);
-  const FFTChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E37FzChart"));
-  FFTChart.draw(FFTTable);
 }

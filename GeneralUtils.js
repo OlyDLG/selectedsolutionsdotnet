@@ -38,7 +38,7 @@ function toggleHidden(id) {
     element.hidden = !element.hidden;
 }
 
-function Array.prototype.swap(i, j) {
+Array.prototype.swap = function(i, j) {
 /* Swap the values this[i] and this[j] */
   const temp = this[i];
   this[i] = this[j];

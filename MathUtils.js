@@ -239,29 +239,35 @@ function RKN42Dauton(f, x, h) {
 
   /* FFT */
 
-function FFT(data, inverse=false) {
-/* Fast Fourier Transform of numerical array data, N * InvFFT if inverse is true
+function FFT(data, isign=1) {
+/* Discrete Fourier Transform of implicitly-complex numerical array "data", n*InvDFT if isign=-1.
+   data.length=2n a positive integer power of 2 (TO DO: adapt to lengthen data if it isn't)
+   even-index elements being the real parts, odd-index elements being the resp. imag. parts,
+   i.e., x(0)=data[0]+i*data[1], x(1)=data[2]+i*data[2],...,x(n)=data[2n-2]+i*data[2n-1].
    Adapted from Press, et al. 2007 "Numerical Recipes, 3rd Ed." Cambridge U. Press
 */
-  const tpi = 2 * Math.pi,
-        stp = (inverse) ? -tpi : tpi;
-  let i, j=1, m, mM=2, step,
-      wR, wI, wpR, wpI, 
-      wtmp, th, rtmp, itmp;  
-      
-/* Ensure data.length is a power of two */
-  const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
-  while (data.length < N) {data.push(0);}
-  const n = N << 1;
+/* Ensure data.length is a power of two
+   To Be Added after algorithm is working
+   const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
+   while (data.length < N) {data.push(0);}
+*/
+  const stp = isign * 2 * Math.PI,
+        nn = data.length,
+        n = nn / 2;
 
+  let mmax, m, j, istep, i,
+      wtemp, wr, wpr, wpi, wi,
+      theta, tempr, tempi;
+  
 /* Bit reversal Section */
-  for (i=1; i<n; i+=2) { 
+  j = 1;
+  for (i=1; i<nn; i+=2) {
     if (j > i) {
       data.swap(j-1, i-1);
       data.swap(j, i);
     }
-    m = N;
-    while ((m >= 2) && (j > m)) {
+    m = n;
+    while ((m>=2) && (j>m)) {
       j -= m;
       m >>= 1;
     }
@@ -269,29 +275,32 @@ function FFT(data, inverse=false) {
   }
 
 /* Danielson-Lanczos Section */
-  while (n > mM) { // while we haven't gotten to one-term-sums yet
-    step = mM << 1;
-    th = stp / mM; // init. trig recurrence
-    wtmp = Math.sin(0.5 * th);
-    wpR = -2 * wtmp * wtmp;
-    wpI = Math.sin(th);
-    wR = 1; wI = 0;
-/* The D-L summation implementation */
-    for (m=1; m<mM; m+=2) { 
-      for (i=m; i<=n; i+=step) {
-        j = i + mM; 
-        rtmp = wR * data[j-1] - wI * data[j];
-        itmp = wR * data[j] + wI * data[j-1];
-        data[j-1] = data[i-1] - rtmp;
-        data[j] = data[i] - itmp;
-        data[i-1] += rtmp;
-        data[i] += itmp;
+  mmax = 2;
+  while (nn > mmax) {
+    istep = mmax << 1;
+    theta = stp / mmax;
+    wtemp = Math.sin(0.5 * theta);
+    wpr = -2.0 * wtemp * wtemp;
+    wpi = Math.sin(theta);
+    wr = 1.0;
+    wi = 0.0;
+    for (m=1; m<mmax; m+=2) {
+      for (i=m; i<=nn; i+=istep) {
+        j = i + mmax;
+        tempr = wr*data[j-1] - wi*data[j];
+        tempi = wr*data[j] + wi*data[j-1];
+        data[j-1] = data[i-1] - tempr;
+        data[j] = data[i] - tempi;
+        data[i-1] += tempr;
+        data[i] += tempi;
       }
-      wtmp = wR;
-      wR = wtmp * wpR - wI * wpI + wR;
-      wI = wI * wpR + wtmp * wpI + wI; 
+      wr = (wtemp=wr)*wpr - wi*wpi + wr;
+      wi = wi*wpr + wtemp*wpi + wi;
     }
-    mM = step;
+    mmax = istep;
+  }
+  if (isign==-1) {
+    data.forEach((datum, index) => {data[index] /= n;});
   }
 }
 
