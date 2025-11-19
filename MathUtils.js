@@ -239,17 +239,44 @@ function RKN42Dauton(f, x, h) {
 
   /* FFT */
 
-function FFT(data, isign=1) {
-/* Discrete Fourier Transform of implicitly-complex numerical array "data", n*InvDFT if isign=-1.
-   data.length=2n a positive integer power of 2 (TO DO: adapt to lengthen data if it isn't)
+function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
+/* Discrete Fourier Transform of numerical array input.data ("data"), 
+   n*InvDFT if input.isign ("isign") = -1.
+ 
+   data is overwritten by the transform, so if that is not desired, data should be a
+   deep copy made prior to calling FFT.
+
+   input.real ("real") = true => data is real, false implies complex; 
+   input.doubledUp ("doubledUp") = true => data consists of two real data series, 
+   "series 1" in the even-index elements, "series 2" in the odd index elements.
+
+   If data.length != a positive integer power of 2, it will be lengthened to be so.
+
+   As a length 2n array of real numbers, data represents a length n array of complex #'s, the
    even-index elements being the real parts, odd-index elements being the resp. imag. parts,
-   i.e., x(0)=data[0]+i*data[1], x(1)=data[2]+i*data[2],...,x(n)=data[2n-2]+i*data[2n-1].
+   i.e., z(0)=data[0]+i*data[1], z(1)=data[2]+i*data[3],...,z(n)=data[2n-2]+i*data[2n-1].
+
+   In the "forward direction"--isign=1--the result of the DFT is stored in data as follows
+   (d=sampling interval):
+
+   data[0,1]=(Re,Im)A(f=0), data[2,3]=(Re,Im)A(f=1/(nd)),..,data[n-2,n-1]=(Re,Im)A(f=(n/2-1)/(nd)),
+   data[n,n+1]=(Re,Im)A(f=+/-1/(2d)) ("combination"; meaning TBD),
+   data[n+2,n+3]=(Re,Im)A(f=(1-n/2)/(nd)),..,data[2n-4,2n-3]=(Re,Im)A(f=-2/nd),
+   data[2n-2,2n-1]=(Re,Im)A(f=-1/nd)
+
    Adapted from Press, et al. 2007 "Numerical Recipes, 3rd Ed." Cambridge U. Press
 */
-/* Ensure data.length is a power of two
-   To Be Added after algorithm is working
-   const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
-   while (data.length < N) {data.push(0);}
+
+/* "Unpack" input */
+
+  const data = input.data,
+        isign = input.isign,
+        real = input.real,
+        doubledUp = input.doubledUp;
+
+/* Ensure data.length is a power of two 
+  const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
+  while (data.length < N) {data.push(0);}
 */
   const stp = isign * 2 * Math.PI,
         nn = data.length,
@@ -301,6 +328,16 @@ function FFT(data, isign=1) {
   }
   if (isign==-1) {
     data.forEach((datum, index) => {data[index] /= n;});
+  }  
+}
+
+function powerSpectrum(ft) {
+/* Returns the "power spectrum" of DFT "ft", 
+   with the same result indexing structure produced by FFT 
+*/
+  const N=ft.length, ps = [];
+  for (let n=0; n < N; n+=2) {
+    ps.push( Math.sqrt(ft[n]*ft[n] + ft[n+1]*ft[n+1]) );
   }
 }
 

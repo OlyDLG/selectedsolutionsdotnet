@@ -213,20 +213,22 @@ function GiorCPC3E26n7() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 26/27
 }
 
 function GiorCPC3E37() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 37
-  const N = 128,
+  const N = 32,
         tpi = 2 * Math.PI;
   const tdata = [];
   for (let n=0; n < N; n++) {
-    tdata.push(Math.cos(tpi*n/N));
+    tdata.push(Math.cos(tpi*n/N) + Math.cos(4*tpi*n/N));
     tdata.push(0);
   }
-//  const fdata = 
-  FFT(tdata);
-  FFT(tdata,-1);
+  const input = {data: tdata, isign: 1, real: false, doubledUp: false};
+  FFT(input);
+  input.isign = -1;
+  FFT(input);
+  const data = input.data;
   const pdata = [['f', 'A']];
-  for (let m=0; m < tdata.length; m+=2) {
-    pdata.push([m, tdata[m]]);
-    pdata.push([m+1, tdata[m+1]]);
+  for (let m=0; m < data.length; m+=2) {
+    pdata.push([m, data[m]]);
+    pdata.push([m+1, data[m+1]]);
   }
   const FFTTable = google.visualization.arrayToDataTable(pdata);
   const FFTChart = new google.visualization.ScatterChart(document.getElementById("GiorCPC3E37FzChart"));
