@@ -1,3 +1,5 @@
+/* NR as a citation = Press, W. H., et al. (2007) "Numerical Recipes: The Art of Scientific Computing, 3rd Ed." Cambridge University Press, Cambridge, UK */  
+
 /* GENERAL MATH FUNCTIONS */
 
 function AbsChange(beg, end) {
@@ -81,9 +83,16 @@ class Complex {
 
     imag() {return this.b;}
 
-    mag2() {return this.a**2 + this.b**2;}
+    mag() {// After NR
+      const absa = Math.abs(this.real()),
+            absb = Math.abs(this.imag()),
+            aovb2 = (absa/absb)**2;
+      return (absb > absa) 
+             ? absb * Math.sqrt(1+aovb2)
+             : absa * Math.sqrt(1+1/aovb2);
+    }
 
-    mag() {return Math.sqrt(this.mag2());}
+    mag2() {const temp = this.mag(); return temp * temp;}
 
     arg() {return Math.atan2(this.b, this.a);}
 
@@ -91,8 +100,13 @@ class Complex {
 
     add(z) {return Complex(this.a + z.real(), this.b + z.imag());}
 
-    mult(z) {return Complex(this.a * z.real() - this.b * z.imag(),
-                            this.a * z.imag() + this.b * z.real());}
+    mult(z) {// After NR
+      const tempac = this.a * z.real(),
+            tempbd = this.b * z.imag();
+      return Complex(tempac - tempbd,
+             (this.a + this.b) * (z.real() + z.imag()) - tempac - tempbd
+                    );
+    }
 
     recip() {
       const r2 = this.mag2();
