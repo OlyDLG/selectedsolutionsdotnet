@@ -66,7 +66,7 @@ Array.prototype.someClose = function(val, prec) {
 /* COMPLEX NUMBERS */
 
 class Complex {
-    constructor(a, b, prec=10) {
+    constructor(a, b, prec=12) {
       this.a = a.zeroIfClose(prec); 
       this.b = b.zeroIfClose(prec);
     }
@@ -84,8 +84,8 @@ class Complex {
     imag() {return this.b;}
 
     mag() {// After NR
-      const absa = Math.abs(this.real()),
-            absb = Math.abs(this.imag()),
+      const absa = Math.abs(this.a),
+            absb = Math.abs(this.b),
             aovb2 = (absa/absb)**2;
       return (absb > absa) 
              ? absb * Math.sqrt(1+aovb2)
@@ -98,6 +98,20 @@ class Complex {
 
     conj() {return Complex(this.a, -this.b);}
 
+    rmult(x) {// Multiplication by real x
+      return Complex(x * this.a, x * this.b);
+    }
+
+    imult(y) {// Multiplication by pure imaginary iy
+      return Complex(-y * this.b, y * this.a);
+    }
+
+    recip() {
+      return ((this.a != 0) && (this.b != 0)) 
+           ? this.conj().rmult(1 / this.mag2())
+           : Complex(NaN,NaN);
+    }
+
     add(z) {return Complex(this.a + z.real(), this.b + z.imag());}
 
     mult(z) {// After NR
@@ -108,15 +122,27 @@ class Complex {
                     );
     }
 
-    recip() {
-      const r2 = this.mag2();
-      return (r2 != 0) ? Complex(this.a / r2, -this.b / r2) : Complex(NaN,NaN);
+    div(z) {// After NR
+      let result = Complex(NaN, NaN);
+      const c = z.real(), d = z.imag();
+      if ((c != 0) && (d != 0)) {
+        const a = this.a, b = this.b,
+              cd = c / d, dc = d / c;
+        if (Math.abs(d) > Math.abs(c)) {
+          const denom = c * cd + d;
+          result = Complex((a*cd+b)/denom, (b*cd-a)/denom);
+        }
+        else {
+          const denom = c + d * dc;
+          result = Complex((a+b*dc)/denom, (b-a*dc)/denom);
+        }
+      }
+      return result;
     }
 
-    div(z) {return (z.mag2() != 0) ? this.mult(z.recip()) : Complex(NaN,NaN);}
-
-    log() {return (this.mag2() != 0) ? 
-           Complex(Math.log(this.mag()), this.arg()) : Complex(NaN,NaN);
+    log() {return ((this.a != 0) && (this.b != 0))
+                ? Complex(Math.log(this.mag()), this.arg()) 
+                : Complex(NaN,NaN);
     }
 
     exp() {
@@ -125,10 +151,16 @@ class Complex {
     }
 
     expi() {
-      return this.mult(I).exp()
+      return this.mult(I).exp();
     }
 
-    pow(w) {return (w.mult(this.log())).exp();}
+    rpow(x) {// z^x, x real
+      return this.log().rmult(x).exp();
+    }
+
+    pow(w) {// z^w, w complex
+      return this.log().mult(w).exp();
+    }
 }
 
 const I = new Complex(0.0, 1.0);
