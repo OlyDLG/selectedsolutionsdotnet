@@ -287,7 +287,7 @@ function RKN42Dauton(f, x, h) {
 
 function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
 /* Discrete Fourier Transform of numerical array input.data ("data"), 
-   n*InvDFT if input.isign ("isign") = -1.
+   n*InvDFT if input.isign ("isign") = -1; n = data.length/2 (see below).
  
    data is overwritten by the transform, so if that is not desired, data should be a
    deep copy made prior to calling FFT.
@@ -295,8 +295,6 @@ function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
    input.real ("real") = true => data is real, false implies complex; 
    input.doubledUp ("doubledUp") = true => data consists of two real data series, 
    "series 1" in the even-index elements, "series 2" in the odd index elements.
-
-   If data.length != a positive integer power of 2, it will be lengthened to be so.
 
    As a length 2n array of real numbers, data represents a length n array of complex #'s, the
    even-index elements being the real parts, odd-index elements being the resp. imag. parts,
@@ -310,6 +308,15 @@ function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
    data[n+2,n+3]=(Re,Im)A(f=(1-n/2)/(nd)),..,data[2n-4,2n-3]=(Re,Im)A(f=-2/nd),
    data[2n-2,2n-1]=(Re,Im)A(f=-1/nd)
 
+   That ordering is subsumed for the input in the "inverse" direction," i.e., 
+   FFT(FFT(input.isign=1).isign=-1)=input.
+
+   If data.length != a positive integer power of 2, data will be lengthened to be so.
+   NOTE: the farther n is from the next higher power of 2, the worse will be the 
+   tranform results, and this effect is exacerbated by n being "small" to begin with.
+   For example, n=1025 gives worse results than n=1023, and n=33 gives worse results than
+   either of those. 
+
    Adapted from Press, et al. 2007 "Numerical Recipes, 3rd Ed." Cambridge U. Press
 */
 
@@ -320,10 +327,10 @@ function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
         real = input.real,
         doubledUp = input.doubledUp;
 
-/* Ensure data.length is a power of two 
+/* Ensure data.length is a power of two */
   const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
   while (data.length < N) {data.push(0);}
-*/
+
   const stp = isign * 2 * Math.PI,
         nn = data.length,
         n = nn / 2;
