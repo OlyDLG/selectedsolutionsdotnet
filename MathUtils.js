@@ -285,6 +285,26 @@ function RKN42Dauton(f, x, h) {
 
   /* FFT */
 
+class FFT { // class to encapsulate Fast Fourier Transform methods and data
+  constructor (data=[], isign=1, real=false, doubledUp=true) {
+    this.data = data;
+      // The data to be transformed (isign=1) or untransformed (isign=-1) 
+    this.isign = isign;
+    this.real = real;
+      // false => data is complex, true => real
+    this.dbldUp = doubledUp;
+      // true (false) => data consists of two interleaved (one) real data series
+      // NOTE: only used if real = true
+  }
+
+  print () {
+    return "data: " + this.data.toString() + "\n" +
+           "isign: " + this.isign.toString() + "\n" +
+           "real: " + this.real.toString() + "\n" +
+           (this.real) ? "doubledUp: " + this.dbldUp.toString() + "\n" : "";
+  }
+}
+
 function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
 /* Discrete Fourier Transform of numerical array input.data ("data"), 
    n*InvDFT if input.isign ("isign") = -1; n = data.length/2 (see below).
@@ -392,6 +412,38 @@ function powerSpectrum(ft) {
   for (let n=0; n < N; n+=2) {
     ps.push( Math.sqrt(ft[n]*ft[n] + ft[n+1]*ft[n+1]) );
   }
+  return ps;
+}
+
+function createAbscissae(ftObj) {
+/* Constructs the abscissa axis for the DFT in ftObj.data
+   ftObj.real = Boolean indicating if the original data were real (true) 
+                or complex (false, the default)
+   ftObj.doubledUp = Boolean indicating if the original (real) data consisted 
+                     of one real data series (false, the default) or two (true)
+                     NOTE: this is only checked if ftObj.real is true
+*/
+
+  let abscissae = new Array(ftObj.data.length/2); // abscissae need only be half 
+//  the length of the DFT, because the same set of abscissae apply for both the 
+//  real and the imaginary parts 
+
+
+  for (let n=0; n < abscissae.length; n++) {
+    if (ftObj.real) { // if the original data were real
+      if (ftObj.doubledUp) { // if the original (real) data were "doubled-up"
+        // TBI
+        ;
+      }
+      else { // the original real data were not doubled up
+        // TBI
+        ;
+      }
+    }
+    else { // the original data were complex
+    }
+  }
+  return abscissae;
 }
 
 /* MATRIX FUNCTIONS */
