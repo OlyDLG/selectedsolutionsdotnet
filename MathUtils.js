@@ -286,35 +286,37 @@ function RKN42Dauton(f, x, h) {
   /* FFT */
 
 class FFT { // class to encapsulate Fast Fourier Transform methods and data
-  constructor (data=[], isign=1, real=false, doubledUp=true) {
+  constructor ({data=[], isign=1, real=false, doubledUp=true}={}) {
     this.data = data;
       // The data to be transformed (isign=1) or untransformed (isign=-1) 
+      // Default to an empty array so that data can be added after obj creation
     this.isign = isign;
     this.real = real;
       // false => data is complex, true => real
     this.dbldUp = doubledUp;
-      // true (false) => data consists of two interleaved (one) real data series
+      // true => data consists of two interleaved real data series,
+      // "series 1" in the even-index elements, "series 2" in the odd index elements
+      // false => data consists of a single real data series
       // NOTE: only used if real = true
+    this.abscissae = [];
+      // declaration for storage of the "x-axis" values of the FFT, i.e., 
+      // the "frequencies" if isign=1, or the "times" if isign=-1
   }
 
   print () {
     return "data: " + this.data.toString() + "\n" +
            "isign: " + this.isign.toString() + "\n" +
            "real: " + this.real.toString() + "\n" +
-           (this.real) ? "doubledUp: " + this.dbldUp.toString() + "\n" : "";
+           (this.real) ? ("doubledUp: " + this.dbldUp.toString() + "\n") : ("") +
+           (this.abscissae.length==0) ? ("") : 
+             ((this.isign==1) ? "frequencies: " : "'times: '") + this.abscissae.toString();
   }
-}
 
-function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
-/* Discrete Fourier Transform of numerical array input.data ("data"), 
-   n*InvDFT if input.isign ("isign") = -1; n = data.length/2 (see below).
+  Xform() { /* Discrete Fourier Transform of numerical array this.data ("data"), 
+   n*InvDFT if this.isign ("isign") = -1; n = data.length/2 (see below).
  
    data is overwritten by the transform, so if that is not desired, data should be a
-   deep copy made prior to calling FFT.
-
-   input.real ("real") = true => data is real, false implies complex; 
-   input.doubledUp ("doubledUp") = true => data consists of two real data series, 
-   "series 1" in the even-index elements, "series 2" in the odd index elements.
+   deep copy made prior to calling Xform.
 
    As a length 2n array of real numbers, data represents a length n array of complex #'s, the
    even-index elements being the real parts, odd-index elements being the resp. imag. parts,
@@ -328,8 +330,8 @@ function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
    data[n+2,n+3]=(Re,Im)A(f=(1-n/2)/(nd)),..,data[2n-4,2n-3]=(Re,Im)A(f=-2/nd),
    data[2n-2,2n-1]=(Re,Im)A(f=-1/nd)
 
-   That ordering is subsumed for the input in the "inverse" direction," i.e., 
-   FFT(FFT(input.isign=1).isign=-1)=input.
+   That ordering is subsumed for the input in the "inverse" direction," i.e., applying
+   this.Xform(isign=1).Xform(isign=-1) should restore this.data to its original values.
 
    If data.length != a positive integer power of 2, data will be lengthened to be so.
    NOTE: the farther n is from the next higher power of 2, the worse will be the 
@@ -340,110 +342,99 @@ function FFT(input) { //data, isign=1, real=false, doubledUp=false) {
    Adapted from Press, et al. 2007 "Numerical Recipes, 3rd Ed." Cambridge U. Press
 */
 
-/* "Unpack" input */
+/* Alias parameters */
 
-  const data = input.data,
-        isign = input.isign,
-        real = input.real,
-        doubledUp = input.doubledUp;
+    const data = this.data,
+          isign = this.isign,
+          real = this.real,
+          doubledUp = this.doubledUp;
 
 /* Ensure data.length is a power of two */
-  const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
-  while (data.length < N) {data.push(0);}
+    const N = Math.pow(2, Math.ceil(Math.log2(data.length)));      
+    while (data.length < N) {data.push(0);}
 
-  const stp = isign * 2 * Math.PI,
-        nn = data.length,
-        n = nn / 2;
+    const stp = isign * 2 * Math.PI,
+          nn = data.length,
+          n = nn / 2;
 
-  let mmax, m, j, istep, i,
-      wtemp, wr, wpr, wpi, wi,
-      theta, tempr, tempi;
+    let mmax, m, j, istep, i,
+        wtemp, wr, wpr, wpi, wi,
+        theta, tempr, tempi;
   
 /* Bit reversal Section */
-  j = 1;
-  for (i=1; i<nn; i+=2) {
-    if (j > i) {
-      data.swap(j-1, i-1);
-      data.swap(j, i);
+    j = 1;
+    for (i=1; i<nn; i+=2) {
+      if (j > i) {
+        data.swap(j-1, i-1);
+        data.swap(j, i);
+      }
+      m = n;
+      while ((m>=2) && (j>m)) {
+        j -= m;
+        m >>= 1;
+      }
+      j += m;
     }
-    m = n;
-    while ((m>=2) && (j>m)) {
-      j -= m;
-      m >>= 1;
-    }
-    j += m;
-  }
 
 /* Danielson-Lanczos Section */
-  mmax = 2;
-  while (nn > mmax) {
-    istep = mmax << 1;
-    theta = stp / mmax;
-    wtemp = Math.sin(0.5 * theta);
-    wpr = -2.0 * wtemp * wtemp;
-    wpi = Math.sin(theta);
-    wr = 1.0;
-    wi = 0.0;
-    for (m=1; m<mmax; m+=2) {
-      for (i=m; i<=nn; i+=istep) {
-        j = i + mmax;
-        tempr = wr*data[j-1] - wi*data[j];
-        tempi = wr*data[j] + wi*data[j-1];
-        data[j-1] = data[i-1] - tempr;
-        data[j] = data[i] - tempi;
-        data[i-1] += tempr;
-        data[i] += tempi;
+    mmax = 2;
+    while (nn > mmax) {
+      istep = mmax << 1;
+      theta = stp / mmax;
+      wtemp = Math.sin(0.5 * theta);
+      wpr = -2.0 * wtemp * wtemp;
+      wpi = Math.sin(theta);
+      wr = 1.0;
+      wi = 0.0;
+      for (m=1; m<mmax; m+=2) {
+        for (i=m; i<=nn; i+=istep) {
+          j = i + mmax;
+          tempr = wr*data[j-1] - wi*data[j];
+          tempi = wr*data[j] + wi*data[j-1];
+          data[j-1] = data[i-1] - tempr;
+          data[j] = data[i] - tempi;
+          data[i-1] += tempr;
+          data[i] += tempi;
+        }
+        wr = (wtemp=wr)*wpr - wi*wpi + wr;
+        wi = wi*wpr + wtemp*wpi + wi;
       }
-      wr = (wtemp=wr)*wpr - wi*wpi + wr;
-      wi = wi*wpr + wtemp*wpi + wi;
+      mmax = istep;
     }
-    mmax = istep;
+    if (isign==-1) {
+      data.forEach((datum, index) => {data[index] /= n;});
+    }  
   }
-  if (isign==-1) {
-    data.forEach((datum, index) => {data[index] /= n;});
-  }  
-}
 
-function powerSpectrum(ft) {
-/* Returns the "power spectrum" of DFT "ft", 
-   with the same result indexing structure produced by FFT 
+  powerSpectrum() {
+/* Returns the "power spectrum" of this.Xform(isign=1), with the result having the same
+   indexing structure produced by Xform 
 */
-  const N=ft.length, ps = [];
-  for (let n=0; n < N; n+=2) {
-    ps.push( Math.sqrt(ft[n]*ft[n] + ft[n+1]*ft[n+1]) );
+    const N=this.length, ps = [];
+    for (let n=0; n < N; n+=2) {
+      ps.push( Math.sqrt(this.data[n]*this.data[n] + this.data[n+1]*this.data[n+1]) );
+    }
+    return ps;
   }
-  return ps;
-}
 
-function createAbscissae(ftObj) {
-/* Constructs the abscissa axis for the DFT in ftObj.data
-   ftObj.real = Boolean indicating if the original data were real (true) 
-                or complex (false, the default)
-   ftObj.doubledUp = Boolean indicating if the original (real) data consisted 
-                     of one real data series (false, the default) or two (true)
-                     NOTE: this is only checked if ftObj.real is true
-*/
+  createAbscissae() {
+// Constructs the abscissa axis for the DFT in this.data after a "forward" Xform 
 
-  let abscissae = new Array(ftObj.data.length/2); // abscissae need only be half 
-//  the length of the DFT, because the same set of abscissae apply for both the 
-//  real and the imaginary parts 
-
-
-  for (let n=0; n < abscissae.length; n++) {
-    if (ftObj.real) { // if the original data were real
-      if (ftObj.doubledUp) { // if the original (real) data were "doubled-up"
-        // TBI
-        ;
+    for (let n=0; n < this.length/2; n++) {
+      if (this.real) { // if the original data were real
+        if (this.doubledUp) { // if the original (real) data were "doubled-up"
+          // TBI
+          ;
+        }
+        else { // the original real data were not doubled up
+          // TBI
+          ;
+        }
       }
-      else { // the original real data were not doubled up
-        // TBI
-        ;
+      else { // the original data were complex
       }
     }
-    else { // the original data were complex
-    }
   }
-  return abscissae;
 }
 
 /* MATRIX FUNCTIONS */

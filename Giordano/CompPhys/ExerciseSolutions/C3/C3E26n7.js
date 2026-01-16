@@ -220,11 +220,17 @@ function GiorCPC3E37() { // Giordano/Nakanishi Comp. Phys. Chpt. 3 Ex. 37
     tdata.push(Math.cos(tpi*n/N));// + Math.cos(4*tpi*n/N));
     tdata.push(0);
   }
-  const input = {data: tdata, isign: 1, real: false, doubledUp: false};
-  FFT(input);
+
+//  const input = {data: tdata, isign: 1, real: false, doubledUp: false};
+//  FFT(input);
 //  input.isign = -1;
 //  FFT(input);
-  const data = input.data;
+//  const data = input.data;
+  const FFTobj = new FFT({data: tdata, doubledUp: false});
+  FFTobj.Xform();
+  FFTobj.isign = -1;
+  FFTobj.Xform();
+  const data = FFTobj.data
   const pdata = [['f', 'A']];
   for (let m=0; m < data.length; m+=2) {
     pdata.push([m, data[m]]);
