@@ -1,0 +1,22 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+$\definecolor{red}{RGB}{255,0,0}
+\definecolor{orange}{RGB}{245, 165, 0}
+\definecolor{yellow}{RGB}{255,215,0}
+\definecolor{green}{RGB}{0,255,0}
+\definecolor{indigo}{RGB}{0,0,255}
+\definecolor{violet}{RGB}{138,43,226}
+\definecolor{black}{RGB}{0,0,0}$
+$\require{cancel}$
+<style>
+body {font-family: Palatino}
+</style>
+
+#### <center>Sullivan, M., 2012. <i>Algebra & Trigonometry, Ninth Edition.</i> Prentice Hall, Boston
+#### <center>Chapter 11, Section 6: Polar Equation of a Conic
+#### <center>to be included in the main Chapter write up
+
+<br><br>
+
+
