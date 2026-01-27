@@ -1,0 +1,407 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C7</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style></head>
+<body><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+<p>\(\definecolor{red}{RGB}{255,0,0}
+\definecolor{orange}{RGB}{245, 165, 0}
+\definecolor{yellow}{RGB}{255,215,0}
+\definecolor{green}{RGB}{0,255,0}
+\definecolor{indigo}{RGB}{0,0,255}
+\definecolor{violet}{RGB}{138,43,226}
+\definecolor{black}{RGB}{0,0,0}\)
+\(\require{cancel}\)
+<style>
+body {font-family: Palatino}
+.top{border-bottom:solid black 1px; display:inline-block; float:left}
+.bottom{ display:inline-block; clear:left; float:left}
+</style></p>
+
+<h4><center>Sullivan, M., 2012. <i>Algebra &amp; Trigonometry, Ninth Edition.</i> Prentice Hall, Boston</h4>
+
+<h4><center>Chapter 7: Trigonometric Functions</h4>
+
+<h4><center> Selected Exercise Solutions</h4>
+
+<h4><center>&copy; 2020 by</h4>
+
+<h4><center>David Lawrence Goldsmith</h4>
+
+<h4><center>for</h4>
+
+<h4><center><a href="http://www.selectedsolutions.net">www.selectedsolutions.net</a></h4>
+
+<p><i>Note:  These solutions are provided <q>as-is,</q> for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i>&nbsp; Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<h2>Preface</h2>
+
+<p>In tutoring trigonometry (all math really, but especially trigonometry) I am often asked something like <q>How do you remember all these formulas/identities?</q>&nbsp; I always answer, in all honesty: <q>I don’t, I remember where to look them up</q> (which, in 2020, is ridiculously easy to do on the internet: just type <q>trig identities</q> into any browser and the default search engine will, in a matter of microseconds&mdash;indeed, before you even finish typing it in!&mdash;return umpteen different PDF’s).&nbsp; However, remembering them, especially when you’re just learning them, isn’t really the issue; the issue is proper use of them: the whole point of the trig identities, etc., is to <q>reduce</q> seemingly-complicated problems to simpler problems, in a, quite literally, formulaic way&mdash;the issue is how to use the formulas to <q>plug-and-chug.</q>&nbsp; And a big stumbling block toward that goal, at least in my experience with students having difficulty with it, is recognizing which formula(s)/identity(ies) is (are) applicable in a particular situation, especially given that there are, admittedly, so many new, and <q>new-looking,</q> formulas being <q>thrown at</q> you in such rapid succession!</p>
+
+<p>The strategy I recommend for dealing with this problem, (as tedious as it may sound), is that, at the top of each page of work, you begin by re-copying out all the formulas/identities you are responsible for learning in that lesson (at the very least: the more you write out, the more you will retain what you’ve taken the time to write out, so by all means, write out identities from earlier lessons as well, especially if you find that you’re still struggling with recognizing them in problems you’re working on; for what it’s worth here, I also emphasize this strategy when learning the properties of exponents and logarithmic identities&mdash;basically, any situation in which you’re being required to learn a lot of new synoptic information&mdash;for that’s what formulas/identities really are: synoptic information&mdash;in a short period of time).&nbsp; To set a good example and make abundantly clear what I mean, I will begin each section in each of my <q>Sullivan Trig Chapters</q> with a re-statement of the formulas/identities being <q>drilled</q> in that section (that, in addition to the frequent restatement of the specific formulas/identities being used in a particular Problem at the moment of use).&nbsp; By doing so, I hope to drive home to the student that the way to <q>learn</q> this material is by, sometimes seemingly-excessive, repetition.</p>
+
+<h2>Section 1: Angles and Their Measure</h2>
+
+<p><strong>To convert the decimal portion of degrees to minutes and seconds</strong>: Multiply the decimal (fractional) part by 60, the integer (non-fractional) part of the result is the number of minutes; then multiply the fractional part of that result by 60, the result, <strong><em>including any remaining decimal fractional part</em></strong>, is the number of seconds; <strong>Example</strong>: \(0.0853^{\circ}\times \displaystyle \frac{60’}{1^\circ} = 5.118’, 0.118’ \times \frac{60’’}{1’} = 7.08’’\), so \(0.0853^{\circ} = 0^{\circ}~5’~7.08’’\). </p>
+
+<p><strong>To convert from degrees minutes seconds to decimal degrees</strong>: divide the number of minutes by 60, add the number of seconds divided by 3600, then add that to the number of degrees; <strong>Example</strong>: \(23^{\circ}~34’~23.45’’ = 23^{\circ} + \displaystyle \frac{34’}{(60’/1^{\circ})} + \frac{23.45’’}{(3600’’/1^{\circ})} \doteq 23^{\circ} + 0.5666667^{\circ} + 0.00651389^{\circ} \doteq 23.573181^{\circ}\).</p>
+
+<p><strong>Also</strong>: 1 circle = 360&deg;, so 1&deg; = \(\displaystyle \frac1{360}\)-th of a circle, 1 <q>straight</q> angle = half a circle = 180&deg;, 1 <q>right</q> angle = one-fourth of a circle = 90&deg;.</p>
+
+<p><strong>Radians</strong>: measure angles as <q>fractions of a circle,</q> using the number of radii (plural of radius) required to measure, i.e., <q>use as a ruler,</q> the circular arc <q>spanned</q> by the angle: <strong>arc length</strong> \(\boxed{s= r\theta}\), where \(r\) is the radius of the circle, and \(\theta\) (the Greek letter <strong><em>theta</em></strong>, pronounced <strong><em>thay-ta</em></strong>) is the <q>subtended</q> angle, <strong><em>measured in radians</em></strong>; in particular, if \(r=1\), then arc length and radian angle measure are one and the same (the consequences of this are why radians are the preferred angle measure in mathematics, most of physics, and theoretical engineering).&nbsp; <strong>To convert from decimal degrees to radians</strong>: multiply by \(\displaystyle \frac{\pi\text{ rad}}{180^{\circ}}\); <strong>Example</strong>: \(74.248^{\circ} \times \displaystyle \frac{\pi\text{ rad}}{180^{\circ}} \doteq 1.295872\) rad (to convert from &deg; &#39; &#39;&#39; to rad, it’s easiest to first convert to decimal degrees); <strong>To convert from radians to degrees</strong>: multiply by \(\displaystyle \frac{180^{\circ}}{\pi\text{ rad}}\); <strong>Example</strong>: \(1.57079633\text{ rad} \times \displaystyle \frac{180^{\circ}}{\pi\text{ rad}} \doteq 90.00000018^{\circ}\) (However, we will typically express radian angle measure as a multiple of \(\pi\), e.g., \(2\pi\) rad = a whole circle, \(\pi\) rad = a straight angle, \(\frac{\pi}2\) rad = a right angle, etc., providing a decimal approximation only when necessary/requested.) </p>
+
+<p><strong>Area of <q>sector</q> of circle of radius \(r\) spanned by angle \(\theta\)</strong>: \[A = \frac12r^2\theta\]
+where \(\theta\) <strong>must</strong> be in radians.</p>
+
+<p><strong>Special Angles</strong>: For triangle trigonometry, the most important special angles are:</p>
+
+<table>
+  <tr>
+    <th>Degrees<td>0<td>30<td>45<td>60<td>90<td>120<td>135
+      <td>150<td>180
+  <tr>
+    <th>Radians<td>0<td><span class="top">&pi;</span><span class="bottom">6</span><td><span class="top">&pi;</span><span class="bottom">4</span><td><span class="top">&pi;</span><span class="bottom">3</span><td><span class="top">&pi;</span><span class="bottom">&nbsp;2</span><td><span class="top">2&pi;</span><span class="bottom">&nbsp;3</span><td><span class="top">3&pi;</span><span class="bottom">&nbsp;4</span><td><span class="top">5&pi;</span><span class="bottom">&nbsp;6</span><td>&pi;
+</table>
+
+<p>We will defer the rest till Section 4.</p>
+
+<p><strong>Revolutions (revs; also called cycles)</strong>: especially used in physics, <strong>one rev equals one one full circle</strong>, giving the conversion factors <strong>\(\displaystyle \frac{360^{\circ}}{1\text{ rev}} = \frac{2\pi\text{ rad}}{1\text{ rev}}\)</strong>; <strong>Conversion examples</strong>: 0.25 rev \(\times \displaystyle \frac{360^{\circ}}{1\text{ rev}} = 90^{\circ}; \frac23\pi = \frac{2\pi}3\text{ rad}~\times \frac{1\text{ cycle}}{2\pi\text{ rad}} = \frac13\text{ cycle}\).</p>
+
+<p><strong>Constant (or average) speed around a circle</strong>: for a circle of radius \(r\), <q>linear</q> speed \(v = \displaystyle \frac s t\), where \(s = r\theta\) is the length-of-arc traveled in time \(t\) (\(\theta\) <strong>must</strong> be in radians); <q>angular</q> speed \(\omega\) (the Greek letter <q>omega,</q> pronounced <strong><em>oh-may-guh</em></strong>) \(=\displaystyle \frac{\theta}{t}\), where \(\theta\) <strong>need not</strong> be in radians (it is common to use revs, e.g., revolutions per minute (rpm) or cycles, e.g., cycles per second (Hz) in physics, for example); note that \(\omega\) <strong><em>doesn’t depend on</em></strong> \(r\); combining \(\displaystyle v = \frac{r\theta}t\) and \(\displaystyle \omega = \frac{\theta}t\) we get \[\boxed{v = r\omega \iff \omega = \displaystyle \frac{v}{r}}\] but in this form, \(\omega\) does need to be/will end up in units of radians (per unit time); <strong>Example</strong>: an object experiencing <q>uniform</q> (i.e., constant speed) circular motion around a circle of radius 12,900 kilometers with a linear speed of 1075\(\pi \doteq\) 3377 kilometers per hour, has an angular speed \(\omega = \displaystyle \frac{1075\pi\text{ kph}}{12,900\text{ km}} = \frac{\pi}{12}\frac{\text{radians}}{\text{hour}} \times \frac{1\text{ rev}}{2\pi\text{ rads}} = \frac{1\text{ rev}}{24\text{ hrs}} = 1\) revolution per (Earth) day.
+<br><br></p>
+
+<p><strong>Solved Problems</strong></p>
+
+<p><strong>116</strong>) Determine: <strong>a</strong>) the (circular) outfield fence length; and <strong>b</strong>) the area of a 10 ft wide warning track; for a baseball field such that: the fence is everywhere 200 ft distant from home plate; and its extreme ends subtend an angle with home plate of 96&deg; (see illustration in text).</p>
+
+<p><strong>Sln</strong>: <strong>a</strong>: The length of the outfield fence is the arc-length of that portion of a circle of radius 200 ft subtended by an angle of 96&deg;.&nbsp; There are two ways to proceed: we can use the formula \(s=r\theta\), which requires that we convert the angle of 96&deg; to radian measure&mdash;that way is left to the Reader.&nbsp; I wish to emphasize the way that takes advantage of recognition that the arc is simply a fraction of the whole circle; what fraction?&nbsp; Well, the angle is 96&deg;, a whole circle is 360&deg;, so the arc is \(\displaystyle \frac{96^{\circ}}{360^{\circ}} = \frac4{15}\text{-ths}\) of a whole circle of radius 200 ft; the circumference of such a circle is \((2\pi)200 = 400\pi \doteq 1,257\) ft, so the length of the fence is \(\displaystyle \frac4{15}(400\pi) = \boxed{\frac{1600\pi}{15} \doteq 335\text{ ft}}\)</p>
+
+<p><strong>b</strong>) Determining the area of the warning track is just slightly more complicated: to get it, we must, in principle, calculate two circular sector areas&mdash;that bounded by the fence \(= \displaystyle \frac12(r_{\text{to fence}})^2\theta\) and that bounded by the infield-side of the warning track \(= \displaystyle \frac12(r_{\text{to track}})^2\theta\) (with \(\theta\): in radians; and, in this situation&mdash;this is key&mdash;<strong><em>the same for both sectors</em></strong>)&mdash;and subtract the latter from the former.&nbsp; Now, if we write that out:\[A_{\text{track}} = A_{\text{to fence}} - A_{\text{to track}} = \frac12(r_{\text{to fence}})^2\theta - \frac12(r_{\text{to track}})^2\theta\]since, as we noted, \(\theta\) is the same in both terms, we can factor out \(\frac12\theta\), so that the area we need can be calculated simply as:\(\displaystyle\frac12\theta(r_{\text{to fence}}^2 - r_{\text{to track}}^2) = \frac12(96^{\circ}\frac{\pi\text{ rad}}{180^{\circ}})(200^2-190^2) = \frac4{15}\pi(200-190)(200+190) = 4\pi\frac{10}{15}(390) = 8\pi(130) =\) \[\boxed{1040\pi \doteq 3267\text{ sq ft}}\]
+<br><br></p>
+
+<h2>Section 2: Right Triangle Trigonometry</h2>
+
+<p><strong>Restatement of basic facts</strong></p>
+
+<p>For a right triangle labeled as shown:</p>
+
+<p><img src="./Graphs/SullivanC7S2Preface.png" height=300></p>
+
+<p>\(\text{sine}(\theta) = \sin \theta = \displaystyle \frac{\text{&quot;opposite&quot;}}{\text{&quot;hypotenuse&quot;}} = \frac{o}{h};~\text{cosine}(\theta) = \cos\theta = \frac{\text{&quot;adjacent&quot;}}{\text{hypotenuse}} = \frac{a}{h};~\text{tangent}(\theta) = \tan\theta = \frac{\text{opposite}}{\text{adjacent}} = \frac{o}{a};\\ \text{cotangent}(\theta) = \cot\theta = \displaystyle\frac{\text{adjacent}}{\text{opposite}} = \frac{a}{o};~\text{secant}(\theta) = \sec\theta = \frac{\text{hypotenuse}}{\text{adjacent}} = \frac{h}{a};~\text{cosecant}(\theta) = \csc\theta = \frac{\text{hypotenuse}}{\text{opposite}} = \frac{h}{o}\)</p>
+
+<p><strong>The Fundamental Identities</strong></p>
+
+<p><strong>Quotient Identities</strong>:
+\(~~~~~~~~~~~~~~~~~~~~~\displaystyle \tan\theta = \frac{\sin\theta}{\cos\theta},~\cot\theta = \frac{\cos\theta}{\sin\theta}\)</p>
+
+<p><strong>Reciprocal Identities</strong>:
+\(~~~~~~~~~~~~~~~~~~\displaystyle \csc\theta = \frac1{\sin\theta},~\sec\theta = \frac1{\cos\theta},~\cot\theta=\frac1{\tan\theta}\)</p>
+
+<p><strong>Pythagorean Identities</strong>:
+\(~~~~~~~~~~~~~~~\sin^2\theta + \cos^2\theta = 1,~\tan^2\theta + 1 = \sec^2\theta,~\cot^2\theta + 1 = \csc^2\theta\)</p>
+
+<p><strong>Cofunction Identities</strong>: <strong><em>if</em></strong> \(x+y = 90^{\circ} = \frac{\pi}2\) rad, i.e., if \(x,y\) are <q>complementary,</q> <strong><em>then</em></strong>: \[\sin x = \cos y,~\tan x = \cot y, \sec x = \csc y\]
+Equivalently: \(\displaystyle \sin\left(\frac{\pi}2-\theta\right) = \cos \theta,~\tan\left(\frac{\pi}2-\theta\right) = \cot \theta,~\sec\left(\frac{\pi}2-\theta\right) = \csc \theta,\\ \displaystyle \cos\left(\frac{\pi}2-\theta\right) = \sin\theta,~\cot\left(\frac{\pi}2-\theta\right) = \tan\theta,~\csc\left(\frac{\pi}2-\theta\right) = \sec\theta\)
+<br><br></p>
+
+<p><strong>78</strong>) Given: \(\theta\) acute, \(x = \tan\theta\); provide: the values of the other 5 trigonometric functions in terms of \(x\).</p>
+
+<p><strong>Sln</strong>: We use the <q>trick</q> that <q>anything is equal to itself over 1,</q> so \(x = \displaystyle \frac{x}1 = \tan \theta = \frac{o}{a}\) and use this result to draw a right triangle (this is the Section on right triangles, after all) satisfying the given conditions:</p>
+
+<p><img src="./Graphs/SullivanC7S2P78.png" height=300></p>
+
+<p>Now we use the Pythagorean Theorem to calculate that, in terms of \(x\), \(h^2 = 1^2 + x^2 \implies h = \sqrt{1+x^2}\):</p>
+
+<p><img src="./Graphs/SullivanC7S2P78a.png" height=300></p>
+
+<p>Now we can immediately answer the question:</p>
+
+<p>\(\displaystyle \sin \theta = \frac{o}{h} = \frac{x}{\sqrt{1+x^2}};~\cos \theta = \frac{a}{h} = \frac1{\sqrt{1+x^2}};~\sec \theta = \frac1{\cos \theta} = \sqrt{1+x^2};~\csc \theta = \frac1{\sin \theta} = \frac{\sqrt{1+x^2}}{x};~\cot \theta = \frac1{\tan \theta} = \frac1x\)
+(Note that we didn’t really need the triangle to do this last one; indeed, we didn’t really need the triangle at all: this Problem could also have been done using the Pythagorean Identities&mdash;which should be no surprise, given that we used the Pythagorean Theorem to <q>complete</q> the triangle&mdash;which method the Reader is <strong><em>urged</em></strong> to try.)
+<br><br></p>
+
+<h2>Section 3: Trigonometric Functions of Acute Angles</h2>
+
+<p><strong>Trigonometric function values to memorize</strong> (through repeated use):</p>
+
+<table>
+<thead>
+<tr>
+<th>rad</th>
+<th>deg</th>
+<th>sin</th>
+<th>cos</th>
+<th>tan</th>
+<th>cot</th>
+<th>sec</th>
+<th>csc</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>NaN</td>
+<td>1</td>
+<td>NaN</td>
+</tr>
+<tr>
+<td>\(\displaystyle\frac{\pi}6\)</td>
+<td>30</td>
+<td>\(\displaystyle\frac12\)</td>
+<td>\(\displaystyle\frac{\sqrt3}2\)</td>
+<td>\(\displaystyle\frac1{\sqrt{3}}=\frac{\sqrt3}3\)</td>
+<td>\(\sqrt3\)</td>
+<td>\(\displaystyle\frac2{\sqrt3}=\frac{2\sqrt3}3\)</td>
+<td>2</td>
+</tr>
+<tr>
+<td>\(\displaystyle\frac{\pi}4\)</td>
+<td>45</td>
+<td>\(\displaystyle\frac1{\sqrt2}=\frac{\sqrt2}2\)</td>
+<td>\(\displaystyle\frac{\sqrt2}2\)</td>
+<td>1</td>
+<td>1</td>
+<td>\(\sqrt2\)</td>
+<td>\(\sqrt2\)</td>
+</tr>
+<tr>
+<td>\(\displaystyle\frac{\pi}3\)</td>
+<td>60</td>
+<td>\(\displaystyle\frac{\sqrt3}2\)</td>
+<td>\(\displaystyle\frac12\)</td>
+<td>\(\sqrt{3}\)</td>
+<td>\(\displaystyle\frac{\sqrt3}3\)</td>
+<td>2</td>
+<td>\(\displaystyle\frac{2\sqrt3}3\)</td>
+</tr>
+</tbody>
+</table>
+
+<p><br><br></p>
+
+<p><strong>92</strong>) Find the exact value of sin 1&deg;&centerdot;sin 2&deg;&centerdot;sin 3&deg;&centerdot;...&centerdot;sin 45&deg;&centerdot;sec 46&deg;&centerdot;sec 47&deg;&centerdot;...&centerdot;sec 89&deg;.</p>
+
+<p><strong>Sln</strong>: (At first glance this Problem doesn’t look like its answer will end up being one of the special trigonometric values this Section is supposed to be emphasizing, but it does end up so.)</p>
+
+<p>The key here is to recognize that, <strong><em>with one exception</em></strong>&mdash;sin 45&deg;&mdash;the argument of each of the secant functions is the complementary angle to precisely one of the sine function arguments, e.g., 89&deg; is complementary to 1&deg;, 88&deg; is complementary to 2&deg;, 46&deg; is complementary to 44&deg;, etc.; in each such instance, the cofunction identity sec (90&deg;\(-\theta\)) \(=\) csc \(\theta\) enables us to replace a sec factor with a csc factor whose argument is identical to that of precisely one of the sin factors, e.g., sec 89&deg; \(=\) csc 1&deg;, sec 46&deg; \(=\) csc 44&deg;, etc.&nbsp; But each of these is well-defined (we do have to be a little careful because there are angles for which sec and csc are undefined, but those are not acute angles, which all of these are) and the reciprocal of the sin factor whose argument is shares: csc 1&deg; = \(\displaystyle \frac1{\sin 1^{\circ}}\), etc.&nbsp; Thus:</p>
+
+<p>sin 1&deg;&centerdot;sin 2&deg;&centerdot;sin 3&deg;&centerdot;...&centerdot;sin 45&deg;&centerdot;sec 46&deg;&centerdot;sec 47&deg;&centerdot;...&centerdot;sec 89&deg; \(=\)<br> sin 1&deg;&centerdot;csc 1&deg;&centerdot;sin 2&deg;&centerdot;csc 2&deg;&centerdot;...&centerdot;sin 44&deg;&centerdot;csc 44&deg;&centerdot;sin 45&deg; \(=\)<br>
+1&centerdot;1&centerdot;...&centerdot;1&centerdot;sin 45&deg; \(=\) sin 45&deg; \(=\boxed{\frac{\sqrt2}2}\).&nbsp; (Told ya!)
+<br><br></p>
+
+<h2>Section 4: Trigonometric Functions of Any Angle</h2>
+
+<p>In my opinion, everything presented as <q>new</q> in this Section is rendered redundant&mdash;and is better understood through&mdash;the material of the next Section, <q>The Unit Circle</q>: nothing in this Section should be <q>memorized</q> (independently); rather, the unit circle should be memorized (as always, through repeated copying and use) and the general task taught in this Section, i.e., finding the trigonometric function values of non-acute angles, should be achieved through understanding and use of the unit circle.&nbsp; Accordingly, though I don’t discourage the Reader from reading this section of the text (it will be necessary to learn the vocabulary taught therein to understand the wording of the Problems), I <strong><em>do encourage</em></strong> the Reader to read the next Section of the text before attempting the Problems of this Section, and I will freely use the unit circle definitions and methods in presenting solutions to Problems from this Section.
+<br><br></p>
+
+<p><strong>114</strong>) Find the exact value of cos 1&deg; + cos 2&deg; + ... + cos 358&deg; + cos 359&deg;.</p>
+
+<p><strong>Sln</strong>: Like Problem <strong>92</strong>) of the previous Section, the key here is to look for cancellations.&nbsp; Appealing to the unit circle, we note that the \(x\)-coordinate of its point at 181&deg;, i.e., cos 181&deg;&mdash;whatever value that may have&mdash;is the negative of the \(x\)-coordinate of the unit circle’s point at 1&deg;, i.e., cos 1&deg;, i.e., cos 1&deg; + cos 181&deg; = 0; and similarly for every pair of angles \(\theta, \theta\) + 180&deg;.&nbsp; That accounts for all the angles in the expression, except 180&deg;, whose cosine is \(-1\).&nbsp; Written out algebraically, we have:</p>
+
+<p>cos 1&deg; + cos 2&deg; + ... + cos 358&deg; + cos 359&deg; \(=\)cos 1&deg; + cos 181&deg; + cos 2&deg; + cos 182&deg; + ... + cos 179&deg; + cos 359&deg; + cos 180&deg; \(=\)<br>0 + 0 + ... + 0 + cos 180&deg; (take a moment&mdash;or several&mdash;to make sure you understand why cos 180&deg; <strong><em>doesn’t</em></strong> have a term which cancels it out; hint: based on the pattern, what would that term be?&nbsp; Is that term in our sum, explicitly or implicitly?) \(= \boxed{-1}\)
+<br><br></p>
+
+<h2>Section 5: The Unit Circle; Properties of the Trig Functions</h2>
+
+<p><strong>The Unit Circle</strong>:</p>
+
+<p><img src="./Graphs/SullivanC7S5UC.png"></p>
+
+<p><strong>Domain and range of the trig functions</strong>:</p>
+
+<table>
+<thead>
+<tr>
+<th><strong>Function</strong></th>
+<th>Domain</th>
+<th>Range</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>sin</td>
+<td>\(\mathbb{R}\) (all real numbers*)</td>
+<td>\([-1,1]\) (the closed interval from \(-1\) to \(1\), inclusive)</td>
+</tr>
+<tr>
+<td>cos</td>
+<td>\(\mathbb{R}\)</td>
+<td>\([-1,1]\)</td>
+</tr>
+<tr>
+<td>tan</td>
+<td>\(\mathbb{R}\) <strong><em>except</em></strong> odd multiples of \(\displaystyle\frac{\pi}2\), expressed \(\mathbb{R}\backslash \displaystyle \{(2k+1)\frac{\pi}2, k\in \mathbb{Z}\text{, i.e., } k \text{ any integer}\}\) <br><strong>Way to remember</strong>: &#39;cause \(\cos = 0\) at these domain values</td>
+<td>\(\mathbb{R}\)</td>
+</tr>
+<tr>
+<td>cot</td>
+<td>\(\mathbb{R}\) <strong><em>except</em></strong> integer multiples of \(\pi\), expressed \(\mathbb{R}\backslash \{k\pi, k\in \mathbb{Z}\}\) <br><strong>Way to remember</strong>: &#39;cause \(\sin = 0\) at these domain values</td>
+<td>\(\mathbb{R}\)</td>
+</tr>
+<tr>
+<td>sec</td>
+<td>\(\mathbb{R}\backslash \displaystyle \{(2k+1)\frac{\pi}2, k\in \mathbb{Z}\}\), i.e., same as \(\tan\), for the same reason</td>
+<td>\((-\infty,-1] \cup[1,\infty) = \mathbb{R}\backslash (-1,1)\), i.e., all real numbers <strong><em>except</em></strong> the open interval \((-1,1)\)<br><strong>Way to remember</strong>: as the range of <q>1 over the range of \(\cos\)</q></td>
+</tr>
+<tr>
+<td>csc</td>
+<td>\(\mathbb{R}\backslash \{k\pi, k\in \mathbb{Z}\}\), i.e., same as \(\cot\), for the same reason</td>
+<td>\(\mathbb{R}\backslash (-1,1)\), i.e., same as \(\sec\), for the same reason</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Periodicity</strong>: The unit circle definitions of the trig functions should make it clear why sin, cos, sec, and csc take on their same values every change of \(\pm2\pi\) in their argument, and tan and cot do so every change of \(\pm\pi\); we say that sin, cos, sec, and csc are all <strong>periodic with period</strong> (or <strong><em>have periodicity of</em></strong>) \(2\pi\), tan and cot have periodicity \(\pi\); <strong>as identities</strong>: for any integer \(k\) and any real* number \(x\), \(\sin(x+2k\pi) = \sin x;\) \(\cos(x+2k\pi) = \cos x;\) \(\sec(x+2k\pi) = \sec x;\) \(\csc(x+2k\pi) = \csc x;\) \(\tan(x+k\pi) = \tan x;\) and \(\cot(x+k\pi) = \cot x.~\) (Note: these are not the only places where trig functions repeat their values&mdash;for example, \(\sin 0 = \sin\pi = 0\)&mdash;but they are <q>guaranteed</q> to repeat their values at these increments: \(|x-y| = 2k\pi, k \in \mathbb{Z}\) is a <strong><em>sufficient</em></strong> condition for \(\sin x = \sin y\), for example, but not a <strong><em>necessary</em></strong> condition.)&nbsp; In general, \(f(x)\) is said to be <strong>periodic with (fundamental) period</strong> \(p\) (or <strong>have periodicity</strong> \(p\)) if \(p\) is the smallest number such that \(f(x+p) = f(x)\) for all \(x\) (for which \(f\) is well-defined; it is a provable theorem that if \(f(x+p) = f(x)\) for all \(x\) (in the domain of \(f\)), then for any integer \(k, f(x+kp) = f(x)\), again as long as \(x+kp\) is in the domain of \(f\)).</p>
+
+<p><strong>Even/odd-ness</strong>: cos and sec are even functions, i.e., for all \(x\) (in their domians), \(\cos(-x) = \cos x; \sec(-x) = \sec x\), while sin, tan, csc, and cot are odd functions: \(\sin(-x) = -\sin x; \tan(-x) = -\tan x; \csc(-x) = -\csc x;\) and \(\cot(-x) = -\cot x\) for all \(x\) (in their respective domains).  </p>
+
+<p>* Actually, the sine and cosine functions are well-defined and periodic with period \(2\pi\) for all <strong><em>complex</em></strong> numbers, but this is <q>beyond the scope of this course.</q>
+<br><br></p>
+
+<p><strong>98</strong>) Show that the period of \(f(\theta) = \cot \theta\) is \(\pi\).</p>
+
+<p><strong>Pf</strong>: We must show that \(\pi\) is the smallest positive real number such that \(\cot(\theta + \pi) = \cot \theta~\forall\theta\) (\(\forall\) is the mathematical symbol for <q>for all</q> or <q>for any</q>).&nbsp; The proof consists of two parts: we must show that \(\cot\) has period \(\pi\); and we must show that \(\pi\) is the smallest positive number for which this is true.</p>
+
+<p>Part 1: For all \(\theta\) such that \(\sin(\theta + \pi) \ne 0\), \(\cot(\theta + \pi) = \displaystyle \frac{\cos(\theta + \pi)}{\sin(\theta + \pi)} = \frac{-\cos \theta}{-\sin \theta} = \frac{\cos \theta}{\sin \theta} = \cot \theta\) (because if \(\sin(\theta + \pi) \ne 0\), then \(\sin \theta \ne 0\); proof?).</p>
+
+<p>Part 2: We use the method suggested in the text as a hint for Problem 93: Suppose there exists \(p\) between 0 and \(\pi\), exclusive, i.e., \(0 \lt p \lt \pi\), such that \(\cot(\theta + p) = \cot \theta~\forall \theta\); then \(\cot p = \cot(0 + p) = \cot 0 = 0\), i.e., our assumption implies \(\cot p = 0\), and there is (only) one value between 0 and \(\pi\) for which this is true, namely \(\frac{\pi}2.~\) But, for example, \(\cot \frac{\pi}4 = 1\), whereas \(\cot(\frac{\pi}4 + \frac{\pi}2) = \cot \frac{3\pi}4 = -1\), i.e., we’ve found a value of \(\theta\) such that \(\cot(\theta + \frac{\pi}2) \ne \cot \theta\), so \(\pi\) must be the smallest (positive) value for which this is always true!\(~~~\blacksquare\) (A \(\blacksquare\) is the modern customary way to mark where one has concluded a proof, replacing the antiquated <q>Q.E.D.</q>)
+<br><br></p>
+
+<h2>Section 6: Graphs of Sine and Cosine</h2>
+
+<p><img src="./Graphs/SullivanC7S6sin.png"></p>
+
+<p><img src="./Graphs/SullivanC7S6cos.png"></p>
+
+<p><strong>Relationship between their (fundamental) graphs</strong>: starting with the cofunction identity \(\sin x = \cos\left(\displaystyle\frac{\pi}2-x\right)\), factoring \(-1\) from the argument of the cos function and using the fact that cos is <q>even</q> \(\displaystyle \implies \sin x = \cos\left[-1\left(x-\frac{\pi}2\right)\right] = \cos\left(x-\frac{\pi}2\right)\), so the (fundamental) graph of sin is the same as cos, horizontally shifted \(\displaystyle\frac{\pi}2\) units to the right, or, equivalently, <strong>the (fundamental) graph of cos is the same as sin, horizontally shifted \(\displaystyle\frac{\pi}2\) units to the left</strong>.</p>
+
+<p><strong>Amplitude and period</strong>: given \(y = f(x) = A\sin(\omega x)\text{ or } = A\cos(\omega x)\), the <strong>amplitude</strong> of \(f\) is \(|A|\), which gives the maximum and minimum values attained by \(f\) and the factor by which the (fundamental) graph is vertically <q>stretched</q> (\(|A| \gt 1\)) or <q>compressed</q> (\(|A| \lt 1\)); and the (fundamental) <strong>period</strong> (see Section 5 above for definition) of \(f\) is \(T = \displaystyle \frac{2\pi}{\omega}\), which thus gives how much the fundamental graph is horizontally <q>stretched</q> (\(|\omega| \lt 1\)) or <q>compressed</q> (\(|\omega| \gt 1\)).&nbsp; (Note that the effect of the amplitude is <q>intuitive</q>&mdash;\(|A| \gt 1\) <q>stretches,</q> \(|A| \lt 1\) <q>compresses</q>; whereas the effect of \(\omega\) is <q>counter-intuitive</q>&mdash;\(|\omega| \lt 1\) <q>stretches,</q> \(|\omega| \gt 1\) <q>compresses.</q>)
+<br><br></p>
+
+<h2>Section 7: Graphs of Tangent, Cotangent, Cosecant, and Secant</h2>
+
+<p><img src="./Graphs/SullivanC7S7tan.png"></p>
+
+<p><img src="./Graphs/SullivanC7S7cot.png"></p>
+
+<p><img src="./Graphs/SullivanC7S7csc.png"></p>
+
+<p><img src="./Graphs/SullivanC7S7sec.png"></p>
+
+<p><br><br></p>
+
+<h2>Section 8: Phase Shift; Sinusoidal Curve Fitting</h2>
+
+<p>In \(\sin\text{ or }\cos(\omega x - \phi), \omega \gt 0\), period \(T = \displaystyle \frac{2\pi}{\omega}\), phase shift \(\displaystyle = \frac{\phi}{\omega}\), to the right if \(\phi \gt 0\), to the left if \(\phi \lt 0\).</p>
+
+<p><br><br></p>
+
+<p><a name="Credits"></a></p>
+
+<h3>Credits</h3>
+
+<p>Text layout and MathJax (LaTeX) composed using <a href="http://lightpaper.42squares.in">LightPaper for Mac by 42Squares</a></a>.</p>
+
+<p>Graphs generated using <a href="http://www.geogebra.org/">GeoGebra</a>.</p>
+
+<h3>Please Donate:</h3>
+
+<form action="https://www.paypal.com/cgi-bin/webscr"
+          method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
