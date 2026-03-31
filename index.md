@@ -144,7 +144,7 @@ Goldsmith, D. L., 2016, [<i>The &quot;Mortgage&quot; Difference Equation: Deriva
 <p>
 Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
 
-<p>&copy; 2016-25,  by Goldsmith, D. L.</p>
+<p>&copy; 2016-26,  by Goldsmith, D. L.</p>
 
 <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
 <script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script>
