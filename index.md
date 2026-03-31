@@ -8,7 +8,7 @@
 <p><center><big><big><big><big>Welcome to<br>
 <big>SelectedSolutionsDotNet</big> <sup><sup>™</sup></sup> </big></big></big></big></center></p>
 
-<p>My mathematical "online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>" site; requests considered, commissions solicited.
+<p>My mathematical &quot;online <a href="https://en.wikipedia.org/wiki/Street_performance">busking</a>&quot; site; requests considered, commissions solicited.
 
 <p><b>*-ed items are Data Science related</b>
 </p>
@@ -33,7 +33,7 @@
   </tr>
 </table>
 
-<b>General Disclaimers</b>: Solutions to problems from published texts are provided for informational purposes only&mdash;students are advised that they will learn best if, and in any event should always first try to, solve each problem before consulting the solution(s) provided here.&nbsp; In addition, though every effort has been made to proofread and assess the validity of each solution, missed typographical and computational errors are inevitable; thus these solutions are provided <q>as-is,</q> with no guarantees whatsoever, expressed or implied, of any kind, including those of correctness or suitability for any specific purpose.&nbsp; Corrections are welcome and should be directed to [selectedsolutionsdotnet@gmail.com](mailto:selectedsolutionsdotnet@gmail.com).
+<b>General Disclaimers</b>: Solutions to problems from published texts are provided for informational purposes only&mdash;students are advised that they will learn best if, and in any event should always first try to solve each problem before consulting the solutions provided here.&nbsp; In addition, though every effort has been made to proofread and assess the validity of each solution, missed typographical and computational errors are inevitable; thus these solutions are provided &quot;as-is,&quot; with no guarantees whatsoever, expressed or implied, of any kind, including those of correctness or suitability for any specific purpose.&nbsp; Corrections are welcome and should be directed to [selectedsolutionsdotnet@gmail.com](mailto:selectedsolutionsdotnet@gmail.com).
 
 Long pages and/or pages with dynamically-generated graphs may take a few seconds to load completely, i.e., correctly formatted.
 
@@ -50,9 +50,9 @@ Boyce, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and B
       </ul>
 
 Giordano, N. J. and H. Nakanishi, 2006, <i>Computational Physics, Second Edition.</i>, Pearson/Prentice-Hall, Upper Saddle River, NJ.
-      <ul>[Chapters 1 ("A First Numerical Problem") & 2 ("Realistic Projectile Motion")](./Giordano/CompPhys/ExerciseSolutions/C1_2/C1_2.html)
+      <ul>[Chapters 1 (&quot;A First Numerical Problem&quot;) & 2 (&quot;Realistic Projectile Motion&quot;)](./Giordano/CompPhys/ExerciseSolutions/C1_2/C1_2.html)
       </ul>
-      <ul>[Chapter 3 ("Oscillatory Motion and Chaos"), Part 1 (Sections 1-5)](./Giordano/CompPhys/ExerciseSolutions/C3/C3P1.html)
+      <ul>[Chapter 3 (&quot;Oscillatory Motion and Chaos&quot;), Part 1 (Sections 1-5)](./Giordano/CompPhys/ExerciseSolutions/C3/C3P1.html)
       </ul>
 
 Gitman, L. J., 2003, <i>Principles of Managerial Finance, Brief, Third Edition</i>, Addison-Wesley, Boston.
@@ -131,15 +131,15 @@ Goldsmith, D. L., 2017 (<b>new content added 2020</b>), [<i>Binomial Expansion F
 Goldsmith, D. L., 2016, <i>The Fibonacci Difference Equation: Derivation, Solution and Commentary</i>,  SelectedSolutionsDotNet, Olympia, WA.<br>
 $~~~~$[Full Version](./Misc/FibDE/Fibonacci.html)$~~~~$[Abridged Version](./Misc/FibDE/Fibonacci_abridged.html)
 
-Goldsmith, D. L., 2016, [<i>The <q>Mortgage</q> Difference Equation: Derivation, Solution and Commentary</i>](./Misc/MortgageDE/Mortgage.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
+Goldsmith, D. L., 2016, [<i>The &quot;Mortgage&quot; Difference Equation: Derivation, Solution and Commentary</i>](./Misc/MortgageDE/Mortgage.html),  SelectedSolutionsDotNet, Olympia, WA.<br>
 
 ## Selected Answers on Quora
 
-["What is complex analysis all about beyond just saying that its calculus with complex numbers?"](https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9) (208 upvotes)
+[&quot;What is complex analysis all about beyond just saying that it’s calculus with complex numbers?&quot;](https://www.quora.com/What-is-complex-analysis-all-about-beyond-just-saying-that-its-calculus-with-complex-numbers/answer/David-Goldsmith-9) (208 upvotes)
 
-["Why can’t $\displaystyle \frac{\sin x}{x}$ be integrated?"](https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9) (51 upvotes)
+[&quot;Why can’t $\displaystyle \frac{\sin x}{x}$ be integrated?&quot;](https://www.quora.com/Why-cant-frac-sin-x-x-be-integrated/answer/David-Goldsmith-9) (51 upvotes)
 
-["Why in the world would $e^{i\pi}= -1$"](https://www.quora.com/Why-in-the-world-would-e-i-pi-1/answer/David-Goldsmith-9) (9 upvotes)
+[&quot;Why in the world would $e^{i\pi}= -1$&quot;](https://www.quora.com/Why-in-the-world-would-e-i-pi-1/answer/David-Goldsmith-9) (9 upvotes)
 
 <p>
 Broken links?  Please notify <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a></p>
