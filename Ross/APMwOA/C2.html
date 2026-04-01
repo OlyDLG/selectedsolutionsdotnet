@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C12</title><style>/* 
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C2</title><style>/* 
 Name: GeekPark article style for Mou app
 Author: hzlzh(hzlzh.dev@gmail.com)
 URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
@@ -83,109 +83,190 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <style type="text/css">
 </style>
 </head>
-<body><script>
-  function winhisback() {window.history.back();}
-</script>
-
-<style>
-  body {font-family: Palatino}
-  .goback {color: purple}
+<body><style>
+body {font-family: Palatino}
 </style>
 
-<p><title>Solutions of Selected Exercises from Triola, M. F. <q>Elementary Statistics, 13th Ed. Chapter 12</q></title></p>
+<h4><center>Ross, S., 1992. <i>Applied Probability Models with Optimization Applications.</i>  Dover, New York</h4>
 
-<h2><center>Selected Exercise Solutions</h2>
+<h4><center>Chapter 2 Selected Problem Solutions</h4>
 
-<p><center>from</center></p>
+<h4><center>&copy; 2016 by</h4>
 
-<h3><center>Triola, M. F., with L. Iossi, 2018, <i>Elementary Statistics, 13<sup>th</sup> Edition</i>, Pearson, Boston.</h3>
+<h4><center>David Lawrence Goldsmith</h4>
 
-<h3><center>Chapter 12: ANOVA</h3>
+<h4><center>for</h4>
 
-<h3><center>&copy; 2019, 2025 by</h3>
+<h4><center><a href="http://www.selectedsolutions.net">www.selectedsolutions.net</a></h4>
 
-<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
+<p>1) Show that Def. 2.1 implies Def. 2.2.</p>
 
-<p><center>for</center></p>
+<p>Soln.: We must show that, given a counting process \(\{N(t), t \ge 0\}\) (henceforth \(t \ge 0\) is understood unless specified otherwise) such that: i) \(N(0) = 0\); ii) \(\{N(t)\}\) has ind. incr.; and iii) \(P\{N(t+s) - N(s) = n\} = e^{-\lambda t}(\lambda t)^n/n!\) \(\forall n \in \mathbb{W}, s,t \in \mathbb{R} \ge 0\), it follows that: i) \(\{N(t)\}\) has stat. incr.; ii) \(P\{N(t) \ge 2\} = o(t)\); and iii) \(P\{N(t) = 1\} = \lambda t + o(t).~\) (We have omitted Def. 2.2, Assumption (i) and ind. incr. since these are true by assumption given Def. 2.1.)</p>
 
-<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></center></h2>
+<p>To show stat. incr., choose, w.l.o.g., \(0 \le t_1 \le t_2\) and observe that  \(P\{N(t_2) - N(t_1) \le n\} = P\{N(t_1 + t_2 - t_1) - N(t_1) \le n\} = P\{N(t_1 + s) - N(t_1) \le n\}\) (where \(s =t_2 - t_1 \ge 0\)) \(= \sum_{i=0}^n P\{N(t_1 + s) - N(t_1) = i\} = \sum_{i=0}^n e^{-\lambda s} (\lambda s)^i/i!.\)&nbsp; Thus, as far as \(t\) is concerned, \(P\) depends only on \(s = t_2 - t_1\), i.e., the distance between two times, not their specific values, which is the verbal description of stat. incr.</p>
 
-<p><i>Notes:  These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+<p>To show \(P\{N(t) \ge 2\} = o(t)\), we have: \(P\{N(t) \ge 2\} = 1 - P\{N(t) = 0\} - P\{N(t) = 1\} = 1 - e^{-\lambda t} - \lambda t e^{-\lambda t}\) (these follow from Def. 2.1, Assumption (iii) by setting \(s=0\) and then using Assumption (i)) \(= 1 - e^{-\lambda t}(1+\lambda t)\),</p>
 
-<p>Purple font indicates clicking on the text will return you to your prior place.
-<br></p>
+<p>\(\therefore \lim_{t \rightarrow 0} \frac{P\{N(t) \ge 2\}}{t} = \lim_{t \rightarrow 0} \frac{1 - e^{-\lambda t}(1+\lambda t)}{t} &quot;=&quot; \frac00\), so, using L&#39;Hopital&#39;s Rule, we find</p>
 
-<h3>Contents</h3>
+<p>\(\lim_{t \rightarrow 0} \frac{1 - e^{-\lambda t}(1+\lambda t)}{t} = \lim_{t \rightarrow 0} \frac{-\lambda e^{-\lambda t} + \lambda(1+\lambda t)e^{-\lambda t}}{1} = \lim_{t \rightarrow 0} \lambda^2te^{-\lambda t} = 0\), as required.</p>
 
-<table>
-  <tr style="border: none;">
-    <td style="border: none;"><a href="#1.11">1.11</a></td>
-    <td style="border: none;"><a href="#1.14">1.14</a></td>
-    <td style="border: none;"><a href="#2.7">2.7</a></td>
-    <td style="border: none;"><a href="#2.9">2.9</a></td>
-  </tr>
-</table>
+<p>Finally, to show \(P\{N(t) = 1\} = \lambda t + o(t)\), we have: </p>
 
-<h3><u>Section 1: One-Way ANOVA</u></h3>
+<p>\(\lim_{t \rightarrow 0} \frac{P\{N(t) = 1\} - \lambda t}{t} = \lim_{t \rightarrow 0} \frac{\lambda t e^{-\lambda t}- \lambda t}{t} = \lim_{t \rightarrow 0} \lambda (e^{-\lambda t} - 1) = 0\).  </p>
 
-<p><a name="1.11" class="goback" onclick="winhisback()"><strong>1.11</strong>)</a>
-&quot;Triathlon Times&quot; Use a 0.05 significance level to test the null hypothesis that Jeff Parent’s bicycle times over sampled miles are statistically indistinguishable. Is there sufficient evidence to believe that one of the sampled miles may have included a hill?</p>
+<p>QED</p>
 
-<p><strong>Sln</strong>: Below are two views&mdash;formulas and results&mdash;of a <a href="https://docs.google.com/spreadsheets">Google Sheets</a> (GSheets) table containing the one-way ANOVA results for the data, which we note must be converted to a uniform unit, i.e., minutes or seconds&mdash;in this case we opted for seconds&mdash; prior to analysis:</p>
+<p><br>
+2.2) Show that Assumption (iv) of Def. 2.2 follows from Assumptions (ii) &amp; (iii).</p>
 
-<p><img src="./TroilaC12S1E11a.png" style="max-width: 100%"></p>
+<p>Soln.: We need to show that \(\{N(t)\}\) having stat., ind. incr. and \(P\{N(t) \ge 2\} = o(t)\) together imply \(P\{N(t) = 1\} = \lambda t + o(t).~\) We start by writing what we do know about \(P\{N(t) = 1\}\), namely:
+\(P\{N(t) = 1\} = 1 - P\{N(t) = 0\} - P\{N(t) \ge 2\} =\) (by Assum. (iv)) \(1 - P\{N(t) = 0\} + o(t).~\) 
+Let \(f(t) = P\{N(t) = 0\} = P\{(\text{count up to time }s \lt t)=0~\&amp;~(\text{count from time }s\text{ to }t) = 0\}\)</p>
 
-<p><img src="./TroilaC12S1E11b.png"></p>
+<p>\(= P\{N(s) = 0, N(t-s) = 0\}\) ((count from time \(s\) to \(t\)) \(= N(t-s)\) by stat. incr. assumption)</p>
 
-<p>With a \(P\)-value of 0.000, we easily <strong>reject the null hypothesis</strong> that Mr. Parent’s test mile times are statistically indistinguishable; examining the data, it appears reasonable to suspect that Mile 3, with a mean time of 210.8 seconds (compared to mean times of 201 and 199.6 seconds for Miles 1 and 2, respectively) contains a hill.
-<br><br></p>
+<p>\(=\text{(by ind. incr.) }P\{N(s) = 0\}P\{N(t-s) = 0\}\), or, by making the variable change \(u = t-s,~P\{N(s+u) = 0\} = P\{N(s) = 0\}P\{N(u) = 0\}\), i.e., \(f(s+u) = f(s)f(u)~\forall s,u \in \mathbb{R} \gt 0.~\) But by a result from Chapter 1, this last implies that \(f(t) = e^{-\lambda t}\) for some real constant \(\lambda.~\) Thus we have that:</p>
 
-<p><a name="1.14" class="goback" onclick="winhisback()"><strong>1.14</strong>)</a>
-&quot;Speed Dating&quot; At a 0.05 significance level, use the given ratings data to test the null hypothesis that age doesn’t matter as far as females rating males is concerned.</p>
+<p>\(P\{N(t) = 1\} = 1 - e^{-\lambda t} + o(t) = 1 - [1 - \lambda t + o(t^2)] + o(t) = \lambda t + o(t)\), as was to be shown.</p>
 
-<p><strong>Sln</strong>: Again, we give two views of the same GSheet, first, with the formulas used to do the one-way ANOVA analysis:</p>
+<p>QED</p>
 
-<p><img src="./TroilaC12S1E14a.png"></p>
+<p><br>
+2.3) Suppose that each event has probability \(p\) of being registered, independently of other events.&nbsp; If the event generating process is Poisson with rate \(\lambda\), show that the counting process of registered events is Poisson with rate \(\lambda p\).</p>
 
-<p>second with the results of that analysis:</p>
+<p>Soln.: Let \(\{G(t)\}\) represent the generating counting process and \(\{R(t)\}\) the registering counting process; we must show that: \(R(0) = 0\); \(\{R(t)\}\) has ind. incr.; and either: A) Assumption (iii) of Def. 2.1 holds, or B) \(\{R(t)\}\) also has stat. incr., and Assumption (iii) of Def. 2.2 holds (by the result of Problem 2.2, Assumption (iv) of Def. 2.2 holds if Assumptions (ii) and (iii) do).  We shall follow approach A), but first: note that \(G(t) \ge R(t)\) \(\forall t\) (why?) and thus since \(G(0) = 0\) and \(R(t) \ge 0\) \(\forall t\) (why?), \(R(0) = 0\).</p>
 
-<p><img src="./TroilaC12S1E14b.png"></p>
+<p>To show ind. incr., w.l.o.g., choose \(t_i, i=0,1,...,n : t_{i-1} \lt t_i \forall i=1,...,n\); we must show that \(P\{R(t_i) - R(t_{i-1}) \le N, R(t_j) - R(t_{j-1}) \le M\} = P\{R(t_i) - R(t_{i-1}) \le N\}P\{R(t_j) - R(t_{j-1}) \le M\} \forall i, j = 1,...,n, i \ne j, M, N \in \mathbb{W}.~\) Now \(P\{R(t_i) - R(t_{i-1}) \le N, R(t_j) - R(t_{j-1}) \le M\} = P\{G(t_i) - n_i - G(t_{i-1}) + n_{i-1} \le N, G(t_j) - n_j - G(t_{j-1}) + n_{j-1} \le M\}\) (where each of the \(n_{k}\) are \(\in \mathbb{W}\); why?) \(\therefore\) \(= P\{G(t_i) - G(t_{i-1}) \le N + n_i - n_{i-1}, G(t_j) - G(t_{j-1}) \le M + n_j - n_{j-1}\}.~\) Now, since \(G\) is Poisson by assumption, this last does \(= P\{G(t_i) - G(t_{i-1}) \le N + n_i - n_{i-1}\} P\{G(t_j) - G(t_{j-1}) \le M + n_j - n_{j-1}\}\)
+\(= P\{G(t_i) - n_i - G(t_{i-1}) + n_{i-1} \le N\} P\{G(t_j) - n_j - G(t_{j-1}) + n_{j-1} \le M\}\)
+\(= P\{R(t_i) - R(t_{i-1}) \le N\}P\{R(t_j) - R(t_{j-1}) \le M\}\), as required.</p>
 
-<p>With a \(P\)-value of \(0.794\), we easily <b>fail to reject</b> the null hypothesis: there is insufficient evidence to believe that the mean &quot;date-ability&quot; rating given to men by women depends on the age of the women.
-<br><br></p>
+<p>Finally, to show that Assumption (iii) of Def. 2.1 holds, we argue as follows: \(R(t) = n \Rightarrow G(t) \ge n\) (why?), so</p>
 
-<h3><u>Section 2: Two-Way ANOVA</u></h3>
+<p>\(P\{R(t) = n\} = P\{R(t) = n, G(t) = n\} + P\{R(t) = n, G(t) = n+1\}+~...= \sum_{i=n}^{\infty} P\{R(t) = n, G(t) = i\}\)
+\(= \sum_{i=n}^{\infty} P\{R(t) = n \mid G(t) = i\}P\{G(t) = i\} = \sum_{i=n}^{\infty} (e^{-\lambda t}(\lambda t)^i/i!) P\{R(t) = n \mid G(t) = i\}\)...but what is \(P\{R(t) = n \mid G(t) = i\}\)?&nbsp; This is the probability that, out of \(i\) events generated, \(n\) are registered, where each event has a probability \(p\) of being registered (and, presumably, is either registered or not, i.e., we assume no &quot;partial&quot; registrations).&nbsp; But this describes a binomial experiment, where we&#39;re asking for the probability of \(n\) &quot;successes&quot; out of \(i\) &quot;trials&quot; where the probability of &quot;success&quot; is \(p.~\) Thus \(P\{R(t) = n \mid G(t) = i\} = \left(\!
+  \begin{array}{c}
+    i \\
+    n
+  \end{array}
+  \!\right) p^n (1-p)^{i-n}.~\) Setting \(q=1-p\), we have:</p>
 
-<p><a name="2.7" class="goback" onclick="winhisback()"><strong>2.7</strong>)</a>
-Infer conclusions, at a 0.05 level of significance, from the two-way ANOVA table resulting from given height data, both the data and the table being provided in the problem statement. </p>
+<p>\(P\{R(t) = n\} = \sum_{i=n}^{\infty} e^{-\lambda t}(\lambda t)^i/i! \left(\!
+  \begin{array}{c}
+    i \\
+    n
+  \end{array}
+  \!\right) p^n q^{i-n} = e^{-\lambda t}\sum_{i=0}^{\infty} (\lambda t)^{i+n}/(i+n)! \left(\!
+  \begin{array}{c}
+    i + n \\
+    n
+  \end{array}
+  \!\right) p^n q^{i+n-n}\)
+\(= e^{-\lambda t}(p\lambda t)^n /n!\sum_{i=0}^{\infty} (q\lambda t)^i/i! = e^{\lambda t - p\lambda t}e^{-\lambda t}(p\lambda t)^n /n! = e^{-p\lambda t}(p\lambda t)^n/n!\)</p>
 
-<p><strong>Sln</strong>: By now, hopefully, the student should be facile at inferring conclusions regarding hypothesis tests from provided \(P\)-values, so why am I providing a solution to this Exercise? Because I’ve been using (free, Web-based) <a href="https://docs.google.com/spreadsheets">Google Sheets</a> to generate my tables and statistical results, and (as of December, 2019) I wasn’t readily able to find an existing function call or available plug-in to automatically produce two-way ANOVA tables from suitable data; so, with help&mdash;and vocabulary&mdash;from the classic text Box, G. E. P., W. G. Hunter, &amp; J. S. Hunter, 1978, <strong><em>Statistics for Experimenters</em></strong>, Wiley &amp; Sons, NY (BH&amp;H), I figured out how to generate such tables in GSheets &quot;from scratch&quot;; having done that, I feel I should share.</p>
+<p>QED</p>
 
-<p>So, below are two GSheet screenshots: the first shows the formulas used for all computations (the rows containing the data and the individual square deviation formulas have been partially hidden so that I could get the whole table in one screenshot, but the reader should be able to infer the formulas from context and the first row which has been provided in full):</p>
+<p><br>
+Bonus Problem: The result of Problem 2.3 is &quot;intuitive&quot;: it basically says that if the register has only a probability \(p\) of registering an event, that&#39;s the same as if it had a probability 1 of registering, but only operates \(pt\) of the time, thus proportionately reducing the count of events, &quot;on average,&quot; but without changing the underlying, i.e., Poisson, nature of the process.</p>
 
-<p><img src="./TroilaC12S2E7a.png" style="max-width: 100%"></p>
+<p>This &quot;begs the question&quot;: does this same heuristic analysis of such a register apply to other underlying distributions, i.e., does it similarly simply reduce the &quot;mean registration incidence&quot; proportionately, without changing the distributional nature of the counting process?&nbsp; As a &quot;bonus,&quot; we will show that, at least for a binomial generating process, the answer is &quot;Yes!&quot;</p>
 
-<p>and the second shows the results of the calculations, which agree exactly with the XLSTAT results shown in the text:</p>
+<p>Specifically, suppose that this probability \(p\) register is used to count the number of &quot;successes&quot; resulting from a binomial experiment with underlying probability of each success equal to \(P.~\) Again, it seems intuitive that using such a register shouldn&#39;t affect the binomial nature of the counting process, just the proportion of successes counted, i.e., the register&#39;s counting process is binomial with parameter \(pP\); we will show that this is indeed the case.</p>
 
-<p><img src="./TroilaC12S2E7b.png"></p>
+<p>Let \(n\) be the number of successes registered, out of \(N\) total trials, \(j\) of which were actually successes.&nbsp; Then, necessarily, \(n \le j \le N\), and, as with Problem 2.3, </p>
 
-<p>Finally, with an interaction \(P\)-value of 0.1756, at a significance level of 0.05, we <strong>fail to reject the null hypothesis that there is no interaction effect</strong>, i.e., there is insufficient evidence to infer an interaction between age group and gender in this adult height data; having failed to find an interaction effect, we proceed to examine the \(P\)-values associated with the variations due to gender (the &quot;blocks&quot;) and due to age (the &quot;treatments&quot;; these terms, adopted from BH&amp;H and common in the literature of two-way ANOVA, may be arbitrarily assigned to the groupings, i.e., we could have chosen to call the age groups the &quot;blocks&quot; and gender the &quot;treatments,&quot; without affecting the ultimate conclusions). With a \(P\)-value of 0.1399, at the 0.05 significance level, we <strong>fail to reject the null hypothesis that there is no age effect</strong> on adult heights; but with a \(P\)-value of 0.0000, we <strong>do reject the null hypothesis of no effect of gender</strong> on adult heights: gender does appear to be a factor in determining adult height.
-<br><br></p>
+<p>\(P\{\text{successes registered} = n\} = P\{\text{successes registered} = n, \text{actual number of successes} = n\}\)</p>
 
-<p><a name="2.9" class="goback" onclick="winhisback()"><strong>2.9</strong>)</a>
-&quot;Marathon Times&quot; For the indicated, randomly-selected NYC marathon times, grouped by age and gender, use a 0.05 significance level to test null hypotheses concerning an interaction effect, and the individual effects of age and gender. </p>
+<p>\(+~P\{\text{successes registered} = n, \text{actual number of successes} = n+1\}~+~... \)</p>
 
-<p><strong>Sln</strong>: GSheet formula and result two-way ANOVA tables are:</p>
+<p>\(+~P\{\text{successes registered} = n, \text{actual number of successes} = N\}\)</p>
 
-<p><img src="./TroilaC12S2E9a.png" style="max-width: 100%"></p>
+<p>\(= \sum_{j=n}^N P\{\text{registered} = n \mid \text{actual successes} = j\} P\{\text{actual successes} = j\}\).  Now, setting \(Q = 1-P\), the second factor is \(\left(\!
+  \begin{array}{c}
+    N \\
+    j
+  \end{array}
+  \!\right) P^jQ^{(N-j)}\), while the first factor is \(\left(\!
+  \begin{array}{c}
+    j \\
+    n
+  \end{array}
+  \!\right) p^nq^{(j-n)}\), with \(q = 1-p\), as usual.&nbsp; Our sum is thus:</p>
 
-<p><img src="./TroilaC12S2E9b.png"></p>
+<p>\(\sum_{j=n}^N 
+\left(\!
+  \begin{array}{c}
+    N \\
+    j
+  \end{array}
+  \!\right) P^jQ^{(N-j)} 
+\left(\!
+  \begin{array}{c}
+    j \\
+    n
+  \end{array}
+  \!\right) p^nq^{(j-n)} = 
+\sum_{j=n}^N \frac{N!}{j!(N-j)!} P^j Q^{(N-j)} \frac{j!}{n!(j-n)!} p^n q^{(j-n)}\)</p>
 
-<p>With a \(P\)-value of 0.3289, we <strong>fail to reject</strong> the null hypothesis that there is no interaction effect between age and gender; similarly, with a \(P\)-value of 0.2064, we also <strong>fail to reject</strong> the null hypothesis that there is no gender effect; on the other hand, with a \(P\)-value of 0.0143, at the specified significance level (0.05), we do <strong>reject</strong> the null hypothesis of no effect due to age: there is sufficient evidence to believe that age has an effect on marathon running times.</p>
+<p>\(= \sum_{j=n}^N \frac{N!}{(N-j)!(j-n)!n!} P^j Q^{(N-j)} p^n q^{(j-n)} = \sum_{j=0}^{N-n} \frac{N!}{(N-(j+n))! (j+n-n)! n!} P^{j+n} Q^{N-(j+n)} p^n q^{j+n-n}\)</p>
 
-<h3>Credits</h3>
+<p>\(= \sum_{j=0}^{M=N-n} \frac{(M+n)!}{(M-j)! j! n!} P^{j+n} Q^{M-j} p^n q^j = (pP)^n Q^M \sum_{j=0}^M \frac{M!(M+1)(M+2)...(M+n)}{j! (M-j)! n!} (Pq/Q)^j\)</p>
 
-<p>Spreadsheets, including calculations, generated with <a href="https://docs.google.com/spreadsheets">Google Sheets</a>.</p>
+<p>\(= (pP/Q)^n Q^N 
+\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 
+\sum_{j=0}^{M} 
+\left(\!
+  \begin{array}{c}
+    M \\
+    j
+  \end{array}
+  \!\right) (Pq/Q)^j (1)^{M-j} = (pP/Q)^n Q^N 
+\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 
+(1 + Pq/Q)^M\) (by the binomial theorem)</p>
+
+<p>\(= (pP/Q)^n Q^N 
+\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 
+\left(\frac{Q + qP}{Q}\right)^M =
+(pP/Q)^n Q^{N-(N-n)}
+\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 
+(Q+qP)^M =
+\left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 
+(pP)^n (1-P + (1-p)P)^M\)</p>
+
+<p>\(= \left(\!
+  \begin{array}{c}
+    N \\
+    n
+  \end{array}
+  \!\right) 
+(pP)^n (1 - pP)^{N-n}\). </p>
+
+<p>Thus, as claimed, a binomial experiment with parameter \(P\) using an &quot;imperfect success detector&quot; that detects a success with probability \(p\) has a binomial distribution with parameter \(pP\).</p>
 
 <h3>Please Donate:</h3>
 
