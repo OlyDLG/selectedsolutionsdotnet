@@ -24,9 +24,9 @@ $\require{cancel}$
 <center>for</center>
 ## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)</center>
 
-<i>Notes:  These solutions are provided "as-is," for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
+<i>Notes:  These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
 
-Though not presented in the text, a "blackboard bold" capital $\mathbb{R}$ is used ubiquitously to represent the set of "all real numbers," and I will use it freely herein (often with the preposition "over," as in the phrase "the expression is well-defined over $\mathbb{R}$," meaning that it is well-defined&mdash;meaning, gives a real-number result&mdash;for all real number inputs).
+Though not presented in the text, a &quot;blackboard bold&quot; capital $\mathbb{R}$ is used ubiquitously to represent the set of &quot;all real numbers,&quot; and I will use it freely herein (often with the preposition &quot;over,&quot; as in the phrase &quot;the expression is well-defined over $\mathbb{R}$,&quot; meaning that it is well-defined&mdash;meaning, gives a real-number result&mdash;for all real number inputs).
 
 Purple font indicates clicking on the text will return you to your prior place.
 <br>
@@ -225,9 +225,9 @@ Purple font indicates clicking on the text will return you to your prior place.
 ### _Section 1: Real Numbers_
 
 <a name="1.4" class="goback" onclick="winhisback()">__1.4__)</a>
-“The product of 5 and $x+3$ equals 6” may be written as ______.
+&quot;The product of 5 and $x+3$ equals 6&quot; may be written as ______.
 
-__Sln__: "Product" means "multiplication" so "The product of 5 and $x+3$ equals 6" may be written as $\boxed{5(x+3) = 6}$
+__Sln__: &quot;Product&quot; means &quot;multiplication&quot; so &quot;The product of 5 and $x+3$ equals 6&quot; may be written as $\boxed{5(x+3) = 6}$
 <br>
 
 <a name="1.8" class="goback" onclick="winhisback()">__1.8__)</a>
@@ -261,11 +261,11 @@ __e__) They’re all real numbers.
 
 __d__) $\sqrt5$ is the only irrational number in the set (a proof is certainly possible here, but we will be providing, in a later problem, a model for how one goes about proving it, so we will not provide a proof for $\sqrt5$ here).
 
-__c__) Everything in the set <i>except</i> $\sqrt5$ is rational: $-\frac53$ can be expressed as the ratio of the integers $-5~\&~3; 0~\&~1$ can be expressed as the ratio of the integers $0~\&~1$ and $1~\&~1$, respectively; $1.25$ can be expressed as the ratio of $125~\&~100$; and $2.\overline{06} = 2 + \frac2{33}$ which can be expressed as the ratio of $68$ to $33$ (after we’ve reviewed elementary algebra, we’ll be able to review how I found this last ratio; until then, you can perform the division $\frac{68}{33}$ on a calculator to confirm; note that all we had to do was name <i>any pair</i> of integers whose ratio is the given number: we do not need to name "<i>the</i>" pair, because any such pair is not unique&mdash;there are always an infinite number of pairs of integers whose ratio equals any given rational number; this is why the definition of rational numbers is stated the way it is, even though that phrasing is, admittedly, somewhat awkward).
+__c__) Everything in the set <i>except</i> $\sqrt5$ is rational: $-\frac53$ can be expressed as the ratio of the integers $-5~\&~3; 0~\&~1$ can be expressed as the ratio of the integers $0~\&~1$ and $1~\&~1$, respectively; $1.25$ can be expressed as the ratio of $125~\&~100$; and $2.\overline{06} = 2 + \frac2{33}$ which can be expressed as the ratio of $68$ to $33$ (after we’ve reviewed elementary algebra, we’ll be able to review how I found this last ratio; until then, you can perform the division $\frac{68}{33}$ on a calculator to confirm; note that all we had to do was name <i>any pair</i> of integers whose ratio is the given number: we do not need to name &quot;<i>the</i>&quot; pair, because any such pair is not unique&mdash;there are always an infinite number of pairs of integers whose ratio equals any given rational number; this is why the definition of rational numbers is stated the way it is, even though that phrasing is, admittedly, somewhat awkward).
 
 __b__) $0~\&~1$ are the only integers in the set.
 
-__a__) Using the definition in the text&mdash;which is the definition I learned&mdash;the only natural number in the set is $1$ (however, unfortunately, unanimity in the mathematical community about the status of "0" appears to be lacking: see, e.g., https://www.quora.com/Does-the-set-of-Natural-Numbers-include-zero?q=Is%20zero%20a%20natural%20number; note: ordinarily I wouldn’t cite a Quora thread as authoritative, but in light of it, I did my own research, and I confirmed independently that whether 0 is a natural number or not depends on which mathematician you ask).
+__a__) Using the definition in the text&mdash;which is the definition I learned&mdash;the only natural number in the set is $1$ (however, unfortunately, unanimity in the mathematical community about the status of &quot;0&quot; appears to be lacking: see, e.g., https://www.quora.com/Does-the-set-of-Natural-Numbers-include-zero?q=Is%20zero%20a%20natural%20number; note: ordinarily I wouldn’t cite a Quora thread as authoritative, but in light of it, I did my own research, and I confirmed independently that whether 0 is a natural number or not depends on which mathematician you ask).
 <br>
 
 <a name="1.26" class="goback" onclick="winhisback()">__1.26__)</a>
@@ -273,7 +273,7 @@ $F = \displaystyle \left\{-\sqrt2, \pi + \sqrt2, \frac12+10.3\right\}$
 
 __Sln__: __e__) Again, they’re all real numbers (until we learn about complex numbers, all the numbers we deal with are real numbers).
 
-__d__) $-\sqrt2$ and $\pi + \sqrt2$ are the irrational numbers in the set: $-\sqrt2$ because it is a (non-zero) rational number, $-1$, times an irrational number, $\sqrt2$, and such a product is always irrational (Proof: suppose $a \ne 0$ rational, $b$ irrational, and suppose their product $ab$ is rational. First note that $ab$ can’t be the rational number 0 (why, exactly?) Now, $a \ne 0$ rational means there exist integers $m, n$, both $\ne 0$ such that $a=m/n$, so $ab = (mb)/n$. If, as supposed, $ab$ is rational, that means there exist integers $M, N$, again both $\ne 0$, such that $ab = M/N = (mb)/n$. Since both $m~\&~n \ne 0$, we may multiply this last equality through by $n/m$, yielding $b=(nM)/(mN)$; but both $nM$ and $mN$ are integers (why, exactly?), so this last equation says that, <i>contrary to our supposition</i>, $b$ is rational. Thus we conclude that, "self-consistently," we can’t have all three conditions&mdash;$a \ne 0$ rational, $b$ irrational, $ab$ rational&mdash;hold simultaneously; so if the first two hold, $ab$ can’t be rational, which, by definition, makes it irrational $\blacksquare$ (= "proven"). Question: did we need to assume $a \ne 0$? Why or why not? Hint: is the claim&mdash;a rational times an irrational is irrational&mdash;still true if the rational number in the claim is zero?) 
+__d__) $-\sqrt2$ and $\pi + \sqrt2$ are the irrational numbers in the set: $-\sqrt2$ because it is a (non-zero) rational number, $-1$, times an irrational number, $\sqrt2$, and such a product is always irrational (Proof: suppose $a \ne 0$ rational, $b$ irrational, and suppose their product $ab$ is rational. First note that $ab$ can’t be the rational number 0 (why, exactly?) Now, $a \ne 0$ rational means there exist integers $m, n$, both $\ne 0$ such that $a=m/n$, so $ab = (mb)/n$. If, as supposed, $ab$ is rational, that means there exist integers $M, N$, again both $\ne 0$, such that $ab = M/N = (mb)/n$. Since both $m~\&~n \ne 0$, we may multiply this last equality through by $n/m$, yielding $b=(nM)/(mN)$; but both $nM$ and $mN$ are integers (why, exactly?), so this last equation says that, <i>contrary to our supposition</i>, $b$ is rational. Thus we conclude that, &quot;self-consistently,&quot; we can’t have all three conditions&mdash;$a \ne 0$ rational, $b$ irrational, $ab$ rational&mdash;hold simultaneously; so if the first two hold, $ab$ can’t be rational, which, by definition, makes it irrational $\blacksquare$ (= &quot;proven&quot;). Question: did we need to assume $a \ne 0$? Why or why not? Hint: is the claim&mdash;a rational times an irrational is irrational&mdash;still true if the rational number in the claim is zero?) 
 
 $~~~~$As for $\pi + \sqrt2$, it is irrational because an irrational plus an irrational is always irrational. (The proof is similar to the proof just given for (rational $\ne 0$)(irrational) $=$ irrational: one assumes two numbers, $a, b$, are irrational, but their sum, $a+b$, is rational, and follows the implications of the three assumptions until doing so results in a contradiction. That result indicates that one can’t, self-consistently, have all three conditions&mdash;$a, b$ irrational, $a+b$ rational&mdash;simultaneously true; so if the first two are true, $a+b$ can’t be rational, and thus, by definition, is irrational. This method of proof&mdash;assuming the opposite of what you want to prove and showing that doing so ultimately leads to a contradiction, so therefore what you wanted to prove must be true&mdash;is called [<i>reductio ad absurdum</i>](https://simple.wikipedia.org/wiki/Reductio_ad_absurdum), and is a standard method for proving a number irrational).
 
@@ -282,12 +282,12 @@ __c__) $\frac12 + 10.3 = 10.8$ is the only rational number in the set (proof, co
 __b__ & __a__) the set contains no integers and no natural numbers.
 <br>
 
-In Problems __30__ & __36__, approximate each number: __a__) rounded and __b__) truncated to three decimal places. (Note: the text teaches a different method for [rounding](https://en.wikipedia.org/wiki/Rounding) than the one I was taught, which is called "[round-half-to-even](https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even)." Although I regard round-half-to-even as preferable, especially in science and finance where it is the standard, in order to avoid confusion, I will follow the method given in the text.)
+In Problems __30__ & __36__, approximate each number: __a__) rounded and __b__) truncated to three decimal places. (Note: the text teaches a different method for [rounding](https://en.wikipedia.org/wiki/Rounding) than the one I was taught, which is called &quot;[round-half-to-even](https://en.wikipedia.org/wiki/Rounding#Rounding_half_to_even).&quot; Although I regard round-half-to-even as preferable, especially in science and finance where it is the standard, in order to avoid confusion, I will follow the method given in the text.)
 
 <a name="1.30" class="goback" onclick="winhisback()">__1.30__)</a>
 $99.05249$
 
-__Sln__: __a__) The third digit after the decimal point is 2 and the next digit is 4, which is less than five, so we round simply by dropping all the digits after the 2, so the answer is $\boxed{99.052}$. (Note that what we definitely <i>do not</i> do is go all the way to the 9, say "oh, 9 is greater than 5, so we round the 4 up to 5, and then there’s a 5 following the 2, so we round that up to 3." The principle here is that we look at the 249 in isolation, and ask ourselves "If that was 249 and I had to round to the nearest hundred, what would that be? Is 249 closer to 200 or 300?" Clearly (hopefully), you see that it is closer to 200 than 300, although, admittedly, not by much; to the smart-aleck who says "well, it’s (much) closer to 250 than either 200 or 300, so why don’t we round it to that?" the answer is simply because that is not what we were asked to do: had we been asked to round to <i>four</i> decimal places, then yes, that is what we would do, but no, we were asked to round to three, so the problem becomes equivalent to asking "which hundred is 249 closest to?" not "which half-hundred is it closest to?" But fair question.)
+__Sln__: __a__) The third digit after the decimal point is 2 and the next digit is 4, which is less than five, so we round simply by dropping all the digits after the 2, so the answer is $\boxed{99.052}$. (Note that what we definitely <i>do not</i> do is go all the way to the 9, say &quot;oh, 9 is greater than 5, so we round the 4 up to 5, and then there’s a 5 following the 2, so we round that up to 3.&quot; The principle here is that we look at the 249 in isolation, and ask ourselves &quot;If that was 249 and I had to round to the nearest hundred, what would that be? Is 249 closer to 200 or 300?&quot; Clearly (hopefully), you see that it is closer to 200 than 300, although, admittedly, not by much; to the smart-aleck who says &quot;well, it’s (much) closer to 250 than either 200 or 300, so why don’t we round it to that?&quot; the answer is simply because that is not what we were asked to do: had we been asked to round to <i>four</i> decimal places, then yes, that is what we would do, but no, we were asked to round to three, so the problem becomes equivalent to asking &quot;which hundred is 249 closest to?&quot; not &quot;which half-hundred is it closest to?&quot; But fair question.)
 
 __b__) In this case, truncation gives the same result: $\boxed{99.052}$.
 <br>
@@ -305,7 +305,7 @@ In Problems __44__ & __48__, write each statement using symbols.
 <a name="1.44" class="goback" onclick="winhisback()">__1.44__)</a>
 The product of 2 and $x$ is the product of 4 and 6.
 
-__Sln__: "Product" means "times" or multiply and any form of the verb "to be" means equals, so this gets translated as: $$\boxed{2x = (4)(6)}$$
+__Sln__: &quot;Product&quot; means "times" or multiply and any form of the verb "to be" means equals, so this gets translated as: $$\boxed{2x = (4)(6)}$$
 
 <a name="1.48" class="goback" onclick="winhisback()">__1.48__)</a>
 The quotient 2 divided by x is 6.
@@ -326,17 +326,17 @@ $\displaystyle \frac2{15} + \frac89$
 
 __Sln__: We actually always have a choice when adding (which includes subtracting) fractions: we can do it like this:
 
-$\displaystyle \frac2{15} + \frac89 = \left(\frac99\right)\left(\frac2{15}\right) + \left(\frac{15}{15}\right)\left(\frac89\right) = \frac{18}{135} + \frac{120}{135} = \frac{138}{135}$, which is correct, but leaves us needing to "reduce": $$\frac{138}{135} = \frac{3(46)}{3(45)} = \boxed{\frac{46}{45}}$$
+$\displaystyle \frac2{15} + \frac89 = \left(\frac99\right)\left(\frac2{15}\right) + \left(\frac{15}{15}\right)\left(\frac89\right) = \frac{18}{135} + \frac{120}{135} = \frac{138}{135}$, which is correct, but leaves us needing to &quot;reduce&quot;: $$\frac{138}{135} = \frac{3(46)}{3(45)} = \boxed{\frac{46}{45}}$$
 
-or we can find the "least common denominator" (LCD) = least common multiple (LCM) of the denominators: $15 = (3)(5), 9 = 3^2$, so the LCM is $(3^2)(5) = (9)(5) = 45$; and then multiply each fraction by "1" in the form that makes each have that LCD: $\displaystyle \left(\frac33\right)\left(\frac2{15}\right) + \left(\frac55\right)\left(\frac89\right) = \frac6{45} + \frac{40}{45} = \boxed{\frac{46}{45}}$. The first way saves time and effort "at the front end" of the evaluation, but <i>may</i> result in us having to reduce at the end (but not always: can you think of when it won’t? Hint: what does the second way have us doing if the LCM is simply the product of the denominators?); whereas the second way involves more effort at the front end, but we never have to reduce the answer (assuming the summands&mdash;the things we’re adding&mdash;are in "lowest terms" to begin with. Proof?) So you have to ask yourself: do I want to start easy, but then possibly have to find common factors in larger-than-necessary numbers in order to reduce; or do I want to do the work of finding the LCD up front, and end up with an answer I won’t have to reduce? (Me, knowing that both ways work, I always "play it by ear": if I just "see" the LCD without too much work, then I’ll do it the second way; but if finding the LCD is going to be troublesome, I’ll do it the first way and save the factoring&mdash;required by both methods&mdash;for figuring out what gets cancelled at the end.)
+or we can find the &quot;least common denominator&quot; (LCD) = least common multiple (LCM) of the denominators: $15 = (3)(5), 9 = 3^2$, so the LCM is $(3^2)(5) = (9)(5) = 45$; and then multiply each fraction by &quot;1&quot; in the form that makes each have that LCD: $\displaystyle \left(\frac33\right)\left(\frac2{15}\right) + \left(\frac55\right)\left(\frac89\right) = \frac6{45} + \frac{40}{45} = \boxed{\frac{46}{45}}$. The first way saves time and effort &quot;at the front end&quot; of the evaluation, but <i>may</i> result in us having to reduce at the end (but not always: can you think of when it won’t? Hint: what does the second way have us doing if the LCM is simply the product of the denominators?); whereas the second way involves more effort at the front end, but we never have to reduce the answer (assuming the summands&mdash;the things we’re adding&mdash;are in &quot;lowest terms&quot; to begin with. Proof?) So you have to ask yourself: do I want to start easy, but then possibly have to find common factors in larger-than-necessary numbers in order to reduce; or do I want to do the work of finding the LCD up front, and end up with an answer I won’t have to reduce? (Me, knowing that both ways work, I always &quot;play it by ear&quot;: if I just &quot;see&quot; the LCD without too much work, then I’ll do it the second way; but if finding the LCD is going to be troublesome, I’ll do it the first way and save the factoring&mdash;required by both methods&mdash;for figuring out what gets cancelled at the end.)
 <br>
 
 <a name="1.84" class="goback" onclick="winhisback()">__1.84__)</a>
 $\displaystyle \frac23 + \frac45 \cdot \frac16$
 
-__Sln__: Order of operations dictates that we do the multiplication first, then the addition; before we do the multiplication, however, we observe that we can "cancel" the common factor of 2 from 4 and 6: $$\frac45 \cdot \frac16 = \frac{2\cdot \cancel2}5 \cdot \frac1{\cancel2\cdot 3} = \frac{(2)(1)}{(5)(3)} = \frac2{15}$$simplifying the addition to:$$\frac23 + \frac2{15}$$
-Hopefully the reader has no trouble "just seeing" that the least common denominator is 15, so the second fraction doesn’t need to have its appearance modified at all, but we do have to multiply the first fraction by "1" in the form $\frac55$:$$\frac23 + \frac2{15} = \frac55\cdot\frac23 + \frac2{15} = \frac{10}{15} + \frac2{15}=\frac{10+2}{15} = \frac{12}{15} = \frac{\cancel3\cdot4}{\cancel3\cdot5} = \boxed{\frac45}$$
-(There is nothing "special" or "deep" about having gotten one of the numbers in the problem as the answer to the problem: it is just a coincidence, likely "manufactured" intentionally by the textbook problem authors, to "see if you’re paying attention"&mdash;after we review algebra, we’ll be able to manufacture such problems to our heart’s content. Aw heck, I don’t want to wait: suppose you want to create a problem like this, i.e., you want to create a problem such that $a+b\cdot c = c$; if you choose any two of the three numbers, algebra enables you to figure out what the third must be. For example, we can solve the equation for $b$:$$b\cdot c = c - a \implies b = \frac{c-a}c,$$so if we choose $a$ and $c$, we can easily calculate the $b$ required to make $a+b\cdot c = c$ a true statement. Now you figure out the formulae for $a$ in terms of $b$ and $c$ and for $c$ in terms of $a$ and $b$ (hint: both formulae contain an explicit "1"), so now you can indeed make up such problems to your heart’s content.)
+__Sln__: Order of operations dictates that we do the multiplication first, then the addition; before we do the multiplication, however, we observe that we can &quot;cancel&quot; the common factor of 2 from 4 and 6: $$\frac45 \cdot \frac16 = \frac{2\cdot \cancel2}5 \cdot \frac1{\cancel2\cdot 3} = \frac{(2)(1)}{(5)(3)} = \frac2{15}$$simplifying the addition to:$$\frac23 + \frac2{15}$$
+Hopefully the reader has no trouble &quot;just seeing&quot; that the least common denominator is 15, so the second fraction doesn’t need to have its appearance modified at all, but we do have to multiply the first fraction by &quot;1&quot; in the form $\frac55$:$$\frac23 + \frac2{15} = \frac55\cdot\frac23 + \frac2{15} = \frac{10}{15} + \frac2{15}=\frac{10+2}{15} = \frac{12}{15} = \frac{\cancel3\cdot4}{\cancel3\cdot5} = \boxed{\frac45}$$
+(There is nothing &quot;special&quot; or &quot;deep&quot; about having gotten one of the numbers in the problem as the answer to the problem: it is just a coincidence, likely &quot;manufactured&quot; intentionally by the textbook problem authors, to &quot;see if you’re paying attention&quot;&mdash;after we review algebra, we’ll be able to manufacture such problems to our heart’s content. Aw heck, I don’t want to wait: suppose you want to create a problem like this, i.e., you want to create a problem such that $a+b\cdot c = c$; if you choose any two of the three numbers, algebra enables you to figure out what the third must be. For example, we can solve the equation for $b$:$$b\cdot c = c - a \implies b = \frac{c-a}c,$$so if we choose $a$ and $c$, we can easily calculate the $b$ required to make $a+b\cdot c = c$ a true statement. Now you figure out the formulae for $a$ in terms of $b$ and $c$ and for $c$ in terms of $a$ and $b$ (hint: both formulae contain an explicit &quot;1&quot;), so now you can indeed make up such problems to your heart’s content.)
 <br>
 
 In Problems __92__ and __98__, use the Distributive Property to remove the parentheses.
@@ -350,15 +350,15 @@ $$\boxed{2x + \frac12}$$
 <a name="1.98" class="goback" onclick="winhisback()">__1.98__)</a>
 $(x - 4)(x - 2)$
 
-__Sln__: $(x - 4)(x - 2) = a(b+c)$ with the identifications $a=(x-4), b=x, c=-2$ so $(x - 4)(x - 2) = a(b+c) = ab+ac = (x-4)(x)+(x-4)(-2)$; but we still have parentheses, so we need to use the Distributive Property again; I’m not going belabor the identifications stage&mdash;this is supposed to be review after all&mdash;and you need to be comfortable using the Distributive Property in combination with the Commutative Property of Multiplication, so that the following manipulations should not be bothersome (if they are, at a minimum, you need more review before proceeding):$$(x-4)(x)+(x-4)(-2) = (x)(x)+(-4)(x) + (-2)(x) + (-2)(-4) = x^2 - 4x -2x + 8 = $$ $$\boxed{x^2 - 6x + 8}$$(where we have used the Distributive Property "in reverse" to "combine the like terms" $-2x$ and $-4x$ into $-6x$).
+__Sln__: $(x - 4)(x - 2) = a(b+c)$ with the identifications $a=(x-4), b=x, c=-2$ so $(x - 4)(x - 2) = a(b+c) = ab+ac = (x-4)(x)+(x-4)(-2)$; but we still have parentheses, so we need to use the Distributive Property again; I’m not going belabor the identifications stage&mdash;this is supposed to be review after all&mdash;and you need to be comfortable using the Distributive Property in combination with the Commutative Property of Multiplication, so that the following manipulations should not be bothersome (if they are, at a minimum, you need more review before proceeding):$$(x-4)(x)+(x-4)(-2) = (x)(x)+(-4)(x) + (-2)(x) + (-2)(-4) = x^2 - 4x -2x + 8 = $$ $$\boxed{x^2 - 6x + 8}$$(where we have used the Distributive Property &quot;in reverse&quot; to &quot;combine the like terms&quot; $-2x$ and $-4x$ into $-6x$).
 <br>
 
 <a name="1.102" class="goback" onclick="winhisback()">__1.102__)</a>
 Explain why $\displaystyle \frac{4+3}{2+5} \ne \frac42 + \frac35$
 
 __Sln__: This one is perhaps more subtle than it appears, because we’re supposed to do division before addition, so exactly <i>why</i> isn’t it true? Because of a convention, i.e., an agreement, made long ago, probably not formally, that in any expression like: $$\frac{a+b+c~+...}{d+e+f~+...}$$
-there are "understood" parentheses: $$\frac{a+b+c~+...}{d+e+f~+...} = \frac{(a+b+c~+...)}{(d+e+f~+...)}$$
-<i>by convention</i>: it’s really no "deeper" than that. So $\displaystyle \frac{4+3}{2+5}$ really means $\displaystyle \frac{(4+3)}{(2+5)} = \frac77 = 1$, whereas $\displaystyle \frac42 + \frac35 = \frac{10}5 + \frac35 = \frac{13}5.$
+there are &quot;understood&quot; parentheses: $$\frac{a+b+c~+...}{d+e+f~+...} = \frac{(a+b+c~+...)}{(d+e+f~+...)}$$
+<i>by convention</i>: it’s really no &quot;deeper&quot; than that. So $\displaystyle \frac{4+3}{2+5}$ really means $\displaystyle \frac{(4+3)}{(2+5)} = \frac77 = 1$, whereas $\displaystyle \frac42 + \frac35 = \frac{10}5 + \frac35 = \frac{13}5.$
 <br>
 
 <a name="1.110" class="goback" onclick="winhisback()">__1.110__)</a>
@@ -376,7 +376,7 @@ __Sln__: $\sqrt2 \gt 1.41$ because $\left(\sqrt2\right)^2 = 2 \gt 1.9881 = (1.41
 <br>
 
 <a name="2.24" class="goback" onclick="winhisback()">__2.24__)</a>
-Write "$z$ is negative" as an inequality.
+Write &quot;$z$ is negative&quot; as an inequality.
 
 __Sln__: If $z$ is negative, then it is less than zero, and not equal to zero (since zero is neither positive nor negative), so this may be translated as either $\boxed{z \lt 0 \text{ or }0 \gt z}$ (they are equivalent, and thus both are correct).
 <br>
@@ -410,7 +410,7 @@ __d__) $x=-1$: $x^3+x = (-1)^3 + (-1) = -1 + (-1) = -2 \ne 0$, so $x=-1$ is $\bo
 <a name="2.84" class="goback" onclick="winhisback()">__2.84__)</a>
 Simplify $\sqrt{(-3)^2}$
 
-__Sln__: I’m doing this one because it’s important to understand that we can’t simply "cancel" the square-root and the squaring operations (which would give us an answer of $-3$), because, since the square-root symbol extends over the squaring operation like so: $\sqrt{(\cdot)^2}$, there are "understood" brackets around the squaring operation shouting "do me first," i.e., the given expression is (to be understood as) equivalent to $\sqrt{\left[(-3)^2\right]} = \sqrt{[(-3)(-3)]} = \sqrt9$; additionally, the square-root without a sign out in front is understood to be the positive square-root, so $\sqrt9 = \boxed{3}$ (unambiguously).
+__Sln__: I’m doing this one because it’s important to understand that we can’t simply &quot;cancel&quot; the square-root and the squaring operations (which would give us an answer of $-3$), because, since the square-root symbol extends over the squaring operation like so: $\sqrt{(\cdot)^2}$, there are &quot;understood&quot; brackets around the squaring operation shouting &quot;do me first,&quot; i.e., the given expression is (to be understood as) equivalent to $\sqrt{\left[(-3)^2\right]} = \sqrt{[(-3)(-3)]} = \sqrt9$; additionally, the square-root without a sign out in front is understood to be the positive square-root, so $\sqrt9 = \boxed{3}$ (unambiguously).
 <br>
 
 In Problems __90__ & __94__, simplify the expression, expressing the answer so that any remaining exponents are positive (whenever an exponent is 0 or negative, assume that the base is not 0).
@@ -454,25 +454,25 @@ __Sln__: $-(8.11)^{\large-4} = (-1)\left((8.11)^{\large-4}\right) $ (<i>not</i> 
 In Problems __136__, __138__, and __142__, express each statement as an equation involving the indicated variables.
 
 <a name="2.136" class="goback" onclick="winhisback()">__2.136__)</a>
-"The perimeter $P$ of a rectangle is twice the sum of its length $l$ and its width $w$."
+&quot;The perimeter $P$ of a rectangle is twice the sum of its length $l$ and its width $w$.&quot;
 
-__Sln__: "Twice" means "double," i.e., "two times," and since it’s "twice the sum of," that tells us we’re supposed to sum, i.e., add <i>before</i> we multiply, so we’re going to need to include parentheses; the proper translation is thus: $$\boxed{P = 2(l+w)}$$
+__Sln__: &quot;Twice&quot; means &quot;double,&quot; i.e., &quot;two times,&quot; and since it’s &quot;twice the sum of,&quot; that tells us we’re supposed to sum, i.e., add <i>before</i> we multiply, so we’re going to need to include parentheses; the proper translation is thus: $$\boxed{P = 2(l+w)}$$
 <br>
 
 <a name="2.138" class="goback" onclick="winhisback()">__2.138__)</a>
-"The area $A$ of a triangle is one-half the product of its base $b$ and its height $h$."
+&quot;The area $A$ of a triangle is one-half the product of its base $b$ and its height $h$.&quot;
 
-__Sln__: A potential difficulty here is omission of the preposition "of" between "one-half" and "the product": "of" means "times," so one has to understand that in English "one-half the product" means "one-half <i>of</i> the product"; product (also) means "times," so putting this all together the proper translation is: $$\boxed{A = \frac12bh}$$
+__Sln__: A potential difficulty here is omission of the preposition &quot;of&quot; between &quot;one-half&quot; and &quot;the product&quot;: &quot;of&quot; means &quot;times,&quot; so one has to understand that in English &quot;one-half the product&quot; means &quot;one-half <i>of</i> the product&quot;; product (also) means &quot;times,&quot; so putting this all together the proper translation is: $$\boxed{A = \frac12bh}$$
 <br>
 
 <a name="2.142" class="goback" onclick="winhisback()">__2.142__)</a>
-"The surface area $S$ of a sphere is 4 times $\pi$ times the square of the radius $r$."
+&quot;The surface area $S$ of a sphere is 4 times $\pi$ times the square of the radius $r$.&quot;
 
-__Sln__: "The square of" is (sort of) an exception to the "of = times" rule: "the square of $x$" is, of course, $x^2$; with that understanding, the rest of this is translated just as written: $$\boxed{S = 4\pi r^2}$$
+__Sln__: &quot;The square of&quot; is (sort of) an exception to the &quot;of = times&quot; rule: &quot;the square of $x$&quot; is, of course, $x^2$; with that understanding, the rest of this is translated just as written: $$\boxed{S = 4\pi r^2}$$
 <br>
 
 <a name="2.148" class="goback" onclick="winhisback()">__2.148__)</a>
-Write "$x$ is more than 5 units from 2" as an inequality involving absolute value.
+Write &quot;$x$ is more than 5 units from 2&quot; as an inequality involving absolute value.
 
 __Sln__: This is saying that the distance between $x$ and 2, which is given by $|x-2|$, is greater than 5, so the required inequality is $\boxed{|x-2| \gt 5}$.
 <br>
@@ -480,32 +480,32 @@ __Sln__: This is saying that the distance between $x$ and 2, which is given by $
 <a name="2.152" class="goback" onclick="winhisback()">__2.152__)</a>
 Normal human body temperature is98.6&deg; F.[$^1$](#Note1) A temperature that differs from normal by at least 1.5&deg; F is considered unhealthy. Thus one is considered  unhealthy if one’s temperature, $x$, makes the inequality: $$|x-98.6|\ge1.5$$a true statement.
 __a__) Show that a temperature of 97&deg; F is considered unhealthy;
-__Sln__: $|97-98.6| = |-1.6| = 1.6 \gt 1.5$, therefore "unhealthy"
+__Sln__: $|97-98.6| = |-1.6| = 1.6 \gt 1.5$, therefore &quot;unhealthy&quot;
 <br>
 
 __b__) Show that a temperature of 100&deg; F is not considered unhealthy.
 
-__Sln__: $|100-98.6| = |1.4| = 1.4 \lt 1.5$, therefore "not unhealthy"
+__Sln__: $|100-98.6| = |1.4| = 1.4 \lt 1.5$, therefore &quot;not unhealthy&quot;
 <br>
 
 <a name="2.160" class="goback" onclick="winhisback()">__2.160__)</a>
 How long does it take a beam of light to reach Earth from the Sun when the Sun is 93,000,000 miles from Earth; express your answer in seconds, using scientific notation.
 
-__Sln__: $9.3\times 10^7~\cancel{\text{miles}}~\times \displaystyle \frac{1\text{ sec }}{1.86\times 10^5~\cancel{\text{miles}}} = \frac{9.3}{1.86} \times 10^2 = \boxed{5.0 \times 10^2\text{ sec}}$ ($\doteq$ 8.3 min., which is a "well-known" fact.)
+__Sln__: $9.3\times 10^7~\cancel{\text{miles}}~\times \displaystyle \frac{1\text{ sec }}{1.86\times 10^5~\cancel{\text{miles}}} = \frac{9.3}{1.86} \times 10^2 = \boxed{5.0 \times 10^2\text{ sec}}$ ($\doteq$ 8.3 min., which is a &quot;well-known&quot; fact.)
 <br>
 
 <a name="2.162" class="goback" onclick="winhisback()">__2.162__)</a>
 Does $\displaystyle \frac23$ equal 0.666? If not, which is larger? By how much?
 
-__Sln__: No: $0.666 = \displaystyle\frac{666}{1000} = \frac{333}{500}$ (in "lowest terms"); $\displaystyle \frac23$ is larger by $\displaystyle \left(\frac23 - \frac{333}{500}\right) = \frac{2(500)-3(333)}{(3)(500)} = \frac1{1500} = 0.000\overline{6}$, i.e., $0.666\overline{6} - 0.666$.
+__Sln__: No: $0.666 = \displaystyle\frac{666}{1000} = \frac{333}{500}$ (in &quot;lowest terms&quot;); $\displaystyle \frac23$ is larger by $\displaystyle \left(\frac23 - \frac{333}{500}\right) = \frac{2(500)-3(333)}{(3)(500)} = \frac1{1500} = 0.000\overline{6}$, i.e., $0.666\overline{6} - 0.666$.
 <br>
 
 <a name="2.163" class="goback" onclick="winhisback()">__2.163__)</a>
-Is there a positive real number "closest" to zero?
+Is there a positive real number &quot;closest&quot; to zero?
 
-__Sln__: No: for any positive real number we may choose, we can always divide it by 2 and thereby obtain a positive real number still "closer" to 0.$~~~\blacksquare$
+__Sln__: No: for any positive real number we may choose, we can always divide it by 2 and thereby obtain a positive real number still &quot;closer&quot; to 0.$~~~\blacksquare$
 
-(This is actually pretty "deep": its generalization&mdash;that between <i>any</i> two real numbers there <i>always</i> exists another real number, and therefore infinitely many real numbers&mdash;is, notably, also true of rational numbers,[$^2$](#Note2) but not integers&mdash;all integers, $n$, have two equally-close "closest" integers, $n-1$ and $n+1$&mdash;and this is is one of the important differences between the integers and the rationals and reals.)
+(This is actually pretty &quot;deep&quot;: its generalization&mdash;that between <i>any</i> two real numbers there <i>always</i> exists another real number, and therefore infinitely many real numbers&mdash;is, notably, also true of rational numbers,[$^2$](#Note2) but not integers&mdash;all integers, $n$, have two equally-close &quot;closest&quot; integers, $n-1$ and $n+1$&mdash;and this is is one of the important differences between the integers and the rationals and reals.)
 <br><br>
 
 ### _Section 3: Geometry Essentials_
@@ -513,19 +513,19 @@ __Sln__: No: for any positive real number we may choose, we can always divide it
 <a name="3.34" class="goback" onclick="winhisback()">__3.34__)</a>
 Find the volume, $V$, and surface area, $S$, of a sphere of radius 3 feet.
 
-__Sln__: For a sphere of radius $r, S = 4\pi r^2$ and $V = \frac43\pi r^3$ so for a sphere of radius 3 ft., $S = 4\pi(3\text{ ft.})^2 = \boxed{36\pi\text{ sq. ft.} \doteq  113.1\text{ ft}^2}$ (sq. ft. and $\text{ft}^2$ are both standard abbreviations for the area unit "square-feet," but in the metric system, one typically uses square-length units expressed as (length-unit)$^2$, so that is what you will see more often, and that is the notation I will tend to use, even for so-called "English" units); and $V = \frac43\pi (3\text{ ft.})^3 = \frac43 \pi (27\text{ ft}^3) = \boxed{36\pi\text{ ft}^3 \doteq 113.1\text{ ft}^3.}$ (Note: though the surface area and volume of this sphere are <i>numerically</i> equal, they are in no sense whatsoever "the same": $S$ measures, for example, how much carpet one would need to cover the sphere, whereas $V$ measures, for example, how much water would be required to fill the sphere&mdash;they are "physically" two very different quantities, and the fact that they are numerically equal in this particular case is an artificial coincidence manufactured by the author of the text problems; in general, $S\ne V$, not even numerically.)
+__Sln__: For a sphere of radius $r, S = 4\pi r^2$ and $V = \frac43\pi r^3$ so for a sphere of radius 3 ft., $S = 4\pi(3\text{ ft.})^2 = \boxed{36\pi\text{ sq. ft.} \doteq  113.1\text{ ft}^2}$ (sq. ft. and $\text{ft}^2$ are both standard abbreviations for the area unit &quot;square-feet,&quot; but in the metric system, one typically uses square-length units expressed as (length-unit)$^2$, so that is what you will see more often, and that is the notation I will tend to use, even for so-called &quot;English&quot; units); and $V = \frac43\pi (3\text{ ft.})^3 = \frac43 \pi (27\text{ ft}^3) = \boxed{36\pi\text{ ft}^3 \doteq 113.1\text{ ft}^3.}$ (Note: though the surface area and volume of this sphere are <i>numerically</i> equal, they are in no sense whatsoever &quot;the same&quot;: $S$ measures, for example, how much carpet one would need to cover the sphere, whereas $V$ measures, for example, how much water would be required to fill the sphere&mdash;they are &quot;physically&quot; two very different quantities, and the fact that they are numerically equal in this particular case is an artificial coincidence manufactured by the author of the text problems; in general, $S\ne V$, not even numerically.)
 <br>
 
 <a name="3.36" class="goback" onclick="winhisback()">__3.36__)</a>
 Find the volume, $V$, and surface area, $S$, of a right circular cylinder with radius 8 inches and height 9 inches.
 
-__Sln__: For a right circular cylinder, e.g., a "can," $S$ (including both the "side" of the can and both its "top" and "bottom") $= 2\pi r^2 + 2\pi rh = 2\pi\left[(8\text{ in})^2 + (8\text{ in})(9\text{ in})\right] = 2\pi(8(17))\text{ in}^2 = \boxed{272\pi\text{ in}^2 \doteq 854.5\text{ in}^2}$; and $V=\pi r^2h = \pi(8\text{ in})^2(9\text{ in}) = \boxed{576\pi\text{ in}^3 \doteq 1809.6\text{ in}^3}$
+__Sln__: For a right circular cylinder, e.g., a &quot;can,&quot; $S$ (including both the &quot;side&quot; of the can and both its &quot;top&quot; and &quot;bottom&quot;) $= 2\pi r^2 + 2\pi rh = 2\pi\left[(8\text{ in})^2 + (8\text{ in})(9\text{ in})\right] = 2\pi(8(17))\text{ in}^2 = \boxed{272\pi\text{ in}^2 \doteq 854.5\text{ in}^2}$; and $V=\pi r^2h = \pi(8\text{ in})^2(9\text{ in}) = \boxed{576\pi\text{ in}^3 \doteq 1809.6\text{ in}^3}$
 <br>
 
 <a name="3.40" class="goback" onclick="winhisback()">__3.40__)</a>
 Find the area of the shaded region: <img src="./Graphs/SullivanRS3P40.png" width=150>
 
-__Sln__: The required area is the area of the pictured circle, minus the area of the <i>concentric</i> (meaning "with the same center") inscribed square of side length 2, the latter area being simply $2^2 = 4$ sq. length units. In order to calculate the area of the circle, $\pi r^2$, we need to know $r^2$; because a segment drawn from the center of the circle to one of the corners of the square is a radius of the circle (why?), and because the square and the circle are concentric, such a segment is the hypotenuse of an isosceles right triangle of leg length $1$, as illustrated in the following diagram: <img src="./Graphs/SullivanRS3P40Solved.png" width=150>
+__Sln__: The required area is the area of the pictured circle, minus the area of the <i>concentric</i> (meaning &quot;with the same center&quot;) inscribed square of side length 2, the latter area being simply $2^2 = 4$ sq. length units. In order to calculate the area of the circle, $\pi r^2$, we need to know $r^2$; because a segment drawn from the center of the circle to one of the corners of the square is a radius of the circle (why?), and because the square and the circle are concentric, such a segment is the hypotenuse of an isosceles right triangle of leg length $1$, as illustrated in the following diagram: <img src="./Graphs/SullivanRS3P40Solved.png" width=150>
 (make sure you understand why the triangle is a right triangle; why it is an isosceles triangle; and why the two equal sides have length 1). Thus, by the Pythagorean theorem, $r^2 = 1^2 + 1^2 = 1 + 1 = 2$, so the area of the circle is $2\pi$; thus the area of the shaded region is: $$\boxed{2\pi - 4 \doteq 2.283\text{ sq. length units}}$$
 <br>
 
@@ -563,7 +563,7 @@ __Sln__: The area of the deck is the area of the outer circle (which includes th
 
 __b__) How much fence is required to enclose the deck?
 
-__Sln__: Fence is measured in length units, in this case feet, so what is required is the "distance around" the outer circle, i.e., its circumference, which is equal to $\pi d = \pi(20+2(3)) =$ $$\boxed{26\pi \doteq 81.7\text{ ft}}$$
+__Sln__: Fence is measured in length units, in this case feet, so what is required is the &quot;distance around&quot; the outer circle, i.e., its circumference, which is equal to $\pi d = \pi(20+2(3)) =$ $$\boxed{26\pi \doteq 81.7\text{ ft}}$$
 <br><br>
 
 ### _Section 4: Polynomials_
@@ -621,7 +621,7 @@ __Sln__: Yes: the use of $z$ instead of $x$ does not make this expression not a 
 <a name="4.26" class="goback" onclick="winhisback()">__4.26__)</a>
 $\displaystyle \frac{3x^3 + 2x - 1}{x^2 + x + 1}$
 
-__Sln__: No: this is a ratio of polynomials, which is called a <i>rational expression</i>. (It is possible that, if the denominator is a factor of the numerator, so that it could be "cancelled out," the expression could be simplified to a polynomial, but in this instance, that is not the case, and in any event, the expression <i>as given </i>is not a polynomial.)
+__Sln__: No: this is a ratio of polynomials, which is called a <i>rational expression</i>. (It is possible that, if the denominator is a factor of the numerator, so that it could be &quot;cancelled out,&quot; the expression could be simplified to a polynomial, but in this instance, that is not the case, and in any event, the expression <i>as given </i>is not a polynomial.)
 <br>
 
 In Problems __30__, __36__, __40__, and __46__, add, subtract, or multiply, as indicated; express your answer as a single polynomial in standard form.
@@ -753,7 +753,7 @@ Check: $(x^4+ax^3+a^2x^2+a^3x+a^4)(x-a) + 0 = x^5 \color{blue}{+ \cancel{ax^4}} 
 
 ### _Section 5: Factoring Polynomials_
 
-General Note: in principle, factoring always has a "check step": multiplying the factorization out and simplifying so as to confirm that one gets back what one started with (unfortunately, this doesn’t verify that you factored the expression <i>completely</i>, but at least, assuming the result of this step matches the original expression, it confirms that you obtained <b>a</b> correct factorization); most of the time, however, we shall leave this step to the reader.
+General Note: in principle, factoring always has a &quot;check step&quot;: multiplying the factorization out and simplifying so as to confirm that one gets back what one started with (unfortunately, this doesn’t verify that you factored the expression <i>completely</i>, but at least, assuming the result of this step matches the original expression, it confirms that you obtained <b>a</b> correct factorization); most of the time, however, we shall leave this step to the reader.
 
 In Problems __8__ and __14__, factor each polynomial by removing the common monomial factor.
 
@@ -766,7 +766,7 @@ __Sln__: $ax-a = ax - a(1) =$ $$\boxed{a(x-1)}$$
 <a name="5.14" class="goback" onclick="winhisback()">__5.14__)</a>
 $60x^2y - 48xy^2 + 72x^3y$
 
-__Sln__: The greatest common factor (GCF) of the coefficients is 12, the maximum powers of $x$ and $y$ which occur in <i>all three terms</i> is 1 for each, so the GCF of the three terms is $12xy$. Factoring this out of $60x^2y$ "leaves" $5x$; out of $-48xy^2$ leaves $-4y$; and out of $72x^3y$ leaves $6x^2$. Therefore, the factorization (written in standard form) is: $$\boxed{12xy(6x^2 + 5x - 4y)}$$
+__Sln__: The greatest common factor (GCF) of the coefficients is 12, the maximum powers of $x$ and $y$ which occur in <i>all three terms</i> is 1 for each, so the GCF of the three terms is $12xy$. Factoring this out of $60x^2y$ &quot;leaves&quot; $5x$; out of $-48xy^2$ leaves $-4y$; and out of $72x^3y$ leaves $6x^2$. Therefore, the factorization (written in standard form) is: $$\boxed{12xy(6x^2 + 5x - 4y)}$$
 <br>
 
 In Problems __22__, __32__, __34__, __38__, __40__, and __50__, completely factor the polynomial using the most appropriate method.
@@ -780,19 +780,19 @@ __Sln__: Step 1 should always be to factor out a GCF if there is one, and in thi
 <a name="5.32" class="goback" onclick="winhisback()">__5.32__)</a>
 $25x^2 + 10x + 1$
 
-__Sln__: The GCF of all three terms is 1, so we proceed to see if this expression matches any of our "special forms"; indeed it does: $25x^2 + 10x + 1 = (5x)^2 + 2(5x)(1) + (1)^2 = a^2 + 2ab + b^2 = (a+b)^2$ with the identifications $a=5x, b=1$, so $25x^2 + 10x + 1=$ $$\boxed{(5x+1)^2}$$
+__Sln__: The GCF of all three terms is 1, so we proceed to see if this expression matches any of our &quot;special forms&quot;; indeed it does: $25x^2 + 10x + 1 = (5x)^2 + 2(5x)(1) + (1)^2 = a^2 + 2ab + b^2 = (a+b)^2$ with the identifications $a=5x, b=1$, so $25x^2 + 10x + 1=$ $$\boxed{(5x+1)^2}$$
 <br>
 
 <a name="5.34" class="goback" onclick="winhisback()">__5.34__)</a>
 $x^3+125$
 
-__Sln__: Again the GCF is 1 so again we check to see if this matches one of our special forms; since $x^3$ is a "perfect cube," we check to see if $125$ is also; since it ends in $5$, if it is a perfect cube of something, that something has to end in $5$ (why?), so we first check $5^3$ and sure enough find that it equals $125$. Thus $x^3+125 = (x)^3 + (5)^3 = a^3 + b^3 = (a+b)(a^2-ab+b^2)$ with the identifications $a=x, b=5$, so $x^3+125 = $ $$\boxed{(x+5)(x^2-5x+25)}$$
+__Sln__: Again the GCF is 1 so again we check to see if this matches one of our special forms; since $x^3$ is a &quot;perfect cube,&quot; we check to see if $125$ is also; since it ends in $5$, if it is a perfect cube of something, that something has to end in $5$ (why?), so we first check $5^3$ and sure enough find that it equals $125$. Thus $x^3+125 = (x)^3 + (5)^3 = a^3 + b^3 = (a+b)(a^2-ab+b^2)$ with the identifications $a=x, b=5$, so $x^3+125 = $ $$\boxed{(x+5)(x^2-5x+25)}$$
 <br>
 
 <a name="5.38" class="goback" onclick="winhisback()">__5.38__)</a>
 $64-27x^3$
 
-__Sln__: GCF = 1, $64 = 4^3, 27x^3 = (3x)^3$ so $64-27x^3 = a^3 - b^3 = (a-b)(a^2+ab+b^2)$ with the identifications $a=4, b=3x$, so $64-27x^3 = (4-3x)(16+12x+9x^2)$ or, in standard form: $$\boxed{-(3x-4)(9x^2+12x+16)}$$(If you prefer, you can factor out the $-1$ at the beginning so as to not have to factor it out at the end, or not factor it out at all, but in that last case you have to be prepared to recognize $(4-3x)~\&~(3x-4)$ as the negatives of one another, because when we get to Section 7, "Rational Expressions," you’ll be expected to be able to "reduce" fractions like $\displaystyle \frac{4-3x}{3x-4} = \frac{3x-4}{4-3x} = -1$.)
+__Sln__: GCF = 1, $64 = 4^3, 27x^3 = (3x)^3$ so $64-27x^3 = a^3 - b^3 = (a-b)(a^2+ab+b^2)$ with the identifications $a=4, b=3x$, so $64-27x^3 = (4-3x)(16+12x+9x^2)$ or, in standard form: $$\boxed{-(3x-4)(9x^2+12x+16)}$$(If you prefer, you can factor out the $-1$ at the beginning so as to not have to factor it out at the end, or not factor it out at all, but in that last case you have to be prepared to recognize $(4-3x)~\&~(3x-4)$ as the negatives of one another, because when we get to Section 7, &quot;Rational Expressions,&quot; you’ll be expected to be able to &quot;reduce&quot; fractions like $\displaystyle \frac{4-3x}{3x-4} = \frac{3x-4}{4-3x} = -1$.)
 <br>
 
 <a name="5.40" class="goback" onclick="winhisback()">__5.40__)</a>
@@ -815,16 +815,16 @@ __Sln__: $9x^2 - 6x + 3x - 2 = (3x)(3x - 2) + (1)(3x - 2) = ac + bc = (a+b)c$ wi
 
 In Problems __60__, __64__, and __68__, factor each polynomial.
 
-I know: we’re supposed to factor these "the hard way," but we’re going to learn a "better way" eventually (if you’re using this text for "Precalculus," you should have already learned it in "Algebra II," and even if you’re using it for "Algebra II," you may have already learned it in "Algebra I") and I hate "wasting time" with a trial-and-error method when there exists a non-trial-and-error method that always works.
+I know: we’re supposed to factor these &quot;the hard way,&quot; but we’re going to learn a &quot;better way&quot; eventually (if you’re using this text for &quot;Precalculus,&quot; you should have already learned it in &quot;Algebra II,&quot; and even if you’re using it for &quot;Algebra II,&quot; you may have already learned it in &quot;Algebra I&quot;) and I hate &quot;wasting time&quot; with a trial-and-error method when there exists a non-trial-and-error method that always works.
 
-The method relies on the so-called "Zero Principle" (ZP), which states that if a product equals zero, then (at least) one of the factors must equal zero; recall that we rely on the ZP to solve quadratic equations in the form $ax^2+bx+c=0$ by factoring the left hand side to $a(x-r)(x-s) = 0$, because the ZP then tells us that either $x-r=0 \implies x=r$ or $x-s=0 \implies x=s$ (or both factors equal 0 if $r=s$). But the converse of this result is also true: <i>if $r~\&~s$ are solutions of $ax^2+bx+c=0$, then $(x-r)~\&~(x-s)$ are factors of</i> $ax^2+bx+c.$
+The method relies on the so-called &quot;Zero Principle&quot; (ZP), which states that if a product equals zero, then (at least) one of the factors must equal zero; recall that we rely on the ZP to solve quadratic equations in the form $ax^2+bx+c=0$ by factoring the left hand side to $a(x-r)(x-s) = 0$, because the ZP then tells us that either $x-r=0 \implies x=r$ or $x-s=0 \implies x=s$ (or both factors equal 0 if $r=s$). But the converse of this result is also true: <i>if $r~\&~s$ are solutions of $ax^2+bx+c=0$, then $(x-r)~\&~(x-s)$ are factors of</i> $ax^2+bx+c.$
 
-Why is this helpful? Well, for quadratics we have a formula for the solutions of $ax^2+bx+c=0$ that <i>always</i> works: $$x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$$ (even when, later, we get to complex numbers!), i.e., we can <i>always</i> find $r~\&~s$, and thus write down the factors of $ax^2+bx+c$ without having to do any trial-and-error with (potentially very long) factor pair lists! I will use the following problems to illustrate this method, which I call the "Quadratic Formula Method" (QFM).
+Why is this helpful? Well, for quadratics we have a formula for the solutions of $ax^2+bx+c=0$ that <i>always</i> works: $$x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}$$ (even when, later, we get to complex numbers!), i.e., we can <i>always</i> find $r~\&~s$, and thus write down the factors of $ax^2+bx+c$ without having to do any trial-and-error with (potentially very long) factor pair lists! I will use the following problems to illustrate this method, which I call the &quot;Quadratic Formula Method&quot; (QFM).
 
 <a name="5.60" class="goback" onclick="winhisback()">__5.60__)</a>
 $6z^2 + 5z + 1$
 
-__Sln__: The solutions of $6z^2 + 5z + 1 = 0$ are $z = \displaystyle \frac{-5\pm\sqrt{5^2-4(6)(1)}}{2(6)} = \frac{-5\pm\sqrt{25-24}}{12} = \frac{-5\pm\sqrt1}{12} = \frac{-5\pm1}{12} = \frac{-4}{12} = -\frac13$ or $\displaystyle \frac{-6}{12} = -\frac12$; therefore $6z^2 + 5z + 1 = a(z-(-\frac13))(z-(-\frac12)) = 6(z+\frac13)(z+\frac12)$, where we have figured out that $a=6$ because the leading coefficient of the product of the other two factors is 1 (in general, when we use this method, initially the leading coefficient of the factorization will be the same as the coefficient of the quadratic term; proof?) That factorization is fine and correct (check it!), but not "traditional": traditionally, one gets rid of the fractions by a suitable factorization of the leading coefficient (which will always be possible), whose factors are then distributed through the terms necessary to "clear" the fractions: $6(z+\frac13)(z+\frac12) = (3)(2)(z+\frac13)(z+\frac12) = 3(z+\frac13)\cdot 2(z+\frac12) = $ $$\boxed{(3z+1)(2z+1)}$$ 
+__Sln__: The solutions of $6z^2 + 5z + 1 = 0$ are $z = \displaystyle \frac{-5\pm\sqrt{5^2-4(6)(1)}}{2(6)} = \frac{-5\pm\sqrt{25-24}}{12} = \frac{-5\pm\sqrt1}{12} = \frac{-5\pm1}{12} = \frac{-4}{12} = -\frac13$ or $\displaystyle \frac{-6}{12} = -\frac12$; therefore $6z^2 + 5z + 1 = a(z-(-\frac13))(z-(-\frac12)) = 6(z+\frac13)(z+\frac12)$, where we have figured out that $a=6$ because the leading coefficient of the product of the other two factors is 1 (in general, when we use this method, initially the leading coefficient of the factorization will be the same as the coefficient of the quadratic term; proof?) That factorization is fine and correct (check it!), but not &quot;traditional&quot;: traditionally, one gets rid of the fractions by a suitable factorization of the leading coefficient (which will always be possible), whose factors are then distributed through the terms necessary to &quot;clear&quot; the fractions: $6(z+\frac13)(z+\frac12) = (3)(2)(z+\frac13)(z+\frac12) = 3(z+\frac13)\cdot 2(z+\frac12) = $ $$\boxed{(3z+1)(2z+1)}$$ 
 (Since we are doing these differently than the book, I will do the check step for these: $\checkmark: (3z+1)(2z+1) = (3z)(2z) + (3z)(1) + (1)(2z) + (1)(1) = 6z^2 + 3z + 2z + 1 = 6z^2 + 5z + 1~\checkmark$)
 <br>
 
@@ -869,7 +869,7 @@ $x^2+12x+36$
 
 __Sln__: You’re supposed to recognize this as a perfect square trinomial, but what if you don’t: can we use the QFM to get the factors? Yes! That’s the point of the QFM: it <i>always</i> works (you can even use it&mdash;and will be expected to, perhaps in Calculus, or definitely in some courses you may have to take after that if you intend to go into engineering or one of of the physical sciences, e.g., physics, chemistry, astronomy, etc.&mdash;to factor trinomials whose solutions are not rational numbers!) But the outcome of the QFM is a little different than when the trinomial is not a perfect square, so we will do this one using that method to exhibit what happens.
 
-$x^2+12x+36 = 0 \implies x = \displaystyle \frac{-12\pm\sqrt{(12)^2-4(1)(36)}}{2(1)} = \frac{-12\pm\sqrt{144-144}}2 = \frac{-12\pm\sqrt{0}}2 = \frac{-12\pm0}2 = \frac{-12}2 = -6$: we got only one solution! Does this mean this trinomial has only one factor? No: the case of the <i>discriminant</i>&mdash;the quantity under the square-root in the quadratic formula, $b^2-4ac$&mdash;equaling 0 corresponds <i>precisely</i> with the case of the trinomial being a perfect square: our quadratic formula result tells us that $x^2+12x+36 = (x-(-6))(x-(-6)) = $ $$\boxed{(x+6)^2}$$(which is why we say, you may recall, that the solution $-6$ has "multiplicity 2").
+$x^2+12x+36 = 0 \implies x = \displaystyle \frac{-12\pm\sqrt{(12)^2-4(1)(36)}}{2(1)} = \frac{-12\pm\sqrt{144-144}}2 = \frac{-12\pm\sqrt{0}}2 = \frac{-12\pm0}2 = \frac{-12}2 = -6$: we got only one solution! Does this mean this trinomial has only one factor? No: the case of the <i>discriminant</i>&mdash;the quantity under the square-root in the quadratic formula, $b^2-4ac$&mdash;equaling 0 corresponds <i>precisely</i> with the case of the trinomial being a perfect square: our quadratic formula result tells us that $x^2+12x+36 = (x-(-6))(x-(-6)) = $ $$\boxed{(x+6)^2}$$(which is why we say, you may recall, that the solution $-6$ has &quot;multiplicity 2&quot;).
 <br>
 
 <a name="5.94" class="goback" onclick="winhisback()">__5.94__)</a>
@@ -883,19 +883,19 @@ $9x^2-12x+4 = 0 \implies x = \displaystyle \frac{-(-12)\pm \sqrt{(-12)^2-4(9)(4)
 <a name="5.102" class="goback" onclick="winhisback()">__5.102__)</a>
 $x^8-x^5$
 
-__Sln__: The GCF is $x^5$ so "step one" is to factor that out, yielding: $x^8-x^5 = x^5(x^{8-5}-1) = x^5(x^3-1)$; $x^3-1$ is a difference of cubes: $a^3-b^3 = (a-b)(a^2+ab+b^2)$ with $a=x, b=1$, so $x^8-x^5 = $ $$\boxed{x^5(x-1)(x^2+x+1)}$$
+__Sln__: The GCF is $x^5$ so &quot;step one&quot; is to factor that out, yielding: $x^8-x^5 = x^5(x^{8-5}-1) = x^5(x^3-1)$; $x^3-1$ is a difference of cubes: $a^3-b^3 = (a-b)(a^2+ab+b^2)$ with $a=x, b=1$, so $x^8-x^5 = $ $$\boxed{x^5(x-1)(x^2+x+1)}$$
 <br>
 
 <a name="5.110" class="goback" onclick="winhisback()">__5.110__)</a>
 $4-14x^2-8x^4$
 
-__Sln__: The GCF is 2, but we will factor out $-2$ so that the other factor will be in standard form: $4-14x^2-8x^4 = -2(4x^4 + 7x^2 - 2)$. $4x^4$ is a perfect square (of $2x^2$) but $-2$ isn’t, so we know immediately that the second factor can’t be a perfect square trinomial. Furthermore, although it is not a quadratic, it is "quadratic in form": if we let $x^2 = y \implies x^4 = y^2$, then $4x^4 + 7x^2 - 2 = 4y^2 + 7y -2$, which we can attempt to factor using the QFM. We have: $4y^2 + 7y -2 = 0 \implies y = \displaystyle \frac{-7 \pm \sqrt{7^2-4(4)(-2)}}{2(4)} = \frac{-7 \pm \sqrt{49+32}}{8} = \frac{-7 \pm \sqrt{81}}{8} = \frac{-7\pm 9}{8} = \frac28 = \frac14$ or $\displaystyle \frac{-16}8 = -2$, so $4y^2 + 7y -2 = 4(y-\frac14)(y-(-2)) = (4y-1)(y+2) = (4x^2-1)(x^2+2)$ upon substituting $x^2$ back in for $y$. However, we’re not done yet: $x^2+2$ is "prime" (over $\mathbb{R}$), but $4x^2-1 = a^2-b^2 = (a+b)(a-b)$ with the identifications $a=2x, b = 1$, so $4x^2-1 = (2x+1)(2x-1)$. Putting it all together we have: $4-14x^2-8x^4 = $ $$\boxed{-2(2x+1)(2x-1)(x^2+2)}$$ $\checkmark: -2(2x+1)(2x-1)(x^2+2) = -2(4x^2-1)(x^2+2) = (2-8x^2)(x^2+2) = 2x^2 + 4 - 8x^4 - 16x^2 = 4 - 14x^2 - 8x^4~\checkmark$
+__Sln__: The GCF is 2, but we will factor out $-2$ so that the other factor will be in standard form: $4-14x^2-8x^4 = -2(4x^4 + 7x^2 - 2)$. $4x^4$ is a perfect square (of $2x^2$) but $-2$ isn’t, so we know immediately that the second factor can’t be a perfect square trinomial. Furthermore, although it is not a quadratic, it is &quot;quadratic in form&quot;: if we let $x^2 = y \implies x^4 = y^2$, then $4x^4 + 7x^2 - 2 = 4y^2 + 7y -2$, which we can attempt to factor using the QFM. We have: $4y^2 + 7y -2 = 0 \implies y = \displaystyle \frac{-7 \pm \sqrt{7^2-4(4)(-2)}}{2(4)} = \frac{-7 \pm \sqrt{49+32}}{8} = \frac{-7 \pm \sqrt{81}}{8} = \frac{-7\pm 9}{8} = \frac28 = \frac14$ or $\displaystyle \frac{-16}8 = -2$, so $4y^2 + 7y -2 = 4(y-\frac14)(y-(-2)) = (4y-1)(y+2) = (4x^2-1)(x^2+2)$ upon substituting $x^2$ back in for $y$. However, we’re not done yet: $x^2+2$ is &quot;prime&quot; (over $\mathbb{R}$), but $4x^2-1 = a^2-b^2 = (a+b)(a-b)$ with the identifications $a=2x, b = 1$, so $4x^2-1 = (2x+1)(2x-1)$. Putting it all together we have: $4-14x^2-8x^4 = $ $$\boxed{-2(2x+1)(2x-1)(x^2+2)}$$ $\checkmark: -2(2x+1)(2x-1)(x^2+2) = -2(4x^2-1)(x^2+2) = (2-8x^2)(x^2+2) = 2x^2 + 4 - 8x^4 - 16x^2 = 4 - 14x^2 - 8x^4~\checkmark$
 <br>
 
 <a name="5.116" class="goback" onclick="winhisback()">__5.116__)</a>
 $(5x+1)^3-1$
 
-__Sln__: This is a difference of cubes: $a^3-b^3 = (a-b)(a^2+ab+b^2)$ with the identifications $a=(5x+1), b=1$, so $(5x+1)^3-1 = [(5x+1)-1][(5x+1)^2+(5x+1)(1)+1^2] = (5x+1-1)(25x^2+10x+1+5x+1+1) = $ $$\boxed{5x(25x^2 + 15x + 3)}$$(To determine if $25x^2 + 15x + 3$ is prime, we can check the discriminant: $15^2-4(25)(3) = 225-300 = -75$&mdash;since this is less than zero, $25x^2 + 15x + 3$ has no real "zeros," and therefore doesn’t factor over $\mathbb{R}$, much less the set of rationals: it is prime, confirming that our result is the complete factorization, over $\mathbb{R}$.)
+__Sln__: This is a difference of cubes: $a^3-b^3 = (a-b)(a^2+ab+b^2)$ with the identifications $a=(5x+1), b=1$, so $(5x+1)^3-1 = [(5x+1)-1][(5x+1)^2+(5x+1)(1)+1^2] = (5x+1-1)(25x^2+10x+1+5x+1+1) = $ $$\boxed{5x(25x^2 + 15x + 3)}$$(To determine if $25x^2 + 15x + 3$ is prime, we can check the discriminant: $15^2-4(25)(3) = 225-300 = -75$&mdash;since this is less than zero, $25x^2 + 15x + 3$ has no real &quot;zeros,&quot; and therefore doesn’t factor over $\mathbb{R}$, much less the set of rationals: it is prime, confirming that our result is the complete factorization, over $\mathbb{R}$.)
 <br>
 
 <a name="5.122" class="goback" onclick="winhisback()">__5.122__)</a>
@@ -937,7 +937,7 @@ Note: in general, the kind of problems in this Section and the next do not have 
 check</i> the answers s/he obtains (I did).
 <br>
 
-In Problems __8__, __12__, and __16__, "reduce" each "fraction."
+In Problems __8__, __12__, and __16__, &quot;reduce&quot; each &quot;fraction.&quot;
 
 <a name="7.8" class="goback" onclick="winhisback()">__7.8__)</a>
 $\displaystyle \frac{15x^2 + 24x}{3x^2}$
@@ -957,7 +957,7 @@ $3y^2 - y - 2 = 0 \implies y=\displaystyle \frac{-(-1)\pm\sqrt{(-1)^2-4(3)(-2)}}
 $\displaystyle \frac{2x^2 + 5x - 3}{1 - 2x}$
 
 __Sln__: Since the leading coefficient of the numerator is positive, we factor out $-1$ from the denominator (to make it easier to recognize if one of the factors of the top matches the denominator): $$\frac{2x^2 + 5x - 3}{1 - 2x} = -\frac{2x^2 + 5x - 3}{2x-1}$$
-Since this will only reduce if $(2x-1)$ is a factor of the numerator, we seek $ax+b$ such that $(2x-1)(ax+b) = 2x^2 + 5x - 3$; $2ax^2 = 2x^2 \implies a=1$, and $(-1)b = -3 \implies b=3$ (Check: $(2x-1)(x+3) = 2x^2 + 6x - x - 3 = 2x^2 + 5x - 3~\checkmark$; note that in this instance, since we already knew what one of the factors needed to be, it was easier to find the other factor <i>without</i> using the QFM: this is general&mdash;when you have to factor "from scratch," I recommend the QFM, but if you already have one of the factors, I recommend the approach just used.)
+Since this will only reduce if $(2x-1)$ is a factor of the numerator, we seek $ax+b$ such that $(2x-1)(ax+b) = 2x^2 + 5x - 3$; $2ax^2 = 2x^2 \implies a=1$, and $(-1)b = -3 \implies b=3$ (Check: $(2x-1)(x+3) = 2x^2 + 6x - x - 3 = 2x^2 + 5x - 3~\checkmark$; note that in this instance, since we already knew what one of the factors needed to be, it was easier to find the other factor <i>without</i> using the QFM: this is general&mdash;when you have to factor &quot;from scratch,&quot; I recommend the QFM, but if you already have one of the factors, I recommend the approach just used.)
 
 Thus, $\displaystyle \frac{2x^2 + 5x - 3}{1 - 2x} = -\frac{\cancel{(2x-1)}(x+3)}{\cancel{2x-1}} = \boxed{-(x+3)}$ (assuming $x\ne \frac12$).
 <br>
@@ -979,7 +979,7 @@ __Sln__: $\displaystyle \large{\frac{\frac{12x}{5x + 20}}{\frac{4x^2}{x^2-16}}} 
 <a name="7.34" class="goback" onclick="winhisback()">__7.34__)</a>
 $\displaystyle \large{\frac{\frac{9x^2 + 3x - 2}{12x^2 + 5x - 2}}{\frac{9x^2 - 6x + 1}{8x^2 - 10x - 3}}}$
 
-__Sln__: We need the factorizations of each of these polynomials, and when the leading coefficients are not 1, "we" use the QFM:
+__Sln__: We need the factorizations of each of these polynomials, and when the leading coefficients are not 1, &quot;we&quot; use the QFM:
 
 $9x^2 + 3x - 2 = 0 \implies x = \displaystyle \frac{-3 \pm \sqrt{3^2-4(9)(-2)}}{2(9)} = \frac{-3 \pm \sqrt{9+72}}{2(9)} =  \frac{-3 \pm 9}{2(9)} = \frac13\text{ or }-\frac23$, so $9x^2 + 3x - 2 = 9(x-\frac13)(x+\frac23) = (3x-1)(3x+2)$ (check: $(3x-1)(3x+2) = (3x)^2 + (6 - 3)x - 2~\checkmark$)
 
@@ -1005,7 +1005,7 @@ $\displaystyle \frac6{x - 1} - \frac x{1 - x} = \frac6{x - 1} - \frac x{-1(x-1)}
 <a name="7.48" class="goback" onclick="winhisback()">__7.48__)</a>
 $\displaystyle \frac{3x}{x - 4} + \frac{2x}{x + 3}$
 
-__Sln__: The LCM of the two denominators is simply their product, so to make the two fractions have a common denominator, we multiply the first summand by "1" expressed as the second denominator divided by itself, and multiply the second summand by "1" expressed as the first denominator divided by itself:
+__Sln__: The LCM of the two denominators is simply their product, so to make the two fractions have a common denominator, we multiply the first summand by &quot;1&quot; expressed as the second denominator divided by itself, and multiply the second summand by &quot;1&quot; expressed as the first denominator divided by itself:
 
 $\displaystyle \frac{3x}{x - 4} + \frac{2x}{x + 3} = \frac{x+3}{x+3}\left(\frac{3x}{x - 4}\right) + \frac{x-4}{x-4}\left(\frac{2x}{x + 3}\right) = \frac{3x^2+9x + 2x^2-8x}{(x+3)(x-4)} = \boxed{\frac{x(5x+1)}{(x+3)(x-4)}}$ (assuming $x \ne -3, 4$)
 <br>
@@ -1025,7 +1025,7 @@ $3x^2 - 27, 2x^2 - x - 15$
 
 __Sln__: The LCM is found by completely factoring all the expressions of concern, and taking the greatest power of each factor that occurs among the factorizations. Thus we begin by factoring:
 
-$3x^2 - 27 = 3(x^2-9) = 3(x+3)(x-3)$ and since the LCM will only be "less" than simply the product of the two expressions if one of the factors of $3x^2-27$ is also a factor of $2x^2 - x - 15$, we’re going to try to factor the latter expression by "guessing" that one of its factors is a factor of the former expression, and figuring out what, if anything, the other factor must be; in order to show what happens if we "guess wrong," I’m going to intentionally do that first: 
+$3x^2 - 27 = 3(x^2-9) = 3(x+3)(x-3)$ and since the LCM will only be &quot;less&quot; than simply the product of the two expressions if one of the factors of $3x^2-27$ is also a factor of $2x^2 - x - 15$, we’re going to try to factor the latter expression by &quot;guessing&quot; that one of its factors is a factor of the former expression, and figuring out what, if anything, the other factor must be; in order to show what happens if we &quot;guess wrong,&quot; I’m going to intentionally do that first: 
 
 $2x^2 - x - 15 = (x+3)(ax+b), ax^2 = 2x^2 \implies a=2, 3b=-15, \implies b=-5 \implies 3a+b = 6-15 = -9 \ne -1$, so $(x+3)$ is not a factor; 
 
@@ -1035,7 +1035,7 @@ $2x^2 - x - 15 = (x-3)(ax+b), ax^2 = 2x^2 \implies a=2, -3b=-15 \implies b=5 \im
 <a name="7.60" class="goback" onclick="winhisback()">__7.60__)</a>
 $x^2 + 4x + 4, x^3 + 2x^2, (x + 2)^3$
 
-__Sln__: Again, "Step 1" is to factor each expression completely:
+__Sln__: Again, &quot;Step 1&quot; is to factor each expression completely:
 
 $x^2 + 4x + 4 = (x+2)^2$; $x^3 + 2x^2 = x^2(x+2)$; and $(x+2)^3$ is already factored. The factors are $x$, the greatest power of which is $x^2$, and $x+2$, the greatest power of which is $(x+2)^3$, so the LCM is: $$\boxed{x^2(x+2)^3}$$
 <br>
@@ -1066,7 +1066,7 @@ $\displaystyle \frac1h \left[\frac1{(x + h)^2} - \frac1{x^2}\right]$
 
 __Sln__: Note that we can do the subtraction inside the brackets first, and then multiply by $\displaystyle \frac1h$. The LCM is simply the product of the denominators so we have: 
 
-$\displaystyle \frac1{(x + h)^2} - \frac1{x^2} = \frac{x^2-(x+h)^2}{x^2(x+h)^2} = \frac{x^2-x^2-2hx-h^2}{x^2(x+h)^2} = -\frac{2hx+h^2}{x^2(x+h)^2}$, so $\displaystyle \frac1h$ times that $= \displaystyle \boxed{-\frac{2x+h}{x^2(x+h)^2}}$ (assuming $x\ne0,-h$; if this one seems like it’s "out of left field," it’s one that comes up in Calculus.)
+$\displaystyle \frac1{(x + h)^2} - \frac1{x^2} = \frac{x^2-(x+h)^2}{x^2(x+h)^2} = \frac{x^2-x^2-2hx-h^2}{x^2(x+h)^2} = -\frac{2hx+h^2}{x^2(x+h)^2}$, so $\displaystyle \frac1h$ times that $= \displaystyle \boxed{-\frac{2x+h}{x^2(x+h)^2}}$ (assuming $x\ne0,-h$; if this one seems like it’s &quot;out of left field,&quot; it’s one that comes up in Calculus.)
 <br>
 
 In Problems __76__, __80__, and __84__, perform the indicated operations and simplify the result; leave your answer in factored form.
@@ -1080,11 +1080,11 @@ __Sln__: $\displaystyle {\frac{1 - \large\frac x{x+1}}{2 - \large\frac{x - 1}x}}
 <a name="7.80" class="goback" onclick="winhisback()">__7.80__)</a>
 $\displaystyle \large{\frac{\frac{2x + 5}x \small- \large\frac x{x - 3}}{\frac{x^2}{x - 3} \small- \large\frac{(x + 1)^2}{x + 3}}}$
 
-__Sln__: I like to use what the text calls "Method 2" in problems like this: "clear the denominators" by multiplying the "top" and "bottom" by the LCM of all the denominators, which in this case is $x(x-3)(x+3)$: 
+__Sln__: I like to use what the text calls &quot;Method 2&quot; in problems like this: &quot;clear the denominators&quot; by multiplying the &quot;top&quot; and &quot;bottom&quot; by the LCM of all the denominators, which in this case is $x(x-3)(x+3)$: 
 
 $\displaystyle \large{\frac{\frac{2x + 5}x \small- \large\frac x{x - 3}}{\frac{x^2}{x - 3} \small- \large\frac{(x + 1)^2}{x + 3}}} \cdot  \frac{\left(\frac{x(x-3)(x+3)}1\right)}{\left(\frac{x(x-3)(x+3)}1\right)} \small = \large \frac{\frac{2x+5}{\cancel{x}}\frac{\cancel{x}(x-3)(x+3)}1 \small-\large \frac x{\cancel{x - 3}}\frac{x\cancel{(x-3)}(x+3)}1}{\frac{x^2}{\cancel{x-3}}\frac{x\cancel{(x-3)}(x+3)}1 \small-\large\frac{(x + 1)^2}{\cancel{x + 3}}\frac{x(x-3)\cancel{(x+3)}}1} \small = \frac{(2x+5)(x-3)(x+3) - x^2(x+3)}{x^3(x+3) - x(x-3)(x+1)^2}\\= \displaystyle \frac{(x+3)[(2x+5)(x-3) - x^2]}{x^4+3x^3 + (3x-x^2)(x^2+2x+1)} = \frac{(x+3)(2x^2-x^2 + (5-6)x - 15)}{\cancel{x^4}+3x^3 + 3x^3+6x^2+3x - \cancel{x^4}-2x^3-x^2} = $ 
 $$\boxed{\frac{(x+3)(x^2-x-15)}{x(4x^2+5x+3)}}$$
-(assuming $x\ne 0, \pm3$; note: I don’t usually include the denominator "1"s, I just did here for increased clarity.)
+(assuming $x\ne 0, \pm3$; note: I don’t usually include the denominator &quot;1&quot;s, I just did here for increased clarity.)
 <br>
 
 <a name="7.84" class="goback" onclick="winhisback()">__7.84__)</a>
@@ -1100,7 +1100,7 @@ $\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2}$
 
 __Sln__: If you’re tempted to do this: $\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2} = \frac{5(4x + 1)}{(5x - 2)^2} - \frac{4\cancel{(5x - 2)}}{(5x - 2)^{\cancel{2}1}} = \frac{5(4x + 1)}{(5x - 2)^2} - \frac4{5x-2}$, you haven’t done anything algebraically wrong, but your result is not a single fraction  in lowest terms, and thus you haven’t fulfilled the requirement of the Problem’s instructions.
 
-Rather, since there are "understood parentheses" around the subtraction in the numerator, we must simplify that <i>before</i> we even think about reducing:
+Rather, since there are &quot;understood parentheses&quot; around the subtraction in the numerator, we must simplify that <i>before</i> we even think about reducing:
 
 $\displaystyle \frac{5(4x + 1) - 4(5x - 2)}{(5x - 2)^2} = \frac{20x+5 - (20x-8)}{(5x - 2)^2} = \frac{5+8}{(5x - 2)^2} = $ $$\boxed{\frac{13}{(5x-2)^2}}$$
 where the <i>simplification process</i> did not compel any domain restrictions (the final result has the domain restriction $x \ne \frac25$, but so did the original expression.)
@@ -1122,20 +1122,20 @@ Thus if $R_1$ = 5 ohms, $R_2$ = 4 ohms, and $R_3$ = 10 ohms, $$R = \frac{(5)(4)(
 
 ### _Section 8: n-th Roots; Rational Exponents_
 
-<i>Except for the initial step of prime factorizing numbers, which I will always "leave to the reader,"</i> I am going to begin by doing these in excruciating detail, and commenting on which steps one should eventually be able to "skip," (i.e., do in one’s head or "automatically") but after Problem __38__, I am going to do them "skipping steps." Note also that there is typically more than one way to do these, so if your solution doesn’t look like mine, but your answer does, probably nothing to worry about.
+<i>Except for the initial step of prime factorizing numbers, which I will always &quot;leave to the reader,&quot;</i> I am going to begin by doing these in excruciating detail, and commenting on which steps one should eventually be able to &quot;skip,&quot; (i.e., do in one’s head or &quot;automatically&quot;) but after Problem __38__, I am going to do them &quot;skipping steps.&quot; Note also that there is typically more than one way to do these, so if your solution doesn’t look like mine, but your answer does, probably nothing to worry about.
 
 In Problems __14__ through __42__ (every fourth one), simplify each expression; assume that all variables are positive when they appear.
 
 <a name="8.14" class="goback" onclick="winhisback()">__8.14__)</a>
 $\large \sqrt[4]{\small48x^5}$
 
-__Sln__: $\large \sqrt[4]{\small48x^5} \small= \large \sqrt[4]{\small(2^4)(3)x^4x} \small = \large \sqrt[4]{\small3}~\large \sqrt[\cancel{4}]{\small2^{\cancel{4}}}\large \sqrt[4]{\small x}~\large \sqrt[\cancel{4}]{\small x^{\cancel4}} \small = \large \sqrt[4]{\small3}~\small(2)\large \sqrt[4]{\small x}~\small (x) =  \boxed{2x\large \sqrt[4]{\small3x}}$ (Note: should eventually be able to do it like this: $\large \sqrt[4]{\small48x^5} \small= \large\sqrt[4]{\small(2^4)(3)x^4x} \small= 2x\large\sqrt[4]{\small3x}$, i.e., the middle two steps should become "automatic.")
+__Sln__: $\large \sqrt[4]{\small48x^5} \small= \large \sqrt[4]{\small(2^4)(3)x^4x} \small = \large \sqrt[4]{\small3}~\large \sqrt[\cancel{4}]{\small2^{\cancel{4}}}\large \sqrt[4]{\small x}~\large \sqrt[\cancel{4}]{\small x^{\cancel4}} \small = \large \sqrt[4]{\small3}~\small(2)\large \sqrt[4]{\small x}~\small (x) =  \boxed{2x\large \sqrt[4]{\small3x}}$ (Note: should eventually be able to do it like this: $\large \sqrt[4]{\small48x^5} \small= \large\sqrt[4]{\small(2^4)(3)x^4x} \small= 2x\large\sqrt[4]{\small3x}$, i.e., the middle two steps should become &quot;automatic.&quot;)
 <br>
 
 <a name="8.18" class="goback" onclick="winhisback()">__8.18__)</a>
 $\large \sqrt[3]{\frac{3xy^2}{81x^4y^2}}$
 
-__Sln__: Here’s one way to do it: $\large \sqrt[3]{\frac{3xy^2}{81x^4y^2}} \large \overset{\text{Step 1}}{\small=} \sqrt[3]{\frac{3^1x^1\cancel{y^2}(1)}{3^{4}x^4\cancel{y^2}}}  \large \overset{\text{Step 2}}{\small=} \sqrt[3]{\frac{1}{3^{4-1}x^{4-1}}} \large \overset{\text{Step 3}}{\small=} \sqrt[3]{\frac1{3^3x^3}} \large\overset{\text{Step 4}}{\small=} \frac{\large \sqrt[3]{1}}{\large \sqrt[3]{3^3x^3}} \large\overset{\text{Step 5}}{\small=} \small\boxed{\frac1{3x}}$ (Should eventually be able to "skip" steps (SEBATSS) 1, 2, and 4, at the very least (ATVL).)
+__Sln__: Here’s one way to do it: $\large \sqrt[3]{\frac{3xy^2}{81x^4y^2}} \large \overset{\text{Step 1}}{\small=} \sqrt[3]{\frac{3^1x^1\cancel{y^2}(1)}{3^{4}x^4\cancel{y^2}}}  \large \overset{\text{Step 2}}{\small=} \sqrt[3]{\frac{1}{3^{4-1}x^{4-1}}} \large \overset{\text{Step 3}}{\small=} \sqrt[3]{\frac1{3^3x^3}} \large\overset{\text{Step 4}}{\small=} \frac{\large \sqrt[3]{1}}{\large \sqrt[3]{3^3x^3}} \large\overset{\text{Step 5}}{\small=} \small\boxed{\frac1{3x}}$ (Should eventually be able to &quot;skip&quot; steps (SEBATSS) 1, 2, and 4, at the very least (ATVL).)
 <br>
 
 <a name="8.22" class="goback" onclick="winhisback()">__8.22__)</a>
@@ -1300,7 +1300,7 @@ __Sln__: The formula is valid for $l$ in feet, but $l$ is given to us in inches,
 
 <a name="Note1" class="goback" onclick="winhisback()">1</a>. Not any more: see, e.g., https://www.healthline.com/health-news/forget-98-6-humans-now-have-lower-body-temperature-on-average-heres-why
 
-<a name="Note2" class="goback" onclick="winhisback()">2</a>. This property of the reals (and the rationals)&mdash;that, given <i>any</i> two distinct reals (or rationals), there <i>always</i> exists another real (or rational) that is "between" them&mdash;we summarize by saying that the reals (and the rationals) are "dense"; moreover, it can be shown that the irrationals are dense, and that the rationals are "dense within the irrationals" (between any two distinct irrationals, there always exists a rational) and the irrationals are "dense within the rationals" (between any two distinct rationals there always exists an irrational). And yet, despite the rationals and the irrationals being dense within one another, it can be shown that, in an important sense, there are "more" irrationals than rationals (the rationals are "countable," whereas the irrationals, and therefore the reals, are not, i.e., they are "uncountable").
+<a name="Note2" class="goback" onclick="winhisback()">2</a>. This property of the reals (and the rationals)&mdash;that, given <i>any</i> two distinct reals (or rationals), there <i>always</i> exists another real (or rational) that is &quot;between&quot; them&mdash;we summarize by saying that the reals (and the rationals) are &quot;dense&quot;; moreover, it can be shown that the irrationals are dense, and that the rationals are &quot;dense within the irrationals&quot; (between any two distinct irrationals, there always exists a rational) and the irrationals are &quot;dense within the rationals&quot; (between any two distinct rationals there always exists an irrational). And yet, despite the rationals and the irrationals being dense within one another, it can be shown that, in an important sense, there are &quot;more&quot; irrationals than rationals (the rationals are &quot;countable,&quot; whereas the irrationals, and therefore the reals, are not, i.e., they are &quot;uncountable&quot;).
 
 ### Credits
 Original graphs generated using [GeoGebra](http://www.geogebra.org/).
