@@ -87,7 +87,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 body {font-family: Palatino}
 </style>
 
-<h2><center><i>The <q>Mortgage</q> Difference Equation: Derivation, Solution, and Commentary</i></h2>
+<h2><center><i>The &quot;Mortgage&quot; Difference Equation: Derivation, Solution, and Commentary</i></h2>
 
 <h4><center>&copy; 2016, 2025 by</h4>
 
@@ -98,20 +98,20 @@ body {font-family: Palatino}
 <h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
 
 <p><br>
-\(~~~~~\)If you&#39;ve ever shopped for a mortgage (and you&#39;re like me) you probably wondered how they figure out your monthly mortgage payment. Why is this even <q>a thing</q>? Well, they arrange it so that you pay the same amount every month, for a pre-determined number of months, and each such payment is divided (unevenly) between interest and principal; but the interest portion is always calculated only on the remaining principal, which means it goes down every payment; this in turn means, because the total payment is fixed, that the amount that goes toward paying down your principal increases every month. If you think about it, or, more educationally, actually try to figure out how to make this work using trial-and-error (i.e., <q>guess, check, revise, repeat</q>; <q>Exercise 0</q>: figure out <q>by hand</q> the monthly payment and each month&#39;s interest and principal portions, for a 12 month, $10,000 <q>mortgage</q> at a nominal annual interest rate of 6%) it seems like it would be too tedious (at best) to calculate these <q>payment schedules</q> on a regular-but-custom basis (which is why one way that mortgage lenders have at their disposal to figure these out is to use pre-printed tables). (The first time I applied for a mortgage, I asked our loan agent how our payment schedule was calculated and she said: <q>I have a special calculator that figures it out.</q> <q>OK,</q> I said, <q>but how does it figure it out? Is there a formula or procedure I can look up and use to check the calculation myself?</q> <q>Oh, I have no idea about that: I just punch in the numbers and believe what it tells me,</q> was her reply. Me being me, that set me on a mission, to figure out how a mortgage schedule is calculated.)</p>
+\(~~~~~\)If you&#39;ve ever shopped for a mortgage (and you&#39;re like me) you probably wondered how they figure out your monthly mortgage payment. Why is this even &quot;a thing&quot;? Well, they arrange it so that you pay the same amount every month, for a pre-determined number of months, and each such payment is divided (unevenly) between interest and principal; but the interest portion is always calculated only on the remaining principal, which means it goes down every payment; this in turn means, because the total payment is fixed, that the amount that goes toward paying down your principal increases every month. If you think about it, or, more educationally, actually try to figure out how to make this work using trial-and-error (i.e., &quot;guess, check, revise, repeat&quot;; &quot;Exercise 0&quot;: figure out &quot;by hand&quot; the monthly payment and each month&#39;s interest and principal portions, for a 12 month, $10,000 &quot;mortgage&quot; at a nominal annual interest rate of 6%) it seems like it would be too tedious (at best) to calculate these &quot;payment schedules&quot; on a regular-but-custom basis (which is why one way that mortgage lenders have at their disposal to figure these out is to use pre-printed tables). (The first time I applied for a mortgage, I asked our loan agent how our payment schedule was calculated and she said: &quot;I have a special calculator that figures it out.&quot; &quot;OK,&quot; I said, &quot;but how does it figure it out? Is there a formula or procedure I can look up and use to check the calculation myself?&quot; &quot;Oh, I have no idea about that: I just punch in the numbers and believe what it tells me,&quot; was her reply. Me being me, that set me on a mission, to figure out how a mortgage schedule is calculated.)</p>
 
 <p>\(~~~~~\)It wasn&#39;t too difficult to find the formula that is used:
 \[p = P\frac{r(1 + r)^N}{(1 + r)^N - 1}\]where:</p>
 
 <p>\(p = \) the fixed monthly payment;</p>
 
-<p>\(P = \) the amount originally borrowed (i.e., the initial <q>principal</q>);</p>
+<p>\(P = \) the amount originally borrowed (i.e., the initial &quot;principal&quot;);</p>
 
 <p>\(r = \) the MONTHLY interest rate (i.e., the nominal annual rate, which is what is usually advertised, divided by 12); and</p>
 
-<p>\(N = \) the total number of months over which the loan is <q>amortized,</q> i.e., the number of months the borrower needs to make the monthly payment for the mortgage to be paid off. </p>
+<p>\(N = \) the total number of months over which the loan is &quot;amortized,&quot; i.e., the number of months the borrower needs to make the monthly payment for the mortgage to be paid off. </p>
 
-<p>Thus, for example, the monthly payment you should have found for the data of <q>Exercise 0</q> is: \(\displaystyle10000\frac{(0.06/12)(1 + 0.06/12)^{12}}{(1 + 0.06/12)^{12} - 1} = \$860.66/\text{mo.}\) On the other hand, finding a derivation of this formula&mdash;so as to understand the origin of this unintuitive beast&mdash;was much more difficult...so much so that I gave up and decided to try to derive it myself.</p>
+<p>Thus, for example, the monthly payment you should have found for the data of &quot;Exercise 0&quot; is: \(\displaystyle10000\frac{(0.06/12)(1 + 0.06/12)^{12}}{(1 + 0.06/12)^{12} - 1} = \$860.66/\text{mo.}\) On the other hand, finding a derivation of this formula&mdash;so as to understand the origin of this unintuitive beast&mdash;was much more difficult...so much so that I gave up and decided to try to derive it myself.</p>
 
 <p>\(~~~~~\)Using the variables defined above, we add the following definitions:</p>
 
@@ -122,32 +122,32 @@ body {font-family: Palatino}
 <p>\(i_n = rP_{n-1}\), i.e., the interest portion of \(n\)-th payment; note that the \(n\)-th interest payment is calculated using the previous month&#39;s principal owed, e.g., the first interest payment is calculated using the original loan amount, \(P_0\), etc.</p>
 
 <p>\(~~~~~\)With these additional variables, we can now derive an equation describing the entirety of the mortgage. To do this, observe that the portion of the \(n\)-th payment that goes toward reducing the principal is the total monthly payment, \(p\), minus that portion that goes toward interest, \(i_n = rP_{n-1}\). Thus, the difference between the principal before a payment is made and after a payment is made, \(P_{n-1} - P_n\), is \(p - i_n = p - rP_{n-1}\), or, after equating the first difference and the last difference and rearranging with a little algebra: \[P_n - (1 + r)P_{n-1} = -p.\]
-This is called a <i>difference</i> equation, and like its close cousin, the much-more-studied <i>differential</i> equation, its <q>solution</q> is not a single number, but rather a <q>function</q> (for our purposes, a formula) giving \(P_n\) (and through that, all the other unknown values for the problem) in terms of \(n\), i.e., the means to calculate \(P_n\) given any \(n\). Important attributes of our difference equation are that it is: <i>first-order</i> (due to the largest difference between subscripts being \(n-(n-1) = 1\)); <i>inhomogeneous</i> (a.k.a. <i>non-homogeneous</i>, due to the right-hand-side of the equation, in this form, being non-zero, which we assume \(p\) is [why? hint: it&#39;s the monthly payment: what would happen if it was 0?]); and, most importantly for solving it, <i>linear</i> (due to all of the \(P_j\)&#39;s in the equation occurring in no more <q>complicated</q> form than to the first power, which is implied by their having no [explicit] exponents whatsoever).</p>
+This is called a <i>difference</i> equation, and like its close cousin, the much-more-studied <i>differential</i> equation, its &quot;solution&quot; is not a single number, but rather a &quot;function&quot; (for our purposes, a formula) giving \(P_n\) (and through that, all the other unknown values for the problem) in terms of \(n\), i.e., the means to calculate \(P_n\) given any \(n\). Important attributes of our difference equation are that it is: <i>first-order</i> (due to the largest difference between subscripts being \(n-(n-1) = 1\)); <i>inhomogeneous</i> (a.k.a. <i>non-homogeneous</i>, due to the right-hand-side of the equation, in this form, being non-zero, which we assume \(p\) is [why? hint: it&#39;s the monthly payment: what would happen if it was 0?]); and, most importantly for solving it, <i>linear</i> (due to all of the \(P_j\)&#39;s in the equation occurring in no more &quot;complicated&quot; form than to the first power, which is implied by their having no [explicit] exponents whatsoever).</p>
 
-<p>\(~~~~~\)Now, due to the equation&#39;s linearity, its solution is the sum of two <q>pieces</q>: a piece that solves the equation <q>as-is</q> (i.e., with its inhomogeneity), and a piece that solves the <q>corresponding <i>homogeneous</i> equation,</q> which is the same equation except with a right-hand-side of zero:\[P_n - (1 + r)P_{n-1} = 0.\]Though in this particular case it&#39;s easier to solve the inhomogeneous equation, it&#39;s traditional to first solve the corresponding homogeneous equation&mdash;plus, it&#39;s more interesting&mdash;so we shall do that first.</p>
+<p>\(~~~~~\)Now, due to the equation&#39;s linearity, its solution is the sum of two &quot;pieces&quot;: a piece that solves the equation &quot;as-is&quot; (i.e., with its inhomogeneity), and a piece that solves the &quot;corresponding <i>homogeneous</i> equation,&quot; which is the same equation except with a right-hand-side of zero:\[P_n - (1 + r)P_{n-1} = 0.\]Though in this particular case it&#39;s easier to solve the inhomogeneous equation, it&#39;s traditional to first solve the corresponding homogeneous equation&mdash;plus, it&#39;s more interesting&mdash;so we shall do that first.</p>
 
-<p>\(~~~~~\)It turns out that a method that works well for solving linear differential equations, also works well for solving linear difference equations, namely, we <q>guess</q> a solution of the form \(P_n = cx^n\) (where \(c\) is a constant we determine later so as to make the final solution match the requirement that \(P_0 = P\)), substitute our guess into the equation, and see if we can solve for a (non-trivial) value of \(x\) that makes the equation true for all \(n\). In other words, we proceed as follows:</p>
+<p>\(~~~~~\)It turns out that a method that works well for solving linear differential equations, also works well for solving linear difference equations, namely, we &quot;guess&quot; a solution of the form \(P_n = cx^n\) (where \(c\) is a constant we determine later so as to make the final solution match the requirement that \(P_0 = P\)), substitute our guess into the equation, and see if we can solve for a (non-trivial) value of \(x\) that makes the equation true for all \(n\). In other words, we proceed as follows:</p>
 
 <p>\[0 = P_n - (1+r)P_{n-1} = cx^n - (1+r)cx^{n-1} = cx^{n-1}(x - (1+r)).\] </p>
 
-<p>\(~~~~~\)Now, for this to be true for all \(n\), either: a) \(cx = 0\), implying \(P_n = 0\) for all \(n\), which means we borrowed $0&mdash;this is the so-called <q>trivial solution</q> which, being not very interesting, we ignore&mdash;or b) \(x - (1+r) = 0\), implying \(x = 1 + r\), which, as long as \(r \ne 0\), yields a <q>non-trivial,</q> i.e., <q>interesting</q> solution to the (corresponding homogeneous) equation:\[P_n = c(1+r)^n.\]
+<p>\(~~~~~\)Now, for this to be true for all \(n\), either: a) \(cx = 0\), implying \(P_n = 0\) for all \(n\), which means we borrowed $0&mdash;this is the so-called &quot;trivial solution&quot; which, being not very interesting, we ignore&mdash;or b) \(x - (1+r) = 0\), implying \(x = 1 + r\), which, as long as \(r \ne 0\), yields a &quot;non-trivial,&quot; i.e., &quot;interesting&quot; solution to the (corresponding homogeneous) equation:\[P_n = c(1+r)^n.\]
 At this point we stop and check what we have so far:</p>
 
 <p>\(P_n - (1+r)P_{n-1} = c(1+r)^n - (1+r)c(1+r)^{n-1} = c(1+r)^n - c(1+r)^{(n-1) + 1} = c(1+r)^n - c(1+r)^n = 0\) for all \(c\), \(r\), and \(n\): so far, so good. (Note that we appear to be on the right track, in as much as our solution involves \((1+r)\) raised to a power, the presence of which in our known answer may have seemed mysterious&mdash;until now.)</p>
 
-<p>\(~~~~~\)Now we will find the other piece, the solution of the inhomogeneous equation. There are a number of methods for doing so; fortunately, due to the simple nature of our inhomogeneity, namely, that it is a constant, the method of <q>choosing an appropriate general form, e.g., from a table, substituting that into the equation, and solving for the unknown(s) in that form so that the equation is a true statement</q> works well (and easily) here. This is because, for a constant inhomogeneity, the form we need is simply...a(n undetermined) constant, which, for the purpose of solving for it, we&#39;ll call \(C\). Substituting, we find we need to solve for \(C\) in:</p>
+<p>\(~~~~~\)Now we will find the other piece, the solution of the inhomogeneous equation. There are a number of methods for doing so; fortunately, due to the simple nature of our inhomogeneity, namely, that it is a constant, the method of &quot;choosing an appropriate general form, e.g., from a table, substituting that into the equation, and solving for the unknown(s) in that form so that the equation is a true statement&quot; works well (and easily) here. This is because, for a constant inhomogeneity, the form we need is simply...a(n undetermined) constant, which, for the purpose of solving for it, we&#39;ll call \(C\). Substituting, we find we need to solve for \(C\) in:</p>
 
 <p>\[-p = P_n - (1+r)P_{n-1} = C - (1+r)C = -rC\]</p>
 
-<p>implying \(C = p/r\). (Check: \(p/r - (1+r)(p/r) = (p - p - rp)/r = -rp/r = -p\): check!) Thus our <q>complete solution</q> (not yet <q>fit</q> to our <q>initial condition,</q> \(P_0 = P\)) is:\[P_n = c(1 + r)^n + p/r.\]</p>
+<p>implying \(C = p/r\). (Check: \(p/r - (1+r)(p/r) = (p - p - rp)/r = -rp/r = -p\): check!) Thus our &quot;complete solution&quot; (not yet &quot;fit&quot; to our &quot;initial condition,&quot; \(P_0 = P\)) is:\[P_n = c(1 + r)^n + p/r.\]</p>
 
-<p>(<q>Exercise 1</q>: confirm that this sum solves the inhomogeneous equation.)</p>
+<p>(&quot;Exercise 1&quot;: confirm that this sum solves the inhomogeneous equation.)</p>
 
 <p>\(~~~~~\)Now we determine the value of \(c\) using the requirement that \(P_0 = P\): \[P = P_0 = c(1+r)^0 + p/r = c(1) + p/r = c + p/r\] implying \(c = P - p/r\), implying \[P_n = (P - \frac{p}{r})(1+r)^n + \frac{p}{r}.\]</p>
 
-<p>(<q>Exercise 2</q>: confirm that this solves the inhomogeneous equation <i>and</i> that \(P_0 = P\).)</p>
+<p>(&quot;Exercise 2&quot;: confirm that this solves the inhomogeneous equation <i>and</i> that \(P_0 = P\).)</p>
 
-<p>\(~~~~~\)Great, we have a formula for the remaining principal owed after \(n\)  months, i.e., payments, but it doesn&#39;t really look like our <q>known</q> solution. In particular, our known solution doesn&#39;t involve \(P_n\): is there some way we can <q>check</q> our solution against our known solution?  Yes: in addition to the requirement that \(P_0 = P\), we have another similar requirement involving data we haven&#39;t yet used, namely, that the loan is to be paid-off after \(N\) payments, i.e., \[P_N = 0.\]This gives \(0 = (P - p/r)(1+r)^N + p/r\), which no longer depends on \(P_n\), and which we can solve for \(p\) to compare to our known solution.</p>
+<p>\(~~~~~\)Great, we have a formula for the remaining principal owed after \(n\)  months, i.e., payments, but it doesn&#39;t really look like our &quot;known&quot; solution. In particular, our known solution doesn&#39;t involve \(P_n\): is there some way we can &quot;check&quot; our solution against our known solution?  Yes: in addition to the requirement that \(P_0 = P\), we have another similar requirement involving data we haven&#39;t yet used, namely, that the loan is to be paid-off after \(N\) payments, i.e., \[P_N = 0.\]This gives \(0 = (P - p/r)(1+r)^N + p/r\), which no longer depends on \(P_n\), and which we can solve for \(p\) to compare to our known solution.</p>
 
 <p>\(~~~~~\)Multiplying through by \(r\) (which we can do because it is non-zero) gives:</p>
 
@@ -155,9 +155,9 @@ At this point we stop and check what we have so far:</p>
 
 <p>\[p = P\frac{r(1+r)^N}{(1+r)^N -1}\]</p>
 
-<p>which <i>is</i> our <q>known</q> solution!</p>
+<p>which <i>is</i> our &quot;known&quot; solution!</p>
 
-<p>\(~~~~~\)That&#39;s it, that&#39;s the derivation of the (simple) mortgage monthly payment formula as the solution of a linear, first-order, inhomogeneous difference equation (with <q>boundary conditions,</q> which is what the conditions \(P_0 = P\) and \(P_N = 0\) are called). However, there is a little more to it: remember, I said that all this is <q>a thing</q> because what&#39;s really interesting is not so much that your payment is the same each month, but that within that constant payment, the portions that go toward interest and principal  each month, change&mdash;the monthly amount that pays down your principal goes up, while, correspondingly, the amount that is interest, goes down. I also claimed that our solution (the actual monthly solution, \(P_n\), not the constant monthly payment, \(p\)) is sufficient to figure out these other amounts that vary month-to-month: it&#39;s all we need to calculate the complete <q>mortgage schedule,</q> i.e., the <q>table</q> of monthly interest and principal payments. Let&#39;s see how this works.</p>
+<p>\(~~~~~\)That&#39;s it, that&#39;s the derivation of the (simple) mortgage monthly payment formula as the solution of a linear, first-order, inhomogeneous difference equation (with &quot;boundary conditions,&quot; which is what the conditions \(P_0 = P\) and \(P_N = 0\) are called). However, there is a little more to it: remember, I said that all this is &quot;a thing&quot; because what&#39;s really interesting is not so much that your payment is the same each month, but that within that constant payment, the portions that go toward interest and principal  each month, change&mdash;the monthly amount that pays down your principal goes up, while, correspondingly, the amount that is interest, goes down. I also claimed that our solution (the actual monthly solution, \(P_n\), not the constant monthly payment, \(p\)) is sufficient to figure out these other amounts that vary month-to-month: it&#39;s all we need to calculate the complete &quot;mortgage schedule,&quot; i.e., the &quot;table&quot; of monthly interest and principal payments. Let&#39;s see how this works.</p>
 
 <p>\(~~~~~\)It&#39;s not complicated: the \(n\)-th month&#39;s interest is always simply the (monthly) interest rate times the just-past month&#39;s principal still owed:\[i_n = rP_{n-1} = (rP - p)(1+r)^{n-1} + p,\]</p>
 
@@ -167,7 +167,7 @@ At this point we stop and check what we have so far:</p>
 
 <p>\(\displaystyle= rP\left(\frac{(1+r)^N}{(1+r)^N - 1} - 1\right)\frac{(1+r)^N - 1}{(1+r) -1} = rP((1+r)^N - (1+r)^N + 1)/r = P\): check!)</p>
 
-<p>To conclude, here&#39;s the <q>solution</q> (computed using our results, not trial-and-error) to <q>Exercise 0</q>:</p>
+<p>To conclude, here&#39;s the &quot;solution&quot; (computed using our results, not trial-and-error) to &quot;Exercise 0&quot;:</p>
 
 <table>
 <thead>
@@ -275,7 +275,7 @@ At this point we stop and check what we have so far:</p>
 </tbody>
 </table>
 
-<p>(So the last payment the lender would require would actually be $860.75. Note: in computing the table above, I assumed that the lender would always round to <q>take the penny,</q> i.e., I always rounded the interest up to the nearest penny, and I rounded the monthly payment down to 860.66&mdash;as opposed to up to 860.67&mdash;because paying the loan off slower yields more (albeit, just marginally) money for the lender.)</p>
+<p>(So the last payment the lender would require would actually be $860.75. Note: in computing the table above, I assumed that the lender would always round to &quot;take the penny,&quot; i.e., I always rounded the interest up to the nearest penny, and I rounded the monthly payment down to 860.66&mdash;as opposed to up to 860.67&mdash;because paying the loan off slower yields more (albeit, just marginally) money for the lender.)</p>
 
 <h3>Please Donate:</h3>
 

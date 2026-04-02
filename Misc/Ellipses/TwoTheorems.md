@@ -18,7 +18,7 @@ body {font-family: Palatino}
 ## <center>[SelectedSolutionsDotNet](https://olydlg.github.io/selectedsolutionsdotnet/)
 
 <br>
-Note: Both of these problems are exercises (not worked examples) from Kline, M., 1967. <i>Calculus: An Intuitive and Physical Approach.</i> Wiley, New York.; but are interesting and important enough results on their own to warrant independent presentation. (Plus, I had cause to work through them in my tutoring "adventures," and one of the points of SelectedSolutionsDotNet is to record and present non-trivial exercises I have had the pleasure to complete.)
+Note: Both of these problems are exercises (not worked examples) from Kline, M., 1967. <i>Calculus: An Intuitive and Physical Approach.</i> Wiley, New York.; but are interesting and important enough results on their own to warrant independent presentation. (Plus, I had cause to work through them in my tutoring &quot;adventures,&quot; and one of the points of SelectedSolutionsDotNet is to record and present non-trivial exercises I have had the pleasure to complete.)
 
 ##### The (Geometric) Orthogonality of Confocal Ellipses and Hyperbolae
 <u>Problem Statement</u>: 
@@ -50,9 +50,9 @@ $$\frac{dy}{dx} = \frac{c^2 - a^2}{a^2}\frac{x}{y}$$
 
 $$m_Em_H = \left(\frac{c^2 - a_E^2}{a_E^2}\right)\left(\frac{c^2 - a_H^2}{a_H^2}\right)\frac{x^2}{y^2}$$
 
-At this point we observe that to compute the required product, we will not actually need the values of $x$ and $y$, but simply their squares; we will see momentarily why this is "fortunate."
+At this point we observe that to compute the required product, we will not actually need the values of $x$ and $y$, but simply their squares; we will see momentarily why this is &quot;fortunate.&quot;
 
-$~~~~~$To find these squares, we first "clear the denominators," from the original equations, yielding:
+$~~~~~$To find these squares, we first &quot;clear the denominators,&quot; from the original equations, yielding:
 
 $$(a_E^2 - c^2)x^2 + a_E^2y^2 = a_E^2(a_E^2 - c^2)$$
 $$(c^2 - a_H^2)x^2 - a_H^2y^2 = a_H^2(c^2 - a_H^2)$$
@@ -69,7 +69,7 @@ $$x^2 = \frac{a_E^2a_H^2}{c^2}$$
 
 (Note: why don't we have to worry about $a_E^2 - a_H^2 = 0$?)
 
-$~~~~~$Substituting this into the first "denominator-cleared" equation and dividing through by $a_E^2$ yields:
+$~~~~~$Substituting this into the first &quot;denominator-cleared&quot; equation and dividing through by $a_E^2$ yields:
 
 $$(a_E^2 - c^2)\frac{a_H^2}{c^2} + y^2 = (a_E^2 - c^2) \implies$$
 $$y^2 = (a_E^2 - c^2)\left[1 - \frac{a_H^2}{c^2}\right] \implies$$
@@ -81,7 +81,7 @@ $$m_Em_H = \left(\frac{c^2 - a_E^2}{a_E^2}\right)\left(\frac{c^2 - a_H^2}{a_H^2}
 
 $\blacksquare$
 
-$~~~~~$But what's the big deal? So confocal ellipses and hyperbolas intersect at right angles, big whoop, who cares? Well, aside from the fact that there need be no other relationship between a given ellipse and a given hyperbola for this to hold (which, in this author's opinion, is, in and of itself, quite remarkable), let's make sure we understand the "breadth" of this result. Look at Figure 1 below, showing members of families of confocal ellipses and hyperbolae, and observe that it's not just the "center" ellipse that's orthogonal to just the "center" hyperbola, nor just the outer-most (inner-most) ellipse that's orthogonal to just the outer-most (inner-most) hyperbola: because <i>all</i> the ellipses and <i>all</i> the hyperbolae in Figure 1 are confocal, <i>each</i> ellipse is orthogonal to <i>each</i> hyperbola at their points of intersection! I don't know about you, but I consider this exceedingly remarkable!
+$~~~~~$But what's the big deal? So confocal ellipses and hyperbolas intersect at right angles, big whoop, who cares? Well, aside from the fact that there need be no other relationship between a given ellipse and a given hyperbola for this to hold (which, in this author's opinion, is, in and of itself, quite remarkable), let's make sure we understand the &quot;breadth&quot; of this result. Look at Figure 1 below, showing members of families of confocal ellipses and hyperbolae, and observe that it's not just the &quot;center&quot; ellipse that's orthogonal to just the &quot;center&quot; hyperbola, nor just the outer-most (inner-most) ellipse that's orthogonal to just the outer-most (inner-most) hyperbola: because <i>all</i> the ellipses and <i>all</i> the hyperbolae in Figure 1 are confocal, <i>each</i> ellipse is orthogonal to <i>each</i> hyperbola at their points of intersection! I don't know about you, but I consider this exceedingly remarkable!
 
 
 <center><img src="./ConfocalEllipsesHyperbolae.jpeg"></center>
@@ -91,10 +91,10 @@ $~~~~~$But what's the big deal? So confocal ellipses and hyperbolas intersect at
 <center><img src="./ERP_annot.jpeg"></center>
 <center>Figure 2: The Ellipse Reflection Property</center></a>
 
-##### The "Reflection Property" of Ellipses
+##### The &quot;Reflection Property&quot; of Ellipses
 <u>Problem Statement</u>:<br> 
 
-$~~~~~$Backstory from Optics: a light ray, traveling in a straight line and bouncing off a "perfect," flat mirror, obeys the famous law "(Acute) Angle of Incidence = (Acute) Angle of Reflection"[*](#Note1) (AAI=AAR), i.e., whatever angle, $a$, the ray makes with the mirror "coming in", is also the (acute) angle it makes with the mirror "coming out." This Law extends to curved mirrors, where the angles of incidence and reflection are measured relative to the tangent to the curve of the mirror at the point of incidence. With this background, and making reference to Figure 2 above, we can now state the Property:
+$~~~~~$Backstory from Optics: a light ray, traveling in a straight line and bouncing off a &quot;perfect,&quot; flat mirror, obeys the famous law &quot;(Acute) Angle of Incidence = (Acute) Angle of Reflection&quot;[*](#Note1) (AAI=AAR), i.e., whatever angle, $a$, the ray makes with the mirror &quot;coming in&quot;, is also the (acute) angle it makes with the mirror &quot;coming out.&quot; This Law extends to curved mirrors, where the angles of incidence and reflection are measured relative to the tangent to the curve of the mirror at the point of incidence. With this background, and making reference to Figure 2 above, we can now state the Property:
 
 $~~~~~$<i>A light ray, obeying AAI=AAR and passing through one focus of a mirror with elliptical cross-section, will be reflected by said mirror through the ellipse's other focus</i> (<i>ad infinitum</i>, if the mirror is a complete ellipse).
 
@@ -112,13 +112,13 @@ Now, as derived in the previous problem, the slope of the tangent (line) at $P$,
 
 $$m_T(P) = \frac{dy}{dx}\big|_P = \frac{c^2 - a^2}{a^2}\frac{x_P}{y_P} = - \frac{b^2}{a^2}\frac{x_P}{y_P};$$
 
-the slope of $M$, $m_M$, is $\displaystyle\frac{y_p - 0}{x_p - c} = \frac{y_p}{x_p - c}$; and the slope of $L$, $m_L$, is assumed to be $\displaystyle\frac{y_p - 0}{x_p - (-c)} = \frac{y_p}{x_p + c}$. (Henceforth, except where noted otherwise, $x_P$ and $y_P$ will be the only $x$ and $y$ we need, so we will now "drop the $P$'s.")
+the slope of $M$, $m_M$, is $\displaystyle\frac{y_p - 0}{x_p - c} = \frac{y_p}{x_p - c}$; and the slope of $L$, $m_L$, is assumed to be $\displaystyle\frac{y_p - 0}{x_p - (-c)} = \frac{y_p}{x_p + c}$. (Henceforth, except where noted otherwise, $x_P$ and $y_P$ will be the only $x$ and $y$ we need, so we will now &quot;drop the $P$'s.&quot;)
 
 $~~~~~$Thus $$\tan\theta_{TM} = \frac{m_M - m_T}{1+m_Mm_T} = \frac{\frac{y}{x - c} + \frac{b^2x}{a^2y}}{1-\frac{\color{red}y\color{black}}{x - c}\frac{b^2x}{a^2\color{red}y\color{black}}} = \frac{\color{red}\frac{1}{a^2(x-c)}}{\color{red}\frac{1}{a^2(x-c)}}\frac{a^2y+b^2\frac{x(x-c)}{y}}{a^2(x-c)-b^2x} = \frac{a^2y^2+b^2x^2-b^2cx}{((a^2-b^2)x-a^2c)y} = \frac{a^2y^2+b^2x^2-b^2cx}{(c^2x-a^2c)y}$$
 
 whereas $$\tan\theta_{LT} = \frac{m_T - m_L}{1+m_Lm_T} = \frac{-\frac{b^2x}{a^2y}-\frac{y}{x + c}}{1-\frac{\color{red}y}{x + c}\frac{b^2x}{a^2\color{red}y}} =\frac{\color{red}\frac{1}{a^2(x+c)}}{\color{red}\frac{1}{a^2(x+c)}}\frac{-b^2\frac{x(x+c)}{y}-a^2y}{a^2(x+c)-b^2x} = -\frac{a^2y^2+b^2x^2+b^2cx}{((a^2-b^2)x+a^2c)y} = \color{violet}-\color{black}\frac{a^2y^2+b^2x^2+b^2cx}{(c^2x+a^2c)y}$$
 
-where we've highlighted factors which cancel in red. (Note the "$-$" out in front of the second result, highlighted in violet.)
+where we've highlighted factors which cancel in red. (Note the &quot;$-$&quot; out in front of the second result, highlighted in violet.)
 
 $~~~~~$Now, we haven't really used the fact that we're talking about an ellipse yet, i.e., that $x$ and $y$ are related by:
 $$\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \implies y^2 = b^2\left(1 - \frac{x^2}{a^2}\right)$$so it's high time we do!
@@ -132,7 +132,7 @@ $\blacksquare$
 
 <u>Proof 2</u><br>
 
-$~~~~~$Here's the other way I promised, namely, by showing that the line passing through $P$ and making the same angle, $a$, with the tangent, $T$, as the incident ray, $M$, passes through the other focus, $(-c,0)$. We shall find the equation of that line, using the "point-slope" form, $\displaystyle\frac{y-y_0}{x-x_0} = m$, ($(x,y)$ here being generic, i.e., not $(x_P,y_P)$), since a point and a slope are the two pieces of information we are "given" (in quotes because we aren't actually given the slope, but we can calculate it from the given information), and then we will show that $(-c,0)$ makes that equation a true statement.
+$~~~~~$Here's the other way I promised, namely, by showing that the line passing through $P$ and making the same angle, $a$, with the tangent, $T$, as the incident ray, $M$, passes through the other focus, $(-c,0)$. We shall find the equation of that line, using the &quot;point-slope&quot; form, $\displaystyle\frac{y-y_0}{x-x_0} = m$, ($(x,y)$ here being generic, i.e., not $(x_P,y_P)$), since a point and a slope are the two pieces of information we are &quot;given&quot; (in quotes because we aren't actually given the slope, but we can calculate it from the given information), and then we will show that $(-c,0)$ makes that equation a true statement.
 
 $~~~~~$Now, in $\displaystyle\frac{y-y_0}{x-x_0} = m$, given the data of our problem, $(x_0,y_0) = (x_P,y_P)$, i.e., the point the line is stipulated to pass through, and we want to show that $(x,y) = (-c, 0)$ makes the equation a true statement, i.e., we want to show:
 $$\frac{0-y_P}{-c-x_P} = \frac{y_P}{x_P+c} = m_L.$$
@@ -151,7 +151,7 @@ $\blacksquare$
 
 ##### Notes
 
-<a name="Note1" onclick="window.history.back()">*</a> Specifying "acute" means that one always takes the "$\lt \frac{\pi}2$" measure of an angle.
+<a name="Note1" onclick="window.history.back()">*</a> Specifying &quot;acute&quot; means that one always takes the &quot;$\lt \frac{\pi}2$&quot; measure of an angle.
 
 <a name="Note2" onclick="window.history.back()">**</a> There are two points on the ellipse that have to be treated separately: which points and why?</footnote>
 

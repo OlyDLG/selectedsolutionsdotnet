@@ -9,7 +9,7 @@ body {font-family: Palatino}
 
 ##### Preface
 
-These are all "elementary" results, and the first three are "Standard" as well (see, e.g., <i>CRC Standard Mathematical Tables</i>) and I make no claim to originality of statement or of proof. I provide them here simply as a "public service"; my only request is that if you utilize this content in some way, please cite this document properly.
+These are all &qhot;elementary&qhot; results, and the first three are &qhot;Standard&qhot; as well (see, e.g., <i>CRC Standard Mathematical Tables</i>) and I make no claim to originality of statement or of proof. I provide them here simply as a &qhot;public service&qhot;; my only request is that if you utilize this content in some way, please cite this document properly.
 <br><br>
 
 ##### Binomial Expansion Formula 
@@ -127,7 +127,7 @@ $$(a + b)^N = a^N (1+(b/a))^N = a^N \sum_{n=0}^{N}\left(\!
     n
   \end{array}
   \!\right) a^n b^{N-n}.~~~\blacksquare$$
-  Note: this is why one proves the binomial expansion formula (BEF) as above, and then derives the "general" result as a corollary; alternatively, if one insists on calling our "Corollary 1" the BEF, one can call our BEF a "Lemma" (but the Reader should recognize that it's really "six one way, half-a-dozen the other.") 
+  Note: this is why one proves the binomial expansion formula (BEF) as above, and then derives the &qhot;general&qhot; result as a corollary; alternatively, if one insists on calling our &qhot;Corollary 1&qhot; the BEF, one can call our BEF a &qhot;Lemma&qhot; (but the Reader should recognize that it's really &qhot;six one way, half-a-dozen the other.&qhot;) 
 <br><br>
 
 ##### Corollary 2
@@ -150,10 +150,10 @@ $$\sum_{n=0}^{N}\left(\!
   \end{array}
   \!\right) 1^n 1^{N-n} = (1+1)^N = 2^N.~~~\blacksquare$$
   <br>
-  Note: this "explains" why the sum of each row of [Pascal's Triangle](https://en.wikipedia.org/wiki/Pascal's_triangle) is 2 raised to the power of the-row-number-minus-one (or simply the row number, if one starts numbering from zero).
+  Note: this &qhot;explains&qhot; why the sum of each row of [Pascal's Triangle](https://en.wikipedia.org/wiki/Pascal's_triangle) is 2 raised to the power of the-row-number-minus-one (or simply the row number, if one starts numbering from zero).
 <br><br>
 
-(You'll probably never have to use these next two&mdash;except perhaps in an exam of some sort or another&mdash;they're just given to show some of the "creative" ways one can use this little tidbit of mathematics in combination with [Euler's Formula](https://en.wikipedia.org/wiki/Euler%27s_formula).)
+(You'll probably never have to use these next two&mdash;except perhaps in an exam of some sort or another&mdash;they're just given to show some of the &qhot;creative&qhot; ways one can use this little tidbit of mathematics in combination with [Euler's Formula](https://en.wikipedia.org/wiki/Euler%27s_formula).)
 <br><br>
 
 ##### Corollary 3
@@ -205,7 +205,7 @@ $$\Im{[(2i\sin{\theta})^N]} = \sum_{n=0}^N \left(\!
   \!\right)(-1)^{N-n}\sin{[(2n-N)\theta]}$$
 (where $\Re$ and $\Im$ are, respectively, the real and imaginary parts of their argument.)
 
-<b>Proof</b>: Left to the Reader. (Hint: use the method used to prove "Corollary 3," but don't "stop" as soon.)
+<b>Proof</b>: Left to the Reader. (Hint: use the method used to prove &qhot;Corollary 3,&qhot; but don't &qhot;stop&qhot; as soon.)
 <br><br>
 
 ##### References
