@@ -93,7 +93,10 @@ pre code, pre tt{ background-color:transparent; border:none; }
 </style>
 
 <p><title>Solutions of Selected Problems from Boyce/DiPrima <q>Elem. DEs &amp; BVPs 5th Ed. Chapters 1 and 2</q></title>
-\(\require{cancel}\)</p>
+\(\require{cancel}\)
+<!--  \definecolor{red}{RGB}{255,0,0}
+  \definecolor{yellow}{RGB}{255,215,0}$
+--></p>
 
 <h2><center>Selected Problem Solutions</h2>
 
@@ -143,13 +146,13 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><a name="P1.6" class="goback" onclick="winhisback()"><strong>1.6</strong>)</a>
 State the order and linearity or nonlinearity of \(\displaystyle \frac{d^3y}{dx^3} + x\frac{dy}{dx} + (\cos^2 x)y = x^3\).</p>
 
-<p><strong>Sln</strong>: 
+<p><strong>Sln</strong>: The highest&#8209;order derivative occurring in the equation is three, so this equation is \(\boxed{3^{\text{rd}}\text{ order}}.\)&nbsp; It is \(\boxed{\text{linear}}\) because it is of the form \(a_0(x)y^{(n)} + a_1(x)y^{(n-1)} + ... + a_n(x)y = g(x)\).
 <br><br></p>
 
 <p><a name="P1.14" class="goback" onclick="winhisback()"><strong>1.14</strong>)</a> 
 Verify that \(y = e^{x^2}\int_0^x e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
 
-<p><strong>Sln</strong>: 
+<p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\int_0^x e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\int_0^x e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\int_0^x e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\int_0^x e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
 <br><br></p>
 
 <p><a name="P1.18" class="goback" onclick="winhisback()"><strong>1.18</strong>)</a>
