@@ -164,14 +164,16 @@ Which values of \(r\) make \(y = e^{rx}\) a solution of \(y’’’ - 3y’’ 
 <p><a name="P1.20" class="goback" onclick="winhisback()"><strong>1.20</strong>)</a>
 Which values of \(r\) make \(y = x^r, x \gt 0\) a solution of \(x^2y’’ - 4xy’ + 4y = 0\)?</p>
 
-<p><strong>Sln</strong>: 
+<p><strong>Sln</strong>: \(y = x^r, x \gt 0 \implies y’ = rx^{r-1}, y’’ = r(r-1)x^{r-2} \implies x^2y’’ - 4xy’ + 4y = r(r-1)x^{r-2+2} - 4rx^{r-1+1} + 4x^r = (r^2 - r - 4r + 4)x^r = 0\) \(\implies r^2 - 5r + 4 = 0\) since \(x^r \ne 0\) for all \(x \gt 0\).&nbsp; Now, \(0 = r^2 - 5r + 4 = (r-1)(r-4) \implies \boxed{r = 1, 4}\) as the values of \(r\) that make \(x^r\) a solution of \(x^2y’’ - 4xy’ + 4y = 0\) for all \(x \gt 0\).<br>
+Check: \(y = x^1 \implies y’ = 1, y’’ = 0 \implies x^2y’’ - 4xy’ + 4y = x^2(0) - 4x(1) + 4x \overset{\checkmark}{=} 0\); \(y = x^4 \implies y’ = 4x^3, y’’ = 12x^2 \implies x^2y’’ - 4xy’ + 4y = x^2(12x^2) - 4x(4x^3) + 4(x^4) = (12 - 16 + 4)x^4 \overset{\checkmark}{=} 0\).
 <br><br></p>
 
 <p><a name="P1.26" class="goback" onclick="winhisback()"><strong>1.26</strong>)</a>
 State the order and linearity or nonlinearity of \(u_t + uu_x = 1 + u_{xx}\).</p>
 
-<p><strong>Sln</strong>: 
-$<br><br></p>
+<p><strong>Sln</strong>: (Note: this PDE is the one (spatial) dimension version of the conservation of momentum portion of the <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations">Navier-Stokes equations</a>, which give a &quot;field description&quot; of the motion of (in this version) an incompressible, viscous fluid.)<br>
+The highest&#8209;order derivative occurring in the equation is two (\(u_{xx}\)), so this is a \(\boxed{\text{second order}}\) equation. (However, for at least a couple of reasons you’ll learn later, it is useful to distinguish the order of a PDE with respect to each of its independent variables, so we will learn to characterize this equation as second&#8209;order in \(x\), first&#8209;order in \(t\).)&nbsp; It is \(\boxed{\text{nonlinear}}\) because of the presence of the \(uu_x\) term.
+<br><br></p>
 
 <p><a name="P1.32" class="goback" onclick="winhisback()"><strong>1.32</strong>)</a>
 Given: \(f, g\) are twice&#8209;differentiable functions; Verify: \(u(x,t) = f(x-at) + g(x+at)\) is a solution of \(a^2u_{xx} = u_{tt}\). </p>
