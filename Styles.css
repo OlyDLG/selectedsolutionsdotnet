@@ -36,3 +36,8 @@ sp.sum {font-weight: bold;}
 .tooltip-container:hover .tooltip-text {
   visibility: visible; /* Or display: block; */
   }
+
+.panel img {
+    max-width: 100%;
+    height: auto;
+}
