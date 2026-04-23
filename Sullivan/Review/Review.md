@@ -1308,12 +1308,13 @@ __Sln__: The formula is valid for $l$ in feet, but $l$ is given to us in inches,
 Original graphs generated using [GeoGebra](http://www.geogebra.org/).
 
 ### Please Donate:
+<div class="toc">
 <table>
-  <tr style="border: none; background: transparent;">
-    <td style="border: none;">
+  <tr>
+    <td>
       <b>Venmo: @David-Goldsmith-13</b>
     </td>
-    <td style="border: none;">
+    <td>
       <form action="https://www.paypal.com/cgi-bin/webscr"
             method="post"><input name="cmd"
             value="_xclick" type="hidden"> <input name="business"
@@ -1327,3 +1328,4 @@ Original graphs generated using [GeoGebra](http://www.geogebra.org/).
     </td>
   </tr>
 </table>
+</div>
