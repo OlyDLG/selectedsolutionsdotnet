@@ -41,3 +41,11 @@ sp.sum {font-weight: bold;}
     max-width: 100%;
     height: auto;
 }
+
+div.toc {
+    & > table tr {
+        background-color: white;
+        border: none;
+        & > th, & > td {border: none;}
+    }
+}
