@@ -49,3 +49,9 @@ div.toc {
         & > th, & > td {border: none;}
     }
 }
+
+div.tblwCntrdCellElements {
+    & > table tr {
+        & > td {text-align: center;}
+    }
+}

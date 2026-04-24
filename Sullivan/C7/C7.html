@@ -99,12 +99,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \definecolor{violet}{RGB}{138,43,226}
 \definecolor{black}{RGB}{0,0,0}
 \require{cancel}\)
-<style>
-body {font-family: Palatino}
-.top{border-bottom:solid black 1px; display:inline-block; float:left}
-.center{text-align: center;}
-.goback {color: purple}
-</style></p>
+<link rel="stylesheet" href="../../Styles.css"></p>
 
 <h2><center> Selected Exercise Solutions</h2>
 
@@ -124,7 +119,7 @@ body {font-family: Palatino}
 
 <p><i>Notes:  These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
-<p>Purple font indicates clicking on the text will return you to your prior place.</p>
+<p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; a \(\blacksquare\) marks the end of a proof.</p>
 
 <p>I &quot;box&quot; answers, but I can’t get &deg; for degrees to appear properly-sized in boxes, so in answers I spell it out instead of using the symbol.
 <br></p>
@@ -153,12 +148,16 @@ where \(\theta\) <strong>must</strong> be in radians.</p>
 
 <p><strong>Special Angles</strong>: For triangle trigonometry, the most important special angles are:</p>
 
+<div class="tblwCntrdCellElements">
 <table>
   <tr>
-    <th>Degrees<td>0<td class=center>30<td class=center>45<td class=center>60<td class=center>90<td class=center>120<td class=center>135<td class=center>150<td class=center>180
+    <th>Degrees</th> <td>0</td> <td>30</td> <td>45</td> <td>60</td> <td>90</td> <td>120</td> <td>135</td> <td>150</td> <td>180</td>
+  </tr>
   <tr>
-    <th>Radians<td>0<td>&pi;/6<td>&pi;/4<td>&pi;/3<td>&pi;/2<td>2&pi;/3<td>3&pi;/4<td>5&pi;/6<td class=center>&pi;
+    <th>Radians</th> <td>0</td> <td>&pi;/6</td> <td>&pi;/4</td> <td>&pi;/3</td> <td>&pi;/2</td> <td>2&pi;/3</td> <td>3&pi;/4</td> <td>5&pi;/6</td> <td>&pi;</td>
+  </tr>
 </table>
+</div>
 
 <p>We will defer the rest till Section 4.</p>
 
@@ -558,6 +557,31 @@ Calculate \((g \circ p)(60\)&deg;\()\)</p>
 <p><strong>Sln</strong>: 
 <br><br></p>
 
+<p><a name="3.64" class="goback" onclick="winhisback()"><strong>3.64</strong>)</a> </p>
+
+<p><strong>Sln</strong>: 
+<br><br></p>
+
+<p><a name="3.68" class="goback" onclick="winhisback()"><strong>3.68</strong>)</a> </p>
+
+<p><strong>Sln</strong>: 
+<br><br></p>
+
+<p><a name="3.74" class="goback" onclick="winhisback()"><strong>3.74</strong>)</a> </p>
+
+<p><strong>Sln</strong>: 
+<br><br></p>
+
+<p><a name="3.78" class="goback" onclick="winhisback()"><strong>3.78</strong>)</a> </p>
+
+<p><strong>Sln</strong>: 
+<br><br></p>
+
+<p><a name="3.84" class="goback" onclick="winhisback()"><strong>3.84</strong>)</a> </p>
+
+<p><strong>Sln</strong>: 
+<br><br></p>
+
 <p><a name="3.92" class="goback" onclick="winhisback()"><strong>3.92</strong>)</a> 
 Find the exact value of sin 1&deg;&centerdot;sin 2&deg;&centerdot;sin 3&deg;&centerdot;...&centerdot;sin 45&deg;&centerdot;sec 46&deg;&centerdot;sec 47&deg;&centerdot;...&centerdot;sec 89&deg;.</p>
 
@@ -647,7 +671,7 @@ Find the exact value of sin 1&deg;&centerdot;sin 2&deg;&centerdot;sin 3&deg;&cen
 
 <p>Part 1: For all \(\theta\) such that \(\sin(\theta + \pi) \ne 0\), \(\cot(\theta + \pi) = \displaystyle \frac{\cos(\theta + \pi)}{\sin(\theta + \pi)} = \frac{-\cos \theta}{-\sin \theta} = \frac{\cos \theta}{\sin \theta} = \cot \theta\) (because if \(\sin(\theta + \pi) \ne 0\), then \(\sin \theta \ne 0\); proof?); this shows that \(\pi\) is <i>a</i> period of cot. </p>
 
-<p>Part 2: We use the method suggested in the text as a hint for Problem 93: Suppose there exists \(p\) between 0 and \(\pi\), exclusive, i.e., \(0 \lt p \lt \pi\), such that \(\cot(\theta + p) = \cot \theta\) for all \(\theta\) for which it is well&#8209;defined; then \(\cot p = \cot(0 + p) = \cot 0 = 0\), i.e., our assumption implies \(\cot p = 0\), and there is only one value between 0 and \(\pi\) for which this is true, namely \(\frac{\pi}2.~\) But, for example, \(\cot \frac{\pi}4 = 1\), whereas \(\cot(\frac{\pi}4 + \frac{\pi}2) = \cot \frac{3\pi}4 = -1\); in other words, we’ve found a value of \(\theta\) such that \(\cot(\theta + \frac{\pi}2) \ne \cot \theta\), so \(p=\pi\) must be the smallest (positive) value for which \(\cot(\theta+p) = \cot(\theta)\) is always true.\(~~~\blacksquare\) (A \(\blacksquare\) is the modern customary way to mark where one has concluded a proof, replacing the antiquated &quot;Q.E.D.&quot;)
+<p>Part 2: We use the method suggested in the text as a hint for Problem 93: Suppose there exists \(p\) between 0 and \(\pi\), exclusive, i.e., \(0 \lt p \lt \pi\), such that \(\cot(\theta + p) = \cot \theta\) for all \(\theta\) for which it is well&#8209;defined; then \(\cot p = \cot(0 + p) = \cot 0 = 0\), i.e., our assumption implies \(\cot p = 0\), and there is only one value between 0 and \(\pi\) for which this is true, namely \(\frac{\pi}2.~\) But, for example, \(\cot \frac{\pi}4 = 1\), whereas \(\cot(\frac{\pi}4 + \frac{\pi}2) = \cot \frac{3\pi}4 = -1\); in other words, we’ve found a value of \(\theta\) such that \(\cot(\theta + \frac{\pi}2) \ne \cot \theta\), so \(p=\pi\) must be the smallest (positive) value for which \(\cot(\theta+p) = \cot(\theta)\) is always true.\(~~~\blacksquare\)
 <br><br></p>
 
 <h2>Section 6: Graphs of Sine and Cosine</h2>
@@ -689,14 +713,18 @@ Find the exact value of sin 1&deg;&centerdot;sin 2&deg;&centerdot;sin 3&deg;&cen
 
 <h3>Credits</h3>
 
-<p>Text layout and MathJax (LaTeX) composed using <a href="http://lightpaper.42squares.in">LightPaper for Mac by 42Squares</a></a>.</p>
-
 <p>Graphs generated using <a href="http://www.geogebra.org/">GeoGebra</a>.</p>
 
 <h3>Please Donate:</h3>
 
-<form action="https://www.paypal.com/cgi-bin/webscr"
-          method="post"><input name="cmd"
+<table>
+  <tr style="border: none; background: transparent;">
+    <td style="border: none;">
+      <b>Venmo: @David-Goldsmith-13</b>
+    </td>
+    <td style="border: none;">
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
             value="_xclick" type="hidden"> <input name="business"
             value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
             name="item_name" value="SelectedSolutions Donation"
@@ -705,6 +733,9 @@ Find the exact value of sin 1&deg;&centerdot;sin 2&deg;&centerdot;sin 3&deg;&cen
             src="https://www.paypal.com/images/x-click-but04.gif"
             name="submit" alt="Make payments with PayPal - it's fast,
             free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>
 <script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
 <script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
 </html>
