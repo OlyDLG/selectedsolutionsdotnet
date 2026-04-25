@@ -12,6 +12,7 @@ td.num {text-align: right;}
 td.text {text-align: left;}
 td.cen {text-align: center;}
 sp.sum {font-weight: bold;}
+.repairPending {color: red;}
 
 .tooltip-container {
   position: relative;
