@@ -9,7 +9,7 @@ body {font-family: Palatino}
 
 ##### Preface
 
-These are all &qhot;elementary&qhot; results, and the first three are &qhot;Standard&qhot; as well (see, e.g., <i>CRC Standard Mathematical Tables</i>) and I make no claim to originality of statement or of proof. I provide them here simply as a &qhot;public service&qhot;; my only request is that if you utilize this content in some way, please cite this document properly.
+These are all &quot;elementary&quot; results, and the first three are &qhot;Standard&qhot; as well (see, e.g., <i>CRC Standard Mathematical Tables</i>) and I make no claim to originality of statement or of proof. I provide them here simply as a &qhot;public service&qhot;; my only request is that if you utilize this content in some way, please cite this document properly.
 <br><br>
 
 ##### Binomial Expansion Formula 
