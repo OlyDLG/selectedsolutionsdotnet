@@ -45,7 +45,7 @@ sp.sum {font-weight: bold;}
 
 div.toc {
     & > table tr {
-        background-color: white;
+        background-color: transparent;
         border: none;
         & > th, & > td {border: none;}
     }
