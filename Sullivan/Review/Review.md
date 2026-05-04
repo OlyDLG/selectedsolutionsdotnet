@@ -26,9 +26,7 @@ $\require{cancel}$
 
 <i>Notes:  These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to selectedsolutionsdotnet@gmail.com.
 
-Though not presented in the text, a &quot;blackboard bold&quot; capital $\mathbb{R}$ is used ubiquitously to represent the set of &quot;all real numbers,&quot; and I will use it freely herein (often with the preposition &quot;over,&quot; as in the phrase &quot;the expression is well-defined over $\mathbb{R}$,&quot; meaning that it is well-defined&mdash;meaning, gives a real-number result&mdash;for all real number inputs).
-
-Purple font indicates clicking on the text will return you to your prior place.
+<span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; a $\blacksquare$ marks the end of a proof.
 <br>
 
 ### Contents
@@ -480,12 +478,12 @@ __Sln__: This is saying that the distance between $x$ and 2, which is given by $
 <br>
 
 <a name="2.152" class="goback" onclick="winhisback()">__2.152__)</a>
-Normal human body temperature is98.6&deg; F.[$^1$](#Note1) A temperature that differs from normal by at least 1.5&deg; F is considered unhealthy. Thus one is considered  unhealthy if one’s temperature, $x$, makes the inequality: $$|x-98.6|\ge1.5$$a true statement.
-__a__) Show that a temperature of 97&deg; F is considered unhealthy;
+Normal human body temperature is98.6° F.[$^1$](#Note1) A temperature that differs from normal by at least 1.5° F is considered unhealthy. Thus one is considered  unhealthy if one’s temperature, $x$, makes the inequality: $$|x-98.6|\ge1.5$$a true statement.
+__a__) Show that a temperature of 97° F is considered unhealthy;
 __Sln__: $|97-98.6| = |-1.6| = 1.6 \gt 1.5$, therefore &quot;unhealthy&quot;
 <br>
 
-__b__) Show that a temperature of 100&deg; F is not considered unhealthy.
+__b__) Show that a temperature of 100° F is not considered unhealthy.
 
 __Sln__: $|100-98.6| = |1.4| = 1.4 \lt 1.5$, therefore &quot;not unhealthy&quot;
 <br>
@@ -532,7 +530,7 @@ __Sln__: The required area is the area of the pictured circle, minus the area of
 <br>
 
 <a name="3.44" class="goback" onclick="winhisback()">__3.44__)</a>
-Two triangles are given, one with known side lengths of 10 and 50 length units, included angle (the angle between them) of measure 125&deg;, the angle opposite the side of length 50 has measure 50&deg;, and the other angle has measure 5&deg;; in the other triangle, the length of the side corresponding to the first triangle’s side of length 10, is 8, and the length of the side corresponding to the first triangle’s side of length 50 is unspecified (denoted in the text as $x$). Given that the triangles are similar, what is $x$, and what are the measures of the second triangle’s angles?
+Two triangles are given, one with known side lengths of 10 and 50 length units, included angle (the angle between them) of measure 125°, the angle opposite the side of length 50 has measure 50°, and the other angle has measure 5°; in the other triangle, the length of the side corresponding to the first triangle’s side of length 10, is 8, and the length of the side corresponding to the first triangle’s side of length 50 is unspecified (denoted in the text as $x$). Given that the triangles are similar, what is $x$, and what are the measures of the second triangle’s angles?
 
 __Sln__: For similar triangles, the <i>ratio</i> of the lengths of corresponding sides is constant, i.e., the same, for each corresponding pair of sides; and corresponding angles are equal. Thus for the second triangle we have:$$\frac{x}{50} = \frac8{10} = \frac45 \implies x = \frac45(50) = \boxed{40\text{ length units}}$$
 and the angle between the sides of length 40 and 8 (labeled $B$ in the text) is $\boxed{125^{\circ}}$, the angle opposite the side of length 40 (labeled $A$ in the text) is $\boxed{50^{\circ}}$, and the other angle (labeled $C$) is $\boxed{5^{\circ}}$
