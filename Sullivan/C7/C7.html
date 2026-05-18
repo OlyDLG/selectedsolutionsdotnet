@@ -306,13 +306,15 @@ Determine: <strong>a</strong>) the (circular) outfield fence length; and <strong
 <p><strong>Fundamental Identities</strong></p>
 
 <p><strong>Quotient Identities</strong>:
-\(~~~~~~~~~~~~~~~~~~~~~\displaystyle \tan\theta = \frac{\sin\theta}{\cos\theta},~\cot\theta = \frac{\cos\theta}{\sin\theta}\)</p>
+\(~~~~~~~~~\displaystyle \tan\theta = \frac{\sin\theta}{\cos\theta},~\cot\theta = \frac{\cos\theta}{\sin\theta}\)</p>
 
 <p><strong>Reciprocal Identities</strong>:
-\(~~~~~~~~~~~~~~~~~~\displaystyle \csc\theta = \frac1{\sin\theta},~\sec\theta = \frac1{\cos\theta},~\cot\theta=\frac1{\tan\theta}\)</p>
+\(~~~~~~\displaystyle \csc\theta = \frac1{\sin\theta},~\sec\theta = \frac1{\cos\theta},~\cot\theta=\frac1{\tan\theta}\)</p>
+
+<p><strong>Exponent Notation</strong>: <b>Except for</b> \(n=-1\), trig\(^n x \equiv (\text{trig }x)^n\), e.g., \(\sin^2 x \equiv (\sin x)^2\) (trig\(^{-1} x\) means something different: if you want to write \(\displaystyle \frac1{\text{trig }x}\) using a negative exponent, you have to write \((\text{trig }x)^{-1}\))</p>
 
 <p><strong>Pythagorean Identities</strong>:
-\(~~~~~~~~~~~~~~~\sin^2\theta + \cos^2\theta = 1,~\tan^2\theta + 1 = \sec^2\theta,~\cot^2\theta + 1 = \csc^2\theta\)</p>
+\(~~~\sin^2\theta + \cos^2\theta = 1,~\tan^2\theta + 1 = \sec^2\theta,~\cot^2\theta + 1 = \csc^2\theta\)</p>
 
 <p><strong>Cofunction Identities</strong>: <strong><em>if</em></strong> \(x+y = 90°= \displaystyle \frac{\pi}2\) rad, i.e., if \(x,y\) are &quot;complementary,&quot; <strong><em>then</em></strong>: \[\sin x = \cos y,~\tan x = \cot y,~\sec x = \csc y\]
 Equivalently: \(\displaystyle \sin\left(\frac{\pi}2-\theta\right) = \cos \theta,~\tan\left(\frac{\pi}2-\theta\right) = \cot \theta,~\sec\left(\frac{\pi}2-\theta\right) = \csc \theta,\\ \displaystyle \cos\left(\frac{\pi}2-\theta\right) = \sin\theta,~\cot\left(\frac{\pi}2-\theta\right) = \tan\theta,~\csc\left(\frac{\pi}2-\theta\right) = \sec\theta\)
@@ -624,7 +626,11 @@ Calculate \((g \circ p)(60°)\)</p>
   <img src="./Graphs/SullivanC7S3P64c.png">
 </center></p>
 
-<p>...except: most GCs* will not provide you with the exact answer &mdash; \(\left(\cos^{-1}(\frac13), \frac{64\pi}3\right)\) &mdash; I have provided in the graph.&nbsp; Why have I provided the exact answer, even though it involves something we won’t be learning about until Chapter 8&mdash;the inverse trig functions&mdash;and partially requires Calculus to find?&nbsp; Because the part that doesn’t require Calculus turns out to be an excellent exercise in solving a factorable &quot;quartic&#8209;in&#8209;form&quot; polynomial, illustrating how such things do actually arise in unexpected situations.</p>
+<p>...except: (optional material) most GCs* will not provide you with the exact answer &mdash; \(\left(\cos^{-1}(\frac13), \frac{64\pi}3\right)\) &mdash; I have provided in the graph.&nbsp; Why have I provided the exact answer, even though it involves something we won’t be learning about until Chapter 8&mdash;the inverse trig functions&mdash;and partially requires Calculus to find?&nbsp; Because the part that doesn’t require Calculus turns out to be an excellent exercise in solving a factorable &quot;quartic&#8209;in&#8209;form&quot; polynomial, illustrating how such things can actually arise in practice.</p>
+
+<p>In Calculus, we learn that if a <strong><em>continuous</em></strong> function attains a <strong><em>local extremum</em></strong> (maximum or minimum) at an abscissa, then a related function, called its <strong><em>derivative</em></strong>, must equal zero at that abscissa; the implication is only &quot;one way,&quot; however: the derivative being zero at an abscissa doesn’t necessarily imply that the original function attains a local extremum there (you learn all about this in Calculus).&nbsp; Nevertheless, this provides a strategy for finding &quot;candidate&quot; abscissae for the locations of extrema, namely: computing the derivative of the function (one of two primary computational skills learned and drilled in Calculus); setting the derivative equal to zero and solving that equation; and then checking (using other methods) whether each zero of the derivative does indeed yield a (local) extremal value of the original function.</p>
+
+<p>Of course, we do not learn how to compute the derivative of \(V(\theta) = \frac83{\pi}(1 + \sec\theta)(\csc\theta + \cot\theta)^2\) in this course, so you’ll have to take my word for it that it is \(\frac83{\pi}\left(\sec^2\theta - 5\csc^2\theta - 8\csc\theta\cot\theta - 3\cot^2\theta\right)\), which we need to set equal to zero and solve for \(\theta\).&nbsp;  </p>
 
 <p>*Some, with a &quot;Computer Algebra System,&quot; may: I haven’t really investigated to find out (yet).
 <br><br></p>
