@@ -243,7 +243,12 @@ Check: \( (1+x^2)y’ = (1+x^2)\left[\Frac{(1+x^2)^2(1+x^2)^{-1} - 4x(1+x^2)(\ta
 <p><a name="P2.1.16" class="goback" onclick="winhisback()"><strong>2.1.16</strong>)</a>
 \(xy’ + (x+1)y = x,~~~y(\log 2) = 1\)</p>
 
-<p><strong>Sln</strong>: At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(x \ne 0\).&nbsp; Thence the given DE is equivalent to \( y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \( p(x) = 1 + \Frac1x, g(x) = 1\) 
+<p><strong>Sln</strong>: At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(x \ne 0\).&nbsp; Then the given DE is equivalent to \(y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \(g(x) = 1, p(x) = 1 + \Frac1x \implies\) \(\mu(x) = \displaystyle\exp\left[\int\left(1+\frac1x\right)dx\right] = e^{x+\log x} = xe^x\).&nbsp; Multiplying this through the \(y’ + p(x)y = g(x)\) form of the equation yields \(xe^x y’ + (x+1)e^x y = \Frac{d}{dx}(xe^x y) = xe^x \implies\) \(xe^x y = \Int{}{}\) \(\!\! xe^x dx = (x-1)e^x + C\).&nbsp; The IC requires \(\log 2 e^{\log 2}(1) = \cancel{2\log 2} = (\log 2 - 1)e^{\log 2} + C = \cancel{2\log 2} - 2 + C \implies C = 2\) so we have \(xe^x y = (x-1)e^x + 2 \implies\)
+\[\boxed{y = 1 - \frac{1 - 2e^{-x}}x}\]
+IC check: \(1 - \Frac{1-2e^{-\log 2}}{\log 2} = 1 - \Frac0{\log 2} = 1~~\checkmark\)<br>
+DE check: \(xy’ = x\left(0 - \Frac{x(2e^{-x}) - (1)(1 - 2e^{-x})}{x^2}\right) = \Frac{1 - 2e^{-x} - 2xe^{-x}}{x}\)<br>
+\((x+1)y = x + \cancel{1 - 1} + 2e^{-x} - \Frac{1 - 2e^{-x}}{x} = x - \Frac{1 - 2e^{-x} - 2xe^{-x}}{x} \implies\)<br>
+\(xy’ + (x+1)y = \cancel{\Frac{1 - 2e^{-x} - 2xe^{-x}}{x}} + x \cancel{- \Frac{1 - 2e^{-x} - 2xe^{-x}}{x}} = x~~\checkmark\)
 <br><br></p>
 
 <p><a name="P2.1.20" class="goback" onclick="winhisback()"><strong>2.1.20</strong>)</a>
