@@ -91,7 +91,13 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <title>Solutions of Selected Problems from Boyce/DiPrima <q>Elem. DEs &amp; BVPs 5th Ed. Chapters 1 and 2</q></title>
 \(\require{cancel}
 \newcommand{\Frac}{\displaystyle \frac}
-\newcommand{\Int}[2]{\large{\int_{\normalsize{#1}}^{\normalsize{#2}}}\normalsize}\)</p>
+\newcommand{\Int}[2] {\large
+  \int_{\small{#1}
+            }
+         ^{\small{#2}
+            }
+}
+\)</p>
 
 <h2><center>Selected Problem Solutions</h2>
 
@@ -157,9 +163,9 @@ State the order and linearity or nonlinearity of \(\Frac{d^3y}{dx^3} + x\Frac{dy
 <br><br></p>
 
 <p><a name="P1.1.14" class="goback" onclick="winhisback()"><strong>1.1.14</strong>)</a> 
-Verify that \(y = e^{x^2}\Int{0}{x} e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
+Verify that \(y = e^{x^2}\Int{0}{x}\) \(e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
 
-<p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\int_0^x e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\int_0^x e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\int_0^x e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\int_0^x e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
+<p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\Int{0}{x}\) \(e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\Int{0}{x}\) \(e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\Int{0}{x}\normalsize e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\Int{0}{x}\normalsize e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
 <br><br></p>
 
 <p><a name="P1.1.18" class="goback" onclick="winhisback()"><strong>1.1.18</strong>)</a>
@@ -185,7 +191,7 @@ The highest&#8209;order derivative occurring in the equation is two (\(u_{xx}\))
 <p><a name="P1.1.32" class="goback" onclick="winhisback()"><strong>1.1.32</strong>)</a>
 Given: \(f, g\) are twice&#8209;differentiable functions; Verify: \(u(x,t) = f(x-at) + g(x+at)\) is a solution of \(a^2u_{xx} = u_{tt}\). </p>
 
-<p><strong>Sln</strong>: By the <a href="https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case">Chain Rule for multivariable functions</a>, \( u_x = f’(x-at)\Frac{\partial}{\partial x}(x-at) + g’(x+at)\Frac{\partial}{\partial x}(x+at) = f’(x-at)(1) + g’(x+at)(1) = f’(x-at) + g’(x+at)\) and thus, similarly, \(u_{xx} = f’’(x-at) + g’’(x+at)\). Also: \( u_t = f’(x-at)\Frac{\partial}{\partial t}(x-at) + g’(x+at)\Frac{\partial}{\partial t}(x+at) = f’(x-at)(-a) + g’(x+at)(a) = -af’(x-at) + ag’(x+at) \implies\) \(u_{tt} = (-a)^2f’’(x-at) + a^2g’’(x+at) = a^2(f’’(x-at) + g’’(x+at)) = a^2u_{xx}\) as was to be shown.&nbsp; (Note: this is the <a href="https://en.wikipedia.org/wiki/Wave_equation#Algebraic_approach">d’Alembert solution</a> of the one (spatial) dimension wave equation&mdash;the reader should read about what the form of this solution implies about its physical nature.)
+<p><strong>Sln</strong>: By the <a href="https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case">Chain Rule for multivariable functions</a>, \( u_x = f’(x-at)\Frac{\partial}{\partial x}(x-at) + g’(x+at)\Frac{\partial}{\partial x}(x+at) = f’(x-at)(1) + g’(x+at)(1) = f’(x-at) + g’(x+at)\) and thus, similarly, \(u_{xx} = f’’(x-at) + g’’(x+at)\). Also: \( u_t = f’(x-at)\Frac{\partial}{\partial t}(x-at) + g’(x+at)\Frac{\partial}{\partial t}(x+at) = f’(x-at)(-a) + g’(x+at)(a) = -af’(x-at) + ag’(x+at) \implies\) \(u_{tt} = (-a)^2f’’(x-at) + a^2g’’(x+at) = a^2(f’’(x-at) + g’’(x+at)) = a^2u_{xx}\) as was to be shown.&nbsp; (Note: this is the <a href="https://en.wikipedia.org/wiki/Wave_equation#Algebraic_approach">d’Alembert solution</a> of the one (spatial) dimension wave equation&mdash;the reader should read about what the form of this solution implies about this solution’s physical nature.)
 <br><br></p>
 
 <p><a name="P1.1.40" class="goback" onclick="winhisback()"><strong>1.1.40</strong>)</a>
@@ -206,9 +212,9 @@ Use technology to sketch the direction field of \(y’ = -y(5-y)\) and thereby d
 <p><a name="P2.1.4" class="goback" onclick="winhisback()"><strong>2.1.4</strong>)</a>
 \(y’ + (1/x)y = 3\cos 2x,~~~~~x \gt 0\)</p>
 
-<p><strong>Sln</strong>: (I prefer to solve these using the method rather than the formula.)&nbsp; This is of the form \(y’ + p(x)y = g(x)\) with \(p(x) = 1/x, g(x) = 3\cos 2x\); thus the integrating factor \( \mu(x) = \exp\left(\int \Frac1x dx\right) = e^{\log x} = x\).&nbsp; Multiplying through by \(x\) (which we can do without concern since it’s stipulated that \(x \gt 0\)), we get:<br></p>
+<p><strong>Sln</strong>: (I prefer to solve these using the method rather than the formula.)&nbsp; This is of the form \(y’ + p(x)y = g(x)\) with \(p(x) = 1/x, g(x) = 3\cos 2x\); thus the integrating factor \(\mu(x) = \exp\left(\Int{}{}\!\!\small\Frac1x dx\right) = e^{\log x} = x\).&nbsp; Multiplying through by \(x\) (which we can do without concern since it’s stipulated that \(x \gt 0\)), we get:<br></p>
 
-<p>\( xy’ + y = \Frac d{dx}(xy) = 3x\cos 2x \implies xy = \int 3x\cos 2x dx = \Frac34\left(2x\sin 2x + \cos 2x\right) + C \implies\) </p>
+<p>\(xy’ + y = \Frac d{dx}(xy)\) \(= 3x\cos 2x \implies xy = \Int{}{}\) \(\!\!3x\cos 2x dx = \Frac34\left(2x\sin 2x + \cos 2x\right) + C \implies\) </p>
 
 <p>\[\boxed{y = \Frac32\sin 2x + \Frac{3\cos 2x}{4x} + \Frac Cx}\]
 Check: \( y’ = \Frac32 (2)\cos 2x + \Frac{4x(-6\sin 2x) - 4(3\cos 2x)}{16x^2} - \Frac C{x^2} = 3\cos 2x - \Frac{3\sin 2x}{2x} - \Frac{3\cos 2x}{4x^2} - \Frac C{x^2}\),<br>
@@ -219,9 +225,8 @@ Check: \( y’ = \Frac32 (2)\cos 2x + \Frac{4x(-6\sin 2x) - 4(3\cos 2x)}{16x^2} 
 <p><a name="P2.1.8" class="goback" onclick="winhisback()"><strong>2.1.8</strong>)</a>
 \((1+x^2)y’ + 4xy = (1+x^2)^{-2}\)</p>
 
-<p><strong>Sln</strong>: Noting that \(1+x^2 \ne 0\) for all real \(x\), divide through by it to yield the equivalent DE \(y’ + 4x(1+x^2)^{-1}y = (1+x^2)^{-3} = y’ + p(x)y = g(x)\) with \(p(x) = 4x(1+x^2)^{-1}, g(x) = (1+x^2)^{-3}\).&nbsp; Thus the integrating factor \( \mu(x) = \exp\left(\int\Frac{4x}{1+x^2}dx\right) = \) (letting \(u = 1+x^2 \implies du = 2xdx\))<br> 
-\( \exp\left(2\int\Frac{du}{u}\right) = e^{2\log u} = (1+x^2)^2\).&nbsp; Multiplying the \(y’ + p(x)y = g(x)\) form of the equation through by that yields:<br>
-\( (1+x^2)^2 y’ + 4x(1+x^2)y = \Frac d{dx}\left[(1+x^2)^2 y\right] = \Frac1{1+x^2} \implies (1+x^2)^2y = \int\Frac1{1+x^2}dx = \tan^{-1}x + C \implies\)
+<p><strong>Sln</strong>: Noting that \(1+x^2 \ne 0\) for all real \(x\), divide through by it to yield the equivalent DE \(y’ + 4x(1+x^2)^{-1}y = (1+x^2)^{-3} \equiv\) \(y’ + p(x)y = g(x)\) with \(p(x) = 4x(1+x^2)^{-1}, g(x) = (1+x^2)^{-3}\).&nbsp; Thus the integrating factor \(\mu(x) =\) \(\displaystyle \exp\left(\int\frac{4x}{1+x^2}dx\right) = \exp\left(2\int\frac{du}{u}\right) \text{ (letting } u = 1+x^2 \implies du = 2xdx\text{) } = e^{2\log u} = (1+x^2)^2\).&nbsp; Multiplying the \(y’ + p(x)y = g(x)\) form of the equation through by \(\mu(x)\) yields:<br>
+\((1+x^2)^2 y’ + 4x(1+x^2)y = \Frac d{dx}\left[(1+x^2)^2 y\right] = \Frac1{1+x^2} \implies (1+x^2)^2y = \int\Frac1{1+x^2}dx = \tan^{-1}x + C \implies\)
 \[\boxed{y = \Frac{\tan^{-1}x + C}{(1+x^2)^2}}\]
 Check: \( (1+x^2)y’ = (1+x^2)\left[\Frac{(1+x^2)^2(1+x^2)^{-1} - 4x(1+x^2)(\tan^{-1}x + C)}{(1+x^2)^4}\right] = (1+x^2)^{-2}(1 - 4x(\tan^{-1}x + C)\)<br>
 \(4xy = 4x(\tan^{-1}x + C)(1+x^2)^{-2}\) so \((1+x^2)y’ + 4xy = (1+x^2)^{-2} \cancel{- 4x(\tan^{-1}x + C)(1+x^2)^{-2} + 4x(\tan^{-1}x + C)(1+x^2)^{-2}}~~\checkmark\)
@@ -238,7 +243,7 @@ Check: \( (1+x^2)y’ = (1+x^2)\left[\Frac{(1+x^2)^2(1+x^2)^{-1} - 4x(1+x^2)(\ta
 <p><a name="P2.1.16" class="goback" onclick="winhisback()"><strong>2.1.16</strong>)</a>
 \(xy’ + (x+1)y = x,~~~y(\log 2) = 1\)</p>
 
-<p><strong>Sln</strong>: At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(\x \ne 0\).&nbsp; Thence the given DE is equivalent to \( y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \( p(x) = 1 + \Frac1x, g(x) = 1\) 
+<p><strong>Sln</strong>: At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(x \ne 0\).&nbsp; Thence the given DE is equivalent to \( y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \( p(x) = 1 + \Frac1x, g(x) = 1\) 
 <br><br></p>
 
 <p><a name="P2.1.20" class="goback" onclick="winhisback()"><strong>2.1.20</strong>)</a>
