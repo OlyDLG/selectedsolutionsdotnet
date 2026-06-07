@@ -369,7 +369,11 @@ Check: \(xy’ = x\left(\Frac{xe^x-e^x}{x^2} - \Frac{x^2e^x-2xe^x}{x^4} - \Frac{
 <p><a name="P2.2.7" class="goback" onclick="winhisback()"><strong>2.2.7</strong>)</a>
 \(y’ + (\cot x)y = 2\csc x,~~~y(\pi/2) = 1\)</p>
 
-<p><strong>Sln</strong>: Both cot and csc are discontinuous at integer multiples of \(\pi\), and the interval bounded by such containing \(x=\Frac{\pi}2\) is \(\boxed{(0,\pi)}\), so that is the interval in which the solution is valid.&nbsp; To obtain the solution: $\mu(x) = \exp\left(\Int{}{}!!\right)
+<p><strong>Sln</strong>: Both cot and csc are discontinuous at integer multiples of \(\pi\), and the interval bounded by such containing \(x=\Frac{\pi}2\) is \(\boxed{(0,\pi)}\), so that is the interval in which the solution is valid.&nbsp; To obtain the solution: \(\mu(x) = \exp\left(\Int\cot xdx\right) = \exp(\log|\sin x|) = \sin x\) (\(|\sin x| = \sin x\) on the interval of validity) \(\implies (\sin x)y’ + (\cos x)y = \left[(\sin x)y\right]’ = 2 \implies (\sin x)y = 2x + C\); \(y(\pi/2) = 1 \implies \sin\left(\Frac{pi}2\right)(1) = 1 = 2\left(\Frac{\pi}2\right) + C \implies C = 1-\pi \implies \)
+\[\boxed{y = (2x + 1 - \pi)\csc x}\]
+Check: IC: \((2(\pi/2) + 1 - \pi)\csc(\pi/2) = 1~\chec\)<br> 
+DE: \(y’ = 2\csc x - (2x + 1 - \pi)\csc x\cot x,~(\cot x)y = (2x + 1 - \pi)\csc x \cot x\) so<br>
+\(y’ + (\cot x)y = 2\csc x\cancel{ - (2x + 1 - \pi)\csc x\cot x + (2x + 1 - \pi)\csc x \cot x}~\chec\)
 <br><br></p>
 
 <p><a name="P2.2.10" class="goback" onclick="winhisback()"><strong>2.2.10</strong>)</a>
