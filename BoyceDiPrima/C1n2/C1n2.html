@@ -94,7 +94,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\u}{\upsilon}
 \newcommand{\chec}{\checkmark}
 \newcommand{\Frac}{\displaystyle \frac}
-\newcommand{\Int}[2]
+\newcommand{\Int}{\large{\int}\small}
+\newcommand{\DefInt}[2]
 {
   \large\int_{\small{#1}}^{\small{#2}}\small
 }
@@ -228,9 +229,9 @@ State the order and linearity or nonlinearity of \(\Frac{d^3y}{dx^3} + x\Frac{dy
 <br><br></p>
 
 <p><a name="P1.1.14" class="goback" onclick="winhisback()"><strong>1.1.14</strong>)</a> 
-Verify that \(y = e^{x^2}\Int{0}{x}\) \(e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
+Verify that \(y = e^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
 
-<p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\Int{0}{x}\) \(e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\Int{0}{x}\) \(e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\Int{0}{x}\normalsize e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\Int{0}{x}\normalsize e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
+<p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\DefInt{0}{x}\normalsize e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\DefInt{0}{x}\normalsize e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
 <br><br></p>
 
 <p><a name="P1.1.18" class="goback" onclick="winhisback()"><strong>1.1.18</strong>)</a>
@@ -277,9 +278,9 @@ Use technology to sketch the direction field of \(y’ = -y(5-y)\) and thereby d
 <p><a name="P2.1.4" class="goback" onclick="winhisback()"><strong>2.1.4</strong>)</a>
 \(y’ + (1/x)y = 3\cos 2x,~~~~~x \gt 0\)</p>
 
-<p><strong>Sln</strong>: (I prefer to solve these using the method rather than the formula.)&nbsp; This is of the form \(y’ + p(x)y = g(x)\) with \(p(x) = 1/x, g(x) = 3\cos 2x\); thus the integrating factor \(\mu(x) = \exp\left(\Int{}{}\!\!\small\Frac1x dx\right) = e^{\log x} = x\).&nbsp; Multiplying through by \(x\) (which we can do without concern since it’s stipulated that \(x \gt 0\)), we get:<br></p>
+<p><strong>Sln</strong>: (I prefer to solve these using the method rather than the formula.)&nbsp; This is of the form \(y’ + p(x)y = g(x)\) with \(p(x) = 1/x, g(x) = 3\cos 2x\); thus the integrating factor \(\mu(x) = \exp\left(\Int\Frac1x dx\right) = e^{\log x} = x\).&nbsp; Multiplying through by \(x\) (which we can do without concern since it’s stipulated that \(x \gt 0\)), we get:<br></p>
 
-<p>\(xy’ + y = \Frac d{dx}(xy)\) \(= 3x\cos 2x \implies xy = \Int{}{}\) \(\!\!3x\cos 2x dx = \Frac34\left(2x\sin 2x + \cos 2x\right) + C \implies\) </p>
+<p>\(xy’ + y = \Frac d{dx}(xy)\) \(= 3x\cos 2x \implies xy = \Int3x\cos 2x dx = \Frac34\left(2x\sin 2x + \cos 2x\right) + C \implies\) </p>
 
 <p>\[\boxed{y = \Frac32\sin 2x + \Frac{3\cos 2x}{4x} + \Frac Cx}\]
 Check: \( y’ = \Frac32 (2)\cos 2x + \Frac{4x(-6\sin 2x) - 4(3\cos 2x)}{16x^2} - \Frac C{x^2} = 3\cos 2x - \Frac{3\sin 2x}{2x} - \Frac{3\cos 2x}{4x^2} - \Frac C{x^2}\),<br>
@@ -290,9 +291,9 @@ Check: \( y’ = \Frac32 (2)\cos 2x + \Frac{4x(-6\sin 2x) - 4(3\cos 2x)}{16x^2} 
 <p><a name="P2.1.8" class="goback" onclick="winhisback()"><strong>2.1.8</strong>)</a>
 \((1+x^2)y’ + 4xy = (1+x^2)^{-2}\)</p>
 
-<p><strong>Sln</strong>: Noting that \(1+x^2 \ne 0\) for all real \(x\), divide through by it to yield the equivalent DE \(y’ + 4x(1+x^2)^{-1}y = (1+x^2)^{-3} \equiv\) \(y’ + p(x)y = g(x)\) with \(p(x) = 4x(1+x^2)^{-1}, g(x) = (1+x^2)^{-3}\).&nbsp; Thus the integrating factor \(\mu(x) =\) \(\displaystyle \exp\left(\int\frac{4x}{1+x^2}dx\right) = \exp\left(2\int\frac{du}{u}\right) \text{ (letting } u = 1+x^2 \implies du = 2xdx\text{) } = e^{2\log u} = (1+x^2)^2\).&nbsp; Multiplying the \(y’ + p(x)y = g(x)\) form of the equation through by \(\mu(x)\) yields:<br>
+<p><strong>Sln</strong>: Noting that \(1+x^2 \ne 0\) for all real \(x\), divide through by it to yield the equivalent DE \(y’ + 4x(1+x^2)^{-1}y = (1+x^2)^{-3} \equiv\) \(y’ + p(x)y = g(x)\) with \(p(x) = 4x(1+x^2)^{-1}, g(x) = (1+x^2)^{-3}\).&nbsp; Thus the integrating factor \(\mu(x) = \exp\left(\Int\Frac{4x}{1+x^2}dx\right) = \exp\left(2\Int\Frac{du}{u}\right) \text{ (letting } u = 1+x^2 \implies du = 2xdx\text{) } = e^{2\log u} = (1+x^2)^2\).&nbsp; Multiplying the \(y’ + p(x)y = g(x)\) form of the equation through by \(\mu(x)\) yields:<br>
 \((1+x^2)^2 y’ + 4x(1+x^2)y = \Frac d{dx}\left[(1+x^2)^2 y\right] = \Frac1{1+x^2} \implies (1+x^2)^2y = \int\Frac1{1+x^2}dx = \tan^{-1}x + C \implies\)
-\[\boxed{y = \Frac{\tan^{-1}x + C}{(1+x^2)^2}}\]
+\[\boxed{y = \frac{\tan^{-1}x + C}{(1+x^2)^2}}\]
 Check: \( (1+x^2)y’ = (1+x^2)\left[\Frac{(1+x^2)^2(1+x^2)^{-1} - 4x(1+x^2)(\tan^{-1}x + C)}{(1+x^2)^4}\right] = (1+x^2)^{-2}(1 - 4x(\tan^{-1}x + C)\)<br>
 \(4xy = 4x(\tan^{-1}x + C)(1+x^2)^{-2}\) so \((1+x^2)y’ + 4xy = (1+x^2)^{-2} \cancel{- 4x(\tan^{-1}x + C)(1+x^2)^{-2} + 4x(\tan^{-1}x + C)(1+x^2)^{-2}}~~\chec\)
 <br><br></p>
@@ -302,7 +303,7 @@ Check: \( (1+x^2)y’ = (1+x^2)\left[\Frac{(1+x^2)^2(1+x^2)^{-1} - 4x(1+x^2)(\ta
 <p><a name="P2.1.12" class="goback" onclick="winhisback()"><strong>2.1.12</strong>)</a>
 \( y’ + \Frac2x y = \Frac{\cos x}{x^2},~~~y(\pi) = 0,~~~x \gt 0\)</p>
 
-<p><strong>Sln</strong>: \(p(x) = \Frac2x \implies \) \(\mu(x) = \exp\left(\Int{}{}\right.\) \(\!\!\left.\Frac2x dx\right) = x^2\); multiplying through, we obtain \(x^2y’ + 2xy = \Frac{d}{dx}\left(x^2y\right) = \cos x \implies x^2y = \sin x + C\); the IC requires \(\pi^2(0) = 0 = \sin\pi + C = C\) so the solution is
+<p><strong>Sln</strong>: \(p(x) = \Frac2x \implies \mu(x) = \exp\left(\small{\int\frac2x dx}\right) = x^2\); multiplying through, we obtain \(x^2y’ + 2xy = \Frac{d}{dx}\left(x^2y\right) = \cos x \implies x^2y = \sin x + C\); the IC requires \(\pi^2(0) = 0 = \sin\pi + C = C\) so the solution is
 \[\boxed{y = \frac{\sin x}{x^2}}\]
 IC check: \(\Frac{\sin\pi}{\pi^2} = 0~~\chec\)<br>
 DE check: \(y’ = \Frac{x^2\cos x - 2x\sin x}{x^4} = \Frac{\cos x}{x^2} - \Frac{2\sin x}{x^3}\)<br>
@@ -312,7 +313,7 @@ DE check: \(y’ = \Frac{x^2\cos x - 2x\sin x}{x^4} = \Frac{\cos x}{x^2} - \Frac
 <p><a name="P2.1.16" class="goback" onclick="winhisback()"><strong>2.1.16</strong>)</a>
 \(xy’ + (x+1)y = x,~~~y(\log 2) = 1\)</p>
 
-<p><strong>Sln</strong>: At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(x \ne 0\).&nbsp; Then the given DE is equivalent to \(y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \(g(x) = 1, p(x) = 1 + \Frac1x \implies\) \(\mu(x) = \displaystyle\exp\left[\int\left(1+\frac1x\right)dx\right] = e^{x+\log x} = xe^x\).&nbsp; Multiplying this through the \(y’ + p(x)y = g(x)\) form of the equation yields \(xe^x y’ + (x+1)e^x y = \Frac{d}{dx}(xe^x y) = xe^x \implies\) \(xe^x y = \Int{}{}\) \(\!\! xe^x dx = (x-1)e^x + C\).&nbsp; The IC requires \(\log 2 e^{\log 2}(1) = \cancel{2\log 2} = (\log 2 - 1)e^{\log 2} + C = \cancel{2\log 2} - 2 + C \implies C = 2\) so we have \(xe^x y = (x-1)e^x + 2 \implies\)
+<p><strong>Sln</strong>: At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(x \ne 0\).&nbsp; Then the given DE is equivalent to \(y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \(g(x) = 1, p(x) = 1 + \Frac1x \implies \mu(x) = \exp\left[\int\left(1+\frac1x\right)dx\right] = e^{x+\log x} = xe^x\).&nbsp; Multiplying this through the \(y’ + p(x)y = g(x)\) form of the equation yields \(xe^x y’ + (x+1)e^x y = \Frac{d}{dx}(xe^x y) = xe^x \implies\) \(xe^x y = \Int xe^x dx = (x-1)e^x + C\).&nbsp; The IC requires \(\log 2 e^{\log 2}(1) = \cancel{2\log 2} = (\log 2 - 1)e^{\log 2} + C = \cancel{2\log 2} - 2 + C \implies C = 2\) so we have \(xe^x y = (x-1)e^x + 2 \implies\)
 \[\boxed{y = 1 - \frac{1 - 2e^{-x}}x}\]
 IC check: \(1 - \Frac{1-2e^{-\log 2}}{\log 2} = 1 - \Frac0{\log 2} = 1~~\chec\)<br>
 DE check: \(xy’ = x\left(0 - \Frac{x(2e^{-x}) - (1)(1 - 2e^{-x})}{x^2}\right) = \Frac{1 - 2e^{-x} - 2xe^{-x}}{x}\)<br>
@@ -334,7 +335,7 @@ Use technology to graph the direction field of the given differential equation, 
 <p><a name="P2.1.21" class="goback" onclick="winhisback()"><strong>2.1.21</strong>)</a>
 Solve the IVP \(\Frac{dy}{dx} = \Frac1{e^y - x},~~~y(1)=0\); hint: consider \(x\) as a function of \(y\).</p>
 
-<p><strong>Sln</strong>: Following the hint, begin by rewriting the equation as \(\Frac{dx}{dy} = e^y - x \equiv x’ + p(y)x = g(y)\) with \(g(y) = e^y, p(y) = 1 \implies \mu(y) = \exp\left(\Int{}{}\!\! dy \right) = e^y\); multiplying through gives \(e^{2y} = e^y x’ + e^y x = \Frac{dx}{dy}(e^y x) \implies\) \(e^y x = \Int{}{}\!\! e^{2y}dy = \Frac12e^{2y} + C\); the IC gives \(e^0(1) = 1 = \Frac12e^{2(0)} + C \implies C = \Frac12\); thus \(e^{y} x = \Frac{e^{2y} + 1}2 \implies x = \Frac{e^y + e^{-y}}2 = \cosh y \implies \)
+<p><strong>Sln</strong>: Following the hint, begin by rewriting the equation as \(\Frac{dx}{dy} = e^y - x \equiv x’ + p(y)x = g(y)\) with \(g(y) = e^y, p(y) = 1 \implies \mu(y) = \exp\left(\Int dy \right) = e^y\); multiplying through gives \(e^{2y} = e^y x’ + e^y x = \Frac{dx}{dy}(e^y x) \implies\) \(e^y x = \Int e^{2y}dy = \Frac12e^{2y} + C\); the IC gives \(e^0(1) = 1 = \Frac12e^{2(0)} + C \implies C = \Frac12\); thus \(e^{y} x = \Frac{e^{2y} + 1}2 \implies x = \Frac{e^y + e^{-y}}2 = \cosh y \implies \)
 \[\boxed{y = \cosh^{-1}x,~~x \ge 1}\]
 IC check: \(\cosh^{-1}(1) = 0~~\chec\)<br>
 DE check: \(\Frac{d}{dy}\cosh y = \sinh y = \Frac12(e^y - e^{-y}) = \Frac12(2e^y - (e^y + e^{-y}) = e^y - \cosh y = e^y - x \implies \Frac{dy}{dx} = \Frac1{e^y - x}~~\chec\) 
@@ -357,7 +358,7 @@ Given \(y_1(x)\) is a solution of \(y’ + p(x)y = 0\) and \(y_2(x)\) is a solut
 <p><a name="P2.2.4" class="goback" onclick="winhisback()"><strong>2.2.4</strong>)</a>
 Find the general solution of \(xy’ + 2y = e^x,~~~x \gt 0\).</p>
 
-<p><strong>Sln</strong>: \(\mu(x) = \exp\left(\Int{}{}\!\!\Frac2x dx\right) = x^2 \implies x^2y’ + 2xy = (x^2y)’ = xe^x \implies x^2y = (x-1)e^x + C \implies\) \[\boxed{\frac{e^x}x - \frac{e^x}{x^2} + \frac C{x^2}}\].<br>
+<p><strong>Sln</strong>: \(\mu(x) = \exp\left(\Int \Frac2x dx\right) = x^2 \implies x^2y’ + 2xy = (x^2y)’ = xe^x \implies x^2y = (x-1)e^x + C \implies\) \[\boxed{\frac{e^x}x - \frac{e^x}{x^2} + \frac C{x^2}}\].<br>
 Check: \(xy’ = x\left(\Frac{xe^x-e^x}{x^2} - \Frac{x^2e^x-2xe^x}{x^4} - \Frac{2C}{x^3}\right) = e^x - 2\Frac{e^x}x + 2\Frac{e^x}{x^2} - 2\Frac C{x^2}\);<br>
 \(2y = 2\Frac{e^x}x - 2\Frac{e^x}{x^2} + 2\Frac C{x^2}\) so<br> 
 \(xy’ + 2y = e^x \cancel{- 2\Frac{e^x}x + 2\Frac{e^x}x} \cancel{+ 2\Frac{e^x}{x^2} - 2\Frac{e^x}{x^2}} \cancel{- 2\Frac C{x^2} + 2\Frac C{x^2}}~~\chec\).
@@ -368,7 +369,7 @@ Check: \(xy’ = x\left(\Frac{xe^x-e^x}{x^2} - \Frac{x^2e^x-2xe^x}{x^4} - \Frac{
 <p><a name="P2.2.7" class="goback" onclick="winhisback()"><strong>2.2.7</strong>)</a>
 \(y’ + (\cot x)y = 2\csc x,~~~y(\pi/2) = 1\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Both cot and csc are discontinuous at integer multiples of \(\pi\), and the interval bounded by such containing \(x=\Frac{\pi}2\) is \(\boxed{(0,\pi)}\), so that is the interval in which the solution is valid.&nbsp; To obtain the solution: $\mu(x) = \exp\left(\Int{}{}!!\right)
 <br><br></p>
 
 <p><a name="P2.2.10" class="goback" onclick="winhisback()"><strong>2.2.10</strong>)</a>
