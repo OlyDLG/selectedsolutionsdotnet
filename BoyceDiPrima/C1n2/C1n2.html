@@ -95,6 +95,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\box}{\boxed}
 \newcommand{\chec}{\checkmark}
 \newcommand{\Frac}{\displaystyle \frac}
+\newcommand{\Lim}{\displaystyle \lim}
 \newcommand{\Int}{\large{\int}\small}
 \newcommand{\DefInt}[2]
 {
@@ -401,10 +402,43 @@ The equation is not a differential equation at \(x = -2, 0\) so the interval of 
 <br><br></p>
 
 <p><a name="P2.2.16" class="goback" onclick="winhisback()"><strong>2.2.16</strong>)</a>
-Given \(y’ + (1/x)y = (\cos x)/x\): <strong>a</strong>) solve for \(x \gt 0\); <strong>b</strong>) determine \(\lim_{x\rightarrow 0} y(x)\) for various values of the integration constant; and <strong>c</strong>) graph several members of the family of integral curves.</p>
+Given \(y’ + (1/x)y = (\cos x)/x\):<br> 
+<strong>a</strong>) Solve for \(x \gt 0\).<br> </p>
 
-<p><strong>Sln</strong>:
-<br><br></p>
+<p><strong>Sln</strong>: In instances like this, it is worth checking to see if simply &quot;clearing the denominators&quot; results in the left hand side being exact: for \(x \gt 0, y’ + (1/x)y = (\cos x)/x \equiv xy’ + y = (xy)’ = \cos x \implies xy = \Int\!\cos x\:dx = \sin x + C \implies\) 
+\[\box{y = \frac{\sin x}x + \frac Cx}\]
+Check: \(y’ + (1/x)y = \Frac{\cancel{x}\cos x - \cancel{\sin x}}{x^{\cancel{2}}} - \cancel{\Frac C{x^2}} + \cancel{\Frac{\sin x}{x^2}} + \cancel{\Frac C{x^2}} = \Frac{\cos x}x~~\chec\)
+<br></p>
+
+<p><strong>b</strong>) Determine \(\Lim_{x\rightarrow 0} y(x)\) for various values of the integration constant.<br> </p>
+
+<p><strong>Sln</strong>: \(\Lim_{~~x \rightarrow 0^+} \left[\Frac{\sin x}x + \Frac Cx\right] = \) 
+\(\Lim_{~~x \rightarrow 0^+} \Frac{\sin x}x + \Lim_{~~x \rightarrow 0^+} \Frac Cx = 1 + \left\{
+\begin{array}{cc}
+0, &amp; C = 0 \\ 
+\infty, &amp; C \gt 0 \\
+-\infty, &amp; C \lt 0 
+\end{array}
+\right.\)<br>
+(The reader should know, or at least know how to compute, the required limits from elementary Calculus.)
+<br></p>
+
+<p><strong>c</strong>) Graph several members of the family of integral curves (i.e., solutions through specific &quot;initial&quot; conditions).</p>
+
+<p><strong>Sln</strong>: Using GeoGebra Graphing mode:</p>
+
+<ul>
+<li><p>Step 1: define (enter) <code>y’ = -y/x + (cos x)/x</code>; if necessary, &quot;undisplay&quot; the result (by clicking on the circle to the left of the definition).</p></li>
+<li><p>Step 2: define <code>S = SlopeField(y’)</code> (number of grid points&mdash;the optional second parameter&mdash;is unnecessary because we’re not going to display <code>S</code>); undisplay the result.</p></li>
+<li><p>Step 3: define a point, <code>P_ab = (&lt;a&gt;,&lt;b&gt;)</code>, through which you want to see the integral curve (<code>&lt;&gt;</code> around something means you supply an actual value).</p></li>
+<li><p>Step 4: define its integral curve <code>IC_ab = Locus(y’,P_ab)</code>.</p></li>
+<li><p>Step 5: Repeat Steps 3 and 4 as much as you like!</p></li>
+</ul>
+
+<p>Here’s the result for IC’s (solutions) through \((2.5,2.5), (1,0), (3,-3), (4,-5), (-4,-5), (-2,-2), (-1,0), \&amp;~(-3,4)\):<br>
+<br>
+<img src="./Graphs/BoyceDiPrimaC2S2P16.png">
+<br></p>
 
 <p><a name="P2.2.20" class="goback" onclick="winhisback()"><strong>2.2.20</strong>)</a>
 Given the IVP \((\log x)y’ + y = \cot x,~~y(2) = 3\), without solving it, in what interval is its solution certain to exist.</p>
