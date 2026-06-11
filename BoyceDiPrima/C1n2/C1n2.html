@@ -474,7 +474,22 @@ g(x) &amp; = &amp; \left\{\begin{array}{1 1}
 \end{eqnarray}
 \]</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: The solution is is going to be a piece&#8209;wise continuous function \(y = \left\{
+\begin{array}{ll}
+y_{\lt}(x), &amp; x \in [0,1] \\
+y_{\gt}(x), &amp; x \in (1,\infty) 
+\end{array}
+\right.\); since the initial condition \(x=0\) is in the interval \([0,1]\), it will determine the integration constant for \(y_{\lt}\); the integration constant for \(y_{\gt}\) will be determined so as to make the function continuous at \(x=1\).&nbsp; Since we’re able to fully determine \(y_{\lt}\) with the given information, we solve for that first; however, note that \(\mu(x) = \exp\left(\Int 2dx\right) = e^{2x}\) is the same for both equations: all that differs is the right hand side.</p>
+
+<p>On \([0,1]\) we have \(e^{2x}y_{\lt}’ + 2e^{2x}y_{\lt} = \left(e^{2x}y_{\lt}\right)’ = e^{2x} \implies e^{2x}y_{\lt} = \Frac12 e^{2x} + C_{\lt}\); \(y(0) = 0 \implies \left(e^{2(0)}\right)(0) = 0 = \Frac12 e^{2(0)} + C_{\lt} \implies C_{\lt} = -\Frac12\) so \(\box{y_{\lt} = \frac12\left(1 - e^{-2x}\right)}\). Check: IC: \(\Frac12\left(1-e^{-2(0)}\right) = 0~\chec\); DE: \(y_{\lt}’ + 2y_{\lt} = (-2)\Frac{-e^{-2x}}2 + 2\left(\Frac12\right )\left(1-e^{-2x}\right) = 1.~\chec\)<br><br>
+On \((1, \infty)\) we have \(\left(e^{2x}y_{\gt}\right)’ = 0 \implies e^{2x}y_{\gt} = C_{\gt} \implies y_{\gt} = C_{\gt}e^{-2x}\); we choose \(C_{\gt}\) by &quot;pretending&quot; that \(y_{\gt}\) is defined at \(x=1\) and equating it there to \(y_{\lt}\): \(y_{\gt}(1) = y_{\lt}(1) \implies C_{\gt}\left(e^{-2}\right) = \Frac12\left(1 - e^{-2}\right) \implies C_{\gt} = \Frac12\left(e^2-1\right) \implies \box{y_{\gt} = \frac12\left(e^2-1\right)e^{-2x}}\). Check: &quot;boundary&quot; condition: \(y_{\gt}(1) = \Frac12\left(e^2-1\right)e^{-2(1)} = \Frac12(1-e^{-2}~\chec\); DE: \(y’ + 2y = (-2)\Frac12\left(e^2-1\right)e^{-2x} + 2\Frac12\left(e^2-1\right)e^{-2x} = 0~\chec\). All together, we have: 
+\[\box{y(x) = \left\{
+\begin{array}{ll}
+\left(1 - e^{-2x}\right)/2, &amp; x \in [0,1] \\
+\left(e^{2}-1\right)/\left(2e^{2x}\right), &amp; x \in (1,\infty) 
+\end{array}
+\right.}
+\]
 <br></p>
 
 <p><strong>b</strong>) \[\begin{eqnarray}
@@ -487,8 +502,21 @@ p(x) &amp; = &amp; \left\{\begin{array}{1 1}
 \end{eqnarray}
 \]</p>
 
-<p><strong>Sln</strong>:
-<br><br></p>
+<p><strong>Sln</strong>: The approach is the same&mdash;we first solve completely over the domain which contains the initial condition, then we solve over the rest of the domain, choosing the integration constant for that solution so that the function is continuous at \(x=1\)&mdash;but in this instance each subdomain requires a different integrating factor.</p>
+
+<p>On \([0,1]\): \(\mu_{\lt}(x) = \exp\left(\Int 2dx\right) = e^{2x} \implies \left(e^{2x}y_{\lt}\right)’ = 0 \implies y_{\lt} = C_{\lt}e^{-2x}\) and the IC requires that \(1 = C_{\lt}e^{-2(0)} \implies C_{\lt} = 1 \implies \box{y_{\lt} = e^{-2x}}\). Check: IC: \(e^{-2(0)} = 1~\chec\); DE: \(y_{\lt}’ + 2y_{\lt} = -2e^{-2x} + 2e^{-2x} = 0~\chec\).</p>
+
+<p>On \((1,\infty)\): \(\mu_{\gt}(x) = \exp\left(\Int 1dx\right) = e^x \implies \left(e^x y_{\gt}\right)’ = 0 \implies y_{\gt} = C_{\gt}e^{-x}\); continuity at \(x=1\) requires that \(C_{\gt}e^{-1} = e^{-2(1)} \implies C_{\gt} = e^{-1} \implies \box{y_{\gt} = e^{-x-1}}\). Check: continuity condition: \(e^{-1-1} = e^{-2(1)}~\chec\); DE: \(y_{\gt}’ + y_{\gt} = -e^{-x-1} + e^{-x-1} = 0~\chec\). All together we have:</p>
+
+<p>\[\box{y(x) = \left\{
+\begin{array}{ll}
+e^{-2x}, &amp; x \in [0,1] \\
+e^{-x-1}, &amp; x \in (1,\infty) 
+\end{array}
+\right.}
+\]</p>
+
+<p><br><br></p>
 
 <p><a name="P2.2.27b" class="goback" onclick="winhisback()"><strong>2.2.27b</strong>)</a>
 Show that for \(n \ne 0, 1\), the substitution \(\u = y^{1-n}\) reduces \(y’ + p(x)y = q(x)y^n\) to a linear equation.</p>
