@@ -537,9 +537,12 @@ Solve \(dy/dt = (\Gamma\cos t + T)y - y^3\), where \(\Gamma\) and \(T\) are cons
 <p>Problems 2.3.2 and 2.3.6: Solve the given DE.<br></p>
 
 <p><a name="P2.3.2" class="goback" onclick="winhisback()"><strong>2.3.2</strong>)</a>
-\(y’ = x^2 / \left[y(1+x^3)\right]\)</p>
+\(y’ = \Frac{x^2}{y(1+x^3)}\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: I prefer the formalism of manipulating the equation to look like 
+\(M(x)dx + N(y)dy = 0 \implies \Int M(x)dx + \Int N(y)dy = C\);
+this alternate formalism is implied in the text, and the reader should recognize that it’s &quot;six one way, half&#8209;a&#8209;dozen the other.&quot;&nbsp; Thus this DE is equivalent to \(\Frac{x^2}{1+x^3}dx - ydy = 0 \implies\) \(\displaystyle \int \frac{x^2}{1+x^3}dx - \int ydy\), which, letting \(u = 1+x^3\), \(= \Frac13\int \frac{du}u - \frac12y^2 = \frac13\log|1+x^3| - \frac12 y^2 = C’ \implies\)
+\[\box{2\log|1+x^3| - 3y^2 = C}\]<br>
 <br><br></p>
 
 <p><a name="P2.3.6" class="goback" onclick="winhisback()"><strong>2.3.6</strong>)</a>
