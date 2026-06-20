@@ -550,7 +550,11 @@ Check: Rewriting \(|1+x^3| = \sqrt{\left(1+x^3\right)^2} \implies 2\log|1+x^3| =
 <p><a name="P2.3.6" class="goback" onclick="winhisback()"><strong>2.3.6</strong>)</a>
 \(xy’ = (1 - y^2)^{1/2}\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: First note that, limiting consideration to solutions over \(\mathbb{R}\), we immediately have the condition that \(|y| \le 1\).&nbsp; Now, \(y = \pm 1 \implies x = 0\) or \(y’ = 0 \implies y = C = \pm1\) (regardless of the value of \(x\)), so the constant functions \(\box{y = 1\text{ and } y = -1}\) are two solutions (the rudimentary check is left to the reader).<br><br></p>
+
+<p>Next, excluding \(x = 0\) and \(y = \pm1\), the DE is equivalent to \(\Frac{dy}{\sqrt{1-y^2}} - \Frac{dx}x = 0 \implies \sin^{-1}y - \log|x| = C \implies\)
+\[\box{y = \sin(\log|x| + C), x \ne 0, |y| \lt 1.}\]
+Check: \(y’ = \cos(\log|x| + C)\Frac d{dx}\left(\log\sqrt(x^2)\right) = \sqrt{1-y^2}(1/\cancel{2})(\cancel{2}\cancel{x})/(x^{\cancel{2}1}) \implies xy’ = \sqrt{1-y^2}~~\chec\).
 <br><br></p>
 
 <p>Problems 2.3.10 and 2.3.14: Solve the given IVP in explicit form and determine (at least approximately) the interval in which it is well&#8209;defined.<br></p>
