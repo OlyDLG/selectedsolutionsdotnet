@@ -570,7 +570,9 @@ Check: IC: \(r(1) = \Frac2{1-\log(1^2)} = \Frac21~\chec\); as noted, \(r\) is ne
 <p><a name="P2.3.14" class="goback" onclick="winhisback()"><strong>2.3.14</strong>)</a>
 \(y’ = x(x^2 + 1)/(4y^3),~~y(0) = -1/\sqrt2\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: We begin by noting that \(y\) can’t equal \(0\).&nbsp; Otherwise, the DE is equivalent to \((x^3 + x)dx - 4y^3dy = 0 \implies x^4/4 + x^2/2 - y^4 = C\); the initial condition requires \(0^4/4 + 0^2/2 - (-1/\sqrt2)^4 = -1/4 = C \implies y^4 = x^4/4 + x^2/2 + 1/4\) which implies, formally, \(y = \pm\sqrt[4]{x^4/4 + x^2/2 + 1/4}\); however, the initial condition requires that we choose the negative sign; since every term under the radical is strictly \(\ge 0\), \(y\) is well&#8209;defined for all real \(x\); moreover, since \(x^4/4 + x^2/2 + 1/4 \ge 1/4\) (why?), \(y \ne 0\) for all real \(x\); therefore, the solution is:
+\[\box{y = -\sqrt[4]{x^4/4 + x^2/2 + 1/4}, x \in \mathbb{R}}\]
+Check: IC: \(-\sqrt[4]{0^4/4 + 0^2/2 + 1/4} = -\sqrt[4]{1/4} = -1/\sqrt2~\chec\); DE: \(y’ = -\Frac14(x^4/4 + x^2/2 + 1/4)^{-3/4}(x^3 + x) = x(x^2 + 1)/(4y^3)~\chec\).
 <br><br></p>
 
 <p><a name="P2.3.18" class="goback" onclick="winhisback()"><strong>2.3.18</strong>)</a>
