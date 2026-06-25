@@ -1,0 +1,216 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>C1</title><style>/* 
+Name: GeekPark article style for Mou app
+Author: hzlzh(hzlzh.dev@gmail.com)
+URL: https://github.com/GeekPark/Doc/blob/master/GeekPark/GeekPark-Style-for-Mou.css
+*/
+body{ font-family:"Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti; font-size:14px; line-height:1.6; color:#666666; padding-top:10px; padding-bottom:10px; background-color:white; padding:30px; }
+body > *:first-child{ margin-top:0 !important; }
+body > *:last-child{ margin-bottom:0 !important; }
+a{ color:#109EFF; text-decoration:none; }
+a:hover{ border-bottom:1px dotted #109EFF; }
+a:visited, a:active{ color:#109EFF; }
+a.absent{ color:#cc0000; }
+a.anchor{ display:block; padding-left:30px; margin-left:-30px; cursor:pointer; position:absolute; top:0; left:0; bottom:0; }
+p a{ margin:0 2px; }
+h1, h2, h3, h4, h5, h6{ color:#333333; margin:20px 0 10px; padding:0; font-weight:bold; -webkit-font-smoothing:antialiased; cursor:text; position:relative; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor{ background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center; text-decoration:none; }
+h1 tt, h1 code{ font-size:inherit; }
+h2 tt, h2 code{ font-size:inherit; }
+h3 tt, h3 code{ font-size:inherit; }
+h4 tt, h4 code{ font-size:inherit; }
+h5 tt, h5 code{ font-size:inherit; }
+h6 tt, h6 code{ font-size:inherit; }
+h1{ font-size:18px; font-weight:bold; line-height:22px; margin-bottom:5px; color:#333; }
+h2{ font-size:16px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h3{ font-size:14px; }
+h4{ color:#666; font-size:14px; font-weight:bolder; line-height:18px; margin:20px 0; }
+h5{ font-size:14px; }
+h6{ color:#777777; font-size:14px; }
+p, blockquote, ul, ol, dl, li, table, pre{ margin:15px 0; line-height:150%; }
+hr{ background:transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0; border:0 none; color:#cccccc; height:4px; padding:0; }
+body > h2:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child{ margin-top:0; padding-top:0; }
+body > h1:first-child + h2{ margin-top:0; padding-top:0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child{ margin-top:0; padding-top:0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6{ margin-top:0; padding-top:0; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p{ margin-top:0; }
+li p.first{ display:inline-block; }
+li{ font-size:14px; line-height:150%; margin-bottom:5px; margin-top:0; }
+ul, ol{ padding-left:30px; }
+ul :first-child, ol :first-child{ margin-top:0; }
+dl{ padding:0; }
+dl dt{ font-size:14px; font-weight:bold; font-style:italic; padding:0; margin:15px 0 5px; }
+dl dt:first-child{ padding:0; }
+dl dt > :first-child{ margin-top:0; }
+dl dt > :last-child{ margin-bottom:0; }
+dl dd{ margin:0 0 15px; padding:0 15px; }
+dl dd > :first-child{ margin-top:0; }
+dl dd > :last-child{ margin-bottom:0; }
+blockquote{ background:url("data:image/png;base64,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") no-repeat scroll left 11px transparent; color:#999999; margin-left:28px; min-height:30px; padding:17px 40px 0; }
+blockquote p{ color:#999999 !important; margin-bottom:25px !important; }
+blockquote > :first-child{ margin-top:0; }
+blockquote > :last-child{ margin-bottom:0; }
+table{ padding:0; border-collapse:collapse; }
+table tr{ border-top:1px solid #cccccc; background-color:white; margin:0; padding:0; }
+table tr:nth-child(2n){ background-color:#f8f8f8; }
+table tr th{ font-weight:bold; border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr td{ border:1px solid #cccccc; text-align:left; margin:0; padding:6px 13px; }
+table tr th :first-child, table tr td :first-child{ margin-top:0; }
+table tr th :last-child, table tr td :last-child{ margin-bottom:0; }
+img{ border:1px solid #E1E1E1; margin:0 auto 10px; display:block; max-width:512px; padding:5px; }
+span.frame{ display:block; overflow:hidden; }
+span.frame > span{ border:1px solid #dddddd; display:block; float:left; overflow:hidden; margin:13px 0 0; padding:7px; width:auto; }
+span.frame span img{ display:block; float:left; }
+span.frame span span{ clear:both; color:#333333; display:block; padding:5px 0 0; }
+span.align-center{ display:block; overflow:hidden; clear:both; }
+span.align-center > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:center; }
+span.align-center span img{ margin:0 auto; text-align:center; }
+span.align-right{ display:block; overflow:hidden; clear:both; }
+span.align-right > span{ display:block; overflow:hidden; margin:13px 0 0; text-align:right; }
+span.align-right span img{ margin:0; text-align:right; }
+span.float-left{ display:block; margin-right:13px; overflow:hidden; float:left; }
+span.float-left span{ margin:13px 0 0; }
+span.float-right{ display:block; margin-left:13px; overflow:hidden; float:right; }
+span.float-right > span{ display:block; overflow:hidden; margin:13px auto 0; text-align:right; }
+code, tt{ margin:0 2px; padding:0 5px; white-space:nowrap; border:1px solid #eaeaea; background-color:#f8f8f8; border-radius:3px; }
+pre code{ margin:0; padding:0; white-space:pre; border:none; background:transparent; }
+.highlight pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre{ background-color:#f8f8f8; border:1px solid #cccccc; font-size:13px; line-height:19px; overflow:auto; padding:6px 10px; border-radius:3px; }
+pre code, pre tt{ background-color:transparent; border:none; }
+@media screen and (min-width: 914px){
+    body{ width:854px; margin:0 auto; }
+}</style>
+<style type="text/css">
+</style>
+</head>
+<body><script>
+  function winhisback() {window.history.back();}
+</script>
+
+<p><link rel="stylesheet" href="../../Styles.css">
+<title>Solutions of Selected Problems from Boyce/DiPrima <q>Elem. DEs &amp; BVPs 5th Ed. Chapter 1</q></title>
+\(\require{cancel}
+\newcommand{\G}{\Gamma}
+\newcommand{\t}{\theta}
+\newcommand{\u}{\upsilon}
+\newcommand{\box}{\boxed}
+\newcommand{\chec}{\checkmark}
+\newcommand{\Frac}{\displaystyle \frac}
+\newcommand{\Lim}{\displaystyle \lim}
+\newcommand{\Int}{\large{\int}\small}
+\newcommand{\DefInt}[2]
+{
+  \large\int_{\small{#1}}^{\small{#2}}\small
+}
+\)</p>
+
+<h2><center>Selected Problem Solutions</h2>
+
+<p><center>from</center></p>
+
+<h3><center>Boyce, W. E. &amp; R. C. DiPrima, 1992. <i>Elementary Differential Equations and</i><br><i>Boundary Value Problems, Fifth Edition</i>. John Wiley &amp; Sons, New York.</h3>
+
+<h3><center>Chapter 1, Section 1: Introduction, Classification of Differential Equations</h3>
+
+<h3><center>&copy; 2026 by</h3>
+
+<h3><center><a href="https://www.linkedin.com/in/olydlg">David Lawrence Goldsmith</a></h3>
+
+<p><center>for</center></p>
+
+<h2><center><a href="https://olydlg.github.io/selectedsolutionsdotnet/">SelectedSolutionsDotNet</a></h2>
+
+<p><i>Notes: These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
+
+<p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; \(\blacksquare\) inidicates the end of a proof; unlike the text, but consistent with most mathematical usage after &quot;Algebra 2,&quot; we use \(\log\) to denote the &quot;natural&quot; logarithm, \(\log_e\).</p>
+
+<h3>Contents</h3>
+
+<div class="toc">
+<table>
+  <tr>
+    <th >Problem #: </th>
+    <td><a href="#P1.1.6">6</a></td>
+    <td><a href="#P1.1.14">14</a></td>
+    <td><a href="#P1.1.18">18</a></td>
+    <td><a href="#P1.1.20">20</a></td>
+    <td><a href="#P1.1.26">26</a></td>
+    <td><a href="#P1.1.32">32</a></td>
+    <td><a href="#P1.1.40">40</a></td>
+  </tr>
+</table>
+</div>
+
+<p><a name="P1.1.6" class="goback" onclick="winhisback()"><strong>6</strong>)</a>
+State the order and linearity or nonlinearity of \(\Frac{d^3y}{dx^3} + x\Frac{dy}{dx} + (\cos^2 x)y = x^3\).</p>
+
+<p><strong>Sln</strong>: The highest&#8209;order derivative occurring in the equation is three, so this equation is \(\box{3^{\text{rd}}\text{ order}}.\)&nbsp; It is \(\box{\text{linear}}\) because it is of the form \(a_0(x)y^{(n)} + a_1(x)y^{(n-1)} + ... + a_n(x)y = g(x)\).
+<br><br></p>
+
+<p><a name="P1.1.14" class="goback" onclick="winhisback()"><strong>14</strong>)</a> 
+Verify that \(y = e^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
+
+<p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\DefInt{0}{x}\normalsize e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\DefInt{0}{x}\normalsize e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
+<br><br></p>
+
+<p><a name="P1.1.18" class="goback" onclick="winhisback()"><strong>18</strong>)</a>
+Which values of \(r\) make \(y = e^{rx}\) a solution of \(y’’’ - 3y’’ + 2y’ = 0\)?</p>
+
+<p><strong>Sln</strong>: First note that for \(y=f(x)\) to be a solution of a differential equation, it must make the equation a true statement <i>for all</i> \(x\) over which the DE is supposed to hold.&nbsp; Now, \(y = e^{rx} \implies y’ = re^{rx}, y’’ = r^2e^{rx}, y’’’ = r^3e^{rx}\) so \(0 = y’’’ - 3y’’ + 2y’ = r^3e^{rx} - 3r^2e^{rx} + 2re^{rx} = (r^3 - 3r^2 + 2r)e^{rx} \implies r^3 - 3r^2 + 2r = 0\) because \(e^{rx} \ne 0\) for all \(x\) and \(r\).&nbsp; \(0 = r^3 - 3r^2 + 2r = r(r-1)(r-2) \implies \box{r = 0, 1, 2}\) as the values of \(r\) which make \(y = e^{rx}\) a solution of \(y’’’ - 3y’’ + 2y’ = 0\).&nbsp; (The reader should check that \(y = e^{0x}=1, y = e^{1x} = e^x,\) and \(y = e^{2x}\) all do indeed make \(y’’’ - 3y’’ + 2y’ = 0\) a true statement.)
+<br><br></p>
+
+<p><a name="P1.1.20" class="goback" onclick="winhisback()"><strong>20</strong>)</a>
+Which values of \(r\) make \(y = x^r, x \gt 0\) a solution of \(x^2y’’ - 4xy’ + 4y = 0\)?</p>
+
+<p><strong>Sln</strong>: \(y = x^r, x \gt 0 \implies y’ = rx^{r-1}, y’’ = r(r-1)x^{r-2} \implies x^2y’’ - 4xy’ + 4y = r(r-1)x^{r-2+2} - 4rx^{r-1+1} + 4x^r = (r^2 - r - 4r + 4)x^r = 0\) \(\implies r^2 - 5r + 4 = 0\) since \(x^r \ne 0\) for all \(x \gt 0\).&nbsp; Now, \(0 = r^2 - 5r + 4 = (r-1)(r-4) \implies \box{r = 1, 4}\) as the values of \(r\) that make \(x^r\) a solution of \(x^2y’’ - 4xy’ + 4y = 0\) for all \(x \gt 0\).<br>
+Check: \(y = x^1 \implies y’ = 1, y’’ = 0 \implies x^2y’’ - 4xy’ + 4y = x^2(0) - 4x(1) + 4x \overset{\chec}{=} 0\); \(y = x^4 \implies y’ = 4x^3, y’’ = 12x^2 \implies x^2y’’ - 4xy’ + 4y = x^2(12x^2) - 4x(4x^3) + 4(x^4) = (12 - 16 + 4)x^4 \overset{\chec}{=} 0\).
+<br><br></p>
+
+<p><a name="P1.1.26" class="goback" onclick="winhisback()"><strong>26</strong>)</a>
+State the order and linearity or nonlinearity of \(u_t + uu_x = 1 + u_{xx}\).</p>
+
+<p><strong>Sln</strong>: (Note: this PDE is the one (spatial) dimension version of the conservation of momentum portion of the <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations">Navier-Stokes equations</a>, which give a &quot;field description&quot; of the motion of (in this version) an incompressible, viscous fluid.)<br>
+The highest&#8209;order derivative occurring in the equation is two (\(u_{xx}\)), so this is a \(\box{\text{second order}}\) equation. (However, for at least a couple of reasons you’ll learn later, it is useful to distinguish the order of a PDE with respect to each of its independent variables, so we will learn to characterize this equation as second&#8209;order in \(x\), first&#8209;order in \(t\).)&nbsp; It is \(\box{\text{nonlinear}}\) because of the presence of the \(uu_x\) term.
+<br><br></p>
+
+<p><a name="P1.1.32" class="goback" onclick="winhisback()"><strong>32</strong>)</a>
+Given: \(f, g\) are twice&#8209;differentiable functions; Verify: \(u(x,t) = f(x-at) + g(x+at)\) is a solution of \(a^2u_{xx} = u_{tt}\). </p>
+
+<p><strong>Sln</strong>: By the <a href="https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case">Chain Rule for multivariable functions</a>, \( u_x = f’(x-at)\Frac{\partial}{\partial x}(x-at) + g’(x+at)\Frac{\partial}{\partial x}(x+at) = f’(x-at)(1) + g’(x+at)(1) = f’(x-at) + g’(x+at)\) and thus, similarly, \(u_{xx} = f’’(x-at) + g’’(x+at)\). Also: \( u_t = f’(x-at)\Frac{\partial}{\partial t}(x-at) + g’(x+at)\Frac{\partial}{\partial t}(x+at) = f’(x-at)(-a) + g’(x+at)(a) = -af’(x-at) + ag’(x+at) \implies\) \(u_{tt} = (-a)^2f’’(x-at) + a^2g’’(x+at) = a^2(f’’(x-at) + g’’(x+at)) = a^2u_{xx}\) as was to be shown.&nbsp; (Note: this is the <a href="https://en.wikipedia.org/wiki/Wave_equation#Algebraic_approach">d’Alembert solution</a> of the one (spatial) dimension wave equation&mdash;the reader should read about what the form of this solution implies about this solution’s physical nature.)
+<br><br></p>
+
+<p><a name="P1.1.40" class="goback" onclick="winhisback()"><strong>40</strong>)</a>
+Use technology to sketch the direction field of \(y’ = -y(5-y)\) and thereby determine the behavior of \(y\) as \(x \rightarrow \infty\).</p>
+
+<p><strong>Sln</strong>: When this edition of the text was published, the options available to students to do this exercise were, compared to when I write this in 2026, MUCH more primitive, less accessible, and required considerably more programming work and creativity on the part of the student; presently, however, there exist a plurality of options which render this problem little more than a graphing calculator exercise!&nbsp; My personal favorite for most needs is <a href="www.geogebra.org">GeoGebra</a>, which is free, very powerful, has various specialized versions (e.g., a dedicated 3-D graphing version), and is available both as stand&#8209;alone apps for handheld devices and as a Web app, i.e., runs inside a Web browser such as Google Chrome.<br></p>
+
+<p>In GeoGebra, one can do this exercise with one command: <code>SlopeField(f(x,y))</code> (with additional optional inputs), where \(f(x,y)\) is whatever formula \(y’\) equals; and the command to generate a solution through a specific point&mdash;useful to better understand what the direction field is showing you&mdash;is <code>Locus(&lt;SlopeField&gt;, &lt;Point&gt;)</code>, where <code>&lt;SlopeField&gt;</code> is the output of the <code>SlopeField</code> command, and <code>Point</code> is a point object, which may be provided as an ordered pair (as well as in other ways).&nbsp; GeoGebra supports &quot;naming&quot; objects (i.e., assigning them to &quot;variables,&quot; i.e., properly&#8209;formatted character strings), so if we begin by entering <code>F=SlopeField(-y(5-y))</code> (no spaces), we can subsequently use <code>F</code> as the first argument to repeated uses of <code>Locus</code>: <code>Locus(F, (0,0))</code> plots the solution of \(y’=-y(5-y)\) passing through the point \((0,0)\), <code>Locus(F, (2.5,2.5))</code> plots its solution passing through \((2.5,2.5)\), and <code>Locus(F,(a,b))</code> plots its solution passing through \((a,b)\).&nbsp; (Indeed, if you’re doing this interactively, you could equate <code>a</code> and <code>b</code> to numerical values, issue the command as <code>Locus(F,(a,b))</code>, and then generate solution curves to your heart’s content simply by editing the numerical values assigned to <code>a</code> and <code>b</code>.) Below I’ve provided a screenshot of a GeoGebra&#8209;rendered solution, including the commands used (the various IntXLabel variables, assigned to <code>Text(&lt;string&gt;, &lt;Point&gt;)</code> commands, merely place labels in specific locations&mdash;one of the few failings of GeoGebra is limited control over custom placement of auto&#8209;generated labels); however, many desirable features of the graph, e.g., color and varying line&#8209;type, and arrows at the ends of the direction field segments, were added using <code>Settings</code> customizations, available by clicking on the three vertical dots at the right end of the command input cell&mdash;the reader is encouraged to explore these <code>Settings</code>. </p>
+
+<div class="panel"><img src="./Graphs/BoyceDiPrimaC1S1P40.png"></div>
+
+<p><br><br></p>
+
+<h3>Please Donate:</h3>
+
+<div class="toc">
+<table>
+  <tr>
+    <td> <b>Venmo: @David-Goldsmith-13</b> </td>
+    <td>
+      <form action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"><input name="cmd"
+            value="_xclick" type="hidden"> <input name="business"
+            value="dgoldsmith_89@alumni.brown.edu" type="hidden"> <input
+            name="item_name" value="SelectedSolutions Donation"
+            type="hidden"> <input name="cn" value="Special Instructions
+            (optional" type="hidden"> <input
+            src="https://www.paypal.com/images/x-click-but04.gif"
+            name="submit" alt="Make payments with PayPal - it's fast,
+            free and secure!" align="middle" border="0" type="image"></form>
+    </td>
+  </tr>
+</table>
+</div>
+<script type='text/javascript' src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_HTMLorMML'></script>
+<script type='text/javascript'>function reloadMathJax(){MathJax.Hub.Queue(["Typeset",MathJax.Hub]);}</script></body>
+</html>
