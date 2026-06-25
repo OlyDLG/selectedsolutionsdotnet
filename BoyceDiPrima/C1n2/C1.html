@@ -141,45 +141,45 @@ pre code, pre tt{ background-color:transparent; border:none; }
 </table>
 </div>
 
-<p><a name="P1.1.6" class="goback" onclick="winhisback()"><strong>6</strong>)</a>
+<p><a name="P1.1.6" class="goback" onclick="winhisback()"><strong>1.1.6</strong>)</a>
 State the order and linearity or nonlinearity of \(\Frac{d^3y}{dx^3} + x\Frac{dy}{dx} + (\cos^2 x)y = x^3\).</p>
 
 <p><strong>Sln</strong>: The highest&#8209;order derivative occurring in the equation is three, so this equation is \(\box{3^{\text{rd}}\text{ order}}.\)&nbsp; It is \(\box{\text{linear}}\) because it is of the form \(a_0(x)y^{(n)} + a_1(x)y^{(n-1)} + ... + a_n(x)y = g(x)\).
 <br><br></p>
 
-<p><a name="P1.1.14" class="goback" onclick="winhisback()"><strong>14</strong>)</a> 
+<p><a name="P1.1.14" class="goback" onclick="winhisback()"><strong>1.1.14</strong>)</a> 
 Verify that \(y = e^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + e^{x^2}\) is a solution of \(y’ - 2xy = 1\).</p>
 
 <p><strong>Sln</strong>: \(y’ = 2xe^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + e^{x^2}(e^{-x^2}) + 2xe^{x^2} = 2xe^{x^2}\DefInt{0}{x}\) \(e^{-t^2} dt + 1 + 2xe^{x^2}\) so \(y’ - 2xy = \color{red}{\cancel{2xe^{x^2}\DefInt{0}{x}\normalsize e^{-t^2} dt}} + 1 + \color{blue}{\cancel{2xe^{x^2}}} - \color{red}{\cancel{2xe^{x^2}\DefInt{0}{x}\normalsize e^{-t^2} dt}} - \color{blue}{\cancel{2xe^{x^2}}} = 1.~~~\blacksquare\)
 <br><br></p>
 
-<p><a name="P1.1.18" class="goback" onclick="winhisback()"><strong>18</strong>)</a>
+<p><a name="P1.1.18" class="goback" onclick="winhisback()"><strong>1.1.18</strong>)</a>
 Which values of \(r\) make \(y = e^{rx}\) a solution of \(y’’’ - 3y’’ + 2y’ = 0\)?</p>
 
 <p><strong>Sln</strong>: First note that for \(y=f(x)\) to be a solution of a differential equation, it must make the equation a true statement <i>for all</i> \(x\) over which the DE is supposed to hold.&nbsp; Now, \(y = e^{rx} \implies y’ = re^{rx}, y’’ = r^2e^{rx}, y’’’ = r^3e^{rx}\) so \(0 = y’’’ - 3y’’ + 2y’ = r^3e^{rx} - 3r^2e^{rx} + 2re^{rx} = (r^3 - 3r^2 + 2r)e^{rx} \implies r^3 - 3r^2 + 2r = 0\) because \(e^{rx} \ne 0\) for all \(x\) and \(r\).&nbsp; \(0 = r^3 - 3r^2 + 2r = r(r-1)(r-2) \implies \box{r = 0, 1, 2}\) as the values of \(r\) which make \(y = e^{rx}\) a solution of \(y’’’ - 3y’’ + 2y’ = 0\).&nbsp; (The reader should check that \(y = e^{0x}=1, y = e^{1x} = e^x,\) and \(y = e^{2x}\) all do indeed make \(y’’’ - 3y’’ + 2y’ = 0\) a true statement.)
 <br><br></p>
 
-<p><a name="P1.1.20" class="goback" onclick="winhisback()"><strong>20</strong>)</a>
+<p><a name="P1.1.20" class="goback" onclick="winhisback()"><strong>1.1.20</strong>)</a>
 Which values of \(r\) make \(y = x^r, x \gt 0\) a solution of \(x^2y’’ - 4xy’ + 4y = 0\)?</p>
 
 <p><strong>Sln</strong>: \(y = x^r, x \gt 0 \implies y’ = rx^{r-1}, y’’ = r(r-1)x^{r-2} \implies x^2y’’ - 4xy’ + 4y = r(r-1)x^{r-2+2} - 4rx^{r-1+1} + 4x^r = (r^2 - r - 4r + 4)x^r = 0\) \(\implies r^2 - 5r + 4 = 0\) since \(x^r \ne 0\) for all \(x \gt 0\).&nbsp; Now, \(0 = r^2 - 5r + 4 = (r-1)(r-4) \implies \box{r = 1, 4}\) as the values of \(r\) that make \(x^r\) a solution of \(x^2y’’ - 4xy’ + 4y = 0\) for all \(x \gt 0\).<br>
 Check: \(y = x^1 \implies y’ = 1, y’’ = 0 \implies x^2y’’ - 4xy’ + 4y = x^2(0) - 4x(1) + 4x \overset{\chec}{=} 0\); \(y = x^4 \implies y’ = 4x^3, y’’ = 12x^2 \implies x^2y’’ - 4xy’ + 4y = x^2(12x^2) - 4x(4x^3) + 4(x^4) = (12 - 16 + 4)x^4 \overset{\chec}{=} 0\).
 <br><br></p>
 
-<p><a name="P1.1.26" class="goback" onclick="winhisback()"><strong>26</strong>)</a>
+<p><a name="P1.1.26" class="goback" onclick="winhisback()"><strong>1.1.26</strong>)</a>
 State the order and linearity or nonlinearity of \(u_t + uu_x = 1 + u_{xx}\).</p>
 
 <p><strong>Sln</strong>: (Note: this PDE is the one (spatial) dimension version of the conservation of momentum portion of the <a href="https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations">Navier-Stokes equations</a>, which give a &quot;field description&quot; of the motion of (in this version) an incompressible, viscous fluid.)<br>
 The highest&#8209;order derivative occurring in the equation is two (\(u_{xx}\)), so this is a \(\box{\text{second order}}\) equation. (However, for at least a couple of reasons you’ll learn later, it is useful to distinguish the order of a PDE with respect to each of its independent variables, so we will learn to characterize this equation as second&#8209;order in \(x\), first&#8209;order in \(t\).)&nbsp; It is \(\box{\text{nonlinear}}\) because of the presence of the \(uu_x\) term.
 <br><br></p>
 
-<p><a name="P1.1.32" class="goback" onclick="winhisback()"><strong>32</strong>)</a>
+<p><a name="P1.1.32" class="goback" onclick="winhisback()"><strong>1.1.32</strong>)</a>
 Given: \(f, g\) are twice&#8209;differentiable functions; Verify: \(u(x,t) = f(x-at) + g(x+at)\) is a solution of \(a^2u_{xx} = u_{tt}\). </p>
 
 <p><strong>Sln</strong>: By the <a href="https://en.wikipedia.org/wiki/Chain_rule#Multivariable_case">Chain Rule for multivariable functions</a>, \( u_x = f’(x-at)\Frac{\partial}{\partial x}(x-at) + g’(x+at)\Frac{\partial}{\partial x}(x+at) = f’(x-at)(1) + g’(x+at)(1) = f’(x-at) + g’(x+at)\) and thus, similarly, \(u_{xx} = f’’(x-at) + g’’(x+at)\). Also: \( u_t = f’(x-at)\Frac{\partial}{\partial t}(x-at) + g’(x+at)\Frac{\partial}{\partial t}(x+at) = f’(x-at)(-a) + g’(x+at)(a) = -af’(x-at) + ag’(x+at) \implies\) \(u_{tt} = (-a)^2f’’(x-at) + a^2g’’(x+at) = a^2(f’’(x-at) + g’’(x+at)) = a^2u_{xx}\) as was to be shown.&nbsp; (Note: this is the <a href="https://en.wikipedia.org/wiki/Wave_equation#Algebraic_approach">d’Alembert solution</a> of the one (spatial) dimension wave equation&mdash;the reader should read about what the form of this solution implies about this solution’s physical nature.)
 <br><br></p>
 
-<p><a name="P1.1.40" class="goback" onclick="winhisback()"><strong>40</strong>)</a>
+<p><a name="P1.1.40" class="goback" onclick="winhisback()"><strong>1.1.40</strong>)</a>
 Use technology to sketch the direction field of \(y’ = -y(5-y)\) and thereby determine the behavior of \(y\) as \(x \rightarrow \infty\).</p>
 
 <p><strong>Sln</strong>: When this edition of the text was published, the options available to students to do this exercise were, compared to when I write this in 2026, MUCH more primitive, less accessible, and required considerably more programming work and creativity on the part of the student; presently, however, there exist a plurality of options which render this problem little more than a graphing calculator exercise!&nbsp; My personal favorite for most needs is <a href="www.geogebra.org">GeoGebra</a>, which is free, very powerful, has various specialized versions (e.g., a dedicated 3-D graphing version), and is available both as stand&#8209;alone apps for handheld devices and as a Web app, i.e., runs inside a Web browser such as Google Chrome.<br></p>
