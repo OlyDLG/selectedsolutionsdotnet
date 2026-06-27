@@ -95,6 +95,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\u}{\upsilon}
 \newcommand{\box}{\boxed}
 \newcommand{\chec}{\checkmark}
+\newcommand{\blksq}{\blacksquare}
 \newcommand{\Frac}{\displaystyle \frac}
 \newcommand{\Lim}{\displaystyle \lim}
 \newcommand{\Int}{\large{\int}\small}
@@ -122,7 +123,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><i>Notes: These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
-<p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; \(\blacksquare\) inidicates the end of a proof; unlike the text, but consistent with most mathematical usage after &quot;Algebra 2,&quot; we use \(\log\) to denote the &quot;natural&quot; logarithm, \(\log_e\).</p>
+<p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; \(\blksq\) inidicates the end of a proof; unlike the text, but consistent with most mathematical usage after &quot;Algebra 2,&quot; we use \(\log\) to denote the &quot;natural&quot; logarithm, \(\log_e\).</p>
 
 <h3>Contents</h3>
 
@@ -264,13 +265,13 @@ DE check: \(\Frac{d}{dy}\cosh y = \sinh y = \Frac12(e^y - e^{-y}) = \Frac12(2e^y
 <p><a name="P2.1.22b" class="goback" onclick="winhisback()"><strong>2.1.22b</strong>)</a>
 Show that \(\phi(x) = c/x\) is a solution of \(y’ + y^2 = 0~(x \gt 0)\) if and only if \(c=0\) or \(c=1\).</p>
 
-<p><strong>Pf</strong>: \(\phi’(x) = -c/x^2 \implies \phi’ + \phi^2 = -\Frac{c}{x^2} + \Frac{c^2}{x^2}\); setting this equal to zero and utilizing the given that \(x \gt 0\) to multiply through by \(x^2 \implies c(c-1) = 0 \implies c = 0\) or \(c=1\) as the only values of \(c\) which make the equation a true statement.\(~~~\blacksquare\)
+<p><strong>Pf</strong>: \(\phi’(x) = -c/x^2 \implies \phi’ + \phi^2 = -\Frac{c}{x^2} + \Frac{c^2}{x^2}\); setting this equal to zero and utilizing the given that \(x \gt 0\) to multiply through by \(x^2 \implies c(c-1) = 0 \implies c = 0\) or \(c=1\) as the only values of \(c\) which make the equation a true statement.\(~~\blksq\)
 <br><br></p>
 
 <p><a name="P2.1.24" class="goback" onclick="winhisback()"><strong>2.1.24</strong>)</a>
 Given \(y_1(x)\) is a solution of \(y’ + p(x)y = 0\) and \(y_2(x)\) is a solution of \(y’ + p(x)y = g(x)\), show that \(y_1 + y_2\) is also a solution of \(y’ + p(x)y = g(x)\).</p>
 
-<p><strong>Pf</strong>: \((y_1 + y_2)’ + p(x)(y_1 + y_2) = (y_1’ + p(x)y_1) + (y_2’ + p(x)y_2) = 0 + g(x)\) (because it is given that \(y_1’ + p(x)y_1 = 0\) and \(y_2’ + p(x)y_2 = g(x)\)) \( = g(x)\), i.e., \(y_1 + y_2\) is a solution of \(y’ + p(x)y = g(x).~~~\blacksquare\) 
+<p><strong>Pf</strong>: \((y_1 + y_2)’ + p(x)(y_1 + y_2) = (y_1’ + p(x)y_1) + (y_2’ + p(x)y_2) = 0 + g(x)\) (because it is given that \(y_1’ + p(x)y_1 = 0\) and \(y_2’ + p(x)y_2 = g(x)\)) \( = g(x)\), i.e., \(y_1 + y_2\) is a solution of \(y’ + p(x)y = g(x).~~\blksq\) 
 <br><br></p>
 
 <h3>Section 2: Further Discussion of Linear Equations</h3>
@@ -359,17 +360,17 @@ Given the IVP \((\log x)y’ + y = \cot x,~~y(2) = 3\), without solving it, in w
 <p><a name="P2.2.24" class="goback" onclick="winhisback()"><strong>2.2.24</strong>)</a><br>
 <strong>a</strong>) Show that the solution \(\Frac{\int\mu(x)g(x)dx + c}{\mu(x)}\) of \(y’ + p(x)y = g(x)\) where \(\mu(x) = \exp\left(\Int p(x)dx\right)\) can be written as \(y = cy_1(x) + y_2(x)\) for suitably chosen \(y_1\) and \(y_2\) and identify the functions \(y_1\) and \(y_2\).<br></p>
 
-<p><strong>Sln</strong>: &quot;Trivial&quot;: \(\Frac{\int\mu(x)g(x)dx + c}{\mu(x)} = \Frac{\int\mu(x)g(x)dx}{\mu(x)} + \Frac c{\mu(x)} = cy_1(x) + y_2(x)\) with \(\box{y_1 = \frac1{\mu(x)}}\) and \(y_2 = \box{\frac{\int\mu(x)g(x)dx}{\mu(x)}}~~~\blacksquare\).
+<p><strong>Sln</strong>: &quot;Trivial&quot;: \(\Frac{\int\mu(x)g(x)dx + c}{\mu(x)} = \Frac{\int\mu(x)g(x)dx}{\mu(x)} + \Frac c{\mu(x)} = cy_1(x) + y_2(x)\) with \(\box{y_1 = \frac1{\mu(x)}}\) and \(y_2 = \box{\frac{\int\mu(x)g(x)dx}{\mu(x)}}~~\blksq\).
 <br></p>
 
 <p><strong>b</strong>) Show that \(y_1\) is a solution of \(y’ + p(x)y = 0\).<br></p>
 
-<p><strong>Sln</strong>: \(y_1’ = \left[\exp\left(-\Int p(x)dx\right)\right]’ = -p(x)\exp\left(-\Int p(x)dx\right)\) and \(p(x)y_1 = p(x)/\mu(x) = p(x)\exp\left(-\Int p(x)dx\right)\) so \(y_1’ + p(x)y_1 \equiv 0.~~~\blacksquare\)
+<p><strong>Sln</strong>: \(y_1’ = \left[\exp\left(-\Int p(x)dx\right)\right]’ = -p(x)\exp\left(-\Int p(x)dx\right)\) and \(p(x)y_1 = p(x)/\mu(x) = p(x)\exp\left(-\Int p(x)dx\right)\) so \(y_1’ + p(x)y_1 \equiv 0.~~\blksq\)
 <br></p>
 
 <p><strong>c</strong>) Show that \(y_2\) is a solution of the full DE, \(y’ + p(x)y = g(x)\).<br></p>
 
-<p><strong>Sln</strong>: Let \(\nu(x) = \Int\mu(x)g(x)dx \implies \nu’(x) = \mu(x)g(x)\); then \(y_2’ = \Frac{\mu \nu’ - \mu’ \nu}{\mu^2} = \Frac{\cancel{\mu^2} g}{\cancel{\mu^2}} - \Frac{p\mu\nu}{\mu^2}\) and \(py_2 = \Frac{p\nu}{\mu} = \Frac{p\mu\nu}{\mu^2}\) so \(y_2’ + py_2 = g \cancel{- \Frac{p\mu\nu}{\mu^2} + \Frac{p\mu\nu}{\mu^2}}~~~\blacksquare\)
+<p><strong>Sln</strong>: Let \(\nu(x) = \Int\mu(x)g(x)dx \implies \nu’(x) = \mu(x)g(x)\); then \(y_2’ = \Frac{\mu \nu’ - \mu’ \nu}{\mu^2} = \Frac{\cancel{\mu^2} g}{\cancel{\mu^2}} - \Frac{p\mu\nu}{\mu^2}\) and \(py_2 = \Frac{p\nu}{\mu} = \Frac{p\mu\nu}{\mu^2}\) so \(y_2’ + py_2 = g \cancel{- \Frac{p\mu\nu}{\mu^2} + \Frac{p\mu\nu}{\mu^2}}~~\blksq\)
 <br><br></p>
 
 <p><a name="P2.2.26" class="goback" onclick="winhisback()"><strong>2.2.26</strong>)</a>
@@ -430,7 +431,7 @@ e^{-x-1}, &amp; x \in (1,\infty)
 <p><a name="P2.2.27b" class="goback" onclick="winhisback()"><strong>2.2.27b</strong>)</a>
 Show that for \(n \ne 0, 1\), the substitution \(\u = y^{1-n}\) reduces \(y’ + p(x)y = q(x)y^n\) to a linear equation.</p>
 
-<p><strong>Pf</strong>: For \(n \ne 0, 1\), \(\u = y^{1-n} \implies \u’ = (1-n)y^{-n}y’\); since our objective is to show that the substitution puts the equation into the form \(\u’ + P(x)\u = Q(x)\) for some \(P\) and \(Q\), we try multiplying the given equation through by \((1-n)y^{-n}\): \((1-n)y^{-n}q(x)y^n = (1-n)q(x) = Q(x) = (1-n)y^{-n}y’ + (1-n)p(x)y^{-n}y = (y^{1-n})’ + (1-n)p(x)y^{1-n} = \u’ + P(x)\u\) with \(P(x) = (1-n)p(x)\) and \(\u = y^{1-n}.~~\blacksquare\)
+<p><strong>Pf</strong>: For \(n \ne 0, 1\), \(\u = y^{1-n} \implies \u’ = (1-n)y^{-n}y’\); since our objective is to show that the substitution puts the equation into the form \(\u’ + P(x)\u = Q(x)\) for some \(P\) and \(Q\), we try multiplying the given equation through by \((1-n)y^{-n}\): \((1-n)y^{-n}q(x)y^n = (1-n)q(x) = Q(x) = (1-n)y^{-n}y’ + (1-n)p(x)y^{-n}y = (y^{1-n})’ + (1-n)p(x)y^{1-n} = \u’ + P(x)\u\) with \(P(x) = (1-n)p(x)\) and \(\u = y^{1-n}.~~\blksq\)
 <br><br></p>
 
 <p><a name="P2.2.31" class="goback" onclick="winhisback()"><strong>2.2.31</strong>)</a>
@@ -556,7 +557,7 @@ and indicate their domains of validity.</p>
 
 <p><strong>b</strong>) Explain why the existence of two solutions does not contradict the the uniqueness part of text Theorem 2.4.1.</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: \(\partial_y\left(\Frac{-x + (x^2 + 4y)^{1/2}}2\right) = \Frac{\cancel{4}1}{\cancel{4}(x^2+4y)^{1/2}}\) which is undefined at the IC \((2,-1)\), so \(\partial_y(y’)\) is not continuous in an open rectangle containing the IC, so that condition for the existence of a unique solution to the IVP is not satisfied.\(~~\blksq\)
 <br></p>
 
 <p><strong>c</strong>) Show that \(y = cx + c^2, c\) an arbitrary constant, satisfies the differential equation in part a) for \(x \ge -2c\); if \(c = -1\), the IC is also satisfied, yielding the solution \(y_1\): show that no choice of \(c\) gives the solution \(y_2\). </p>
