@@ -281,7 +281,7 @@ Find the general solution of \(xy’ + 2y = e^x,~~~x \gt 0\).</p>
 
 <p><strong>Sln</strong>: \(x’ = 1 \ne 2\) so the equation is not exact.<br></p>
 
-<p>\(\mu(x) = \exp\left(\Int \Frac2x dx\right) = x^2 \implies x^2y’ + 2xy = (x^2y)’ = xe^x \implies x^2y = (x-1)e^x + C \implies\) \[\box{\frac{e^x}x - \frac{e^x}{x^2} + \frac C{x^2}}\].<br>
+<p>\(\mu(x) = \exp\left(\Int \Frac2x dx\right) = x^2 \implies x^2y’ + 2xy = (x^2y)’ = xe^x \implies x^2y = (x-1)e^x + C \implies\) \[\box{y = \frac{e^x}x - \frac{e^x}{x^2} + \frac C{x^2}}\].<br>
 Check: \(xy’ = x\left(\Frac{xe^x-e^x}{x^2} - \Frac{x^2e^x-2xe^x}{x^4} - \Frac{2C}{x^3}\right) = e^x - 2\Frac{e^x}x + 2\Frac{e^x}{x^2} - 2\Frac C{x^2}\);<br>
 \(2y = 2\Frac{e^x}x - 2\Frac{e^x}{x^2} + 2\Frac C{x^2}\) so<br> 
 \(xy’ + 2y = e^x \cancel{- 2\Frac{e^x}x + 2\Frac{e^x}x} \cancel{+ 2\Frac{e^x}{x^2} - 2\Frac{e^x}{x^2}} \cancel{- 2\Frac C{x^2} + 2\Frac C{x^2}}~~\chec\).
@@ -309,7 +309,7 @@ Check: IC: \(\Frac{(-1)^3 + (-1) + 1}{(-1)(-1+2)} = (-1)/(-1) = 1~\chec\)<br>
 DE: \(x(2+x)y’ = x(2+x)\left[1 + \Frac{(x^2+2x)(5) - (5x+1)(2x+2)}{(x^2+2x)^2}\right] = \Frac{(x^2+2x)^2 - 5x^2 - 2x - 2}{x^2+2x} = \Frac{x^4 + 4x^3 - x^2 - 2x - 2}{x^2+2x}\),<br>
 \(2(1+x)y = 2(1+x)\left(\Frac{x^3 + x + 1}{x(x+2)}\right) = \Frac{2x^4 + 2x^3 + 2x^2 + 4x + 2 }{x^2+2x}\) so <br>
 \(x(2+x)y’ + 2(1+x)y = \Frac{3x^4 + 6x^3 + x^2 + 2x}{x(x+2)} \underset{x\ne 0}{=} \Frac{3x^3 + 6x^2 + x + 2}{x+2} = \Frac{3x^2(x+2) + 1(x+2)}{x+2} \underset{x\ne -2}{=} 3x^2 + 1~\chec\).<br>
-The equation is not a differential equation at \(x = -2, 0\) so the interval of validity is \(\box{(-2,0)}\).
+The certain domain of validity is the maximal portion of the intersection of the domains of \(p(x) = \Frac{2(1+x)}{x(2+x)}\) and \(g(x) = \Frac{1+3x^2}{x(2+x)}\) that contains the initial abscissa, \(x= -1\); both \(p\) and \(g\) have the same domain, \(\mathbb{R}\backslash\{-2,0\}\), which is thus their intersection, and the maximal portion of this containing \(x=-1\) is the open interval \(\box{(-2,0)}\).
 <br><br></p>
 
 <p><a name="P2.2.16" class="goback" onclick="winhisback()"><strong>2.2.16</strong>)</a>
@@ -342,7 +342,7 @@ Check: \(y’ + (1/x)y = \Frac{\cancel{x}\cos x - \cancel{\sin x}}{x^{\cancel{2}
 <li><p>Step 1: define (enter) <code>y’ = -y/x + (cos x)/x</code>; if necessary, &quot;undisplay&quot; the result (by clicking on the circle to the left of the definition).</p></li>
 <li><p>Step 2: define <code>S = SlopeField(y’)</code> (number of grid points&mdash;the optional second parameter&mdash;is unnecessary because we’re not going to display <code>S</code>); undisplay the result.</p></li>
 <li><p>Step 3: define a point, <code>P_ab = (&lt;a&gt;,&lt;b&gt;)</code>, through which you want to see the integral curve (<code>&lt;&gt;</code> around something means you supply an actual value).</p></li>
-<li><p>Step 4: define its integral curve <code>IC_ab = Locus(y’,P_ab)</code>.</p></li>
+<li><p>Step 4: define its integral curve <code>IC_ab = Locus(S, P_ab)</code>.</p></li>
 <li><p>Step 5: Repeat Steps 3 and 4 as much as you like!</p></li>
 </ul>
 
@@ -352,9 +352,9 @@ Check: \(y’ + (1/x)y = \Frac{\cancel{x}\cos x - \cancel{\sin x}}{x^{\cancel{2}
 <br></p>
 
 <p><a name="P2.2.20" class="goback" onclick="winhisback()"><strong>2.2.20</strong>)</a>
-Given the IVP \((\log x)y’ + y = \cot x,~~y(2) = 3\), without solving it, in what interval is its solution certain to exist.</p>
+Given the IVP \((\log x)y’ + y = \cot x,~~y(2) = 3\), without solving it, in what interval is its solution certain to exist?</p>
 
-<p><strong>Sln</strong>: The interval in which the solution is certain to exist is that portion of the intersection of the domains of \(p(x)\) and \(g(x)\) containing the initial condition-specified value of \(x = 2\), where \(p~\&amp;~g\) are defined by the DE in the form \(y’ + p(x)y = g(x)\); thus, here, \(p(x) = 1/\log x\), the domain of which is \((0,1) \cup (1,\infty)\) and \(g(x) = 1/\left[(\log x)(\sin x)\right]\), the domain of which is \((0,1) \cup \mathbb{R}^+\backslash \{(2k-1)\pi, k \in \mathbb{Z}^+\}\), i.e., the positive real numbers <strong><em>except</em></strong> \(1\) and the positive odd multiples of \(\pi\); the intersection of these two sets containing \(2\) is the open interval \(\box{(1,\pi)}\), which is thus the required interval.
+<p><strong>Sln</strong>: The interval in which the solution is certain to exist is the maximal portion of the intersection of the domains of \(p(x)\) and \(g(x)\) containing the initial condition-specified value of \(x = 2\), where \(p\) and \(g\) are defined by the DE in the form \(y’ + p(x)y = g(x)\); thus, here, \(p(x) = 1/\log x\), the domain of which is \((0,1) \cup (1,\infty)\) and \(g(x) = 1/\left[(\log x)(\sin x)\right]\), the domain of which is \((0,1) \cup \mathbb{R}^+\backslash \{(2k-1)\pi, k \in \mathbb{Z}^+\}\), i.e., the positive real numbers <strong><em>except</em></strong> \(1\) and the positive odd multiples of \(\pi\); the maximal portion of the intersection of these two sets containing \(2\) is the open interval \(\box{(1,\pi)}\), which is thus the required interval.
 <br><br></p>
 
 <p><a name="P2.2.24" class="goback" onclick="winhisback()"><strong>2.2.24</strong>)</a><br>
@@ -393,7 +393,7 @@ y_{\gt}(x), &amp; x \in (1,\infty)
 \right.\); since the initial condition \(x=0\) is in the interval \([0,1]\), it will determine the integration constant for \(y_{\lt}\); the integration constant for \(y_{\gt}\) will be determined so as to make the function continuous at \(x=1\).&nbsp; Since we’re able to fully determine \(y_{\lt}\) with the given information, we solve for that first; however, note that \(\mu(x) = \exp\left(\Int 2dx\right) = e^{2x}\) is the same for both equations: all that differs is the right hand side.</p>
 
 <p>On \([0,1]\) we have \(e^{2x}y_{\lt}’ + 2e^{2x}y_{\lt} = \left(e^{2x}y_{\lt}\right)’ = e^{2x} \implies e^{2x}y_{\lt} = \Frac12 e^{2x} + C_{\lt}\); \(y(0) = 0 \implies \left(e^{2(0)}\right)(0) = 0 = \Frac12 e^{2(0)} + C_{\lt} \implies C_{\lt} = -\Frac12\) so \(\box{y_{\lt} = \frac12\left(1 - e^{-2x}\right)}\). Check: IC: \(\Frac12\left(1-e^{-2(0)}\right) = 0~\chec\); DE: \(y_{\lt}’ + 2y_{\lt} = (-2)\Frac{-e^{-2x}}2 + 2\left(\Frac12\right )\left(1-e^{-2x}\right) = 1.~\chec\)<br><br>
-On \((1, \infty)\) we have \(\left(e^{2x}y_{\gt}\right)’ = 0 \implies e^{2x}y_{\gt} = C_{\gt} \implies y_{\gt} = C_{\gt}e^{-2x}\); we choose \(C_{\gt}\) by &quot;pretending&quot; that \(y_{\gt}\) is defined at \(x=1\) and equating it there to \(y_{\lt}\): \(y_{\gt}(1) = y_{\lt}(1) \implies C_{\gt}\left(e^{-2}\right) = \Frac12\left(1 - e^{-2}\right) \implies C_{\gt} = \Frac12\left(e^2-1\right) \implies \box{y_{\gt} = \frac12\left(e^2-1\right)e^{-2x}}\). Check: &quot;boundary&quot; condition: \(y_{\gt}(1) = \Frac12\left(e^2-1\right)e^{-2(1)} = \Frac12(1-e^{-2}~\chec\); DE: \(y’ + 2y = (-2)\Frac12\left(e^2-1\right)e^{-2x} + 2\Frac12\left(e^2-1\right)e^{-2x} = 0~\chec\). All together, we have: 
+On \((1, \infty)\) we have \(\left(e^{2x}y_{\gt}\right)’ = 0 \implies e^{2x}y_{\gt} = C_{\gt} \implies y_{\gt} = C_{\gt}e^{-2x}\); we choose \(C_{\gt}\) by &quot;pretending&quot; that \(y_{\gt}\) is defined at \(x=1\) and equating it there to \(y_{\lt}\): \(y_{\gt}(1) = y_{\lt}(1) \implies C_{\gt}\left(e^{-2}\right) = \Frac12\left(1 - e^{-2}\right) \implies C_{\gt} = \Frac12\left(e^2-1\right) \implies \box{y_{\gt} = \frac12\left(e^2-1\right)e^{-2x}}\). Check: &quot;boundary&quot; condition: \(y_{\gt}(1) = \Frac12\left(e^2-1\right)e^{-2(1)} = \Frac12(1-e^{-2})~\chec\); DE: \(y’ + 2y = (-2)\Frac12\left(e^2-1\right)e^{-2x} + (2)\Frac12\left(e^2-1\right)e^{-2x} = 0~\chec\). All together, we have: 
 \[\box{y(x) = \left\{
 \begin{array}{ll}
 \left(1 - e^{-2x}\right)/2, &amp; x \in [0,1] \\
