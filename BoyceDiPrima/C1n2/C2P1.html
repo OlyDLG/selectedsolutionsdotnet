@@ -449,12 +449,10 @@ Solve \(dy/dt = (\Gamma\cos t + T)y - y^3\), where \(\Gamma\) and \(T\) are cons
 <p><a name="P2.3.2" class="goback" onclick="winhisback()"><strong>2.3.2</strong>)</a>
 \(y’ = \Frac{x^2}{y(1+x^3)}\)</p>
 
-<p><strong>Sln</strong>: I prefer the formalism of manipulating the equation to look like 
-\(M(x)dx + N(y)dy = 0 \implies \Int M(x)dx + \Int N(y)dy = C\);
-this alternate formalism is implied in the text, and the reader should recognize that it’s &quot;six one way, half&#8209;a&#8209;dozen the other.&quot;&nbsp; Thus this DE is equivalent to \(\Frac{x^2}{1+x^3}dx - ydy = 0 \implies\) \(\displaystyle \int \frac{x^2}{1+x^3}dx - \int ydy\), which, letting \(u = 1+x^3\), \(= \Frac13\int \frac{du}u - \frac12y^2 = \frac13\log|1+x^3| - \frac12 y^2 = C’ \implies\)
-\[\box{2\log|1+x^3| - 3y^2 = C}\]
-where both the original DE and the solution dictate that \(x \ne -1\) and the DE dictates that \(y \ne 0\).<br><br>
-Check: Rewriting \(|1+x^3| = \sqrt{\left(1+x^3\right)^2} \implies 2\log|1+x^3| = \cancel{2(\Frac12)}\log\left[(1+x^3)^2\right] \implies d\left\{\log\left[(1+x^3)^2\right]\right\} = \Frac{2\cancel{(1+x^3)}(3x^2)}{(1+x^3)^{\cancel{2}1}}dx\), while \(d(-3y^2) = -6ydy\) so \(d(2\log|1+x^3| - 3y^2 = C) \implies \Frac{6x^2}{1+x^3}dx - 6ydy = 0 \implies \Frac{dy}{dx} = \Frac{x^2}{y(1+x^3)}~~\chec\).
+<p><strong>Sln</strong>: First note that \(y’\) is undefined for \(x=-1\) and \(y=0\).&nbsp; Now, I prefer the formalism of manipulating the equation to look like \(M(x)dx + N(y)dy = 0 \implies \Int M(x)dx + \Int N(y)dy = C\); this alternate formalism is implied in the text, and the reader should recognize that it’s &quot;six one way, half&#8209;a&#8209;dozen the other.&quot;&nbsp; Thus, with the value exclusions noted above, this DE is equivalent to \(\Frac{x^2}{1+x^3}dx - ydy = 0 \implies \Int \frac{x^2}{1+x^3}dx - \Int ydy = c\), which, letting \(u = 1+x^3\), is equivalent to \(\Frac13\Int \Frac{du}u - \Frac12y^2 = \Frac13\log|1+x^3| - \Frac12 y^2 = c\), which, after multiplying through by \(6\) and bringing the resulting coefficient of \(2\) inside the logarithm to remove the absolute value, gives:<br>
+\[\box{\log\left[(1+x^3)^2\right] - 3y^2 = C,~y \ne 0}\]
+(Note that the solution in this form implicitly excludes \(x = -1\) but that we must explicitly exclude \(y = 0\).)<br>
+Check: \(d(C = \log\left[(1+x^3)^2\right] - 3y^2) \implies 0 = \Frac{6x^2(1+x^3)}{(1+x^3)^2}dx - 6ydy \implies \Frac{dy}{dx} = \Frac{x^2}{y(1+x^3)}\) assuming \(x \ne -1\) and \(y \ne 0~~\chec.\)
 <br><br></p>
 
 <p><a name="P2.3.6" class="goback" onclick="winhisback()"><strong>2.3.6</strong>)</a>
