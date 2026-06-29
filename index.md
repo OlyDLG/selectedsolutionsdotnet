@@ -39,6 +39,8 @@ Long pages and/or pages with dynamically-generated graphs may take a few seconds
 ## Text Solution Sets
 
 Boyce, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and Boundary Value Problems, Fifth Edition</i>, John Wiley & Sons, New York.
+      <ul> [Chapter 1, Section 1: Introduction, Classification of Differential Equations](./BoyceDiPrima/C1n2/C1.html)
+      </ul>
       <ul> Chapter 6: The Laplace Transform
             <ul>[Section 2: The Solution of Initial Value Problems](./BoyceDiPrima/C6/C6S2.html)
             </ul>

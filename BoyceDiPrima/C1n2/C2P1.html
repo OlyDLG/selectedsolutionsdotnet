@@ -90,6 +90,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><link rel="stylesheet" href="../../Styles.css">
 <title>Solutions of Selected Problems from Boyce/DiPrima <q>Elem. DEs &amp; BVPs 5th Ed. Chapter 2 Part 1</q></title>
 \(\require{cancel}
+\newcommand{\ra}{\rightarrow}
 \newcommand{\G}{\Gamma}
 \newcommand{\t}{\theta}
 \newcommand{\u}{\upsilon}
@@ -243,14 +244,14 @@ DE check: \(xy’ = x\left(0 - \Frac{x(2e^{-x}) - (1)(1 - 2e^{-x})}{x^2}\right) 
 <br><br></p>
 
 <p><a name="P2.1.20" class="goback" onclick="winhisback()"><strong>2.1.20</strong>)</a>
-Use technology to graph the direction field of the given differential equation, use the graph to predict the behavior of solutions as \(x \rightarrow \infty\), and check the prediction by evaluating that limit for the exact solution (found in Problem 8).</p>
+Use technology to graph the direction field of the given differential equation, use the graph to predict the behavior of solutions as \(x \ra \infty\), and check the prediction by evaluating that limit for the exact solution (found in Problem 8).</p>
 
 <p><strong>Sln</strong>: See <a href="./C1.html#P1.1.40">number 40 in my Chapter 1 solutions</a> for guidance regarding how to use GeoGebra to produce the following graph:</p>
 
 <div class="panel"><img src="./Graphs/BoyceDiPrimaC2S1P20.png"></div>
 
 <p>Clearly, the graph implies that all solutions &quot;go to&quot; zero as \(x\) goes to both positive and negative infinity; and indeed,<br> 
-\( \lim_{x\rightarrow\pm\infty} \Frac{\tan^{-1}x + C}{(1+x^2)^2} \rightarrow \Frac{\pm\Frac{\pi}2 + C}{\infty} \rightarrow 0\).
+\( \lim_{x\ra\pm\infty} \Frac{\tan^{-1}x + C}{(1+x^2)^2} \ra \Frac{\pm\Frac{\pi}2 + C}{\infty} \ra 0\).
 <br><br></p>
 
 <p><a name="P2.1.21" class="goback" onclick="winhisback()"><strong>2.1.21</strong>)</a>
@@ -321,10 +322,10 @@ Given \(y’ + (1/x)y = (\cos x)/x\):<br>
 Check: \(y’ + (1/x)y = \Frac{\cancel{x}\cos x - \cancel{\sin x}}{x^{\cancel{2}}} - \cancel{\Frac C{x^2}} + \cancel{\Frac{\sin x}{x^2}} + \cancel{\Frac C{x^2}} = \Frac{\cos x}x~~\chec\)
 <br></p>
 
-<p><strong>b</strong>) Determine \(\Lim_{x\rightarrow 0} y(x)\) for various values of the integration constant.<br> </p>
+<p><strong>b</strong>) Determine \(\Lim_{x\ra 0} y(x)\) for various values of the integration constant.<br> </p>
 
-<p><strong>Sln</strong>: \(\Lim_{~~x \rightarrow 0^+} \left[\Frac{\sin x}x + \Frac Cx\right] = \) 
-\(\Lim_{~~x \rightarrow 0^+} \Frac{\sin x}x + \Lim_{~~x \rightarrow 0^+} \Frac Cx = 1 + \left\{
+<p><strong>Sln</strong>: \(\Lim_{~~x \ra 0^+} \left[\Frac{\sin x}x + \Frac Cx\right] = \) 
+\(\Lim_{~~x \ra 0^+} \Frac{\sin x}x + \Lim_{~~x \ra 0^+} \Frac Cx = 1 + \left\{
 \begin{array}{cc}
 0, &amp; C = 0 \\ 
 \infty, &amp; C \gt 0 \\
