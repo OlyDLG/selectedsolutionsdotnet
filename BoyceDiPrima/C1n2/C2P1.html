@@ -236,7 +236,7 @@ DE check: \(y’ = \Frac{x^2\cos x - 2x\sin x}{x^4} = \Frac{\cos x}{x^2} - \Frac
 <p><strong>Sln</strong>: First check to see if the equation is already exact: \((x)’ = 1 \ne x + 1\) so it is not.<br></p>
 
 <p>At \(x = 0\) the DE reduces to \(y(x) \equiv 0\), and there is no differentiable function consistent with this and the specified initial condition, so assume \(x \ne 0\).&nbsp; Then the given DE is equivalent to \(y’ + (1+\Frac1x)y = 1 \equiv y’ + p(x)y = g(x)\) with \(g(x) = 1, p(x) = 1 + \Frac1x \implies \mu(x) = \exp\left[\int\left(1+\frac1x\right)dx\right] = e^{x+\log x} = xe^x\).&nbsp; Multiplying this through the \(y’ + p(x)y = g(x)\) form of the equation yields \(xe^x y’ + (x+1)e^x y = \Frac{d}{dx}(xe^x y) = xe^x \implies\) \(xe^x y = \Int xe^x dx = (x-1)e^x + C\).&nbsp; The IC requires \(\log 2 e^{\log 2}(1) = \cancel{2\log 2} = (\log 2 - 1)e^{\log 2} + C = \cancel{2\log 2} - 2 + C \implies C = 2\) so we have \(xe^x y = (x-1)e^x + 2 \implies\)
-\[\box{y = 1 - \frac{1 - 2e^{-x}}x}\]
+\[\box{y = 1 - \frac{1 - 2e^{-x}}x,~~x \ne 0}\]
 IC check: \(1 - \Frac{1-2e^{-\log 2}}{\log 2} = 1 - \Frac0{\log 2} = 1~~\chec\)<br>
 DE check: \(xy’ = x\left(0 - \Frac{x(2e^{-x}) - (1)(1 - 2e^{-x})}{x^2}\right) = \Frac{1 - 2e^{-x} - 2xe^{-x}}{x}\)<br>
 \((x+1)y = x + \cancel{1 - 1} + 2e^{-x} - \Frac{1 - 2e^{-x}}{x} = x - \Frac{1 - 2e^{-x} - 2xe^{-x}}{x} \implies\)<br>
@@ -325,9 +325,9 @@ Check: \(y’ + (1/x)y = \Frac{\cancel{x}\cos x - \cancel{\sin x}}{x^{\cancel{2}
 <p><strong>b</strong>) Determine \(\Lim_{x\ra 0} y(x)\) for various values of the integration constant.<br> </p>
 
 <p><strong>Sln</strong>: \(\Lim_{~~x \ra 0^+} \left[\Frac{\sin x}x + \Frac Cx\right] = \) 
-\(\Lim_{~~x \ra 0^+} \Frac{\sin x}x + \Lim_{~~x \ra 0^+} \Frac Cx = 1 + \left\{
+\(\Lim_{~~x \ra 0^+} \Frac{\sin x}x + \Lim_{~~x \ra 0^+} \Frac Cx = \left\{
 \begin{array}{cc}
-0, &amp; C = 0 \\ 
+1, &amp; C = 0 \\ 
 \infty, &amp; C \gt 0 \\
 -\infty, &amp; C \lt 0 
 \end{array}
@@ -361,7 +361,7 @@ Given the IVP \((\log x)y’ + y = \cot x,~~y(2) = 3\), without solving it, in w
 <p><a name="P2.2.24" class="goback" onclick="winhisback()"><strong>2.2.24</strong>)</a><br>
 <strong>a</strong>) Show that the solution \(\Frac{\int\mu(x)g(x)dx + c}{\mu(x)}\) of \(y’ + p(x)y = g(x)\) where \(\mu(x) = \exp\left(\Int p(x)dx\right)\) can be written as \(y = cy_1(x) + y_2(x)\) for suitably chosen \(y_1\) and \(y_2\) and identify the functions \(y_1\) and \(y_2\).<br></p>
 
-<p><strong>Sln</strong>: &quot;Trivial&quot;: \(\Frac{\int\mu(x)g(x)dx + c}{\mu(x)} = \Frac{\int\mu(x)g(x)dx}{\mu(x)} + \Frac c{\mu(x)} = cy_1(x) + y_2(x)\) with \(\box{y_1 = \frac1{\mu(x)}}\) and \(y_2 = \box{\frac{\int\mu(x)g(x)dx}{\mu(x)}}~~\blksq\).
+<p><strong>Sln</strong>: &quot;Trivial&quot;: \(\Frac{\int\mu(x)g(x)dx + c}{\mu(x)} = \Frac{\int_{x_0}^x\mu(s)g(s)ds}{\mu(x)} + \Frac c{\mu(x)} = cy_1(x) + y_2(x)\) with \(\box{y_1 = \frac1{\mu(x)}}\) and \(y_2 = \box{\frac{\int_{x_0}^x\mu(s)g(s)ds}{\mu(x)}}~~\blksq\).
 <br></p>
 
 <p><strong>b</strong>) Show that \(y_1\) is a solution of \(y’ + p(x)y = 0\).<br></p>
@@ -371,7 +371,7 @@ Given the IVP \((\log x)y’ + y = \cot x,~~y(2) = 3\), without solving it, in w
 
 <p><strong>c</strong>) Show that \(y_2\) is a solution of the full DE, \(y’ + p(x)y = g(x)\).<br></p>
 
-<p><strong>Sln</strong>: Let \(\nu(x) = \Int\mu(x)g(x)dx \implies \nu’(x) = \mu(x)g(x)\); then \(y_2’ = \Frac{\mu \nu’ - \mu’ \nu}{\mu^2} = \Frac{\cancel{\mu^2} g}{\cancel{\mu^2}} - \Frac{p\mu\nu}{\mu^2}\) and \(py_2 = \Frac{p\nu}{\mu} = \Frac{p\mu\nu}{\mu^2}\) so \(y_2’ + py_2 = g \cancel{- \Frac{p\mu\nu}{\mu^2} + \Frac{p\mu\nu}{\mu^2}}~~\blksq\)
+<p><strong>Sln</strong>: Let \(\nu(x) = \DefInt{x_0}{x}\mu(s)g(s)ds \implies \nu’(x) = \mu(x)g(x)\); then \(y_2’ = \Frac{\mu \nu’ - \mu’ \nu}{\mu^2} = \Frac{\cancel{\mu^2} g}{\cancel{\mu^2}} - \Frac{p\mu\nu}{\mu^2}\) and \(py_2 = \Frac{p\nu}{\mu} = \Frac{p\mu\nu}{\mu^2}\) so \(y_2’ + py_2 = g \cancel{- \Frac{p\mu\nu}{\mu^2} + \Frac{p\mu\nu}{\mu^2}}~~\blksq\)
 <br><br></p>
 
 <p><a name="P2.2.26" class="goback" onclick="winhisback()"><strong>2.2.26</strong>)</a>
@@ -479,9 +479,10 @@ Check: IC: \(r(1) = \Frac2{1-\log(1^2)} = \Frac21~\chec\); as noted, \(r\) is ne
 <p><a name="P2.3.14" class="goback" onclick="winhisback()"><strong>2.3.14</strong>)</a>
 \(y’ = x(x^2 + 1)/(4y^3),~~y(0) = -1/\sqrt2\)</p>
 
-<p><strong>Sln</strong>: We begin by noting that \(y\) can’t equal \(0\).&nbsp; Otherwise, the DE is equivalent to \((x^3 + x)dx - 4y^3dy = 0 \implies x^4/4 + x^2/2 - y^4 = C\); the initial condition requires \(0^4/4 + 0^2/2 - (-1/\sqrt2)^4 = -1/4 = C \implies y^4 = x^4/4 + x^2/2 + 1/4\) which implies, formally, \(y = \pm\sqrt[4]{x^4/4 + x^2/2 + 1/4}\); however, the initial condition requires that we choose the negative sign; since every term under the radical is strictly \(\ge 0\), \(y\) is well&#8209;defined for all real \(x\); moreover, since \(x^4/4 + x^2/2 + 1/4 \ge 1/4\) (why? proof?), \(y \ne 0\) for all real \(x\); therefore, the solution is:
-\[\box{y = -\sqrt[4]{x^4/4 + x^2/2 + 1/4}, x \in \mathbb{R}}\]
-Check: IC: \(-\sqrt[4]{0^4/4 + 0^2/2 + 1/4} = -\sqrt[4]{1/4} = -1/\sqrt2~\chec\); DE: \(y’ = -\Frac14(x^4/4 + x^2/2 + 1/4)^{-3/4}(x^3 + x) = x(x^2 + 1)/(4y^3)~\chec\).
+<p><strong>Sln</strong>: We begin by noting that \(y\) can’t equal \(0\).&nbsp; Otherwise, the DE is equivalent to \((x^3 + x)dx - 4y^3dy = 0 \implies x^4/4 + x^2/2 - y^4 = C\); the initial condition requires \(0^4/4 + 0^2/2 - (-1/\sqrt2)^4 = -1/4 = C \implies y^4 = x^4/4 + x^2/2 + 1/4 = (x^2 + 1)^2/4 \implies y = \pm\sqrt{(x^2 + 1)/2}\); however, the initial condition requires that we choose the negative sign; since every term under the radical is strictly \(\ge 0\), \(y\) is well&#8209;defined for all real \(x\); moreover, since \(x^4/4 + x^2/2 + 1/4 \ge 1/4\) (why? proof?), \(y \ne 0\) for all real \(x\); therefore, the solution is:
+\[\box{y = -\sqrt{(x^2 + 1)/2},~x \in \mathbb{R}}\]
+Check: IC: \(-\sqrt{(0^2 + 1)/2} = -1/\sqrt2~\chec\);<br>
+DE: \(y’ = -\Frac1{\cancel{2}\sqrt2}(x^2 + 1)^{-1/2}(\cancel{2}x)\color{red}{\left(\Frac{x^2+1}{x^2+1}\right)} = \Frac{x(x^2 + 1)}{-\sqrt2\left[2(x^2+1)/2\right]^{3/2}} = \Frac{x(x^2+1)}{\sqrt2(2)^{3/2}\left(-\sqrt{(x^2+1)/2}\right)^3} = \Frac{x(x^2+1)}{4y^3}~\chec.\)
 <br><br></p>
 
 <p><a name="P2.3.18" class="goback" onclick="winhisback()"><strong>2.3.18</strong>)</a>
