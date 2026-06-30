@@ -107,6 +107,10 @@ Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall
             <ul>
                [Chapter 2: Graphs](./Sullivan/C2/C2.html)
             </ul>
+            <ul> Chapter 7 : Trigonometric Functions
+                <ul>[Part 1: Sections 1-4](./Sullivan/C7/C7P1.html)
+                </ul>
+            </ul>
             <ul>
                [Chapter 9: Applications of Trigonometric Functions](./Sullivan/C9/C9.html)
             </ul>
