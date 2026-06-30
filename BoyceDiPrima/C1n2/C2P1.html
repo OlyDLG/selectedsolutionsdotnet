@@ -514,7 +514,7 @@ Check: the tedious&#8209;but&#8209;straighforward check is left to the reader (h
 <p><a name="P2.4.2" class="goback" onclick="winhisback()"><strong>2.4.2</strong>)</a>
 \(y’ = (1 - x^2 - y^2)^{1/2}\)</p>
 
-<p><strong>Sln</strong>: \(y’ = f(x,y) = (1 - x^2 - y^2)^{1/2}\) is continuous for \(1 - x^2 - y^2 \ge 0 \implies x^2 + y^2 \le 1\); \(\partial_y f = \Frac12(1 - x^2 - y^2)^{-1/2}(-2y) = -\Frac y{\sqrt{1 - x^2 - y^2}}\) is continuous for \(1 - x^2 - y^2 \gt 0 \implies x^2 + y^2 \lt 1\); the latter of these is the intersection of the two regions, thus the required region is 
+<p><strong>Sln</strong>: \(y’ = f(x,y) = (1 - x^2 - y^2)^{1/2}\) is continuous for \(1 - x^2 - y^2 \ge 0 \implies x^2 + y^2 \le 1\); \(\partial_y f = \Frac12(1 - x^2 - y^2)^{-1/2}(-2y) = -\Frac y{\sqrt{1 - x^2 - y^2}}\) is continuous for \(1 - x^2 - y^2 \gt 0 \implies x^2 + y^2 \lt 1\); the latter of these inequalities is the intersection of the two regions, thus the required region is 
 \[\box{\{(x,y) : x^2 + y^2 \lt 1\}}\]
 i.e., the origin&#8209;centered open unit disc.
 <br><br></p>
@@ -524,14 +524,14 @@ i.e., the origin&#8209;centered open unit disc.
 
 <p><strong>Sln</strong>: \(y’ = f(x,y) = \Frac{\log|xy|}{1 - x^2 + y^2}\) is continuous everywhere except on the lines \(x=0\), \(y=0\), and the hyperbola \(x^2 - y^2 = 1\); to compute \(\partial_y f\), we write it as \(\Frac12\left[\Frac{\log(x^2)}{1 - x^2 + y^2} + \Frac{\log(y^2)}{1 - x^2 + y^2}\right] \implies \partial_y f = \Frac1{\cancel{2}}\left[\Frac{-\cancel{2}y\log(x^2) + \cancel{2}\cancel{y}(1 - x^2 + y^2)/y^{\cancel{2}1} - \cancel{2}y\log(y^2)}{(1 - x^2 + y^2)^2}\right] =\) \(\Frac1{y(1 - x^2 + y^2)} - \Frac{y\log(x^2y^2)}{(1 - x^2 + y^2)^2}\) which is discontinuous precisely where \(f\) is, so the required region is 
 \[\box{\{(x,y): x, y \in \mathbb{R}, x \ne 0, y \ne 0, x^2 - y^2 \ne 1\}}.\]
-<br><br></p>
+<br></p>
 
 <p><a name="P2.4.8" class="goback" onclick="winhisback()"><strong>2.4.8</strong>)</a>
 \(\Frac{dy}{dx} = \Frac{(\cot x)y}{1 + y}\)</p>
 
 <p><strong>Sln</strong>: \(f(x,y) = \Frac{(\cot x)y}{1 + y}\) is discontinuous on the line \(y = -1\) and the lines \(x = k\pi, k \in \mathbb{Z}\); \(\partial_y f = \cot x\Frac{(1+y) - y}{(1+y)^2} = \Frac{\cot x}{(1+y)^2}\) which is discontinuous precisely where \(f\) is, so the required region is
 \[\box{\{(x,y): x,y \in \mathbb{R}, y \ne -1, x \ne k\pi, k \in \mathbb{Z}\}}\]
-<br><br></p>
+<br></p>
 
 <p><a name="P2.4.12" class="goback" onclick="winhisback()"><strong>2.4.12</strong>)</a>
 Solve the IVP \(y’ = x^2/\left[y(1+x^3)\right],~~y(0) = y_0\) and determine how the interval in which the solution exists depends on \(y_0\).</p>
@@ -541,7 +541,7 @@ Solve the IVP \(y’ = x^2/\left[y(1+x^3)\right],~~y(0) = y_0\) and determine ho
 Check: IC: \(y_0^2 - y_0^2 = 0 = \Frac13\log\left[(1+0^2)^2\right]~\chec\); DE: \(d\left(y^2 - y_0^2 = \Frac13\log\left[(1+x^3)^2\right]\right) \implies \) \(\cancel{2}ydy = \Frac{\cancel{2}\cancel{(1+x^3)}(\cancel{3}x^2)}{\cancel{3}(1+x^3)^{\cancel{2}1}} \implies\) \(\Frac{dy}{dx} = \Frac{x^2}{y(1+x^3)}~\chec\).
 <br></p>
 
-<p>To determine how the interval in which the solution exists depends on \(y_0\), begin by rewriting the solution as \(y^2 = y_0^2 + \Frac13\log\left[(1+x^3)^2\right] \implies y_0^2 + \Frac13\log\left[(1+x^3)^2\right] \gt 0\) (\(\gt\) instead of \(\ge\) because \(y=0\) is excluded from the solution due to the original form of the DE). To determine the bounds of this set we solve \(y_0^2 + \Frac13\log\left[(1+x^3)^2\right] = 0 \implies \exp(-3y_0^2) = (1+x^3)^2 \implies\) \(\pm\exp(-3y_0^2/2) = 1+x^3 \implies x = \left[-1 \pm\exp(-3y_0^2/2)\right]^{1/3}\), which implies that the well&#8209;defined set would be \(\left(-\infty, \left[-1 - \exp(-3y_0^2/2)\right]^{1/3}\right) \cup \left(\left[-1 + \exp(-3y_0^2/2)\right]^{1/3}, \infty\right)\) (it must be the set which excludes \(x=-1\) because \(x=-1\) is excluded by the original form of the DE), except that \(y_0\) is stipulated to correspond to \(x=0\), which is in the right portion of the union, so the interval in which the solution exists for such \(y_0\) is \[\box{\left(\left[-1 + \exp(-3y_0^2/2)\right]^{1/3}, \infty\right)}\]
+<p>To determine how the interval in which the solution exists depends on \(y_0\), begin by rewriting the solution as \(y^2 = y_0^2 + \Frac13\log\left[(1+x^3)^2\right] \implies y_0^2 + \Frac13\log\left[(1+x^3)^2\right] \gt 0\) (\(\gt\) instead of \(\ge\) because \(y=0\) is excluded from the solution due to the original form of the DE).&nbsp; To determine the bounds on \(x\) we solve \(y_0^2 + \Frac13\log\left[(1+x^3)^2\right] = 0\) for \(x\): \(y_0^2 + \Frac13\log\left[(1+x^3)^2\right] = 0 \implies \exp(-3y_0^2) = (1+x^3)^2 \implies \pm\exp(-3y_0^2/2) = 1+x^3 \implies x = \left[-1 \pm\exp(-3y_0^2/2)\right]^{1/3}\), which implies that the well&#8209;defined set would be \(\left(-\infty, \left[-1 - \exp(-3y_0^2/2)\right]^{1/3}\right) \cup \left(\left[-1 + \exp(-3y_0^2/2)\right]^{1/3}, \infty\right)\) (it must be the set which excludes \(x=-1\) because \(x=-1\) is excluded by the original form of the DE), except that \(y_0\) is stipulated to correspond to \(x=0\), which is in the right portion of the union, so the interval in which the solution exists for such \(y_0\) is \[\box{\left(\left[-1 + \exp(-3y_0^2/2)\right]^{1/3}, \infty\right)}\]
 <br></p>
 
 <p><a name="P2.4.14" class="goback" onclick="winhisback()"><strong>2.4.14</strong>)</a></p>
@@ -550,7 +550,7 @@ Check: IC: \(y_0^2 - y_0^2 = 0 = \Frac13\log\left[(1+0^2)^2\right]~\chec\); DE: 
 \[y’ = \frac{-x + (x^2 + 4y)^{1/2}}2,~~~y(2) = -1\]
 and indicate their domains of validity.</p>
 
-<p><strong>Sln</strong>: Verification that the IC is satisfied for both functions is trivial and left to the reader. For the DEs: \(y_1’ = -1\) while \(\Frac{-x + (x^2 + 4(1-x))^{1/2}}{2} = \Frac{-x + (x^2 - 4x + 4)^{1/2}}2 = \Frac{-x + |x-2|}2\) and for this to \( = -1\) identicallly, \(x - 2 \ge 0 \implies \box{x \ge 2}\) as the domain of validity for \(y_1\). For \(y_2, y_2’ = -x/2\) while \(\Frac{-x + (x^2 + 4(-x^2/4))^{1/2}}{2} = \Frac{-x + (x^2 - x^2)^{1/2}}2 \equiv -x/2~\box{\text{for all }x}\).
+<p><strong>Sln</strong>: Verification that the IC is satisfied for both functions is trivial and left to the reader.&nbsp; For the DEs: \(y_1’ = -1\) while \(\Frac{-x + (x^2 + 4(1-x))^{1/2}}{2} = \Frac{-x + (x^2 - 4x + 4)^{1/2}}2 = \Frac{-x + |x-2|}2\) and for this to \( = -1\) identically, \(x - 2 \ge 0 \implies \box{x \ge 2}\) as the domain of validity for \(y_1\).&nbsp; For \(y_2, y_2’ = -x/2\) while \(\Frac{-x + (x^2 + 4(-x^2/4))^{1/2}}{2} = \Frac{-x + (x^2 - x^2)^{1/2}}2 \equiv -x/2~\box{\text{for all }x}\).
 <br></p>
 
 <p><strong>b</strong>) Explain why the existence of two solutions does not contradict the the uniqueness part of text Theorem 2.4.1.</p>
