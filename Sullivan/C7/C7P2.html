@@ -312,7 +312,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><a name="5.20" class="goback" onclick="winhisback()"><strong>5.20</strong>)</a>
 \((-3, 1)\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: \(r = \sqrt{(-3)^2 + 1^2} = \sqrt{10} \implies \box{\cos\t = -\frac{3}{\sqrt{10}},~\sin\t = \frac1{\sqrt{10}},~\tan\t = -\frac13,~\cot\t = -3,~\sec\t = -\frac{\sqrt{10}}3,~\csc\t = \sqrt{10}}.\)&nbsp; (Denominator rationalization and checks are left to the reader, whom we encourage to attempt in your head.)
 <br><br></p>
 
 <p><strong>24</strong>, <strong>28</strong>, <strong>32</strong>, and <strong>36</strong>) Use the fact that the trigonometric functions are periodic to find the exact value of each expression. Do not use a calculator.</p>
@@ -320,7 +320,9 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><a name="5.24" class="goback" onclick="winhisback()"><strong>5.24</strong>)</a>
 \(\sin 390°\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Working in degrees, the period of the \(\sin\) function is \(360\), which is a succinct way of saying that \(\sin(\t° + k\cdot 360°) = \sin\t°\) for any \(\t\) and any integer \(k\) (recall that the integers are \(\{0, \pm1, \pm2, \pm3,...\} = \mathbb{Z}\)).&nbsp; Now, this is true for all \(\t\), but we’re only being required to memorize the trig function values for angles in the interval \([0,360)\)... <strong><em>precisely because</em></strong> the 360° periodicity of the \(\sin, \cos, \sec,\) and \(\csc\) functions means that we don’t have to memorize values for angles outside this interval: we can always express such angles as \(\t° + k\cdot 360°\) for <strong><em>some</em></strong> integer \(k\) and \(\t\) in that interval (proof?)&nbsp; So we need to find \(\t \in [0,360)\) such that there exists an integer \(k\) such that \(\t + k\cdot 360 = 390\) (note that for this application we don’t really care what \(k\) is, just that it’s and integer).<br></p>
+
+<p>In this case, the required values are not very difficult to &quot;just see&quot;: clearly \(390 = 30 + 1\cdot 360\) so \(\sin 390° = \sin(30° + 360°) = \sin 30° = \box{\frac12}\).&nbsp; But I’m going to do this &quot;the hard way&quot; as an illustration, because that’s the way that always works, i.e., when it’s not so easy to &quot;just see&quot; the required \(\t\); I’m also going to pretend like I’m using a calculator because I know that many students today are reliant on those.&nbsp; Divide 390 by 360: you get 1.08333333. The integer part, 1, is the \(k\); to get \(\t\), subtract off the 1 and multiply what’s left by 360: you should get 30, the required \(\t°\). (<strong>Do not</strong> re&#8209;enter 0.08333333 in by hand because your calculator stores more precision than it displays and if you don’t take advantage of that, you may end up with less precision than available, e.g., you may get 29.9 instead of the precise answer of 30.) We’re going to use this approach when we need to work in radians.
 <br><br></p>
 
 <p><a name="5.28" class="goback" onclick="winhisback()"><strong>5.28</strong>)</a>
