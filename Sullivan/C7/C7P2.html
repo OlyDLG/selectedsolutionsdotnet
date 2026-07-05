@@ -395,13 +395,15 @@ For what numbers \(\t\) is \(f(\t) = \cot \t\) not defined?</p>
 <p><a name="5.76" class="goback" onclick="winhisback()"><strong>5.76</strong>)</a>
 Is the cotangent function even, odd, or neither? Is its graph symmetric? With respect to what?</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: \(\cot(-x) = \Frac{\cos(-x)}{\sin(-x)} = \Frac{\cos x}{-\sin x} = -\Frac{\cos x}{\sin x} = -\cot x\) so \(\cot x\) is \(\box{\text{odd}}\), which implies that \(\box{\text{it’s graph is symmetric with respect to the origin}}\). (Its graph is given below in the &quot;Formulas Section&quot; for Section 7.)
 <br><br></p>
 
 <p><a name="5.86" class="goback" onclick="winhisback()"><strong>5.86</strong>)</a>
 If \(f(x) = \cot x\) and \(f(a) = -3\), find the exact value of: <strong>a</strong>) \(f(-a)\) and <strong>b</strong>) \(f(a) + f(a + \pi) + f(a + 4\pi)\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: <strong>a</strong>) \(\cot\) is odd, so \(\cot(-a) = -\cot a = -(-3) = \box{3}\).<br></p>
+
+<p><strong>b</strong>) \(\cot\) has period \(\pi\) (see Problem 5.98 below for a proof) so \(\cot(x + k\pi) = \cot x\) for all \(x\) (for which it is well&#8209;defined) and any integer  \(k\); therefore \(\cot a  + \cot(a + \pi) + \cot(a + 4\pi) = \cot a + \cot a + \cot a = -3 + (-3) + (-3) = \box{-9}\).
 <br><br></p>
 
 <p><a name="5.92" class="goback" onclick="winhisback()"><strong>5.92</strong>)</a>
@@ -417,7 +419,7 @@ Show that the period of \(f(\t) = \cot \t\) is \(\pi\).</p>
 
 <p>Part 1: For all \(\t\) such that \(\sin(\t + \pi) \ne 0\), \(\cot(\t + \pi) = \displaystyle \frac{\cos(\t + \pi)}{\sin(\t + \pi)} = \frac{-\cos \t}{-\sin \t} = \frac{\cos \t}{\sin \t} = \cot \t\) (because if \(\sin(\t + \pi) \ne 0\), then \(\sin \t \ne 0\); proof?); this shows that \(\pi\) is <i>a</i> period of cot. </p>
 
-<p>Part 2: We use the method suggested in the text as a hint for Problem 93: Suppose there exists \(p\) between 0 and \(\pi\), exclusive, i.e., \(0 \lt p \lt \pi\), such that \(\cot(\t + p) = \cot \t\) for all \(\t\) for which it is well&#8209;defined; then \(\cot p = \cot(0 + p) = \cot 0 = 0\), i.e., our assumption implies \(\cot p = 0\), and there is only one value between 0 and \(\pi\) for which this is true, namely \(\frac{\pi}2.~\) But, for example, \(\cot \frac{\pi}4 = 1\), whereas \(\cot(\frac{\pi}4 + \frac{\pi}2) = \cot \frac{3\pi}4 = -1\); in other words, we’ve found a value of \(\t\) such that \(\cot(\t + \frac{\pi}2) \ne \cot \t\), so \(p=\pi\) must be the smallest (positive) value for which \(\cot(\t+p) = \cot(\t)\) is <i>always</i> true.\(~~~\blksq\)
+<p>Part 2: We use the method suggested in the text as a hint for Problem 93: Suppose there exists \(p\) between 0 and \(\pi\), exclusive, i.e., \(0 \lt p \lt \pi,\) such that \(\cot(\t + p) = \cot \t\) for all \(\t\) for which it is well&#8209;defined; then \(\cot p = \cot(0 + p) = \cot 0 = 0\), i.e., our assumption implies \(\cot p = 0\), and there is only one value between 0 and \(\pi\) for which this is true, namely \(\frac{\pi}2.~\) But, for example, \(\cot \frac{\pi}4 = 1\), whereas \(\cot(\frac{\pi}4 + \frac{\pi}2) = \cot \frac{3\pi}4 = -1\); in other words, we’ve found a value of \(\t\) such that \(\cot(\t + \frac{\pi}2) \ne \cot \t\), so \(p=\pi\) must be the smallest (positive) value for which \(\cot(\t+p) = \cot(\t)\) is <i>always</i> true.\(~~~\blksq\)
 <br><br></p>
 
 <h2>Section 6: Graphs of Sine and Cosine</h2>
