@@ -91,6 +91,20 @@ pre code, pre tt{ background-color:transparent; border:none; }
   MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
 </script>
 
+<!-- Modern MathJax Configuration and Script Setup -->
+
+<!--script>
+  window.MathJax = { 
+    loader: { load: ['[tex]/color'] }, 
+    tex: { packages: {'[+]': ['color']} }, 
+    startup: { output: 'chtml' } // Forces clean vector elements for roots and bars 
+  }; 
+</script--> 
+
+<!-- FIXED: Points directly to the MathJax file instead of just the website domain -->
+
+<!--script id="MathJax-script" async src="https://cdnjs.cloudflare.com"></script-->
+
 <p><link rel="stylesheet" href="../../Styles.css">
 <title>Solutions of Selected Exercises from Sullivan, M. <q>Algebra &amp; Trigonometry, 9th Ed. Chapter 7 Part 2</q></title></p>
 
