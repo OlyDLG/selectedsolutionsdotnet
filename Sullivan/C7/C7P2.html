@@ -102,11 +102,11 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \definecolor{violet}{RGB}{138,43,226}
 \definecolor{black}{RGB}{0,0,0}
 \require{cancel}
+\newcommand{\t}{\theta}
+\newcommand{\w}{\omega}
 \newcommand{\blksq}{\blacksquare}
 \newcommand{\box}{\boxed}
 \newcommand{\Frac}{\displaystyle \frac}
-\newcommand{\t}{\theta}
-\newcommand{\w}{\omega}
 \newcommand{\chec}{\checkmark}
 \)</p>
 
@@ -453,19 +453,19 @@ Show that the period of \(f(\t) = \cot \t\) is \(\pi\).</p>
 <p><a name="6.12" class="goback" onclick="winhisback()"><strong>6.12</strong>)</a>
 \(y = \cos 3x\)</p>
 
-<p><strong>Sln</strong>: $\cos 3x = A\cos \
+<p><strong>Sln</strong>: \(\cos 3x = A\cos\w x\) with \(A = 1, \w = 3\) so the amplitude is \(\box{1}\) and the period \(T = \box{\frac{2\pi}{3}}.\) (A check for the period calculation is to compute \(T/4\) and confirm that when you put it in for \(x\), the argument for the \(\cos\) function becomes \(\pi/2\); we leave this for the reader.)
 <br><br></p>
 
 <p><a name="6.16" class="goback" onclick="winhisback()"><strong>6.16</strong>)</a>
 \(y = -3\cos 3x\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: \(y = A\cos\w x\) with \(A = -3, \w = 3\) so the amplitude is \(|A| = \box{3}\) and the period is again \(\box{\frac{2\pi}3}\).
 <br><br></p>
 
 <p><a name="6.20" class="goback" onclick="winhisback()"><strong>6.20</strong>)</a>
 \(y = \Frac95 \cos \left(-\Frac{3\pi}2 x\right)\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Because \(\cos\) is an even function, \(\Frac95 \cos \left(-\Frac{3\pi}2 x\right) = \Frac95 \cos \left(\Frac{3\pi}2 x\right) \implies A = \box{\frac95}, T = \Frac{2\cancel{\pi}}{3\cancel{\pi}/2} = \box{\frac43}\). Check: \(T/4 = 1/3 \implies (3\pi/2)(1/3) = \pi/2.~~\chec\)
 <br><br></p>
 
 <p><strong>24</strong> and <strong>30</strong>) Match the given function to one of the graphs (A)–(J).</p>
