@@ -118,7 +118,9 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \(\require{cancel}
 \newcommand{\t}{\theta}
 \newcommand{\u}{\upsilon}
+\newcommand{\w}{\omega}
 \newcommand{\Frac}{\displaystyle \frac}
+\newcommand{\chec}{\checkmark}
 \)</p>
 
 <p><body onload="makeC1E4Graph = GiorCPC1E4(); 
@@ -175,9 +177,9 @@ Also find the exact solution and explore the behavior for different values of th
 
 <p>\(~~~~\)To solve this system exactly, first observe that Eq. 1 doesn’t depend on \(N_B\) or its derivative, and thus \(N_A\) can be solved for independently of \(N_B\); that solution is: 
 \[N_A(t) = A_0 e^{-\alpha t}\] 
-where \(A_0 = N_A(0)\) and \(\alpha = \Frac1{\tau_A}\). (Check: \(\Frac d{dt}A_0 e^{-\alpha t} = A_0(-\alpha) e^{-\alpha t} = -\alpha N_A = -N_A/\tau_A\); \(N_A(0) = A_0 e^{-\alpha (0)} = A_0 \checkmark\).) We substitute this in for \(N_A\) in Eq. 2 (and rename \(\Frac1{\tau_B} = \beta\)), yielding: 
+where \(A_0 = N_A(0)\) and \(\alpha = \Frac1{\tau_A}\). (Check: \(\Frac d{dt}A_0 e^{-\alpha t} = A_0(-\alpha) e^{-\alpha t} = -\alpha N_A = -N_A/\tau_A\); \(N_A(0) = A_0 e^{-\alpha (0)} = A_0 \chec\).) We substitute this in for \(N_A\) in Eq. 2 (and rename \(\Frac1{\tau_B} = \beta\)), yielding: 
 \[\frac{dN_B}{dt} = \alpha A_0 e^{-\alpha t} - \beta N_B \implies \frac{dN_B}{dt} + \beta N_B = \alpha A_0 e^{-\alpha t}.\] This first-order linear inhomogeneous ODE no longer depends (explicitly) on \(N_A\), and thus it is solvable exactly for \(N_B\) by finding a suitable integrating factor. (There are several serviceable presentations of this method available on the internet; the reader unfamiliar with this method is encouraged to search for it.) The exact solution is: \[N_B(t) = B_0 e^{-\beta t} + \frac{\alpha A_0}{\beta - \alpha} \left(e^{-\alpha t} - e^{-\beta t} \right)\]
-where \(B_0 = N_B(0)\). (Check: \(\Frac d{dt}N_B + \beta N_B = \cancel{-\beta B_0 e^{-\beta t}} - \Frac{\alpha^2 A_0}{\beta - \alpha} e^{-\alpha t} + \cancel{\Frac{\alpha\beta A_0}{\beta - \alpha} e^{-\beta t}} + \cancel{\beta B_0e^{-\beta t}} + \Frac{\alpha \beta A_0}{\beta -\alpha}e^{-\alpha t} - \cancel{\Frac{\alpha \beta A_0}{\beta -\alpha}e^{-\beta t}}=\) \(\Frac{\cancel{\beta - \alpha}}{\cancel{\beta - \alpha}} \alpha A_0 e^{-\alpha t}\checkmark, N_B(0) = B_0(1) + \Frac{\alpha A_0}{\beta - \alpha} (1-1) = B_0\checkmark\).) </p>
+where \(B_0 = N_B(0)\). (Check: \(\Frac d{dt}N_B + \beta N_B = \cancel{-\beta B_0 e^{-\beta t}} - \Frac{\alpha^2 A_0}{\beta - \alpha} e^{-\alpha t} + \cancel{\Frac{\alpha\beta A_0}{\beta - \alpha} e^{-\beta t}} + \cancel{\beta B_0e^{-\beta t}} + \Frac{\alpha \beta A_0}{\beta -\alpha}e^{-\alpha t} - \cancel{\Frac{\alpha \beta A_0}{\beta -\alpha}e^{-\beta t}}=\) \(\Frac{\cancel{\beta - \alpha}}{\cancel{\beta - \alpha}} \alpha A_0 e^{-\alpha t}\chec, N_B(0) = B_0(1) + \Frac{\alpha A_0}{\beta - \alpha} (1-1) = B_0\chec\).) </p>
 
 <p>These exact solutions are plotted below as smooth curves, along with the Euler method solutions for 100 intervals (all solutions span \(t= 0\) to \(10.0\)) and a user-selectable number of intervals (10, 20, 30, 40, or 50); \(1/\tau_A\) and \(1/\tau_B\) are also user-selectable; \(N_A(0) = 100\) and \(N_B(0) = 0\) are fixed. </p>
 
@@ -238,7 +240,7 @@ N_A(t) &amp; = &amp; \frac12\left[(A_0 - B_0)e^{-2t} + A_0 + B_0\right]\\
 N_B(t) &amp; = &amp; \frac12\left[(B_0 - A_0)e^{-2t} + A_0 + B_0\right]
 \end{eqnarray}
 \]
-(Check: \(\Frac d{dt}N_A = \Frac12(-2)(A_0 - B_0)e^{-2t} = (B_0 - A_0)e^{-2t} = \Frac12(2B_0 - 2A_0)e^{-2t}= N_B - N_A,\) \(N_A(0) = \Frac12(A_0 - B_0 + A_0 + B_0) = A_0\checkmark\); the exactly analogous check for \(N_B\) is left to the reader.)</p>
+(Check: \(\Frac d{dt}N_A = \Frac12(-2)(A_0 - B_0)e^{-2t} = (B_0 - A_0)e^{-2t} = \Frac12(2B_0 - 2A_0)e^{-2t}= N_B - N_A,\) \(N_A(0) = \Frac12(A_0 - B_0 + A_0 + B_0) = A_0\chec\); the exactly analogous check for \(N_B\) is left to the reader.)</p>
 
 <p>\(~~~~\)As with Exercise 1.4, the reader should study and come to understand the effects of changing each of the adjustable parameters below. </p>
 
@@ -383,7 +385,7 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\u}_n-\vec{W}\right|(w_
 
 <h3>Solution</h3>
 
-<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the neglecting of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, from having solved Exercise 2.14, we know, or at least should suspect, that the larger initial vertical velocity component and the longer flight time <i>might</i> make these &quot;neglections&quot; unsupportable. Thus we will include drag<a href="#Note1">\(^1\)</a> in all three velocity component equations, and include the general Magnus force&mdash;given in text footnote 22 to be \(\vec{F}_M = S_0\vec{\omega}\times \vec{\u}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\omega}\times \vec{\u}\) if \(\vec{\omega}\) is purely vertical?)</p>
+<p>\(~~~~\)In the model given in the text for a <i>thrown</i> ball with side spin, the neglecting of drag in the \(y~\&amp;~z\) directions and of spin in the \(x\) direction is justified (implicitly) by the comparatively short flight time and the comparatively negligible initial vertical component. However, from having solved Exercise 2.14, we know, or at least should suspect, that the larger initial vertical velocity component and the longer flight time <i>might</i> make these &quot;neglections&quot; unsupportable. Thus we will include drag<a href="#Note1">\(^1\)</a> in all three velocity component equations, and include the general Magnus force&mdash;given in text footnote 22 to be \(\vec{F}_M = S_0\vec{\w}\times \vec{\u}\), where \(\times\) denotes the vector cross product&mdash;in both horizontal directions. (Reader: why don’t we have to consider the effect of \(\vec{F}_M\) on the vertical movement? Hint: what’s the vertical component of \(\vec{\w}\times \vec{\u}\) if \(\vec{\w}\) is purely vertical?)</p>
 
 <p>\(~~~~\)Now, the cross product is an &quot;oriented&quot; operation: \(\vec{u} \times \vec{v} = -(\vec{v} \times \vec{u})\), i.e., &quot;order matters.&quot; Consequently, as a guard against making careless mistakes, in this Exercise, we are going to assign \(x, y, z~\&amp;~u, v, w\) their more customary roles: \(x\) still denotes the initial horizontal direction of flight, but now \(y\) denotes the lateral horizontal displacement, and \(z\) represents the vertical position (and \(u, v, w\) represent their respective derivatives). With this as our coordinate system, our continuous model is:</p>
 
@@ -391,20 +393,20 @@ w_{n+1} &amp; = &amp; w_n -\frac{{B_2}_{n}}{m}\left|\vec{\u}_n-\vec{W}\right|(w_
 \dot{x} &amp; = &amp; u, &amp; x_0 = 0 \\
 \dot{y} &amp; = &amp; v, &amp; y_0 = 0 \\
 \dot{z} &amp; = &amp; w, &amp; z_0 = 1 \\
-\dot{u} &amp; = &amp; -\frac{B_2}{m}\u u - \frac{S_0}{m}(\vec{\omega} \times \vec{\u})_x, &amp; u_0 = \u_0\cos\t \\
-\dot{v} &amp; = &amp; -\frac{B_2}{m}\u v - \frac{S_0}{m}(\vec{\omega} \times \vec{\u})_y, &amp; v_0 = 0 \\
+\dot{u} &amp; = &amp; -\frac{B_2}{m}\u u - \frac{S_0}{m}(\vec{\w} \times \vec{\u})_x, &amp; u_0 = \u_0\cos\t \\
+\dot{v} &amp; = &amp; -\frac{B_2}{m}\u v - \frac{S_0}{m}(\vec{\w} \times \vec{\u})_y, &amp; v_0 = 0 \\
 \dot{w} &amp; = &amp; -\frac{B_2}{m}\u w - g, &amp; w_0 = \u_0\sin\t \\
 \end{eqnarray}
 \]</p>
 
-<p>where, as in the text, \(\Frac{S_0}{m} = 4.1\times 10^{-4}, \Frac{B_2}{m}\) is as in Exercise 2.14, and \(\vec{\omega} = (0,0,\omega), \omega\) user-selectable. Discretized, this becomes:</p>
+<p>where, as in the text, \(\Frac{S_0}{m} = 4.1\times 10^{-4}, \Frac{B_2}{m}\) is as in Exercise 2.14, and \(\vec{\w} = (0,0,\w), \w\) user-selectable. Discretized, this becomes:</p>
 
 <p>\[\begin{eqnarray}
 x_{n+1} &amp; = &amp; x_n + u_n\Delta t \\
 y_{n+1} &amp; = &amp; y_n + v_n\Delta t \\
 z_{n+1} &amp; = &amp; z_n + w_n\Delta t \\
-u_{n+1} &amp; = &amp; u_n -\left(\frac{{B_2}_{n}}{m}\u_n u_n + \frac{S_0}{m}(\vec{\omega} \times \vec{\u}_n)_x\right)\Delta t \\
-v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\u_n v_n + \frac{S_0}{m}(\vec{\omega} \times \vec{\u}_n)_y\right)\Delta t \\
+u_{n+1} &amp; = &amp; u_n -\left(\frac{{B_2}_{n}}{m}\u_n u_n + \frac{S_0}{m}(\vec{\w} \times \vec{\u}_n)_x\right)\Delta t \\
+v_{n+1} &amp; = &amp; v_n - \left(\frac{{B_2}_{n}}{m}\u_n v_n + \frac{S_0}{m}(\vec{\w} \times \vec{\u}_n)_y\right)\Delta t \\
 w_{n+1} &amp; = &amp; w_n - \left(\frac{{B_2}_{n}}{m}\u_n w_n + g\right)\Delta t \\
 \end{eqnarray}
 \]</p>
