@@ -38,8 +38,18 @@ sp.sum {font-weight: bold;}
   visibility: visible; /* Or display: block; */
   }
 
-.panel img {
+.fwimg img {
     max-width: 100%;
+    height: auto;
+}
+
+.tqimg img {
+    max-width: 75%;
+    height: auto;
+}
+
+.hwimg img {
+    max-width: 50%;
     height: auto;
 }
 
