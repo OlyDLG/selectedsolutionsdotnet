@@ -606,9 +606,15 @@ b) \(y(x)\) gives the height of the tunnel \(x\) feet away from the left end of 
 <br><br></p>
 
 <p><a name="6.99" class="goback" onclick="winhisback()"><strong>6.99</strong>)</a>
-Find four of the points of intersection of \(y = \tan x\) and \(y = 1\)</p>
+Find four of the points of intersection of \(y = \tan x\) and \(y = 1\).</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: In other words, find four ordered pairs \((x,y)\) such that each pair makes both equations simultaneously true.&nbsp; Clearly, this requires that \(y=1\) in each ordered pair, so we must find four values of \(x\) such that \(\tan x = 1\).&nbsp; We could (really should) appeal to the unit circle to figure this out, but this section is about the graphs of \(\sin\) and \(\cos\), so let’s see if we can figure it out using those graphs.<br></p>
+
+<p>Now, \(\tan x = \Frac{\sin x}{\cos x} = 1 \implies \sin x = \cos x\) so the way to figure this out using the graphs of \(\sin\) and \(\cos\) is to plot them together and figure out where their graphs intersect: the \(x\)&#8209;coordinates of those intersections are the required values of \(x\).&nbsp; The way to do this using GeoGebra is to define two functions, <code>f(x) = sin(x)</code> and <code>g(x) = cos(x)</code> (GeoGebra automatically plots them for you) and then use the <code>Intersect(f, g, &lt;lower bound&gt;, &lt;upper bound&gt;)</code> command, where <code>&lt;lower bound&gt;</code> is an \(x\) value a little less than the \(x\)&#8209;coordinate of a point of intersection, and <code>&lt;upper bound&gt;</code> is an \(x\) value a little greater (you determine these from  inspection of the graph); you do this for each intersection point you want to find, and GeoGebra finds them for you...except, it finds numerical approximations, not exact values.&nbsp; In real life, this is sufficient, because a real life problem like this, if you get one, almost certainly won’t have &quot;nice looking&quot; exact answers; but this one does, and I’ve tried to indicate what they are by instructing GeoGebra to put and label the horizontal ticks at multiples of \(\pi/4\).&nbsp; Thus careful inspection of the graph below 
+<img src="./Graphs/SullivanC7S6P99.png">
+should suggest that four values of \(x\) which meet our requirements are: \(-\Frac{3\pi}4, \Frac{\pi}4, \Frac{5\pi}4,\) and  \(\Frac{9\pi}4 \implies\) one answer is:
+\[\box{\left(-\Frac{3\pi}4, 1\right), \left(\Frac{\pi}4, 1\right), \left(\Frac{5\pi}4, 1\right), \left(\Frac{9\pi}4, 1\right)}\]
+(Due to the periodicity of \(\sin\) and \(\cos\), there are infinitely many points of intersection of these two curves, and therefore infinitely many acceptable answers to this problem.)&nbsp; The check is left to the reader (you should be able to do it in your head, using the unit circle).
 <br><br></p>
 
 <h2>Section 7: Graphs of Tangent, Cotangent, Cosecant, and Secant</h2>
