@@ -53,6 +53,11 @@ sp.sum {font-weight: bold;}
     height: auto;
 }
 
+.otimg img {
+    max-width: 33%;
+    height: auto;
+}
+
 div.toc {
     & > table tr {
         background-color: transparent;
