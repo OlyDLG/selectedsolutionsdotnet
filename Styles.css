@@ -38,18 +38,23 @@ sp.sum {font-weight: bold;}
   visibility: visible; /* Or display: block; */
   }
 
-.fwimg img {
+.fwimg img {/* full width image */
     max-width: 100%;
     height: auto;
 }
 
-.tqimg img {
+.tqimg img {/* 3/4 width image */
     max-width: 75%;
     height: auto;
 }
 
-.hwimg img {
+.hwimg img {/* half width image */
     max-width: 50%;
+    height: auto;
+}
+
+.fpimg img {/* 40% width image */
+    max-width: 40%;
     height: auto;
 }
 
