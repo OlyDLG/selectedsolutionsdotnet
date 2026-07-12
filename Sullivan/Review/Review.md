@@ -523,9 +523,11 @@ __Sln__: For a right circular cylinder, e.g., a &quot;can,&quot; $S$ (including 
 <br>
 
 <a name="3.40" class="goback" onclick="winhisback()">__3.40__)</a>
-Find the area of the shaded region: <img src="./Graphs/SullivanRS3P40.png" width=150>
+Find the area of the shaded region: 
+<div class="otimg"><img src="./Graphs/SullivanRS3P40.png"></div>
 
-__Sln__: The required area is the area of the pictured circle, minus the area of the <i>concentric</i> (meaning &quot;with the same center&quot;) inscribed square of side length 2, the latter area being simply $2^2 = 4$ sq. length units. In order to calculate the area of the circle, $\pi r^2$, we need to know $r^2$; because a segment drawn from the center of the circle to one of the corners of the square is a radius of the circle (why?), and because the square and the circle are concentric, such a segment is the hypotenuse of an isosceles right triangle of leg length $1$, as illustrated in the following diagram: <img src="./Graphs/SullivanRS3P40Solved.png" width=150>
+__Sln__: The required area is the area of the pictured circle, minus the area of the <i>concentric</i> (meaning &quot;with the same center&quot;) inscribed square of side length 2, the latter area being simply $2^2 = 4$ sq. length units. In order to calculate the area of the circle, $\pi r^2$, we need to know $r^2$; because a segment drawn from the center of the circle to one of the corners of the square is a radius of the circle (why?), and because the square and the circle are concentric, such a segment is the hypotenuse of an isosceles right triangle of leg length $1$, as illustrated in the following diagram: 
+<div class="otimg"><img src="./Graphs/SullivanRS3P40Solved.png"></div>
 (make sure you understand why the triangle is a right triangle; why it is an isosceles triangle; and why the two equal sides have length 1). Thus, by the Pythagorean theorem, $r^2 = 1^2 + 1^2 = 1 + 1 = 2$, so the area of the circle is $2\pi$; thus the area of the shaded region is: $$\boxed{2\pi - 4 \doteq 2.283\text{ sq. length units}}$$
 <br>
 
@@ -545,17 +547,17 @@ __Sln__: Such a disk has a circumference of $4\pi$ ft, which is thus how far it 
 <a name="3.48" class="goback" onclick="winhisback()">__3.48__)</a>
 Refer to the figure. Square $ABCD$ has an area of 100 square feet; square $BEFG$ has an area of 16 square feet. What is the area of the triangle $CGF$?
 
-<img src="./Graphs/SullivanRS3P48.png" height="250">
+<div class="hwimg"><img src="./Graphs/SullivanRS3P48.png"></div>
 
 __Sln__: Since the area of square $ABCD$ is 100 ft$^2$, the length of each of its sides is 10 ft; likewise, the length of each of square $BEFG$’s sides is 4 ft., meaning leg $GF$ of triangle $CGF$ is 4 ft; from the figure we see that leg $CG$ has length $\overline{BC} - \overline{BG} = 10 - 4 = 6$ ft; thus the area of triangle $CGF$ is $\displaystyle \frac12{4}(6) = $ $$\boxed{12\text{ ft}^2}$$ 
 
-<img src="./Graphs/SullivanRS3P48Solved.png" height="250">
+<div class="hwimg"><img src="./Graphs/SullivanRS3P48Solved.png"></div>
 <br>
 
 <a name="3.50" class="goback" onclick="winhisback()">__3.50__)</a>
 A circular swimming pool, 20 feet in diameter,is enclosed by a wooden deck that is 3 feet wide (see figure).
 
-<img src="./Graphs/SullivanRS3P50.png" height="250">
+<div class="hwimg"><img src="./Graphs/SullivanRS3P50.png"></div>
 
 __a__) What is the area of the deck? 
 
