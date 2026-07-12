@@ -48,6 +48,11 @@ sp.sum {font-weight: bold;}
     height: auto;
 }
 
+.feimg img {/* 5/8 width image */
+    max-width: 62.5%;
+    height: auto;
+}
+
 .hwimg img {/* half width image */
     max-width: 50%;
     height: auto;
