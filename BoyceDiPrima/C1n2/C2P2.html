@@ -93,11 +93,13 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\G}{\Gamma}
 \newcommand{\t}{\theta}
 \newcommand{\u}{\upsilon}
+\newcommand{\rarrow}{\rightarrow}
 \newcommand{\box}{\boxed}
 \newcommand{\chec}{\checkmark}
+\newcommand{\blksq}{\blacksquare}
 \newcommand{\Frac}{\displaystyle \frac}
 \newcommand{\Lim}{\displaystyle \lim}
-\newcommand{\Int}{\large{\int}\small}
+\newcommand{\Int}{\large{\int}\normalsize}
 \newcommand{\DefInt}[2]
 {
   \large\int_{\small{#1}}^{\small{#2}}\small
@@ -122,7 +124,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p><i>Notes: These solutions are provided &quot;as-is,&quot; for informational purposes only, with no warranty of any kind, expressed or implied, including that of correctness, adequacy, and/or suitability for any purpose, whatsoever.</i> Corrections are welcome and should be emailed to <a href="mailto:selectedsolutionsdotnet@gmail.com">selectedsolutionsdotnet@gmail.com</a>.</p>
 
-<p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; \(\blacksquare\) inidicates the end of a proof; unlike the text, but consistent with most mathematical usage after &quot;Algebra 2,&quot; we use \(\log\) to denote the &quot;natural&quot; logarithm, \(\log_e\).</p>
+<p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place; \(\blksq\) indicates the end of a proof; unlike the text, but consistent with most mathematical usage after &quot;Algebra 2,&quot; we use \(\log\) to denote the &quot;natural&quot; logarithm, \(\log_e\).</p>
 
 <h3>Contents</h3>
 
@@ -170,7 +172,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><strong>Sln</strong>:
 <br></p>
 
-<p><strong>b</strong>) Find \(Q_{\infty} = \lim_{t \rightarrow \infty} Q(t)\).</p>
+<p><strong>b</strong>) Find \(Q_{\infty} = \lim_{t \rarrow \infty} Q(t)\).</p>
 
 <p><strong>Sln</strong>:
 <br></p>
@@ -260,14 +262,37 @@ Consider the Gompertz equation \(dN/dt = rN\log(K/N), r, K \gt 0\) constant.</p>
 <p><strong>Sln</strong>:
 <br><br></p>
 
-<p><a name="P2.6.19" class="goback" onclick="winhisback()"><strong>2.6.19</strong>)</a></p>
+<p><a name="P2.6.19" class="goback" onclick="winhisback()"><strong>2.6.19</strong>)</a>
+\(dN/dt = r(1-N/K)N-h\) adds a constant harvest rate to the logistic model.<br></p>
+
+<p><strong>a</strong>) Show, constructively, that if \(h \lt rK/4\) the model has two equilibria, \(N_1 \lt N_2\).<br></p>
+
+<p><strong>Sln</strong>:
+<br></p>
+
+<p><strong>b</strong>) Show that \(N_1\) is unstable and \(N_2\) is stable.<br></p>
+
+<p><strong>Sln</strong>:
+<br></p>
+
+<p><strong>c</strong>) Graph \(dN/dt\) vs. \(N\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point.<br> </p>
+
+<p><strong>Sln</strong>:
+<br></p>
+
+<p><strong>d</strong>) If \(h \gt rK/4\) show that \(N(t)\) decreases to zero as \(t\) increases regardless of the value of \(N_0\).<br></p>
+
+<p><strong>Sln</strong>:
+<br></p>
+
+<p><strong>e</strong>) If \(h = rK/4\) show there is a single equilibrium point, \(N = K/2\), and that this point is semistable; thus the maximum sustainable yield, \(h_m\), is \(rK/4\).<br> </p>
 
 <p><strong>Sln</strong>:
 <br><br></p>
 
 <p><a name="P2.6.22" class="goback" onclick="winhisback()"><strong>2.6.22</strong>)</a></p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: 
 <br><br></p>
 
 <p><a name="P2.6.23" class="goback" onclick="winhisback()"><strong>2.6.23</strong>)</a></p>
