@@ -819,13 +819,25 @@ Check: \(6.79\sin\left(\Frac{\pi}{395}(157) + \Frac{81\pi}{790}\right) + 4.3 = 6
 <p><a name="8.38" class="goback" onclick="winhisback()"><strong>8.38</strong>)</a>
 Given that the amount of daylight in Honolulu, HI, USA on the summer solstice of 2010 was \(13.43\) hours and the amount on the winter solstice of the same year was \(10.85\) hours:</p>
 
-<p>a) Find a sinusoidal sine function that models the data.<br>
-b) Use the result of part a) to calculate the amount of daylight on April 1, the 91st day of the year.<br>
-c) Graph the function found in part a).<br>
-d) Look up the actual number of hours of daylight on April 1, 2010, in Honolulu, HI to compare to the result of part c).</p>
+<p>a) Find a sinusoidal sine function that models the data.<br></p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Summer solstice provides the greatest amount of daylight, so \(13.43\) is the maximum value of our model, and winter solstice provides the least, so \(10.85\) is the minimum, thus \(A = (13.43 - 10.85)/2 = 1.29\) hours and \(B = (13.43 + 10.85)/2 = 12.14\) hours.&nbsp; According to Google, the summer solstice in Hawaii in 2010 was on June 21, which is day number \(172\), and a year&mdash;one period&mdash;is \(365\) days (technically, it is approximately 365.2422 days, but that provides much more precision than contained in the other data, so we’ll use the conventional figure), so \(\w = \Frac{2\pi}{365}\) and \(\phi = \Frac{2\pi}{365}(172) - \Frac{\pi}2 = \Frac{(688-365)\pi}{730} = \Frac{323\pi}{730}\implies\)
+\[\box{\text{Daylight}(t=\text{day number}) = 1.29\sin\left(\Frac{2\pi}{365}t - \Frac{323\pi}{730}\right) + 12.14\text{ hours}}\]
 <br></p>
+
+<p>b) Use the result of part a) to calculate the amount of daylight on April 1, the 91st day of the year.<br></p>
+
+<p><strong>Sln</strong>: \(D(91) = 1.29\sin\left(\Frac{2\pi}{365}(91) - \Frac{323\pi}{730}\right) + 12.14 \doteq \box{12.37\text{ hrs.}}\)
+<br></p>
+
+<p>c) Graph the function found in part a).<br></p>
+
+<p><strong>Sln</strong>: <div class="fwimg"><img src="./Graphs/SullivanC7S8P38.png"></div>
+<br></p>
+
+<p>d) Look up the actual number of hours of daylight on April 1, 2010, in Honolulu, HI to compare to the result of part c).</p>
+
+<p><strong>Sln</strong>: <a href="https://tinyurl.com/20100401HonoluluDaylight">According to Google</a> (queried July 20, 2026), there were &quot;exactly&quot; 12 hours, 56 minutes \(\doteq 12.93\) hours of daylight in Honolulu on April 1, 2010, an absolute difference of \(12.93 - 12.37 = 0.56\) hours from the model prediction, which is \((100)(0.56/(2(1.29)) \doteq 22\)% of the total variation in day length between the solstices, i.e., quite substantial: maybe we <strong><em>should</em></strong> have used the more precise year length and/or more precise timings of the occurrence of the solstices, which are available, also via Google search, to the nearest minute.&nbsp; (These last could also be used to provide a more &quot;ground&#8209;truthed&quot; figure for a half&#8209;period; this activity is left for the reader.)</p>
 
 <p><a name="Credits"></a></p>
 
