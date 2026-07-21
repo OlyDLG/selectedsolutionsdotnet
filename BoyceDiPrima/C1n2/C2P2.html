@@ -90,6 +90,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><link rel="stylesheet" href="../../Styles.css">
 <title>Solutions of Selected Problems from Boyce/DiPrima <q>Elem. DEs &amp; BVPs 5th Ed. Chapter 2 Part 2</q></title>
 \(\require{cancel}
+\newcommand{\b}{\beta}
 \newcommand{\G}{\Gamma}
 \newcommand{\t}{\theta}
 \newcommand{\u}{\upsilon}
@@ -290,15 +291,56 @@ Consider the Gompertz equation \(dN/dt = rN\log(K/N), r, K \gt 0\) constant.</p>
 <p><strong>Sln</strong>:
 <br><br></p>
 
-<p><a name="P2.6.22" class="goback" onclick="winhisback()"><strong>2.6.22</strong>)</a></p>
+<p><a name="P2.6.22" class="goback" onclick="winhisback()"><strong>2.6.22</strong>)</a>
+Given the model:
+\[\begin{eqnarray}
+dx/dt &amp; = &amp; -[\b + \mu(t)]x &amp; ~~~~~~~~~~~~~~~~~~\text{(i)} \\
+dn/dt &amp; = &amp; -\nu\b x - \mu(t)n &amp; ~~~~~~~~~~~~~~~~~\text{(ii)}
+\end{eqnarray}
+\]
+where:
+\(~~~n(t) = \) number of individuals, born in year \(t=0\), surviving at year \(t\);<br>
+\(~~~x(t) = \) number of these individuals who have not had smallpox by year \(t\);<br>
+\(~~~\b = \) rate at which &quot;susceptibles&quot; contract smallpox (assumed constant);<br>
+\(~~~\nu = \) death rate of those who contract the disease (assumed constant);<br>
+\(~~~\mu(t) = \) death rate from all other causes.<br></p>
+
+<p><strong>a</strong>) Show that \(z = x/n\) satisfies the IVP:
+\[dz/dt = -\b z (1 - \nu z),~~~z(0) = 1~~~~~\text{(iii)}\]
+and note that this is independent of \(\mu(t)\).<br></p>
 
 <p><strong>Sln</strong>: 
+<br></p>
+
+<p><strong>b</strong>) Solve IVP (iii)<br></p>
+
+<p><strong>Sln</strong>: 
+<br></p>
+
+<p><strong>c</strong>) Using \(\nu = \b = 1/8\), determine the proportion of twenty&#8209;year&#8209;olds who have not had smallpox.</p>
+
+<p><strong>Sln</strong>: This is simply \(z(20) = \) 
 <br><br></p>
 
-<p><a name="P2.6.23" class="goback" onclick="winhisback()"><strong>2.6.23</strong>)</a></p>
+<p><a name="P2.6.23" class="goback" onclick="winhisback()"><strong>2.6.23</strong>)</a>
+Consider the model:
+\[dx/dt = (R - R_c)x - ax^3\]
+where \(a\) and \(R_c\) are positive constants and \(R\) is a parameter.<br></p>
+
+<p><strong>a</strong>) Show that \(R \lt R_c \implies x = 0\) is the only equilibrium solution and that it is stable.<br> </p>
 
 <p><strong>Sln</strong>:
-<br><br></p>
+<br></p>
+
+<p><strong>b</strong>) Show that \(R \gt R_c \implies\) three equilibrium solutions: \(x = 0\), which is unstable, and \(x = \pm\sqrt{(R-R_c)/a}\), both of which are stable.<br> </p>
+
+<p><strong>Sln</strong>:
+<br></p>
+
+<p><strong>c</strong>) Draw a graph in the \(Rx\) plane showing all equilibrium solutions, and label each as stable or unstable.<br> </p>
+
+<p><strong>Sln</strong>:
+<br></p>
 
 <h3>Section 7: Some Problems in Mechanics</h3>
 
