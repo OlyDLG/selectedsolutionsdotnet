@@ -210,29 +210,38 @@ The check is left to the reader.&nbsp; (My calculations result in a (rounded) di
 <br><br></p>
 
 <p><a name="P2.5.13" class="goback" onclick="winhisback()"><strong>2.5.13</strong>)</a> 
-Assume the earth’s human population grows continuously in proportion to its present value; that the population in 1650 AD (\(t=0\)) was \(6 \times 10^8\); and that the population in 1950 AD (\(t=300\)) was \(2.8 \times 10^9\): find the population at time \(t\) years from 1650, and when the population will reach \(2.5 \times 10^{10}\).</p>
+Assume the earth’s human population, \(P\), grows continuously in proportion to its present value; that the population in 1650 AD (\(t=0\)) was \(6 \times 10^8\); and that the population in 1950 AD (\(t=300\)) was \(2.8 \times 10^9\): find the population at time \(t\) years from 1650, and when the population will reach \(2.5 \times 10^{10}\).</p>
 
-<p><strong>Sln</strong>: 
+<p><strong>Sln</strong>: The governing model is \(\Frac{dP}{dt} = kP \implies P(t) = P_0e^{kt}\); \(P_0 = P(0) = 6 \times 10^8\), so \(P(300) = 2.8 \times 10^9 = 6 \times 10^8e^{300k} \implies\) \(k = \Frac1{300}\log\left(\Frac{2.8 \times 10^9}{6 \times 10^8}\right) \doteq 5.13 \times 10^{-3} \implies\)
+\[\box{P(t) = 6 \times 10^8\exp(5.13 \times 10^{-3}t)\text{ humans, } t \text{ years since 1650 AD}}\]
+To find when this model predicts the population will reach \(2.5 \times 10^{10}\), we solve \(2.5 \times 10^{10} = 6 \times 10^8\exp(5.13 \times 10^{-3}t)\) for \(t\), yielding \(t = \Frac1{5.13 \times 10^{-3}}\log\left(\Frac{2.5 \times 10^{10}}{6 \times 10^8}\right) \doteq 727.03\) years after 1650, i.e., \(\box{2377\text{ AD}}\).&nbsp; (Again our answer differs from that given in the back of our copy of the text by one unit in the fourth significant figure...but just barely.) 
 <br><br></p>
 
 <p><a name="P2.5.17" class="goback" onclick="winhisback()"><strong>2.5.17</strong>)</a>
-Assume a spherical raindrop evaporates at a rate proportional to its surface area; that its radius is originally 3 mm; and 30 minutes later it is 2 mm: find an expression for the radius of of the raindrop as a function of time.</p>
+Assume a spherical raindrop of radius \(r\) evaporates at a rate proportional to its surface area \(S = 4\pi r^2\); that \(r\) is initially 3 mm; and 30 minutes later it is 2 mm: find an expression for \(r(t)\).</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: We have \(\Frac{dV}{dt} = \Frac{d}{dt}\left(\Frac43\pi r^3\right) = 4\pi r^2\Frac{dr}{dt} = k(4\pi r^2) \implies \Frac{dr}{dt} = k \implies r(t) = kt + b\).&nbsp; The initial condition \(r(0) = 3 = k(0) + b\) \(\implies b =3\); \(r(0.5\text{ hours}) = 2 = 0.5k + 3 \implies k = -2 \implies\)
+\[\box{r(t) = 3 - 2t\text{ mm, }t \in [0, 1.5] \text{ in hours}}\]
+The check is trivial and left to the reader, who should understand/explain the domain restriction.
 <br><br></p>
 
 <p><a name="P2.5.22" class="goback" onclick="winhisback()"><strong>2.5.22</strong>)</a>
-In a room containing 1200 ft\(^3\) of air initially free of carbon monoxide (CO), at time \(t=0\) cigarette smoke containing 4% CO is introduced at a rate of 0.1 ft\(^3\)/min., and the well&#8209;circulated mixture leaves the room at the same rate.<br></p>
+In a room containing 1200 ft\(^3\) of air initially free of carbon monoxide (CO), at time \(t=0\), cigarette smoke containing 4% CO is introduced at a rate of 0.1 ft\(^3\)/min., and the well&#8209;circulated mixture leaves the room at the same rate.<br></p>
 
 <p><strong>a</strong>) Find an expression for the concentration \(x(t)\) of CO for \(t \gt 0\).</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: To get the answer in the back of my copy of my text, we must assume, in order for the units to be consistent in the model, that the specific volumes, i.e., volumes per unit mass, of the CO and of the total gas mixture, are constant and consequently volume may serve as a proxy for mass, which is actually the conserved quantity.&nbsp; Thus \(x(t)\) has units of \(\Frac{\text{ft}^3\text{ CO}}{\text{ft}^3\text{ gas}}\); the total cubic feet of CO in the tank at any given time is \((1200\text{ ft}^3\text{ gas})x(t)\); and the rate of change of CO in the room is therefore \(1200\Frac{dx}{dt}\).&nbsp; Now, CO leaves the room at the rate \(0.1\Frac{\text{ft}^3\text{ gas}}{\text{min}} \times x\) and enters the room at the rate \(0.1\Frac{\text{ft}^3\text{ gas}}{\text{min}} \times 0.04\Frac{\text{ft}^3\text{ CO}}{\text{ft}^3\text{ gas}}\) yielding the governing differential equation:
+\[1200\frac{dx}{dt} = 0.1(0.04 - x)\]
+Multiplying through by 10, separating the variables, and strategically placing the constants yields: \(\Frac{dx}{0.04 - x} = \Frac{dt}{12000} \implies -\log|0.04 - x| = \Frac t{12000} + C \implies 0.04 - x = A\exp(-t/12000)\), where we have incorporated the sign indeterminacy of the absolute value into the undetermined coefficient, which we now determine: \(x(0) = 0 \implies 0.04 = A(1) \implies 0.04 - x = 0.04\exp(-t/12000)\) or
+\[\box{x(t) = 0.04[1 - \exp(-t/12000)]~\frac{\text{ft}^3\text{ CO}}{\text{ft}^3\text{ gas}}, t\text{ in minutes}}\]
+The check is left to the reader.
 <br> </p>
 
 <p><strong>b</strong>) When will that concentration reach \(1.2 \times 10^{-4}\)?</p>
 
-<p><strong>Sln</strong>:
-<br><br></p>
+<p><strong>Sln</strong>: We need to solve \(1.2 \times 10^{-4} = 0.04[1 - \exp(-t/12000)]\) for \(t\): \(1.2 \times 10^{-4} = 0.04[1 - \exp(-t/12000)] \implies \exp(-t/12000) = 1 - (1.2 \times 10^{-4})/(4 \times 10^{-2}) = 0.997 \implies\)
+\[\box{t = -12000\log(0.997) \doteq 36\text{ min}}.\]
+<br></p>
 
 <h3>Section 6: Population Dynamics and Some Related Problems</h3>
 
