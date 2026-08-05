@@ -261,17 +261,21 @@ Consider the DE \(dN/dt = k(1 - N)^2\), \(k \gt 0\) constant.</p>
 
 <p><strong>a</strong>) Show that \(N = 1\) is the only critical point, with corresponding equilibrium solution \(\phi(t) = 1\).</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Trivial: \(\Frac{dN}{dt} = 0 = k(1-N)^2, k \gt 0 \implies N = 1\) is the sole equilibrium value, and thus \(\phi(t) = 1\) is the only equilibrium solution.
 <br></p>
 
 <p><strong>b</strong>) Plot \(dN/dt\) versus \(N\), and show that \(N\) is an increasing function of \(t\) for \(N \lt 1\) and also for \(N \gt 1\) (thus implying that the equilibrium solution \(\phi(t) = 1\) is semistable).</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: \(\Frac{dN}{dt}(N) = k(1-N)^2, k \gt 0\), is an &quot;up&#8209;opening&quot; parabola with vertex at (1,0), and thus for \(N \ne 1, \Frac{dN}{dt} \gt 0\); this implies that if \(N_0 \lt 1\), \(N(t)\) increases towards \(N=1\) with increasing \(t\), and if \(N_0 \gt 1\), \(N(t)\) increases away from \(N=1\)with increasing \(t\); thus the equilibrium solution \(\phi(t) = 1\) is semistable.
 <br></p>
 
 <p><strong>c</strong>) Solve the DE subject to the IC \(N(0) =N_0\) and thereby confirm the conclusions of Part b).</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: \(\Frac{dN}{dt} = k(1 - N)^2 \implies kdt = \Frac{dN}{(1-N)^2} \implies kt + C = \Frac1{1-N}\) and the IC \(N(0) = N_0 \implies C = \Frac1{1-N_0} \implies\) \(kt + \Frac1{1-N_0} = \Frac1{1-N} \implies 1 - N = \Frac{1-N_0}{(1-N_0)kt + 1} \implies\)
+\[\box{N(t) = 1 - \frac{1-N_0}{(1-N_0)kt + 1}}\]
+Check: IC: \(N(0) = 1 - \Frac{1-N_0}{0 + 1} = N_0~\chec\); DE: \(\Frac{dN}{dt} = -(-1)(1-N_0)k\Frac{1-N_0}{[(1-N_0)kt + 1]^2} = k\left[\Frac{1-N_0}{(1-N_0)kt + 1}\right]^2\) while \(k(1-N)^2 = k\left[1 - \left(1 - \Frac{1-N_0}{(1-N_0)kt + 1}\right)\right]^2 = k\left[\Frac{1-N_0}{(1-N_0)kt + 1}\right]^2~\chec\)<br></p>
+
+<p>This verification that \(N(t)\) solves the IVP also verifies that \(N(t)\) is an increasing function of \(t\) for both \(N \lt 1\) and \(N \gt 1\).
 <br><br></p>
 
 <p><a name="P2.6.11" class="goback" onclick="winhisback()"><strong>2.6.11</strong>)</a>
