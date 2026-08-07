@@ -281,8 +281,15 @@ Check: IC: \(N(0) = 1 - \Frac{1-N_0}{0 + 1} = N_0~\chec\); DE: \(\Frac{dN}{dt} =
 <p><a name="P2.6.11" class="goback" onclick="winhisback()"><strong>2.6.11</strong>)</a>
 Plot \(dN/dt = aN - b\sqrt N,~a,b \gt 0,~N_0 \ge 0\), vs. \(N\), determine the critical points, and classify each as stable, unstable, or semistable.</p>
 
-<p><strong>Sln</strong>: 
-<br><br></p>
+<p><strong>Sln</strong>: First, the specification \(N_0 \ge 0\) is only necessary to ensure that the initial value of \(dN/dt\) is real; otherwise, the value of \(N_0\) does not affect the graph of \(dN/dt\) vs. \(N\), nor the equilibria or their (in)stability&mdash;it only affects the actual solution \(N(t)\), which we have not been asked to find.<br> </p>
+
+<p>Now, the critical points are found by solving \(0 = dN/dt = aN - b\sqrt N = (a\sqrt N - b)\sqrt N \implies \sqrt N = 0 \implies \box{N = 0}\) or \(a\sqrt N - b = 0 \implies \box{N = \Frac{b^2}{a^2}}\).&nbsp; Examination of the graph of \(dN/dt\) vs. \(N\) (given below) clearly shows that for \(0 \lt N \lt \Frac{b^2}{a^2}\), \(dN/dt \lt 0 \implies N(t)\) is decreasing with increasing \(t\) and \(\box{0\text{ is stable}}\); while for \(N \gt \Frac{b^2}{a^2}\), \(dN/dt \gt 0 \implies N(t)\) is increasing with increasing \(t\) and \(\box{\frac{b^2}{a^2}\text{ is unstable}}\).<br></p>
+
+<p>Here’s the graph of \(dN/dt\) vs. \(N\) indicating the equilibria and the intervals over which \(N(t)\) is decreasing and increasing with increasing \(t.\)<br></p>
+
+<div class="tqimg"><img src="./Graphs/BoyceDiPrimaC2S6P11.png"></div>
+
+<p><br><br></p>
 
 <p><a name="P2.6.16" class="goback" onclick="winhisback()"><strong>2.6.16</strong>)</a>
 Consider the Gompertz equation \(dN/dt = rN\log(K/N), r, K \gt 0\) constant.</p>
