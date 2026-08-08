@@ -318,7 +318,7 @@ Consider the Gompertz equation \(\Frac{dN}{dt} = F(N) = rN\log\left(\Frac KN\rig
 <br><br></p>
 
 <p><a name="P2.6.19" class="goback" onclick="winhisback()"><strong>2.6.19</strong>)</a>
-\(\Frac{dN}{dt} = r(1-N/K)N-h\) adds a constant harvest rate to the logistic model.<br></p>
+\(\Frac{dN}{dt} = F(N) = rN\left(1 - \Frac NK\right) - h\) adds a constant harvest rate, \(h\), to the logistic model.<br></p>
 
 <p><strong>a</strong>) Show, constructively, that if \(h \lt rK/4\) the model has two equilibria, \(N_1 \lt N_2\).<br></p>
 
@@ -330,7 +330,7 @@ Consider the Gompertz equation \(\Frac{dN}{dt} = F(N) = rN\log\left(\Frac KN\rig
 <p><strong>Sln</strong>:
 <br></p>
 
-<p><strong>c</strong>) Graph \(\Frac{dN}{dt}\) vs. \(N\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point.<br> </p>
+<p><strong>c</strong>) Graph \(F(N)\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point.<br> </p>
 
 <p><strong>Sln</strong>:
 <br></p>
@@ -345,7 +345,7 @@ Consider the Gompertz equation \(\Frac{dN}{dt} = F(N) = rN\log\left(\Frac KN\rig
 <p><strong>Sln</strong>:
 <br><br></p>
 
-<p><a name="P2.6.22" class="goback" onclick="winhisback()"><strong>2.6.22</strong>)</a>
+<p><a name="P2.6.22" class="go back" onclick="winhisback()"><strong>2.6.22</strong>)</a>
 Given the model:
 \[\begin{eqnarray}
 \Frac{dx}{dt} &amp; = &amp; -[\b + \mu(t)]x &amp; ~~~~~~~~~~~~~~~~~~\text{(i)} \\
@@ -360,7 +360,7 @@ where:
 \(~~~\mu(t) = \) death rate from all other causes.<br></p>
 
 <p><strong>a</strong>) Show that \(z = x/n\) satisfies the IVP:
-\[dz/dt = -\b z (1 - \nu z),~~~z(0) = 1~~~~~\text{(iii)}\]
+\[\frac{dz}{dt} = -\b z (1 - \nu z),~~~z(0) = 1~~~~~\text{(iii)}\]
 and note that this is independent of \(\mu(t)\).<br></p>
 
 <p><strong>Sln</strong>: 
@@ -378,7 +378,7 @@ and note that this is independent of \(\mu(t)\).<br></p>
 
 <p><a name="P2.6.23" class="goback" onclick="winhisback()"><strong>2.6.23</strong>)</a>
 Consider the model:
-\[dx/dt = (R - R_c)x - ax^3\]
+\[\frac{dx}{dt} = F(x) = (R - R_c)x - ax^3\]
 where \(a\) and \(R_c\) are positive constants and \(R\) is a parameter.<br></p>
 
 <p><strong>a</strong>) Show that \(R \lt R_c \implies x = 0\) is the only equilibrium solution and that it is stable.<br> </p>
