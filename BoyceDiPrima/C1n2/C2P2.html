@@ -246,27 +246,27 @@ The check is left to the reader.
 <h3>Section 6: Population Dynamics and Some Related Problems</h3>
 
 <p><a name="P2.6.3" class="goback" onclick="winhisback()"><strong>2.6.3</strong>)</a>
-Plot \(dN/dt = N(N-1)(N-2),~N_0 \gt 0\) versus \(N\), determine the critical points, and classify each as stable or unstable.</p>
+Plot \(\Frac{dN}{dt} = F(N) = N(N-1)(N-2),~N_0 \gt 0\) versus \(N\), determine the critical points, and classify each as stable or unstable.</p>
 
 <p><strong>Sln</strong>: Here’s the GeoGebra&#8209;produced plot:
 <div class="tqimg"><img src="./Graphs/BoyceDiPrimaC2S6P3.png"></div></p>
 
-<p>Setting \(dN/dt = N(N-1)(N-2) = 0 \implies\) the critical points are \(\box{N = 0, 1, 2}\).<br></p>
+<p>Setting \(\Frac{dN}{dt} = N(N-1)(N-2) = 0 \implies\) the critical points are \(\box{N = 0, 1, 2}\).<br></p>
 
-<p>\(dN/dt \gt 0\) for \(N \in (0,1)\) and \(\lt 0\) for \(N \in (1,2)\), so \(\box{N=0\text{ is unstable}}\) and \(\box{N=1\text{ is stable}}\), and \(dN/dt \gt 0\) for \(N \gt 2 \implies \box{N=2\text{ is unstable}}\).
+<p>\(\Frac{dN}{dt} \gt 0\) for \(N \in (0,1)\) and \(\lt 0\) for \(N \in (1,2)\), so \(\box{N=0\text{ is unstable}}\) and \(\box{N=1\text{ is stable}}\), and \(\Frac{dN}{dt} \gt 0\) for \(N \gt 2 \implies \box{N=2\text{ is unstable}}\).
 <br><br></p>
 
 <p><a name="P2.6.7" class="goback" onclick="winhisback()"><strong>2.6.7</strong>)</a>
-Consider the DE \(dN/dt = k(1 - N)^2\), \(k \gt 0\) constant.</p>
+Consider the DE \(\Frac{dN}{dt} = F(N) = k(1 - N)^2\), \(k \gt 0\) constant.</p>
 
 <p><strong>a</strong>) Show that \(N = 1\) is the only critical point, with corresponding equilibrium solution \(\phi(t) = 1\).</p>
 
 <p><strong>Sln</strong>: Trivial: \(\Frac{dN}{dt} = 0 = k(1-N)^2, k \gt 0 \implies N = 1\) is the sole equilibrium value, and thus \(\phi(t) = 1\) is the only equilibrium solution.
 <br></p>
 
-<p><strong>b</strong>) Plot \(dN/dt\) versus \(N\), and show that \(N\) is an increasing function of \(t\) for \(N \lt 1\) and also for \(N \gt 1\) (thus implying that the equilibrium solution \(\phi(t) = 1\) is semistable).</p>
+<p><strong>b</strong>) Plot \(F(N)\), and show that \(N\) is an increasing function of \(t\) for \(N \lt 1\) and also for \(N \gt 1\) (thus implying that the equilibrium solution \(\phi(t) = 1\) is semistable).</p>
 
-<p><strong>Sln</strong>: \(\Frac{dN}{dt}(N) = k(1-N)^2, k \gt 0\), is an &quot;up&#8209;opening&quot; parabola with vertex at (1,0), and thus for \(N \ne 1, \Frac{dN}{dt} \gt 0\); this implies that if \(N_0 \lt 1\), \(N(t)\) increases towards \(N=1\) with increasing \(t\), and if \(N_0 \gt 1\), \(N(t)\) increases away from \(N=1\)with increasing \(t\); thus the equilibrium solution \(\phi(t) = 1\) is semistable.
+<p><strong>Sln</strong>: \(F(N) = k(1-N)^2, k \gt 0\), is an &quot;up&#8209;opening&quot; parabola with vertex at (1,0) (we leave the actual plotting to the reader), and thus for \(N \ne 1, F(N) \gt 0\); this implies that if \(N_0 \lt 1,\) \(N(t)\) increases towards \(N=1\) with increasing \(t\), and if \(N_0 \gt 1\), \(N(t)\) increases away from \(N=1\) with increasing \(t\); thus the equilibrium solution \(\phi(t) = 1\) is semistable.
 <br></p>
 
 <p><strong>c</strong>) Solve the DE subject to the IC \(N(0) =N_0\) and thereby confirm the conclusions of Part b).</p>
@@ -279,42 +279,42 @@ Check: IC: \(N(0) = 1 - \Frac{1-N_0}{0 + 1} = N_0~\chec\); DE: \(\Frac{dN}{dt} =
 <br><br></p>
 
 <p><a name="P2.6.11" class="goback" onclick="winhisback()"><strong>2.6.11</strong>)</a>
-Plot \(dN/dt = aN - b\sqrt N,~a,b \gt 0,~N_0 \ge 0\), vs. \(N\), determine the critical points, and classify each as stable, unstable, or semistable.</p>
+Plot \(\Frac{dN}{dt} = F(N) = aN - b\sqrt N,~a,b \gt 0,~N_0 \ge 0\), determine the critical points, and classify each as stable, unstable, or semistable.</p>
 
-<p><strong>Sln</strong>: First, the specification \(N_0 \ge 0\) is only necessary to ensure that the initial value of \(dN/dt\) is real; otherwise, the value of \(N_0\) does not affect the graph of \(dN/dt\) vs. \(N\), nor the equilibria or their (in)stability&mdash;it only affects the actual solution \(N(t)\), which we have not been asked to find.<br> </p>
+<p><strong>Sln</strong>: First, the specification \(N_0 \ge 0\) is only necessary to ensure that the initial value of \(\Frac{dN}{dt}\) is real; otherwise, the value of \(N_0\) does not affect the graph of \(F(N)\), nor the equilibria or their (in)stability&mdash;it only affects the actual solution \(N(t)\), which we have not been asked to find.<br> </p>
 
-<p>Now, the critical points are found by solving \(0 = dN/dt = aN - b\sqrt N = (a\sqrt N - b)\sqrt N \implies \sqrt N = 0 \implies \box{N = 0}\) or \(a\sqrt N - b = 0 \implies \box{N = \Frac{b^2}{a^2}}\).&nbsp; Examination of the graph of \(dN/dt\) vs. \(N\) (given below) clearly shows that for \(0 \lt N \lt \Frac{b^2}{a^2}\), \(dN/dt \lt 0 \implies N(t)\) is decreasing with increasing \(t\) and \(\box{0\text{ is stable}}\); while for \(N \gt \Frac{b^2}{a^2}\), \(dN/dt \gt 0 \implies N(t)\) is increasing with increasing \(t\) and \(\box{\frac{b^2}{a^2}\text{ is unstable}}\).<br></p>
+<p>Now, the critical points are found by solving \(0 = \Frac{dN}{dt} = aN - b\sqrt N = (a\sqrt N - b)\sqrt N \implies \sqrt N = 0 \implies \box{N = 0}\) or \(a\sqrt N - b = 0 \implies \box{N = \Frac{b^2}{a^2}}\).&nbsp; Examination of the graph of \(F(N)\) (given below) clearly shows that for \(0 \lt N \lt \Frac{b^2}{a^2}\), \(\Frac{dN}{dt} \lt 0 \implies N(t)\) is decreasing with increasing \(t\) and \(\box{0\text{ is stable}}\); while for \(N \gt \Frac{b^2}{a^2}\), \(\Frac{dN}{dt} \gt 0 \implies N(t)\) is increasing with increasing \(t\) and \(\box{\frac{b^2}{a^2}\text{ is unstable}}\).<br></p>
 
-<p>Here’s the graph of \(dN/dt\) vs. \(N\) indicating the equilibria and the intervals over which \(N(t)\) is decreasing and increasing with increasing \(t.\)<br></p>
+<p>Here’s the graph of \(F(N)\) indicating the equilibria and the intervals over which \(N(t)\) is decreasing and increasing with increasing \(t.\)<br></p>
 
 <div class="tqimg"><img src="./Graphs/BoyceDiPrimaC2S6P11.png"></div>
 
 <p><br><br></p>
 
 <p><a name="P2.6.16" class="goback" onclick="winhisback()"><strong>2.6.16</strong>)</a>
-Consider the Gompertz equation \(dN/dt = rN\log(K/N), r, K \gt 0\) constant.</p>
+Consider the Gompertz equation \(\Frac{dN}{dt} = F(N) = rN\log\left(\Frac KN\right), r, K \gt 0\) constant.</p>
 
-<p><strong>a</strong>) Plot \(dN/dt\) vs. \(N\), determine the critical points and their (un)stability.</p>
+<p><strong>a</strong>) Plot \(F(N)\), determine the critical points and their (un)stability.</p>
 
-<p><strong>Sln</strong>: \(0 = dN/dt = rN\log(K/N) \implies \log(K/N) = 0 \implies K/N = 1 \implies \box{N=K}\) is one critical point; additionally, even though \(\log(K/0)\) is undefined, \(\lim_{N\rarrow0^{+}}rN\log(K/N) = \lim_{N\rarrow0^{+}}\Frac{r\log(K/N)}{1/N}\) &quot;\(=\)&quot; \(\Frac{\infty}{\infty}\), so, applying L’Hopital’s Rule, \( = \lim_{N\rarrow0^{+}}\Frac{r(N/K)(-K/N^2)}{-1/N^2} = \lim_{N\rarrow0^{+}}rN = 0\) so \(dN/dt\) has a &quot;removable discontinuity&quot; at \(N=0\) and the value of the derivative there is \(0\), so \(\box{N=0}\) is also a critical point.&nbsp; The graph of \(dN/dt\) vs. \(N\):</p>
+<p><strong>Sln</strong>: \(0 = \Frac{dN}{dt} = rN\log\left(\Frac KN\right) \implies \log\left(\Frac KN\right) = 0 \implies \Frac KN = 1 \implies \box{N=K}\) is one critical point; additionally, even though \(\log\left(\Frac K0\right)\) is undefined, \(\lim_{N\rarrow0^{+}}rN\log\left(\Frac KN\right) = \lim_{N\rarrow0^{+}}\Frac{r\log(K/N)}{1/N}\) &quot;\(=\)&quot; \(\Frac{\infty}{\infty}\), so, applying L’Hopital’s Rule, \( = \lim_{N\rarrow0^{+}}\Frac{r(N/K)(-K/N^2)}{-1/N^2} = \lim_{N\rarrow0^{+}}rN = 0\) so \(F(N)\) has a removable discontinuity at \(N=0\) and \(F\)’s limiting value there is \(0\), so \(\box{N=0}\) is also a critical point.&nbsp; The graph of \(F(N)\):</p>
 
 <div class="tqimg"><img src="./Graphs/BoyceDiPrimaC2S6P16.png"></div>
 
-<p>indicates that \(dN/dt \gt 0\) for \(0 \lt N \lt K \implies N(t)\) is increasing with increasing \(t\) on this interval and thus \(\box{0\text{ is unstable}}\), whereas \(dN/dt \lt 0\) for \(N \gt K \implies N(t)\) is decreasing with increasing \(t\) on that interval and thus \(\box{K\text{ is stable}}\).
+<p>indicates that \(\Frac{dN}{dt} \gt 0\) for \(0 \lt N \lt K \implies N(t)\) is increasing with increasing \(t\) on this interval and thus \(\box{0\text{ is unstable}}\), whereas \(\Frac{dN}{dt} \lt 0\) for \(N \gt K \implies N(t)\) is decreasing with increasing \(t\) on that interval and thus \(\box{K\text{ is stable}}\).
 <br></p>
 
-<p><strong>b</strong>) For \(0 \le N \le K\) determine where \(N\) vs. \(t\) is concave up and concave down. </p>
+<p><strong>b</strong>) For \(0 \le N \le K\) determine where \(N(t)\) is concave up and concave down. </p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Since \(F(N) \ge 0\) on the given interval, \(N(t)\) is concave up (resp. down) where \(F(N)\) is increasing (resp. decreasing) with increasing \(N\); the transition occurs where \(F(N)\) has a maximum, which is where \(0 = \Frac{dF}{dN} = r\log\left(\Frac KN\right) - rN\left(\Frac{N}{K}\right)\left(\Frac{K}{N^2}\right) = r\log\left(\Frac KN\right) - r\) \(\implies \log\left(\Frac KN\right) = 1 \implies \Frac KN = e \implies N = \Frac Ke\).&nbsp; Thus \(N(t)\) is \(\box{\text{concave up for } 0 \lt N \lt \frac Ke}\) and \(\box{\text{concave down for }\frac Ke \lt N \lt K}\). 
 <br></p>
 
-<p><strong>c</strong>) For each \(N \in (0,K]\) show that this \(dN/dt\) is never less than the logistic \(dN/dt\).</p>
+<p><strong>c</strong>) For each \(N \in (0,K]\) show that this \(\Frac{dN}{dt}\) is never less than the logistic \(\Frac{dN}{dt}\).</p>
 
 <p><strong>Sln</strong>:
 <br><br></p>
 
 <p><a name="P2.6.19" class="goback" onclick="winhisback()"><strong>2.6.19</strong>)</a>
-\(dN/dt = r(1-N/K)N-h\) adds a constant harvest rate to the logistic model.<br></p>
+\(\Frac{dN}{dt} = r(1-N/K)N-h\) adds a constant harvest rate to the logistic model.<br></p>
 
 <p><strong>a</strong>) Show, constructively, that if \(h \lt rK/4\) the model has two equilibria, \(N_1 \lt N_2\).<br></p>
 
@@ -326,7 +326,7 @@ Consider the Gompertz equation \(dN/dt = rN\log(K/N), r, K \gt 0\) constant.</p>
 <p><strong>Sln</strong>:
 <br></p>
 
-<p><strong>c</strong>) Graph \(dN/dt\) vs. \(N\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point.<br> </p>
+<p><strong>c</strong>) Graph \(\Frac{dN}{dt}\) vs. \(N\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point.<br> </p>
 
 <p><strong>Sln</strong>:
 <br></p>
@@ -344,8 +344,8 @@ Consider the Gompertz equation \(dN/dt = rN\log(K/N), r, K \gt 0\) constant.</p>
 <p><a name="P2.6.22" class="goback" onclick="winhisback()"><strong>2.6.22</strong>)</a>
 Given the model:
 \[\begin{eqnarray}
-dx/dt &amp; = &amp; -[\b + \mu(t)]x &amp; ~~~~~~~~~~~~~~~~~~\text{(i)} \\
-dn/dt &amp; = &amp; -\nu\b x - \mu(t)n &amp; ~~~~~~~~~~~~~~~~~\text{(ii)}
+\Frac{dx}{dt} &amp; = &amp; -[\b + \mu(t)]x &amp; ~~~~~~~~~~~~~~~~~~\text{(i)} \\
+\Frac{dn}{dt} &amp; = &amp; -\nu\b x - \mu(t)n &amp; ~~~~~~~~~~~~~~~~~\text{(ii)}
 \end{eqnarray}
 \]
 where:
