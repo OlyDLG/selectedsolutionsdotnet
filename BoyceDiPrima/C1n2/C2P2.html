@@ -318,31 +318,18 @@ Consider the Gompertz equation \(\Frac{dN}{dt} = F(N) = rN\log\left(\Frac KN\rig
 <br><br></p>
 
 <p><a name="P2.6.19" class="goback" onclick="winhisback()"><strong>2.6.19</strong>)</a>
-\(\Frac{dN}{dt} = F(N) = rN\left(1 - \Frac NK\right) - h\) adds a constant harvest rate, \(h\), to the logistic model.<br></p>
+\(\Frac{dN}{dt} = F(N) = rN\left(1 - \Frac NK\right) - h\) adds a constant harvest rate, \(h\), to the logistic model.&nbsp; <strong>a</strong>) Show that if \(h \lt rK/4\) the model has two equilibria, \(N_1 \lt N_2\), and provide formulas for them in terms of \(h, K,\) and \(r\); <strong>b</strong>) show that \(N_1\) is unstable and \(N_2\) is stable; <strong>c</strong>) graph \(F(N)\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point; <strong>d</strong>) if \(h \gt rK/4\) show that \(N(t)\) decreases to zero as \(t\) increases regardless of the value of \(N_0\); <strong>e</strong>) if \(h = rK/4\) show there is a single equilibrium point, \(N = K/2\), and that this point is semistable; thus the maximum sustainable yield, \(h_m\), is \(rK/4\).<br> </p>
 
-<p><strong>a</strong>) Show, constructively, that if \(h \lt rK/4\) the model has two equilibria, \(N_1 \lt N_2\).<br></p>
+<p><strong>Sln</strong>: \(0 = rN\left(1 - \Frac NK\right) - h \implies N^2 - KN + \Frac{Kh}r = 0 \implies N = \Frac{K \pm \sqrt{K^2 - 4Kh/r}}2\); thus the number and nature of equilibria depends on the value of the discriminant \(K^2 - 4Kh/r\):<br> 
+<strong>a</strong>) if \(K^2 - 4Kh/r \gt 0 \iff K \gt 4h/r \iff rK/4 \gt h\), there are two equilibria, \(\box{N_1 = \frac{K - \sqrt{K^2 - 4Kh/r}}2}\) and \(\box{N_2 = \frac{K + \sqrt{K^2 - 4Kh/r}}2}\), with \(N_2 - N_1 = \sqrt{K^2 - 4Kh/r} \gt 0 \implies N_1 \lt N_2.~~\blksq\)<br></p>
 
-<p><strong>Sln</strong>:
-<br></p>
+<p><strong>b</strong>) For all values of \(h\), \(F(N)\) is a &quot;down&#8209;opening&quot; parabola; thus if \(F(N)\) has two zeros \(\iff h \lt rK/4\), (i) \(N \lt N_1\) and (ii) \(N \gt N_2 \implies \Frac{dN}{dt} \lt 0\) and (iii) \(N_1 \lt N \lt N_2 \implies \Frac{dN}{dt} \gt 0\); now, (i) and (iii) imply \(\box{N_1\text{ is unstable}}\), and (ii) and (iii) imply \(\box{N_2\text{ is stable}}.~~\blksq\)<br></p>
 
-<p><strong>b</strong>) Show that \(N_1\) is unstable and \(N_2\) is stable.<br></p>
+<p><strong>c</strong>) One doesn’t really need the graph, which is elementary, to reason this out, so we leave that for the reader; \(N_0 &lt; N_1 \implies \Frac{dN}{dt} &lt; 0 \implies N(t)\) is decreasing with increasing \(t\) and since 0 is not an equilibrium, \(N(t) = 0\) in finite time; on the other hand, \(N_2\) stable implies \(N_0 \gt N_1 \implies N(t)\) approaches \(N_2\) as \(t \rarrow \infty.~~\blksq\)<br></p>
 
-<p><strong>Sln</strong>:
-<br></p>
+<p><strong>d</strong>) If \(h \gt rK/4\), then \(K^2 - 4Kh/r &lt; 0 \implies F(N)\) has no real solutions, and since \(F(N)\) is a down&#8209;opening parabola, this implies \(\Frac{dN}{dt} \lt 0\) for all \(N\) which implies \(N(t) = 0\) in finite time for any \(N_0.~~\blksq\)<br></p>
 
-<p><strong>c</strong>) Graph \(F(N)\) and reason from it that if \(N(0) = N_0 \gt N_1\) then \(\lim_{t\rarrow\infty}N(t) = N_2\), but if \(N_0 \lt N_1\) then \(N\) is decreasing as \(t\) increases \(\implies N = 0\) for finite \(t\) since \(N=0\) is not an equilibrium point.<br> </p>
-
-<p><strong>Sln</strong>:
-<br></p>
-
-<p><strong>d</strong>) If \(h \gt rK/4\) show that \(N(t)\) decreases to zero as \(t\) increases regardless of the value of \(N_0\).<br></p>
-
-<p><strong>Sln</strong>:
-<br></p>
-
-<p><strong>e</strong>) If \(h = rK/4\) show there is a single equilibrium point, \(N = K/2\), and that this point is semistable; thus the maximum sustainable yield, \(h_m\), is \(rK/4\).<br> </p>
-
-<p><strong>Sln</strong>:
+<p><strong>e</strong>) Lastly, \(h = rK/4 \implies K^2 - 4Kh/r = 0 \implies\) the single equilibrium is at \(N^* = K/2\), which is the abscissa of the maximum of the down&#8209;opening parabola \(F(N)\), and \(\Frac{dN}{dt} \lt 0\) for \(N \ne K/2\) implying \(N^*\) is semistable; since \(N(t)\) has no equilibria for \(h \gt rK/4\) (the result of part d), \(h = rK/4 = h_m\) is the &quot;maximum sustainable yield,&quot; i.e., harvest.\(~~\blksq\) 
 <br><br></p>
 
 <p><a name="P2.6.22" class="go back" onclick="winhisback()"><strong>2.6.22</strong>)</a>
