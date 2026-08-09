@@ -335,8 +335,8 @@ Consider the Gompertz equation \(\Frac{dN}{dt} = F(N) = rN\log\left(\Frac KN\rig
 <p><a name="P2.6.22" class="go back" onclick="winhisback()"><strong>2.6.22</strong>)</a>
 Given the model:
 \[\begin{eqnarray}
-\Frac{dx}{dt} &amp; = &amp; -[\b + \mu(t)]x &amp; ~~~~~~~~~~~~~~~~~~\text{(i)} \\
-\Frac{dn}{dt} &amp; = &amp; -\nu\b x - \mu(t)n &amp; ~~~~~~~~~~~~~~~~~\text{(ii)}
+\Frac{dx}{dt} &amp; = &amp; \dot{x} = -[\b + \mu(t)]x &amp; ~~~~~~~~~~~~~~~~~~\text{(i)} \\
+\Frac{dn}{dt} &amp; = &amp; \dot{n} = -\nu\b x - \mu(t)n &amp; ~~~~~~~~~~~~~~~~~\text{(ii)}
 \end{eqnarray}
 \]
 where:
@@ -350,17 +350,19 @@ where:
 \[\frac{dz}{dt} = -\b z (1 - \nu z),~~~z(0) = 1~~~~~\text{(iii)}\]
 and note that this is independent of \(\mu(t)\).<br></p>
 
-<p><strong>Sln</strong>: 
+<p><strong>Sln</strong>: Assuming no one is born with smallpox, \(n(0) = x(0) \implies z(0) = 1,\) and \(\Frac{dz}{dt} = \Frac d{dt}\left(\Frac xn \right) = \Frac{n\dot{x} - x\dot{n}}{n^2} = -[\b + \mu(t)]\Frac xn + \nu\b \Frac{x^2}{n^2} + \mu(t)\Frac xn = -\b z - \mu z + \nu\b z^2 + \mu z = -\b z(1 - \nu z).~~\blksq\)&nbsp; Observe that \(\dot{z}\) does not depend on \(\mu(t).\)
 <br></p>
 
 <p><strong>b</strong>) Solve IVP (iii)<br></p>
 
-<p><strong>Sln</strong>: 
+<p><strong>Sln</strong>: \(\dot{z} = -\b z(1 - \nu z) = -\b z\left(1 - \Frac{z}{1/\nu}\right)\) which is the logistic DE with negative intrinsic growth rate and carrying capacity \(= 1/\nu\) so the general solution is \(\Frac z{1 - \nu z} = ce^{-\b t} \implies \Frac1z - \nu = Ce^{\b t}\) and the IC \(\implies 1 - \nu = C \implies\)
+\[\box{z(t) = \frac1{(1-\nu)e^{\b t} + \nu}}\]
+Check: IC: \(z(0) = \Frac1{(1-\nu)(1) + \nu} = 1~\chec\); DE: \(\dot{z} = \Frac{-\b(1-\nu)e^{\b t}}{[(1-\nu)e^{\b t} + \nu]^2}\) while \(-\b z(1 - \nu z) = -\b z + \b\nu z^2 = \Frac{-\b[(1-\nu)e^{\b t} + \nu]}{[(1-\nu)e^{\b t} + \nu]^2} + \Frac{\b\nu}{[(1-\nu)e^{\b t} + \nu]^2} = \Frac{-\b(1-\nu)e^{\b t}}{[(1-\nu)e^{\b t} + \nu]^2}~\chec.\)
 <br></p>
 
 <p><strong>c</strong>) Using \(\nu = \b = 1/8\), determine the proportion of twenty&#8209;year&#8209;olds who have not had smallpox.</p>
 
-<p><strong>Sln</strong>: This is simply \(z(20) = \) 
+<p><strong>Sln</strong>: Using \(1/8\) for \(\b\) and \(\nu\), \(z(20) = \Frac8{7e^{20/8} + 1} \doteq \box{0.0927 = 9.27\%}\) 
 <br><br></p>
 
 <p><a name="P2.6.23" class="goback" onclick="winhisback()"><strong>2.6.23</strong>)</a>
