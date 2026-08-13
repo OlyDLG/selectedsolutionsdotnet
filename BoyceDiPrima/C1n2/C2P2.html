@@ -504,9 +504,10 @@ is also exact.</p>
 <p><a name="P2.8.22" class="goback" onclick="winhisback()"><strong>2.8.22</strong>)</a>
 Show that \((x + 2)\sin y dx + x\cos y dy = 0\) is not exact but becomes exact when multiplied through by \(\mu(x,y) = xe^x\) and then solve the equation.</p>
 
-<p><strong>Sln</strong>:</p>
-
-<p><br><br></p>
+<p><strong>Sln</strong>: \(\part_y[(x + 2)\sin y] = (x+2)\cos y \ne \cos y = \part_x(x\cos y)\) so the equation is not exact as given.&nbsp; However, excluding \(x=0\), for that renders the transformed equation an identity, yielding nothing &quot;of interest,&quot; \(\part_y[x(x+2)e^x\sin y] = (x^2+2x)e^x\cos y = \part_x[x^2e^x\cos y]\) so \((x^2 + 2x)e^x\sin y dx + x^2e^x\cos y dy = 0\) is exact; \(\part_yf(x,y) = x^2e^x\cos y \implies f = x^2e^x\sin y + g(x) \implies\) \(\part_x f = (x^2 + 2x)e^x\sin y + g’(x) = (x^2 + 2x)e^x\sin y \implies g’ = 0 \implies g(x) = c\) so \(df(x,y) = d(x^2e^x\sin y + c) = 0 \implies\) 
+\[\box{x^2e^x\sin y = C,~~x \ne 0}\]
+Check: \(d(x^2e^x\sin y = C) \implies (x^2+2x)e^x\sin y dx + x^2e^x\cos y dy = 0 \implies\) (since \(x\ne 0\) by exclusion and \(e^x \ne 0\) for all \(x\)) \((x+2)\sin y dx + x\cos y dy = 0.~\chec\)
+<br><br></p>
 
 <p><a name="P2.8.24" class="goback" onclick="winhisback()"><strong>2.8.24</strong>)</a>
 Show that \(\Frac{N_x - M_y}{xM - yN} = R(xy) \implies M + Ny’ = 0\) has an integrating factor of the form \(\mu(xy)\) and find a general formula for \(\mu\).</p>
