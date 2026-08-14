@@ -104,7 +104,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\Int}{\large{\int}\normalsize}
 \newcommand{\DefInt}[2]
 {
-  \large\int_{\small{#1}}^{\small{#2}}\small
+  \displaystyle\int_{\normalsize{#1}}^{\normalsize{#2}}\normalsize
 }
 \)</p>
 
@@ -504,7 +504,7 @@ is also exact.</p>
 <p><a name="P2.8.22" class="goback" onclick="winhisback()"><strong>2.8.22</strong>)</a>
 Show that \((x + 2)\sin y dx + x\cos y dy = 0\) is not exact but becomes exact when multiplied through by \(\mu(x,y) = xe^x\) and then solve the equation.</p>
 
-<p><strong>Sln</strong>: \(\part_y[(x + 2)\sin y] = (x+2)\cos y \ne \cos y = \part_x(x\cos y)\) so the equation is not exact as given.&nbsp; However, excluding \(x=0\), for that renders the transformed equation an identity, yielding nothing &quot;of interest,&quot; \(\part_y[x(x+2)e^x\sin y] = (x^2+2x)e^x\cos y = \part_x[x^2e^x\cos y]\) so \((x^2 + 2x)e^x\sin y dx + x^2e^x\cos y dy = 0\) is exact; \(\part_yf(x,y) = x^2e^x\cos y \implies f = x^2e^x\sin y + g(x) \implies\) \(\part_x f = (x^2 + 2x)e^x\sin y + g’(x) = (x^2 + 2x)e^x\sin y \implies g’ = 0 \implies g(x) = c\) so \(df(x,y) = d(x^2e^x\sin y + c) = 0 \implies\) 
+<p><strong>Sln</strong>: \(\part_y[(x + 2)\sin y] = (x+2)\cos y \ne \cos y = \part_x(x\cos y)\) so the equation is not exact as given.&nbsp; However, excluding \(x=0\), for that renders the transformed equation an identity, yielding nothing &quot;of interest,&quot; \(\part_y[x(x+2)e^x\sin y] = (x^2+2x)e^x\cos y = \part_x[x^2e^x\cos y]\) so \((x^2 + 2x)e^x\sin y dx + x^2e^x\cos y dy = 0\) is exact; \(\part_yf(x,y) = x^2e^x\cos y \implies f = x^2e^x\sin y + g(x) \implies\) \(\part_x f = (x^2 + 2x)e^x\sin y + g’(x) = (x^2 + 2x)e^x\sin y \implies g’ = 0 \implies g(x) = c\), so \(df(x,y) = d(x^2e^x\sin y + c) = 0 \implies\) 
 \[\box{x^2e^x\sin y = C,~~x \ne 0}\]
 Check: \(d(x^2e^x\sin y = C) \implies (x^2+2x)e^x\sin y dx + x^2e^x\cos y dy = 0 \implies\) (since \(x\ne 0\) by exclusion and \(e^x \ne 0\) for all \(x\)) \((x+2)\sin y dx + x\cos y dy = 0.~\chec\)
 <br><br></p>
@@ -512,9 +512,10 @@ Check: \(d(x^2e^x\sin y = C) \implies (x^2+2x)e^x\sin y dx + x^2e^x\cos y dy = 0
 <p><a name="P2.8.24" class="goback" onclick="winhisback()"><strong>2.8.24</strong>)</a>
 Show that \(\Frac{N_x - M_y}{xM - yN} = R(xy) \implies M + Ny’ = 0\) has an integrating factor of the form \(\mu(xy)\) and find a general formula for \(\mu\).</p>
 
-<p><strong>Pf</strong>:</p>
+<p><strong>Pf</strong>: We must show that if \(\Frac{N_x - M_y}{xM - yN} = R(xy)\), i.e., is a function of the product \(xy\) only, then there exist a function \(\mu\) of \(xy\) only such that \(\mu M dx + \mu N dy\) is exact; we exclude the case \(xM - yN = 0\) for in that case the ratio on the left is undefined.&nbsp; We proceed by finding out what \(\mu(xy)\) must be for this to be true and then confirm that this \(\mu(xy)\) does indeed make \(\mu M dx + \mu N dy\) exact.&nbsp; For \(\mu(xy) M dx + \mu(xy) N dy\) to be exact, it must be true that \(\part_x(\mu(xy)N) = y\mu’ N + \mu N_x = \part_y(\mu(xy)M) = x\mu’M + \mu M_y \implies \mu(N_x - M_y) = \mu’(xM - yN) \implies\) (having excluded the case \(xM - yN = 0\)) \(\Frac{N_x - M_y}{xM - yN} = \Frac{\mu’(xy)}{\mu(xy)} = [\log(\mu)]’ = R(xy) \implies \log\mu(xy) = \DefInt{c}{xy}R(\xi)d\xi \implies \box{\mu(xy) = \exp\left(\DefInt{c}{xy}R(\xi)d\xi\right)}\). </p>
 
-<p><br><br></p>
+<p>Now take \(\mu(xy) = \exp\left(\DefInt{c}{xy}R(\xi)d\xi\right)\); note that \(\mu \gt 0; \part_x[\mu(xy)] = yR(xy)\mu(xy);\text{ and } \part_y[\mu(xy)] = xR(xy)\mu(xy)\).&nbsp; For \(\mu Mdx + \mu Ndy\) to be exact, it must be true that \(\part_y(\mu M) = \mu_y M + \mu M_y = xR(xy)\mu M + \mu M_y = \part_x(\mu N) = \mu_x N + \mu N_x = yR(xy)\mu N + \mu N_x \implies\) (since \(\mu \gt 0\)) \(xR(xy)M + M_y = yR(xy)N + N_x \implies N_x - M_y = R(xy)(xM - yN)\); now as long as \(xM - yN \ne 0\), \(R(xy) = \Frac{N_x - M_y}{xM - yN} \implies R(xy)(xM - yN) = N_x - M_y.~~\blksq\)
+<br><br></p>
 
 <p>Problems 2.8.26 and 2.8.31: Find an integrating factor for, and then solve the given DE.</p>
 
