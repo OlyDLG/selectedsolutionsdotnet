@@ -404,9 +404,18 @@ A skydiver weighing 180 lb falls falls from an altitude \(x = 5000\) ft and open
 
 <p>To obtain \(x(t)\), we simply set \(\Frac{dx}{dt} = \u(t) = \Frac g{\a} + C_{\u}e^{-\a t} \implies x = \Int\left(\Frac g{\a} + C_{\u}e^{-\a t}\right)dt = \box{\Frac g{\a} t - \Frac{C_{\u}}\a e^{-\a t} + C_x}\); setting \(x(0) = x_0 = \Frac g{\a} (0) - \Frac{C_{\u}}{\a} e^{(-\a)(0)} + C_x = -\Frac{C_{\u}}\a + C_x \implies \box{C_x = x_0 + \frac{C_{\u}}{\a}}.~\) Check: IC: \(x(0) = \Frac g{\a} (0) - \Frac{C_{\u}}{\a} e^{(-\a)(0)} + x_0 + \Frac{C_{\u}}{\a} = x_0~\chec\); DE: \(\Frac{dx}{dt} = \Frac g{\a} -(-\a)\Frac{C_{\u}}{\a} e^{-\a t} = \Frac g{\a} + C_{\u}e^{-\a t} = \u(t).\chec\)&nbsp; Now it’s time to plug in some numbers!</p>
 
-<p><strong>a</strong>) \(\a = \Frac km = \Frac k{w/g} = \Frac{gk}w \implies \Frac g{\a} = \Frac{gw}{gk} = \Frac wk = \Frac{180}{0.75} = 240\);</p>
+<p><strong>a</strong>) We need to evaluate \(\u(10)\) given \(\u_0 = 0, \a = \Frac km = \Frac k{w/g} = \Frac{gk}w = \Frac{32(0.75)}{180} = \Frac2{15} \implies \Frac g{\a} = \Frac{gw}{gk} = \Frac wk = \Frac{180}{0.75} = 240 \implies\) 
+\(\u(10) = 240\left(1 - \exp\left[-\Frac2{15}(10)\right]\right) = 240(1-e^{-4/3}) \doteq \box{176.7\text{ ft/sec}}\)</p>
 
-<p><br><br></p>
+<p><strong>b</strong>) Since we’re asked for the distance fallen, as opposed to the altitude, we can choose \(x_0 = 0 \implies\) \(x(10) = \Frac g{\a}(10) + \Frac g{\a^2}e^{-4/3} - \Frac g{\a^2} = 2400 + \Frac{240}{2/15}\left(e^{-4/3} - 1\right) \doteq \box{1074.5\text{ ft}}\)</p>
+
+<p><strong>c</strong>) After the parachute opens the velocity model is \(\u(t) = \Frac g{\a} + \left(176.7 - \Frac g{\a}\right)e^{-\a t}\), where \(\a = \Frac{32(12)}{180} = \Frac{32}{15} \implies \Frac g{\a} = 15\), and as \(t \rarrow \infty,~e^{-\a t} \rarrow 0\) so the &quot;terminal&quot; velocity \(\box{\u_{\ell} = \frac g{\a} = 15\text{ ft/sec}}\)</p>
+
+<p><strong>d</strong>) Resetting \(x_0 = 0\), we need to find \(t\) such that \(x(t) = 15t + \Frac{176.7 - 15}{32/15}[1 - \exp(-32t/15)] = 5000 - 1074.5 = 3925.5\) ft.&nbsp; It is not possible to solve this equation explicitly for \(t\), so we must use an approximation procedure; fortunately, nowadays (2026), this is trivial using pretty much any graphing utility or calculator.&nbsp; Even so, there are still a few different ways to go about it, e.g., find the intersection of \(x(t)\) and the horizontal line \(x = 3925.5\); or the intersection of \(f(t) = 3925.5 - 15t\) and \(g(t) = \Frac{176.7 - 15}{32/15}[1 - \exp(-32t/15)]\); or&mdash;the way that I prefer, because it requires you to define and plot only one function&mdash;the zero of \(h(t) = 3925.5 - x(t)\).&nbsp; This graph and its zero are plotted below, from which we see that the time aloft after the parachute has been deployed is approximately \(\box{256.6\text{ sec}}.\)&nbsp; (We also see that the skydiver reaches the new terminal velocity VERY quickly, compared to the total time of fall, as evidenced by the very small interval of time after \(t=0\) during which the curve is non-linear, compared to the almost entire time aloft during which the displacement is imperceptibly different from linear vs. time.)<br></p>
+
+<div class="tqimg"><img src="./Graphs/BoyceDiPrimaC2S7P7.png"></div>
+
+<p><br></p>
 
 <p><a name="P2.7.10" class="goback" onclick="winhisback()"><strong>2.7.10</strong>)</a>
 A body of mass \(m\) falls in a medium offering resistance proportional to \(|\u|^r, r \gt 0\) constant; assuming constant \(g\), find the limiting velocity of the body.</p>
