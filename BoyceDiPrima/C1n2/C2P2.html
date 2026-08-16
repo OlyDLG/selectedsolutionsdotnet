@@ -420,9 +420,16 @@ A skydiver weighing 180 lb falls falls from an altitude \(x = 5000\) ft and open
 <p><a name="P2.7.10" class="goback" onclick="winhisback()"><strong>2.7.10</strong>)</a>
 A body of mass \(m\) falls in a medium offering resistance proportional to \(|\u|^r, r \gt 0\) constant; assuming constant \(g\), find the limiting velocity of the body.</p>
 
-<p><strong>Sln</strong>:</p>
+<p><strong>Sln</strong>: Taking &quot;down&quot; to be the positive direction, the governing model is:</p>
 
-<p><br><br></p>
+<p>\[m\frac{d\u}{dt} = mg - k\u^r \implies \frac{d\u}{dt} = g - \Frac km \u^r\]</p>
+
+<p>where \(k \gt 0\) is the constant of proportionality.&nbsp; Unless \(r=1\) (in which case the equation can be solved exactly using the integrating factor technique), this is a first&#8209;order, nonlinear equation of a type we have not been taught how to solve (it is not, e.g., of the Bernoulli type, covered in the Section 2 exercises).&nbsp; So what methods have we learned to determine the limiting behavior of a model when an exact solution isn’t available to us?&nbsp; We could construct the direction field for a variety of values of the parameters and see if we notice any patterns; that’s precisely what I did, and graphing just one such direction field was sufficient to &quot;remind&quot; me: <strong><em>the limiting value must be a stable equilibrium of the model.</em></strong>&nbsp; (This is a general principle the reader needs to learn and remember!)</p>
+
+<p>So, set \(0 = g - \Frac km \u^r \implies\) \[\box{\u_{\ell} = \left(\frac{mg}k\right)^{1/r}}\]</p>
+
+<p>(Of course, we haven’t proven that this is a <strong><em>stable</em></strong> equilibrium: we leave that for the reader.)
+<br><br></p>
 
 <p><a name="P2.7.13" class="goback" onclick="winhisback()"><strong>2.7.13</strong>)</a>
 A body falling in a fluid of non-negligible density experiences three forces: its weight \(w\), buoyancy \(B = \) weight of the fluid it displaces, and viscous (frictional) resistance \(R\); for a sphere of radius \(a, R = 6\pi\mu a|\u|\), where \(\u = \) velocity of the body and \(\mu =\) the coefficient of viscosity of the fluid.<br></p>
