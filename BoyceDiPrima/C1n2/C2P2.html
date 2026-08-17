@@ -450,9 +450,13 @@ Setting this and \(\u = 0 \implies \Frac{3Ee}{4\pi a^3} = g(\rho - \rho’) \imp
 <p><a name="P2.7.16" class="goback" onclick="winhisback()"><strong>2.7.16</strong>)</a>
 Find the escape velocity \(\u_e\) for an object projected upward with an initial velocity \(\u_0\) from a point \(x_0 = \xi R\) above the surface of the earth where \(R =\) radius of the earth and \(\xi\) is a constant; neglect air resistance.&nbsp; Find the altitude from which the body must be launched to reduce \(\u_e\) to 85% of its value at the earth’s surface.&nbsp; (This is effectively the &quot;initial&quot; altitude and velocity pair a rocket must achieve after launch from zero velocity to achieve the target \(\u_e\).)<br></p>
 
-<p><strong>Sln</strong>:</p>
-
-<p><br><br></p>
+<p><strong>Sln</strong>: The required model, \(\u\Frac{d\u}{dx} = -\Frac{gR^2}{(R+x)^2}\), and its general solution, \(\Frac{\u^2}2 = \Frac{gR^2}{R+x} + C\), are as given in the text (Eqs. 14 &amp; 15), all that’s changed is the initial condition, \(\u(x_0 = \xi R) = \u_0\), which gives \(\Frac{\u_0^2}2 = \Frac{gR^2}{R+\xi R} + C \implies C = \Frac{\u_0^2}2 - \Frac{gR}{1+\xi} \implies\)
+\[\frac{\u^2}2 = \Frac{gR^2}{R+x} + \Frac{\u_0^2}2 - \Frac{gR}{1+\xi}\]
+Escape velocity, \(\u_e\), is the value of \(\u_0\) that makes \(\u = 0\) in the limit as \(x \rarrow \infty\); this gives \(0 = 0 + \Frac{\u_e^2}2 - \Frac{gR}{1+\xi} \implies\) 
+\[\box{\u_e = \sqrt{\frac{2gR}{1+\xi}}}\]
+Escape velocity at the surface of the earth is \(\sqrt{2gR}\) (text Eq. 19) so we require \(\Frac{\sqrt{2gR/(1+\xi)}}{\sqrt{2gR}} = (1+\xi)^{-1/2} = 0.85 \implies\) \(\xi = (0.85)^{-2} - 1 \implies\) (using the Problem 15 approximation \(R = 4000\) mi)
+\[\box{x_0 = [(0.85)^{-2} - 1]R \doteq 1536\text{ mi}}\]
+<br></p>
 
 <p><a name="P2.7.17" class="goback" onclick="winhisback()"><strong>2.7.17</strong>)</a>
 The Brachistochrone Problem, described in the text, is modeled by the DE
