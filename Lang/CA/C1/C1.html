@@ -90,6 +90,18 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <p><link rel="stylesheet" href="../../../Styles.css">
 <title>Solutions of Selected Exercises from Lang, S <q>Complex Analysis 3rd Ed. Chapter 1</q></title></p>
 
+<p>\(
+\newcommand{\t}{\alpha}
+\newcommand{\t}{\theta}
+\newcommand{\part}{\partial}
+\newcommand{\rarrow}{\rightarrow}
+\newcommand{\box}{\boxed}
+\newcommand{\chec}{\checkmark}
+\newcommand{\blksq}{\blacksquare}
+\newcommand{\Frac}{\displaystyle \frac}
+\newcommand{\Lim}{\displaystyle \lim}
+\)</p>
+
 <h2><center>Selected Exercise Solutions</h2>
 
 <p><center>from</center></p>
@@ -279,12 +291,16 @@ Given \(\bar{z}w \ne 1\), show that \(\displaystyle\left\vert\frac{z-w}{1-\bar{z
 
 <h3><u>Section 3</u></h3>
 
-<!---ToDo: add graphics--->
-
 <p><a name="E3.1" class="goback" onclick="winhisback()"><strong>3.1</strong>)</a>
-Describe the images under \(f(z)=1/z\) of the sets \(\lvert z\rvert \lt, =, \gt 1\). </p>
+Describe the images under \(f(z)=\Frac1z\) of the sets \(\lvert z\rvert \lt, =, \gt 1\). </p>
 
-<p>Sln: leveraging the polar form, observe that, for \(z \ne 0, 1/(re^{i\theta})=(1/r)e^{-i\theta}\). So, recalling that complex multiplication is commutative, we may state, w.l.o.g., that  &quot;inversion&quot; consists of: a) conjugation, followed by b) &quot;reflection through the unit circle,&quot; by which we mean that a point interior to (resp. on, resp. exterior to) the unit circle, \(z_{\text{int (resp. on, resp. ext)}}\), is mapped to the unique point \(w_{\text{ext (resp. on, resp. int)}}\), such that \(\arg(w_{\text{ext (resp. on, resp. int)}}) = \arg( z_{\text{int (resp. on, resp. ext)}})\), but \(1/\lvert z\rvert\) units exterior to (resp. on, resp. interior to) the unit circle; \(z=0\) is mapped to \(w=\infty\) and vice-versa. (Note that the unit circle is mapped bijectively onto itself, but this is an equivalent algebraic expression <strong>not</strong> for the identity map on \(\lvert z\rvert = 1\), but rather for the conjugate map, \(f(z) =\bar{z}\): the semi-circle \(\lvert z\rvert = 1\), Im\((z)\gt 0\) is reflected through the \(x\)-axis to the semi-circle \(\lvert z\rvert = 1\), Im\((z) \lt 0\), vice-versa, and, of course, \(1\) and \(-1\) are fixed points.)</p>
+<p>Sln: \(0\) is mapped to \(\infty\) and vice-versa. For \(z = re^{i\t}, r \gt 0\) (by convention), \(\Frac1{re^{i\theta}} = \Frac1{r^2}re^{-i\theta} = \Frac1{r^2}\bar{z}\). So the map \(f(z) = \Frac1z\) can be broken down into three transformations (the order of which doesn’t matter, since complex multiplication is commutative): conjugation, multiplication by \(\Frac1r\), and another multiplication by \(\Frac1r\). Geometrically, conjugation is an (unscaled) reflection across the real axis; the first multiplication by \(\Frac1r\) scales (without rotation or reflection) to the unit circle; and the second multiplication similarly scales to the side of the unit circle opposite from where \(z\) started. The net result is a reflection across the real axis and an (unrotated) scaled&#8209;by&#8209;a&#8209;factor&#8209;of \(\Frac1r\) &quot;reflection across&quot; the unit circle. Thus:<br></p>
+
+<p>Points inside the unit circle (\(|z| \lt 0, z \ne 0\)) are conjugated and mapped to a point outside the unit circle a distance \(\Frac1{|z|} \gt 1\) units away from the origin;<br></p>
+
+<p>Points outside the unit circle (\(|z| \gt 0\)) are conjugated and mapped to a point inside the unit circle a distance \(\Frac1{|z|} \lt 1\) units away from the origin;<br></p>
+
+<p>Points on the unit circle (\(|z| = 1\)) are simply conjugated. (Note that this a bijective map of the unit circle to itself, but one distinct from the identity map \(f(z) = z\): it reflects the semi-circle \(\lvert z\rvert = 1\), Im\((z)\gt 0\) through the \(x\)-axis to the semi-circle \(\lvert z\rvert = 1\), Im\((z) \lt 0\) and vice-versa, and, of course, \(1\) and \(-1\) are fixed points.)</p>
 
 <p><br>
 <a name="E3.2" class="goback" onclick="winhisback()"><strong>3.2</strong>)</a>
