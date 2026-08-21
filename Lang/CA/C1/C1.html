@@ -229,13 +229,7 @@ Find \({(x(a, b), y(a, b)): (x + iy)^2 = a + ib}\)</p>
 <a name="E2.5" class="goback" onclick="winhisback()"><strong>2.5</strong>)</a>
 Plot \(\{ z: z^n = 1\} \text{ for } n = 2, 3, 4, 5\)</p>
 
-<p>\(n=2\): <br><img src=./SqrRts.png></p>
-
-<p>\(n=3\): <br><img src=./CubeRts.png></p>
-
-<p>\(n=4\): <br><img src=./FourthRts.png></p>
-
-<p>\(n=5\): <br><img src=./FifthRts.png></p>
+<div class="tqimg"><img src="./Graphs/LangC1S2E5.png"></div>
 
 <p>The general case: for \(n \in\mathbb{Z} \gt 1, \{z: z^n = 1\}\) are \(n\) points on the unit circle, equi-angularly distant from one another, such that one of them is always the point \((1, 0)\).</p>
 
@@ -320,17 +314,19 @@ b) \(\{z: z=x+iy, 0 \le y \le \pi\}\)</p>
 
 <h3><u>Section 4</u></h3>
 
-<!---ToDo: make clearer
+<!---ToDo: make clearer>
 **From the Text**<br>
-On page 20, the following important assertion is made without proof, i.e., proof is, implicitly,  &quot;left to the reader&quot;:
-Let $S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n$. Then
-$\displaystyle \lim_{n\rightarrow\infty}z_n=w \iff \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w.$
-Pf: Since the right-side limit requires that $0$ be adherent to $S$ (pg. 19), we'll prove that first. We need to show that every disc $D(0,r), r \gt 0$, contains some element of $S$, i.e., given such an $r$, we need to show the existence of an $n$ such that $1/n \lt r$. Now, for the $r$ and $1/n$ under consideration, i.e., $\gt 0$, if $1/n \lt r$, we have that $1/r \lt n$; so, what we need is that however large $1/r$ is, $\exists n \in \mathbb{N}: n \gt 1/r$, which is true by an elementary property of $\mathbb{R}, \therefore 0$ is adherent to $S$.
-Now, suppose the left side true, i.e., $\lim_{n\rightarrow\infty}z_n=w$, which, by the definition in the text, means $\forall \epsilon \gt 0, \exists N \in \mathbb{N}: n \ge N \implies \lvert z_n - w\rvert \lt \epsilon$. Substituting, we have that $\lvert f(1/n) - w \rvert \lt \epsilon$ for such $n$ and $z = 1/n \in S$ and approaches $\alpha = 0$ as $n \rightarrow \infty$. In particular, let $\delta = 1/N$  (which is $\gt 0~\forall N \in \mathbb{N}$); then $\lvert z - \alpha \rvert \lt \delta~\forall z = 1/n$ such that $n \gt N$, and we've thus shown the existence of a $\delta \gt 0$ such that, for $z \in S$ and $\lvert z - \alpha \rvert \lt \delta, \lvert f(z) - w \rvert \lt \epsilon~\forall \epsilon \gt 0$. (Proving the converse is left to the reader, but follows the same pattern: one needs to show that each of the requirements for the left side to be true follows from some aspect and/or implication of the right side being true.) 
---->
+On page 20, the following important assertion is made without proof, i.e., proof is, implicitly,  &quot;left to the reader&quot;:<br>
+Let $S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n$; then
+$\displaystyle \lim_{n\rightarrow\infty}z_n=w \iff \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w.$<br>
 
-<p><br>
-<a name="E4.1" class="goback" onclick="winhisback()"><strong>4.1</strong>)</a>
+__Pf__: Since the right-side limit requires that $0$ be adherent to $S$ (pg. 19), we'll prove that first. We need to show that every disc $D(0,r \gt 0),$ contains some element of $S$, i.e., given such an $r$, we need to show the existence of an $n$ such that $1/n \lt r$. Now, for the $r$ and $1/n$ under consideration, i.e., $\gt 0$, if $1/n \lt r$, we have that $1/r \lt n$; so, what we need is that however large $1/r$ is, $\exists n \in \mathbb{N}: n \gt 1/r$, which is true by an elementary property of $\mathbb{R}, \therefore 0$ is adherent to $S$.<br>
+
+Now, suppose the left side true, i.e., $\lim_{n\rightarrow\infty}z_n=w$, which, by the definition in the text, means $\forall \epsilon \gt 0, \exists N \in \mathbb{N}: n \ge N \implies \lvert z_n - w\rvert \lt \epsilon$. Substituting, we have that $\lvert f(1/n) - w \rvert \lt \epsilon$ for such $n$ and $z = 1/n \in S$ and approaches $\alpha = 0$ as $n \rightarrow \infty$. In particular, let $\delta = 1/N$  (which is $\gt 0~\forall N \in \mathbb{N}$); then $\lvert z - \alpha \rvert \lt \delta~\forall z = 1/n$ such that $n \gt N$, and we've thus shown the existence of a $\delta \gt 0$ such that, for $z \in S$ and $\lvert z - \alpha \rvert \lt \delta, \lvert f(z) - w \rvert \lt \epsilon~\forall \epsilon \gt 0$. (Proving the converse is left to the reader, but follows the same pattern: one needs to show that each of the requirements for the left side to be true follows from some aspect and/or implication of the right side being true.) 
+<br><br>
+<-->
+
+<p><a name="E4.1" class="goback" onclick="winhisback()"><strong>4.1</strong>)</a>
 Given \(\alpha \in \mathbb{C} : \lvert \alpha \rvert \lt 1\), what is \(\displaystyle \lim_{n\rightarrow \infty} \alpha ^n\)?</p>
 
 <p>Sln: Write \(\alpha\) in polar form: \(\alpha = \lvert \alpha \rvert e^{i\arg(\alpha)}\); then \(\alpha ^n = \lvert \alpha \rvert ^n e^{in\arg(\alpha)}\) and \(\displaystyle \lim_{n \rightarrow \infty} \alpha^n = \lim_{n \rightarrow \infty} \lvert \alpha \rvert ^n e^{in\arg(\alpha)} = (\lim_{n \rightarrow \infty} \lvert \alpha \rvert ^n)(\lim_{n \rightarrow \infty} e^{in\arg(\alpha)}) = (0)(\text{bounded sequence})~(\because \lvert  e^{in\arg(\alpha)} \rvert = 1~\forall n \in \mathbb{N}, \alpha \in \mathbb{C})\)<br>\(~~~~= 0\).<br> Geometrically what is going on is that for any \(\alpha\) inside the unit circle, each multiplication by itself moves it closer to the origin; it also rotates it further around the origin&mdash;by its own angle&mdash;but this doesn&#39;t matter, regardless of what that angle is, i.e., for any such starting \(\alpha\), because of the &quot;contraction&quot; effected by each multiplication: eventually, any such \(\alpha\) is brought &quot;arbitrarily close&quot; to the origin; the &quot;orbit&quot; of any such \(\alpha\) under this iterated action is a spiral into the origin, \(z = 0\).</p>
