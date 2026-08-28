@@ -88,7 +88,7 @@ Lang, S.,
   </ul>
 <ul>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
-               <!---Requires Work--->[Chapter 1: Complex Numbers and Functions](./Lang/CA/C1/C1.html)
+               [Chapter 1: Complex Numbers and Functions](./Lang/CA/C1/C1.html) (Undergoing maintenance; still available)
             </ul>
   </ul>
 
