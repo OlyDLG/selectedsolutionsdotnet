@@ -91,7 +91,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
 <title>Solutions of Selected Exercises from Lang, S <q>Complex Analysis 3rd Ed. Chapter 1</q></title></p>
 
 <p>\(
-\newcommand{\t}{\alpha}
+\newcommand{\a}{\alpha}
+\newcommand{\e}{\epsilon}
 \newcommand{\t}{\theta}
 \newcommand{\part}{\partial}
 \newcommand{\rarrow}{\rightarrow}
@@ -373,13 +374,35 @@ Show that \(\displaystyle \lvert z \rvert \lt 1 \implies \sum_{n=0}^{\infty} z^n
 Given: \(\displaystyle f(z) = \lim_{n \rightarrow \infty} 1/(1 + n^2 z)\), show: \(f(0) = 1,~f(z \ne 0) = 0\).</p>
 
 <p><strong>Pf</strong>: \(\displaystyle f(0) = \lim_{n \rightarrow \infty} 1/(1+n^2(0)) = \lim_{n \rightarrow \infty} 1/(1+0)~\therefore \lim_{n \rightarrow \infty} 1/(1+n^2(0)) = 1/1 = 1\);<br>
-\(\displaystyle f(z \ne 0) = \lim_{n \rightarrow \infty} 1/(1+n^2z) = \lim_{n \rightarrow \infty} \frac{1/n^2}{(1/n^2+z)} = \frac{\lim_{n \rightarrow \infty}1/n^2}{\lim_{n \rightarrow \infty}(1/n^2 + z)} = \frac{0}{0 + z} = 0.~~~\blacksquare\) </p>
+\(\displaystyle f(z \ne 0) = \lim_{n \rightarrow \infty} 1/(1+n^2z) = \lim_{n \rightarrow \infty} \frac{1/n^2}{(1/n^2+z)} = \frac{\lim_{n \rightarrow \infty}1/n^2}{\lim_{n \rightarrow \infty}(1/n^2 + z)} = \frac{0}{0 + z} = 0.~~~\blacksquare\) 
+<br><br></p>
 
-<p><br>
-<!---ToDo: improve and expand both 1.4.5 and 1.4.7
-<a name="E4.5" class="goback" onclick="winhisback()">__4.5__)</a>
-Show that $f(z) = \lim_{n \rightarrow \infty} \left(\frac{z^n -1}{z^n + 1}\right)$ is well-defined, i.e., the limit exists $\iff \left|z\right| \ne 1$.
-__Pf__: If $\left|z\right| \lt 1, \lim_{n \rightarrow \infty} z^n = 0 \therefore \lim_{n \rightarrow \infty} f(z) = \frac{0-1}{0+1} = -1.~$ On the other hand, if $\left|z\right| \gt 1,~\lim_{n \rightarrow \infty} z^n$ "dominates" $1,~\therefore \lim_{n \rightarrow \infty} f(z) = \lim_{n \rightarrow \infty} \frac{z^n}{z^n} = \lim_{n \rightarrow \infty} 1~\forall z,\therefore \lim_{n \rightarrow \infty} f(z, \left|z\right| \gt 1) = 1.~$ Since the limit $\forall z$ inside the unit circle is $-1$ and the limit $\forall z$ outside the unit circle is $+1$, there is a "jump"  discontinuity at the unit circle, therefore this discontinuity is not removable.$~~~\blacksquare$
+<p><a name="E4.5" class="goback" onclick="winhisback()"><strong>4.5</strong>)</a>
+Show that \(\left|z\right| \ne 1 \implies \Lim_{n \rarrow \infty} \Frac{z^n -1}{z^n + 1}\) exists.</p>
+
+<p><strong>Pf</strong>: For the case \(\left|z\right| = 1\), the limit exists for some \(z\), e.g., \(z = 1: f(1) = \Lim_{n \rarrow \infty} \Frac{1^n -1}{1^n + 1} = 0\), but not for others, e.g., \(z = -1: \Frac{(-1)^n -1}{(-1)^n + 1}\) which jumps back and forth between \(0\) and \(\infty\), so convergence for \(\left|z\right| = 1\) is at best conditional. (In fact, for &quot;almost all&quot; \(z : \left|z\right| = 1\), the <strong><em>orbit</em></strong> of \(z\) under the map \(f(n) = z^n\) is <a href="https://en.wikipedia.org/wiki/Irrational_rotation"><strong><em>dense</em></strong> in the unit circle</a> \(\implies\) the limit does not exist for all such points; but the proofs of both claims are beyond our present scope.)</p>
+
+<p>Now if \(\left|z\right| = r \in [0,1)\), \(\Lim_{n \rarrow \infty} z^n = \Lim_{n \rarrow \infty}r^ne^{i n\t} = 0\) (since \(\forall \e \gt 0, \exists N \in \mathbb{N} : n \ge N \implies \left|r^ne^{i n\t}\right| = r^n \lt \e\) by a fundamental property of the reals) so \(\Lim_{n \rarrow \infty}\Frac{z^n -1}{z^n + 1} = \Frac{0-1}{0+1} = -1\).</p>
+
+<p>Finally, if \(\left|z\right| = r \in (1,\infty)\), consider that \(\Lim_{n \rarrow \infty} \Frac{z^n -1}{z^n + 1} = \Lim_{n \rarrow \infty} \Frac{(1/z)^{-n} - 1}{(1/z)^{-n} + 1} = \Lim_{n \rarrow \infty} \Frac{w^{-n} - 1}{w^{-n} + 1}, 0 \lt \left|w\right| \lt 1\); multiply the numerator and denominator by \(w^n \ne 0\) to see that this equals \(\Lim_{n \rarrow \infty} \Frac{1 - w^n}{1 + w^n} = -\Lim_{n \rarrow \infty} \Frac{w^n - 1}{w^n + 1} = -(-1) = 1\) (since \(\left|w\right| \lt 1).~~~\blacksquare\)<br></p>
+
+<p>(Thus \(f(z) = \left\{
+\begin{array}{ll}
+-1, &amp; \left|z\right| \lt 1 \\ 
+\text{undef}, &amp; \left|z\right| = 1 \\
+1, &amp; \left|z\right| \gt 1 
+\end{array}
+\right.\), so if we <strong>define</strong> \(f(z, \left|z\right|=1) \equiv 0\) so that \(f(z)\) becomes \(f(z) = \left\{
+\begin{array}{rr}
+-1, &amp; \left|z\right| \lt 1 \\ 
+0, &amp; \left|z\right| = 1 \\
+1, &amp; \left|z\right| \gt 1 
+\end{array}
+\right.\)<br> 
+then, except for \(z=0, f(z) = \text{sign}(\log\left|z\right|)\), i.e., we have an &quot;algebraic formula&quot; for this important piecewise&#8209;continuous function.)
+<br><br></p>
+
+<!---ToDo: improve and expand both 1.4.5 and 1.4.7>
 <a name="E4.7" class="goback" onclick="winhisback()">__4.7__)</a>
 Show that $\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ converges (uniformly) to $\Bigg\{\!
   \begin{array}{c}
@@ -393,7 +416,7 @@ First note that it is true for $N=1$: $\displaystyle \sum_{n=1}^1 A_n(z) = A_1(z
 $\displaystyle \sum_{n=1}^{N+1} A_n(z) = \sum_{n=1}^{N} A_n(z) + \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} = \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{\sum_{m=0}^{N-1}z^m}{(1-z)(1-z^{N+1})}$ (this is where we've used "assumed true for $N$")
 <br>$\displaystyle ~~~= \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{1-z^N}{(1-z)(1-z)(1-z^{N+1})} = \frac{z^N(1-z)^2 + (1-z^{N+2})(1-z^N)}{(1-z)^2(1-z^{N+1})(1-z^{N+2})}$<br>$\displaystyle = \frac{1+z^N-z^N-2z^{N+1}+z^{N+2}-z^{N+2}+z^{2N+2}}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{(1-z^{N+1})^2}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{1-z^{N+1}}{(1-z)^2(1-z^{N+2})}$
 $$=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}$$<br>which is our formula evaluated for $N+1$. Consequently, $\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =$ $$\frac{1}{(1-z)^2}$$ when $\left|z\right| \lt 1$. The other three parts of the problem are "left to the reader."
----></p>
+--->
 
 <h3><u>Section 6</u></h3>
 
