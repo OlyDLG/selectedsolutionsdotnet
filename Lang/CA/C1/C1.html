@@ -99,8 +99,10 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\box}{\boxed}
 \newcommand{\chec}{\checkmark}
 \newcommand{\blksq}{\blacksquare}
+\newcommand{\ds}{\displaystyle}
 \newcommand{\Frac}{\displaystyle \frac}
 \newcommand{\Lim}{\displaystyle \lim}
+\newcommand{\Sum}{\displaystyle \sum}
 \)</p>
 
 <h2><center>Selected Exercise Solutions</h2>
@@ -172,6 +174,8 @@ pre code, pre tt{ background-color:transparent; border:none; }
     <td><a href="#E4.2">Exercise 4.2</a></td>
     <td><a href="#E4.3">Exercise 4.3</a></td>
     <td><a href="#E4.4">Exercise 4.4</a></td>
+    <td><a href="#E4.5">Exercise 4.5</a></td>
+    <td><a href="#E4.7">Exercise 4.7</a></td>
   </tr>
   <tr>
    <th colspan=4>Section 6</th>
@@ -402,21 +406,23 @@ Show that \(\left|z\right| \ne 1 \implies \Lim_{n \rarrow \infty} \Frac{z^n -1}{
 then, except for \(z=0, f(z) = \text{sign}(\log\left|z\right|)\), i.e., we have an &quot;algebraic formula&quot; for this important piecewise&#8209;continuous function.)
 <br><br></p>
 
-<!---ToDo: improve and expand both 1.4.5 and 1.4.7>
-<a name="E4.7" class="goback" onclick="winhisback()">__4.7__)</a>
-Show that $\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ converges (uniformly) to $\Bigg\{\!
+<p><a name="E4.7" class="goback" onclick="winhisback()"><strong>4.7</strong>)</a>
+Show that \(\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) converges (uniformly) to \(\Bigg\{\!
   \begin{array}{c}
     1/(1-z)^{2},~~~~~\left|z\right|\lt 1 \\
     1/[z(1-z)^2],~\left|z\right|\gt 1
   \end{array}
-  \!$  
-__Pf__: First note that the summand is undefined (or infinite) $\forall z$ if $n=0$, so we assume that the sum starts from $n=1$. Let $\displaystyle A_n(z) = \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}$ and consider the partial sum $\displaystyle \sum_{n=1}^{N} A_n(z)$. Computing&mdash;and simplifying&mdash;this for a few small values of $N$ leads to the following conjecture:
-$$\sum_{n=1}^N A_n(z) = \frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})},$$which we will now prove by induction.
-First note that it is true for $N=1$: $\displaystyle \sum_{n=1}^1 A_n(z) = A_1(z) = \frac{1}{(1-z)(1-z^2)} = \frac{\sum_{m=0}^{1-1}z^m}{(1-z)(1-z^{1+1})}$. Now we will show that "true for $N$ implies true for $N+1$":
-$\displaystyle \sum_{n=1}^{N+1} A_n(z) = \sum_{n=1}^{N} A_n(z) + \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} = \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{\sum_{m=0}^{N-1}z^m}{(1-z)(1-z^{N+1})}$ (this is where we've used "assumed true for $N$")
-<br>$\displaystyle ~~~= \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{1-z^N}{(1-z)(1-z)(1-z^{N+1})} = \frac{z^N(1-z)^2 + (1-z^{N+2})(1-z^N)}{(1-z)^2(1-z^{N+1})(1-z^{N+2})}$<br>$\displaystyle = \frac{1+z^N-z^N-2z^{N+1}+z^{N+2}-z^{N+2}+z^{2N+2}}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{(1-z^{N+1})^2}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{1-z^{N+1}}{(1-z)^2(1-z^{N+2})}$
-$$=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}$$<br>which is our formula evaluated for $N+1$. Consequently, $\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =$ $$\frac{1}{(1-z)^2}$$ when $\left|z\right| \lt 1$. The other three parts of the problem are "left to the reader."
---->
+  \!\)<br>
+<strong>Pf</strong>: First note that the summand is undefined (or infinite) \(\forall z\) if \(n=0\), so we assume that the sum starts from \(n=1\). Let \(\displaystyle A_n(z) = \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) and consider the partial sum \(\ds \sum_{n=1}^{N} A_n(z)\). Computing&mdash;and simplifying&mdash;this for a few small values of \(N\) leads to the following conjecture:
+\[\sum_{n=1}^N A_n(z) = \frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})},~~~~~~~~~~(*)\]which we will now prove by induction.
+First note that it is true for \(N=1\): \(\displaystyle \sum_{n=1}^1 A_n(z) = A_1(z) = \frac{1}{(1-z)(1-z^2)} = \frac{\sum_{m=0}^{1-1}z^m}{(1-z)(1-z^{1+1})}\). Now we will show that &quot;true for \(N\) implies true for \(N+1\)&quot;:
+\(\displaystyle \sum_{n=1}^{N+1} A_n(z) = \sum_{n=1}^{N} A_n(z) + \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} = \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{\sum_{m=0}^{N-1}z^m}{(1-z)(1-z^{N+1})}\) (this is where we&#39;ve used &quot;assumed true for \(N\)&quot;)
+<br>\(\displaystyle ~~~= \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{1-z^N}{(1-z)(1-z)(1-z^{N+1})} = \frac{z^N(1-z)^2 + (1-z^{N+2})(1-z^N)}{(1-z)^2(1-z^{N+1})(1-z^{N+2})}\)<br>\(\displaystyle = \frac{1+z^N-z^N-2z^{N+1}+z^{N+2}-z^{N+2}+z^{2N+2}}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{(1-z^{N+1})^2}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{1-z^{N+1}}{(1-z)^2(1-z^{N+2})}\)
+\[=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}\]<br>which is our formula evaluated for \(N+1\). Consequently, \(\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =\) \[\frac{1}{(1-z)^2}\] when \(\left|z\right| \lt 1\). </p>
+
+<p>For \(|z| \gt 1\), begin by multiplying the numerator and denominator of \((*)\) by \(z^{-N + 1} \ne 0\):<br>
+\(\ds \sum_{n=1}^N A_n(z) = \frac{\left(\sum_{m=0}^{N-1} z^m\right)z^{-N+1}}{(1-z)(1-z^{N+1})z^{-N+1}} = \frac{\sum_{m=0}^{N-1} z^{m-N+1}}{(1-z)(z^{-N+1}-z^2)} = \frac{z^{-N+1} + z^{-N+2} + \dots + z^{-1} + 1}{z^2(1-z)(z^{-N-1}-1)} = \frac{\sum_{m=0}^{N-1}(1/z)^m}{z^2(1-z)[(1/z)^{N+1}-1]}.\) Now \(\ds \left|z\right| \gt 1 \implies \left|\frac1z\right| \lt 1 \implies \lim_{N\rarrow\infty}\sum_{m=0}^{N-1}z^{-m} = \frac{1-z^{-N}}{1-z^{-1}} \implies \lim_{N\rarrow\infty}\frac{\sum_{m=0}^{N-1}z^{-m}}{z^2(1-z)(z^{-(N+1)}-1)} = \lim_{N\rarrow\infty}\frac{1-z^{-N}}{(1-z^{-1})z^2(1-z)(z^{-(N+1)}-1)} =\) \(\Frac{1}{z^2(2 - z - z^{-1})(-1)} = \Frac1{z(z^2 - 2z + 1)} = \Frac{1}{z(1-z)^2}.~~~\blksq\) (Proof that the convergence is uniform is left to the reader.)
+<br><br></p>
 
 <h3><u>Section 6</u></h3>
 
