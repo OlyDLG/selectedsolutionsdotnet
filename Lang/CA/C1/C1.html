@@ -95,7 +95,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\d}{\delta}
 \newcommand{\e}{\epsilon}
 \newcommand{\t}{\theta}
-\newcommand{\sns}{\because}
+\newcommand{\snc}{\because}
 \newcommand{\part}{\partial}
 \newcommand{\rarrow}{\rightarrow}
 \newcommand{\box}{\boxed}
@@ -127,7 +127,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 
 <p>Acknowledgement and sincerest thanks to <a href="https://www.math.ucdavis.edu/%7Egreg/">Greg Kuperberg, Ph.D., Professor, UC Davis Dept. of Mathematics</a>, for a hint and discussion of 1.4.7, and for a review, input, and discussion of my initial solution to 1.6.1.</p>
 
-<p>Re: notation: although Lang, somewhat mysteriously, doesn&#39;t appear to use it in this text, on occasion, e.g., Problem 1.6.1, we will use &quot;<a href="https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation">little-o notation</a>,&quot; which is analogous to the &quot;big oh&quot; notation presented in the text&#39;s &quot;Prerequisites,&quot; except that instead of the relation \(\left|f(z)\right| \le C\left|g(z)\right|\) holding for some \(C \in \mathbb{R}^+\) as \(\left|z\right|\) goes to \(a \in \mathbb{R} \cup \infty\), we have \(f = o(g) \iff \lim_{z \rightarrow z_0 \in \mathbb{C} \cup \infty} \left|f(z)/g(z)\right| = 0\). More formally, (see, for example, Keener, J. P., 1988. <i>Principles of Applied Mathematics: Transformation and Approximation</i>, Addison-Wesley, Redwood City, CA, Chapter 10, Section 1) given \(f(z), g(z)\) defined on \(R \subset \mathbb{C} \cup \infty,~f = o(g)\) (in \(R\)) \(\iff \forall\) (real) \(\epsilon &gt; 0~\exists\) a neighborhood \(U\) of \(z_0 : \left|f(z)\right| \le \epsilon \left|g(z)\right| \forall z \in U \cap R\).  </p>
+<p>Re: notation: although Lang, somewhat mysteriously, doesn&#39;t appear to use it in this text, on occasion, e.g., Problem 1.6.1, we will use &quot;<a href="https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation">little-o notation</a>,&quot; which is analogous to the &quot;big oh&quot; notation presented in the text&#39;s &quot;Prerequisites,&quot; except that instead of the relation \(\lvert f(z)\rvert  \le C\lvert g(z)\rvert \) holding for some \(C \in \mathbb{R}^+\) as \(\lvert z\rvert \) goes to \(a \in \mathbb{R} \cup \infty\), we have \(f = o(g) \iff \Lim_{z \rightarrow z_0 \in \mathbb{C} \cup \infty} \lvert f(z)/g(z)\rvert  = 0\). More formally, (see, for example, Keener, J. P., 1988. <i>Principles of Applied Mathematics: Transformation and Approximation</i>, Addison-Wesley, Redwood City, CA, Chapter 10, Section 1) given \(f(z), g(z)\) defined on \(R \subset \mathbb{C} \cup \infty,~f = o(g)\) (in \(R\)) \(\iff \forall\) (real) \(\epsilon &gt; 0~\exists\) a neighborhood \(U\) of \(z_0 : \lvert f(z)\rvert  \le \epsilon \lvert g(z)\rvert  \forall z \in U \cap R\).  </p>
 
 <p><span class="goback">Purple</span> font indicates clicking on the text will return you to your prior place.
 <br></p>
@@ -337,33 +337,35 @@ Describe the image under \(f(z)=e^z\) of:<br>
 <h3><u>Section 4</u><br></h3>
 
 <p><a name="E4.0" class="goback" onclick="winhisback()"><strong>4.0</strong>)</a> <strong>From the Text</strong>: On page 20, the following important assertion is made without proof, i.e., proof is, implicitly, &quot;left to the reader&quot;:<br>
-Let \(S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n\); then
-\(\ds \lim_{n\rightarrow\infty}z_n=w \iff \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w.\) We shall provide a proof.<br></p>
+Let \(S=\left\{1, \Frac12, \Frac13, \Frac14,...\right\},~f(1/n)=z_n\); then
+\(\ds \lim_{n\rarrow\infty}z_n=w \iff \lim_{\substack{z\rarrow 0 \\ z \in S}} f(z) = w.\) We shall provide a proof.<br></p>
 
 <p><strong>Pf</strong>: The crucial facts are the properties of \(\mathbb{R}\) that, with its standard ordering, \(\forall N \in \mathbb{N}~\exists n \in \mathbb{N}:\) (1) \( n \gt N\) and (2) \((0 \lt )\Frac1n \lt \Frac1N\), which we state and use without proof.<br></p>
 
 <p>\(\implies\): To show that \(\ds \lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w\), we must show:<br>
 a) \(f\) is well&#8209;defined on \(S\): given.<br>
 b) \(0\) is adherent to \(S\): we need to show that every disc \(D(0, r\gt 0)\) contains some point of \(S\). \(D(0, r \ge 1)\) contains \(1 \in S\) so we confine our attention to \(0 \lt r \lt 1\). For any such \(r\), take \(N \gt \Frac1r\); then \(\Frac1N \in S \lt \Frac1r \implies \Frac1N \in D(0,r \gt 0).\)<br>
-c) \((\ds \lim_{n\rightarrow\infty}z_n=w \equiv \forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \left|z_n - w\right| \lt \e) \implies (\lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w \equiv \forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e)\)<br>
+c) \((\ds \lim_{n\rarrow\infty}z_n=w \equiv \forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \lvert z_n - w\rvert  \lt \e) \implies (\lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w \equiv \forall \e \gt 0~\exists \d \gt 0 : z \in S, \lvert z\rvert  \lt \d \rarrow \lvert f(z) - w\rvert  \lt \e)\)<br>
 Confession: I find \(\d\)&#8209;\(\e\) proofs hard to follow, which probably explains why I had a hard time writing this part of the proof in such a way that I found &quot;convincing&quot;; what finally worked for me was composing the proof using the organizing tool of a &quot;proof table,&quot; the kind taught in high school geometry. I’m tempted to present the proof in that format, but that’s frowned upon after high school geometry, so I’m going to &quot;compromise&quot; and present it as a &quot;narrative,&quot; with explicit justification for each step in brackets \([~]\).<br></p>
 
-<p>\((\forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \left|z_n - w\right| \lt \e) \implies 
-\forall \e \gt 0~\exists N : n \ge N \rarrow \left|f(1/n) - w\right| \lt \e~[z_n = f(1/n) \text{ given}] \implies\) 
-\(\forall \e \gt 0~n \gt N \rarrow \left|f(1/n) - w\right| \lt \e~[\text{true for } n \ge N \rarrow \text{ true for } n \gt N] \implies 
-\forall \e \gt 0,~0 \lt \Frac1n \lt \Frac1N \rarrow \left|f(1/n) - w\right| \lt \e\) \([0 \lt \Frac1n \lt \Frac1N \rarrow n \gt N \gt 0].~\) 
+<p>\((\forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \lvert z_n - w\rvert  \lt \e) \implies 
+\forall \e \gt 0~\exists N : n \ge N \rarrow \lvert f(1/n) - w\rvert  \lt \e~[z_n = f(1/n) \text{ given}] \implies\) 
+\(\forall \e \gt 0~n \gt N \rarrow \lvert f(1/n) - w\rvert  \lt \e~[\text{true for } n \ge N \rarrow \text{ true for } n \gt N] \implies 
+\forall \e \gt 0,~0 \lt \Frac1n \lt \Frac1N \rarrow \lvert f(1/n) - w\rvert  \lt \e\) \([0 \lt \Frac1n \lt \Frac1N \rarrow n \gt N \gt 0].~\) 
 Now choose \(\d = \Frac1N \gt 0~[\text{axiom of choice, } \Frac1N \gt 0]\) 
-and let \(z = \Frac1n \implies z \in S, \left|z\right| \lt \d~[\)definition of \(S\), \(\Frac1n \lt \Frac1N] \implies 
-\forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e,\) 
+and let \(z = \Frac1n \implies z \in S, \lvert z\rvert  \lt \d~[\)definition of \(S\), \(\Frac1n \lt \Frac1N] \implies 
+\forall \e \gt 0~\exists \d \gt 0 : z \in S, \lvert z\rvert  \lt \d \rarrow \lvert f(z) - w\rvert  \lt \e,\) 
 which is what we were required to show.</p>
 
-<p>\(\Longleftarrow\): \((\forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e) \implies\) \(\forall \e \gt 0~\exists \d \gt 0 : \Frac1n \lt \d \rarrow \left|f(1/n) - w\right| \lt \e\) \([z \in S \rarrow \exists n \in \mathbb{N} : z = \Frac1n = \left|\Frac1n\right| = \left|z\right| \lt \d; z = \Frac1n \rarrow f(z) = f(1/n)].~\) Now choose \(N = \left\lceil \Frac1{\d}\right\rceil \ge 1\) where \(\lceil x \rceil\) is the least natural number <strong><em>strictly exceeding</em></strong> \(\Frac1{\d}~[\)axiom of choice; \(\d \gt 0 \rarrow \Frac1{\d}\) well&#8209;defined and \(\left\lceil \Frac1{\d}\right\rceil \ge 1];\) \(\left\lceil \Frac1{\d}\right\rceil \gt \Frac1{\d}~[\)given our definition of \(\lceil x \rceil] \implies 0 \lt \Frac1{\lceil1/\d\rceil} \lt \d \implies n \ge N \rarrow 0 \lt \Frac1n \le \Frac1N = \Frac1{\lceil1/\d\rceil} \lt \d\) and we established above that \(\forall \e \gt 0~\exists \d \gt 0 : \Frac1n \lt \d \rarrow \left|f(1/n) - w\right| \lt \e\), so now we have that \(\forall \e \gt 0~\exists N = \left\lceil\Frac1{\d}\right\rceil : n \ge N \rarrow \left|f(1/n) - w\right| \lt \e;\) setting \(z_n = \Frac1n\) yields \(\forall \e \gt 0~\exists N : n \ge N \rarrow \left|f(z_n) - w\right| \lt \e\) as required.\(~~\blksq\)
+<p>\(\Longleftarrow\): \((\forall \e \gt 0~\exists \d \gt 0 : z \in S, \lvert  z\rvert  \lt \d \rarrow \lvert f(z) - w\rvert  \lt \e) \implies\) \(\forall \e \gt 0~\exists \d \gt 0 : \Frac1n \lt \d \rarrow \lvert f(1/n) - w\rvert  \lt \e\) \([z \in S \rarrow \exists n \in \mathbb{N} : z = \Frac1n = \lvert\Frac1n\rvert  = \lvert z\rvert  \lt \d; z = \Frac1n \rarrow f(z) = f(1/n)].~\) Now choose \(N = \left\lceil \Frac1{\d}\right\rceil \ge 1\) where \(\lceil x \rceil\) is the least natural number <strong><em>strictly exceeding</em></strong> \(\Frac1{\d}~[\)axiom of choice; \(\d \gt 0 \rarrow \Frac1{\d}\) well&#8209;defined and \(\left\lceil \Frac1{\d}\right\rceil \ge 1];\) \(\left\lceil \Frac1{\d}\right\rceil \gt \Frac1{\d}~[\)given our definition of \(\lceil x \rceil] \implies 0 \lt \Frac1{\lceil1/\d\rceil} \lt \d \implies n \ge N \rarrow 0 \lt \Frac1n \le \Frac1N = \Frac1{\lceil1/\d\rceil} \lt \d\) and we established above that \(\forall \e \gt 0~\exists \d \gt 0 : \Frac1n \lt \d \rarrow \lvert f(1/n) - w\rvert  \lt \e\), so now we have that \(\forall \e \gt 0~\exists N = \left\lceil\Frac1{\d}\right\rceil : n \ge N \rarrow \lvert f(1/n) - w\rvert  \lt \e;\) setting \(z_n = \Frac1n\) yields \(\forall \e \gt 0~\exists N : n \ge N \rarrow \lvert f(z_n) - w\rvert  \lt \e\) as required.\(~~\blksq\)
 <br><br></p>
 
 <p><a name="E4.1" class="goback" onclick="winhisback()"><strong>4.1</strong>)</a>
-Given \(\alpha \in \mathbb{C} : \lvert \alpha \rvert \lt 1\), what is \(\displaystyle \lim_{n\rightarrow \infty} \alpha ^n\)?</p>
+Given \(\a \in \mathbb{C} : \lvert \a \rvert \lt 1\), what is \(\ds \lim_{n\rarrow \infty} \a ^n\)?</p>
 
-<p><strong>Sln</strong>: Write \(\alpha\) in polar form: \(\alpha = \lvert \alpha \rvert e^{i\arg(\alpha)}\); then \(\alpha ^n = \lvert \alpha \rvert ^n e^{in\arg(\alpha)}\) and \(\displaystyle \lim_{n \rightarrow \infty} \alpha^n = \lim_{n \rightarrow \infty} \lvert \alpha \rvert ^n e^{in\arg(\alpha)} = (\lim_{n \rightarrow \infty} \lvert \alpha \rvert ^n)(\lim_{n \rightarrow \infty} e^{in\arg(\alpha)}) = (0)(\text{bounded sequence})~(\because \lvert  e^{in\arg(\alpha)} \rvert = 1~\forall n \in \mathbb{N}, \alpha \in \mathbb{C})\)<br>\(~~~~= 0\).<br> Geometrically what is going on is that for any \(\alpha\) inside the unit circle, each multiplication by itself moves it closer to the origin; it also rotates it further around the origin&mdash;by its own angle&mdash;but this doesn&#39;t matter, regardless of what that angle is, i.e., for any such starting \(\alpha\), because of the &quot;contraction&quot; effected by each multiplication: eventually, any such \(\alpha\) is brought &quot;arbitrarily close&quot; to the origin; the &quot;orbit&quot; of any such \(\alpha\) under this iterated action is a spiral into the origin, \(z = 0\).</p>
+<p><strong>Sln</strong>: Write \(\a\) in polar form: \(\a = \lvert \a \rvert \exp[i\arg(\a)]\); then \(\a ^n = \lvert \a \rvert ^n \exp[in\arg(\a)]\) and \(\Lim_{n \rarrow \infty} \a^n = \Lim_{n \rarrow \infty} \lvert \a \rvert ^n \exp[in\arg(\a)] =\) \((\Lim_{n \rarrow \infty} \lvert \a \rvert ^n)(\Lim_{n \rarrow \infty} \exp[in\arg(\a)]) = (0)(\text{bounded sequence})~(\snc \lvert \exp[in\arg(\alpha)] \rvert = 1~\forall n \in \mathbb{N}, \alpha \in \mathbb{C}) = 0\).<br> </p>
+
+<p>Geometrically what is going on is that for any \(\alpha\) inside the unit circle, each multiplication by itself moves it closer to the origin; it also rotates it further around the origin&mdash;by its own angle&mdash;but this doesn&#39;t matter, regardless of what that angle is, i.e., for any such starting \(\a,\) because of the &quot;contraction&quot; effected by each multiplication: eventually, any such \(\alpha\) is brought &quot;arbitrarily close&quot; to the origin; the &quot;orbit&quot; of any such \(\a\) under this iterated action is a spiral into the origin, \(z = 0\).</p>
 
 <p><br>
 <a name="E4.2" class="goback" onclick="winhisback()"><strong>4.2</strong>)</a>
@@ -386,35 +388,35 @@ Given: \(\displaystyle f(z) = \lim_{n \rightarrow \infty} 1/(1 + n^2 z)\), show:
 <br><br></p>
 
 <p><a name="E4.5" class="goback" onclick="winhisback()"><strong>4.5</strong>)</a>
-Show that \(\left|z\right| \ne 1 \implies \Lim_{n \rarrow \infty} \Frac{z^n -1}{z^n + 1}\) exists.</p>
+Show that \(\lvert z\rvert  \ne 1 \implies \Lim_{n \rarrow \infty} \Frac{z^n -1}{z^n + 1}\) exists.</p>
 
-<p><strong>Pf</strong>: For the case \(\left|z\right| = 1\), the limit exists for some \(z\), e.g., \(z = 1: f(1) = \Lim_{n \rarrow \infty} \Frac{1^n -1}{1^n + 1} = 0\), but not for others, e.g., \(z = -1: \Frac{(-1)^n -1}{(-1)^n + 1}\) which jumps back and forth between \(0\) and \(\infty\), so convergence for \(\left|z\right| = 1\) is at best conditional. (In fact, for &quot;almost all&quot; \(z : \left|z\right| = 1\), the <strong><em>orbit</em></strong> of \(z\) under the map \(f(n) = z^n\) is <a href="https://en.wikipedia.org/wiki/Irrational_rotation"><strong><em>dense</em></strong> in the unit circle</a> \(\implies\) the limit does not exist for all such points; but the proofs of both claims are beyond our present scope.)</p>
+<p><strong>Pf</strong>: For the case \(\lvert z\rvert  = 1\), the limit exists for some \(z\), e.g., \(z = 1: f(1) = \Lim_{n \rarrow \infty} \Frac{1^n -1}{1^n + 1} = 0\), but not for others, e.g., \(z = -1: \Frac{(-1)^n -1}{(-1)^n + 1}\) which jumps back and forth between \(0\) and \(\infty\), so convergence for \(\lvert z\rvert  = 1\) is at best conditional. (In fact, for &quot;almost all&quot; \(z : \lvert z\rvert  = 1\), the <strong><em>orbit</em></strong> of \(z\) under the map \(f(n) = z^n\) is <a href="https://en.wikipedia.org/wiki/Irrational_rotation"><strong><em>dense</em></strong> in the unit circle</a> \(\implies\) the limit does not exist for all such points; but the proofs of both claims are beyond our present scope.)</p>
 
-<p>Now if \(\left|z\right| = r \in [0,1)\), \(\Lim_{n \rarrow \infty} z^n = \Lim_{n \rarrow \infty}r^ne^{i n\t} = 0\) (since \(\forall \e \gt 0, \exists N \in \mathbb{N} : n \ge N \implies \left|r^ne^{i n\t}\right| = r^n \lt \e\) by a fundamental property of the reals) so \(\Lim_{n \rarrow \infty}\Frac{z^n -1}{z^n + 1} = \Frac{0-1}{0+1} = -1\).</p>
+<p>Now if \(\lvert z\rvert  = r \in [0,1)\), \(\Lim_{n \rarrow \infty} z^n = \Lim_{n \rarrow \infty}r^ne^{i n\t} = 0\) (since \(\forall \e \gt 0, \exists N \in \mathbb{N} : n \ge N \implies \lvert r^ne^{i n\t}\rvert  = r^n \lt \e\) by a fundamental property of the reals) so \(\Lim_{n \rarrow \infty}\Frac{z^n -1}{z^n + 1} = \Frac{0-1}{0+1} = -1\).</p>
 
-<p>Finally, if \(\left|z\right| = r \in (1,\infty)\), consider that \(\Lim_{n \rarrow \infty} \Frac{z^n -1}{z^n + 1} = \Lim_{n \rarrow \infty} \Frac{(1/z)^{-n} - 1}{(1/z)^{-n} + 1} = \Lim_{n \rarrow \infty} \Frac{w^{-n} - 1}{w^{-n} + 1}, 0 \lt \left|w\right| \lt 1\); multiply the numerator and denominator by \(w^n \ne 0\) to see that this equals \(\Lim_{n \rarrow \infty} \Frac{1 - w^n}{1 + w^n} = -\Lim_{n \rarrow \infty} \Frac{w^n - 1}{w^n + 1} = -(-1) = 1\) (since \(\left|w\right| \lt 1).~~~\blacksquare\)<br></p>
+<p>Finally, if \(\lvert z\rvert  = r \in (1,\infty)\), consider that \(\Lim_{n \rarrow \infty} \Frac{z^n -1}{z^n + 1} = \Lim_{n \rarrow \infty} \Frac{(1/z)^{-n} - 1}{(1/z)^{-n} + 1} = \Lim_{n \rarrow \infty} \Frac{w^{-n} - 1}{w^{-n} + 1}, 0 \lt \lvert w\rvert  \lt 1\); multiply the numerator and denominator by \(w^n \ne 0\) to see that this equals \(\Lim_{n \rarrow \infty} \Frac{1 - w^n}{1 + w^n} = -\Lim_{n \rarrow \infty} \Frac{w^n - 1}{w^n + 1} = -(-1) = 1\) (since \(\lvert w\rvert  \lt 1).~~~\blacksquare\)<br></p>
 
 <p>(Thus \(f(z) = \left\{
 \begin{array}{ll}
--1, &amp; \left|z\right| \lt 1 \\ 
-\text{undef}, &amp; \left|z\right| = 1 \\
-1, &amp; \left|z\right| \gt 1 
+-1, &amp; \lvert z\rvert  \lt 1 \\ 
+\text{undef}, &amp; \lvert z\rvert  = 1 \\
+1, &amp; \lvert z\rvert  \gt 1 
 \end{array}
-\right.\), so if we <strong>define</strong> \(f(z, \left|z\right|=1) \equiv 0\) so that \(f(z)\) becomes \(f(z) = \left\{
+\right.\), so if we <strong>define</strong> \(f(z, \lvert z\rvert =1) \equiv 0\) so that \(f(z)\) becomes \(f(z) = \left\{
 \begin{array}{rr}
--1, &amp; \left|z\right| \lt 1 \\ 
-0, &amp; \left|z\right| = 1 \\
-1, &amp; \left|z\right| \gt 1 
+-1, &amp; \lvert z\rvert  \lt 1 \\ 
+0, &amp; \lvert z\rvert  = 1 \\
+1, &amp; \lvert z\rvert  \gt 1 
 \end{array}
 \right.\)<br> 
-then, except for \(z=0, f(z) = \text{sign}(\log\left|z\right|)\), i.e., we have an &quot;algebraic formula&quot; for this important piecewise&#8209;continuous function.)
+then, except for \(z=0, f(z) = \text{sign}(\log\lvert z\rvert )\), i.e., we have an &quot;algebraic formula&quot; for this important piecewise&#8209;continuous function.)
 <br><br></p>
 
 <p><a name="E4.7" class="goback" onclick="winhisback()"><strong>4.7</strong>)</a>
 Show that \(\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) converges (uniformly) to \(\Bigg\{\!
   \begin{array}{c}
-    1/(1-z)^{2},~~~~~\left|z\right|\lt 1 \\
-    1/[z(1-z)^2],~\left|z\right|\gt 1
+    1/(1-z)^{2},~~~~~\lvert z\rvert \lt 1 \\
+    1/[z(1-z)^2],~\lvert z\rvert \gt 1
   \end{array}
   \!\)<br>
 <strong>Pf</strong>: First note that the summand is undefined (or infinite) \(\forall z\) if \(n=0\), so we assume that the sum starts from \(n=1\). Let \(\displaystyle A_n(z) = \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) and consider the partial sum \(\ds \sum_{n=1}^{N} A_n(z)\). Computing&mdash;and simplifying&mdash;this for a few small values of \(N\) leads to the following conjecture:
@@ -422,10 +424,10 @@ Show that \(\displaystyle \sum \frac{z^{n-1}}{(1-z^n)(1-z^{n+1})}\) converges (u
 First note that it is true for \(N=1\): \(\displaystyle \sum_{n=1}^1 A_n(z) = A_1(z) = \frac{1}{(1-z)(1-z^2)} = \frac{\sum_{m=0}^{1-1}z^m}{(1-z)(1-z^{1+1})}\). Now we will show that &quot;true for \(N\) implies true for \(N+1\)&quot;:
 \(\displaystyle \sum_{n=1}^{N+1} A_n(z) = \sum_{n=1}^{N} A_n(z) + \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} = \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{\sum_{m=0}^{N-1}z^m}{(1-z)(1-z^{N+1})}\) (this is where we&#39;ve used &quot;assumed true for \(N\)&quot;)
 <br>\(\displaystyle ~~~= \frac{z^N}{(1-z^{N+1})(1-z^{N+2})} + \frac{1-z^N}{(1-z)(1-z)(1-z^{N+1})} = \frac{z^N(1-z)^2 + (1-z^{N+2})(1-z^N)}{(1-z)^2(1-z^{N+1})(1-z^{N+2})}\)<br>\(\displaystyle = \frac{1+z^N-z^N-2z^{N+1}+z^{N+2}-z^{N+2}+z^{2N+2}}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{(1-z^{N+1})^2}{(1-z)^2(1-z^{N+1})(1-z^{N+2})} = \frac{1-z^{N+1}}{(1-z)^2(1-z^{N+2})}\)
-\[=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}\]<br>which is our formula evaluated for \(N+1\). Consequently, \(\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =\) \[\frac{1}{(1-z)^2}\] when \(\left|z\right| \lt 1\). </p>
+\[=\frac{\sum_{m=0}^N z^m}{(1-z)(1-z^{N+2})}\]<br>which is our formula evaluated for \(N+1\). Consequently, \(\displaystyle \lim_{N\rightarrow \infty} \sum_{n=1}^N A_n(z) = \lim_{N\rightarrow \infty}\frac{\sum_{m=0}^{N-1} z^m}{(1-z)(1-z^{N+1})} = \lim_{N\rightarrow \infty} \frac{1-z^N}{(1-z)^2(1-z^{N+1})} =\) \[\frac{1}{(1-z)^2}\] when \(\lvert z\rvert  \lt 1\). </p>
 
 <p>For \(|z| \gt 1\), begin by multiplying the numerator and denominator of \((*)\) by \(z^{-N + 1} \ne 0\):<br>
-\(\ds \sum_{n=1}^N A_n(z) = \frac{\left(\sum_{m=0}^{N-1} z^m\right)z^{-N+1}}{(1-z)(1-z^{N+1})z^{-N+1}} = \frac{\sum_{m=0}^{N-1} z^{m-N+1}}{(1-z)(z^{-N+1}-z^2)} = \frac{z^{-N+1} + z^{-N+2} + \dots + z^{-1} + 1}{z^2(1-z)(z^{-N-1}-1)} = \frac{\sum_{m=0}^{N-1}(1/z)^m}{z^2(1-z)[(1/z)^{N+1}-1]}.\) Now \(\ds \left|z\right| \gt 1 \implies \left|\frac1z\right| \lt 1 \implies \lim_{N\rarrow\infty}\sum_{m=0}^{N-1}z^{-m} = \frac{1-z^{-N}}{1-z^{-1}} \implies \lim_{N\rarrow\infty}\frac{\sum_{m=0}^{N-1}z^{-m}}{z^2(1-z)(z^{-(N+1)}-1)} = \lim_{N\rarrow\infty}\frac{1-z^{-N}}{(1-z^{-1})z^2(1-z)(z^{-(N+1)}-1)} =\) \(\Frac{1}{z^2(2 - z - z^{-1})(-1)} = \Frac1{z(z^2 - 2z + 1)} = \Frac{1}{z(1-z)^2}.~~~\blksq\) (Proof that the convergence is uniform is left to the reader.)
+\(\ds \sum_{n=1}^N A_n(z) = \frac{\left(\sum_{m=0}^{N-1} z^m\right)z^{-N+1}}{(1-z)(1-z^{N+1})z^{-N+1}} = \frac{\sum_{m=0}^{N-1} z^{m-N+1}}{(1-z)(z^{-N+1}-z^2)} = \frac{z^{-N+1} + z^{-N+2} + \dots + z^{-1} + 1}{z^2(1-z)(z^{-N-1}-1)} = \frac{\sum_{m=0}^{N-1}(1/z)^m}{z^2(1-z)[(1/z)^{N+1}-1]}.\) Now \(\ds \lvert z\rvert  \gt 1 \implies \lvert \frac1z\rvert  \lt 1 \implies \lim_{N\rarrow\infty}\sum_{m=0}^{N-1}z^{-m} = \frac{1-z^{-N}}{1-z^{-1}} \implies \lim_{N\rarrow\infty}\frac{\sum_{m=0}^{N-1}z^{-m}}{z^2(1-z)(z^{-(N+1)}-1)} = \lim_{N\rarrow\infty}\frac{1-z^{-N}}{(1-z^{-1})z^2(1-z)(z^{-(N+1)}-1)} =\) \(\Frac{1}{z^2(2 - z - z^{-1})(-1)} = \Frac1{z(z^2 - 2z + 1)} = \Frac{1}{z(1-z)^2}.~~~\blksq\) (Proof that the convergence is uniform is left to the reader.)
 <br><br></p>
 
 <h3><u>Section 6</u></h3>
