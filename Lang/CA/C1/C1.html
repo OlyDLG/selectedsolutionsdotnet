@@ -95,6 +95,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \newcommand{\d}{\delta}
 \newcommand{\e}{\epsilon}
 \newcommand{\t}{\theta}
+\newcommand{\sns}{\because}
 \newcommand{\part}{\partial}
 \newcommand{\rarrow}{\rightarrow}
 \newcommand{\box}{\boxed}
@@ -345,11 +346,19 @@ Let \(S=\{1, \frac12, \frac13, \frac14,...\},~f(1/n)=z_n\); then
 a) \(f\) is well&#8209;defined on \(S\): given.<br>
 b) \(0\) is adherent to \(S\): we need to show that every disc \(D(0, r\gt 0)\) contains some point of \(S\). \(D(0, r \ge 1)\) contains \(1 \in S\) so we confine our attention to \(0 \lt r \lt 1\). For any such \(r\), take \(N \gt \Frac1r\); then \(\Frac1N \in S \lt \Frac1r \implies \Frac1N \in D(0,r \gt 0).\)<br>
 c) \((\ds \lim_{n\rightarrow\infty}z_n=w \equiv \forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \left|z_n - w\right| \lt \e) \implies (\lim_{\substack{z\rightarrow 0 \\ z \in S}} f(z) = w \equiv \forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e)\)<br>
-Confession: I find \(\d\)&#8209;\(\e\) proofs hard to follow, which probably explains why I had a hard time writing this part of the proof in such a way that I found &quot;convincing&quot;; what finally worked for me was composing the proof using the organizing tool of a &quot;proof table,&quot; the kind taught in high school geometry. I’m tempted to present the proof in that format, but that’s frowned upon after high school geometry, so I’m going to &quot;compromise&quot; and present it as a &quot;narrative,&quot; with explicit justification for each step in parentheses.<br></p>
+Confession: I find \(\d\)&#8209;\(\e\) proofs hard to follow, which probably explains why I had a hard time writing this part of the proof in such a way that I found &quot;convincing&quot;; what finally worked for me was composing the proof using the organizing tool of a &quot;proof table,&quot; the kind taught in high school geometry. I’m tempted to present the proof in that format, but that’s frowned upon after high school geometry, so I’m going to &quot;compromise&quot; and present it as a &quot;narrative,&quot; with explicit justification for each step in brackets \([~]\).<br></p>
 
-<p>\(\forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \left|z_n - w\right| \lt \e \implies \forall \e \gt 0~\exists N : n \ge N \rarrow \left|f(1/n) - w\right| \lt \e~(z_n = f(1/n) \text{ given}) \implies\) \(\forall \e \gt 0~n \gt N \rarrow \left|f(1/n) - w\right| \lt \e~(\text{true for } n \ge N \rarrow \text{ true for } n \gt N) \implies \forall \e \gt 0,~0 \lt \Frac1n \lt \Frac1N \rarrow \left|f(1/n) - w\right| \lt \e\) \((n \gt N \gt 0 \rarrow 0 \lt \Frac1n \lt \Frac1N).\) Now choose \(\d = \Frac1N \gt 0~(\text{axiom of choice; } \Frac1N \gt 0)\) and let \(z = \Frac1n \implies z \in S, \left|z\right| \lt \d~(\)definition of \(S\), \(\Frac1n \lt \Frac1N) \implies \forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e,\) which is what we were required to show.  </p>
+<p>\((\forall \e \gt 0~\exists N \in \mathbb{N} : n \in \mathbb{N} \ge N \rarrow \left|z_n - w\right| \lt \e) \implies 
+\forall \e \gt 0~\exists N : n \ge N \rarrow \left|f(1/n) - w\right| \lt \e~[z_n = f(1/n) \text{ given}] \implies\) 
+\(\forall \e \gt 0~n \gt N \rarrow \left|f(1/n) - w\right| \lt \e~[\text{true for } n \ge N \rarrow \text{ true for } n \gt N] \implies 
+\forall \e \gt 0,~0 \lt \Frac1n \lt \Frac1N \rarrow \left|f(1/n) - w\right| \lt \e\) \([0 \lt \Frac1n \lt \Frac1N \rarrow n \gt N \gt 0].~\) 
+Now choose \(\d = \Frac1N \gt 0~[\text{axiom of choice, } \Frac1N \gt 0]\) 
+and let \(z = \Frac1n \implies z \in S, \left|z\right| \lt \d~[\)definition of \(S\), \(\Frac1n \lt \Frac1N] \implies 
+\forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e,\) 
+which is what we were required to show.</p>
 
-<p><br><br></p>
+<p>\(\Longleftarrow\): \((\forall \e \gt 0~\exists \d \gt 0 : z \in S, \left|z\right| \lt \d \rarrow \left|f(z) - w\right| \lt \e) \implies\) \(\forall \e \gt 0~\exists \d \gt 0 : \Frac1n \lt \d \rarrow \left|f(1/n) - w\right| \lt \e\) \([z \in S \rarrow \exists n \in \mathbb{N} : z = \Frac1n = \left|\Frac1n\right| = \left|z\right| \lt \d; z = \Frac1n \rarrow f(z) = f(1/n)].~\) Now choose \(N = \left\lceil \Frac1{\d}\right\rceil \ge 1\) where \(\lceil x \rceil\) is the least natural number <strong><em>strictly exceeding</em></strong> \(\Frac1{\d}~[\)axiom of choice; \(\d \gt 0 \rarrow \Frac1{\d}\) well&#8209;defined and \(\left\lceil \Frac1{\d}\right\rceil \ge 1];\) \(\left\lceil \Frac1{\d}\right\rceil \gt \Frac1{\d}~[\)given our definition of \(\lceil x \rceil] \implies 0 \lt \Frac1{\lceil1/\d\rceil} \lt \d \implies n \ge N \rarrow 0 \lt \Frac1n \le \Frac1N = \Frac1{\lceil1/\d\rceil} \lt \d\) and we established above that \(\forall \e \gt 0~\exists \d \gt 0 : \Frac1n \lt \d \rarrow \left|f(1/n) - w\right| \lt \e\), so now we have that \(\forall \e \gt 0~\exists N = \left\lceil\Frac1{\d}\right\rceil : n \ge N \rarrow \left|f(1/n) - w\right| \lt \e;\) setting \(z_n = \Frac1n\) yields \(\forall \e \gt 0~\exists N : n \ge N \rarrow \left|f(z_n) - w\right| \lt \e\) as required.\(~~\blksq\)
+<br><br></p>
 
 <p><a name="E4.1" class="goback" onclick="winhisback()"><strong>4.1</strong>)</a>
 Given \(\alpha \in \mathbb{C} : \lvert \alpha \rvert \lt 1\), what is \(\displaystyle \lim_{n\rightarrow \infty} \alpha ^n\)?</p>
