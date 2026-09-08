@@ -42,7 +42,7 @@ Boyce, W. E. and R. C. DiPrima, 1992, <i>Elementary Differential Equations and B
       <ul> [Chapter 1, Section 1: Introduction, Classification of Differential Equations](./BoyceDiPrima/C1n2/C1.html)
       </ul>
       <ul> Chapter 2: First Order Differential Equations
-            <ul>[Part 1: Sections 1-4](./BoyceDiPrima/C1n2/C2P1.html)
+            <ul>[Part 1: Sections 1-4](./BoyceDiPrima/C1n2/C2P1.html)$~~~~~~~$[Part 2: Sections 5-8](./BoyceDiPrima/C1n2/C2P2.html)
             </ul>
       </ul>
       <ul> Chapter 6: The Laplace Transform
@@ -81,14 +81,14 @@ Lang, S.,
             	[Chapter 2: Differentiation of Vectors](./Lang/CoSV/C2/C2.html)
             </ul>
             <ul>
-                <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CoSV/C5/C5.html)</ul>
+                <b>\*</b> [Chapter 5: Maximum and Minimum](./Lang/CoSV/C5/C5.html) (Updated Summer 2026)</ul> 
             <ul>
                [Chapter 8: Curve Integrals](./Lang/CoSV/C8/C8.html)
              </ul>
   </ul>
 <ul>1995, <i>Complex Analysis, Third Edition (Corrected)</i>, Springer-Verlag GTM, New York.
             <ul>
-               [Chapter 1: Complex Numbers and Functions](./Lang/CA/C1/C1.html) (Undergoing maintenance; still available)
+               [Chapter 1: Complex Numbers and Functions](./Lang/CA/C1/C1.html) (Updated Summer 2026)
             </ul>
   </ul>
 
@@ -108,7 +108,7 @@ Sullivan, M., 2012, <i>Algebra \& Trigonometry, Ninth Edition</i>, Prentice Hall
                [Chapter 2: Graphs](./Sullivan/C2/C2.html)
             </ul>
             <ul> Chapter 7 : Trigonometric Functions
-                <ul>[Part 1: Sections 1-4](./Sullivan/C7/C7P1.html)
+                <ul>[Part 1: Sections 1-4](./Sullivan/C7/C7P1.html)$~~~~~~~$[Part 2: Sections 5-8](./Sullivan/C7/C7P2.html)
                 </ul>
             </ul>
             <ul>
