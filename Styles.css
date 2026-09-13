@@ -68,6 +68,11 @@ sp.sum {font-weight: bold;}
     height: auto;
 }
 
+.qwimg img {
+    max-width: 25%;
+    height: auto;
+}
+
 div.toc {
     & > table tr {
         background-color: transparent;
