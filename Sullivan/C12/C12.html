@@ -158,9 +158,9 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \end{eqnarray}
 \)</p>
 
-<p><strong>Sln</strong>: There is no single &quot;correct&quot; way to solve these; in particular, experience, i.e., practice, will teach you &quot;intuition&quot; for a &quot;best&quot; approach for any given problem (if there is one: for arbitrary coefficients, i.e., in real life, one approach is unlikely to be more efficient than any other).&nbsp; Nevertheless, I will explain the approach that I take, because, in my experience, it will be the most efficient.<br></p>
+<p><strong>Sln</strong>: There is no single &quot;correct&quot; way to solve these; in particular, experience, i.e., practice, will teach you &quot;intuition&quot; for a &quot;best&quot; approach for any given problem (if there is one: for arbitrary coefficients, i.e., in real life, one approach is unlikely to be more efficient than any other).&nbsp; Nevertheless, I will explain the approach that I take, because, in my experience, it will be the most efficient.</p>
 
-<p>To begin with, the only variable it is &quot;easy&quot; to eliminate using substitution is \(y\), because of its (understood) coefficient of \(1\) in Eq. 1; but I can only use that substitution in Eq. 2, which would require me to multiply what \(y\) equals by \(-2\), and that’s more trouble than it’s worth, especially since in the next step I’d want to use elimination between that result and Eq. 3.&nbsp; Also, I see that if I multiply Eq. 3 by \(2\) and add that to Eq. 2, I’ll eliminate \(z\), and then I’ll be able to add that result to \(2\) times Eq. 1 to eliminate \(y,\) so I opt for that approach:<br> </p>
+<p>To begin with, the only variable it is &quot;easy&quot; to eliminate using substitution is \(y\), because of its (understood) coefficient of \(1\) in Eq. 1; but I can only use that substitution in Eq. 2, which would require me to multiply what \(y\) equals by \(-2\), and that’s more trouble than it’s worth, especially since in the next step I’d want to use elimination between that result and Eq. 3.&nbsp; Also, I see that if I multiply Eq. 3 by \(2\) and add that to Eq. 2, I’ll eliminate \(z\), and then I’ll be able to add that result to \(2\) times Eq. 1 to eliminate \(y,\) so I opt for that approach: </p>
 
 <p>\(2(\text{Eq. 3}) + \text{Eq. 2} \implies (6x - 4z) + (-2y + 4z) = 6x - 2y = 2(-11) + 0 = -22\) (Eq. 4); next, \(2(\text{Eq. 1}) + \text{Eq. 4} \implies (4x + 2y) + (6x - 2y) = 10x = 2(-4) + (-22) = -30 \implies \box{x = -3}\); substituting this into Eq. 1 yields \(2(-3) + y = -6 + y = -4 \implies \box{y=2},\) and substituting this into Eq. 2 gives \(-2(2) + 4z = -4 + 4z = 0 \implies \box{z=1}.\) We use Eq. 3 as a check: \(3(-3) - 2(1) = -9 -2 = -11.~\chec\)
 <br><br></p>
@@ -173,9 +173,10 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \end{eqnarray}
 \)</p>
 
-<p><strong>Sln</strong>:</p>
+<p><strong>Sln</strong>: Since in this system all three equations have all three variables, I’m going to walk through my &quot;planning process&quot; again (but won’t after this problem: studying a problem to try to identify the most efficient approach is part of the skill set you should be developing here).</p>
 
-<p><br><br></p>
+<p>Adding Eq. 2 &quot;as is&quot; (i.e., without prior multiplication) to Eqs. 1 and 3 eliminates \(z\), so that is our approach: Eq. 1 \(+\) Eq. 2 gives \((2x - x) + (-3y + 2y) + (-z + z) = 0 + 5 \implies x - y = 5\) (Eq. 4); Eq. 2 \(+\) Eq. 3 yields \((-x + 3x) + (2y - 4y) + (z - z) = 5 + 1 \implies 2x - 2y = 6 \implies x - y = 3\) (Eq. 5); subtracting Eq. 5 from Eq. 4 yields \((x - x) + [-y - (-y)] = 5 - 3 \implies 0 = 2\) which is untrue for any values of \(x\) and \(y.\) Thus this system is \(\box{\text{inconsistent}}.\) Unfortunately, we don’t learn a method to check this &quot;non-existence&quot; of a unique solution till Section 3 on determinants, but I know that method and confirmed that this system is inconsistent. (The reader can try to check the system’s inconsistency using a three-D graphing calculator, such as <a href="https://www.geogebra.org/3d">GeoGebra3D</a>; I did that also and the three planes are such that it is not immediately obvious from their graphs that the three planes never intersect in a single point, i.e., a graphical check for this system is inconclusive.)
+<br><br></p>
 
 <p><a name="1.50" class="goback" onclick="winhisback()"><strong>1.50</strong>)</a>
 \(\begin{eqnarray} 
