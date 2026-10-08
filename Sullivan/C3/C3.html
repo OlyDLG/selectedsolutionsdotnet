@@ -188,6 +188,14 @@ pre code, pre tt{ background-color:transparent; border:none; }
     <td><a href="#3.46">3.46</a></td>
     <td><a href="#3.56">3.56</a></td>
     <td><a href="#3.60">3.60</a></td>
+    <td><a href="#3.66">3.66</a></td>
+  </tr>
+  <tr>
+    <td><a href="#3.70">3.70</a></td>
+    <td><a href="#3.74">3.74</a></td>
+    <td><a href="#3.76">3.76</a></td>
+    <td><a href="#3.80">3.80</a></td>
+    <td><a href="#3.88">3.88</a></td>
   </tr>
   <tr>
    <th colspan=10>Section 4: Library of Functions; Piecewise-defined Functions</th>
@@ -457,21 +465,21 @@ Some functions \(f\) have the property that \(f(a + b) = f(a) + f(b)\) for all r
 <p>The function has two local maxima&mdash;one \(\boxed{\doteq -0.52\text{ at }x \doteq -1.57}\) and one \(\boxed{\doteq -1.87\text{ at }x \doteq 0.64}\)&mdash;and a local minimum of \(\boxed{-2 \text{ at } x=0}\).&nbsp; By inspection, the function is \(\boxed{\text{increasing on the open intervals }-3 \lt x \lt -1.57 \text{ and } 0 \lt x \lt 0.64}\) and \(\boxed{\text{decreasing on the open intervals }-1.57 \lt x \lt 0 \text{ and } 0.64 \lt x \lt 2}\). 
 <br><br></p>
 
-<p><strong>66</strong>) For \(f(x) = -4x + 1\), find: <strong>a</strong>) the average rate of change from \(x=2\) to \(x=5\); and <strong>b</strong>) an equation of the secant line containing \((2,f(2))\) and \((5,f(5))\).</p>
+<p><a name="3.66" class="goback" onclick="winhisback()"><strong>66</strong></a>) For \(f(x) = -4x + 1\), find: <strong>a</strong>) the average rate of change from \(x=2\) to \(x=5\); and <strong>b</strong>) an equation of the secant line containing \((2,f(2))\) and \((5,f(5))\).</p>
 
 <p><strong>Sln</strong>: <strong>a</strong>) The average rate of change of \(f\) from \(x=2\) to \(x=5\) is: \(\displaystyle \frac{f(5)-f(2)}{5-2} = \frac{-4(5)+1-(-4(2)+1)}3 = \frac{-19-(-7)}3 =\) \(\frac{-12}3 = \boxed{-4}\).</p>
 
 <p><strong>b</strong>) The secant line between two points of a line is simply the line itself (proof?), thus the required equation is simply \(\boxed{y=-4x+1}\)
 <br><br></p>
 
-<p><strong>70</strong>) For \(h(x) = -2x^2 + x\), find: <strong>a</strong>) the average rate of change from \(x=0\) to \(x=3\); and <strong>b</strong>) an equation of the secant line containing \((0,h(0))\) and \((3,h(3))\).</p>
+<p><a name="3.70" class="goback" onclick="winhisback()"><strong>70</strong></a>) For \(h(x) = -2x^2 + x\), find: <strong>a</strong>) the average rate of change from \(x=0\) to \(x=3\); and <strong>b</strong>) an equation of the secant line containing \((0,h(0))\) and \((3,h(3))\).</p>
 
 <p><strong>Sln</strong>: For both parts, we need the values of \(h(0) = -2(0^2) + 0 = 0\) and \(h(3) = -2(3^2) + 3 = -15.~\) Therefore, the average rate of change (<strong>a</strong>) is \(\frac{h(3)-h(0)}{3-0} = \frac{-15}3 = \boxed{-5}\) and the equation of the secant line (<strong>b</strong>) is the equation of the line containing the points \((0,0)\) and \((3,-15)\); now the equation of any (oblique) line containing the origin is of the form \(y=mx\) (why?), so we simply need to find \(m\) from the fact that \(-15=m(3)\) must be a true statement; this implies \(m=-5\), so the equation of the secant line is: \[\boxed{y = -5x}\]</p>
 
 <p><img src="./Graphs/SullivanC3S3P70.png">
 <br></p>
 
-<p><strong>74</strong>) Given \(G(x) = -x^4 + 32x^2 + 144\)</p>
+<p><a name="3.74" class="goback" onclick="winhisback()"><strong>74</strong></a>) Given \(G(x) = -x^4 + 32x^2 + 144\)</p>
 
 <p><strong>a</strong>) Determine whether \(G\) is even, odd, or neither. </p>
 
@@ -492,7 +500,7 @@ Some functions \(f\) have the property that \(f(a + b) = f(a) + f(b)\) for all r
 <p>(Note: the use of GeoGebra’s Integral function to compute the areas of the described regions is beyond the scope of this course, though, perhaps arguably, the method by which the described regions are defined and graphed, is not.)
 <br><br></p>
 
-<p><strong>76</strong>) <strong>Medicine Concentration</strong> The concentration, \(C\), of a medication in the bloodstream \(t\) hours after being administered is modeled by the function:</p>
+<p><a name="3.76" class="goback" onclick="winhisback()"><strong>76</strong></a>) <strong>Medicine Concentration</strong> The concentration, \(C\), of a medication in the bloodstream \(t\) hours after being administered is modeled by the function:</p>
 
 <p>\[C(t) = -0.002t^4 + 0.039t^3 - 0.285t^2 + 0.766t + 0.085\]</p>
 
@@ -508,7 +516,7 @@ her child?</p>
 
 <p><strong>Sln</strong>: We need the time(s) after which the concentration is less than 0.5, i.e., \(t\) such that \(C(t)\lt 0.5\); we don’t have the <q>algebraic machinery</q> (and won’t in this course) to figure this out algebraically, so we need to solve it graphically using technology.&nbsp; One way to do this is illustrated in the above graph: we superimpose the graph of \(y=0.5\) on the graph of \(C(t)\) and the times for which the graph of the latter is below the graph of the former are the time ranges in which it is OK to nurse.&nbsp; But note that the graph of \(C(t)\) starts out below \(y=0.5\): \(C(0)=0.085 \lt 0.5\), so if it is really true that she can nurse anytime the concentration is below \(0.5\), she can nursing from  immediately after medicine administration (and before, of course) till the time at which the concentration first equals \(0.5\), which we see from the graph is \(\boxed{\doteq 0.713\text{ hr }= 42.78\text{ min}}\)<br><br></p>
 
-<p><strong>80</strong>) For the function \(f(x) = x^2\) compute each average rate of
+<p><a name="3.80" class="goback" onclick="winhisback()"><strong>80</strong></a>) For the function \(f(x) = x^2\) compute each average rate of
 change: <strong>a</strong>) from \(x=1\) to \(x=2\); <strong>c</strong>) from \(x=1\) to \(x=1.1\); <strong>e</strong>) from \(x=1\) to \(x=1.001\); <strong>h</strong>) what is happening to the slopes of the secant lines? Is there some number that they are getting closer to?
 What is that number?</p>
 
@@ -523,7 +531,7 @@ What is that number?</p>
 <p><strong>h</strong>) As the upper \(x\) value, \(x_{upper}\), <q>approaches</q> the (fixed) lower value, \(x_{lower}\) (\( = 1\) in this example), the slope of the secant line between the points \((x_{lower},f(x_{lower}))\) and \((x_{upper},f(x_{upper}))\), i.e., the average rate of change of \(f\) from \(x_{lower}\) to \(x_{upper}\), appears to be approaching the (fixed) value \(\boxed{2}.~\) (In Calculus one learns how to derive this result using a more general, and yet also more rigorous, analysis.&nbsp; In the meantime, the student is encouraged to contemplate why a more rigorous analysis might be desirable&mdash;hint: does a collection of examples prove a general statement? what if someone comes along some day and finds an example which contradicts the general statement?&mdash;and what that more rigorous analysis might <q>look like</q>&mdash;hint: what is needed is an analysis that is independent of any specific examples.)
 <br><br></p>
 
-<p><strong>88</strong>) Given the following definition for the slope, \(m_{\large\text{sec}}\), of the secant line for \(f(x)\) through the points \((x,f(x))\) and \((x+h,f(x+h))\): \[m_{\large\text{sec}} = \frac{f(x+h)-f(x)}h,~ h\ne0,\]
+<p><a name="3.88" class="goback" onclick="winhisback()"><strong>88</strong></a>) Given the following definition for the slope, \(m_{\large\text{sec}}\), of the secant line for \(f(x)\) through the points \((x,f(x))\) and \((x+h,f(x+h))\): \[m_{\large\text{sec}} = \frac{f(x+h)-f(x)}h,~ h\ne0,\]
 for \(f(x)=x^{-2}\): </p>
 
 <p><strong>a</strong>) Express the (simplified) slope of the secant line in terms of \(x\) and \(h\).</p>
