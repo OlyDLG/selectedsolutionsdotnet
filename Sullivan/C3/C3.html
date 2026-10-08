@@ -497,7 +497,7 @@ Some functions \(f\) have the property that \(f(a + b) = f(a) + f(b)\) for all r
 
 <p><strong>Sln</strong>: Again, since \(G\) is even, and therefore symmetric about the \(y\)-axis, the area described between \(x = -6\) and \(x = 0\) must equal the same area between \(x = 0\) and \(x = 6\), i.e., \(\box{1612.8\text{ square units}}.~\) Here’s a picture:</p>
 
-<p><img src="./Graphs/SullivanC3S3P74.png"></p>
+<div class="tqimg"><img src="./Graphs/SullivanC3S3P74.png"></div>
 
 <p>(Note: the use of GeoGebra’s Integral function to compute the areas of the described regions is beyond the scope of this course, though, perhaps arguably, the method by which the described regions are defined and graphed, is not.)
 <br><br></p>
@@ -508,15 +508,17 @@ Some functions \(f\) have the property that \(f(a + b) = f(a) + f(b)\) for all r
 
 <p><strong>a</strong>) After how many hours will the concentration be highest?</p>
 
-<p><strong>Sln</strong>: I.e., at what time, \(t_{max}\), will \(C\) attain a maximum.&nbsp; Until Calculus, (and even after Calculus, actually) to answer this question, we need to use a graphing utility:</p>
+<p><strong>Sln</strong>: In other words, at what time will \(C\) attain a maximum?&nbsp; Until Calculus, we need to use a graphing utility to answer this question:</p>
 
-<p><img src="./Graphs/SullivanC3S3P76.png" style="max-width:800px;max-height:400">
+<div class="fwimg"><img src="./Graphs/SullivanC3S3P76.png"></div>
+
+<p>(for now, ignore the added line \(y=0.5\): it is there for the solution to part <strong>b</strong>).&nbsp; Using GeoGebra’s Max command, we find the concentration will be highest approximately \(\box{2.16\text{ hours} = 2\text{ hrs, }9.6\text{ min.}}\) after the medicine has been administered.
 <br></p>
 
-<p><strong>b</strong>) A woman nursing a child must wait until the concentration is below 0.5 before she can feed him.&nbsp; After taking the medication, how long must she wait before feeding
-her child?</p>
+<p><strong>b</strong>) A woman nursing a child must wait until the concentration is below 0.5 before she can nurse him.&nbsp; After taking the medication, how long must she wait before nursing her child?</p>
 
-<p><strong>Sln</strong>: We need the time(s) after which the concentration is less than 0.5, i.e., \(t\) such that \(C(t)\lt 0.5\); we don’t have the <q>algebraic machinery</q> (and won’t in this course) to figure this out algebraically, so we need to solve it graphically using technology.&nbsp; One way to do this is illustrated in the above graph: we superimpose the graph of \(y=0.5\) on the graph of \(C(t)\) and the times for which the graph of the latter is below the graph of the former are the time ranges in which it is OK to nurse.&nbsp; But note that the graph of \(C(t)\) starts out below \(y=0.5\): \(C(0)=0.085 \lt 0.5\), so if it is really true that she can nurse anytime the concentration is below \(0.5\), she can nursing from  immediately after medicine administration (and before, of course) till the time at which the concentration first equals \(0.5\), which we see from the graph is \(\box{\doteq 0.713\text{ hr }= 42.78\text{ min}}\)<br><br></p>
+<p><strong>Sln</strong>: We need the time(s) after administration at which the concentration is less than 0.5, i.e., \(t\) such that \(C(t)\lt 0.5\); we don’t have the &quot;algebraic machinery&quot; to figure this out algebraically, so we need to solve it graphically using technology.&nbsp; One way to do this is illustrated in the graph above: we superimpose the graph of \(y=0.5\) on the graph of \(C(t)\) and the times for which the graph of \(C(t)\) is below the graph of \(y=0.5\) are the time ranges in which it is OK to nurse.&nbsp; But note that the graph of \(C(t)\) starts out below \(y=0.5\): \(C(0)=0.085 \lt 0.5\), so if it is really true that she can nurse anytime the concentration is below \(0.5\), she can nurse from immediately after medicine administration until the time at which the concentration first equals \(0.5\), which we see using GeoGebra’s Intersect command is \(\box{\doteq 0.713\text{ hr }= 42.8\text{ min}}.\)&nbsp; Then the graph of \(C\) is above the graph of \(y=0.5\)&mdash;C \gt 0.5\(&amp;mdash;until \)\box{t \doteq 4.46\text{ hrs.} = 4 hr, 27.6 min.},$ so this is how long the woman must wait until after administration to nurse, if she is not allowed to nurse right away.
+<br><br></p>
 
 <p><a name="3.80" class="goback" onclick="winhisback()"><strong>80</strong></a>) For the function \(f(x) = x^2\) compute each average rate of
 change: <strong>a</strong>) from \(x=1\) to \(x=2\); <strong>c</strong>) from \(x=1\) to \(x=1.1\); <strong>e</strong>) from \(x=1\) to \(x=1.001\); <strong>h</strong>) what is happening to the slopes of the secant lines? Is there some number that they are getting closer to?
@@ -530,7 +532,7 @@ What is that number?</p>
 
 <p><strong>e</strong>) \(\ds\frac{(1.001)^2-1^2}{1.001-1} = \frac{1.002001-1}{0.001} = \frac{0.002001}{0.001} = \box{2.001}\)</p>
 
-<p><strong>h</strong>) As the upper \(x\) value, \(x_{upper}\), <q>approaches</q> the (fixed) lower value, \(x_{lower}\) (\( = 1\) in this example), the slope of the secant line between the points \((x_{lower},f(x_{lower}))\) and \((x_{upper},f(x_{upper}))\), i.e., the average rate of change of \(f\) from \(x_{lower}\) to \(x_{upper}\), appears to be approaching the (fixed) value \(\box{2}.~\) (In Calculus one learns how to derive this result using a more general, and yet also more rigorous, analysis.&nbsp; In the meantime, the student is encouraged to contemplate why a more rigorous analysis might be desirable&mdash;hint: does a collection of examples prove a general statement? what if someone comes along some day and finds an example which contradicts the general statement?&mdash;and what that more rigorous analysis might <q>look like</q>&mdash;hint: what is needed is an analysis that is independent of any specific examples.)
+<p><strong>h</strong>) As the upper \(x\) value, \(x_{upper}\), &quot;approaches&quot; the (fixed) lower value, \(x_{lower}\) (\( = 1\) in this example), the slope of the secant line between the points \((x_{lower},f(x_{lower}))\) and \((x_{upper},f(x_{upper}))\), i.e., the average rate of change of \(f\) from \(x_{lower}\) to \(x_{upper}\), appears to be approaching the (fixed) value \(\box{2}.~\) (In Calculus one learns how to derive this result using a more general, and yet also more rigorous, analysis.&nbsp; In the meantime, the student is encouraged to contemplate why a more rigorous analysis might be desirable&mdash;hint: does a collection of examples prove a general statement? what if someone comes along some day and finds an example which contradicts the general statement?&mdash;and what that more rigorous analysis might &quot;look like&quot;&mdash;hint: what is needed is an analysis that is independent of any specific examples.)
 <br><br></p>
 
 <p><a name="3.88" class="goback" onclick="winhisback()"><strong>88</strong></a>) Given the following definition for the slope, \(m_{\large\text{sec}}\), of the secant line for \(f(x)\) through the points \((x,f(x))\) and \((x+h,f(x+h))\): \[m_{\large\text{sec}} = \frac{f(x+h)-f(x)}h,~ h\ne0,\]
