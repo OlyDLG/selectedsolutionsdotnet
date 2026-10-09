@@ -532,7 +532,7 @@ What is that number?</p>
 
 <p><strong>e</strong>) \(\ds\frac{(1.001)^2-1^2}{1.001-1} = \frac{1.002001-1}{0.001} = \frac{0.002001}{0.001} = \box{2.001}\)</p>
 
-<p><strong>h</strong>) As the upper \(x\) value, \(x_{upper}\), &quot;approaches&quot; the (fixed) lower value, \(x_{lower}\) (\( = 1\) in this example), the slope of the secant line between the points \((x_{lower},f(x_{lower}))\) and \((x_{upper},f(x_{upper}))\), i.e., the average rate of change of \(f\) from \(x_{lower}\) to \(x_{upper}\), appears to be approaching the (fixed) value \(\box{2}.~\) (In Calculus one learns how to derive this result using a more general, and yet also more rigorous, analysis.&nbsp; In the meantime, the student is encouraged to contemplate why a more rigorous analysis might be desirable&mdash;hint: does a collection of examples prove a general statement? what if someone comes along some day and finds an example which contradicts the general statement?&mdash;and what that more rigorous analysis might &quot;look like&quot;&mdash;hint: what is needed is an analysis that is independent of any specific examples.)
+<p><strong>h</strong>) As the upper \(x\) value, \(x_{upper}\), &quot;approaches&quot; the (fixed) lower value, \(x_{lower}\) (\(1\) in this example), the slope of the secant line between the points \((x_{lower},f(x_{lower}))\) and \((x_{upper},f(x_{upper}))\), i.e., the average rate of change of \(f\) from \(x_{lower}\) to \(x_{upper}\), appears to be approaching the (fixed) value \(\box{2}.~\) (In Calculus one learns how to derive this result using a more general, and also more rigorous, analysis.&nbsp; In the meantime, the student is encouraged to contemplate why a more rigorous analysis might be desirable&mdash;hint: does a collection of examples prove a general statement; what if someone comes along some day and finds an example which contradicts the general statement?&mdash;and contemplate what that more rigorous analysis might &quot;look like&quot;&mdash;hint: what is needed is an analysis that is independent of any specific numerical examples.)
 <br><br></p>
 
 <p><a name="3.88" class="goback" onclick="winhisback()"><strong>88</strong></a>) Given the following definition for the slope, \(m_{\large\text{sec}}\), of the secant line for \(f(x)\) through the points \((x,f(x))\) and \((x+h,f(x+h))\): \[m_{\large\text{sec}} = \frac{f(x+h)-f(x)}h,~ h\ne0,\]
@@ -540,10 +540,10 @@ for \(f(x)=x^{-2}\): </p>
 
 <p><strong>a</strong>) Express the (simplified) slope of the secant line in terms of \(x\) and \(h\).</p>
 
-<p><strong>Sln</strong>: \(\ds m_{\large{\text{sec}}} = \frac{f(x+h)-f(x)}h = \frac{(x+h)^{-2}-x^{-2}}{h} = \frac1h\left[\frac1{(x+h)^2}-\frac1{x^2}\right] = \frac1h\left[\frac{x^2-(x+h)^2}{x^2(x+h)^2}\right] = \frac1h\left[\frac{x^2-x^2-2hx-h^2}{x^2(x+h)^2}\right] = \) \(\ds \frac1h\left[\frac{-2hx-h^2}{x^2(x+h)^2}\right] = \box{\frac{-2x-h}{x^2(x+h)^2}}\)
+<p><strong>Sln</strong>: \(\ds m_{\large{\text{sec}}} = \frac{f(x+h)-f(x)}h = \frac{(x+h)^{-2}-x^{-2}}{h} = \frac1h\left[\frac1{(x+h)^2}-\frac1{x^2}\right] = \frac1h\left[\frac{x^2-(x+h)^2}{x^2(x+h)^2}\right] = \frac1h\left[\frac{x^2-x^2-2hx-h^2}{x^2(x+h)^2}\right] = \) \(\ds \frac1h\left[\frac{-2hx-h^2}{x^2(x+h)^2}\right] = \box{\frac{-2x-h}{x^2(x+h)^2}}.\) (Make sure you understand the last step in this derivation and why it is OK&mdash;hint: would it be OK if \(h=0\)? Why can’t this happen?)
 <br></p>
 
-<p><strong>b</strong>) Find \(m_{\large\text{sec}}\) for \(h = 0.5, 0.1,\) and \(0.01\) at \(x=1.~\) What value does \(m_{\large\text{sec}}\) approach as \(h\) approaches \(0\)?</p>
+<p><strong>b</strong>) Find \(m_{\large\text{sec}}\) for \(h = 0.5, 0.1,\) and \(0.01\) at \(x=1.~\) What value does \(m_{\large\text{sec}}\) approach as \(h\) approaches (but doesn’t equal) \(0\)?</p>
 
 <p><strong>Sln</strong>: \(m_{\large\text{sec}}(x=1;h=0.5) = \ds \frac{-2(1)-0.5}{1^2(1+0.5)^2} = \frac{-2.5}{(1)(1.5)^2} = \frac{-2.5}{2.25} = \box{-\frac{10}9 = -1.\bar1}\)</p>
 
@@ -561,7 +561,10 @@ for \(f(x)=x^{-2}\): </p>
 
 <p><strong>d</strong>) Use a graphing utility to graph \(f\) and the secant line found in part <strong>c</strong>) in the same viewing window</p>
 
-<p><strong>Sln</strong>: <img src="./Graphs/SullivanC3S3P88.png"></p>
+<p><strong>Sln</strong>: <div class="feimg"><img src="./Graphs/SullivanC3S3P88.png"></div></p>
+
+<p>Observe the domain over which the line very closely approximates the function; a secant line intersects a curve in two points: do this exercise yourself and keep zooming in until you can clearly see those two points and note how zoomed in you have to be.
+<br><br></p>
 
 <h2>Section 4: Library of Functions; Piecewise-defined Functions</h2>
 
