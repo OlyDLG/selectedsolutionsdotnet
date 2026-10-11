@@ -102,6 +102,7 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \definecolor{indigo}{RGB}{0,0,255}
 \definecolor{violet}{RGB}{138,43,226}
 \definecolor{black}{RGB}{0,0,0}
+\newcommand{\u}{\upsilon}
 \newcommand{\ds}{\displaystyle}
 \newcommand{\Frac}{\displaystyle \frac}
 \newcommand{\box}{\boxed}
@@ -407,34 +408,56 @@ Given \(f(x) = \Frac{x^2 + 2}{x + 4}\): <strong>a</strong>) Is \(\left(1,\Frac35
 
 <p><a name="2.30" class="goback" onclick="winhisback()"><strong>30</strong></a>) 
 <b>Granny Shots</b> The path of the ball in an underhand [basketball] foul shot, releasing the ball at a 70° angle from a position 3.5 feet above the floor, can be modeled by the function:
-\[h(x) = -\frac{136x^2}{v^2} + 2.7x + 3.5\]
-where \(h\) is the height of the ball above the floor, \(x\) is the forward distance of the ball in front of the foul line, and \(v\) is the initial speed of the ball in feet per second.</p>
+\[h(x) = -\frac{136x^2}{\u^2} + 2.7x + 3.5\]
+where \(h\) is the height of the ball above the floor, \(x\) is the forward distance of the ball in front of the foul line, and \(\u\) is the initial speed of the ball in feet per second.</p>
 
 <p><strong>a</strong>) The center of the hoop is 10 feet above the floor and 15 feet in front of the foul line; determine the initial
 speed the ball must have in order for the ball to go through the hoop.</p>
 
-<p><strong>Sln</strong>: \(x_{final}=15, h_{final} = h(x_{final}) = h(15) = 10\), so we must solve \(-\Frac{136(15)^2}{v^2} + 2.7(15) + 3.5 = 10\) for \(v\): \(\implies 2.7(15) + 3.5 - 10 = 34 = \Frac{136(15^2)}{v^2} \implies v = 15\sqrt{\Frac{136}{34}} = 15\sqrt4 = \box{30\text{ fps}}\) (check: \(-\Frac{136(15^2)}{30^2} + 2.7(15) + 3.5 = -\Frac{136}4 + 40.5 + 3.5 = -34 + 44 = 10.~\checkmark\))
+<p><strong>Sln</strong>: \(x_{final}=15, h_{final} = h(x_{final}) = h(15) = 10\), so we must solve \(-\Frac{136(15)^2}{\u^2} + 2.7(15) + 3.5 = 10\) for \(\u\): \(\implies 2.7(15) + 3.5 - 10 = 34 = \Frac{136(15^2)}{\u^2} \implies \u = 15\sqrt{\Frac{136}{34}} = 15\sqrt4 = \box{30\text{ fps}}\) (check: \(-\Frac{136(15^2)}{30^2} + 2.7(15) + 3.5 = -\Frac{136}4 + 40.5 + 3.5 = -34 + 44 = 10.~\checkmark\))
 <br></p>
 
 <p><strong>b</strong>) Write the function for the path of the ball using the velocity found in part <strong>a</strong>.</p>
 
-<p><strong>Sln</strong>: \(h(x; v=30) = \displaystyle -\frac{136x^2}{30^2} + 2.7x + 3.5 = -\frac{\cancel4(34)}{\cancel{2^2}(15^2)}x^2 + 2.7x + 3.5 = \boxed{-\frac{34}{225}x^2+2.7x+ 3.5}\)
+<p><strong>Sln</strong>: \(h(x; \u=30) = -\Frac{136x^2}{30^2} + 2.7x + 3.5 = -\Frac{\cancel4(34)}{\cancel{2^2}(15^2)}x^2 + 2.7x + 3.5 = \box{-\Frac{34}{225}x^2+2.7x+ 3.5}\)
 <br></p>
 
 <p><strong>c</strong>) Determine the height of the ball after it has traveled 9 feet in front of the foul line.</p>
 
-<p><strong>Sln</strong>: \(h(9; v=30) = \displaystyle -\frac{34}{225}(9^2)+2.7(9)+ 3.5 = -\frac{34}{\cancel{3^2}(5^2)}(9^{\cancel2 1}) + 24.3 + 3.5 = \boxed{15.56\text{ ft}}\)
+<p><strong>Sln</strong>: \(h(9; \u=30) = -\Frac{34}{225}(9^2)+2.7(9)+ 3.5 = -\Frac{34}{\cancel{3^2}(5^2)}(9^{\cancel2 1}) + 24.3 + 3.5 = \box{15.56\text{ ft}}\)
 <br></p>
 
 <p><strong>d</strong>) Find additional points and graph the path of the basketball.</p>
 
-<p><strong>Sln</strong>: At \(x=3\) ft, \(h(3; v=30) = \displaystyle -\frac{34}{\cancel{3^2}(5^2)}(\cancel{3^2})+2.7(3)+ 3.5 = \boxed{10.24\text{ ft}}\); \(h(6; v=30) = \displaystyle -\frac{34}{\cancel{3^2}(5^2)}(\cancel{3^2}2^2)+2.7(6)+ 3.5 = \boxed{14.26\text{ ft}}\)</p>
+<p><strong>Sln</strong>: At \(x=3\) ft, \(h(3; \u=30) = -\Frac{34}{\cancel{3^2}(5^2)}(\cancel{3^2})+2.7(3)+ 3.5 = \box{10.24\text{ ft}}\); \(h(6; \u=30) = -\Frac{34}{\cancel{3^2}(5^2)}(\cancel{3^2}2^2)+2.7(6)+ 3.5 = \box{14.26\text{ ft}}\)</p>
 
 <div class="feimg"><img src="./Graphs/SullivanC3S2P30d.png"></div>
 
 <p><br></p>
 
 <p><a name="2.34" class="goback" onclick="winhisback()"><strong>34</strong></a>) 
+<b>Effect of Elevation on Weight</b> If an object weighs \(m\) pounds at sea level, then its weight \(W\) (in pounds) at a height of
+\(h\) miles above sea level is given approximately by: 
+\[W(h) = m\left(\frac{4000}{4000 + h}\right)^2\]</p>
+
+<p><strong>a</strong>) If Amy weighs 120 pounds at sea level, how much will she weigh [at the top of] Pike’s Peak, which is 14,110 feet above sea
+level?</p>
+
+<p><strong>Sln</strong>: Amy’s altitude is given in feet, whereas in \(W(h), h\) must be in miles, so we must first convert \(14110\cancel{\text{ ft}} \times \Frac{1\text{ mile}}{5280 \cancel{\text{ ft}}} = \Frac{1411}{528} \doteq 2.672\text{ mi}\); now we simply evaluate \(W\left(\Frac{1411}{528}\right) = 120\left(\Frac{4000}{4000+\Frac{1411}{528}}\right)^2 \doteq 120\left(\Frac{4000}{4000+2.672}\right)^2 \doteq 120(0.999332359)^2 \doteq 120(0.998665164) = \box{119.84\text{ lbs}}\)
+<br></p>
+
+<p><strong>b</strong>) Use a graphing utility to graph the function \(W = W(h)\); use \(m = 120\) pounds.</p>
+
+<p><strong>Sln</strong>: <img src="./Graphs/SullivanC3S2P34b.png">
+<br></p>
+
+<p><strong>c</strong>) Left to the reader.
+<br></p>
+
+<p><strong>d</strong> &amp; <strong>e</strong>) At what height will Amy weigh 119.95 pounds?&nbsp; Does your answer seem reasonable? Explain.</p>
+
+<p><strong>Sln</strong>: We need to solve: \(\displaystyle 119.95 = 120\left(\frac{4000}{4000+h}\right)^2\) for \(h\); begin by dividing through by \(120\) to obtain \(\displaystyle \frac{119.95}{120} = \frac{23.99}{24} = \left(\frac{4000}{4000+h}\right)^2\); next, take the square-root of both sides: \(\displaystyle \sqrt{\frac{23.99}{24}} = \frac{4000}{4000+h}\), and then reciprocate both sides: \(\displaystyle \sqrt{\frac{24}{23.99}} = \frac{4000+h}{4000} = 1 + \frac h{4000}\); finally, subtract \(1\) from both sides: \(\displaystyle \sqrt{\frac{24}{23.99}} - 1 = \frac h{4000}\), and multiply by 4000: \[\boxed{h = 4000\left(\sqrt{\frac{24}{23.99}}-1\right) \doteq 0.834\text{ mi}}\]
+The graph in Part <strong>b</strong> tells us that weight goes down with increasing altitude; since 2.672 mi is greater than 0.834 mi, we should expect her decrease in weight to be not as great at the lower altitude, so \(\boxed{\text{yes}}\), this answer seems reasonable.
 <br><br></p>
 
 <p><a name="2.38" class="goback" onclick="winhisback()"><strong>38</strong></a>) 
