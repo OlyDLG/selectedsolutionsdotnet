@@ -891,8 +891,20 @@ height 16 feet (see the figure in the text); express the volume \(V\) of the wat
 base; <strong>b</strong>) how much material is required for a base 1 foot by 1 foot; <strong>c</strong>) how much material is required for a base 2 feet by
 2 feet? <strong>d</strong>) use a graphing utility to graph \(A = A(x)\); for what value of \(x\) is \(A\) smallest?</p>
 
-<p><strong>Sln</strong>:
-<br><br></p>
+<p><strong>Sln</strong>: (Even though we consider it an important part of solving this problem, we leave drawing a picture of the situation to the reader.)</p>
+
+<p><strong>a</strong>) The volume \(V\) of a box with a square base of edge length \(x\) is \(V = x^2h\) where \(h\) is the height of the box, measured in the same units as the base edge length; given that \(V=10,\) \(h(x) = \Frac{10}{x^2}.~\) The box being open doesn’t affect the volume, but it does affect the area of material needed: we don’t need material for, presumably, the &quot;top,&quot; i.e., the face opposite its square bottom, so the area of material required is \(A(x) = A_{\text{base}} + 4A_{\text{1 side}} = x^2 + 4xh =\) 
+\[\box{x^2 + \frac{40}{x^2}.}\]
+<br></p>
+
+<p><strong>b</strong> &amp; <strong>c</strong>) Using the formula just derived, the amount of material required to build an open 10 cubic feet box with a base of 1 foot \(\times\) 1 foot is \(A(1) = 1^2 + \Frac{40}{1^2} = \box{41\text{ sq. ft.}}\), and the amount of material required for a 2’ \(\times\) 2’ base box is \(A(2) = 2^2 + \Frac{40}{2^2} = 4 + 10 = \box{14\text{ sq. ft.}}\)
+<br></p>
+
+<p><strong>d</strong>) Using GeoGebra, first define the function we want to graph, as exhibited in the first command in the left panel of the figure below.&nbsp; Next, also as shown, use the name of the function in the <code>&lt;function&gt;</code> argument to the command <code>Min(&lt;function&gt;, &lt;left bound&gt;, &lt;right bound&gt;)</code>, where <code>&lt;left bound&gt;</code> is an \(x\) value to the left of the minimum and <code>&lt;right bound&gt;</code> is an \(x\) value on the right of the minimum.&nbsp; In this way we find that the base edge length which minimizes the amount of material required is approximately \(\box{2.51\text{ ft}}\) and the resulting minimum area is \(\box{12.65\text{ sq. ft.}}\)</p>
+
+<div class="fwimg"><img  src="./Graphs/SullivanC3S6P26.png"></div>
+
+<p><br></p>
 
 <p><a name="Credits"></a></p>
 
