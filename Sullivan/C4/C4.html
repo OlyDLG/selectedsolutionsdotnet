@@ -102,7 +102,9 @@ pre code, pre tt{ background-color:transparent; border:none; }
 \definecolor{indigo}{RGB}{0,0,255}
 \definecolor{violet}{RGB}{138,43,226}
 \definecolor{black}{RGB}{0,0,0}
-\newcommand{\u}{\upsilon}
+\newcommand{\a}{\alpha}
+\newcommand{\b}{\beta}
+\newcommand{\g}{\gamma}
 \newcommand{\ds}{\displaystyle}
 \newcommand{\Frac}{\displaystyle \frac}
 \newcommand{\box}{\boxed}
@@ -317,9 +319,9 @@ Under what circumstances does the graph of \(f(x) = ax^2 + bx + c\) have no \(x\
 <br><br></p>
 
 <p><a name="3.92" class="goback" onclick="winhisback()"><strong>3.92</strong></a>)
-What are the possibilities for the number of times the graphs of two different quadratic functions intersect?</p>
+What are the possibilities for the number of times the graphs of two different quadratic functions (with real coefficients) intersect?</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: Given two quadratic functions, \(f(x) = Ax^2 + Bx + C,~g(x) = ax^2 + bx + c,\) with real coefficients, their graphs intersect where \(f(x) = g(x) \implies Ax^2 + Bx + C = ax^2 + bx + c \implies (A-a)x^2 + (B-b)x + (C-c) = 0.~\) If \(A = a\), this \(\implies (B-b)x + (C-c) = 0\); if also \(B=b\) then, since it is stipulated that the functions are different, \(C \ne c \implies C-c \ne 0 \implies\) \(\box{\text{no points of intersection}}\) in the case \(A = a, B = b, C \ne c.~\) Continuing with the case \(A = a,\) if \(B \ne b\) then, regardless of whether or not \(C = c,\) \(x = -\Frac{C-c}{B-b}\) is well-defined and unique, implying \(\box{\text{one point of intersection}}\) in this case of \(A = a, B \ne b.~\) If \(A \ne a\), then, letting \(\a = A-a, \b = B-b, \g = C-c,\) the quadratic \((A-a)x^2 + (B-b)x + (C-c) = \a x^2 + \b x + \g\) has zero, one, or two real solutions depending on whether \(\b^2 - 4\a\g\) is less than, equal to, or greater than zero, respectively.&nbsp; Thus the possibilities are \(\box{\text{zero, one, or two}}\) points of intersection, with two different ways each in which the result might be zero or one point of intersection.&nbsp; (The reader is &quot;strongly encourged&quot; to figure out the geometry of each of the cases above; for example, the case \(A = a, B = b, C \ne c\) corresponds to two otherwise-identical parabolas, vertically displaced relative to one another: they do not intersect precisely because they &quot;start off&quot; from different vertical positions at the same \(x\)-coordinate, but are otherwise identical and thus always remain the same vertical distance from one another; the reader should similarly figure out the geometry of the cases \(A=a, B \ne b;\) \(A \ne a, \b^2 - 4\a\g \lt; =; \gt 0.\))
 <br><br></p>
 
 <h2>Section 4: Build Quadratic Models from Verbal Descriptions and from Data</h2>
