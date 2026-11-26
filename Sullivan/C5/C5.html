@@ -303,12 +303,20 @@ Zeros: \(-2,\) multiplicity 2; 4, multiplicity 1; degree 3</p>
 <p><strong>Sln</strong>: \(g(r) = c(r - (-2))(r - (-2))(r - 4) = c(r + 2)^2(r - 4) = c(r^2 + 4r + 4)(r - 4) = c(r^3 + \cancel{4r^2} + 4r - \cancel{4r^2} - 16r - 16) = cr^3 - 12cr - 16c\) is a degree-three polynomial function of \(r\) for any \(c \ne 0\); for any such \(c\), the facts that \(g(-2) = c(-2)^3 -12c(-2) - 16c = c(-8 + 24 - 16) = 0\) and \(g(4) = c(4^3) - 12c(4) - 16c = c(64 - 48 - 16) = 0\) show that it has the required zeros; and the factorization \(g(r) = c(r+2)^2(r-4)\) shows that these zeros have the required multiplicities.
 <br><br></p>
 
-<p><strong>52</strong>, <strong>56</strong>, <strong>60</strong>) For the given polynomial function: <strong>a</strong>) list each real zero and its multiplicity; <strong>b</strong>) state whether its graph crosses or touches the \(x\)-axis at each \(x\)-intercept; <strong>c</strong>) state the behavior of its graph near each \(x\)-intercept; <strong>d</strong>) state the maximum number of turning points of its graph; <strong>e</strong>) state its end behavior, i.e., state what power function its graph approaches for large values of \(|x|.\)</p>
+<p><strong>52</strong>, <strong>56</strong>, <strong>60</strong>) For the given polynomial function: <strong>a</strong>) list each real zero and its multiplicity; <strong>b</strong>) state whether its graph crosses or &quot;grazes&quot; (just touches) the \(x\)-axis at each \(x\)-intercept; <strong>c</strong>) state the behavior of its graph near each \(x\)-intercept; <strong>d</strong>) state the maximum number of turning points of its graph; <strong>e</strong>) state its end behavior, i.e., state what power function its graph approaches for large values of \(|x|.\)</p>
 
 <p><a name="1.52" class="goback" onclick="winhisback()"><strong>1.52</strong></a>)
 \(f(x) = 2(x - 3)(x^2 + 4)^3\)</p>
 
-<p><strong>Sln</strong>:
+<p><strong>Sln</strong>: <strong>a</strong>) \(f(x) = 2(x - 3)(x^2 + 4)^3 = 0\) where \(x - 3 = 0 \implies \box{x = 3}\), which has \(\box{\text{multiplicity one}}\); and where \((x^2 + 4)^3 = 0 \implies x^2 + 4 = 0^{1/3} = 0 \implies x^2 = -4\) which has no real solutions.</p>
+
+<p><strong>b</strong>) Since the multiplicity of the zero \(x = 3\) is one, the graph \(\box{\text{crosses}}\) the \(x\)-axis at that&mdash;its only&mdash;\(x\)-intercept.</p>
+
+<p><strong>c</strong>) Near \(x = 3\), \(f(x) \approx 2(x - 3)(3^2 + 4)^3 = 2(13^3)(x-3) = \box{4394(x-3)}\) (in other words, the graph is really, REALLY steep there: until you zoom way, WAY out (in \(y\)) from a default viewing window&mdash;for example, to \(-2 \le x \le 4, -1200 \le y \le 600\)&mdash;the graph will look like it’s crossing vertically at \(x=3\)).</p>
+
+<p><strong>d</strong>) The maximum number of turning points of the graph is \(n - 1\) where \(n\) is the degree of the polynomial, so we must determine that degree; the highest degree term of \((x^2 + 4)^3\) is \((x^2)^3 = x^6\) (reader: multiply out \((x^2 + 4)^3\) if you don’t see this), and multiplying that by \(x - 3\) produces a highest order term of \(n = 7\), so the maximum number of turning points of the graph \(f\) is \(\box{6}\).&nbsp; (In actuality, however, it only has 2.)</p>
+
+<p><strong>e</strong>) The end behavior will be that of the function \(g(x) = 2(x \cancel{- 3})(x^2 \cancel{+ 4})^3 = 2(x)(x^6) = \box{2x^7}\).&nbsp; (Note: if you try to confirm this by graphing \(f(x)\) and \(g(x)\) on the same axes&mdash;or worse, \(f(x) - g(x)\), which just &quot;zeros out&quot; the \(2x^7\) term, meaning you’re graphing everything that multiplying out \(f(x)\) results in <strong><em>except</em></strong> the \(2x^7\) term, i.e., you’re graphing a sixth-order polynomial&mdash;even if you zoom really far out in \(y\), it may not be convincing (unless you zoom rather far out in \(x\) as well, but then you may think that the apparent similarity of the two functions is only due to having zoomed out in \(x\); try it and you’ll see what I mean); the better way to see, graphically, that \(f(x) \approx 2x^7\) as \(|x| \rightarrow \infty\) is to graph the function \(h(x) = \Frac{f(x)}{2x^7}\) and the horizontal line \(y = 1\) together and zoom <strong><em>in</em></strong> on \(y\) and <strong><em>out</em></strong> on \(x\) so that you can see that \(h(x) \approx 1\) as \(|x| \rightarrow \infty\).)
 <br><br></p>
 
 <p><a name="1.56" class="goback" onclick="winhisback()"><strong>1.56</strong></a>)
